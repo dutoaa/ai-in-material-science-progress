@@ -1,24 +1,24 @@
 {
-  "key_insight": "The paper turns numeric tables into searchable statistical embeddings, enabling similarity search and cross-dataset alignment without requiring matching feature names.",
-  "engineering_relevance": "This offers a practical way to retrieve related materials datasets, support model initialization, and choose algorithms for unfamiliar tabular data while preserving statistical context.",
+  "key_insight": "The paper turns a numeric table into a statistical “fingerprint” so different datasets can be compared, retrieved, and aligned even when they do not share the same variables.",
+  "engineering_relevance": "This enables safer dataset search, transfer, and initialization for materials and simulation workflows when raw data or consistent feature names are unavailable.",
   "method": [
-    "Extract structured exploratory-data-analysis descriptors from each numeric dataset.",
-    "Embed the descriptors into a shared vector space with a pretrained sentence transformer.",
-    "Use CCA, including a sparse penalized variant, to measure similarity and recover interpretable variable-level correspondences; optional differential privacy can be applied before embedding."
+    "Compute exploratory-data-analysis descriptors for each numeric dataset.",
+    "Embed descriptors into a shared vector space with a pretrained sentence transformer.",
+    "Use CCA, plus a sparse penalized variant, to measure similarity and recover interpretable cross-dataset variable correspondences."
   ],
-  "evidence_signal": "Across 15 datasets, the approach achieved a total P@1 of 0.9, with nearest-neighbor retrieval and cluster structure remaining robust under embedding ablations and differential-privacy budgets.",
-  "watch_item": "Interpretability and retrieval depend on the quality and consistency of the chosen descriptors, so sparse CCA alignments may still miss relationships not captured by the exploratory statistics.",
+  "evidence_signal": "Across 15 datasets, the method achieved a total P@1 of 0.9, with nearest-neighbor retrieval and clustering remaining robust under embedding ablations and differential-privacy settings.",
+  "watch_item": "Interpretability depends on the quality and stability of the engineered descriptors, and differential privacy may trade off utility against alignment fidelity.",
   "hashtags": [
     "#MaterialsInformatics",
     "#TabularData",
-    "#Embedding",
     "#CanonicalCorrelationAnalysis",
-    "#PrivacyPreservingAI"
+    "#DifferentialPrivacy",
+    "#RetrievalAugmentedGeneration"
   ],
   "paper_id": "2026-05-28-arxiv-statistical_embeddings_for_similarity_retrieval_and_interpretable_alignment_of_numeric_tab",
   "paper_title": "Statistical Embeddings for Similarity, Retrieval, and Interpretable Alignment of Numeric Tabular Datasets",
   "paper_date": "2026-05-28",
   "paper_category": "Crystal and Structure",
-  "generated_at": "2026-05-30T22:33:32",
+  "generated_at": "2026-05-30T23:08:19",
   "generator": "openai"
 }

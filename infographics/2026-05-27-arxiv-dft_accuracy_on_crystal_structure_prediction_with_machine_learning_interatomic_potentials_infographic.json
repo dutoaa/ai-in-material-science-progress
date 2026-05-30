@@ -1,24 +1,24 @@
 {
-  "key_insight": "CSP-MACE-Å is a machine-learned interatomic potential that can approach DFT-level accuracy for crystal structure prediction while running orders of magnitude faster.",
-  "engineering_relevance": "It enables much broader screening of candidate solid forms by making both energy and harmonic free-energy ranking feasible at near-DFT quality.",
+  "key_insight": "CSP-MACE-Å is a hybrid machine-learning potential that combines intramolecular, dispersion, and learned correction terms to approach DFT-level crystal structure prediction accuracy at much lower cost.",
+  "engineering_relevance": "This enables much faster ranking of candidate crystal forms, making large-scale solid-form screening and free-energy-based derisking more practical in pharmaceutical and materials workflows.",
   "method": [
-    "Split total energy into intramolecular and intermolecular parts.",
-    "Train the intramolecular model with MACE-POLAR on OMol25.",
-    "Add intermolecular dispersion plus a learned delta model fit to B86bPBE-XDM residuals from 50,000 crystal calculations."
+    "Train MACE-POLAR on OMol25 for intramolecular energies.",
+    "Model intermolecular interactions with MACE-POLAR + XDM-like dispersion + a learned delta correction.",
+    "Use harmonic free energies to rerank polymorphs beyond static-energy ranking."
   ],
-  "evidence_signal": "Across 19 AstraZeneca CSP compounds and 28 blind-test compounds, the model matches or nearly matches PBE+Neumann and B86bPBE-XDM performance, with harmonic free-energy reranking improving results.",
-  "watch_item": "Performance is validated on curated benchmark sets, so robustness on chemically broader or highly unusual crystal chemistries still needs caution.",
+  "evidence_signal": "The model was evaluated on 19 AstraZeneca CSP compounds and 28 blind-test compounds, performing comparably to PBE+dispersion and close to B86bPBE-XDM, while also tracking temperature-dependent polymorph stability for five compounds.",
+  "watch_item": "Performance depends on the quality and coverage of the training/evaluation chemistry, so transfer to new crystal chemistries or unusual salts/cocrystals may require retraining or additional validation.",
   "hashtags": [
     "#CrystalStructurePrediction",
     "#MachineLearningPotentials",
     "#DFT",
-    "#MaterialsInformatics",
-    "#SolidFormScreening"
+    "#PolymorphRanking",
+    "#MaterialsInformatics"
   ],
   "paper_id": "2026-05-27-arxiv-dft_accuracy_on_crystal_structure_prediction_with_machine_learning_interatomic_potentials",
   "paper_title": "DFT Accuracy on Crystal Structure Prediction with Machine Learning Interatomic Potentials",
   "paper_date": "2026-05-27",
   "paper_category": "Crystal and Structure",
-  "generated_at": "2026-05-30T22:33:36",
+  "generated_at": "2026-05-30T23:08:24",
   "generator": "openai"
 }
