@@ -147,18 +147,18 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2605.26543v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-05-26-arxiv-polyfusionagent_a_multimodal_foundation_model_and_autonomous_ai_assistant_for_polymer_prop_infographic.json
 
-## 19. Finite Temperature Stacking Fault Stability in Random and Locally Ordered CoCrNi beyond the Harmonic Approximation
-
-- Date: 2026-05-25
-- Category: AI materials science
-- arXiv: https://arxiv.org/abs/2605.26364v1
-- PDF: https://arxiv.org/pdf/2605.26364v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-05-25-arxiv-finite_temperature_stacking_fault_stability_in_random_and_locally_ordered_cocrni_beyond_th_infographic.json
-
-## 20. Composition-dependent Thin-film Synthesis of Layered Ternary Iron Nitrides FeMN2 (M = W, Mo)
+## 19. Composition-dependent Thin-film Synthesis of Layered Ternary Iron Nitrides FeMN2 (M = W, Mo)
 
 - Date: 2026-05-28
 - Category: Crystal and Structure
 - arXiv: https://arxiv.org/abs/2605.30137v1
 - PDF: https://arxiv.org/pdf/2605.30137v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-05-28-arxiv-composition_dependent_thin_film_synthesis_of_layered_ternary_iron_nitrides_femn2_m_w_mo_infographic.json
+
+## 20. Synthesizability, hardness, and stacking order in multicomponent transition metal carbides from machine-learned potentials
+
+- Date: 2026-05-28
+- Category: Property Prediction
+- arXiv: https://arxiv.org/abs/2605.29482v1
+- PDF: https://arxiv.org/pdf/2605.29482v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-05-28-arxiv-synthesizability_hardness_and_stacking_order_in_multicomponent_transition_metal_carbides_f_infographic.json

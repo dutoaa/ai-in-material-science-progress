@@ -1,24 +1,24 @@
 {
-  "key_insight": "CSP-MACE-Å effectively replaces DFT in crystal structure prediction, achieving comparable accuracy with improved efficiency.",
-  "engineering_relevance": "This research advances materials discovery by enabling faster exploration of crystal structures, critical in pharmaceuticals and materials engineering.",
+  "key_insight": "CSP-MACE-Å is a machine-learned interatomic potential that can approach DFT-level accuracy for crystal structure prediction while running orders of magnitude faster.",
+  "engineering_relevance": "It enables much broader screening of candidate solid forms by making both energy and harmonic free-energy ranking feasible at near-DFT quality.",
   "method": [
-    "Utilizes MACE-POLAR architecture for intramolecular energy calculation.",
-    "Combines intermolecular energy contributions from a learned delta model and dispersion corrections.",
-    "Employs harmonic free energy reranking to enhance prediction accuracy."
+    "Split total energy into intramolecular and intermolecular parts.",
+    "Train the intramolecular model with MACE-POLAR on OMol25.",
+    "Add intermolecular dispersion plus a learned delta model fit to B86bPBE-XDM residuals from 50,000 crystal calculations."
   ],
-  "evidence_signal": "CSP-MACE-Å matches or exceeds DFT performance on evaluation sets with diverse types of compounds.",
-  "watch_item": "The accuracy of CSP-MACE-Å in predicting rare polymorphic forms needs further validation.",
+  "evidence_signal": "Across 19 AstraZeneca CSP compounds and 28 blind-test compounds, the model matches or nearly matches PBE+Neumann and B86bPBE-XDM performance, with harmonic free-energy reranking improving results.",
+  "watch_item": "Performance is validated on curated benchmark sets, so robustness on chemically broader or highly unusual crystal chemistries still needs caution.",
   "hashtags": [
-    "#MachineLearning",
-    "#InteratomicPotentials",
     "#CrystalStructurePrediction",
-    "#MaterialsScience",
-    "#DFT"
+    "#MachineLearningPotentials",
+    "#DFT",
+    "#MaterialsInformatics",
+    "#SolidFormScreening"
   ],
   "paper_id": "2026-05-27-arxiv-dft_accuracy_on_crystal_structure_prediction_with_machine_learning_interatomic_potentials",
   "paper_title": "DFT Accuracy on Crystal Structure Prediction with Machine Learning Interatomic Potentials",
   "paper_date": "2026-05-27",
   "paper_category": "Crystal and Structure",
-  "generated_at": "2026-05-30T19:37:19",
+  "generated_at": "2026-05-30T22:33:36",
   "generator": "openai"
 }

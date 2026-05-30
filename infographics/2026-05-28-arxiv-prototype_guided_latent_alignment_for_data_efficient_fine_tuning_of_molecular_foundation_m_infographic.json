@@ -1,24 +1,24 @@
 {
-  "key_insight": "Prototype-based alignment enhances the data efficiency of fine-tuning molecular foundation models for improved material property predictions.",
-  "engineering_relevance": "The proposed method addresses the challenge of generalisation in machine learning interatomic potentials for chemically diverse materials.",
+  "key_insight": "Prototype-guided latent alignment improves fine-tuning of pretrained MLIPs by anchoring target atoms to similar source-domain chemical environments, boosting generalization in low-data settings.",
+  "engineering_relevance": "This offers a practical way to adapt foundation-model interatomic potentials to new materials chemistry with fewer DFT labels, reducing the cost of deployment for materials discovery workflows.",
   "method": [
-    "Identifies local structural similarities between source and target domains by grouping atoms with analogous chemical environments.",
-    "Aligns each target-domain atom's energy contribution to its source-domain prototype.",
-    "Encourages effective reuse of learned interactions and improves generalisation without restrictive assumptions on target chemistry."
+    "Cluster atoms by latent representations to form source-domain prototypes for analogous local chemical environments.",
+    "Align each target atom’s energy contribution to the nearest source prototype during fine-tuning.",
+    "Use the alignment as an inductive bias to preserve pretrained interactions while adapting to out-of-distribution targets."
   ],
-  "evidence_signal": "The approach demonstrates consistent improvements in predictive accuracy in low-data regimes, achieving up to 18% reduction in energy MAE compared to standard fine-tuning baselines.",
-  "watch_item": "Potential overfitting in data-scarce regimes despite method improvements.",
+  "evidence_signal": "Evaluated on rMD17 with MACE and SchNet across multiple data budgets, and on MACE-OFF foundation models on SPICE; the method reduced energy MAE by up to 18% versus standard fine-tuning.",
+  "watch_item": "Prototype quality and latent-space matching may be sensitive to representation choice and dataset shift, so alignment could underperform if source and target chemistries are too dissimilar.",
   "hashtags": [
-    "#MachineLearning",
     "#MaterialsDiscovery",
+    "#MachineLearningPotentials",
+    "#FineTuning",
     "#GraphNeuralNetworks",
-    "#DataEfficiency",
-    "#MolecularModeling"
+    "#DFT"
   ],
   "paper_id": "2026-05-28-arxiv-prototype_guided_latent_alignment_for_data_efficient_fine_tuning_of_molecular_foundation_m",
   "paper_title": "Prototype-Guided Latent Alignment for Data-Efficient Fine-Tuning of Molecular Foundation Models",
   "paper_date": "2026-05-28",
   "paper_category": "Materials Discovery",
-  "generated_at": "2026-05-30T19:36:21",
+  "generated_at": "2026-05-30T22:32:58",
   "generator": "openai"
 }

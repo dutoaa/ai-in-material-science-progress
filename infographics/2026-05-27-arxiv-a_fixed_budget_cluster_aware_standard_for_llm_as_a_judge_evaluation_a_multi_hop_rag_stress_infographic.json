@@ -1,24 +1,24 @@
 {
-  "key_insight": "A minimum measurement standard for LLM-as-a-judge in multi-hop RAG evaluations can clarify the implications of retrieval and answer quality.",
-  "engineering_relevance": "This methodology enhances the fairness and accuracy of evaluations in AI-driven decision-making systems.",
+  "key_insight": "A fixed-budget, cluster-aware evaluation protocol can substantially change which RAG methods appear to win, revealing that standard LLM-as-a-judge comparisons may overstate progress.",
+  "engineering_relevance": "For AI materials science and other multi-hop RAG settings, the paper provides a more reliable measurement standard for comparing retrieval strategies under identical resource constraints.",
   "method": [
-    "Fixes the top-100 candidate pool and evidence budget.",
-    "Requires pre-registered hypotheses and cluster-aware inference.",
-    "Conducts second-judge replication and an exact cluster sign-flip check."
+    "Fix the candidate pool to top-100 and hold evidence budget, answer cap, generator, and prompt constant.",
+    "Use pre-registered hypotheses with cluster-aware inference, plus an exact cluster sign-flip check when feasible.",
+    "Add second-judge replication to reduce judge-specific noise and improve robustness."
   ],
-  "evidence_signal": "The study demonstrates that cluster-aware inference significantly alters the results of semantic baseline comparisons.",
-  "watch_item": "Clustered benchmarks may lead to overestimated progress in RAG system evaluations.",
+  "evidence_signal": "On 400 multi-hop questions in CS/ML and Materials Science, a simple binomial test made all four semantic-baseline comparisons look significant, but cluster-aware inference left only one Bonferroni-significant result.",
+  "watch_item": "The protocol is stricter and more realistic, but exact cluster sign-flip testing may be infeasible in some datasets or evaluation pipelines.",
   "hashtags": [
-    "#AI",
-    "#MachineLearning",
-    "#MaterialsScience",
-    "#DataScience",
-    "#MultiHopRAG"
+    "#RAG",
+    "#LLMasAJudge",
+    "#MaterialsInformatics",
+    "#MultiHopQA",
+    "#EvaluationProtocol"
   ],
   "paper_id": "2026-05-27-arxiv-a_fixed_budget_cluster_aware_standard_for_llm_as_a_judge_evaluation_a_multi_hop_rag_stress",
   "paper_title": "A Fixed-Budget, Cluster-Aware Standard for LLM-as-a-Judge Evaluation: A Multi-Hop RAG Stress Test",
   "paper_date": "2026-05-27",
   "paper_category": "AI materials science",
-  "generated_at": "2026-05-30T19:37:16",
+  "generated_at": "2026-05-30T22:33:34",
   "generator": "openai"
 }
