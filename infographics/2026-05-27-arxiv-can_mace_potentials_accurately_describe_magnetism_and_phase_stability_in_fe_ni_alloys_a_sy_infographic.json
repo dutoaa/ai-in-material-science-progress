@@ -1,17 +1,17 @@
 {
-  "key_insight": "A system-specific MACE model trained on SQS DFT data describes Fe-Ni alloy structure, elasticity, and thermal trends more accurately than foundation models, but still misses magnetic-collapse-driven phase stability under pressure.",
-  "engineering_relevance": "Targeted retraining can make machine-learned interatomic potentials reliable for alloy property prediction, helping accelerate materials design for steels and magnetic alloys.",
+  "key_insight": "A system-specific MACE model trained on spin-polarized SQS data substantially improves prediction of Fe-Ni alloy structure, elasticity, magnetism, and thermal trends, but still misses key magnetic-collapse physics governing phase stability.",
+  "engineering_relevance": "For alloy design and phase-stability screening, targeted retraining on representative disordered states can outperform foundation models and yield more reliable thermomechanical predictions.",
   "method": [
-    "Spin-polarized PBE DFT benchmark on disordered SQS supercells",
-    "Train a MACE-sqs potential on bcc/fcc compositions plus volumetric and shear deformations",
-    "Compare against several MACE foundation models with and without Hubbard U corrections"
+    "Built a reference dataset from spin-polarized PBE DFT on chemically disordered SQS Fe-Ni alloys.",
+    "Included bcc and fcc structures across compositions, plus volumetric and shear deformations.",
+    "Benchmarked a system-specific MACE-sqs model against several foundation MACE models, including Hubbard-U variants."
   ],
-  "evidence_signal": "The MACE-sqs model achieved 2.0 meV/atom validation energy error and 24.3 meV/Å force error, and showed the best agreement with DFT and experiment for equations of state, equilibrium volumes, elastic constants, and thermal expansion.",
-  "watch_item": "All models predicted the wrong trend for the bcc-to-hcp transition pressure with Ni content, showing that magnetic collapse and magnetoelastic effects are still not fully captured.",
+  "evidence_signal": "MACE-sqs achieved 2.0 meV/atom validation error for energies and 24.3 meV/Å for forces, and showed the best overall agreement with DFT and experiment for equations of state, equilibrium volumes, elastic constants, and thermal expansion.",
+  "watch_item": "All tested models incorrectly predict that the bcc-to-hcp transition pressure increases with Ni content, indicating unresolved high-pressure magnetic collapse and magnetoelastic effects.",
   "hashtags": [
     "#MachineLearningPotentials",
-    "#FeNiAlloys",
     "#MACE",
+    "#AlloyModeling",
     "#Magnetism",
     "#PhaseStability"
   ],
@@ -19,6 +19,6 @@
   "paper_title": "Can MACE Potentials Accurately Describe Magnetism and Phase Stability in Fe-Ni Alloys? A Systematic Benchmark",
   "paper_date": "2026-05-27",
   "paper_category": "Crystal and Structure",
-  "generated_at": "2026-05-30T23:07:56",
+  "generated_at": "2026-05-31T12:11:12",
   "generator": "openai"
 }

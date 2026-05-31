@@ -1,13 +1,13 @@
 {
-  "key_insight": "CSP-MACE-Å is a hybrid machine-learning potential that combines intramolecular, dispersion, and learned correction terms to approach DFT-level crystal structure prediction accuracy at much lower cost.",
-  "engineering_relevance": "This enables much faster ranking of candidate crystal forms, making large-scale solid-form screening and free-energy-based derisking more practical in pharmaceutical and materials workflows.",
+  "key_insight": "A machine-learning interatomic potential that splits crystal energy into intra- and intermolecular parts can approach DFT-level accuracy for crystal structure prediction while running much faster.",
+  "engineering_relevance": "This enables larger CSP searches and more reliable ranking of candidate solid forms, especially when harmonic free energies are included for polymorph selection.",
   "method": [
-    "Train MACE-POLAR on OMol25 for intramolecular energies.",
-    "Model intermolecular interactions with MACE-POLAR + XDM-like dispersion + a learned delta correction.",
-    "Use harmonic free energies to rerank polymorphs beyond static-energy ranking."
+    "Use MACE-POLAR for intramolecular energies trained on OMol25.",
+    "Model intermolecular energies with MACE-POLAR + XDM-style dispersion + a learned delta correction to B86bPBE-XDM residuals.",
+    "Rank structures by energy and harmonic free energy to improve polymorph ordering."
   ],
-  "evidence_signal": "The model was evaluated on 19 AstraZeneca CSP compounds and 28 blind-test compounds, performing comparably to PBE+dispersion and close to B86bPBE-XDM, while also tracking temperature-dependent polymorph stability for five compounds.",
-  "watch_item": "Performance depends on the quality and coverage of the training/evaluation chemistry, so transfer to new crystal chemistries or unusual salts/cocrystals may require retraining or additional validation.",
+  "evidence_signal": "Validated on two independent evaluation sets (19 AstraZeneca compounds and 28 blind-test compounds), where performance was comparable to PBE+Neumann-Perrin and close to B86bPBE-XDM DFT, respectively.",
+  "watch_item": "Accuracy depends on the training domain and harmonic approximation, so transfer to chemically different systems or strongly anharmonic crystals may require additional validation.",
   "hashtags": [
     "#CrystalStructurePrediction",
     "#MachineLearningPotentials",
@@ -19,6 +19,6 @@
   "paper_title": "DFT Accuracy on Crystal Structure Prediction with Machine Learning Interatomic Potentials",
   "paper_date": "2026-05-27",
   "paper_category": "Crystal and Structure",
-  "generated_at": "2026-05-30T23:08:24",
+  "generated_at": "2026-05-31T12:11:44",
   "generator": "openai"
 }
