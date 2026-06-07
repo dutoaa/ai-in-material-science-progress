@@ -1,9 +1,33 @@
 # AI materials science Progress Public Resources
 
-Generated: 2026-06-02
+Generated: 2026-06-07
 Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 
-## 1. Towards Automated Discovery: A Review of Generative Models, Multimodal Learning and Closed-Loop Workflows in Inverse Materials Design
+## 1. PolyGraphPy: A unified Python framework for atomistic simulation and machine learning-driven polymer design
+
+- Date: 2026-06-04
+- Category: Property Prediction
+- arXiv: https://arxiv.org/abs/2606.06415v1
+- PDF: https://arxiv.org/pdf/2606.06415v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-04-arxiv-polygraphpy_a_unified_python_framework_for_atomistic_simulation_and_machine_learning_drive_infographic.json
+
+## 2. Machine learning via artificial neural networks coupled with density functional theory and experiments for thermodynamic optimization of high-entropy alloys for hydrogen storage at room temperature
+
+- Date: 2026-06-03
+- Category: Materials Discovery
+- arXiv: https://arxiv.org/abs/2606.04803v1
+- PDF: https://arxiv.org/pdf/2606.04803v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-03-arxiv-machine_learning_via_artificial_neural_networks_coupled_with_density_functional_theory_and_infographic.json
+
+## 3. RamanGPT: Bidirectional Mapping Between Crystal Structures and Raman Spectra with Graph Neural Networks and Generative Transformers
+
+- Date: 2026-06-02
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2606.03764v1
+- PDF: https://arxiv.org/pdf/2606.03764v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-02-arxiv-ramangpt_bidirectional_mapping_between_crystal_structures_and_raman_spectra_with_graph_neu_infographic.json
+
+## 4. Towards Automated Discovery: A Review of Generative Models, Multimodal Learning and Closed-Loop Workflows in Inverse Materials Design
 
 - Date: 2026-06-01
 - Category: Materials Discovery
@@ -11,15 +35,39 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2606.02507v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-01-arxiv-towards_automated_discovery_a_review_of_generative_models_multimodal_learning_and_closed_l_infographic.json
 
-## 2. Latent Diffusion Pretraining for Crystal Property Prediction
+## 5. Optical Signature of Moiré Superlattices Formed by Twisted SrTiO$_3$ Membranes
 
-- Date: 2026-05-30
+- Date: 2026-06-04
 - Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2606.00776v1
-- PDF: https://arxiv.org/pdf/2606.00776v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-05-30-arxiv-latent_diffusion_pretraining_for_crystal_property_prediction_infographic.json
+- arXiv: https://arxiv.org/abs/2606.06289v1
+- PDF: https://arxiv.org/pdf/2606.06289v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-04-arxiv-optical_signature_of_moir_superlattices_formed_by_twisted_srtio_3_membranes_infographic.json
 
-## 3. Improving Combined Detection and Classification of TEM Defects via Mask-Conditioned Latent Diffusion Augmentation
+## 6. Autonomous heterogeneous catalyst discovery with a self-evolving multi-agent digital twin
+
+- Date: 2026-06-03
+- Category: Materials Discovery
+- arXiv: https://arxiv.org/abs/2606.05050v1
+- PDF: https://arxiv.org/pdf/2606.05050v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-03-arxiv-autonomous_heterogeneous_catalyst_discovery_with_a_self_evolving_multi_agent_digital_twin_infographic.json
+
+## 7. The KNN rollercoaster: from bulk ceramics to phase engineered wafer-scale thin films
+
+- Date: 2026-06-04
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2606.05974v1
+- PDF: https://arxiv.org/pdf/2606.05974v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-04-arxiv-the_knn_rollercoaster_from_bulk_ceramics_to_phase_engineered_wafer_scale_thin_films_infographic.json
+
+## 8. SLUSCHI-UP: A Web Infrastructure for SLUSCHI Melting-Temperature Calculations Using Universal Machine-Learning Interatomic Potentials
+
+- Date: 2026-06-03
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2606.04973v1
+- PDF: https://arxiv.org/pdf/2606.04973v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-03-arxiv-sluschi_up_a_web_infrastructure_for_sluschi_melting_temperature_calculations_using_univers_infographic.json
+
+## 9. Improving Combined Detection and Classification of TEM Defects via Mask-Conditioned Latent Diffusion Augmentation
 
 - Date: 2026-06-01
 - Category: Materials Discovery
@@ -27,138 +75,90 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2606.02532v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-01-arxiv-improving_combined_detection_and_classification_of_tem_defects_via_mask_conditioned_latent_infographic.json
 
-## 4. Prototype-Guided Latent Alignment for Data-Efficient Fine-Tuning of Molecular Foundation Models
+## 10. Size and solvent effects on cellulose transverse anisotropy and toughening design
 
-- Date: 2026-05-28
+- Date: 2026-06-03
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2606.05074v1
+- PDF: https://arxiv.org/pdf/2606.05074v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-03-arxiv-size_and_solvent_effects_on_cellulose_transverse_anisotropy_and_toughening_design_infographic.json
+
+## 11. Dynamic Multi-Pair Trading Strategy in Cryptocurrency Markets with Deep Reinforcement Learning
+
+- Date: 2026-06-03
 - Category: Materials Discovery
-- arXiv: https://arxiv.org/abs/2605.29969v1
-- PDF: https://arxiv.org/pdf/2605.29969v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-05-28-arxiv-prototype_guided_latent_alignment_for_data_efficient_fine_tuning_of_molecular_foundation_m_infographic.json
+- arXiv: https://arxiv.org/abs/2606.04574v1
+- PDF: https://arxiv.org/pdf/2606.04574v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-03-arxiv-dynamic_multi_pair_trading_strategy_in_cryptocurrency_markets_with_deep_reinforcement_lear_infographic.json
 
-## 5. Benchmark Dataset for Catalysis on 2D MXenes
-
-- Date: 2026-05-30
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2606.00794v1
-- PDF: https://arxiv.org/pdf/2606.00794v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-05-30-arxiv-benchmark_dataset_for_catalysis_on_2d_mxenes_infographic.json
-
-## 6. Data-Driven Spectral Prediction for Accelerating Large-Scale Electronic Structure Calculations
-
-- Date: 2026-05-29
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2606.00401v1
-- PDF: https://arxiv.org/pdf/2606.00401v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-05-29-arxiv-data_driven_spectral_prediction_for_accelerating_large_scale_electronic_structure_calculat_infographic.json
-
-## 7. Polaron Transport in TiO$_{2}$ from Machine Learning Molecular Dynamics
-
-- Date: 2026-06-01
-- Category: Energy Materials
-- arXiv: https://arxiv.org/abs/2606.01763v1
-- PDF: https://arxiv.org/pdf/2606.01763v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-01-arxiv-polaron_transport_in_tio_2_from_machine_learning_molecular_dynamics_infographic.json
-
-## 8. Hydrothermally-Assisted Sintering of Calcium Hydroxide Sputtering Targets: A Route to Quantum-Grade CaO Thin Films
+## 12. Optoelectronics and Magnetic properties calculation of RE$_2$MnNiO$_6$ (RE=La-Lu,Y) using Density Functional Theory
 
 - Date: 2026-06-01
 - Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2606.02466v1
-- PDF: https://arxiv.org/pdf/2606.02466v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-01-arxiv-hydrothermally_assisted_sintering_of_calcium_hydroxide_sputtering_targets_a_route_to_quant_infographic.json
+- arXiv: https://arxiv.org/abs/2606.02760v1
+- PDF: https://arxiv.org/pdf/2606.02760v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-01-arxiv-optoelectronics_and_magnetic_properties_calculation_of_re_2_mnnio_6_re_la_lu_y_using_densi_infographic.json
 
-## 9. A literature-grounded scientific reasoning framework for defect-engineered TiO$_{2}$ photocatalysts
+## 13. The Impact of Market Informedness on Market Makers' Profitability
 
-- Date: 2026-05-31
+- Date: 2026-06-04
+- Category: Materials Discovery
+- arXiv: https://arxiv.org/abs/2606.05882v1
+- PDF: https://arxiv.org/pdf/2606.05882v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-04-arxiv-the_impact_of_market_informedness_on_market_makers_profitability_infographic.json
+
+## 14. Why Fe doping kills photoluminescence in CsPbCl$_3$ but not in CsPbBr$_3$: Role of midgap Fe 3$d$ states and electron-phonon coupling
+
+- Date: 2026-06-03
 - Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2606.01089v1
-- PDF: https://arxiv.org/pdf/2606.01089v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-05-31-arxiv-a_literature_grounded_scientific_reasoning_framework_for_defect_engineered_tio_2_photocata_infographic.json
+- arXiv: https://arxiv.org/abs/2606.04714v1
+- PDF: https://arxiv.org/pdf/2606.04714v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-03-arxiv-why_fe_doping_kills_photoluminescence_in_cspbcl_3_but_not_in_cspbbr_3_role_of_midgap_fe_3_infographic.json
 
-## 10. Charting the thermodynamic stability of hybrid perovskite alloys with machine learning
+## 15. Mechanical bistability and hysteresis in graphene-CNT hybrid systems: from atomistic simulations to macroscale structural responses
 
-- Date: 2026-05-28
+- Date: 2026-06-03
 - Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2605.30012v1
-- PDF: https://arxiv.org/pdf/2605.30012v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-05-28-arxiv-charting_the_thermodynamic_stability_of_hybrid_perovskite_alloys_with_machine_learning_infographic.json
+- arXiv: https://arxiv.org/abs/2606.04504v1
+- PDF: https://arxiv.org/pdf/2606.04504v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-03-arxiv-mechanical_bistability_and_hysteresis_in_graphene_cnt_hybrid_systems_from_atomistic_simula_infographic.json
 
-## 11. Self-Revising Discovery Systems for Science: A Categorical Framework for Agentic Artificial Intelligence
+## 16. High-density, high-mobility ultrathin spin-polarized two-dimensional electron gas at the polar/polar LaVO$_3$/KTaO$_3$ interface: Insights from first-principles calculations
 
-- Date: 2026-05-31
+- Date: 2026-06-02
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2606.04252v1
+- PDF: https://arxiv.org/pdf/2606.04252v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-02-arxiv-high_density_high_mobility_ultrathin_spin_polarized_two_dimensional_electron_gas_at_the_po_infographic.json
+
+## 17. Ferroelectric brightening of spin forbidden dark excitons in a WSe2/hybrid perovskite heterostructure
+
+- Date: 2026-06-04
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2606.06128v1
+- PDF: https://arxiv.org/pdf/2606.06128v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-04-arxiv-ferroelectric_brightening_of_spin_forbidden_dark_excitons_in_a_wse2_hybrid_perovskite_hete_infographic.json
+
+## 18. Quantum annealing for materials
+
+- Date: 2026-06-02
 - Category: Materials Discovery
-- arXiv: https://arxiv.org/abs/2606.01444v1
-- PDF: https://arxiv.org/pdf/2606.01444v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-05-31-arxiv-self_revising_discovery_systems_for_science_a_categorical_framework_for_agentic_artificial_infographic.json
+- arXiv: https://arxiv.org/abs/2606.03405v1
+- PDF: https://arxiv.org/pdf/2606.03405v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-02-arxiv-quantum_annealing_for_materials_infographic.json
 
-## 12. Iterative Thermodynamic Augmentation of Spatially Resolved Analytic Microscopy for Fast-Diffusing Solutes
+## 19. Fast Organic Crystal Structure Prediction with Unit Cell Flow Matching
 
-- Date: 2026-06-01
-- Category: Materials Discovery
-- arXiv: https://arxiv.org/abs/2606.01793v1
-- PDF: https://arxiv.org/pdf/2606.01793v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-01-arxiv-iterative_thermodynamic_augmentation_of_spatially_resolved_analytic_microscopy_for_fast_di_infographic.json
+- Date: 2026-06-02
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2606.03199v1
+- PDF: https://arxiv.org/pdf/2606.03199v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-02-arxiv-fast_organic_crystal_structure_prediction_with_unit_cell_flow_matching_infographic.json
 
-## 13. General-purpose LLMs as Constrained Crystal Composition Generators
-
-- Date: 2026-05-29
-- Category: Materials Discovery
-- arXiv: https://arxiv.org/abs/2605.31495v1
-- PDF: https://arxiv.org/pdf/2605.31495v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-05-29-arxiv-general_purpose_llms_as_constrained_crystal_composition_generators_infographic.json
-
-## 14. Matter to Mechanism: A Benchmark for AI Co-Scientists in Materials and Battery Research
+## 20. Matter to Mechanism: A Benchmark for AI Co-Scientists in Materials and Battery Research
 
 - Date: 2026-06-01
 - Category: Materials Discovery
 - arXiv: https://arxiv.org/abs/2606.02258v1
 - PDF: https://arxiv.org/pdf/2606.02258v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-01-arxiv-matter_to_mechanism_a_benchmark_for_ai_co_scientists_in_materials_and_battery_research_infographic.json
-
-## 15. Exploring the Origins of Anti-Ambipolarity in BBL Polymer: Links to Redox Chemistry, Electronic Structure, and Structural Dynamics
-
-- Date: 2026-05-28
-- Category: Materials Discovery
-- arXiv: https://arxiv.org/abs/2605.30270v1
-- PDF: https://arxiv.org/pdf/2605.30270v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-05-28-arxiv-exploring_the_origins_of_anti_ambipolarity_in_bbl_polymer_links_to_redox_chemistry_electro_infographic.json
-
-## 16. Property Prediction of Stacked Bilayer Materials: A Multimodal Learning Approach
-
-- Date: 2026-05-31
-- Category: Property Prediction
-- arXiv: https://arxiv.org/abs/2606.01012v1
-- PDF: https://arxiv.org/pdf/2606.01012v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-05-31-arxiv-property_prediction_of_stacked_bilayer_materials_a_multimodal_learning_approach_infographic.json
-
-## 17. Machine Learning Surrogate Modeling for Homogenization of Hyperelastic Materials with Boolean Microstructures
-
-- Date: 2026-05-31
-- Category: Microstructure
-- arXiv: https://arxiv.org/abs/2606.00938v1
-- PDF: https://arxiv.org/pdf/2606.00938v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-05-31-arxiv-machine_learning_surrogate_modeling_for_homogenization_of_hyperelastic_materials_with_bool_infographic.json
-
-## 18. Autonomous scanning electrochemical cell microscopy enables rapid exploration of large compositionally complex material spaces
-
-- Date: 2026-05-30
-- Category: Materials Discovery
-- arXiv: https://arxiv.org/abs/2606.00779v1
-- PDF: https://arxiv.org/pdf/2606.00779v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-05-30-arxiv-autonomous_scanning_electrochemical_cell_microscopy_enables_rapid_exploration_of_large_com_infographic.json
-
-## 19. Using graph neural networks to predict many-body interactions in amorphous materials
-
-- Date: 2026-05-29
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2605.30822v1
-- PDF: https://arxiv.org/pdf/2605.30822v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-05-29-arxiv-using_graph_neural_networks_to_predict_many_body_interactions_in_amorphous_materials_infographic.json
-
-## 20. Realistic noise synthesis reduces bias and improves tissue microstructure estimation with supervised machine learning
-
-- Date: 2026-06-01
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2606.02044v1
-- PDF: https://arxiv.org/pdf/2606.02044v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-01-arxiv-realistic_noise_synthesis_reduces_bias_and_improves_tissue_microstructure_estimation_with_infographic.json
