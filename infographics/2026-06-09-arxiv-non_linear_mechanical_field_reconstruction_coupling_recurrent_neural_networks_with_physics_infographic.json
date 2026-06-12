@@ -1,24 +1,24 @@
 {
-  "key_insight": "A coupled LSTM + physics-informed GNN can reconstruct history-dependent local stress fields by combining temporal loading memory with spatial equilibrium constraints.",
-  "engineering_relevance": "This enables fast, mesh-agnostic surrogate stress prediction for non-linear microstructure simulations, reducing finite element cost while preserving field accuracy.",
+  "key_insight": "A coupled LSTM + physics-informed GNN can reconstruct non-linear, history-dependent local stress fields by separating time-path encoding from spatial field recovery.",
+  "engineering_relevance": "This enables fast, mesh-agnostic surrogate evaluation of elasto-plastic microstructures, reducing the cost of multi-scale simulations while preserving field-level accuracy.",
   "method": [
-    "LSTM encodes macroscopic stress-strain history into a compact hidden state.",
-    "Physics-informed GNN reconstructs the full spatial stress field on the microstructure mesh.",
-    "Training uses a weighted reconstruction loss plus a divergence-based equilibrium penalty with linear warm-up."
+    "LSTM encodes macroscopic stress-strain loading history into a compact latent state",
+    "Physics-informed GNN/MeshGraphNet reconstructs spatial stress fields on the microstructure mesh",
+    "Training uses a weighted data-loss plus discrete divergence equilibrium penalty with linear warm-up"
   ],
-  "evidence_signal": "Trained on 10,000 non-proportional loading paths for a periodic plate-with-a-hole elasto-plastic microstructure, the model achieved about a three-orders-of-magnitude speedup over FE and 1.9% cumulative error on sequences twice as long as training.",
-  "watch_item": "Performance depends on careful balancing of data loss and physics penalty; fixed-weight formulations may fail to converge in the elasto-plastic regime.",
+  "evidence_signal": "Trained on 10,000 non-proportional loading paths for a periodic plate-with-a-hole and achieved about 3 orders of magnitude speedup over finite elements, with 1.9% cumulative error on sequences twice as long as training.",
+  "watch_item": "The equilibrium penalty weighting and hidden-state interpretation may be sensitive to training setup, and generalization should still be validated for different materials, boundary conditions, and stronger nonlinearity.",
   "hashtags": [
     "#MachineLearning",
-    "#PhysicsInformedAI",
-    "#GraphNeuralNetworks",
-    "#MaterialsScience",
-    "#FiniteElement"
+    "#PhysicsInformedGNN",
+    "#Elastoplasticity",
+    "#DigitalTwins",
+    "#ComputationalMechanics"
   ],
   "paper_id": "2026-06-09-arxiv-non_linear_mechanical_field_reconstruction_coupling_recurrent_neural_networks_with_physics",
   "paper_title": "Non-linear mechanical field reconstruction coupling recurrent neural networks with physics-informed graph neural networks",
   "paper_date": "2026-06-09",
   "paper_category": "Crystal and Structure",
-  "generated_at": "2026-06-11T14:34:30",
+  "generated_at": "2026-06-12T14:09:57",
   "generator": "openai"
 }
