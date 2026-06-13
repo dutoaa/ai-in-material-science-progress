@@ -24,29 +24,29 @@
         "url": "https://arxiv.org/pdf/2606.12811v1"
       }
     ],
-    "score": 76,
+    "score": 81,
     "infographic": {
-      "key_insight": "PBE-trained machine-learning interatomic potentials can wrongly predict HfO2’s ground state, overstabilizing a low-density I41/amd phase instead of the experimentally observed monoclinic P21/c structure.",
-      "engineering_relevance": "This shows that ML-based crystal and phase-transition predictions can inherit exchange-correlation functional errors, affecting materials screening and ferroelectric pathway design.",
+      "key_insight": "PBE-based machine-learning potentials can incorrectly predict HfO2’s ground state, overstabilizing a low-density I41/amd phase over the experimentally observed monoclinic P21/c structure.",
+      "engineering_relevance": "This warns that MLIPs trained on PBE data may give unreliable phase stability and switching barriers for oxide ceramics, especially when large lattice relaxations are involved.",
       "method": [
-        "Compared PBE-based MLIP predictions against known HfO2 phase stability.",
-        "Benchmarked against different DFT functionals to trace the source of the error.",
-        "Examined ferroelectric switching paths and energy barriers under large lattice relaxations."
+        "Compare HfO2 phase energies across PBE-based MLIPs and foundation models",
+        "Benchmark against multiple DFT functionals, including PBE, PBEsol, and LDA",
+        "Analyze low-energy crystal structures and ferroelectric switching paths"
       ],
-      "evidence_signal": "The abstract reports that multiple PBE-based models, including NequIP-OAM-L and MatterSim-v1-5M, reproduce the same incorrect phase ordering seen from PBE calculations.",
-      "watch_item": "Do not assume a PBE-trained MLIP is reliable for phase stability or barrier predictions when low-density sixfold-coordinated structures are involved.",
+      "evidence_signal": "The abstract reports that both a PBE-based MLIP and widely used foundation models predict I41/amd as lower in energy than P21/c, and this error is traced back to PBE energetics.",
+      "watch_item": "Do not assume a PBE-trained MLIP is reliable for crystal ground states or transition barriers without cross-checking against more robust functionals or experimental phase data.",
       "hashtags": [
         "#MachineLearningPotentials",
         "#HfO2",
         "#DFT",
-        "#PhaseStability",
-        "#ComputationalMaterials"
+        "#CrystalStructure",
+        "#MaterialsSimulation"
       ],
       "paper_id": "2026-06-11-arxiv-a_wrong_ground_state_structure_of_hfo_2_predicted_by_machine_learning_interatomic_potentia",
       "paper_title": "A wrong ground-state structure of HfO$_2$ predicted by machine-learning interatomic potentials based on the PBE functional",
       "paper_date": "2026-06-11",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-06-13T12:24:16",
+      "generated_at": "2026-06-12T14:09:43",
       "generator": "openai"
     }
   },
@@ -75,29 +75,29 @@
         "url": "https://arxiv.org/pdf/2606.13414v1"
       }
     ],
-    "score": 72,
+    "score": 77,
     "infographic": {
-      "key_insight": "A physics-informed CNN-LSTM can forecast long-term photoluminescence decay in metal halide perovskites from early degradation signals, enabling stability prediction for unseen samples.",
-      "engineering_relevance": "This could substantially shorten materials qualification cycles by replacing some prolonged heat-and-light ageing tests with data-driven forecasts that remain interpretable.",
+      "key_insight": "A physics-informed CNN-LSTM can forecast long-term photoluminescence degradation of metal halide perovskites from early time-series data, even for unseen samples.",
+      "engineering_relevance": "This enables faster, lower-cost stability screening of candidate semiconductors, helping materials engineers prioritize robust perovskites earlier in the discovery pipeline.",
       "method": [
-        "Collected 167 metal halide perovskite samples with varied compositions and crystallinities.",
-        "Stressed samples under elevated temperature and illumination while recording more than 86,000 PL spectra.",
-        "Converted spectra into physics-informed features and trained a hybrid CNN-LSTM to predict future PL intensity."
+        "Collected a diverse dataset of 167 perovskite samples under heat and illumination stress.",
+        "Featurized >86k PL spectra with a physics-informed representation.",
+        "Trained a hybrid CNN-LSTM to predict future PL intensity and generalize across material groups."
       ],
-      "evidence_signal": "The model was evaluated on samples unseen during training and is reported to outperform baseline benchmarks while generalizing across material groups.",
-      "watch_item": "Forecast reliability may depend on the representativeness of the training dataset and on whether new materials fall within the same degradation regimes.",
+      "evidence_signal": "The model was evaluated on unseen samples and reportedly outperformed baseline benchmarks while maintaining explainability through physics-based features.",
+      "watch_item": "Forecast accuracy may depend on how well the training data cover the full range of compositions, crystallinities, and degradation behaviors encountered in deployment.",
       "hashtags": [
-        "#MaterialsDiscovery",
+        "#MaterialsInformatics",
         "#Perovskites",
+        "#PhysicsInformedAI",
         "#TimeSeriesForecasting",
-        "#PhysicsInformedML",
         "#MachineLearning"
       ],
       "paper_id": "2026-06-11-arxiv-physics_informed_time_series_forecasting_of_perovskite_photoluminescence_stability",
       "paper_title": "Physics-informed time-series forecasting of perovskite photoluminescence stability",
       "paper_date": "2026-06-11",
       "paper_category": "Materials Discovery",
-      "generated_at": "2026-06-13T12:24:18",
+      "generated_at": "2026-06-12T14:09:46",
       "generator": "openai"
     }
   },
@@ -126,21 +126,21 @@
         "url": "https://arxiv.org/pdf/2606.13561v1"
       }
     ],
-    "score": 68,
+    "score": 73,
     "infographic": {
-      "key_insight": "A lone-pair-rich hybrid perovskite, GuaPbI3, creates a chemically soft lattice that strongly suppresses phonon transport and yields ultralow thermal conductivity.",
-      "engineering_relevance": "This points to a materials-design route for thermoelectric coolers and thermal insulators that targets lattice softness rather than relying only on nanostructuring.",
+      "key_insight": "A lone-pair-rich hybrid perovskite can be engineered to make the lattice unusually soft, suppressing phonon heat flow to achieve ultralow thermal conductivity.",
+      "engineering_relevance": "This offers a chemistry-first route to low-thermal-conductivity materials for thermoelectric cooling and thermal insulation without relying only on nanoscale structuring.",
       "method": [
-        "Physics-guided symbolic regression to identify lone-pair-dominated chemistries",
-        "Mechanochemical synthesis of crystalline GuaPbI3",
-        "DFT plus transport and impedance analysis to link structure, phonons, and charge transport"
+        "Physics-guided symbolic regression and machine learning to identify a lone-pair-dominated composition space.",
+        "Mechanochemical synthesis of the selected candidate, GuaPbI3.",
+        "Thermal, electrical, impedance, and DFT analyses to link structure, phonons, and charge transport."
       ],
-      "evidence_signal": "The abstract reports room-temperature thermal conductivity of 0.088 W m^-1 K^-1, with bulk-dominated, bias-dependent electrical conduction confirmed by impedance spectroscopy.",
-      "watch_item": "The very low thermal conductivity does not guarantee practical device performance, since carrier transport appears sensitive to chemical potential and may be morphology- or bias-dependent.",
+      "evidence_signal": "The synthesized GuaPbI3 showed room-temperature thermal conductivity of 0.088 W m^-1 K^-1, with impedance and electrical measurements indicating bulk-dominated, bias-dependent conduction.",
+      "watch_item": "The electronically accessible transport appears sensitive to bias and chemical potential, so device performance may be highly morphology- and operating-condition-dependent.",
       "hashtags": [
         "#Thermoelectrics",
-        "#Perovskites",
-        "#ThermalConductivity",
+        "#HybridPerovskite",
+        "#LowThermalConductivity",
         "#MachineLearningMaterials",
         "#LatticeSoftness"
       ],
@@ -148,7 +148,7 @@
       "paper_title": "Lone-Pair-Induced Lattice Softness Enables Ultralow Thermal Conductivity in Hybrid Organic-Inorganic Perovskite GuaPbI$_3$",
       "paper_date": "2026-06-11",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-06-13T12:24:21",
+      "generated_at": "2026-06-12T14:09:49",
       "generator": "openai"
     }
   },
@@ -177,29 +177,29 @@
         "url": "https://arxiv.org/pdf/2606.13060v1"
       }
     ],
-    "score": 67,
+    "score": 72,
     "infographic": {
-      "key_insight": "A transformer-based transfer learning pipeline can predict key solvent-descriptor properties with uncertainty estimates, enabling rapid screening of greener solvent substitutes from very limited data.",
-      "engineering_relevance": "This provides a practical, high-throughput decision tool for sustainable materials and process design in photovoltaics, batteries, and catalysis where solvent selection strongly impacts performance and environmental footprint.",
+      "key_insight": "A transfer-learned, uncertainty-aware transformer can predict key solvent descriptors from little data, enabling greener solvent screening and substitution.",
+      "engineering_relevance": "The tool helps materials and chemistry teams rapidly rank solvent alternatives for photovoltaics, batteries, and catalysis, supporting high-throughput discovery workflows.",
       "method": [
-        "Pretrain on QM9 molecular targets, then transfer to solvent-property prediction with minimal task-specific data.",
-        "Add uncertainty quantification so users can judge prediction confidence during screening.",
-        "Deploy the model as an easy-to-integrate ranking tool for solvent substitution and candidate discovery."
+        "Pre-train on QM9 molecular targets, then transfer to solvent-property prediction with minimal new data.",
+        "Add uncertainty quantification so users can assess prediction confidence before selecting candidates.",
+        "Deploy a customizable screening pipeline for ranking green solvent substitutes."
       ],
-      "evidence_signal": "The abstract reports strong performance on well-studied targets like Hansen solubility parameters and dielectric constant, and also on sparse-data targets such as Gutmann donor/acceptor numbers, while rediscovering known green solvents and suggesting new ones.",
-      "watch_item": "Because performance depends on limited training data and task transferability, predictions should be validated experimentally before adopting candidates in process-critical applications.",
+      "evidence_signal": "The abstract reports strong performance on well-studied targets like Hansen solubility parameters and dielectric constant, and also on sparse-data targets such as Gutmann donor and acceptor numbers.",
+      "watch_item": "Model reliability will depend on the similarity of new solvents to the training domain, so uncertainty estimates should be checked before experimental adoption.",
       "hashtags": [
         "#MaterialsDiscovery",
         "#GreenChemistry",
         "#TransferLearning",
         "#UncertaintyQuantification",
-        "#SolventScreening"
+        "#MachineLearning"
       ],
       "paper_id": "2026-06-11-arxiv-a_green_solvent_screening_tool_for_emerging_materials_via_uncertainty_aware_transformer_en",
       "paper_title": "A green solvent screening tool for emerging materials via uncertainty aware, transformer enhanced transfer learning",
       "paper_date": "2026-06-11",
       "paper_category": "Materials Discovery",
-      "generated_at": "2026-06-13T12:24:23",
+      "generated_at": "2026-06-12T14:09:52",
       "generator": "openai"
     }
   },
@@ -228,29 +228,185 @@
         "url": "https://arxiv.org/pdf/2606.12860v1"
       }
     ],
-    "score": 67,
+    "score": 72,
     "infographic": {
-      "key_insight": "Ultrafast high-temperature sintering can lock metastable zirconia phases into copper cermets while preserving a fine, homogeneous microstructure.",
-      "engineering_relevance": "This enables stronger, tougher copper-based composites by combining transformation-enabled ceramics with ductile metals without the usual grain-growth penalty.",
+      "key_insight": "Ultrafast high-temperature sintering can lock in metastable zirconia phases inside copper while avoiding the grain coarsening and matrix relaxation typical of conventional sintering.",
+      "engineering_relevance": "This enables stronger, tougher copper-based cermets with refined microstructures, opening pathways for transformation toughening, self-healing, and crack-sensing components.",
       "method": [
-        "Joule-heated zirconia-copper cermets to ~900 °C at ~100 °C/s",
-        "Used only a 20 s hold to reach densification rapidly",
-        "Leveraged kinetics to favor metastable phase retention and suppress copper coarsening"
+        "Joule-heated ultrafast sintering to ~900 °C at about 100 °C/s",
+        "Very short thermal dwell: 20 s hold",
+        "Promotes semi-thermal austenite formation while limiting copper grain growth"
       ],
-      "evidence_signal": "The abstract reports up to 50 wt% metastable phase retained at room temperature in a fine-grained, homogeneous cermet structure.",
-      "watch_item": "The approach may be sensitive to precise thermal control and scale-up, since the phase balance depends on very rapid heating and short dwell times.",
+      "evidence_signal": "The abstract reports cermets with up to 50 wt% metastable austenite retained at room temperature in a fine-grained, homogeneous microstructure.",
+      "watch_item": "Phase retention and microstructure control may depend strongly on precise heating rates, dwell time, and sample geometry, which could complicate scale-up.",
       "hashtags": [
-        "#materialsScience",
-        "#cermets",
-        "#zirconia",
-        "#rapidSintering",
-        "#microstructure"
+        "#Cermet",
+        "#Zirconia",
+        "#Copper",
+        "#UltrafastSintering",
+        "#MetastablePhases"
       ],
       "paper_id": "2026-06-11-arxiv-leveraging_rapid_sintering_to_retain_metastable_zirconia_in_copper",
       "paper_title": "Leveraging rapid sintering to retain metastable zirconia in copper",
       "paper_date": "2026-06-11",
       "paper_category": "Microstructure",
-      "generated_at": "2026-06-13T12:24:26",
+      "generated_at": "2026-06-12T14:09:54",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-09-arxiv-non_linear_mechanical_field_reconstruction_coupling_recurrent_neural_networks_with_physics",
+    "arxiv_id": "2606.10909v1",
+    "date": "2026-06-09",
+    "title": "Non-linear mechanical field reconstruction coupling recurrent neural networks with physics-informed graph neural networks",
+    "authors": "Manuel Ricardo Guevara Garban, Yves Chemisky, Étienne Prulière, Michaël Clément, Martin Abendroth, Björn Kiefer",
+    "abstract": "Reconstructing local stress fields in heterogeneous microstructures under non-linear, history-dependent loading remains a major computational bottleneck in multi-scale simulations. We propose a coupled LSTM-GNN framework that links the temporal and spatial aspects of local stress field reconstruction. A Long Short-Term Memory network encodes macroscopic stress-strain sequences into a compact hidden state that captures the path-dependent constitutive response, while a physics-informed Graph Neural Network reconstructs the spatially-resolved stress field at each time step. We introduce a relative weighting strategy with linear warm-up to balance the data-driven reconstruction loss and a discrete divergence-based equilibrium penalty. This resolves the scale mismatch that prevents fixed-weight formulations from converging in the elasto-plastic regime. The model is trained on 10,000 non-proportional loading paths applied to a periodic plate-with-a-hole microstructure and von Mises elasto-plasticity. The model achieves three orders of magnitude speedup over finite element simulations and generalizes to loading sequences twice the training length, with 1.9% cumulative error. Because the graph relies on mesh connectivity instead of the specific element type, one trained surrogate can be applied directly without retraining to meshes with different element types and to both coarser and finer resolutions, while in all cases reproducing the high-fidelity quad-element FE field used during training. Indeed, the message passing characteristics inherent to GNN and MeshGraphNet architecture render the model mesh-agnostic. Analysis of the LSTM hidden states suggests a low-dimensional structure related to the internal state variables of the constitutive model.",
+    "category": "Crystal and Structure",
+    "source": "arXiv",
+    "published": "2026-06-09T14:20:39Z",
+    "updated": "2026-06-09T14:20:39Z",
+    "primary_category": "cs.CE",
+    "categories": [
+      "cs.CE",
+      "cs.LG",
+      "physics.comp-ph"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2606.10909v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2606.10909v1"
+      }
+    ],
+    "score": 69,
+    "infographic": {
+      "key_insight": "A coupled LSTM + physics-informed GNN can reconstruct non-linear, history-dependent local stress fields by separating time-path encoding from spatial field recovery.",
+      "engineering_relevance": "This enables fast, mesh-agnostic surrogate evaluation of elasto-plastic microstructures, reducing the cost of multi-scale simulations while preserving field-level accuracy.",
+      "method": [
+        "LSTM encodes macroscopic stress-strain loading history into a compact latent state",
+        "Physics-informed GNN/MeshGraphNet reconstructs spatial stress fields on the microstructure mesh",
+        "Training uses a weighted data-loss plus discrete divergence equilibrium penalty with linear warm-up"
+      ],
+      "evidence_signal": "Trained on 10,000 non-proportional loading paths for a periodic plate-with-a-hole and achieved about 3 orders of magnitude speedup over finite elements, with 1.9% cumulative error on sequences twice as long as training.",
+      "watch_item": "The equilibrium penalty weighting and hidden-state interpretation may be sensitive to training setup, and generalization should still be validated for different materials, boundary conditions, and stronger nonlinearity.",
+      "hashtags": [
+        "#MachineLearning",
+        "#PhysicsInformedGNN",
+        "#Elastoplasticity",
+        "#DigitalTwins",
+        "#ComputationalMechanics"
+      ],
+      "paper_id": "2026-06-09-arxiv-non_linear_mechanical_field_reconstruction_coupling_recurrent_neural_networks_with_physics",
+      "paper_title": "Non-linear mechanical field reconstruction coupling recurrent neural networks with physics-informed graph neural networks",
+      "paper_date": "2026-06-09",
+      "paper_category": "Crystal and Structure",
+      "generated_at": "2026-06-12T14:09:57",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-11-arxiv-easynano_rapid_epitope_targeted_nanobody_cdr_design_via_differentiable_distogram_optimizat",
+    "arxiv_id": "2606.12772v1",
+    "date": "2026-06-11",
+    "title": "EasyNano: rapid epitope-targeted nanobody CDR design via differentiable distogram optimization with ESMFold2",
+    "authors": "Yue Hu, Wanyu Cheng, Junqing Wang, Yingchao Liu",
+    "abstract": "Computational design of nanobodies that bind user-specified protein epitopes could transform therapeutic development, but current methods either rely on stochastic sampling requiring days of GPU computation or inverse folding approaches unable to target epitopes directly. Here we present EasyNano, a practical pipeline for rapid, epitope-targeted nanobody complementarity-determining region (CDR) design that operates in approximately 10-20 minutes on a high-end personal workstation. EasyNano optimizes CDR residue logits via gradient descent through the ESMFold2 pairwise distance distogram, using the lightweight ESMFold2-Fast model (721M) as a differentiable oracle guided by a composite loss including a dedicated epitope proximity term. A full ESMFold2 (1.3B) CA-coordinate structure prior prevents framework pose drift. The wild-type logit initialization bias emerges as a critical practical parameter controlling CDR mutability. Across six target-framework pairs spanning self-recovery and de novo design scenarios, EasyNano improves ipTM by up to +0.559 -- from 0.143 to 0.702 (Ty1/RBD) -- and achieves a 4.6-fold improvement (ipTM 0.117 to 0.538) on a manually docked AQP4-targeting framework, while preserving ipTM on already-strong binders. Random CDR baselines (n=30 per target) confirm statistical significance (5.7 sigma above random mean for Ty1). Multi-seed analysis reveals diverse local minima, underscoring the importance of replicate runs. Kabsch cross-validation against crystal structures confirms that designed CDRs preserve the framework pose basin. EasyNano demonstrates that ESMFold2-based differentiable optimization provides a fast, practical, and epitope-specific approach to nanobody CDR design.",
+    "category": "Crystal and Structure",
+    "source": "arXiv",
+    "published": "2026-06-11T00:26:45Z",
+    "updated": "2026-06-11T00:26:45Z",
+    "primary_category": "q-bio.QM",
+    "categories": [
+      "q-bio.QM"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2606.12772v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2606.12772v1"
+      }
+    ],
+    "score": 68,
+    "infographic": {
+      "key_insight": "EasyNano turns epitope-targeted nanobody CDR design into a fast gradient-based optimization problem by backpropagating through ESMFold2 distograms and a proximity-aware loss.",
+      "engineering_relevance": "This enables practical, workstation-scale design of binders against user-chosen protein epitopes in minutes rather than days, making targeted biologics design more accessible.",
+      "method": [
+        "Initialize CDR residue logits and optimize them with gradient descent",
+        "Use ESMFold2-Fast as a differentiable distogram oracle plus an epitope proximity loss",
+        "Add full ESMFold2 CA-coordinate priors to keep the nanobody framework pose stable"
+      ],
+      "evidence_signal": "Across six target-framework cases, EasyNano improved ipTM by up to 0.559, including Ty1/RBD from 0.143 to 0.702, and showed statistically significant gains over 30 random CDR baselines.",
+      "watch_item": "Performance depends strongly on wild-type logit initialization and multi-seed runs, so local minima and run-to-run variability remain important practical concerns.",
+      "hashtags": [
+        "#NanobodyDesign",
+        "#DifferentiableOptimization",
+        "#ESMFold2",
+        "#ProteinEngineering",
+        "#ComputationalBiology"
+      ],
+      "paper_id": "2026-06-11-arxiv-easynano_rapid_epitope_targeted_nanobody_cdr_design_via_differentiable_distogram_optimizat",
+      "paper_title": "EasyNano: rapid epitope-targeted nanobody CDR design via differentiable distogram optimization with ESMFold2",
+      "paper_date": "2026-06-11",
+      "paper_category": "Crystal and Structure",
+      "generated_at": "2026-06-12T14:09:59",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-10-arxiv-from_loss_diagnosis_to_rational_design_a_unified_analytical_model_for_photoelectrochemical",
+    "arxiv_id": "2606.12641v1",
+    "date": "2026-06-10",
+    "title": "From Loss Diagnosis to Rational Design: A Unified Analytical Model for Photoelectrochemical Cells",
+    "authors": "Ziyan Pan, Giulia Tagliabue",
+    "abstract": "Photoelectrochemical (PEC) cells are a compelling route to solar-driven chemical energy storage and feedstock synthesis, yet their deployment is hindered by coupled losses spanning light absorption, carrier transport, interfacial charge transfer, and semiconductor-electrolyte matching. Existing models address these losses in an architecture-specific manner and fall short of quantitative experimental diagnosis or actionable design guidance. Here, we introduce a unified loss-analysis framework applicable to both built-in junction (BIJ) and semiconductor-electrolyte junction (SEJ) photoelectrodes within a consistent set of physically meaningful parameters. The framework delivers current-voltage curves and efficiency metrics under ideal and real conditions, constructing efficiency maps to delineate theoretical limits and material-selection windows. Critically, by fitting experimental current-voltage data, it enables quantitative energy-loss decomposition into thermodynamic, optical, recombination, and interfacial contributions, pinpointing performance bottlenecks in real devices and mapping them directly onto optimization strategies such as co-catalyst integration or nanostructuring. Energy flows are visualized through Sankey diagrams, providing an intuitive picture of how incident solar energy is absorbed, dissipated, or converted into chemical output. Validated against state-of-the-art literature results spanning solar water splitting, CO2 reduction, NH3 synthesis, and solar redox flow batteries, the framework further enables systematic comparison of photovoltaic-grade absorbers (e.g., Si, perovskites) with intermediate-bandgap semiconductors (e.g., hematite, BiVO4), identifying key factors limiting each material class. Together, these capabilities support a paradigm shift from empirical optimization to mechanism-informed rational design of high-efficiency PEC energy-conversion systems.",
+    "category": "Energy Materials",
+    "source": "arXiv",
+    "published": "2026-06-10T20:05:42Z",
+    "updated": "2026-06-10T20:05:42Z",
+    "primary_category": "physics.chem-ph",
+    "categories": [
+      "physics.chem-ph",
+      "cond-mat.mtrl-sci"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2606.12641v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2606.12641v1"
+      }
+    ],
+    "score": 68,
+    "infographic": {
+      "key_insight": "A single unified analytical model can both diagnose where photoelectrochemical cells lose energy and translate those losses into concrete design improvements across different device architectures.",
+      "engineering_relevance": "It gives engineers a quantitative way to compare materials and structures, fit experimental I–V curves, and prioritize optimizations such as better interfaces, co-catalysts, and nanostructuring.",
+      "method": [
+        "Unifies built-in junction and semiconductor-electrolyte junction PEC models under one physically meaningful parameter set.",
+        "Generates ideal and real current–voltage curves, efficiency maps, and Sankey energy-flow diagrams.",
+        "Fits experimental I–V data to decompose losses into thermodynamic, optical, recombination, and interfacial terms."
+      ],
+      "evidence_signal": "The framework was validated against literature results across solar water splitting, CO2 reduction, NH3 synthesis, and solar redox flow batteries, including comparisons for Si, perovskites, hematite, and BiVO4.",
+      "watch_item": "Because the model relies on fitting and parameter interpretation, its recommendations depend on the quality and completeness of experimental I–V data and the validity of the assumed physical losses.",
+      "hashtags": [
+        "#Photoelectrochemistry",
+        "#EnergyMaterials",
+        "#SolarFuel",
+        "#DeviceModeling",
+        "#MaterialsDesign"
+      ],
+      "paper_id": "2026-06-10-arxiv-from_loss_diagnosis_to_rational_design_a_unified_analytical_model_for_photoelectrochemical",
+      "paper_title": "From Loss Diagnosis to Rational Design: A Unified Analytical Model for Photoelectrochemical Cells",
+      "paper_date": "2026-06-10",
+      "paper_category": "Energy Materials",
+      "generated_at": "2026-06-12T14:10:01",
       "generator": "openai"
     }
   },
@@ -284,15 +440,15 @@
     ],
     "score": 67,
     "infographic": {
-      "key_insight": "A SCAPS-1D + machine-learning workflow can efficiently rank 125 perovskite solar-cell architectures and uncover high-efficiency, lead-free double-perovskite designs.",
-      "engineering_relevance": "The study provides practical layer-selection rules for optimizing ETL, absorber, and HTL choices in multilayer solar cells to boost power conversion efficiency.",
+      "key_insight": "A SCAPS-1D plus machine-learning workflow can rapidly rank multilayer perovskite solar-cell stacks and uncover high-efficiency, lead-free architectures without exhaustive screening.",
+      "engineering_relevance": "The study provides a practical design map for choosing ETL, absorber, and HTL combinations to boost power conversion efficiency while supporting environmentally friendly perovskite device development.",
       "method": [
-        "Simulated 125 ETL/absorber/HTL combinations with SCAPS-1D.",
-        "Trained an ML model on a subset to predict PCE for unexplored stacks.",
-        "Used SHAP to identify the most influential descriptors and verify top candidates with full device simulations."
+        "Simulated 125 ETL/absorber/HTL architectures with SCAPS-1D.",
+        "Trained an ML model on a representative subset to predict PCE for unexplored stacks.",
+        "Used SHAP to identify the most influential descriptors and validate top candidates with full device simulations."
       ],
-      "evidence_signal": "Leave-One-Group-Out cross-validation showed strong rank-correlation performance, and the best verified devices reached 28.85% PCE (Cs2AgBiBr6) and 28.62% PCE (Cs2AgInBr6).",
-      "watch_item": "The ML guidance depends on the simulated design space and model training set, so transfer to new materials or fabrication conditions still needs experimental validation.",
+      "evidence_signal": "Leave-One-Group-Out cross-validation showed reliable ranking performance, and the best verified devices reached 28.85% PCE for FTO/TiO2/Cs2AgBiBr6/NiO/Ag and 28.62% for FTO/SnO2/Cs2AgInBr6/NiO/Ag.",
+      "watch_item": "Predictions depend on the quality and coverage of the SCAPS training subset, so out-of-distribution material stacks may still require full physical validation.",
       "hashtags": [
         "#PerovskiteSolarCells",
         "#MachineLearning",
@@ -304,163 +460,7 @@
       "paper_title": "Multilayer Screening of Double and Conventional Perovskite Solar Cells Using SCAPS-1D and Machine Learning: Optimization of ETL, HTL, and Absorber for High-Efficiency Architectures",
       "paper_date": "2026-06-10",
       "paper_category": "Materials Discovery",
-      "generated_at": "2026-06-13T12:24:28",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-06-09-arxiv-non_linear_mechanical_field_reconstruction_coupling_recurrent_neural_networks_with_physics",
-    "arxiv_id": "2606.10909v1",
-    "date": "2026-06-09",
-    "title": "Non-linear mechanical field reconstruction coupling recurrent neural networks with physics-informed graph neural networks",
-    "authors": "Manuel Ricardo Guevara Garban, Yves Chemisky, Étienne Prulière, Michaël Clément, Martin Abendroth, Björn Kiefer",
-    "abstract": "Reconstructing local stress fields in heterogeneous microstructures under non-linear, history-dependent loading remains a major computational bottleneck in multi-scale simulations. We propose a coupled LSTM-GNN framework that links the temporal and spatial aspects of local stress field reconstruction. A Long Short-Term Memory network encodes macroscopic stress-strain sequences into a compact hidden state that captures the path-dependent constitutive response, while a physics-informed Graph Neural Network reconstructs the spatially-resolved stress field at each time step. We introduce a relative weighting strategy with linear warm-up to balance the data-driven reconstruction loss and a discrete divergence-based equilibrium penalty. This resolves the scale mismatch that prevents fixed-weight formulations from converging in the elasto-plastic regime. The model is trained on 10,000 non-proportional loading paths applied to a periodic plate-with-a-hole microstructure and von Mises elasto-plasticity. The model achieves three orders of magnitude speedup over finite element simulations and generalizes to loading sequences twice the training length, with 1.9% cumulative error. Because the graph relies on mesh connectivity instead of the specific element type, one trained surrogate can be applied directly without retraining to meshes with different element types and to both coarser and finer resolutions, while in all cases reproducing the high-fidelity quad-element FE field used during training. Indeed, the message passing characteristics inherent to GNN and MeshGraphNet architecture render the model mesh-agnostic. Analysis of the LSTM hidden states suggests a low-dimensional structure related to the internal state variables of the constitutive model.",
-    "category": "Crystal and Structure",
-    "source": "arXiv",
-    "published": "2026-06-09T14:20:39Z",
-    "updated": "2026-06-09T14:20:39Z",
-    "primary_category": "cs.CE",
-    "categories": [
-      "cs.CE",
-      "cs.LG",
-      "physics.comp-ph"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2606.10909v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2606.10909v1"
-      }
-    ],
-    "score": 64,
-    "infographic": {
-      "key_insight": "A coupled LSTM plus physics-informed GNN can reconstruct nonlinear, history-dependent local stress fields by separating temporal path dependence from spatial field inference.",
-      "engineering_relevance": "This enables fast surrogate stress prediction for heterogeneous microstructures, cutting finite-element runtime by orders of magnitude while retaining accuracy across different mesh resolutions and element types.",
-      "method": [
-        "LSTM encodes the macroscopic stress-strain loading history into a compact hidden state.",
-        "Physics-informed GNN/MeshGraphNet reconstructs the spatial stress field on the microstructure graph at each time step.",
-        "A warm-up weighting scheme balances reconstruction loss with a discrete divergence-based equilibrium penalty."
-      ],
-      "evidence_signal": "Trained on 10,000 non-proportional loading paths for a periodic plate-with-a-hole microstructure, the model achieves about 1000× speedup over FE and generalizes to sequences twice as long with 1.9% cumulative error.",
-      "watch_item": "Performance depends on the quality of mesh connectivity and physics loss balancing, so training stability and transfer to new material laws or markedly different geometries may require re-tuning.",
-      "hashtags": [
-        "#MaterialsInformatics",
-        "#GraphNeuralNetworks",
-        "#PhysicsInformedML",
-        "#ElastoPlasticity",
-        "#SurrogateModeling"
-      ],
-      "paper_id": "2026-06-09-arxiv-non_linear_mechanical_field_reconstruction_coupling_recurrent_neural_networks_with_physics",
-      "paper_title": "Non-linear mechanical field reconstruction coupling recurrent neural networks with physics-informed graph neural networks",
-      "paper_date": "2026-06-09",
-      "paper_category": "Crystal and Structure",
-      "generated_at": "2026-06-13T12:24:31",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-06-11-arxiv-easynano_rapid_epitope_targeted_nanobody_cdr_design_via_differentiable_distogram_optimizat",
-    "arxiv_id": "2606.12772v1",
-    "date": "2026-06-11",
-    "title": "EasyNano: rapid epitope-targeted nanobody CDR design via differentiable distogram optimization with ESMFold2",
-    "authors": "Yue Hu, Wanyu Cheng, Junqing Wang, Yingchao Liu",
-    "abstract": "Computational design of nanobodies that bind user-specified protein epitopes could transform therapeutic development, but current methods either rely on stochastic sampling requiring days of GPU computation or inverse folding approaches unable to target epitopes directly. Here we present EasyNano, a practical pipeline for rapid, epitope-targeted nanobody complementarity-determining region (CDR) design that operates in approximately 10-20 minutes on a high-end personal workstation. EasyNano optimizes CDR residue logits via gradient descent through the ESMFold2 pairwise distance distogram, using the lightweight ESMFold2-Fast model (721M) as a differentiable oracle guided by a composite loss including a dedicated epitope proximity term. A full ESMFold2 (1.3B) CA-coordinate structure prior prevents framework pose drift. The wild-type logit initialization bias emerges as a critical practical parameter controlling CDR mutability. Across six target-framework pairs spanning self-recovery and de novo design scenarios, EasyNano improves ipTM by up to +0.559 -- from 0.143 to 0.702 (Ty1/RBD) -- and achieves a 4.6-fold improvement (ipTM 0.117 to 0.538) on a manually docked AQP4-targeting framework, while preserving ipTM on already-strong binders. Random CDR baselines (n=30 per target) confirm statistical significance (5.7 sigma above random mean for Ty1). Multi-seed analysis reveals diverse local minima, underscoring the importance of replicate runs. Kabsch cross-validation against crystal structures confirms that designed CDRs preserve the framework pose basin. EasyNano demonstrates that ESMFold2-based differentiable optimization provides a fast, practical, and epitope-specific approach to nanobody CDR design.",
-    "category": "Crystal and Structure",
-    "source": "arXiv",
-    "published": "2026-06-11T00:26:45Z",
-    "updated": "2026-06-11T00:26:45Z",
-    "primary_category": "q-bio.QM",
-    "categories": [
-      "q-bio.QM"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2606.12772v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2606.12772v1"
-      }
-    ],
-    "score": 63,
-    "infographic": {
-      "key_insight": "EasyNano turns nanobody CDR design into a fast gradient-optimization problem by directly steering ESMFold2 distograms toward a user-chosen epitope.",
-      "engineering_relevance": "This enables practical, epitope-specific binder design on a high-end workstation in minutes, potentially accelerating therapeutic and protein-engineering workflows.",
-      "method": [
-        "Optimize CDR residue logits with gradient descent through ESMFold2 pairwise distance distograms",
-        "Use ESMFold2-Fast as a differentiable oracle with an epitope-proximity loss",
-        "Add full ESMFold2 CA-coordinate prior to preserve framework pose; wild-type logit bias controls mutability"
-      ],
-      "evidence_signal": "Across six target-framework cases, EasyNano improved ipTM by up to 0.559 (0.143 to 0.702 for Ty1/RBD) and outperformed random CDR baselines, with 5.7-sigma significance for Ty1.",
-      "watch_item": "Performance depends on initialization and multiple seeds can land in different local minima, so replicate runs are important and designs still need experimental validation.",
-      "hashtags": [
-        "#NanobodyDesign",
-        "#DifferentiableOptimization",
-        "#ESMFold2",
-        "#ProteinEngineering",
-        "#ComputationalBiology"
-      ],
-      "paper_id": "2026-06-11-arxiv-easynano_rapid_epitope_targeted_nanobody_cdr_design_via_differentiable_distogram_optimizat",
-      "paper_title": "EasyNano: rapid epitope-targeted nanobody CDR design via differentiable distogram optimization with ESMFold2",
-      "paper_date": "2026-06-11",
-      "paper_category": "Crystal and Structure",
-      "generated_at": "2026-06-13T12:24:33",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-06-10-arxiv-from_loss_diagnosis_to_rational_design_a_unified_analytical_model_for_photoelectrochemical",
-    "arxiv_id": "2606.12641v1",
-    "date": "2026-06-10",
-    "title": "From Loss Diagnosis to Rational Design: A Unified Analytical Model for Photoelectrochemical Cells",
-    "authors": "Ziyan Pan, Giulia Tagliabue",
-    "abstract": "Photoelectrochemical (PEC) cells are a compelling route to solar-driven chemical energy storage and feedstock synthesis, yet their deployment is hindered by coupled losses spanning light absorption, carrier transport, interfacial charge transfer, and semiconductor-electrolyte matching. Existing models address these losses in an architecture-specific manner and fall short of quantitative experimental diagnosis or actionable design guidance. Here, we introduce a unified loss-analysis framework applicable to both built-in junction (BIJ) and semiconductor-electrolyte junction (SEJ) photoelectrodes within a consistent set of physically meaningful parameters. The framework delivers current-voltage curves and efficiency metrics under ideal and real conditions, constructing efficiency maps to delineate theoretical limits and material-selection windows. Critically, by fitting experimental current-voltage data, it enables quantitative energy-loss decomposition into thermodynamic, optical, recombination, and interfacial contributions, pinpointing performance bottlenecks in real devices and mapping them directly onto optimization strategies such as co-catalyst integration or nanostructuring. Energy flows are visualized through Sankey diagrams, providing an intuitive picture of how incident solar energy is absorbed, dissipated, or converted into chemical output. Validated against state-of-the-art literature results spanning solar water splitting, CO2 reduction, NH3 synthesis, and solar redox flow batteries, the framework further enables systematic comparison of photovoltaic-grade absorbers (e.g., Si, perovskites) with intermediate-bandgap semiconductors (e.g., hematite, BiVO4), identifying key factors limiting each material class. Together, these capabilities support a paradigm shift from empirical optimization to mechanism-informed rational design of high-efficiency PEC energy-conversion systems.",
-    "category": "Energy Materials",
-    "source": "arXiv",
-    "published": "2026-06-10T20:05:42Z",
-    "updated": "2026-06-10T20:05:42Z",
-    "primary_category": "physics.chem-ph",
-    "categories": [
-      "physics.chem-ph",
-      "cond-mat.mtrl-sci"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2606.12641v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2606.12641v1"
-      }
-    ],
-    "score": 63,
-    "infographic": {
-      "key_insight": "A unified analytical model can diagnose where photoelectrochemical cells lose energy and translate those losses into concrete design improvements across different device architectures.",
-      "engineering_relevance": "The framework gives engineers a quantitative way to compare materials, fit experimental I-V curves, and prioritize interventions such as nanostructuring or co-catalyst integration.",
-      "method": [
-        "Unified loss-analysis model for both BIJ and SEJ photoelectrodes",
-        "Generates I-V curves, efficiency metrics, and efficiency maps under ideal/real conditions",
-        "Fits experimental data to decompose losses into thermodynamic, optical, recombination, and interfacial terms"
-      ],
-      "evidence_signal": "The abstract says the framework was validated against literature results spanning solar water splitting, CO2 reduction, NH3 synthesis, and solar redox flow batteries, including comparisons across Si, perovskites, hematite, and BiVO4.",
-      "watch_item": "Performance diagnosis depends on fitting available current-voltage data, so accuracy may be limited by data quality, model assumptions, and how well a real device matches the idealized parameterization.",
-      "hashtags": [
-        "#Photoelectrochemistry",
-        "#EnergyMaterials",
-        "#LossAnalysis",
-        "#SolarFuel",
-        "#DeviceDesign"
-      ],
-      "paper_id": "2026-06-10-arxiv-from_loss_diagnosis_to_rational_design_a_unified_analytical_model_for_photoelectrochemical",
-      "paper_title": "From Loss Diagnosis to Rational Design: A Unified Analytical Model for Photoelectrochemical Cells",
-      "paper_date": "2026-06-10",
-      "paper_category": "Energy Materials",
-      "generated_at": "2026-06-13T12:24:36",
+      "generated_at": "2026-06-12T14:10:05",
       "generator": "openai"
     }
   },
@@ -490,29 +490,29 @@
         "url": "https://arxiv.org/pdf/2606.13114v1"
       }
     ],
-    "score": 61,
+    "score": 66,
     "infographic": {
-      "key_insight": "Bayesian inference on photoluminescence images plus drift-diffusion modeling can map where perovskite solar cells degrade and reveal whether the culprit is the bulk or specific interfaces.",
-      "engineering_relevance": "This enables more targeted durability improvements by identifying the dominant failure locations and showing that amino-silane passivation can suppress interface-driven degradation.",
+      "key_insight": "Bayesian inference fused with photoluminescence imaging and drift-diffusion modeling can localize where perovskite solar cells degrade—at the bulk or specific interfaces—while tracking how those regions evolve over time.",
+      "engineering_relevance": "This gives device engineers a practical diagnostic tool for identifying dominant failure modes and validating passivation strategies to improve perovskite solar-cell lifetime.",
       "method": [
-        "Photoluminescence imaging of fully fabricated perovskite solar cells",
-        "Drift-diffusion simulations linked to measured optical data",
-        "Bayesian inference to generate spatial maps of recombination-related parameters over aging time"
+        "Photoluminescence imaging of fully fabricated perovskite devices",
+        "Drift-diffusion simulations coupled to Bayesian inference to infer spatial parameter maps",
+        "Temporal tracking of inferred recombination parameters during aging at 70 °C under full-spectrum sunlight"
       ],
-      "evidence_signal": "The study tracks inferred parameter maps during aging at 70 °C under full-spectrum sunlight and finds pronounced spatially non-uniform degradation, strongest at perovskite/transport-layer interfaces.",
-      "watch_item": "The inference depends on model assumptions and image quality, so parameter maps may be sensitive to simulation fidelity, prior choices, and experimental variability.",
+      "evidence_signal": "The abstract reports that the inferred maps reveal pronounced spatially non-uniform degradation and distinguish hole/electron transport layer interface degradation from bulk effects, with amino-silane passivation suppressing the worst degradation.",
+      "watch_item": "The approach relies on model assumptions linking optical signals to drift-diffusion parameters, so inferred maps should be interpreted carefully and validated against independent degradation measurements.",
       "hashtags": [
         "#PerovskiteSolarCells",
         "#BayesianInference",
         "#OpticalImaging",
         "#DegradationMechanisms",
-        "#MaterialsAI"
+        "#MaterialsScience"
       ],
       "paper_id": "2026-06-11-arxiv-disentangling_the_origin_of_degradation_in_perovskite_solar_cells_via_optical_imaging_and",
       "paper_title": "Disentangling the origin of degradation in perovskite solar cells via optical imaging and Bayesian inference",
       "paper_date": "2026-06-11",
       "paper_category": "Microstructure",
-      "generated_at": "2026-06-13T12:24:38",
+      "generated_at": "2026-06-12T14:10:08",
       "generator": "openai"
     }
   },
@@ -541,29 +541,29 @@
         "url": "https://arxiv.org/pdf/2606.09575v1"
       }
     ],
-    "score": 61,
+    "score": 66,
     "infographic": {
-      "key_insight": "k-means clustering on atomistic fingerprints can pick a small, information-rich subset of configurations that fits interatomic potentials more accurately than random sampling.",
-      "engineering_relevance": "This enables faster, lower-cost training of classical potentials from DFT data while maintaining or improving energy and force accuracy.",
+      "key_insight": "k-means clustering on fingerprinted atomic configurations can select a much smaller, more informative training set than random sampling for fitting interatomic potentials.",
+      "engineering_relevance": "This enables faster and more data-efficient calibration of classical molecular dynamics potentials, with fewer DFT-labeled configurations needed to achieve accurate energies and forces.",
       "method": [
-        "Build configuration fingerprints from CrystalNN descriptors and radial distribution functions (RDF).",
-        "Cluster the full dataset with k-means and select representative configurations from each cluster.",
-        "Fit an EAM potential to Ti using selected subsets and compare against random sampling; visualize similarity with t-SNE."
+        "Build atomistic fingerprints from CrystalNN-based local structure descriptors and RDF features.",
+        "Cluster the full configuration pool with k-means to choose representative training configurations.",
+        "Validate selection quality by fitting an EAM titanium potential and comparing against random selection; visualize structure overlap with t-SNE."
       ],
-      "evidence_signal": "Across subset sizes from 1800 configurations down to about 30, k-means gave consistently lower errors and standard deviations for both energies and forces than random selection.",
-      "watch_item": "The method depends on the quality of the fingerprint representation, so overlapping regions in 2D visualization may hide subtle differences and should not be treated as proof of complete redundancy.",
+      "evidence_signal": "Using 1,800 titanium configurations, k-means consistently gave lower errors and lower variability than random selection, and about 30 selected configurations were reported as sufficient for a good EAM fit.",
+      "watch_item": "The reported gains depend on the fingerprint design and may not transfer unchanged to different materials, defect types, or potential models without re-tuning.",
       "hashtags": [
         "#MaterialsInformatics",
         "#MachineLearning",
         "#InteratomicPotentials",
-        "#kMeans",
-        "#DFT"
+        "#Clustering",
+        "#MolecularDynamics"
       ],
       "paper_id": "2026-06-08-arxiv-k_means_clustering_in_fingerprint_based_configuration_selection_for_fitting_interatomic_po",
       "paper_title": "k-Means Clustering in Fingerprint-Based Configuration Selection for Fitting Interatomic Potentials",
       "paper_date": "2026-06-08",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-06-13T12:24:40",
+      "generated_at": "2026-06-12T14:10:11",
       "generator": "openai"
     }
   },
@@ -592,29 +592,29 @@
         "url": "https://arxiv.org/pdf/2606.13588v1"
       }
     ],
-    "score": 60,
+    "score": 65,
     "infographic": {
-      "key_insight": "Cepstral analysis makes Green-Kubo thermal conductivity calculations for MOFs far more stable, faster to converge, and less dependent on user-chosen parameters.",
-      "engineering_relevance": "This enables more reliable, automation-ready prediction of heat transport in porous materials, supporting thermal management and device design for MOF-based applications.",
+      "key_insight": "Cepstral analysis makes Green-Kubo thermal conductivity calculations for MOFs far more stable, reproducible, and faster to converge than conventional direct correlation analysis.",
+      "engineering_relevance": "This enables practical, near-ab initio prediction of heat transport in porous materials, supporting better design of MOF-based devices where thermal management matters.",
       "method": [
-        "Use equilibrium molecular dynamics with Green-Kubo heat-flux autocorrelation.",
-        "Apply cepstral analysis to suppress statistical noise and reduce sensitivity to correlation-length choices.",
-        "Train machine-learned moment tensor potentials on DFT reference data for near-ab initio accuracy."
+        "Pair equilibrium molecular dynamics Green-Kubo simulations with cepstral analysis.",
+        "Use machine-learned moment tensor potentials trained on DFT reference data.",
+        "Test the approach on MOF-5, HKUST-1, and ZIF-8."
       ],
-      "evidence_signal": "The approach was demonstrated on MOF-5, HKUST-1, and ZIF-8, where it converged within about 1–2 ns and outperformed direct Green-Kubo analysis in stability across correlation lengths.",
-      "watch_item": "Results depend on the quality and transferability of the machine-learned potential, so the workflow still requires careful validation against reference data.",
+      "evidence_signal": "Across three representative MOFs, the cepstral approach gave stable thermal conductivity estimates over a wide range of correlation lengths and converged in about 1–2 ns of total sampling time.",
+      "watch_item": "Results still depend on the quality and transferability of the trained interatomic potential, so reliable DFT training data and careful model validation remain important.",
       "hashtags": [
         "#ThermalConductivity",
-        "#MOFs",
+        "#MetalOrganicFrameworks",
         "#GreenKubo",
-        "#CepstralAnalysis",
+        "#MachineLearningPotentials",
         "#MolecularDynamics"
       ],
       "paper_id": "2026-06-11-arxiv-cepstral_analysis_to_accelerate_green_kubo_thermal_conductivity_calculations_of_metal_orga",
       "paper_title": "Cepstral Analysis to accelerate Green-Kubo thermal conductivity calculations of Metal-Organic Frameworks",
       "paper_date": "2026-06-11",
       "paper_category": "Property Prediction",
-      "generated_at": "2026-06-13T12:24:42",
+      "generated_at": "2026-06-12T14:10:14",
       "generator": "openai"
     }
   },
@@ -643,29 +643,29 @@
         "url": "https://arxiv.org/pdf/2606.09611v1"
       }
     ],
-    "score": 60,
+    "score": 65,
     "infographic": {
-      "key_insight": "The paper defines a “lattice gene” and “lattice genome” to compactly encode local crystalline structure and spatially map microstructural heterogeneity from EBSD diffraction patterns.",
-      "engineering_relevance": "This provides a practical way to quantify grain-scale and intragranular structure in advanced alloys, supporting microstructure-property control in manufacturing and heat treatment.",
+      "key_insight": "The paper defines a “lattice gene” as a compact latent representation of local crystal structure from Kikuchi diffraction patterns, and a “lattice genome” as the spatial map of these genes across a microstructure to quantify heterogeneity.",
+      "engineering_relevance": "This enables practical, data-driven characterization of mesoscale crystal variability in alloys, supporting microstructure design, process monitoring, and property control in manufacturing.",
       "method": [
-        "Encode Kikuchi diffraction patterns with a variational autoencoder to create low-dimensional lattice genes.",
-        "Assemble spatially resolved lattice genomes from EBSD maps over representative areas.",
-        "Use latent-space distance, angle, and spread metrics for visualization, segmentation, and heterogeneity quantification."
+        "Encode EBSD Kikuchi patterns with a variational autoencoder to learn a low-dimensional lattice gene.",
+        "Build lattice genome maps by assigning latent vectors across representative areas.",
+        "Use latent-space distance, angle, and spread metrics for segmentation and heterogeneity quantification."
       ],
-      "evidence_signal": "The approach is validated on EBSD microstructures of additively manufactured and wrought Ni-base superalloys in both as-built and recrystallized states.",
-      "watch_item": "Performance depends on the quality and representativeness of EBSD maps, and latent metrics may require careful calibration to remain physically meaningful across materials and conditions.",
+      "evidence_signal": "The abstract reports validation on additively manufactured and wrought Ni-base superalloys in both as-built and recrystallized states, showing reconstruction ability and multiple analysis outputs.",
+      "watch_item": "Performance depends on the quality and representativeness of EBSD diffraction data, and latent-space metrics may require careful calibration for different materials and scan conditions.",
       "hashtags": [
         "#MaterialsInformatics",
         "#EBSD",
-        "#Microstructure",
+        "#CrystalStructure",
         "#VariationalAutoencoder",
-        "#CrystallineMaterials"
+        "#MicrostructureAnalysis"
       ],
       "paper_id": "2026-06-08-arxiv-lattice_genome_representation_and_analysis_of_heterogeneous_crystalline_microstructures",
       "paper_title": "Lattice genome: representation and analysis of heterogeneous crystalline microstructures",
       "paper_date": "2026-06-08",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-06-13T12:24:44",
+      "generated_at": "2026-06-12T14:10:18",
       "generator": "openai"
     }
   },
@@ -696,29 +696,29 @@
         "url": "https://arxiv.org/pdf/2606.13144v1"
       }
     ],
-    "score": 59,
+    "score": 64,
     "infographic": {
-      "key_insight": "A dual-domain neural network can infer crystal-surface chirality far better from momentum-space Fermi-surface maps than from atomic-structure images, revealing handedness through relative geometric orientation in reciprocal space.",
-      "engineering_relevance": "This enables practical, experimentally transferable chirality detection for catalytic, sensing, and spintronic metal surfaces, with strong promise for robust CISS-oriented materials screening.",
+      "key_insight": "A dual-domain ResNet18 model can identify crystallographic surface handedness, with reciprocal-space Fermi surface projections encoding chirality far more clearly than real-space atomic surface models.",
+      "engineering_relevance": "This enables faster, more reliable chirality screening for catalytic, sensing, and spintronic surfaces, and suggests momentum-space imaging may be the most practical route for automated chiral surface characterization.",
       "method": [
-        "Train a ResNet18 classifier on labeled surface images in two domains: real-space atomic models and reciprocal-space photoemission maps.",
-        "Fine-tune the model on simulated data and transfer it to synchrotron-acquired experimental Fermi-surface projections.",
-        "Interpret chirality from orientation cues: kink-site geometry in real space and Fermi-surface polygon alignment relative to the surface normal in reciprocal space."
+        "Fine-tuned ResNet18 classifiers on labeled atomic-structure images and simulated Fermi-surface projection maps.",
+        "Compared performance across real-space and reciprocal-space representations of high-Miller-index chiral metal surfaces.",
+        "Transferred the reciprocal-space model to experimental synchrotron images with minimal fine-tuning."
       ],
-      "evidence_signal": "The model reaches about 73% accuracy on atomic-structure images and about 99% on Fermi-surface projections, and transfers to experimental images with fine-tuning on just two labeled frames.",
-      "watch_item": "The experimental transfer result is based on very limited labeled fine-tuning, so broader robustness across materials, noise levels, and measurement conditions still needs validation.",
+      "evidence_signal": "The model achieved about 73% accuracy on atomic models and about 99% accuracy on simulated Fermi-surface projections, and the latter adapted to experimental images after fine-tuning on just two labeled frames.",
+      "watch_item": "Performance on experimental data may depend on instrument quality, image alignment, and the availability of a small labeled set for fine-tuning.",
       "hashtags": [
         "#MachineLearning",
-        "#Crystallography",
-        "#SurfaceChirality",
-        "#Photoemission",
-        "#MaterialsInformatics"
+        "#MaterialsScience",
+        "#Chirality",
+        "#FermiSurface",
+        "#CISS"
       ],
       "paper_id": "2026-06-11-arxiv-decoding_crystallographic_surface_chirality_with_machine_learning_from_atomic_geometry_to",
       "paper_title": "Decoding Crystallographic Surface Chirality with Machine Learning: From Atomic Geometry to Fermi Surface Projections",
       "paper_date": "2026-06-11",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-06-13T12:24:47",
+      "generated_at": "2026-06-12T14:10:21",
       "generator": "openai"
     }
   },
@@ -748,29 +748,29 @@
         "url": "https://arxiv.org/pdf/2606.11870v1"
       }
     ],
-    "score": 59,
+    "score": 64,
     "infographic": {
-      "key_insight": "Uncertainty-aware neural networks make magnetic property predictions more trustworthy by estimating both the prediction and how confident the model is.",
-      "engineering_relevance": "For permanent magnet design, reliable uncertainty estimates help engineers screen candidate materials and prioritize experiments when data are sparse or out-of-distribution.",
+      "key_insight": "Uncertainty-aware neural networks can improve both the reliability and interpretability of magnetic property predictions, especially when data are sparse or out-of-distribution.",
+      "engineering_relevance": "For permanent magnet design, uncertainty estimates help engineers trust predictions of intrinsic properties and coercivity when screening new compositions or microstructures.",
       "method": [
         "Benchmarked classical and modern ML models for intrinsic magnetic property prediction.",
-        "Used Gaussian negative log-likelihood loss to train models with predictive uncertainty.",
-        "Applied dropout-based Bayesian approximation and transferred the same uncertainty ideas to a graph neural network for coercivity prediction from microstructure."
+        "Used Gaussian negative log-likelihood loss to learn predictive uncertainty.",
+        "Applied dropout-based Bayesian approximation and transferred uncertainty estimation to a graph neural network for coercivity prediction from microstructural data."
       ],
-      "evidence_signal": "The paper compares models on magnetic property tasks, emphasizing the quality of their uncertainty estimates rather than only point-prediction accuracy.",
-      "watch_item": "Uncertainty estimates can be misleading if the model is poorly calibrated or the test cases differ strongly from the training distribution.",
+      "evidence_signal": "The study compares model performance and uncertainty quality across two magnetic-material tasks, including benchmark predictions of intrinsic properties and a more complex microstructure-to-coercivity setting.",
+      "watch_item": "Uncertainty estimates can be sensitive to data scarcity, out-of-distribution inputs, and the chosen approximation method, so calibration must be checked before deployment.",
       "hashtags": [
         "#MaterialsDiscovery",
-        "#MagneticMaterials",
+        "#MachineLearning",
         "#UncertaintyQuantification",
-        "#NeuralNetworks",
+        "#Magnetism",
         "#GraphNeuralNetworks"
       ],
       "paper_id": "2026-06-10-arxiv-modelling_magnetic_material_properties_with_uncertainty_aware_neural_networks",
       "paper_title": "Modelling magnetic material properties with uncertainty-aware neural networks",
       "paper_date": "2026-06-10",
       "paper_category": "Materials Discovery",
-      "generated_at": "2026-06-13T12:24:49",
+      "generated_at": "2026-06-12T14:10:23",
       "generator": "openai"
     }
   },
@@ -799,29 +799,29 @@
         "url": "https://arxiv.org/pdf/2606.08686v1"
       }
     ],
-    "score": 59,
+    "score": 64,
     "infographic": {
-      "key_insight": "The paper introduces an information-entropy framework, paired with graph convolutional neural networks and alchemical Monte Carlo sampling, to predict phases in chemically disordered alloys.",
-      "engineering_relevance": "This offers a lower-cost route to high-throughput phase screening for complex alloy design, including high-entropy alloy compositions where brute-force exploration is impractical.",
+      "key_insight": "The paper introduces an information-entropy framework, paired with graph neural network-driven alchemical Monte Carlo sampling, to predict phases in chemically disordered alloys.",
+      "engineering_relevance": "This offers a lower-cost route for high-throughput alloy screening when combinatorial phase exploration is too expensive for conventional simulation or exhaustive search.",
       "method": [
-        "Use a Graph Convolutional Neural Network to model the alloy energy landscape during alchemical Monte Carlo sampling.",
-        "Compute an information entropy-based metric to quantify explored configurational space for phase prediction.",
-        "Benchmark the low-cost Bond Disproportion Vector (BDV) descriptor against SOAP."
+        "Train a Graph Convolutional Neural Network to model alloy energetics and guide alchemical Monte Carlo sampling.",
+        "Use information entropy to quantify how thoroughly the potential energy landscape has been explored for phase prediction.",
+        "Compare BDV as a low-cost structural descriptor against the more established SOAP descriptor."
       ],
-      "evidence_signal": "The abstract reports successful application across binary, ternary, quaternary, and quinary alloy systems, including CoNi, MoW, FeNi, TaW, CoCrNi, CrFeNi, CoCrFeNi, and Alx(CoCrFeNi)1-x.",
-      "watch_item": "BDV is presented as computationally efficient but limited, so its reliability may depend on the alloy system and should be checked against higher-fidelity descriptors like SOAP.",
+      "evidence_signal": "The abstract reports successful phase prediction across binary, ternary, quaternary, and quinary alloy systems, including CoNi, MoW, FeNi, TaW, CoCrNi, CrFeNi, CoCrFeNi, and Alx(CoCrFeNi)1-x.",
+      "watch_item": "BDV is described as low-cost but limited, so descriptor choice and generalization outside the tested alloy families may affect reliability.",
       "hashtags": [
         "#MaterialsInformatics",
-        "#HighEntropyAlloys",
-        "#CrystalStructurePrediction",
         "#GraphNeuralNetworks",
-        "#ComputationalMaterialsScience"
+        "#HighEntropyAlloys",
+        "#PhasePrediction",
+        "#ComputationalMaterials"
       ],
       "paper_id": "2026-06-07-arxiv-information_entropy_based_crystal_structure_prediction_of_chemically_disordered_alloys_via",
       "paper_title": "Information Entropy Based Crystal Structure Prediction of Chemically Disordered Alloys via Graph Convolutional Neural Networks",
       "paper_date": "2026-06-07",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-06-13T12:24:51",
+      "generated_at": "2026-06-12T14:10:34",
       "generator": "openai"
     }
   },
@@ -850,29 +850,29 @@
         "url": "https://arxiv.org/pdf/2606.13664v1"
       }
     ],
-    "score": 58,
+    "score": 63,
     "infographic": {
-      "key_insight": "Engineering the thin-film morphology of chiral 2D perovskite R-(MBA)2PbI4 makes lateral electrical transport measurable, revealing p-type conduction and strong morphology-dependent magnetotransport.",
-      "engineering_relevance": "This provides a practical route to integrate chiral perovskites into planar devices and opens the door to studying and exploiting CISS in spintronic architectures.",
+      "key_insight": "Morphology engineering made an insulating chiral 2D perovskite laterally conductive enough to measure p-type Hall transport and magnetoresistance for the first time.",
+      "engineering_relevance": "This enables practical device integration of chiral perovskites for spintronic and magnetotransport studies by linking thin-film microstructure to in-plane electrical performance.",
       "method": [
-        "Morphology-engineered thin-film processing to reduce in-plane resistance",
-        "Hall-bar device fabrication for dark lateral transport measurements",
-        "Magnetotransport comparison across paths with and without grain boundaries"
+        "Optimized thin-film morphology of R-(MBA)2PbI4 to reduce the in-plane resistance bottleneck.",
+        "Fabricated Hall-bar lateral devices for dark Hall and magnetoresistance measurements.",
+        "Compared transport paths that cross grain boundaries to isolate morphology effects."
       ],
-      "evidence_signal": "Hall measurements in the dark showed p-type conduction with mobility of about 0.2 cm^2 V^-1 s^-1 and carrier density of about 3×10^14 cm^-2, with enhanced magnetoresistance when transport crossed grain boundaries.",
-      "watch_item": "The measured mobility remains very low, so device performance may still be strongly limited by microstructure and grain-boundary variability.",
+      "evidence_signal": "The abstract reports p-type conduction with Hall mobility of ~0.2 cm^2 V^-1 s^-1 and carrier density of ~3×10^14 cm^-2, plus enhanced magnetoresistance across grain boundaries.",
+      "watch_item": "The reported mobility is still very low, so device performance may remain strongly limited by grain boundaries and film microstructure.",
       "hashtags": [
-        "#Perovskites",
-        "#ChiralMaterials",
+        "#ChiralPerovskites",
+        "#Microstructure",
         "#Magnetotransport",
-        "#Spintronics",
-        "#Microstructure"
+        "#HallEffect",
+        "#Spintronics"
       ],
       "paper_id": "2026-06-11-arxiv-morphology_control_and_low_temperature_magnetotransport_in_chiral_2d_perovskite_r_mba_2_pb",
       "paper_title": "Morphology control and low-temperature magnetotransport in chiral 2D perovskite R-(MBA)$_2$PbI$_4$",
       "paper_date": "2026-06-11",
       "paper_category": "Microstructure",
-      "generated_at": "2026-06-13T12:24:53",
+      "generated_at": "2026-06-12T14:10:37",
       "generator": "openai"
     }
   },
@@ -901,29 +901,29 @@
         "url": "https://arxiv.org/pdf/2606.13396v1"
       }
     ],
-    "score": 58,
+    "score": 63,
     "infographic": {
-      "key_insight": "Charged atomic planes in SmNiO3 buffer layers can deterministically set the polarization direction of ultrathin BaTiO3 films and enable net ferroelectric polarization from the first unit cell.",
-      "engineering_relevance": "This offers a practical interface-engineering route to integrate reliable, single-unit-cell ferroelectric layers into nanoscale devices by suppressing the usual critical-thickness limit.",
+      "key_insight": "Charged atomic planes in SmNiO3 buffer layers can deterministically polarize ultrathin BaTiO3 films and eliminate the usual critical thickness for ferroelectricity.",
+      "engineering_relevance": "This offers a practical interface-engineering route to stabilize switchable polarization in single-unit-cell ferroelectric devices for nanoscale memories and oxide electronics.",
       "method": [
-        "Use (001)-oriented SmNiO3 buffer layers with controlled surface termination",
-        "Select [SmO]+ or [NiO2]- terminations to orient BaTiO3 polarization upward or downward",
-        "Combine experiments with DFT to assess how oxygen vacancies affect interfacial polarization"
+        "Use (001)-oriented SmNiO3 as a polarizing template for BaTiO3 growth.",
+        "Select [SmO]+ or [NiO2]- terminations to set upward or downward polarization.",
+        "Support the interface design with density-functional-theory calculations and defect analysis."
       ],
-      "evidence_signal": "The abstract reports that net polarization appears in BaTiO3 films starting from the first deposited unit cell, with polarity controlled by the chosen SNO termination.",
-      "watch_item": "The polarizing effect is sensitive to defect chemistry, so oxygen vacancies at the interface can weaken or counteract the intended polarization control.",
+      "evidence_signal": "Experiments show net polarization appearing from the first BaTiO3 unit cell, consistent with DFT-guided interpretation of termination-dependent interfacial polarization.",
+      "watch_item": "Oxygen vacancies can weaken or counteract the polarizing effect, so defect control is critical for reliable device implementation.",
       "hashtags": [
         "#Ferroelectrics",
         "#ThinFilms",
         "#InterfaceEngineering",
         "#DFT",
-        "#MaterialsScience"
+        "#OxideElectronics"
       ],
       "paper_id": "2026-06-11-arxiv-polarizing_ultrathin_ferroelectric_batio3_films_through_interfacial_layer_polarization",
       "paper_title": "Polarizing ultrathin ferroelectric BaTiO3 films through interfacial layer polarization",
       "paper_date": "2026-06-11",
       "paper_category": "Microstructure",
-      "generated_at": "2026-06-13T12:24:55",
+      "generated_at": "2026-06-12T14:10:39",
       "generator": "openai"
     }
   },
@@ -952,29 +952,29 @@
         "url": "https://arxiv.org/pdf/2606.11928v1"
       }
     ],
-    "score": 58,
+    "score": 63,
     "infographic": {
-      "key_insight": "A hybrid-DFT database of >2,500 stable halide double perovskites reveals rich spin-polarized electronic structures, including visible-gap and half-metallic candidates.",
-      "engineering_relevance": "The dataset accelerates screening of perovskites for photovoltaics, photocatalysis, radiation detection, and spintronic/magnetic applications.",
+      "key_insight": "The paper builds the first large-scale spin-polarized electronic-structure database for stable halide double perovskites, revealing rich tunable band-gap and magnetic behavior across >2,500 Cs2BB'X6 compounds.",
+      "engineering_relevance": "This dataset accelerates screening of energy-materials candidates for photovoltaics, photocatalysis, and radiation detection by linking composition to electronic, spin, and bonding properties.",
       "method": [
-        "Computed spin-polarized density of states for all Cs2BB'X6 compounds predicted stable by the τ tolerance factor.",
-        "Used hybrid-functional DFT to generate electronic-structure data across X = I, Br, Cl, and F.",
-        "Applied LOBSTER bonding analysis plus UMAP visualization and an interactive app for exploration."
+        "Hybrid-functional DFT for DOS and spin-polarized electronic structure",
+        "Chemical-bonding analysis with LOBSTER",
+        "UMAP visualizations plus an interactive exploration app"
       ],
-      "evidence_signal": "The abstract reports >2,500 compounds, with 719 visible-band-gap materials and 118 half-metals, supported by hybrid-DFT and bonding-analysis data.",
-      "watch_item": "Stability and property trends are screened computationally, so experimental synthesis feasibility and finite-temperature effects may still limit real-world performance.",
+      "evidence_signal": "The abstract reports >2,500 calculated compounds, including 719 with visible-range band gaps and 118 half-metals, indicating broad coverage and strong functional diversity.",
+      "watch_item": "The database is limited to compounds predicted stable by the tau tolerance factor and Cs2BB'X6 halide families, so transferability to experimentally metastable or non-halide systems may be limited.",
       "hashtags": [
-        "#Perovskites",
         "#MaterialsInformatics",
-        "#Spintronics",
+        "#Perovskites",
         "#DensityFunctionalTheory",
+        "#Spintronics",
         "#EnergyMaterials"
       ],
       "paper_id": "2026-06-10-arxiv-spin_polarized_electronic_structure_and_chemical_bonding_data_for_2_500_halide_double_pero",
       "paper_title": "Spin-Polarized Electronic Structure and Chemical Bonding Data for 2,500+ Halide Double Perovskites",
       "paper_date": "2026-06-10",
       "paper_category": "Energy Materials",
-      "generated_at": "2026-06-13T12:24:58",
+      "generated_at": "2026-06-12T14:10:43",
       "generator": "openai"
     }
   },
@@ -1003,29 +1003,29 @@
         "url": "https://arxiv.org/pdf/2606.11027v1"
       }
     ],
-    "score": 58,
+    "score": 63,
     "infographic": {
-      "key_insight": "MoS$_2$ in a biphenylene network shows strongly direction-dependent quantum transport, with the armchair axis acting as a high-current channel and the zigzag axis exhibiting intrinsic negative differential conductance.",
-      "engineering_relevance": "This anisotropy suggests the same 2D platform could be used as a directional current switch or NDC-based nanoelectronic device, with tunable behavior by device orientation.",
+      "key_insight": "MoS2 in a biphenylene network exhibits extreme direction-dependent transport, with the armchair axis acting as a strong current path and the zigzag axis showing negative differential conductance.",
+      "engineering_relevance": "This anisotropy enables orientation-specific nanoelectronic designs, including a reliable current switch along armchair and an NDC-based device along zigzag.",
       "method": [
-        "DFT first-principles electronic-structure calculations",
-        "NEGF quantum transport simulations for I-V response",
-        "Thermal and thermoelectric analysis including phonon conductance and zT"
+        "DFT first-principles calculations",
+        "NEGF quantum transport analysis",
+        "Electronic, thermal, thermoelectric, and I–V characterization"
       ],
-      "evidence_signal": "The abstract reports room-temperature phonon thermal conductance of 0.28 nW/K (armchair) and 0.23 nW/K (zigzag), zT peaks of 0.27 and 0.19, and an armchair/zigzag current ratio of about 7×10^4.",
-      "watch_item": "The results are theoretical and depend on idealized pristine structures, so fabrication defects, contacts, and thermal/environmental effects may reduce the predicted anisotropy and NDC behavior.",
+      "evidence_signal": "At room temperature, phonon thermal conductance is very low (0.28 nW/K armchair, 0.23 nW/K zigzag), zT peaks at 0.27 and 0.19, and the current ratio reaches about 7×10^4 between armchair and zigzag directions.",
+      "watch_item": "The results are theoretical and depend on idealized structure and orientation, so experimental synthesis, defects, and contact effects could change the observed anisotropy.",
       "hashtags": [
         "#MoS2",
+        "#BiphenyleneNetwork",
         "#QuantumTransport",
         "#Thermoelectrics",
-        "#NEGF",
         "#Nanoelectronics"
       ],
       "paper_id": "2026-06-09-arxiv-direction_dependent_quantum_transport_properties_of_mos_2_integrated_into_biphenylene_conf",
       "paper_title": "Direction-Dependent Quantum Transport Properties of MoS$_2$ Integrated into Biphenylene Configuration",
       "paper_date": "2026-06-09",
       "paper_category": "Microstructure",
-      "generated_at": "2026-06-13T12:25:00",
+      "generated_at": "2026-06-12T14:10:45",
       "generator": "openai"
     }
   }

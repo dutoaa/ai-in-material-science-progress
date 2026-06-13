@@ -1,6 +1,6 @@
 # AI materials science Progress Public Resources
 
-Generated: 2026-06-12
+Generated: 2026-06-13
 Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 
 ## 1. A wrong ground-state structure of HfO$_2$ predicted by machine-learning interatomic potentials based on the PBE functional
@@ -43,7 +43,15 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2606.12860v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-11-arxiv-leveraging_rapid_sintering_to_retain_metastable_zirconia_in_copper_infographic.json
 
-## 6. Non-linear mechanical field reconstruction coupling recurrent neural networks with physics-informed graph neural networks
+## 6. Multilayer Screening of Double and Conventional Perovskite Solar Cells Using SCAPS-1D and Machine Learning: Optimization of ETL, HTL, and Absorber for High-Efficiency Architectures
+
+- Date: 2026-06-10
+- Category: Materials Discovery
+- arXiv: https://arxiv.org/abs/2606.12083v1
+- PDF: https://arxiv.org/pdf/2606.12083v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-10-arxiv-multilayer_screening_of_double_and_conventional_perovskite_solar_cells_using_scaps_1d_and_infographic.json
+
+## 7. Non-linear mechanical field reconstruction coupling recurrent neural networks with physics-informed graph neural networks
 
 - Date: 2026-06-09
 - Category: Crystal and Structure
@@ -51,7 +59,7 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2606.10909v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-09-arxiv-non_linear_mechanical_field_reconstruction_coupling_recurrent_neural_networks_with_physics_infographic.json
 
-## 7. EasyNano: rapid epitope-targeted nanobody CDR design via differentiable distogram optimization with ESMFold2
+## 8. EasyNano: rapid epitope-targeted nanobody CDR design via differentiable distogram optimization with ESMFold2
 
 - Date: 2026-06-11
 - Category: Crystal and Structure
@@ -59,21 +67,13 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2606.12772v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-11-arxiv-easynano_rapid_epitope_targeted_nanobody_cdr_design_via_differentiable_distogram_optimizat_infographic.json
 
-## 8. From Loss Diagnosis to Rational Design: A Unified Analytical Model for Photoelectrochemical Cells
+## 9. From Loss Diagnosis to Rational Design: A Unified Analytical Model for Photoelectrochemical Cells
 
 - Date: 2026-06-10
 - Category: Energy Materials
 - arXiv: https://arxiv.org/abs/2606.12641v1
 - PDF: https://arxiv.org/pdf/2606.12641v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-10-arxiv-from_loss_diagnosis_to_rational_design_a_unified_analytical_model_for_photoelectrochemical_infographic.json
-
-## 9. Multilayer Screening of Double and Conventional Perovskite Solar Cells Using SCAPS-1D and Machine Learning: Optimization of ETL, HTL, and Absorber for High-Efficiency Architectures
-
-- Date: 2026-06-10
-- Category: Materials Discovery
-- arXiv: https://arxiv.org/abs/2606.12083v1
-- PDF: https://arxiv.org/pdf/2606.12083v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-10-arxiv-multilayer_screening_of_double_and_conventional_perovskite_solar_cells_using_scaps_1d_and_infographic.json
 
 ## 10. Disentangling the origin of degradation in perovskite solar cells via optical imaging and Bayesian inference
 

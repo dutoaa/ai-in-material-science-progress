@@ -1,24 +1,24 @@
 {
-  "key_insight": "k-means clustering on fingerprinted atomic configurations can select a much smaller, more informative training set than random sampling for fitting interatomic potentials.",
-  "engineering_relevance": "This enables faster and more data-efficient calibration of classical molecular dynamics potentials, with fewer DFT-labeled configurations needed to achieve accurate energies and forces.",
+  "key_insight": "k-means clustering on atomistic fingerprints can pick a small, information-rich subset of configurations that fits interatomic potentials more accurately than random sampling.",
+  "engineering_relevance": "This enables faster, lower-cost training of classical potentials from DFT data while maintaining or improving energy and force accuracy.",
   "method": [
-    "Build atomistic fingerprints from CrystalNN-based local structure descriptors and RDF features.",
-    "Cluster the full configuration pool with k-means to choose representative training configurations.",
-    "Validate selection quality by fitting an EAM titanium potential and comparing against random selection; visualize structure overlap with t-SNE."
+    "Build configuration fingerprints from CrystalNN descriptors and radial distribution functions (RDF).",
+    "Cluster the full dataset with k-means and select representative configurations from each cluster.",
+    "Fit an EAM potential to Ti using selected subsets and compare against random sampling; visualize similarity with t-SNE."
   ],
-  "evidence_signal": "Using 1,800 titanium configurations, k-means consistently gave lower errors and lower variability than random selection, and about 30 selected configurations were reported as sufficient for a good EAM fit.",
-  "watch_item": "The reported gains depend on the fingerprint design and may not transfer unchanged to different materials, defect types, or potential models without re-tuning.",
+  "evidence_signal": "Across subset sizes from 1800 configurations down to about 30, k-means gave consistently lower errors and standard deviations for both energies and forces than random selection.",
+  "watch_item": "The method depends on the quality of the fingerprint representation, so overlapping regions in 2D visualization may hide subtle differences and should not be treated as proof of complete redundancy.",
   "hashtags": [
     "#MaterialsInformatics",
     "#MachineLearning",
     "#InteratomicPotentials",
-    "#Clustering",
-    "#MolecularDynamics"
+    "#kMeans",
+    "#DFT"
   ],
   "paper_id": "2026-06-08-arxiv-k_means_clustering_in_fingerprint_based_configuration_selection_for_fitting_interatomic_po",
   "paper_title": "k-Means Clustering in Fingerprint-Based Configuration Selection for Fitting Interatomic Potentials",
   "paper_date": "2026-06-08",
   "paper_category": "Crystal and Structure",
-  "generated_at": "2026-06-12T14:10:11",
+  "generated_at": "2026-06-13T12:24:40",
   "generator": "openai"
 }
