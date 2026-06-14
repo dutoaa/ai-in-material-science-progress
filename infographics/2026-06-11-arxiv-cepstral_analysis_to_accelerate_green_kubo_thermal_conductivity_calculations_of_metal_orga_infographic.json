@@ -1,16 +1,16 @@
 {
-  "key_insight": "Cepstral analysis makes Green-Kubo thermal conductivity calculations for MOFs far more stable, faster to converge, and less dependent on user-chosen parameters.",
-  "engineering_relevance": "This enables more reliable, automation-ready prediction of heat transport in porous materials, supporting thermal management and device design for MOF-based applications.",
+  "key_insight": "Cepstral analysis makes Green-Kubo thermal conductivity calculations for MOFs far more stable, faster, and less sensitive to user-chosen parameters.",
+  "engineering_relevance": "This enables more reliable, automation-ready prediction of heat transport in porous materials, supporting design of MOFs for thermal management, gas storage, and separation devices.",
   "method": [
-    "Use equilibrium molecular dynamics with Green-Kubo heat-flux autocorrelation.",
-    "Apply cepstral analysis to suppress statistical noise and reduce sensitivity to correlation-length choices.",
-    "Train machine-learned moment tensor potentials on DFT reference data for near-ab initio accuracy."
+    "Combine equilibrium Green-Kubo molecular dynamics with cepstral analysis to denoise heat-flux autocorrelation data.",
+    "Use machine-learned moment tensor potentials trained on DFT reference data to obtain near ab initio accuracy.",
+    "Compare against conventional direct GK analysis across different correlation lengths and sampling times."
   ],
-  "evidence_signal": "The approach was demonstrated on MOF-5, HKUST-1, and ZIF-8, where it converged within about 1–2 ns and outperformed direct Green-Kubo analysis in stability across correlation lengths.",
-  "watch_item": "Results depend on the quality and transferability of the machine-learned potential, so the workflow still requires careful validation against reference data.",
+  "evidence_signal": "Across three benchmark MOFs (MOF-5, HKUST-1, ZIF-8), the cepstral approach converged robustly within about 1–2 ns and was much less sensitive to ambiguous analysis parameters than direct GK.",
+  "watch_item": "The workflow still depends on the quality and transferability of the trained machine-learned potential, so poor training data could bias conductivity predictions.",
   "hashtags": [
+    "#MetalOrganicFrameworks",
     "#ThermalConductivity",
-    "#MOFs",
     "#GreenKubo",
     "#CepstralAnalysis",
     "#MolecularDynamics"
@@ -19,6 +19,6 @@
   "paper_title": "Cepstral Analysis to accelerate Green-Kubo thermal conductivity calculations of Metal-Organic Frameworks",
   "paper_date": "2026-06-11",
   "paper_category": "Property Prediction",
-  "generated_at": "2026-06-13T12:24:42",
+  "generated_at": "2026-06-14T13:00:00",
   "generator": "openai"
 }

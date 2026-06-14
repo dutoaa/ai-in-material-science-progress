@@ -1,6 +1,6 @@
 # AI materials science Progress Public Resources
 
-Generated: 2026-06-13
+Generated: 2026-06-14
 Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 
 ## 1. A wrong ground-state structure of HfO$_2$ predicted by machine-learning interatomic potentials based on the PBE functional
