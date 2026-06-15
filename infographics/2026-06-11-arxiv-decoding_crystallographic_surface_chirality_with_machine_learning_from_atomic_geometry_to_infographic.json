@@ -1,24 +1,24 @@
 {
-  "key_insight": "A dual-domain ResNet18 can classify crystallographic surface handedness from either atomic geometry or reciprocal-space Fermi surface projections, with much stronger performance in momentum space.",
-  "engineering_relevance": "This enables practical chirality labeling for catalytic, sensing, and spintronic surface design, and suggests momentum-resolved measurements are a more reliable operational signal than local atomic geometry.",
+  "key_insight": "A dual-domain ResNet18 can infer crystallographic surface handedness far more reliably from Fermi-surface projection images than from atomic structure images, because relative geometric orientation encodes chirality in both domains.",
+  "engineering_relevance": "This provides a practical route to automate chirality identification for metal surfaces used in enantiospecific catalysis, sensing, and spintronic/CISS design.",
   "method": [
-    "Fine-tuned ResNet18 on labeled atomic-structure images and simulated Fermi surface projection images.",
-    "Compared real-space versus reciprocal-space representations for surface chirality classification.",
-    "Transferred the reciprocal-space model to synchrotron experimental images using minimal fine-tuning."
+    "Fine-tuned ResNet18 on labeled real-space atomic models to classify chiral surface handedness.",
+    "Trained a second ResNet18 on simulated reciprocal-space Fermi-surface projection maps.",
+    "Transferred the reciprocal-space model to experimental synchrotron images using minimal fine-tuning."
   ],
-  "evidence_signal": "The model achieved about 73% accuracy on atomic models and about 99% on Fermi surface projections, and the experimental transfer worked after fine-tuning on just two labeled frames.",
-  "watch_item": "The experimental transfer result is promising but appears to rely on very limited fine-tuning data, so robustness across broader materials, noise levels, and measurement conditions still needs validation.",
+  "evidence_signal": "The abstract reports about 73% classification accuracy on atomic models versus about 99% on Fermi-surface projections, with experimental transfer achieved using only two labeled frames.",
+  "watch_item": "The strong experimental performance may depend on careful image registration and the availability of representative labeled training examples, especially when extending to new materials or noisy measurements.",
   "hashtags": [
     "#MachineLearning",
     "#MaterialsScience",
-    "#Chirality",
-    "#SurfacePhysics",
+    "#CrystalChirality",
+    "#FermiSurface",
     "#Spintronics"
   ],
   "paper_id": "2026-06-11-arxiv-decoding_crystallographic_surface_chirality_with_machine_learning_from_atomic_geometry_to",
   "paper_title": "Decoding Crystallographic Surface Chirality with Machine Learning: From Atomic Geometry to Fermi Surface Projections",
   "paper_date": "2026-06-11",
   "paper_category": "Crystal and Structure",
-  "generated_at": "2026-06-14T13:00:06",
+  "generated_at": "2026-06-15T16:18:36",
   "generator": "openai"
 }

@@ -1,24 +1,24 @@
 {
-  "key_insight": "EasyNano enables fast, epitope-targeted nanobody CDR design by backpropagating through ESMFold2 distogram predictions instead of relying on slow stochastic sampling.",
-  "engineering_relevance": "This gives protein engineers a practical workstation-scale workflow for rapidly prototyping binding-specific nanobodies for therapeutic and diagnostic targets.",
+  "key_insight": "EasyNano uses differentiable optimization through ESMFold2 distograms to rapidly design nanobody CDRs for user-specified epitopes, enabling targeted binding in minutes rather than days.",
+  "engineering_relevance": "The method offers a practical, workstation-scale workflow for epitope-specific protein design, reducing compute cost and latency for therapeutic nanobody engineering.",
   "method": [
-    "Gradient-descent optimization of CDR residue logits through the ESMFold2-Fast pairwise distance distogram",
-    "Composite loss includes an epitope proximity term to steer binding toward a user-specified target site",
-    "Full ESMFold2 CA-coordinate priors help keep the nanobody framework pose stable during design"
+    "Optimize CDR residue logits by gradient descent through the ESMFold2 pairwise distance distogram.",
+    "Use ESMFold2-Fast as a differentiable oracle with a composite loss that includes an epitope proximity term.",
+    "Add a full ESMFold2 CA-coordinate prior to keep the nanobody framework pose stable."
   ],
-  "evidence_signal": "Across six target-framework cases, EasyNano improved ipTM by up to 0.559 and outperformed random CDR baselines with strong statistical significance, including a 5.7-sigma gain on Ty1.",
-  "watch_item": "Performance depends on practical choices such as wild-type logit initialization and multi-seed replication, since optimization can converge to different local minima.",
+  "evidence_signal": "Across six target-framework pairs, EasyNano improved ipTM by up to 0.559 (0.143 to 0.702) and outperformed random CDR baselines, with Ty1 reaching 5.7 sigma above the random mean.",
+  "watch_item": "Performance depends on practical choices such as wild-type logit initialization, and multi-seed results show diverse local minima, so replicate runs may be needed.",
   "hashtags": [
+    "#ProteinDesign",
     "#NanobodyDesign",
-    "#ProteinEngineering",
-    "#ESMFold2",
     "#DifferentiableOptimization",
+    "#ESMFold2",
     "#ComputationalBiology"
   ],
   "paper_id": "2026-06-11-arxiv-easynano_rapid_epitope_targeted_nanobody_cdr_design_via_differentiable_distogram_optimizat",
   "paper_title": "EasyNano: rapid epitope-targeted nanobody CDR design via differentiable distogram optimization with ESMFold2",
   "paper_date": "2026-06-11",
   "paper_category": "Crystal and Structure",
-  "generated_at": "2026-06-14T12:59:50",
+  "generated_at": "2026-06-15T16:18:14",
   "generator": "openai"
 }
