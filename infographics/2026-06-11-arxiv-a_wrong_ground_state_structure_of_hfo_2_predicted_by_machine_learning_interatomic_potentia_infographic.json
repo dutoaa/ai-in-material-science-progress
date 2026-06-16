@@ -1,24 +1,24 @@
 {
-  "key_insight": "PBE-trained machine-learning interatomic potentials can wrongly predict HfO2’s ground state by overstabilizing a low-density I41/amd phase over the experimentally observed P21/c structure.",
-  "engineering_relevance": "For computational materials workflows, this means phase stability and ferroelectric switching predictions can be unreliable if the underlying DFT reference functional is biased, especially for structures with large lattice relaxations.",
+  "key_insight": "PBE-based machine-learning interatomic potentials can incorrectly predict HfO2’s ground state, overstabilizing a low-density I41/amd phase over the experimentally known monoclinic P21/c structure.",
+  "engineering_relevance": "This shows that MLIP predictions for crystal stability and phase-transition barriers can inherit systematic DFT functional errors, affecting materials screening and ferroelectric device design.",
   "method": [
-    "Compare PBE-based MLIP predictions against known HfO2 phase ordering",
-    "Contrast energies from multiple DFT functionals, including PBE, PBEsol, and LDA",
-    "Check impact on polarization-switching energy landscapes and barrier heights"
+    "Compared a PBE-trained MLIP against known HfO2 polymorphs.",
+    "Checked whether multiple PBE-based foundation models reproduce the same phase-ordering error.",
+    "Benchmarked different DFT functionals to trace the source of the instability ranking."
   ],
-  "evidence_signal": "The abstract reports that both a custom PBE-based MLIP and widely used foundation models (NequIP-OAM-L, MatterSim-v1-5M) predict I41/amd as lower in energy than P21/c, matching the same error seen with PBE DFT data.",
-  "watch_item": "Do not assume a PBE-trained MLIP is reliable for crystal-phase ranking in HfO2; functional choice can systematically bias low-density octahedral phases and alter switching barriers.",
+  "evidence_signal": "The abstract reports that both a PBE-based MLIP and widely used foundation models (NequIP-OAM-L, MatterSim-v1-5M) predict I41/amd as more stable than the real ground state, and that the error is reduced by PBEsol and LDA.",
+  "watch_item": "Do not assume MLIP phase energetics are reliable if the underlying training labels come from a functional with known structural bias, especially for phases with large lattice relaxation.",
   "hashtags": [
     "#MachineLearningPotentials",
     "#HfO2",
-    "#DFT",
-    "#CrystalStructures",
+    "#DensityFunctionalTheory",
+    "#CrystalStructure",
     "#MaterialsSimulation"
   ],
   "paper_id": "2026-06-11-arxiv-a_wrong_ground_state_structure_of_hfo_2_predicted_by_machine_learning_interatomic_potentia",
   "paper_title": "A wrong ground-state structure of HfO$_2$ predicted by machine-learning interatomic potentials based on the PBE functional",
   "paper_date": "2026-06-11",
   "paper_category": "Crystal and Structure",
-  "generated_at": "2026-06-15T16:17:49",
+  "generated_at": "2026-06-16T15:52:08",
   "generator": "openai"
 }
