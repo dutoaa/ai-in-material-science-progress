@@ -22,7 +22,7 @@
     <header>
       <div>
         <h1>AI materials science Research Papers - Daily Top 20</h1>
-        <p class="sub">Collected 2026-06-16. Ranked from recent arXiv AI materials science papers, with OpenAI infographic summaries where credentials are available.</p>
+        <p class="sub">Collected 2026-06-17. Ranked from recent arXiv AI materials science papers, with OpenAI infographic summaries where credentials are available.</p>
       </div>
       <nav class="actions">
         <a href="papers.json">Data JSON</a>
@@ -31,7 +31,26 @@
     </header>
     <section class="grid">
       <article class="paper">
-        <div class="meta"><span>Materials Discovery</span><span>arXiv</span><strong>94</strong></div>
+        <div class="meta"><span>Materials Discovery</span><span>arXiv</span><strong>90</strong></div>
+        <p class="date">2026-06-16</p>
+        <h2>Toward Controllable Catalyst Inverse Design via Large-Scale Autoregressive Pretraining</h2>
+        <p class="authors">Dong Hyeon Mok, Jonggeol Na, Seoin Back</p>
+        <p class="abstract">Inverse design of heterogeneous catalysts remains challenging because catalyst surfaces exhibit substantial structural complexity with coupled surface-adsorbate interactions across a vast chemical space that is difficult to explore efficiently through conventional screening alone. Although machine learning-based high-throughput screening has accelerated catalyst discovery, its efficiency inevitably declines as the search space grows, motivating the development of generative models that can directly construct catalysts with target properties. Here, we present a conditional catalyst generative model based on the Generative Pretrained Transformer architecture with a numerical embedding layer that enables the generation of catalyst structures conditioned on both categorical and continuous properties within a single autoregressive framework. The model was pretrained on 133 million catalyst structures and subsequently fine-tuned on approximately 460,000 optimized structures with associated categorical properties and binding energies for conditional generation. The resulting model achieved 98% structural validity, 95% optimization validity, and high categorical condition fidelity, with a 93 % joint match rate for adsorbate type and composition. For binding energy conditioning, the match rate of approximately 20% represents a four-fold improvement over the baseline training distribution, and the generated distributions shift systematically toward the target values, enabling a 1.5 to 4-fold improvement in screening efficiency for reaction-targeted catalyst discovery without additional fine-tuning. These results show that large-scale autoregressive pre-training, combined with explicit property conditioning, provides a practical route toward controllable catalyst generation and accelerated catalysts discovery.</p>
+        <div class="links"><a href="https://arxiv.org/abs/2606.17445v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2606.17445v1" target="_blank" rel="noreferrer">PDF</a></div>
+        <section class="info">
+          <h3>OpenAI Infographic Summary</h3>
+          <p><b>Key insight:</b> A large autoregressive transformer can generate catalyst structures conditioned on both categorical and continuous targets, enabling controllable inverse design rather than brute-force screening.</p>
+          <p><b>Engineering relevance:</b> This approach could substantially speed reaction-targeted catalyst discovery by producing valid, optimized candidates with targeted properties in a single generation pipeline.</p>
+          <ul><li>Pretrained a GPT-style generative model on 133 million catalyst structures.</li><li>Fine-tuned on ~460,000 optimized structures with categorical labels and binding energies.</li><li>Used numerical embeddings to condition generation on discrete and continuous properties within one autoregressive framework.</li></ul>
+          <p><b>Evidence signal:</b> The model reached 98% structural validity, 95% optimization validity, 93% joint match for adsorbate type and composition, and improved binding-energy match and screening efficiency by 1.5–4×.</p>
+          <p><b>Watch item:</b> Condition fidelity for binding energy was only ~20%, so practical deployment may still require tighter property control and validation on new catalyst families.</p>
+          <div class="tags"><span>#CatalystDesign</span> <span>#GenerativeAI</span> <span>#MaterialsDiscovery</span> <span>#InverseDesign</span> <span>#AutoregressiveModels</span></div>
+        </section>
+      </article>
+    
+
+      <article class="paper">
+        <div class="meta"><span>Materials Discovery</span><span>arXiv</span><strong>89</strong></div>
         <p class="date">2026-06-15</p>
         <h2>InvDesMobility: a reliability-gated first-principles feedback framework for closed-loop materials discovery</h2>
         <p class="authors">Wen-Kao Li, Ze-Feng Gao, Peng-Jie Guo, Wei Ji, Zhong-Yi Lu</p>
@@ -39,37 +58,113 @@
         <div class="links"><a href="https://arxiv.org/abs/2606.16133v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2606.16133v1" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> InvDesMobility adds a reliability gate to closed-loop inverse materials design so only sufficiently validated first-principles results are fed back into model training.</p>
-          <p><b>Engineering relevance:</b> The framework makes high-throughput materials discovery more trustworthy and auditable by separating structural learning from property-learning and admitting expensive DFT results only after evidence checks.</p>
-          <ul><li>Multi-agent automated DFT generates and validates candidate 2D materials.</li><li>Evidence is stratified into relaxed-structure feedback for the generative model and retained mobility channels for the acquisition model.</li><li>Reliability-gated records are used to rank new candidates and prioritize validation.</li></ul>
-          <p><b>Evidence signal:</b> From 516 2DMatPedia-derived candidates, the workflow produced 280 QC-passed materials and 573 retained carrier-direction seed channels, then screened 2.4×10^6 structures and submitted 102 candidates for DFT validation.</p>
-          <p><b>Watch item:</b> The framework’s effectiveness depends on the quality of the gating criteria and workflow assumptions, so overly strict or noisy reliability filters could bias what the closed loop learns.</p>
-          <div class="tags"><span>#MaterialsDiscovery</span> <span>#InverseDesign</span> <span>#DFT</span> <span>#ClosedLoopAI</span> <span>#ReliabilityGating</span></div>
+          <p><b>Key insight:</b> InvDesMobility adds a reliability gate to inverse materials design so only independently validated, evidence-backed first-principles results are fed back into the closed loop.</p>
+          <p><b>Engineering relevance:</b> This makes expensive DFT-driven discovery more auditable and robust for properties like carrier mobility, where intermediate quality signals matter as much as the final scalar prediction.</p>
+          <ul><li>Multi-agent automated DFT produces and verifies candidate structures and mobility channels.</li><li>Evidence is stratified into retained feedback objects: relaxed structures update the generative model, while reliable mobility channels train acquisition ranking.</li><li>A feedback contract controls admission, provenance, and validation priority across iterations.</li></ul>
+          <p><b>Evidence signal:</b> On 516 2DMatPedia-derived candidates, the workflow yielded 280 QC-passed materials, 573 retained carrier-direction seed channels, screened 2.4×10^6 structures, and submitted 102 candidates for DFT validation.</p>
+          <p><b>Watch item:</b> The approach depends on careful implementation of reliability thresholds and audit workflows, which may reduce throughput or bias feedback if the gating criteria are too strict.</p>
+          <div class="tags"><span>#MaterialsDiscovery</span> <span>#InverseDesign</span> <span>#DFT</span> <span>#CarrierMobility</span> <span>#ClosedLoopAI</span></div>
         </section>
       </article>
     
 
       <article class="paper">
-        <div class="meta"><span>Crystal and Structure</span><span>arXiv</span><strong>77</strong></div>
+        <div class="meta"><span>Crystal and Structure</span><span>arXiv</span><strong>80</strong></div>
+        <p class="date">2026-06-16</p>
+        <h2>Lifetime Sample Tracking (LiST): A Data Platform for Materials Science</h2>
+        <p class="authors">Anthony Richardella, Isaiah A Moses, Konrad Hilse, Frank Santaguida, Kevin Dressler, Ric Wilburn</p>
+        <p class="abstract">The 2D Crystal Consortium Materials Innovation Platform (2DCC-MIP) is an NSF supported national user facility focused on advancing the synthesis of 2D materials, monolayers, surfaces, and interfaces. The need for the facility to organize and share data with users led to the development of an internal data management and analysis engine, the Lifetime Sample Tracking platform (LiST). This infrastructure allows the automated capture, curation, analysis and dissemination of data ranging from experimental materials synthesis parameters and characterization, to theoretical first-principles and ReaxFF molecular dynamics modeling1. The system currently hosts synthesis and property data (accessible via a REST API) on approximately twenty thousand samples produced by the 2DCC grown using a variety of techniques from bulk crystal growth to metal-organic chemical vapor deposition (MOCVD) and molecular beam epitaxy (MBE), among others. Data used in publications can easily be grouped by the system into data packages that are given digital object identifiers (DOIs) for inclusion with each publication. The LiST platform is now being used by groups outside of the 2DCC as a solution for data curation in materials science. Data management tools such as LiST support the materials development process by allowing a closed loop iteration between synthesis, characterization, theory, and targeted materials design. This also enables machine learning (ML) research, artificial intelligence (AI) analysis, and the potential for autonomous synthesis in the future.</p>
+        <div class="links"><a href="https://arxiv.org/abs/2606.17469v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2606.17469v1" target="_blank" rel="noreferrer">PDF</a></div>
+        <section class="info">
+          <h3>OpenAI Infographic Summary</h3>
+          <p><b>Key insight:</b> LiST is a data platform that automatically captures, curates, analyzes, and shares the full lifecycle of materials science sample data for the 2D Crystal Consortium.</p>
+          <p><b>Engineering relevance:</b> By organizing synthesis, characterization, and modeling data into searchable packages with DOIs, LiST improves reproducibility, collaboration, and data-driven materials design.</p>
+          <ul><li>Automated ingestion of experimental and modeling data</li><li>REST API access for synthesis and property datasets</li><li>Publication-ready data packaging with DOI assignment</li></ul>
+          <p><b>Evidence signal:</b> The platform currently manages synthesis and property data for about 20,000 samples across multiple growth methods.</p>
+          <p><b>Watch item:</b> Broader adoption depends on consistent data standards and careful curation so automated capture does not propagate metadata errors.</p>
+          <div class="tags"><span>#MaterialsScience</span> <span>#DataInfrastructure</span> <span>#DigitalTwin</span> <span>#MachineLearning</span> <span>#2DMaterials</span></div>
+        </section>
+      </article>
+    
+
+      <article class="paper">
+        <div class="meta"><span>Microstructure</span><span>arXiv</span><strong>78</strong></div>
+        <p class="date">2026-06-15</p>
+        <h2>Physics-Informed Attention Mechanism and Generalization Capability of Deep Learning-Based Grain Growth Evolution Prediction</h2>
+        <p class="authors">Pungponhavoan Tep, Marc Bernacki</p>
+        <p class="abstract">Machine Learning (ML) models for grain growth prediction are typically trained on idealized synthetic data, yet practical applications require generalization to conditions outside the training distribution. This study evaluated the Out-Of-Distribution (OOD) generalization capability of the trained model from our previous study across three test cases, including experimental microstructures, microstructures characterized by a bimodal grain size distribution, and abnormal grain growth. To further probe whether physics-informed architectural design could improve robustness under these different conditions, a boundary-masked attention mechanism was proposed specifically for grain growth, constraining attention to grain boundary pixels. Both the baseline and the proposed physics-informed attention model were evaluated without retraining or fine-tuning on the OOD data. Both models successfully generalized to all three test cases, yet the boundary-masked attention mechanism provided substantial improvements, with the most notable gains for microstructures characterized by a bimodal grain size distribution, where Structural Similarity Index Measure (SSIM) improved from \num{0.6221} to \num{0.7609} and mean grain size ($\overline{R}$) error decreased from \SI{8.75}{\percent} to \SI{3.57}{\percent}. The attention heatmap analysis revealed that the boundary-masked attention model learned to concentrate attention on large grain boundaries in a manner consistent with curvature-driven grain growth physics, emerging from training without being explicitly encoded into the architecture. These results indicate that models trained on synthetic data can generalize to diverse OOD conditions without retraining, and that physics-informed attention may improve accuracy when the boundary morphology matches the training domain.</p>
+        <div class="links"><a href="https://arxiv.org/abs/2606.17235v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2606.17235v1" target="_blank" rel="noreferrer">PDF</a></div>
+        <section class="info">
+          <h3>OpenAI Infographic Summary</h3>
+          <p><b>Key insight:</b> A physics-informed boundary-masked attention mechanism improves out-of-distribution grain growth prediction by focusing the model on grain boundary pixels.</p>
+          <p><b>Engineering relevance:</b> Deep learning models trained on synthetic microstructures can generalize to real and atypical grain growth cases, with physics-guided attention offering a practical accuracy boost.</p>
+          <ul><li>Tested a previously trained grain-growth model on three OOD cases: experimental microstructures, bimodal grain size distributions, and abnormal grain growth.</li><li>Compared a baseline model with a boundary-masked attention variant that restricts attention to grain boundary pixels.</li><li>Evaluated both models without retraining or fine-tuning using SSIM and mean grain size error.</li></ul>
+          <p><b>Evidence signal:</b> The strongest gain occurred for bimodal microstructures, where SSIM improved from 0.6221 to 0.7609 and mean grain size error dropped from 8.75% to 3.57%.</p>
+          <p><b>Watch item:</b> The improvement depends on boundary morphology matching the training domain, so benefits may be weaker for microstructures that deviate strongly from learned grain-boundary patterns.</p>
+          <div class="tags"><span>#GrainGrowth</span> <span>#PhysicsInformedML</span> <span>#Microstructure</span> <span>#OutOfDistribution</span> <span>#DeepLearning</span></div>
+        </section>
+      </article>
+    
+
+      <article class="paper">
+        <div class="meta"><span>Polymers and Composites</span><span>arXiv</span><strong>76</strong></div>
+        <p class="date">2026-06-16</p>
+        <h2>Constitutive modelling of magneto-active polymers at finite strains: A survey</h2>
+        <p class="authors">Abhishek Ghosh, Chennakesava Kadapa, Mokarram Hossain</p>
+        <p class="abstract">Magneto-active polymers (MAPs) are field-responsive soft composites whose mechanical behaviour can be actively modified by external magnetic fields. Their ability to exhibit field-induced stiffening, magnetostriction, anisotropy and rate-dependent response makes them attractive for sensors, actuators, adaptive structures, vibration-control devices and soft robotic systems. This article presents a structured survey of constitutive modelling approaches for MAPs at finite strains. The review traces the development from early semi-empirical descriptions to thermodynamically consistent nonlinear continuum theories, with particular attention to isotropic and anisotropic magnetoelastic constitutive models, invariant-based and spectral representations, variational and polyconvex frameworks, microstructurally motivated models, dispersed-chain descriptions and magneto-viscoelastic theories. The principal constitutive variables, energy functions, coupling mechanisms and physical assumptions underlying the main models are discussed. The survey shows that constitutive modelling of MAPs has developed into a broad family of nonlinear, anisotropic and dissipative frameworks capable of describing versatile behaviours observed experimentally. Important challenges remain in resolving thermo-magneto-mechanical coupling and microstructure-sensitive effects, identification of parameters, validation of models as well as robust and efficient implementation on computers.</p>
+        <div class="links"><a href="https://arxiv.org/abs/2606.17576v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2606.17576v1" target="_blank" rel="noreferrer">PDF</a></div>
+        <section class="info">
+          <h3>OpenAI Infographic Summary</h3>
+          <p><b>Key insight:</b> The paper surveys finite-strain constitutive models for magneto-active polymers, showing how theory has evolved from simple semi-empirical laws to thermodynamically consistent nonlinear frameworks that capture anisotropy, viscoelasticity, and microstructure effects.</p>
+          <p><b>Engineering relevance:</b> These models are essential for designing MAP-based sensors, actuators, vibration-control devices, adaptive structures, and soft robots that need predictable field-driven mechanical response.</p>
+          <ul><li>Reviews isotropic and anisotropic magnetoelastic constitutive models.</li><li>Covers invariant-based, spectral, variational, polyconvex, and microstructure-informed formulations.</li><li>Includes dispersed-chain and magneto-viscoelastic theories for dissipative behavior.</li></ul>
+          <p><b>Evidence signal:</b> The paper synthesizes and compares constitutive frameworks from the literature, focusing on how well they represent experimentally observed field-induced stiffening, magnetostriction, anisotropy, and rate dependence.</p>
+          <p><b>Watch item:</b> A major practical challenge is robust parameter identification and computational implementation, especially when thermo-magneto-mechanical coupling and microstructure-sensitive effects must be captured.</p>
+          <div class="tags"><span>#MagnetoActivePolymers</span> <span>#ConstitutiveModeling</span> <span>#FiniteStrainMechanics</span> <span>#SoftMatter</span> <span>#ComputationalMechanics</span></div>
+        </section>
+      </article>
+    
+
+      <article class="paper">
+        <div class="meta"><span>Materials Discovery</span><span>arXiv</span><strong>72</strong></div>
+        <p class="date">2026-06-16</p>
+        <h2>Split-Head Quantum Generative Adversarial Network for Crystalline Material Discovery</h2>
+        <p class="authors">Huan-Ming Chang, Jen-Yu Chang, Tsung-Wei Huang, En-Jui Kuo</p>
+        <p class="abstract">The discovery of novel crystalline materials is a critical challenge in computational materials science, often limited by the spatial representation limitations and mode collapse typical of classical generative models. Traditionally, developing Quantum GANs for continuous 3D space is hindered by the limited capacity of near-term hardware. To overcome this, we adapt a physics-informed &quot;split-head&quot; architecture right from the quantum trunk to explicitly decouple macroscopic lattice bounds from microscopic atomic coordinates, significantly maximizing resource efficiency. This study disentangles the contributions of quantum circuits from these architectural priors by evaluating a Split-Head Quantum Generative Adversarial Network against an architecture-matched classical ablation model. Evaluated on the highly constrained Mg-Mn-O system, the results reveal a highly nuanced performance dichotomy between the advanced models. The architecture-matched classical ablation model demonstrated superior thermodynamic precision. Conversely, the integration of quantum circuits in the SH-QGAN drove unparalleled structural breadth and latent space exploration, more than doubling the ablation&#x27;s geometric validity and successfully generating novel, metastable candidates converging on the Mg2MnO4 stoichiometry. These findings clarify that while architectural separation of cell and atom generation drives strict thermodynamic precision, quantum feature mapping independently provides the spatial diversity necessary to overcome mode collapse. Both mechanisms offer distinct, complementary enhancements for the generative discovery of advanced materials.</p>
+        <div class="links"><a href="https://arxiv.org/abs/2606.17852v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2606.17852v1" target="_blank" rel="noreferrer">PDF</a></div>
+        <section class="info">
+          <h3>OpenAI Infographic Summary</h3>
+          <p><b>Key insight:</b> A split-head Quantum GAN separates lattice bounds from atomic coordinates, and the quantum branch mainly boosts structural diversity while the classical ablation is better at thermodynamic precision.</p>
+          <p><b>Engineering relevance:</b> For materials discovery pipelines, this suggests quantum feature mapping can complement physics-informed architectures by reducing mode collapse and widening the search for viable crystalline candidates.</p>
+          <ul><li>Use a split-head generator from a quantum trunk to decouple cell parameters and atomic positions.</li><li>Benchmark SH-QGAN against an architecture-matched classical ablation to isolate the effect of quantum circuits.</li><li>Test on the constrained Mg-Mn-O chemical system to assess validity, stoichiometry convergence, and diversity.</li></ul>
+          <p><b>Evidence signal:</b> On the Mg-Mn-O benchmark, the classical ablation achieved better thermodynamic precision, while SH-QGAN more than doubled geometric validity and generated novel metastable candidates near Mg2MnO4.</p>
+          <p><b>Watch item:</b> Results are shown on a highly constrained system, so the gains in diversity may not directly transfer to broader materials spaces or near-term hardware settings.</p>
+          <div class="tags"><span>#QuantumGAN</span> <span>#MaterialsDiscovery</span> <span>#CrystallineMaterials</span> <span>#GenerativeAI</span> <span>#ComputationalMaterials</span></div>
+        </section>
+      </article>
+    
+
+      <article class="paper">
+        <div class="meta"><span>Crystal and Structure</span><span>arXiv</span><strong>72</strong></div>
         <p class="date">2026-06-12</p>
         <h2>A Multi-Level Architecture for Reusable Materials Ontologies -- The OntoCrafter Ceramics Ontology (OCO) as Reference Implementation</h2>
         <p class="authors">Thomas Pannek, Wolfgang Grond</p>
         <p class="abstract">The Materials Science and Engineering ontology landscape is fragmented along multiple axes simultaneously. Horizontally: a recent survey identified 94 ontologies of which over 40 are structurally incompatible; each new application domain -- ceramics, polymers, batteries, smart materials -- typically restarts ontology design from scratch. Vertically: EU regulation (CSRD, CSDDD, PPWR, CBAM, R2R, AI Act, ESPR) forces material, manufacturing, supply-chain, and lifecycle data into integrated digital product passports, leaving ontologies that only address horizontal fragmentation incomplete for any contemporary consumer. And mechanistically: a vocabulary that records that BNT-BT has $d_{33} \approx 580$ pC/N stores a fact but cannot surface why -- Bi-6s$^2$ lone-pair stereo-activity, anomalous Born effective charges, soft modes, defect chemistry -- without a systematic explanation skeleton. We propose a multi-level modular architecture with two independent classification axes -- level of abstraction (L0 bridges, L1 material-agnostic laboratory-notebook, L2 material-class-specific, L3 categorical reasoning) and consumer audience (material vs. compliance) -- in which the material-specific level is internally organised by a seven-tier mechanistic-explanation skeleton (Symmetry, Energy/DFT, Thermo/CALPHAD, Kinetics, Microstructure, Defect chemistry, Bonding) applicable to any crystalline ionic oxide. The level-and-audience modularity dissolves the horizontal fragmentation, the compliance audience absorbs the vertical regulation pressure, and the seven-tier organisation of Level 2 delivers the mechanistic explanation depth. We instantiate the architecture as the OntoCrafter Ceramics Ontology (OCO v0.94): 5,196 classes across 44 modules; 167,348 OWL axioms (40,454 logical); 1,674 properties; 829 cross-ontology bridge mappings; 1,172 SHACL shapes; 163 published competency questions.</p>
-        <div class="links"><a href="https://arxiv.org/abs/2606.14814v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2606.14814v1" target="_blank" rel="noreferrer">PDF</a></div>
+        <div class="links"><a href="https://arxiv.org/abs/2606.14814v2" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2606.14814v2" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> The paper proposes a multi-level ontology architecture that separates material science content from compliance needs and adds a mechanistic explanation skeleton to make materials ontologies reusable and interoperable.</p>
-          <p><b>Engineering relevance:</b> It offers a practical blueprint for building ontology-based digital product passport infrastructure that can support ceramics and other materials domains under modern EU regulatory and supply-chain data demands.</p>
-          <ul><li>Define four abstraction levels: L0 bridges, L1 material-agnostic lab notebook, L2 material-class-specific, and L3 categorical reasoning.</li><li>Organize Level 2 with a seven-tier mechanistic explanation skeleton: symmetry, energy/DFT, thermo/CALPHAD, kinetics, microstructure, defect chemistry, and bonding.</li><li>Implement and validate the design as OCO v0.94 with modular ontology components, bridge mappings, and SHACL constraints.</li></ul>
-          <p><b>Evidence signal:</b> The reference implementation reports 5,196 classes, 167,348 OWL axioms, 1,674 properties, 829 cross-ontology bridges, 1,172 SHACL shapes, and 163 competency questions.</p>
-          <p><b>Watch item:</b> The architecture is powerful but may be costly to maintain and extend because its modular mappings and mechanistic tiers require consistent curation across many ontology modules and application contexts.</p>
-          <div class="tags"><span>#MaterialsOntology</span> <span>#OntologyEngineering</span> <span>#DigitalProductPassport</span> <span>#Ceramics</span> <span>#SemanticWeb</span></div>
+          <p><b>Key insight:</b> The paper proposes a reusable multi-level ontology architecture that separates abstraction level and consumer audience, with a mechanistic seven-tier core for material-specific explanation.</p>
+          <p><b>Engineering relevance:</b> It provides a scalable framework for linking materials, manufacturing, supply-chain, and lifecycle data into digital product passports while reducing ontology redesign effort across material classes.</p>
+          <ul><li>Define four abstraction levels: L0 bridges, L1 material-agnostic lab-notebook, L2 material-class-specific, and L3 categorical reasoning.</li><li>Organize the L2 material layer with a seven-tier explanation skeleton: Symmetry, Energy/DFT, Thermo/CALPHAD, Kinetics, Microstructure, Defect chemistry, and Bonding.</li><li>Implement the architecture in OCO v0.94 with OWL axioms, SHACL shapes, and cross-ontology bridge mappings.</li></ul>
+          <p><b>Evidence signal:</b> The reference implementation, OCO v0.94, reports 5,196 classes, 167,348 OWL axioms, 1,674 properties, 829 bridge mappings, 1,172 SHACL shapes, and 163 competency questions.</p>
+          <p><b>Watch item:</b> The ontology is large and modular, so practical adoption may depend on maintaining mapping quality and keeping the seven-tier explanation model consistent across domains.</p>
+          <div class="tags"><span>#MaterialsOntology</span> <span>#DigitalProductPassport</span> <span>#OntologyEngineering</span> <span>#ComputationalMaterials</span> <span>#SemanticWeb</span></div>
         </section>
       </article>
     
 
       <article class="paper">
-        <div class="meta"><span>Materials Discovery</span><span>arXiv</span><strong>75</strong></div>
+        <div class="meta"><span>Materials Discovery</span><span>arXiv</span><strong>70</strong></div>
         <p class="date">2026-06-12</p>
         <h2>LapidaryEngine: Fully Conversational Crystal Generation</h2>
         <p class="authors">Yusei Ito, Yuta Suzuki, Tomoya Murata, Masaki Adachi</p>
@@ -77,50 +172,12 @@
         <div class="links"><a href="https://arxiv.org/abs/2606.14215v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2606.14215v1" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> LapidaryEngine enables fully conversational crystal generation by using a pivot representation to translate between free-form language and crystal structures in both directions.</p>
-          <p><b>Engineering relevance:</b> This moves materials design toward interactive, user-guided discovery workflows that can support iterative refinement, editing, and constraint satisfaction in real time.</p>
-          <ul><li>Accepts free-form natural-language requests instead of requiring structured chemical inputs.</li><li>Uses a pivot representation as an intermediate form to enable bidirectional text↔crystal translation.</li><li>Supports iterative dialogue-style refinement for composition and structure edits.</li></ul>
-          <p><b>Evidence signal:</b> The abstract reports demonstrations on diverse tasks including insulator discovery, stability optimization, compositional modification, and structural editing, indicating broad interactive evaluation.</p>
-          <p><b>Watch item:</b> The pivot-based bidirectional capability may depend on the quality and coverage of the intermediate representation, so performance on out-of-distribution materials or highly ambiguous requests may be limited.</p>
-          <div class="tags"><span>#MaterialsDiscovery</span> <span>#CrystalGeneration</span> <span>#LLMs</span> <span>#GenerativeAI</span> <span>#ComputationalMaterials</span></div>
-        </section>
-      </article>
-    
-
-      <article class="paper">
-        <div class="meta"><span>Materials Discovery</span><span>arXiv</span><strong>70</strong></div>
-        <p class="date">2026-06-15</p>
-        <h2>Stitching Molecular Worlds Together with Physics-Coupled Diffusion Models</h2>
-        <p class="authors">Yanbin Wang, Yajie Cai, Ming Chen</p>
-        <p class="abstract">Complex chemical systems often contain multiple components or large molecules, giving rise to substantial chemical and conformational complexity. Modeling the structures of these systems is crucial for mechanistic understanding of chemical processes and rational design, but remains highly challenging for both conventional theoretical approaches and machine learning. Here, we introduce physical-interaction-coupled diffusion models (PICDiff), a framework that couples independently trained diffusion models for subsystems of a complex system through explicit bonded and nonbonded interactions during inference. PICDiff reduces the difficulty of applying generative models to chemically and conformationally complex systems by decomposing them into smaller subsystems that are less complex and more amenable to machine-learning-based modeling. Using peptide-polymer binding and polymer conformation sampling as examples, we demonstrate that PICDiff can quantitatively sample conformations and model the thermodynamics of complex chemical systems. These results show that PICDiff provides a general and practical approach for modeling complex chemical systems by combining learned models of simpler molecular subsystems through physical interactions.</p>
-        <div class="links"><a href="https://arxiv.org/abs/2606.16147v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2606.16147v1" target="_blank" rel="noreferrer">PDF</a></div>
-        <section class="info">
-          <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> PICDiff stitches together independently trained diffusion models for molecular subsystems by enforcing explicit physical interactions during inference, enabling complex chemical systems to be modeled as coupled simpler parts.</p>
-          <p><b>Engineering relevance:</b> This offers a practical route for materials and molecular design workflows to sample conformations and estimate thermodynamics for systems that are too complex for a single generative model.</p>
-          <ul><li>Decompose a complex molecule or mixture into smaller subsystems.</li><li>Train separate diffusion models on each subsystem independently.</li><li>Couple the subsystems at inference with bonded and nonbonded physical interactions.</li></ul>
-          <p><b>Evidence signal:</b> The abstract reports demonstrations on peptide-polymer binding and polymer conformation sampling, with quantitative conformational sampling and thermodynamic modeling.</p>
-          <p><b>Watch item:</b> Performance may depend on how accurately the subsystem models and the coupling interactions represent the full system, especially for strongly correlated chemistry.</p>
-          <div class="tags"><span>#MaterialsDiscovery</span> <span>#DiffusionModels</span> <span>#MolecularModeling</span> <span>#PolymerScience</span> <span>#ComputationalChemistry</span></div>
-        </section>
-      </article>
-    
-
-      <article class="paper">
-        <div class="meta"><span>Microstructure</span><span>arXiv</span><strong>70</strong></div>
-        <p class="date">2026-06-12</p>
-        <h2>Distilling latent electrostatics from foundation machine learning interatomic potentials</h2>
-        <p class="authors">Xiaoyu Wang, Bingqing Cheng</p>
-        <p class="abstract">Foundation machine learning interatomic potentials (MLIPs) have enabled atomistic simulations across broad regions of chemical and materials space, but many remain computationally expensive and lack explicit electrostatics, limiting their use for systems governed by long-range interactions and electrical response. Previously, we introduced Latent Ewald Summation (LES), which learns latent atomic charges and long-range electrostatics from density functional theory (DFT) energy and force labels alone. Here, we use LES to extract electrostatics that are latent in foundation models: energies and forces predicted by a teacher model are used to train a lightweight LES-augmented student MLIP, with optional fine-tuning on additional DFT data. The resulting models reduce computational cost while providing access to Born effective charge tensors, and infrared spectra. We benchmark student models distilled from a broad set of foundation MLIPs, including UMA, MACE, Orb, eSEN, GemNet-OC, PET, and EquiformerV2-based models, against experimental infrared spectra for liquid water, concentrated hydrochloric acid, and the anatase TiO2(101)-water interface. Across these systems, electrostatic response can be extracted from most foundation MLIPs. The benchmark further shows that the underlying DFT level and dataset used to train the teacher model play a larger role than architecture in determining electrostatic and spectroscopic accuracy. For the TiO2-water interface, fine-tuning with a modest amount of higher-level DFT data improves structural and infrared predictions. LES-based distillation therefore provides a practical route for converting foundation MLIPs into efficient, electrically responsive models, while also testing the physical fidelity encoded in foundation models.</p>
-        <div class="links"><a href="https://arxiv.org/abs/2606.15001v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2606.15001v1" target="_blank" rel="noreferrer">PDF</a></div>
-        <section class="info">
-          <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> Latent electrostatics can be distilled from foundation ML interatomic potentials using LES, turning fast energy/force predictors into models that also capture charges, long-range electrostatics, and IR response.</p>
-          <p><b>Engineering relevance:</b> This enables cheaper atomistic simulations for electrically responsive materials and interfaces, while preserving access to quantities needed for spectroscopy and interfacial electrostatics.</p>
-          <ul><li>Train a lightweight LES-augmented student model on teacher-predicted energies and forces.</li><li>Optionally fine-tune the student with additional DFT data for improved accuracy.</li><li>Extract Born effective charges and simulate infrared spectra from the distilled model.</li></ul>
-          <p><b>Evidence signal:</b> The approach was benchmarked on water, concentrated HCl, and anatase TiO2(101)-water interfaces using students distilled from multiple foundation MLIPs and compared against experimental infrared spectra.</p>
-          <p><b>Watch item:</b> Electrostatic and spectroscopic accuracy depends strongly on the teacher’s underlying DFT level and training data, so distillation cannot fully correct a weak or biased foundation model.</p>
-          <div class="tags"><span>#MachineLearningPotentials</span> <span>#MaterialsInformatics</span> <span>#Electrostatics</span> <span>#InfraredSpectroscopy</span> <span>#ComputationalMaterials</span></div>
+          <p><b>Key insight:</b> LapidaryEngine enables fully conversational crystal design by using a pivot representation to translate between free-form text and crystal structures in both directions.</p>
+          <p><b>Engineering relevance:</b> This could make materials discovery more interactive and user-driven, allowing engineers to iteratively refine candidates for stability, composition, and target properties from natural-language feedback.</p>
+          <ul><li>Accepts free-form natural-language crystal requests instead of only structured inputs</li><li>Introduces a pivot representation for bidirectional text↔crystal translation without direct paired datasets</li><li>Supports iterative dialogue-style refinement and structural editing</li></ul>
+          <p><b>Evidence signal:</b> The abstract reports demonstrations across insulator discovery, stability optimization, compositional modification, and structural editing, indicating evaluation on multiple materials-design tasks.</p>
+          <p><b>Watch item:</b> Performance may depend on the quality of the pivot representation and on how reliably the model interprets ambiguous user intent in real conversational settings.</p>
+          <div class="tags"><span>#MaterialsDiscovery</span> <span>#CrystalGeneration</span> <span>#LLM</span> <span>#GenerativeAI</span> <span>#ComputationalScience</span></div>
         </section>
       </article>
     
@@ -134,18 +191,132 @@
         <div class="links"><a href="https://arxiv.org/abs/2606.15321v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2606.15321v1" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> The paper shows that flat-band materials can be designed by treating band flatness as a connectivity problem and generating novel sublattice geometries beyond the usual kagome/Lieb/pyrochlore motifs.</p>
-          <p><b>Engineering relevance:</b> This expands the materials design search space for discovering compounds with correlated and topological electronic behavior using symmetry-aware generative modeling.</p>
-          <ul><li>Build a continuous geometric representation of crystal sublattices to explore non-catalog crystal-net motifs.</li><li>Use SkeleGen to place unconventional skeletons on symmetry-compatible Wyckoff positions while denoising surrounding chemistry.</li><li>Screen generated candidates for stability and flat-band behavior with high-throughput DFT and tight-binding checks.</li></ul>
-          <p><b>Evidence signal:</b> The workflow produced 9,352 crystal candidates that passed stability and flatness screening, with DFT band structures agreeing well with tight-binding spectra of the isolated skeletons.</p>
-          <p><b>Watch item:</b> Generative novelty does not guarantee experimental synthesizability, so the unusual motifs still need practical validation beyond computational screening.</p>
-          <div class="tags"><span>#MaterialsDiscovery</span> <span>#FlatBands</span> <span>#GenerativeAI</span> <span>#CrystalStructures</span> <span>#DFT</span></div>
+          <p><b>Key insight:</b> The paper shows that flat-band materials can be designed from novel, symmetry-compatible crystal skeletons beyond classic kagome/Lieb/pyrochlore motifs, expanding the geometric search space for flat bands.</p>
+          <p><b>Engineering relevance:</b> This provides a generative, symmetry-aware pathway for discovering candidate quantum materials with targeted electronic flatness, which is useful for screening strongly correlated and topological materials at scale.</p>
+          <ul><li>Built a continuous geometric representation of crystal sublattices to go beyond discrete named prototypes.</li><li>Used a symmetry-constrained generative model (SkeleGen) to place unconventional skeletons on Wyckoff positions and denoise surrounding chemistry.</li><li>Screened generated structures for stability and flat-band behavior.</li></ul>
+          <p><b>Evidence signal:</b> The pipeline produced 9,352 crystal candidates that passed stability and flatness screening, and high-throughput DFT agreed well with tight-binding spectra of the isolated skeletons.</p>
+          <p><b>Watch item:</b> Because the approach relies on generated candidates and screening, experimental synthesis feasibility and real-world stability may still limit how many predicted flat-band materials can be realized.</p>
+          <div class="tags"><span>#MaterialsInformatics</span> <span>#FlatBands</span> <span>#CrystalSymmetry</span> <span>#GenerativeDesign</span> <span>#DFT</span></div>
         </section>
       </article>
     
 
       <article class="paper">
-        <div class="meta"><span>Materials Discovery</span><span>arXiv</span><strong>69</strong></div>
+        <div class="meta"><span>Crystal and Structure</span><span>arXiv</span><strong>65</strong></div>
+        <p class="date">2026-06-16</p>
+        <h2>Anisotropic Short-Range Order Modulates Ferroelectric Switching in Wurtzite ScAlN Alloys</h2>
+        <p class="authors">Shunda Chen, Xianchao Dong, Xiaochen Jin, Tianshu Li</p>
+        <p class="abstract">Ferroelectric switching in wurtzite alloys is typically understood in terms of composition, strain, defects, and interfaces, while local chemical order is often neglected or treated as a secondary perturbation. Here we show that short-range order (SRO) is a previously overlooked microscopic variable that substantially influences the intrinsic switching barrier. Using first-principles canonical sampling, we find that wurtzite ScAlN develops a robust, highly anisotropic SRO that challenges the conventional random-alloy picture. This ordering suppresses in-plane Sc--N--Sc motifs while enhancing columnar mixed-cation chains along the polar $c$ axis, reflecting the symmetry-distinct polar and basal directions of the wurtzite lattice and reorganizing its polar connectivity. Relative to random-alloy structures, SRO systematically increases the intrinsic switching barrier across a broad composition range. Motif-resolved analysis further identifies the population of columnar Sc--N--Al--N--Sc motifs as the primary structural descriptor underlying switching-barrier variations among configurations with different local order. These results establish anisotropic SRO as an independent degree of freedom for tuning ferroelectric switching. More broadly, they reveal how local chemical order can couple to the symmetry-distinct directions of a polar semiconductor lattice to modify functional behavior. Our findings lay a foundation for SRO engineering as a route to tailoring switching barriers without changing alloy composition.</p>
+        <div class="links"><a href="https://arxiv.org/abs/2606.18213v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2606.18213v1" target="_blank" rel="noreferrer">PDF</a></div>
+        <section class="info">
+          <h3>OpenAI Infographic Summary</h3>
+          <p><b>Key insight:</b> Anisotropic short-range chemical order in wurtzite ScAlN is an independent control knob that raises the intrinsic ferroelectric switching barrier, especially through columnar Sc–N–Al–N–Sc connectivity along the polar c axis.</p>
+          <p><b>Engineering relevance:</b> Engineering local chemical order could tune ferroelectric switching barriers in ScAlN devices without changing alloy composition, offering a new pathway for performance optimization.</p>
+          <ul><li>First-principles canonical sampling of wurtzite ScAlN alloys</li><li>Compare intrinsic switching barriers for random-alloy versus SRO configurations</li><li>Motif-resolved analysis of local Sc–N coordination patterns</li></ul>
+          <p><b>Evidence signal:</b> Across a broad composition range, the simulations show robust anisotropic SRO and a systematic increase in switching barrier relative to random-alloy structures, with columnar Sc–N–Al–N–Sc motifs tracking barrier variation.</p>
+          <p><b>Watch item:</b> The conclusions are based on idealized first-principles alloy configurations, so real films may differ because of growth history, defects, strain, and interface effects.</p>
+          <div class="tags"><span>#Ferroelectrics</span> <span>#ScAlN</span> <span>#ShortRangeOrder</span> <span>#FirstPrinciples</span> <span>#MaterialsEngineering</span></div>
+        </section>
+      </article>
+    
+
+      <article class="paper">
+        <div class="meta"><span>Crystal and Structure</span><span>arXiv</span><strong>65</strong></div>
+        <p class="date">2026-06-16</p>
+        <h2>Impact of dynamic electrostatic disorder on hole mobility in rubrene: a nonadiabatic molecular dynamics investigation</h2>
+        <p class="authors">Jan Elsner, Samuele Giannini, Jochen Blumberger</p>
+        <p class="abstract">High-mobility organic molecular crystals such as rubrene are important materials for organic electronics, yet a quantitatively predictive description of their charge transport properties remains challenging. Direct mixed quantum-classical nonadiabatic molecular dynamics simulations provide a promising route by explicitly propagating the charge carrier wavefunction, without assuming a specific transport mechanism. However, previous large-scale simulations of apolar molecular crystals have commonly neglected dynamic electrostatic disorder, since evaluation of electrostatic interactions is computationally demanding and the approximation appears plausible for apolar systems. Here, we use the damped shifted-force (DSF) real-space electrostatic summation method, combined with an efficient addition-subtraction scheme, to include dynamic electrostatic disorder in fragment orbital-based surface hopping (FOB-SH) simulations of room-temperature hole transport in rubrene. We find that electrostatic interactions increase the reorganization energy for (hypothetical) nearest neighbour hopping by 29 and 39 meV along the a and b-directions, respectively, relative to a baseline value of 152 meV obtained without electrostatics. In FOB-SH simulations, electrostatic interactions lead to increased site energy disorder, reducing the spatial extent of the hole wavefunction, as measured by a decrease in the inverse participation ratio from 13 to 9, and lowering the predicted mobility along the high-mobility direction from $35$ to $21~\mathrm{cm^2 V^{-1}s^{-1}}$, in close agreement with experiment.</p>
+        <div class="links"><a href="https://arxiv.org/abs/2606.18090v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2606.18090v1" target="_blank" rel="noreferrer">PDF</a></div>
+        <section class="info">
+          <h3>OpenAI Infographic Summary</h3>
+          <p><b>Key insight:</b> Including dynamic electrostatic disorder in nonadiabatic simulations significantly changes rubrene hole transport, making the predicted mobility lower and more realistic.</p>
+          <p><b>Engineering relevance:</b> For organic semiconductor design, this shows that long-range electrostatic effects can materially affect mobility predictions and should not be neglected in high-mobility crystal modeling.</p>
+          <ul><li>Used fragment orbital-based surface hopping (FOB-SH) nonadiabatic molecular dynamics for room-temperature hole transport in rubrene.</li><li>Included dynamic electrostatics with the damped shifted-force (DSF) real-space summation plus an addition-subtraction scheme.</li><li>Compared transport with and without electrostatics to quantify changes in reorganization energy, disorder, and mobility.</li></ul>
+          <p><b>Evidence signal:</b> The simulations showed increased reorganization energy, reduced inverse participation ratio from 13 to 9, and mobility along the high-mobility direction dropped from 35 to 21 cm^2 V^-1 s^-1, matching experiment closely.</p>
+          <p><b>Watch item:</b> DSF electrostatics improve realism but add computational cost, so scalability and sensitivity to model assumptions should be checked for larger or less ordered crystals.</p>
+          <div class="tags"><span>#OrganicSemiconductors</span> <span>#ChargeTransport</span> <span>#MolecularDynamics</span> <span>#NonadiabaticDynamics</span> <span>#Rubrene</span></div>
+        </section>
+      </article>
+    
+
+      <article class="paper">
+        <div class="meta"><span>Materials Discovery</span><span>arXiv</span><strong>65</strong></div>
+        <p class="date">2026-06-15</p>
+        <h2>Stitching Molecular Worlds Together with Physics-Coupled Diffusion Models</h2>
+        <p class="authors">Yanbin Wang, Yajie Cai, Ming Chen</p>
+        <p class="abstract">Complex chemical systems often contain multiple components or large molecules, giving rise to substantial chemical and conformational complexity. Modeling the structures of these systems is crucial for mechanistic understanding of chemical processes and rational design, but remains highly challenging for both conventional theoretical approaches and machine learning. Here, we introduce physical-interaction-coupled diffusion models (PICDiff), a framework that couples independently trained diffusion models for subsystems of a complex system through explicit bonded and nonbonded interactions during inference. PICDiff reduces the difficulty of applying generative models to chemically and conformationally complex systems by decomposing them into smaller subsystems that are less complex and more amenable to machine-learning-based modeling. Using peptide-polymer binding and polymer conformation sampling as examples, we demonstrate that PICDiff can quantitatively sample conformations and model the thermodynamics of complex chemical systems. These results show that PICDiff provides a general and practical approach for modeling complex chemical systems by combining learned models of simpler molecular subsystems through physical interactions.</p>
+        <div class="links"><a href="https://arxiv.org/abs/2606.16147v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2606.16147v1" target="_blank" rel="noreferrer">PDF</a></div>
+        <section class="info">
+          <h3>OpenAI Infographic Summary</h3>
+          <p><b>Key insight:</b> PICDiff stitches together separately trained diffusion models for molecular subsystems and couples them with explicit physical interactions at inference to handle chemically and conformationally complex systems.</p>
+          <p><b>Engineering relevance:</b> This offers a practical generative modeling route for materials and molecular design problems that are too complex for a single model, while preserving physically meaningful interactions.</p>
+          <ul><li>Decompose a complex chemical system into smaller subsystems and train diffusion models independently on each part.</li><li>During inference, couple the subsystem models through explicit bonded and nonbonded physics-based interactions.</li><li>Use the coupled sampler to generate conformations and estimate thermodynamic behavior for complex molecular assemblies.</li></ul>
+          <p><b>Evidence signal:</b> The abstract reports successful quantitative sampling of conformations and thermodynamics on peptide-polymer binding and polymer conformation examples.</p>
+          <p><b>Watch item:</b> Performance likely depends on how well the subsystems are decomposed and how accurately the chosen interaction coupling captures cross-subsystem physics.</p>
+          <div class="tags"><span>#MaterialsDiscovery</span> <span>#DiffusionModels</span> <span>#MolecularModeling</span> <span>#GenerativeAI</span> <span>#ComputationalChemistry</span></div>
+        </section>
+      </article>
+    
+
+      <article class="paper">
+        <div class="meta"><span>Microstructure</span><span>arXiv</span><strong>65</strong></div>
+        <p class="date">2026-06-12</p>
+        <h2>Distilling latent electrostatics from foundation machine learning interatomic potentials</h2>
+        <p class="authors">Xiaoyu Wang, Bingqing Cheng</p>
+        <p class="abstract">Foundation machine learning interatomic potentials (MLIPs) have enabled atomistic simulations across broad regions of chemical and materials space, but many remain computationally expensive and lack explicit electrostatics, limiting their use for systems governed by long-range interactions and electrical response. Previously, we introduced Latent Ewald Summation (LES), which learns latent atomic charges and long-range electrostatics from density functional theory (DFT) energy and force labels alone. Here, we use LES to extract electrostatics that are latent in foundation models: energies and forces predicted by a teacher model are used to train a lightweight LES-augmented student MLIP, with optional fine-tuning on additional DFT data. The resulting models reduce computational cost while providing access to Born effective charge tensors, and infrared spectra. We benchmark student models distilled from a broad set of foundation MLIPs, including UMA, MACE, Orb, eSEN, GemNet-OC, PET, and EquiformerV2-based models, against experimental infrared spectra for liquid water, concentrated hydrochloric acid, and the anatase TiO2(101)-water interface. Across these systems, electrostatic response can be extracted from most foundation MLIPs. The benchmark further shows that the underlying DFT level and dataset used to train the teacher model play a larger role than architecture in determining electrostatic and spectroscopic accuracy. For the TiO2-water interface, fine-tuning with a modest amount of higher-level DFT data improves structural and infrared predictions. LES-based distillation therefore provides a practical route for converting foundation MLIPs into efficient, electrically responsive models, while also testing the physical fidelity encoded in foundation models.</p>
+        <div class="links"><a href="https://arxiv.org/abs/2606.15001v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2606.15001v1" target="_blank" rel="noreferrer">PDF</a></div>
+        <section class="info">
+          <h3>OpenAI Infographic Summary</h3>
+          <p><b>Key insight:</b> Latent electrostatics can be distilled from foundation ML interatomic potentials into a lightweight LES-augmented student model that predicts charges, Born effective charges, and infrared spectra.</p>
+          <p><b>Engineering relevance:</b> This enables faster atomistic simulations with explicit electrical response for systems where long-range electrostatics matter, such as liquids, interfaces, and ionic materials.</p>
+          <ul><li>Use teacher-model energies and forces to train a student MLIP with Latent Ewald Summation (LES).</li><li>Optionally fine-tune the distilled model with additional DFT data for improved accuracy.</li><li>Extract latent atomic charges to compute long-range electrostatics, Born effective charge tensors, and IR spectra.</li></ul>
+          <p><b>Evidence signal:</b> The approach was benchmarked on student models distilled from UMA, MACE, Orb, eSEN, GemNet-OC, PET, and EquiformerV2-based teachers against experimental infrared spectra for liquid water, concentrated hydrochloric acid, and the anatase TiO2(101)-water interface.</p>
+          <p><b>Watch item:</b> Electrostatic and spectroscopic accuracy depend strongly on the teacher’s underlying DFT level and training data, so distillation cannot fully recover missing physical fidelity.</p>
+          <div class="tags"><span>#MachineLearningPotentials</span> <span>#Electrostatics</span> <span>#MaterialsInformatics</span> <span>#InfraredSpectroscopy</span> <span>#AtomisticSimulation</span></div>
+        </section>
+      </article>
+    
+
+      <article class="paper">
+        <div class="meta"><span>AI materials science</span><span>arXiv</span><strong>64</strong></div>
+        <p class="date">2026-06-16</p>
+        <h2>Surface Induced Magnetism of CdSe Quantum Dots: A DFT Study</h2>
+        <p class="authors">G. Kurian, D. Subedi, A. Aniagboso, M. D. Mochena</p>
+        <p class="abstract">Surface induced magnetism of quantum dots is not well understood and has been a subject of considerable controversy because of the complexity of surface chemistry of quantum dot facets coupled with the many degrees of freedom inherently involved in magnetism. We performed spin-polarized colinear density functional theory calculations to study charge and spin densities to determine surface reconstructions in bare as well as passivated quantum dots in controlled way. We find that tricoordinated surface atoms relax contributing no dangling bonds and bi-coordinated atoms dimerize, reducing the population of the dangling bonds affecting the induced magnetism. As a result, bicoordinated rather than tricoordinated surface atoms are responsible for spin polarized surface states. In light of recent advanced experimental tools, we predict dangling bonds that remain, despite passivation, on low index facets with bicoordinated atoms could result in tunable surface magnetism. Our results also shed light on the contradicting experimental results in the literature.</p>
+        <div class="links"><a href="https://arxiv.org/abs/2606.17681v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2606.17681v1" target="_blank" rel="noreferrer">PDF</a></div>
+        <section class="info">
+          <h3>OpenAI Infographic Summary</h3>
+          <p><b>Key insight:</b> Surface magnetism in CdSe quantum dots is driven mainly by bicoordinated surface atoms that retain dangling bonds after reconstruction, not by tricoordinated sites.</p>
+          <p><b>Engineering relevance:</b> Understanding which surface facets and terminations create spin-polarized states can guide the design of quantum dots with tunable magnetic behavior for nanoscale devices.</p>
+          <ul><li>Spin-polarized colinear density functional theory (DFT)</li><li>Computed charge and spin densities for bare and passivated quantum dots</li><li>Analyzed surface reconstructions, dangling bonds, and facet-specific atom coordination</li></ul>
+          <p><b>Evidence signal:</b> The abstract reports DFT results showing tricoordinated atoms relax without dangling bonds while bicoordinated atoms dimerize and remain the main source of spin-polarized surface states.</p>
+          <p><b>Watch item:</b> Predictions depend on idealized DFT surface models, so experimental validation is needed for real quantum dots with defects, mixed facets, and incomplete passivation.</p>
+          <div class="tags"><span>#DFT</span> <span>#QuantumDots</span> <span>#SurfaceMagnetism</span> <span>#MaterialsScience</span> <span>#NanoscaleEngineering</span></div>
+        </section>
+      </article>
+    
+
+      <article class="paper">
+        <div class="meta"><span>Property Prediction</span><span>arXiv</span><strong>64</strong></div>
+        <p class="date">2026-06-15</p>
+        <h2>Machine learning insights into band gap properties in halide-based perovskites</h2>
+        <p class="authors">Chadawan Khamdang, Mengen Wang</p>
+        <p class="abstract">Halide perovskites show great promise for applications in optoelectronic devices. The lead-free perovskites are attracting increasing interest due to their low toxicity and motivate the exploration of alternative compositions and structures, including A$_2$BX$_6$, A$_2$BB$^\prime$X$_6$, A$_3$B$_2$X$_9$, and A$_4$BX$_6$. Accurate predictions of a wide range of band gap energies are important for designing new materials. It is also desired to generate a direct relationship between the structural and elemental descriptors and the band gap energies. In this work, we develop machine learning models to predict band gap energies across various types of halide perovskites based on atomic and structural properties. Algorithms including ensemble tree-based methods, random forest regression (RFR), gradient boosted regression trees (GBRT), and extreme gradient boosting (XGB) showed strong predictive accuracy. We also analyzed feature importance to identify key descriptors, including B-site and X-site elemental properties, as well as the number of A- and B-site atoms, as primary factors influencing band gap energies. These results improve our understanding of the ML models and provide guidance for designing new halide perovskite materials.</p>
+        <div class="links"><a href="https://arxiv.org/abs/2606.17186v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2606.17186v1" target="_blank" rel="noreferrer">PDF</a></div>
+        <section class="info">
+          <h3>OpenAI Infographic Summary</h3>
+          <p><b>Key insight:</b> Tree-based machine learning models can accurately predict halide perovskite band gaps from atomic and structural descriptors, revealing which site-specific features matter most.</p>
+          <p><b>Engineering relevance:</b> These models can speed up screening of lead-free perovskites and guide composition design for optoelectronic materials with target band gaps.</p>
+          <ul><li>Trained ensemble tree-based regressors: Random Forest, GBRT, and XGBoost.</li><li>Used atomic and structural descriptors across multiple halide perovskite families.</li><li>Interpreted feature importance to identify dominant B-site and X-site chemistry effects.</li></ul>
+          <p><b>Evidence signal:</b> The abstract reports strong predictive accuracy across diverse halide perovskite compositions and successful feature-importance analysis.</p>
+          <p><b>Watch item:</b> Model performance may depend on the coverage and quality of the training data, so extrapolation to unseen chemistries should be treated cautiously.</p>
+          <div class="tags"><span>#MaterialsInformatics</span> <span>#Perovskites</span> <span>#MachineLearning</span> <span>#BandGapPrediction</span> <span>#Optoelectronics</span></div>
+        </section>
+      </article>
+    
+
+      <article class="paper">
+        <div class="meta"><span>Materials Discovery</span><span>arXiv</span><strong>64</strong></div>
         <p class="date">2026-06-12</p>
         <h2>Large Language Model Based Agent for Automated Discovery in Computational Physics</h2>
         <p class="authors">Hang Lin, Chongwen Liu, Gang Yan</p>
@@ -153,259 +324,88 @@
         <div class="links"><a href="https://arxiv.org/abs/2606.14266v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2606.14266v1" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> PhyNex is an autonomous LLM-based agent that searches for better computational physics methods while using domain tools to preserve physical consistency.</p>
-          <p><b>Engineering relevance:</b> It could reduce the trial-and-error burden in scientific software design by helping engineers and researchers rapidly discover effective algorithms under physical constraints.</p>
-          <ul><li>Uses progressive local search guided by a large language model.</li><li>Combines LLM proposals with domain-specific computational tools to enforce validity.</li><li>Learns reusable knowledge from both successful and failed search attempts.</li></ul>
-          <p><b>Evidence signal:</b> The agent was evaluated on three tasks—dielectric spectrum prediction, Max-Cut heuristic design, and quantum battery charging—and matched or exceeded human-designed baselines with improvements up to 3.8% in spectral similarity, 15.0% in normalized mean cut, and 5.9% in ergotropy at the 80k checkpoint.</p>
-          <p><b>Watch item:</b> Performance depends on well-defined, scorable objectives and reliable physics-aware tools, so transfer to less structured problems may be limited.</p>
-          <div class="tags"><span>#AIAgent</span> <span>#ComputationalPhysics</span> <span>#MaterialsDiscovery</span> <span>#LargeLanguageModels</span> <span>#ScientificDiscovery</span></div>
+          <p><b>Key insight:</b> PhyNex is an LLM-guided autonomous agent that searches over solution strategies for scorable computational physics tasks while using domain tools to preserve physical consistency.</p>
+          <p><b>Engineering relevance:</b> It can reduce manual trial-and-error in scientific software development by helping researchers quickly discover effective algorithms under explicit objectives and constraints.</p>
+          <ul><li>Progressive local search driven by an LLM</li><li>Reuses knowledge from both successful and failed attempts</li><li>Uses domain-specific computational tools to enforce physical validity</li></ul>
+          <p><b>Evidence signal:</b> Across three benchmark problems, PhyNex matched or exceeded human-designed methods, with gains of up to 3.8% in spectral similarity, 15.0% in normalized mean cut, and 5.9% in ergotropy at the 80k checkpoint.</p>
+          <p><b>Watch item:</b> Performance depends on the quality of the objective, constraints, and tool integration, so poorly specified tasks could still lead the agent to inefficient or misleading search paths.</p>
+          <div class="tags"><span>#LLMAgents</span> <span>#ComputationalPhysics</span> <span>#ScientificDiscovery</span> <span>#AutomatedOptimization</span> <span>#MaterialsDiscovery</span></div>
         </section>
       </article>
     
 
       <article class="paper">
-        <div class="meta"><span>Crystal and Structure</span><span>arXiv</span><strong>65</strong></div>
-        <p class="date">2026-06-12</p>
-        <h2>XRDiff: Crystal Structure Prediction from Powder X-Ray Diffraction Data Using Diffusion Models</h2>
-        <p class="authors">Nofit Segal, Mingda Li, Benjamin Kurt Miller, Rafael Gómez-Bombarelli</p>
-        <p class="abstract">Determining the crystal structure of a material from its powder X-ray diffraction (PXRD) pattern is a central challenge in materials science. PXRD is an accessible and widely used characterization technique, yet recovering the atomic structure from diffraction data requires solving an underdetermined inverse problem due to the loss of phase information. Generative modeling can provide a prior over atomic structure and learn the mapping from PXRD patterns to crystal structures via simulated structure-spectrum pairs. We present XRDiff, a diffusion model that recovers crystal structures from PXRD given either the stoichiometry or, in a more challenging setting, the elemental constituents and total number of atoms in the unit cell. We evaluate on datasets where each stoichiometry has multiple polymorphs and all polymorphs of a given composition are held out together, ensuring that high performance reflects genuine use of the diffraction signal. XRDiff achieves strong structure recovery rates on simulated benchmarks, indicating that the model learns a spectrum-to-structure mapping precise enough to differentiate between polymorphs. To address generalization to experimental data, we compare a full-spectrum encoding against an encoding based on peak descriptors. The peak-based encoding generalizes substantially better, outperforming even a model trained on full spectra with augmentations fitted to the experimental noise distribution. These results demonstrate that representations robust to the noise and artifacts present in real-world PXRD offer a practical and scalable path toward closing the simulation-to-experiment gap, enabling zero-shot crystal structure solution from experimental PXRD with full or partial chemical composition input.</p>
-        <div class="links"><a href="https://arxiv.org/abs/2606.14003v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2606.14003v1" target="_blank" rel="noreferrer">PDF</a></div>
+        <div class="meta"><span>Crystal and Structure</span><span>arXiv</span><strong>63</strong></div>
+        <p class="date">2026-06-16</p>
+        <h2>Tunable Electronic and Transport Properties of Biphenylene via Fluorination and Disorder</h2>
+        <p class="authors">Lucas Soares Sousa, Felipe Crasto de Lima, Roberto Hiroki Miwa</p>
+        <p class="abstract">Biphenylene (BPN) network is a newly synthesized 2D carbon allotrope hosting anisotropic Dirac electronic states. Here, we investigate how fluorination and correlated chemical disorder modify the electronic structure and charge transport of fluorinated biphenylene (F/BPN) using density functional theory, Wannier-based tight-biding Hamiltonian, and quantum transport simulations. We show that fluorination reshapes the transport response of BPN, producing concentration-dependent anisotropic conduction regimes. For pristine and ordered fluorinated systems, we identified the emergence of negative differential resistance (NDR) and a bias-induced inversion of the preferred transport direction, from armchair to zigzag and vice versa. In contrast, disorder suppresses the NDR, driving the system toward an approximately Ohmic transport regime. At high fluorine coverage, we further observed a nonmonotonic dependence of the armchair current on adatom concentration, which we attribute to the formation of correlated quasi-linear fluor conformation that promote armchair-oriented C-$π$ transport channels while simultaneously suppressing transport along the zigzag direction. Our results demonstrate that correlated fluorination can be used as an active mechanism to engineer electronic transport.</p>
+        <div class="links"><a href="https://arxiv.org/abs/2606.18083v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2606.18083v1" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> XRDiff uses a diffusion model to infer crystal structures directly from powder X-ray diffraction patterns, learning to resolve polymorphs from the diffraction signal.</p>
-          <p><b>Engineering relevance:</b> This could enable faster, more automated crystal structure solution from PXRD in materials discovery and characterization, including cases with incomplete composition information.</p>
-          <ul><li>Train on simulated structure–spectrum pairs to learn a PXRD-to-structure prior.</li><li>Condition the diffusion model on either full stoichiometry or only elemental constituents plus atom count.</li><li>Compare full-spectrum encodings with peak-based descriptors for robustness to experimental noise.</li></ul>
-          <p><b>Evidence signal:</b> The model is evaluated on composition-held-out polymorph benchmarks and on experimental PXRD generalization, where peak-based encoding performs best.</p>
-          <p><b>Watch item:</b> Performance may drop when the experimental diffraction signal deviates from the simulated training distribution, so noise/artifact robustness remains a key deployment concern.</p>
-          <div class="tags"><span>#CrystalStructurePrediction</span> <span>#PowderXRD</span> <span>#DiffusionModels</span> <span>#MaterialsInformatics</span> <span>#GenerativeAI</span></div>
+          <p><b>Key insight:</b> Fluorination and correlated disorder can actively tune biphenylene’s anisotropic electronic transport, switching preferred conduction direction and enabling or suppressing negative differential resistance.</p>
+          <p><b>Engineering relevance:</b> Controlled fluorination offers a practical route to engineer direction-dependent conductivity in 2D carbon devices and potentially modulate nanoscale switching behavior.</p>
+          <ul><li>Density functional theory for electronic-structure analysis</li><li>Wannier-based tight-binding Hamiltonian for transport modeling</li><li>Quantum transport simulations under fluorination and disorder</li></ul>
+          <p><b>Evidence signal:</b> The abstract reports concentration-dependent anisotropic conduction, emergence of NDR and transport-direction inversion in ordered systems, and suppression toward nearly Ohmic behavior under disorder.</p>
+          <p><b>Watch item:</b> The strongest transport effects depend on ordered or correlated fluorine patterns, so real-device variability and disorder could reduce reproducibility.</p>
+          <div class="tags"><span>#Biphenylene</span> <span>#Fluorination</span> <span>#2DMaterials</span> <span>#QuantumTransport</span> <span>#DFT</span></div>
         </section>
       </article>
     
 
       <article class="paper">
-        <div class="meta"><span>Microstructure</span><span>arXiv</span><strong>62</strong></div>
-        <p class="date">2026-06-15</p>
-        <h2>Phase Behavior of Unilamellar Hybrid Lipid-Diblock Copolymer Membranes</h2>
-        <p class="authors">James F. Tallman, Junyu Wu, Antonia Statt</p>
-        <p class="abstract">Hybrid lipid block copolymer membranes are promising for many applications in drug delivery, single molecule detection, in-membrane protein folding, and synthetic cells. However, rational design is difficult due to the many design parameters which determine the nano- and micron-scale morphology and properties. In this work, we propose a physically-informed framework which incorporates chemical immiscibility, hydrophobic thickness mismatch and geometric constraints to predict the morphology of hybrid membranes. For this purpose, we extend existing theory for amphiphilic monolayers to model the thickness of diblock copolymer bilayers, demonstrating that both the hydrophobic and hydrophilic block lengths determine the thickness. We identify and rationalize the four primary membrane morphologies observed: mixed, laterally phase-separated, unzipped (thick-thin coexistence), and polymer-rich. Specifically, chemical immiscibility differentiates mixed membranes from laterally phase separated membranes, and hydrophobic mismatch drives transitions to unzipped or polymer-rich morphologies. Areal density, finally, determines the crossover between unzipped and polymer-rich states. We validate our theoretical predictions using coarse-grained molecular dynamics across a broad parameter space, including multiple lipid species (DOPC, DPPC), polymer species (1,4 PBD-b-PEO, 1,2 PBD-b-PEO, PE-b-PEO), block lengths, temperatures, and compositions. The resulting phase maps unify previously reported experimental and simulation observations and enable a generic and mechanistic understanding for the effect of system parameters on the nanoscale morphology.</p>
-        <div class="links"><a href="https://arxiv.org/abs/2606.16156v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2606.16156v1" target="_blank" rel="noreferrer">PDF</a></div>
+        <div class="meta"><span>Materials Discovery</span><span>arXiv</span><strong>63</strong></div>
+        <p class="date">2026-06-16</p>
+        <h2>Thermodynamically consistent modeling of ion exchange membranes in multi-ionic environments</h2>
+        <p class="authors">Noah Lettner, Felix K. Schwab, Birger Horstmann</p>
+        <p class="abstract">Ion exchange membranes are useful for a wide range of applications, including water desalination, fuel cells, and aqueous batteries. Accordingly, a variety of models for ion exchange membranes has been proposed, each emphasizing different aspects that govern their static and dynamic properties. By reviewing these models, we identify key physical contributions and beneficial modeling strategies. Based on these insights, we derive a thermodynamically consistent model by combining mass-action site occupation with mean-field electrostatic interactions along the polymer backbone. In this derivation, we explicitly account for multicomponent electrolytes at elevated concentrations. The parameters of the resulting model relate closely to those of other models, but gain consistency and interpretability through the underlying derivation. A discussion of the model parameters highlights redundancies and linkages between quantities that are commonly treated independently. Comparison to experimental data shows that both static and dynamic membrane properties are reproduced with good accuracy by the presented model. This makes it a promising basis for theory-driven membrane optimization and supports the tailored design of ion exchange membranes for various technologies.</p>
+        <div class="links"><a href="https://arxiv.org/abs/2606.18028v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2606.18028v1" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> A physically informed phase map shows that hybrid lipid–diblock copolymer membrane morphology is governed by chemical immiscibility, hydrophobic thickness mismatch, and areal density, yielding mixed, laterally phase-separated, unzipped, and polymer-rich states.</p>
-          <p><b>Engineering relevance:</b> The framework offers a design guide for tuning membrane composition and block lengths to obtain targeted hybrid membranes for drug delivery, synthetic cells, and membrane-protein applications.</p>
-          <ul><li>Extend monolayer theory to predict diblock copolymer bilayer thickness from both hydrophobic and hydrophilic block lengths</li><li>Combine immiscibility, mismatch, and geometric constraints into a morphology phase map</li><li>Validate predictions with coarse-grained molecular dynamics across lipid/polymer species, block lengths, temperatures, and compositions</li></ul>
-          <p><b>Evidence signal:</b> The theory was checked against coarse-grained molecular dynamics over a broad parameter space and shown to unify previously reported experimental and simulation observations.</p>
-          <p><b>Watch item:</b> The phase map is physically grounded but may need re-parameterization when transferring to new lipid/polymer chemistries, temperatures, or coarse-graining levels.</p>
-          <div class="tags"><span>#MembraneScience</span> <span>#PolymerPhysics</span> <span>#LipidBilayer</span> <span>#MolecularDynamics</span> <span>#PhaseBehavior</span></div>
+          <p><b>Key insight:</b> A thermodynamically consistent ion-exchange membrane model is built by combining site-occupation mass action with mean-field electrostatics, and extended to multicomponent, concentrated electrolytes.</p>
+          <p><b>Engineering relevance:</b> The model offers a more interpretable basis for designing and optimizing ion exchange membranes for desalination, fuel cells, and aqueous batteries.</p>
+          <ul><li>Review prior membrane models to identify key physical contributions and parameter linkages.</li><li>Derive a coupled mass-action + electrostatic framework along the polymer backbone.</li><li>Explicitly include multionic electrolytes and elevated-concentration effects.</li></ul>
+          <p><b>Evidence signal:</b> Comparison with experimental data shows good agreement for both static and dynamic membrane properties.</p>
+          <p><b>Watch item:</b> Because several parameters are linked or redundant, careful calibration is needed to avoid overfitting or non-unique parameter fits.</p>
+          <div class="tags"><span>#IonExchangeMembranes</span> <span>#Thermodynamics</span> <span>#Electrolytes</span> <span>#MaterialsModeling</span> <span>#ComputationalChemistry</span></div>
         </section>
       </article>
     
 
       <article class="paper">
-        <div class="meta"><span>Microstructure</span><span>arXiv</span><strong>61</strong></div>
-        <p class="date">2026-06-14</p>
-        <h2>NIMO: A Software Platform for Closed-Loop Materials Exploration with Diverse AI Algorithms</h2>
-        <p class="authors">Ryo Tamura, Naruki Yoshikawa, Koji Tsuda, Shoichi Matsuda</p>
-        <p class="abstract">Self-driving laboratories (SDLs), where artificial intelligence proposes subsequent experiments and robotic systems execute them, are rapidly becoming the vanguard of materials discovery. A critical bottleneck, however, lies in seamlessly bridging diverse AI algorithms tailored for specific exploration goals with the heterogeneous robotic hardware found across different laboratories. Here, we present NIMO, an open-source software platform designed to dissolve this barrier through three core paradigms: a modular AI-robot decoupling mediated via simple CSV file exchange, a discrete candidate-pool architecture that seamlessly absorbs domain knowledge, and a unified Python interface pre-loaded with twelve distinct AI algorithms. In this Perspective, we review the operational principles of each algorithm alongside six diverse SDL implementations driven by NIMO, covering electrolyte discovery, organic synthesis, thin-film exploration, fuel-cell process informatics, coffee-ring phase exploration, and legacy liquid-handling automation. One of these also demonstrates NIMO&#x27;s seamless interoperability with the IvoryOS orchestration framework. To democratize autonomous science, we also introduce a no-code desktop application that enables intuitive, human-in-the-loop exploration for non-programmers. NIMO is freely available at https://github.com/NIMS-DA/nimo, offering a versatile, plug-and-play foundation to accelerate autonomous materials exploration across diverse experimental landscapes.</p>
-        <div class="links"><a href="https://arxiv.org/abs/2606.15522v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2606.15522v1" target="_blank" rel="noreferrer">PDF</a></div>
+        <div class="meta"><span>Property Prediction</span><span>arXiv</span><strong>63</strong></div>
+        <p class="date">2026-06-16</p>
+        <h2>Revisiting quantum effects on dislocation glide in bcc metals from DFT calculations and machine-learning potentials</h2>
+        <p class="authors">Arnaud Allera, Lisa Ventelon, Mihai-Cosmin Marinica, David Rodney, Laurent Proville</p>
+        <p class="abstract">Quantum zero-point effects have been long proposed to explain a well-known discrepancy between the low-temperature flow stresses of body-centered cubic metals and corresponding atomistic models of plastic flow. Previous investigations on quantum effects relied on empirical interatomic potentials, which poorly reproduce dislocation energy landscapes compared to density functional theory (DFT) calculations. Here, we revisit this problem using DFT and machine-learning interatomic potentials (MLIPs). We show that while quantum effects do contribute to dislocation glide at low temperature, their magnitude is much lower than previously reported, and insufficient to reconcile atomistic predictions with experiments. Our results thus reopen a long-standing question and challenge for predictive atomistic modeling, on a fundamental property of crystals.</p>
+        <div class="links"><a href="https://arxiv.org/abs/2606.17954v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2606.17954v1" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> NIMO is an open-source platform that decouples AI planning from lab robotics, letting diverse closed-loop materials discovery workflows run through a simple, flexible interface.</p>
-          <p><b>Engineering relevance:</b> It lowers integration effort across heterogeneous labs by using CSV-based communication, a discrete candidate-pool design, and a unified Python API with multiple built-in optimization algorithms.</p>
-          <ul><li>Modular AI and robot layers communicate through simple CSV file exchange.</li><li>A discrete candidate-pool architecture encodes domain knowledge for experiment selection.</li><li>The platform ships with 12 AI algorithms plus a no-code desktop app for human-in-the-loop use.</li></ul>
-          <p><b>Evidence signal:</b> The paper reviews six SDL implementations using NIMO across electrolyte discovery, organic synthesis, thin films, fuel-cell informatics, coffee-ring phase exploration, and legacy liquid-handling automation, including interoperability with IvoryOS.</p>
-          <p><b>Watch item:</b> Because the platform relies on standardized file exchange and multiple integrations, real-world performance may depend on how well each lab’s hardware, data format, and workflow are configured.</p>
-          <div class="tags"><span>#SelfDrivingLabs</span> <span>#MaterialsDiscovery</span> <span>#ClosedLoopAI</span> <span>#Robotics</span> <span>#OpenSourceSoftware</span></div>
-        </section>
-      </article>
-    
-
-      <article class="paper">
-        <div class="meta"><span>Crystal and Structure</span><span>arXiv</span><strong>61</strong></div>
-        <p class="date">2026-06-11</p>
-        <h2>A wrong ground-state structure of HfO$_2$ predicted by machine-learning interatomic potentials based on the PBE functional</h2>
-        <p class="authors">Shuqi Tang, Jinchen Wei, Kang Wang, Junjie Zhou, Yihan Zhang, Menglin Huang</p>
-        <p class="abstract">Machine-learning interatomic potentials (MLIPs) have become powerful tools for material simulations. Many MLIPs are trained based on density functional theory (DFT) datasets generated with the Perdew-Burke-Ernzerhof (PBE) exchange-correlation functional. Using a PBE-based MLIP for HfO2, we identify a previously unreported low-energy I41/amd structure, which is predicted to be more stable than the well-known ground-state structure, the monoclinic P21/c structure. Since experiments show clearly that HfO2 takes the P21/c structure as the ground state, this is obviously a wrong prediction. Unfortunately, the same prediction is also made by widely used PBE-based foundation models such as NequIP-OAM-L and MatterSim-v1-5M. Comparisons among different DFT functionals show that this error originates from the PBE functional, which overstabilizes low-density structures containing sixfold Hf-O octahedral units, such as the I41/amd and Pbcn phases. The error also affects the calculated energy landscapes and barrier heights along ferroelectric HfO2 polarization switching paths when there are large lattice relaxations. Fortunately, the error can be largely suppressed by other functionals such as PBEsol and local density approximation. Our study serves as a warning about the impact of errors in exchange-correlation functional approximations on the reliability of MLIP simulations of crystal structures and phase transitions.</p>
-        <div class="links"><a href="https://arxiv.org/abs/2606.12811v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2606.12811v1" target="_blank" rel="noreferrer">PDF</a></div>
-        <section class="info">
-          <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> PBE-based machine-learning interatomic potentials can incorrectly predict HfO2’s ground state, overstabilizing a low-density I41/amd phase over the experimentally known monoclinic P21/c structure.</p>
-          <p><b>Engineering relevance:</b> This shows that MLIP predictions for crystal stability and phase-transition barriers can inherit systematic DFT functional errors, affecting materials screening and ferroelectric device design.</p>
-          <ul><li>Compared a PBE-trained MLIP against known HfO2 polymorphs.</li><li>Checked whether multiple PBE-based foundation models reproduce the same phase-ordering error.</li><li>Benchmarked different DFT functionals to trace the source of the instability ranking.</li></ul>
-          <p><b>Evidence signal:</b> The abstract reports that both a PBE-based MLIP and widely used foundation models (NequIP-OAM-L, MatterSim-v1-5M) predict I41/amd as more stable than the real ground state, and that the error is reduced by PBEsol and LDA.</p>
-          <p><b>Watch item:</b> Do not assume MLIP phase energetics are reliable if the underlying training labels come from a functional with known structural bias, especially for phases with large lattice relaxation.</p>
-          <div class="tags"><span>#MachineLearningPotentials</span> <span>#HfO2</span> <span>#DensityFunctionalTheory</span> <span>#CrystalStructure</span> <span>#MaterialsSimulation</span></div>
+          <p><b>Key insight:</b> DFT and machine-learning potentials show that quantum zero-point effects do influence bcc dislocation glide, but far less than earlier models suggested.</p>
+          <p><b>Engineering relevance:</b> Accurate low-temperature strength prediction in bcc metals still requires better atomistic models because quantum corrections alone do not resolve the gap with experiments.</p>
+          <ul><li>Revisited dislocation glide using density functional theory.</li><li>Trained and applied machine-learning interatomic potentials to improve the energy landscape description.</li><li>Compared quantum-effect magnitude against prior empirical-potential predictions and experimental flow stresses.</li></ul>
+          <p><b>Evidence signal:</b> The evaluation is based on direct comparison of DFT and MLIP results for dislocation energy landscapes and low-temperature glide behavior, showing a smaller quantum contribution than previously reported.</p>
+          <p><b>Watch item:</b> MLIPs improve fidelity over empirical potentials, but the conclusions still depend on the quality and transferability of the underlying DFT training data.</p>
+          <div class="tags"><span>#DFT</span> <span>#MachineLearningPotentials</span> <span>#DislocationGlide</span> <span>#BCCMetals</span> <span>#QuantumEffects</span></div>
         </section>
       </article>
     
 
       <article class="paper">
         <div class="meta"><span>Crystal and Structure</span><span>arXiv</span><strong>60</strong></div>
-        <p class="date">2026-06-15</p>
-        <h2>High-entropy Fe$_2$VAl-based thermoelectric modules with improved conversion efficiency</h2>
-        <p class="authors">Michael Parzer, Geoffrey Roy, Fabian Garmroudi, Pawel Ziolkowski, Thomas Konegger, Ernst Bauer</p>
-        <p class="abstract">Thermoelectric (TE) materials enable the direct conversion of heat into electricity and are attractive for sustainable energy applications. For practical deployment, TE materials must combine high efficiency with low cost, non-toxicity, and scalability. In this work, we optimize the TE performance of low-cost and robust Fe$_2$VAl-based full-Heusler compounds through high-entropy engineering: a synergistic combination of heavy-element doping and controlled off-stoichiometry results in substitutional disorder on all lattice sites, triggering one of the lowest lattice thermal conductivities, $κ_\text{L}\sim2.3$ W m$^{-1}$ K$^{-1}$, reported so far for full-Heusler systems. The resulting materials exhibit improved values of the average figure of merit $zT_\text{ave}\approx 0.3$ from $300-500$ K. To demonstrate reproducibility and technological relevance, a full TE module (TEM) based on the optimized alloys was fabricated and characterized. Scaled-up material batches were synthesized by hot pressing, exhibiting TE properties in excellent agreement with laboratory-scale samples, with only slightly increased resistivities in absence of post-annealing treatments. Owing to the excellent mechanical workability of Fe$_2$VAl-based materials, the TEM legs were directly brazed onto copper electrodes, enabling robust module fabrication. A ($6\times 6$)-leg TEM was assembled and systematically characterized. The device exhibits the highest output power and one of the highest conversion efficiencies reported to date for Fe$_2$VAl-based generators over the broad temperature range of $300-673$ K, underscoring the potential of this material system for scalable TE energy harvesting.</p>
-        <div class="links"><a href="https://arxiv.org/abs/2606.16851v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2606.16851v1" target="_blank" rel="noreferrer">PDF</a></div>
+        <p class="date">2026-06-16</p>
+        <h2>Ground-state properties of the $S=3/2$ anisotropic triangular lattice antiferromagnet Na$_3$Cr(PO$_4$)$_2$</h2>
+        <p class="authors">A. Magar, Sebin J. Sebastian, Q. -P. Ding, Y. Skourski, A. A. Tsirlin, Y. Furukawa</p>
+        <p class="abstract">We report the crystal structure and magnetic properties of a $S=3/2$ anisotropic triangular lattice compound Na$_3$Cr(PO$_4$)$_2$ employing single-crystal and powder x-ray diffraction, magnetization, heat capacity, and $^{31}$P nuclear magnetic resonance (NMR) experiments, supported by the band structure calculations. Magnetic susceptibility exhibits a broad maximum around 3.5 K, indicating the presence of a short-range antiferromagnetic order, typical of a low-dimensional spin system. Magnetization and heat capacity manifest an antiferromagnetic long-range ordering at around $T_{\rm N} \simeq 2.6$ K. This was further confirmed by the drastic NMR line broadening and a peak in the nuclear spin-lattice and spin-spin relaxation rates. The isothermal magnetization data exhibit a field-induced spin-flop transition at around $μ_0H_{\rm SF} \simeq 1.7$ T reminiscent of an anisotropic two-dimensional magnet, before saturating above $μ_0H_{\rm sat} \simeq 4.5$ T. The saturation field was further upheld by the field-dependent NMR relaxation measurements at low temperatures. The $^{31}$P NMR spectral shape confirms the commensurate antiferromagnetic nature of the ordering below $T_{\rm N}$. \textit{Ab initio} calculations reveal a significant deformation of the triangular spin lattice, resulting in triangles with two antiferromagnetic couplings of similar strength and a much weaker coupling along the third side of the triangle.</p>
+        <div class="links"><a href="https://arxiv.org/abs/2606.17658v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2606.17658v1" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> High-entropy disorder engineering in Fe2VAl full-Heusler alloys lowers lattice thermal conductivity and raises thermoelectric performance, enabling practical module-level gains.</p>
-          <p><b>Engineering relevance:</b> The work shows that low-cost, non-toxic, mechanically workable Fe2VAl-based materials can be scaled into robust thermoelectric modules with strong output over 300–673 K.</p>
-          <ul><li>Heavy-element doping plus controlled off-stoichiometry to create substitutional disorder on all lattice sites</li><li>Hot-pressed scaled-up material batches to check reproducibility against lab-scale samples</li><li>Direct brazing of TE legs onto copper electrodes to build a 6×6-leg module</li></ul>
-          <p><b>Evidence signal:</b> The optimized alloys reach κL ≈ 2.3 W m−1 K−1 and zTave ≈ 0.3 from 300–500 K, and the assembled module shows high output power and one of the highest reported conversion efficiencies for Fe2VAl-based generators.</p>
-          <p><b>Watch item:</b> Performance is sensitive to processing, since scaled-up batches showed slightly higher resistivity without post-annealing, which may affect module efficiency.</p>
-          <div class="tags"><span>#Thermoelectrics</span> <span>#HighEntropyAlloys</span> <span>#HeuslerAlloys</span> <span>#EnergyHarvesting</span> <span>#MaterialsEngineering</span></div>
-        </section>
-      </article>
-    
-
-      <article class="paper">
-        <div class="meta"><span>Crystal and Structure</span><span>arXiv</span><strong>60</strong></div>
-        <p class="date">2026-06-15</p>
-        <h2>Lattice Matching Dictates the Growth Mode and Quality of Deuterium Crystallization in Confined Spherical Shells</h2>
-        <p class="authors">Peng Bi, Yu-Shen Wan, Wei Zhang, Jian Chen, Yong Yi, Qi-Feng Chen</p>
-        <p class="abstract">Cryogenic hydrogen isotope fuel layers with high structural integrity and atomic-scale smoothness are prerequisites for symmetric implosion and ignition in inertial confinement fusion (ICF). Using deuterium (D$_2$) as model fuel, we perform large-scale molecular dynamics simulations with a Feynman-Hibbs corrected Silvera-Goldman potential to describe nuclear quantum effects at low temperatures, systematically investigating D$_2$ crystallization inside spherical ablator capsules. By varying substrate lattice constant from 3.1 angstrom to 3.9 angstrom, we demonstrate that lattice matching dictates the transition from coherent epitaxial growth to polycrystalline formation, establishing it as the primary design principle for high-performance targets. When the substrate lattice closely matches the equilibrium hexagonal-close-packed (HCP) spacing of cryogenic D$_2$ (approximately 3.5 angstrom), D$_2$ forms coherent layer-by-layer epitaxial growth consistent with Ostwald&#x27;s stepwise nucleation theory, yielding HCP-dominated near-single crystals with minimal dislocations and ultra-smooth inner surfaces. In contrast, large lattice mismatch destabilizes coherent growth and causes island-like growth, producing polycrystalline structures with mixed HCP/FCC phases, elevated defects, and greatly increased surface roughness. Radial stress analysis shows that interfacial stress from mismatch localizes within 2-3 molecular layers near the interface, triggering subsequent defect-mediated growth. These findings highlight substrate lattice matching in regulating confined solid growth and crystallization quality, establish it as a key principle for ablator inner-surface engineering in ICF cryogenic targets, and offer atomic guidance for growing high-quality single-crystal deuterium-tritium (DT) fuel layers with optimal smoothness.</p>
-        <div class="links"><a href="https://arxiv.org/abs/2606.16550v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2606.16550v1" target="_blank" rel="noreferrer">PDF</a></div>
-        <section class="info">
-          <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> Substrate lattice matching controls whether confined deuterium crystallizes as smooth coherent epitaxy or defect-rich polycrystals.</p>
-          <p><b>Engineering relevance:</b> For ICF cryogenic targets, tuning the inner-surface lattice to the deuterium equilibrium spacing is a key design rule for producing high-integrity, ultra-smooth fuel layers.</p>
-          <ul><li>Large-scale molecular dynamics of D2 in spherical ablator shells</li><li>Feynman-Hibbs corrected Silvera-Goldman potential to include low-temperature quantum effects</li><li>Systematic sweep of substrate lattice constant from 3.1 to 3.9 Å</li></ul>
-          <p><b>Evidence signal:</b> The simulations show a clear transition near the ~3.5 Å match point from layer-by-layer HCP-dominated growth to island-like, polycrystalline growth with higher roughness and defects.</p>
-          <p><b>Watch item:</b> The results are model-based and depend on the chosen potential and idealized spherical shell geometry, so experimental validation is needed for real DT targets.</p>
-          <div class="tags"><span>#ICF</span> <span>#Deuterium</span> <span>#CrystalGrowth</span> <span>#LatticeMatching</span> <span>#MolecularDynamics</span></div>
-        </section>
-      </article>
-    
-
-      <article class="paper">
-        <div class="meta"><span>Crystal and Structure</span><span>arXiv</span><strong>60</strong></div>
-        <p class="date">2026-06-15</p>
-        <h2>Twistronic control of shift current in multilayer moiré system</h2>
-        <p class="authors">Michele Bagaglini, Cesare Tresca, Federico Bisti, Gianni Profeta</p>
-        <p class="abstract">The bulk photovoltaic effect in non-centrosymmetric materials provides an alternative mechanism for the conversion of light into a current response compared to p-n junctions. Among its various contributions, the shift current is particularly attractive because it is governed by the geometric properties of electronic wavefunctions and can generate large photocurrents in low-dimensional materials. Here, we investigate the evolution of the shift current response in mono-, bi-, and trilayer H-MoS2, as well as in twisted moiré bilayers and trilayers. To describe large moiré supercells we develop a Slater-Koster tight-binding model parametrized from first-principles calculations. The resulting electronic structures and shift-current responses are compared with density functional theory calculations and Wannier-interpolated results to verify the accuracy of the approach. The model accurately reproduces the electronic structure near the band edges and captures the main spectral features of the shift current conductivity. We show that twisting breaks the crystal symmetry and activates additional conductivity tensor components that are forbidden in untwisted structures, leading to new tunable in-plane photocurrent components. Analysis of the shift distance reveals a direct connection between the twist-induced modification of the electronic wavefunctions and the increase of the nonlinear response. Our results establish the twist angle as an effective parameter for engineering shift current generation in multilayer transition-metal dichalcogenide base systems and demonstrate that tight-binding approaches provide a practical route for exploring nonlinear optical phenomena in large-scale moiré materials beyond the limits of conventional first-principles calculations.</p>
-        <div class="links"><a href="https://arxiv.org/abs/2606.16416v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2606.16416v1" target="_blank" rel="noreferrer">PDF</a></div>
-        <section class="info">
-          <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> Twisting multilayer H-MoS2 breaks symmetry and activates new shift-current channels, making the photocurrent response tunable by twist angle.</p>
-          <p><b>Engineering relevance:</b> This suggests moiré engineering can be used to design low-dimensional optoelectronic materials with controllable nonlinear photovoltaic output beyond conventional p–n junctions.</p>
-          <ul><li>Built a Slater-Koster tight-binding model for large moiré supercells, parametrized from first-principles.</li><li>Compared tight-binding results against density functional theory and Wannier-interpolated calculations.</li><li>Analyzed band-edge electronic structure, conductivity spectra, and shift distance versus twist angle and layer number.</li></ul>
-          <p><b>Evidence signal:</b> The model reproduces the electronic structure near the band edges and the main spectral features of the shift-current conductivity across mono-, bi-, and trilayer and twisted moiré cases.</p>
-          <p><b>Watch item:</b> Accuracy is strongest near the band edges, so results for higher-energy states or stronger correlation effects may require further first-principles validation.</p>
-          <div class="tags"><span>#MoireMaterials</span> <span>#ShiftCurrent</span> <span>#Twistronics</span> <span>#NonlinearOptics</span> <span>#TightBinding</span></div>
-        </section>
-      </article>
-    
-
-      <article class="paper">
-        <div class="meta"><span>Crystal and Structure</span><span>arXiv</span><strong>60</strong></div>
-        <p class="date">2026-06-15</p>
-        <h2>Melt-Quench Failures and Practical Solutions for Universal Machine-Learning Interatomic Potentials in Amorphous Structure Generation</h2>
-        <p class="authors">Shuwei Li, Yuqi An, Xingyu Guo, Wenqiang Yang, Zhenbin Wang</p>
-        <p class="abstract">Generating experimentally relevant amorphous structures via melt-quench molecular dynamics is prohibitively expensive at the first-principles level. Universal machine-learning interatomic potentials (uMLIPs) could accelerate such simulations, but their reliability under non-equilibrium conditions remains unclear. Here, we examine eight leading uMLIPs for generating amorphous IrO2, using this electrocatalytically relevant oxide as a diagnostic case. Under the conventional melt-quench protocol, all models yield unphysically expanded structures with densities of 1-4 g/cm3, far below the ab initio molecular dynamics (AIMD) reference value of 10.04 g/cm3. Comparisons against ab initio references show that accurate energies and forces alone do not ensure stable NPT dynamics; correct energy-volume responses and pressure predictions are also essential. We identify two practical remedies: pressure-targeted fine-tuning and a revised NVT-quench/NPT-equilibration protocol that avoids unphysical volume expansion without additional ab initio training data. Both recover IrO2 densities and local structures consistent with AIMD. Across 30 chemically diverse materials, the volume-expansion failure proves general, and the revised protocol substantially improves density predictions, reducing the AIMD-referenced MAE from 2.46 to 0.35 g/cm3. This work establishes practical validation criteria and simulation strategies for robust uMLIP-driven amorphous structure generation.</p>
-        <div class="links"><a href="https://arxiv.org/abs/2606.16385v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2606.16385v1" target="_blank" rel="noreferrer">PDF</a></div>
-        <section class="info">
-          <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> Universal ML interatomic potentials can fail catastrophically in melt-quench amorphous simulations because accurate forces alone do not guarantee correct pressure-volume behavior under NPT conditions.</p>
-          <p><b>Engineering relevance:</b> For practical amorphous materials design, robust validation must include energy-volume and pressure response checks, and the NVT-quench/NPT-equilibration workaround can produce realistic densities without extra ab initio training.</p>
-          <ul><li>Benchmarked 8 leading uMLIPs on melt-quench generation of amorphous IrO2</li><li>Compared uMLIP dynamics against AIMD reference energies, forces, pressures, and densities</li><li>Tested two fixes: pressure-targeted fine-tuning and revised NVT-quench/NPT-equilibration</li></ul>
-          <p><b>Evidence signal:</b> All eight models produced severely underdense IrO2 (1-4 g/cm3 vs 10.04 g/cm3 AIMD), and across 30 materials the revised protocol reduced density MAE from 2.46 to 0.35 g/cm3.</p>
-          <p><b>Watch item:</b> The revised protocol improves robustness, but uMLIPs still need explicit validation of pressure and equation-of-state behavior before use in non-equilibrium structural generation.</p>
-          <div class="tags"><span>#MachineLearningPotentials</span> <span>#AmorphousMaterials</span> <span>#MolecularDynamics</span> <span>#MaterialsSimulation</span> <span>#ComputationalMaterials</span></div>
-        </section>
-      </article>
-    
-
-      <article class="paper">
-        <div class="meta"><span>Materials Discovery</span><span>arXiv</span><strong>60</strong></div>
-        <p class="date">2026-06-15</p>
-        <h2>Q-READY: Predictive Feasibility Assessment for Hybrid Quantum-Classical Applications</h2>
-        <p class="authors">Tao Yue, Man Zhang</p>
-        <p class="abstract">Quantum computing is rapidly evolving into an emerging computational infrastructure and is increasingly being used to tackle real-world problems in domains such as chemistry, materials science, logistics, and finance, as well as software engineering problems such as test optimization and project scheduling. Hybrid quantum-classical applications are particularly important because they provide a practical path for integrating quantum capabilities into existing software systems under near-term hardware constraints. However, the engineering of hybrid quantum-classical applications remains largely ad hoc and constrained by hardware limitations including qubit scarcity, noise, and limited connectivity. In this paper, we propose Q-READY to address the lack of systematic methodologies for assessing the feasibility of hybrid solutions prior to costly implementation. Positioned as a Model-Based Systems Engineering (MBSE) approach grounded in Model-Driven Engineering (MDE) principles, Q-READY establishes a structured pipeline encompassing requirements modeling, problem formulation, workflow design, and hardware-aware feasibility assessment, enabling simulation-based evaluation and comparison of candidate solutions under realistic constraints through traceable system-level models and backend-aware abstractions. We illustrate the pipeline with a running credit-portfolio capital-assessment example, showing how requirements, problem structure, strategy choices, workflow behavior, backend assumptions, and feasibility evidence can be linked into a coherent engineering decision. Q-READY is envisioned as an environment that supports executable modeling, constraint evaluation, and predictive analysis. Its expected outcomes include a systematic methodology for hybrid quantum application design, a supporting software platform, benchmark datasets, and empirical design guidelines.</p>
-        <div class="links"><a href="https://arxiv.org/abs/2606.16201v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2606.16201v1" target="_blank" rel="noreferrer">PDF</a></div>
-        <section class="info">
-          <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> Q-READY proposes a model-based workflow to predict whether a hybrid quantum-classical application is feasible before implementation, using system-level models that account for hardware constraints.</p>
-          <p><b>Engineering relevance:</b> The framework helps engineers compare candidate quantum solutions early, reducing costly trial-and-error under qubit, noise, and connectivity limits.</p>
-          <ul><li>Requirements modeling to capture system goals and constraints</li><li>Problem formulation and workflow design with backend-aware abstractions</li><li>Simulation-based feasibility assessment using traceable MBSE/MDE models</li></ul>
-          <p><b>Evidence signal:</b> The abstract reports an illustrative credit-portfolio capital-assessment example showing how requirements, strategy, workflow, backend assumptions, and feasibility evidence are linked for comparison.</p>
-          <p><b>Watch item:</b> The approach is still envisioned rather than fully validated, so its practical value will depend on implementation maturity, benchmark quality, and backend fidelity.</p>
-          <div class="tags"><span>#QuantumComputing</span> <span>#HybridAlgorithms</span> <span>#MBSE</span> <span>#ModelDrivenEngineering</span> <span>#MaterialsDiscovery</span></div>
-        </section>
-      </article>
-    
-
-      <article class="paper">
-        <div class="meta"><span>Crystal and Structure</span><span>arXiv</span><strong>60</strong></div>
-        <p class="date">2026-06-15</p>
-        <h2>Evaluating the Structural Basis for Polar Altermagnet Candidate Ca$_{3}$(Ru,Ti)$_{2}$O$_{7}$</h2>
-        <p class="authors">Akash Saha, Yihuang Xiong, Vladimir A. Stoica, Subin Mali, Aaron Pearre, Saugata Sarker</p>
-        <p class="abstract">The interplay between polar and altermagnetic orders remains largely unexplored in the broader landscape of correlated electron systems. Ca$_{3}$Ru$_{2}$O$_{7}$ has been proposed by density functional theory (DFT) as a polar altermagnet, reliant on the transformation of experimentally reported $Bb2_{1}m$ phase to a lower symmetry $Pn2_{1}a$ structure. Here, we perform a targeted search for the $Pn2_{1}a$ phase using synchrotron X-ray diffraction on single crystals of Ca$_{3}$Ru$_{2}$O$_{7}$ and Ca$_{3}$(Ru$_{0.99}$Ti$_{0.01}$)$_{2}$O$_{7}$. No diffraction signature of the $Pn2_{1}a$ structure is detected down to 20 K within experimental limits of $\sim$60-200 fm atomic displacements, significantly smaller than the DFT prediction of $\sim$1 pm. Combined with recent nonlinear transport measurements, our structural study suggests Ca$_{3}$Ru$_{2}$O$_{7}$ as a unique system where strong electron correlations drive an electronic phase transition without any measurable lattice symmetry change. With Ti substitution exceeding $\sim$3%, a chemically tunable altermagnetic phase with $Bb2_{1}m$ structure emerges. The study highlights the importance of sub-picometer metrology towards de-convolving structural versus electronic origins of altermagnets.</p>
-        <div class="links"><a href="https://arxiv.org/abs/2606.16181v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2606.16181v1" target="_blank" rel="noreferrer">PDF</a></div>
-        <section class="info">
-          <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> Synchrotron X-ray diffraction found no evidence for the proposed lower-symmetry Pn2_1a structural distortion in Ca3(Ru,Ti)2O7, indicating that the reported altermagnetic behavior is likely electronic rather than lattice-driven.</p>
-          <p><b>Engineering relevance:</b> This work sets a metrology benchmark for detecting sub-picometer structural changes in correlated oxides and helps distinguish true symmetry lowering from purely electronic phase transitions in quantum materials.</p>
-          <ul><li>Targeted single-crystal synchrotron X-ray diffraction on Ca3Ru2O7 and Ca3(Ru0.99Ti0.01)2O7</li><li>Search for diffraction signatures of the predicted Pn2_1a phase down to 20 K</li><li>Compare experimental displacement sensitivity (~60–200 fm) against DFT-predicted distortions (~1 pm)</li></ul>
-          <p><b>Evidence signal:</b> No Pn2_1a diffraction signature was detected within the experimental sensitivity limit, despite the predicted ~1 pm distortion from DFT.</p>
-          <p><b>Watch item:</b> The absence of a detectable lattice distortion does not fully exclude extremely small or dynamically fluctuating symmetry breaking below the measurement limit.</p>
-          <div class="tags"><span>#Altermagnetism</span> <span>#CrystalStructure</span> <span>#SynchrotronXRD</span> <span>#CorrelatedOxides</span> <span>#MaterialsMetrology</span></div>
-        </section>
-      </article>
-    
-
-      <article class="paper">
-        <div class="meta"><span>AI materials science</span><span>arXiv</span><strong>59</strong></div>
-        <p class="date">2026-06-14</p>
-        <h2>Switching Chern number by sliding and gating in alternately twisted tetralayer MoTe2</h2>
-        <p class="authors">Xiao-Wei Zhang, Kaijie Yang, Xiaodong Xu, Ting Cao, Di Xiao</p>
-        <p class="abstract">Switching the bulk Chern number in topological materials is of central importance for the design of topological electronic devices. Motivated by recent observations of integer and fractional quantum anomalous Hall effects in twisted transition metal dichalcogenides (tTMDs), we realize the switching of valley Chern number through sliding and gating in alternately twisted tetralayer (ATT) MoTe$_{2}$. Using large-scale density functional theory (DFT) calculations, we show that the Chern number of the first $K$-valley moiré band evolves from $+1$ to $-1$ under the interlayer sliding. Furthermore, an applied electric field can switch the valley Chern number from $-1$ to $+1$. Based on the developed continuum model, we reveal that these switching behaviors are caused by the sliding- and gate-dependent intralayer moiré potential distributions across the layers. Our results establish ATT MoTe$_{2}$ as a promising platform for engineering moiré band topologies through the design of moiré potentials with sliding in multilayer moiré systems.</p>
-        <div class="links"><a href="https://arxiv.org/abs/2606.15548v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2606.15548v1" target="_blank" rel="noreferrer">PDF</a></div>
-        <section class="info">
-          <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> In alternately twisted tetralayer MoTe2, the valley Chern number of the first K-valley moiré band can be switched between +1 and -1 by layer sliding and an applied gate field.</p>
-          <p><b>Engineering relevance:</b> This shows a practical route to electrically and mechanically tune moiré band topology for topological electronic devices and quantum Hall platforms.</p>
-          <ul><li>Large-scale DFT calculations of ATT MoTe2 moiré bands</li><li>Continuum modeling of sliding- and gate-dependent moiré potentials</li><li>Track Chern number evolution under interlayer sliding and electric field</li></ul>
-          <p><b>Evidence signal:</b> The abstract reports calculated topological evolution of the first K-valley moiré band from +1 to -1 with sliding, and back to +1 with gating.</p>
-          <p><b>Watch item:</b> The switching depends on precise control of stacking registry and electric field, which may be difficult to reproduce uniformly in real multilayer devices.</p>
-          <div class="tags"><span>#MoTe2</span> <span>#MoiréMaterials</span> <span>#ChernNumber</span> <span>#TopologicalMaterials</span> <span>#QuantumAnomalousHall</span></div>
-        </section>
-      </article>
-    
-
-      <article class="paper">
-        <div class="meta"><span>Materials Discovery</span><span>arXiv</span><strong>59</strong></div>
-        <p class="date">2026-06-12</p>
-        <h2>The Future of Computing for Materials Science Challenges</h2>
-        <p class="authors">Phalgun Lolur, Richard P. Padbury, George H. Booth, Katherine Inzani, Nicole Holzmann, Thomas W. Keal</p>
-        <p class="abstract">Materials discovery increasingly relies on the coordinated use of theory, computation, experiment, data-driven methods, and emerging quantum technologies, yet the full potential of these tools is realised only when they operate within workflows that reflect the complexity of real systems. This perspective summarises current capabilities, limitations, and opportunities across these domains, drawing on contributions from academia, industry, and national laboratories to identify the scientific and structural requirements for more reliable and efficient discovery. Classical simulations provide broad coverage across design spaces, while experimental measurements reveal degradation, heterogeneity, and kinetic processes that determine performance under realistic conditions. Machine learning accelerates exploration when supported by well-curated datasets with clear provenance and uncertainty quantification, and quantum computing offers promising routes into correlated electronic behaviour when aligned with properties that influence engineering decisions. Collectively, these insights highlight the need for reproducible workflows, shared data standards, realistic benchmarks, and a research culture that prepares scientists to work across paradigms. By integrating these methodological and organisational elements, the community can move toward discovery processes that deliver robust predictions, support confident decision making, and shorten the path from conceptual design to deployable materials.</p>
-        <div class="links"><a href="https://arxiv.org/abs/2606.14387v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2606.14387v1" target="_blank" rel="noreferrer">PDF</a></div>
-        <section class="info">
-          <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> Materials discovery is most effective when theory, computation, experiment, machine learning, and quantum computing are integrated into reproducible workflows that reflect real-world complexity.</p>
-          <p><b>Engineering relevance:</b> This enables faster, more reliable materials selection and decision-making for deployable engineering applications by improving prediction quality and confidence under realistic conditions.</p>
-          <ul><li>Use classical simulations to explore broad design spaces and screen candidates.</li><li>Combine experiments with computation to capture degradation, heterogeneity, and kinetic effects.</li><li>Apply machine learning and quantum methods where they are supported by curated data and property-relevant targets.</li></ul>
-          <p><b>Evidence signal:</b> The abstract emphasizes that reliable progress depends on well-curated datasets, clear provenance, uncertainty quantification, and realistic benchmarks rather than any single method alone.</p>
-          <p><b>Watch item:</b> Machine learning and quantum approaches can be misleading or hard to operationalize if data quality, provenance, and workflow reproducibility are not carefully managed.</p>
-          <div class="tags"><span>#MaterialsDiscovery</span> <span>#ComputationalScience</span> <span>#MachineLearning</span> <span>#QuantumComputing</span> <span>#Reproducibility</span></div>
-        </section>
-      </article>
-    
-
-      <article class="paper">
-        <div class="meta"><span>Crystal and Structure</span><span>arXiv</span><strong>58</strong></div>
-        <p class="date">2026-06-15</p>
-        <h2>Hydrogen Chemisorption and Current-Induced Spin Polarization on NbP</h2>
-        <p class="authors">Luis Martinez-Gomez, Raphael F. Ribeiro</p>
-        <p class="abstract">Topological semimetals have been proposed as electrocatalytic platforms because their surface states may participate in adsorbate bonding and interfacial charge response. Here we examine this role for hydrogen chemisorption on NbP(001) by combining density functional theory, Wannier-based surface spectral functions, orbital projections, and projected crystal orbital Hamilton population analysis. An SOC on/off comparison allows us to examine two electronic regimes of the same surface: including nodal-line-derived surface states in the non-SOC limit and Weyl Fermi arcs in the SOC case. We find that SOC changes the hydrogen adsorption free energy only weakly, showing that the equilibrium adsorption descriptor is largely insensitive to the SOC-driven reorganization of the surface states. Momentum- and energy-resolved bonding analysis assigns the main H-surface stabilization to occupied local H-Nb hybridized states below the Fermi level. At $E_F$, the Fermi arcs provide the dominant hybridization channels that contribute to the state-resolved bonding pattern and transfer spin-textured character to the adsorbate, producing a finite H-projected current-induced spin polarization. Thus, NbP demonstrates that topological surface states can play a minor role in adsorption thermodynamics while governing Fermi-level hybridization and adsorbate-local current-induced spin polarization.</p>
-        <div class="links"><a href="https://arxiv.org/abs/2606.16994v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2606.16994v1" target="_blank" rel="noreferrer">PDF</a></div>
-        <section class="info">
-          <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> On NbP(001), hydrogen adsorption is only weakly affected by spin-orbit coupling, but topological surface states strongly shape Fermi-level hybridization and induce a finite spin polarization on the adsorbed H.</p>
-          <p><b>Engineering relevance:</b> This suggests topological semimetal surfaces can be tuned for electrocatalytic interfaces where adsorption thermodynamics stay stable while interfacial spin and charge responses are engineered.</p>
-          <ul><li>DFT calculations comparing SOC off vs SOC on surface electronic structure</li><li>Wannier-based surface spectral functions plus orbital projections</li><li>Projected crystal orbital Hamilton population analysis for bonding and hybridization</li></ul>
-          <p><b>Evidence signal:</b> The abstract reports a direct theory-based comparison of two electronic regimes and finds only small changes in hydrogen adsorption free energy, while identifying state-resolved bonding and H-projected current-induced spin polarization.</p>
-          <p><b>Watch item:</b> The conclusions are based on computed surface models for a specific NbP(001) termination, so real catalytic performance may depend on surface reconstruction, defects, coverage, and experimental conditions.</p>
-          <div class="tags"><span>#TopologicalMaterials</span> <span>#HydrogenAdsorption</span> <span>#SpinOrbitCoupling</span> <span>#Electrocatalysis</span> <span>#DensityFunctionalTheory</span></div>
+          <p><b>Key insight:</b> Na$_3$Cr(PO$_4$)$_2$ is a distorted $S=3/2$ anisotropic triangular-lattice antiferromagnet that orders magnetically at low temperature and shows a spin-flop transition before full saturation.</p>
+          <p><b>Engineering relevance:</b> The work identifies a tunable low-dimensional magnetic lattice with clear field- and temperature-driven phase behavior, useful for designing and benchmarking quantum magnetism models.</p>
+          <ul><li>Single-crystal and powder x-ray diffraction to determine the crystal structure.</li><li>Magnetization and heat-capacity measurements to locate ordering, spin-flop, and saturation fields.</li><li>$^{31}$P NMR plus ab initio band-structure calculations to confirm commensurate antiferromagnetic order and exchange anisotropy.</li></ul>
+          <p><b>Evidence signal:</b> The abstract reports a susceptibility maximum near 3.5 K, antiferromagnetic ordering at $T_{\rm N} \simeq 2.6$ K, a spin-flop at $\mu_0H_{\rm SF} \simeq 1.7$ T, and saturation above $\mu_0H_{\rm sat} \simeq 4.5$ T, with NMR line broadening and relaxation peaks supporting the phase transitions.</p>
+          <p><b>Watch item:</b> The magnetic interpretation depends on low-temperature measurements and model-based exchange analysis, so microscopic coupling estimates may remain sensitive to sample quality and structural distortion details.</p>
+          <div class="tags"><span>#QuantumMagnetism</span> <span>#TriangularLattice</span> <span>#NMR</span> <span>#Antiferromagnetism</span> <span>#MaterialsScience</span></div>
         </section>
       </article>
     </section>

@@ -1,9 +1,17 @@
 # AI materials science Progress Public Resources
 
-Generated: 2026-06-16
+Generated: 2026-06-17
 Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 
-## 1. InvDesMobility: a reliability-gated first-principles feedback framework for closed-loop materials discovery
+## 1. Toward Controllable Catalyst Inverse Design via Large-Scale Autoregressive Pretraining
+
+- Date: 2026-06-16
+- Category: Materials Discovery
+- arXiv: https://arxiv.org/abs/2606.17445v1
+- PDF: https://arxiv.org/pdf/2606.17445v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-16-arxiv-toward_controllable_catalyst_inverse_design_via_large_scale_autoregressive_pretraining_infographic.json
+
+## 2. InvDesMobility: a reliability-gated first-principles feedback framework for closed-loop materials discovery
 
 - Date: 2026-06-15
 - Category: Materials Discovery
@@ -11,15 +19,47 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2606.16133v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-15-arxiv-invdesmobility_a_reliability_gated_first_principles_feedback_framework_for_closed_loop_mat_infographic.json
 
-## 2. A Multi-Level Architecture for Reusable Materials Ontologies -- The OntoCrafter Ceramics Ontology (OCO) as Reference Implementation
+## 3. Lifetime Sample Tracking (LiST): A Data Platform for Materials Science
+
+- Date: 2026-06-16
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2606.17469v1
+- PDF: https://arxiv.org/pdf/2606.17469v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-16-arxiv-lifetime_sample_tracking_list_a_data_platform_for_materials_science_infographic.json
+
+## 4. Physics-Informed Attention Mechanism and Generalization Capability of Deep Learning-Based Grain Growth Evolution Prediction
+
+- Date: 2026-06-15
+- Category: Microstructure
+- arXiv: https://arxiv.org/abs/2606.17235v1
+- PDF: https://arxiv.org/pdf/2606.17235v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-15-arxiv-physics_informed_attention_mechanism_and_generalization_capability_of_deep_learning_based_infographic.json
+
+## 5. Constitutive modelling of magneto-active polymers at finite strains: A survey
+
+- Date: 2026-06-16
+- Category: Polymers and Composites
+- arXiv: https://arxiv.org/abs/2606.17576v1
+- PDF: https://arxiv.org/pdf/2606.17576v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-16-arxiv-constitutive_modelling_of_magneto_active_polymers_at_finite_strains_a_survey_infographic.json
+
+## 6. Split-Head Quantum Generative Adversarial Network for Crystalline Material Discovery
+
+- Date: 2026-06-16
+- Category: Materials Discovery
+- arXiv: https://arxiv.org/abs/2606.17852v1
+- PDF: https://arxiv.org/pdf/2606.17852v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-16-arxiv-split_head_quantum_generative_adversarial_network_for_crystalline_material_discovery_infographic.json
+
+## 7. A Multi-Level Architecture for Reusable Materials Ontologies -- The OntoCrafter Ceramics Ontology (OCO) as Reference Implementation
 
 - Date: 2026-06-12
 - Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2606.14814v1
-- PDF: https://arxiv.org/pdf/2606.14814v1
+- arXiv: https://arxiv.org/abs/2606.14814v2
+- PDF: https://arxiv.org/pdf/2606.14814v2
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-12-arxiv-a_multi_level_architecture_for_reusable_materials_ontologies_the_ontocrafter_ceramics_onto_infographic.json
 
-## 3. LapidaryEngine: Fully Conversational Crystal Generation
+## 8. LapidaryEngine: Fully Conversational Crystal Generation
 
 - Date: 2026-06-12
 - Category: Materials Discovery
@@ -27,23 +67,7 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2606.14215v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-12-arxiv-lapidaryengine_fully_conversational_crystal_generation_infographic.json
 
-## 4. Stitching Molecular Worlds Together with Physics-Coupled Diffusion Models
-
-- Date: 2026-06-15
-- Category: Materials Discovery
-- arXiv: https://arxiv.org/abs/2606.16147v1
-- PDF: https://arxiv.org/pdf/2606.16147v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-15-arxiv-stitching_molecular_worlds_together_with_physics_coupled_diffusion_models_infographic.json
-
-## 5. Distilling latent electrostatics from foundation machine learning interatomic potentials
-
-- Date: 2026-06-12
-- Category: Microstructure
-- arXiv: https://arxiv.org/abs/2606.15001v1
-- PDF: https://arxiv.org/pdf/2606.15001v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-12-arxiv-distilling_latent_electrostatics_from_foundation_machine_learning_interatomic_potentials_infographic.json
-
-## 6. Symmetry-aware generative design of flat-band materials beyond known crystal-net prototypes
+## 9. Symmetry-aware generative design of flat-band materials beyond known crystal-net prototypes
 
 - Date: 2026-06-13
 - Category: Crystal and Structure
@@ -51,7 +75,55 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2606.15321v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-13-arxiv-symmetry_aware_generative_design_of_flat_band_materials_beyond_known_crystal_net_prototype_infographic.json
 
-## 7. Large Language Model Based Agent for Automated Discovery in Computational Physics
+## 10. Anisotropic Short-Range Order Modulates Ferroelectric Switching in Wurtzite ScAlN Alloys
+
+- Date: 2026-06-16
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2606.18213v1
+- PDF: https://arxiv.org/pdf/2606.18213v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-16-arxiv-anisotropic_short_range_order_modulates_ferroelectric_switching_in_wurtzite_scaln_alloys_infographic.json
+
+## 11. Impact of dynamic electrostatic disorder on hole mobility in rubrene: a nonadiabatic molecular dynamics investigation
+
+- Date: 2026-06-16
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2606.18090v1
+- PDF: https://arxiv.org/pdf/2606.18090v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-16-arxiv-impact_of_dynamic_electrostatic_disorder_on_hole_mobility_in_rubrene_a_nonadiabatic_molecu_infographic.json
+
+## 12. Stitching Molecular Worlds Together with Physics-Coupled Diffusion Models
+
+- Date: 2026-06-15
+- Category: Materials Discovery
+- arXiv: https://arxiv.org/abs/2606.16147v1
+- PDF: https://arxiv.org/pdf/2606.16147v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-15-arxiv-stitching_molecular_worlds_together_with_physics_coupled_diffusion_models_infographic.json
+
+## 13. Distilling latent electrostatics from foundation machine learning interatomic potentials
+
+- Date: 2026-06-12
+- Category: Microstructure
+- arXiv: https://arxiv.org/abs/2606.15001v1
+- PDF: https://arxiv.org/pdf/2606.15001v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-12-arxiv-distilling_latent_electrostatics_from_foundation_machine_learning_interatomic_potentials_infographic.json
+
+## 14. Surface Induced Magnetism of CdSe Quantum Dots: A DFT Study
+
+- Date: 2026-06-16
+- Category: AI materials science
+- arXiv: https://arxiv.org/abs/2606.17681v1
+- PDF: https://arxiv.org/pdf/2606.17681v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-16-arxiv-surface_induced_magnetism_of_cdse_quantum_dots_a_dft_study_infographic.json
+
+## 15. Machine learning insights into band gap properties in halide-based perovskites
+
+- Date: 2026-06-15
+- Category: Property Prediction
+- arXiv: https://arxiv.org/abs/2606.17186v1
+- PDF: https://arxiv.org/pdf/2606.17186v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-15-arxiv-machine_learning_insights_into_band_gap_properties_in_halide_based_perovskites_infographic.json
+
+## 16. Large Language Model Based Agent for Automated Discovery in Computational Physics
 
 - Date: 2026-06-12
 - Category: Materials Discovery
@@ -59,106 +131,34 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2606.14266v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-12-arxiv-large_language_model_based_agent_for_automated_discovery_in_computational_physics_infographic.json
 
-## 8. XRDiff: Crystal Structure Prediction from Powder X-Ray Diffraction Data Using Diffusion Models
+## 17. Tunable Electronic and Transport Properties of Biphenylene via Fluorination and Disorder
 
-- Date: 2026-06-12
+- Date: 2026-06-16
 - Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2606.14003v1
-- PDF: https://arxiv.org/pdf/2606.14003v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-12-arxiv-xrdiff_crystal_structure_prediction_from_powder_x_ray_diffraction_data_using_diffusion_mod_infographic.json
+- arXiv: https://arxiv.org/abs/2606.18083v1
+- PDF: https://arxiv.org/pdf/2606.18083v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-16-arxiv-tunable_electronic_and_transport_properties_of_biphenylene_via_fluorination_and_disorder_infographic.json
 
-## 9. Phase Behavior of Unilamellar Hybrid Lipid-Diblock Copolymer Membranes
+## 18. Thermodynamically consistent modeling of ion exchange membranes in multi-ionic environments
 
-- Date: 2026-06-15
-- Category: Microstructure
-- arXiv: https://arxiv.org/abs/2606.16156v1
-- PDF: https://arxiv.org/pdf/2606.16156v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-15-arxiv-phase_behavior_of_unilamellar_hybrid_lipid_diblock_copolymer_membranes_infographic.json
-
-## 10. NIMO: A Software Platform for Closed-Loop Materials Exploration with Diverse AI Algorithms
-
-- Date: 2026-06-14
-- Category: Microstructure
-- arXiv: https://arxiv.org/abs/2606.15522v1
-- PDF: https://arxiv.org/pdf/2606.15522v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-14-arxiv-nimo_a_software_platform_for_closed_loop_materials_exploration_with_diverse_ai_algorithms_infographic.json
-
-## 11. A wrong ground-state structure of HfO$_2$ predicted by machine-learning interatomic potentials based on the PBE functional
-
-- Date: 2026-06-11
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2606.12811v1
-- PDF: https://arxiv.org/pdf/2606.12811v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-11-arxiv-a_wrong_ground_state_structure_of_hfo_2_predicted_by_machine_learning_interatomic_potentia_infographic.json
-
-## 12. High-entropy Fe$_2$VAl-based thermoelectric modules with improved conversion efficiency
-
-- Date: 2026-06-15
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2606.16851v1
-- PDF: https://arxiv.org/pdf/2606.16851v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-15-arxiv-high_entropy_fe_2_val_based_thermoelectric_modules_with_improved_conversion_efficiency_infographic.json
-
-## 13. Lattice Matching Dictates the Growth Mode and Quality of Deuterium Crystallization in Confined Spherical Shells
-
-- Date: 2026-06-15
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2606.16550v1
-- PDF: https://arxiv.org/pdf/2606.16550v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-15-arxiv-lattice_matching_dictates_the_growth_mode_and_quality_of_deuterium_crystallization_in_conf_infographic.json
-
-## 14. Twistronic control of shift current in multilayer moiré system
-
-- Date: 2026-06-15
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2606.16416v1
-- PDF: https://arxiv.org/pdf/2606.16416v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-15-arxiv-twistronic_control_of_shift_current_in_multilayer_moir_system_infographic.json
-
-## 15. Melt-Quench Failures and Practical Solutions for Universal Machine-Learning Interatomic Potentials in Amorphous Structure Generation
-
-- Date: 2026-06-15
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2606.16385v1
-- PDF: https://arxiv.org/pdf/2606.16385v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-15-arxiv-melt_quench_failures_and_practical_solutions_for_universal_machine_learning_interatomic_po_infographic.json
-
-## 16. Q-READY: Predictive Feasibility Assessment for Hybrid Quantum-Classical Applications
-
-- Date: 2026-06-15
+- Date: 2026-06-16
 - Category: Materials Discovery
-- arXiv: https://arxiv.org/abs/2606.16201v1
-- PDF: https://arxiv.org/pdf/2606.16201v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-15-arxiv-q_ready_predictive_feasibility_assessment_for_hybrid_quantum_classical_applications_infographic.json
+- arXiv: https://arxiv.org/abs/2606.18028v1
+- PDF: https://arxiv.org/pdf/2606.18028v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-16-arxiv-thermodynamically_consistent_modeling_of_ion_exchange_membranes_in_multi_ionic_environment_infographic.json
 
-## 17. Evaluating the Structural Basis for Polar Altermagnet Candidate Ca$_{3}$(Ru,Ti)$_{2}$O$_{7}$
+## 19. Revisiting quantum effects on dislocation glide in bcc metals from DFT calculations and machine-learning potentials
 
-- Date: 2026-06-15
+- Date: 2026-06-16
+- Category: Property Prediction
+- arXiv: https://arxiv.org/abs/2606.17954v1
+- PDF: https://arxiv.org/pdf/2606.17954v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-16-arxiv-revisiting_quantum_effects_on_dislocation_glide_in_bcc_metals_from_dft_calculations_and_ma_infographic.json
+
+## 20. Ground-state properties of the $S=3/2$ anisotropic triangular lattice antiferromagnet Na$_3$Cr(PO$_4$)$_2$
+
+- Date: 2026-06-16
 - Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2606.16181v1
-- PDF: https://arxiv.org/pdf/2606.16181v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-15-arxiv-evaluating_the_structural_basis_for_polar_altermagnet_candidate_ca_3_ru_ti_2_o_7_infographic.json
-
-## 18. Switching Chern number by sliding and gating in alternately twisted tetralayer MoTe2
-
-- Date: 2026-06-14
-- Category: AI materials science
-- arXiv: https://arxiv.org/abs/2606.15548v1
-- PDF: https://arxiv.org/pdf/2606.15548v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-14-arxiv-switching_chern_number_by_sliding_and_gating_in_alternately_twisted_tetralayer_mote2_infographic.json
-
-## 19. The Future of Computing for Materials Science Challenges
-
-- Date: 2026-06-12
-- Category: Materials Discovery
-- arXiv: https://arxiv.org/abs/2606.14387v1
-- PDF: https://arxiv.org/pdf/2606.14387v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-12-arxiv-the_future_of_computing_for_materials_science_challenges_infographic.json
-
-## 20. Hydrogen Chemisorption and Current-Induced Spin Polarization on NbP
-
-- Date: 2026-06-15
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2606.16994v1
-- PDF: https://arxiv.org/pdf/2606.16994v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-15-arxiv-hydrogen_chemisorption_and_current_induced_spin_polarization_on_nbp_infographic.json
+- arXiv: https://arxiv.org/abs/2606.17658v1
+- PDF: https://arxiv.org/pdf/2606.17658v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-16-arxiv-ground_state_properties_of_the_s_3_2_anisotropic_triangular_lattice_antiferromagnet_na_3_c_infographic.json
