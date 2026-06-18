@@ -1,24 +1,24 @@
 {
-  "key_insight": "Latent electrostatics can be distilled from foundation ML interatomic potentials into a lightweight LES-augmented student model that predicts charges, Born effective charges, and infrared spectra.",
-  "engineering_relevance": "This enables faster atomistic simulations with explicit electrical response for systems where long-range electrostatics matter, such as liquids, interfaces, and ionic materials.",
+  "key_insight": "Latent electrostatics can be distilled from foundation ML interatomic potentials into lightweight student models that retain long-range electrical response and spectroscopic capability.",
+  "engineering_relevance": "This enables cheaper atomistic simulations for systems where electrostatics matter, such as liquids and interfaces, while adding access to Born effective charges and infrared spectra.",
   "method": [
-    "Use teacher-model energies and forces to train a student MLIP with Latent Ewald Summation (LES).",
-    "Optionally fine-tune the distilled model with additional DFT data for improved accuracy.",
-    "Extract latent atomic charges to compute long-range electrostatics, Born effective charge tensors, and IR spectra."
+    "Train an LES-augmented student on teacher-predicted energies and forces.",
+    "Optionally fine-tune the student with additional higher-level DFT data.",
+    "Extract latent atomic charges and long-range electrostatics from foundation MLIPs."
   ],
-  "evidence_signal": "The approach was benchmarked on student models distilled from UMA, MACE, Orb, eSEN, GemNet-OC, PET, and EquiformerV2-based teachers against experimental infrared spectra for liquid water, concentrated hydrochloric acid, and the anatase TiO2(101)-water interface.",
-  "watch_item": "Electrostatic and spectroscopic accuracy depend strongly on the teacher’s underlying DFT level and training data, so distillation cannot fully recover missing physical fidelity.",
+  "evidence_signal": "The approach was benchmarked against experimental infrared spectra for liquid water, concentrated hydrochloric acid, and the anatase TiO2(101)-water interface, using distilled students from multiple foundation models.",
+  "watch_item": "Electrostatic and spectroscopic accuracy depends strongly on the teacher’s underlying DFT level and training data, so distillation cannot fully correct deficiencies in the original foundation model.",
   "hashtags": [
-    "#MachineLearningPotentials",
+    "#MachineLearningInteratomicPotentials",
     "#Electrostatics",
-    "#MaterialsInformatics",
+    "#LatentEwaldSummation",
     "#InfraredSpectroscopy",
-    "#AtomisticSimulation"
+    "#MaterialsSimulation"
   ],
   "paper_id": "2026-06-12-arxiv-distilling_latent_electrostatics_from_foundation_machine_learning_interatomic_potentials",
   "paper_title": "Distilling latent electrostatics from foundation machine learning interatomic potentials",
   "paper_date": "2026-06-12",
   "paper_category": "Microstructure",
-  "generated_at": "2026-06-17T14:26:50",
+  "generated_at": "2026-06-18T14:10:19",
   "generator": "openai"
 }
