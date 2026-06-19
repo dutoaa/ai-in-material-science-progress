@@ -25,29 +25,81 @@
         "url": "https://arxiv.org/pdf/2606.19152v1"
       }
     ],
-    "score": 99,
+    "score": 94,
     "infographic": {
-      "key_insight": "AdsMind is a closed-loop multi-agent system that uses MLFF relaxation feedback to self-correct adsorption-site guesses and reliably find low-energy surface-adsorbate configurations.",
-      "engineering_relevance": "It can greatly reduce the number of expensive evaluations needed for heterogeneous catalysis modeling while improving robustness over open-loop LLM-based search.",
+      "key_insight": "AdsMind closes the loop between LLM proposal and MLFF relaxation, using physics feedback to self-correct adsorption-configuration search on catalyst surfaces.",
+      "engineering_relevance": "The framework cuts expensive search effort while improving reliability, making autonomous catalyst-screening workflows more practical for DFT-driven materials discovery.",
       "method": [
-        "LLM agents propose candidate adsorption configurations for catalyst surfaces.",
-        "MLFF relaxation feedback is used to detect and correct poor initial guesses in a closed loop.",
-        "The framework is benchmarked across multiple LLM backends and validated with DFT on representative cases."
+        "Multi-agent LLM system generates candidate adsorption configurations.",
+        "MLFF relaxation feedback is used to detect and correct bad initial guesses.",
+        "Closed-loop search repeats until a stable, lower-energy configuration is found."
       ],
-      "evidence_signal": "Across AA20 and OCD-GMAE62, AdsMind achieved 100% and 98.8% success rates, with only 4.11 and 4.67 MLFF relaxations per case and improved DFT sign agreement on six AA20 examples.",
-      "watch_item": "Performance depends on the quality of the underlying MLFF relaxation and the tested benchmark scope, so transfer to very different surface chemistry may require additional validation.",
+      "evidence_signal": "Across four LLM backends, AdsMind achieved 100% success on AA20 and 98.8% on OCD-GMAE62, with about 4.11 and 4.67 MLFF relaxations per case and better DFT sign agreement than open-loop outputs on six AA20 systems.",
+      "watch_item": "Performance still depends on the quality of the MLFF relaxation model and may need careful validation when transferred to new surface-adsorbate chemistries.",
       "hashtags": [
         "#MaterialsDiscovery",
         "#Catalysis",
-        "#MultiAgentSystems",
-        "#MachineLearningForScience",
-        "#AIChemistry"
+        "#MachineLearningForces",
+        "#LLMAgents",
+        "#AutonomousScience"
       ],
       "paper_id": "2026-06-17-arxiv-adsmind_a_physics_grounded_multi_agent_system_for_self_correcting_discovery_of_adsorption",
       "paper_title": "AdsMind: A Physics-Grounded Multi-Agent System for Self-Correcting Discovery of Adsorption Configurations on Heterogeneous Catalyst Surfaces",
       "paper_date": "2026-06-17",
       "paper_category": "Materials Discovery",
-      "generated_at": "2026-06-18T14:09:31",
+      "generated_at": "2026-06-19T14:12:50",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-18-arxiv-speeding_up_the_annotation_process_in_semantic_segmentation_industrial_applications",
+    "arxiv_id": "2606.19934v1",
+    "date": "2026-06-18",
+    "title": "Speeding up the annotation process in semantic segmentation industrial applications",
+    "authors": "Marta Fernandez-Moreno, Margarita Guerrero, Rosalia Rementeria, Pablo Mesejo, Raul Moreno",
+    "abstract": "Current machine learning models commonly require large and well-annotated datasets. However, the annotation process often becomes a bottleneck, with increased complexity leading to higher chances of human errors. Within this context, our goal in this paper is to leverage unsupervised algorithms to improve data annotation efficiency for complex semantic segmentation problems in industrial materials science. Previous research has quantified labeling time and others explored unsupervised methods. However, to the best of our knowledge, this is the first study to quantify how much unsupervised algorithms accelerate the labeling process. We aim to validate the extent to which this laborious process can be accelerated, focusing on semantic segmentation tasks that involve annotating each pixel of high-resolution images, such as the microstructure characterization challenge in materials science. Specifically, we demonstrate that by using unsupervised computer vision algorithms, the time required for the labeling process can be reduced from 170 hours to 37 hours, achieving an approximate reduction of 78\\%. The dataset we work with includes large images of dimensions 1280x959 and 960x703, which further increases the complexity of the annotation task. Despite these challenges, we create and share the largest public steel microstructure segmentation dataset to date, available under MIT License with permanent DOI, contributing a fully annotated, high-resolution dataset to the field. Additionally, this is the first work to compare the labeling time from scratch (a common approach in previous studies) to the labeling time when using these unsupervised algorithms as a pre-annotation step. Furthermore, we provide a Deep Learning model trained on this dataset, validated by field experts, and deployed in an industrial setting, serving as an initial benchmark for this public dataset.",
+    "category": "Crystal and Structure",
+    "source": "arXiv",
+    "published": "2026-06-18T08:31:50Z",
+    "updated": "2026-06-18T08:31:50Z",
+    "primary_category": "cs.CV",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2606.19934v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2606.19934v1"
+      }
+    ],
+    "score": 80,
+    "infographic": {
+      "key_insight": "Unsupervised pre-annotation can dramatically speed up pixel-level semantic segmentation labeling in industrial materials science, cutting annotation time by about 78%.",
+      "engineering_relevance": "This makes high-resolution microstructure dataset creation more practical for deploying deep learning in industrial inspection and steel characterization workflows.",
+      "method": [
+        "Applied unsupervised computer vision algorithms as a pre-annotation step for semantic segmentation.",
+        "Compared labeling time from scratch versus assisted annotation on large, high-resolution microstructure images.",
+        "Built and released a public steel microstructure segmentation dataset and trained a validated deep learning model."
+      ],
+      "evidence_signal": "On the reported dataset, annotation time dropped from 170 hours to 37 hours, with images as large as 1280×959 and 960×703.",
+      "watch_item": "Time savings depend on image complexity and the quality of unsupervised pre-annotations, so gains may vary across materials and segmentation tasks.",
+      "hashtags": [
+        "#SemanticSegmentation",
+        "#MaterialsScience",
+        "#Microstructure",
+        "#UnsupervisedLearning",
+        "#IndustrialAI"
+      ],
+      "paper_id": "2026-06-18-arxiv-speeding_up_the_annotation_process_in_semantic_segmentation_industrial_applications",
+      "paper_title": "Speeding up the annotation process in semantic segmentation industrial applications",
+      "paper_date": "2026-06-18",
+      "paper_category": "Crystal and Structure",
+      "generated_at": "2026-06-19T14:12:52",
       "generator": "openai"
     }
   },
@@ -78,29 +130,29 @@
         "url": "https://arxiv.org/pdf/2606.17445v1"
       }
     ],
-    "score": 85,
+    "score": 80,
     "infographic": {
-      "key_insight": "A large autoregressive generative model can directly design catalyst structures conditioned on both discrete labels and continuous targets, making inverse catalyst design more controllable.",
-      "engineering_relevance": "This approach can reduce expensive trial-and-error screening by generating candidate catalysts already biased toward desired adsorbates, compositions, and binding energies.",
+      "key_insight": "A large autoregressive transformer pretrained on massive catalyst data can generate catalyst structures conditioned on both discrete labels and continuous properties, enabling controllable inverse design.",
+      "engineering_relevance": "This approach can speed up reaction-targeted catalyst discovery by producing structurally valid, optimized candidates with improved property matching, reducing reliance on exhaustive screening.",
       "method": [
-        "Pretrained a GPT-style model on 133 million catalyst structures for large-scale structural priors.",
-        "Fine-tuned on ~460,000 optimized structures with categorical properties and binding energies for conditional generation.",
-        "Used numerical embeddings to handle mixed categorical and continuous conditioning in one autoregressive framework."
+        "Pretrained a GPT-style generative model on 133 million catalyst structures.",
+        "Fine-tuned on ~460,000 optimized structures with categorical properties and binding energies.",
+        "Used numerical embeddings to condition generation on both categorical and continuous targets in one autoregressive framework."
       ],
-      "evidence_signal": "The model achieved 98% structural validity, 95% optimization validity, 93% joint match for adsorbate type and composition, and about a 20% binding-energy match rate with 1.5–4× screening efficiency gains.",
-      "watch_item": "Binding-energy conditioning remains relatively weak, so practical deployment still needs careful validation of how generated structures translate to real catalytic performance.",
+      "evidence_signal": "The model achieved 98% structural validity, 95% optimization validity, 93% joint match for adsorbate type and composition, and about 20% match for binding-energy conditioning, with 1.5 to 4-fold screening-efficiency gains.",
+      "watch_item": "Binding-energy control remains modest, so real-world deployment may require tighter validation across unseen chemistries and synthesis constraints.",
       "hashtags": [
-        "#MaterialsDiscovery",
         "#CatalystDesign",
+        "#InverseDesign",
         "#GenerativeAI",
-        "#AutoregressiveModel",
-        "#InverseDesign"
+        "#MaterialsInformatics",
+        "#Transformers"
       ],
       "paper_id": "2026-06-16-arxiv-toward_controllable_catalyst_inverse_design_via_large_scale_autoregressive_pretraining",
       "paper_title": "Toward Controllable Catalyst Inverse Design via Large-Scale Autoregressive Pretraining",
       "paper_date": "2026-06-16",
       "paper_category": "Materials Discovery",
-      "generated_at": "2026-06-18T14:09:34",
+      "generated_at": "2026-06-19T14:12:54",
       "generator": "openai"
     }
   },
@@ -130,29 +182,83 @@
         "url": "https://arxiv.org/pdf/2606.16133v1"
       }
     ],
-    "score": 84,
+    "score": 79,
     "infographic": {
-      "key_insight": "InvDesMobility adds a reliability gate to inverse materials design so only sufficiently validated first-principles results are fed back into the model.",
-      "engineering_relevance": "This improves closed-loop materials discovery by making high-cost DFT data auditable, provenance-aware, and safer to use for ranking and generation.",
+      "key_insight": "InvDesMobility adds a reliability gate to closed-loop inverse materials design so only independently validated first-principles results are fed back into learning.",
+      "engineering_relevance": "The framework improves trust, traceability, and decision quality for expensive materials discovery workflows, especially when the target property is a composite quantity like carrier mobility.",
       "method": [
-        "Multi-agent automated DFT workflow with evidence stratification",
-        "Split feedback into relaxed structures for the generative model and retained mobility channels for the acquisition model",
-        "Reliability-gated release and validation priority based on channel-level quality"
+        "Multi-agent automated DFT generates and validates candidate 2D materials.",
+        "Evidence stratification separates relaxed structures for the generative model from retained mobility channels for the acquisition model.",
+        "Auditable release admits feedback only after QC and channel-level reliability checks."
       ],
-      "evidence_signal": "Using 516 2DMatPedia-derived candidates, the workflow produced 280 QC-passed materials, retained 573 seed channels, screened 2.4×10^6 structures, and submitted 102 candidates for DFT validation.",
-      "watch_item": "The framework depends on careful reliability thresholds and workflow assumptions, so overly strict gating may discard useful data while weak gating may admit noisy feedback.",
+      "evidence_signal": "On 516 2DMatPedia-derived candidates, the workflow retained 280 QC-passed materials and 573 mobility seed channels, then screened 2.4 × 10^6 structures and submitted 102 candidates for DFT validation.",
+      "watch_item": "The added gating and provenance steps may increase workflow complexity and could slow iteration if validation criteria are too strict or inconsistently calibrated.",
       "hashtags": [
         "#MaterialsDiscovery",
         "#InverseDesign",
         "#DFT",
-        "#ClosedLoopML",
-        "#ReliableAI"
+        "#ClosedLoopAI",
+        "#Mobility"
       ],
       "paper_id": "2026-06-15-arxiv-invdesmobility_a_reliability_gated_first_principles_feedback_framework_for_closed_loop_mat",
       "paper_title": "InvDesMobility: a reliability-gated first-principles feedback framework for closed-loop materials discovery",
       "paper_date": "2026-06-15",
       "paper_category": "Materials Discovery",
-      "generated_at": "2026-06-18T14:09:37",
+      "generated_at": "2026-06-19T14:12:57",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-18-arxiv-strain_and_electric_field_tunable_valley_polarization_in_mo0_75v0_25te2_mo3vte8_for_valley",
+    "arxiv_id": "2606.19954v1",
+    "date": "2026-06-18",
+    "title": "Strain- and Electric-Field-Tunable Valley Polarization in Mo0.75V0.25Te2(Mo3VTe8) for Valleytronic Application",
+    "authors": "Md. Mostaqul Islam, Vivek Chowdhury, Md. Nure-Alam-Dipu, Ahmed Zubair",
+    "abstract": "Valley polarization in 2D TMDs is promising for low-power valleytronic and spin-valley information processing, but time-reversal symmetry in pristine nonmagnetic TMDs keeps the K+ and K- valleys degenerate, limiting device applications. In this work, we investigated the structural stability, electronic properties, and tunable valley polarization of V-alloyed MoTe2 monolayer, Mo0.75V0.25Te2, using first-principles density functional theory (DFT) calculations. Substitutional alloying of MoTe2 with V introduced magnetic exchange interaction, which, together with spin-orbit coupling (SOC), lifted the valley degeneracy at the unequal valleys. The alloyed structure was found to be energetically and dynamically stable due to the absence of imaginary phonon modes. In pristine MoTe2, SOC produced spin splittings of 34.0 meV and 218.9 meV in the conduction bands and valence bands, respectively, but no valley polarization was observed. In contrast, Mo0.75V0.25Te2 exhibited spontaneous valley polarization of 37.3 meV in the conduction band and 78.2 meV in the valence band. The valley polarization was further enhanced by external electric fields and biaxial strain. A transverse electric field along the crystal c axis produced the maximum valley splitting of 132.8 meV in the valence band, whereas biaxial tensile strain increased the valence band valley splitting up to 160.8 meV. The maximum conduction band valley splitting reached 54.4 meV under 2% biaxial compressive strain. These results demonstrated that V alloying, combined with electric-field and strain engineering, provides an effective strategy for achieving large and tunable valley polarization in MoTe2. Thus, Mo0.75V0.25Te2 can be considered a promising 2D platform for tunable valleytronic device applications, such as transistors and sensors.",
+    "category": "Crystal and Structure",
+    "source": "arXiv",
+    "published": "2026-06-18T08:54:30Z",
+    "updated": "2026-06-18T08:54:30Z",
+    "primary_category": "cond-mat.mtrl-sci",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.mes-hall",
+      "physics.app-ph",
+      "quant-ph"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2606.19954v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2606.19954v1"
+      }
+    ],
+    "score": 76,
+    "infographic": {
+      "key_insight": "V alloying turns MoTe2 into a stable magnetic monolayer with strong, tunable valley polarization that can be amplified by electric field and biaxial strain.",
+      "engineering_relevance": "Mo0.75V0.25Te2 is a promising 2D valleytronic platform for low-power transistors and sensors because its valley splitting can be externally controlled.",
+      "method": [
+        "First-principles DFT calculations on V-alloyed MoTe2 monolayer (Mo0.75V0.25Te2).",
+        "Assessed structural stability, electronic structure, and SOC-induced valley splitting.",
+        "Evaluated tuning via transverse electric field and biaxial strain."
+      ],
+      "evidence_signal": "The abstract reports no imaginary phonon modes for stability and quantified valley splittings of 37.3 meV (CB) and 78.2 meV (VB), rising to 132.8 meV under electric field and 160.8 meV under tensile strain.",
+      "watch_item": "The results are computational and depend on idealized alloying, field, and strain conditions, so experimental synthesis and disorder effects may alter the predicted valley polarization.",
+      "hashtags": [
+        "#Valleytronics",
+        "#2DMaterials",
+        "#DFT",
+        "#MoTe2",
+        "#SpinOrbitCoupling"
+      ],
+      "paper_id": "2026-06-18-arxiv-strain_and_electric_field_tunable_valley_polarization_in_mo0_75v0_25te2_mo3vte8_for_valley",
+      "paper_title": "Strain- and Electric-Field-Tunable Valley Polarization in Mo0.75V0.25Te2(Mo3VTe8) for Valleytronic Application",
+      "paper_date": "2026-06-18",
+      "paper_category": "Crystal and Structure",
+      "generated_at": "2026-06-19T14:12:59",
       "generator": "openai"
     }
   },
@@ -181,29 +287,29 @@
         "url": "https://arxiv.org/pdf/2606.18903v1"
       }
     ],
-    "score": 76,
+    "score": 71,
     "infographic": {
-      "key_insight": "K2SnGeX6 and Rb2SnGeX6 double perovskites are predicted by DFT to be stable, ductile, and highly tunable in bandgap and thermoelectric performance across Cl, Br, and I compositions.",
-      "engineering_relevance": "These lead-free halide perovskites are promising candidates for safer photovoltaics, near-infrared optoelectronics, and high-temperature waste-heat harvesting devices.",
+      "key_insight": "DFT predicts that lead-free double perovskites K/Rb2SnGeX6 (X = Cl, Br, I) are stable, ductile, and highly tunable, with bandgaps shrinking from 1.44 to 0.64 eV and thermoelectric performance peaking at ZT = 2.4 for K2SnGeI6 at 1000 K.",
+      "engineering_relevance": "This family is a promising low-toxicity materials platform for next-generation photovoltaics, near-infrared photodetectors, tandem solar cells, and waste-heat recovery devices.",
       "method": [
-        "Density functional theory (DFT) calculations of structure, mechanics, electronic bands, optics, and thermoelectrics.",
-        "Stability screened using formation energy, tolerance factor, and octahedral factor.",
-        "Transport potential assessed via bandgap tuning, effective masses, lattice thermal conductivity, and ZT."
+        "First-principles DFT calculations on structure, elasticity, electronic bands, optics, and thermoelectrics",
+        "Stability screening using formation energy, tolerance factor, and octahedral factor",
+        "Transport assessment from band structure, carrier effective mass, lattice thermal conductivity, and ZT"
       ],
-      "evidence_signal": "The abstract reports cubic thermodynamically stable phases, direct bandgaps tunable from 1.44 eV to 0.64 eV, and a peak ZT of 2.4 for K2SnGeI6 at 1000 K.",
-      "watch_item": "The results are computational predictions, so experimental synthesis, phase purity, and temperature-dependent device validation are still needed.",
+      "evidence_signal": "The abstract reports all six compounds as thermodynamically stable in a cubic phase, all as ductile, direct-bandgap semiconductors, and identifies K2SnGeI6 as the top thermoelectric candidate with ZT = 2.4 at 1000 K.",
+      "watch_item": "The results are computational and may require experimental validation of phase stability, defect tolerance, and real-device performance under synthesis and operating conditions.",
       "hashtags": [
-        "#Perovskite",
-        "#DFT",
+        "#LeadFreePerovskites",
+        "#DensityFunctionalTheory",
         "#Thermoelectrics",
-        "#Optoelectronics",
-        "#LeadFree"
+        "#Photovoltaics",
+        "#MaterialsScience"
       ],
       "paper_id": "2026-06-17-arxiv-first_principles_study_of_novel_lead_free_double_perovskite_b_eta_2sngex6_b_eta_k_rb_x_cl",
       "paper_title": "First-Principles Study of Novel Lead-Free Double Perovskite \\b{eta}2SnGeX6 (\\b{eta} = K, Rb; X = Cl, Br, I) for thermomechanical, optoelectronic and outstanding thermoelectric applications",
       "paper_date": "2026-06-17",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-06-18T14:09:40",
+      "generated_at": "2026-06-19T14:13:02",
       "generator": "openai"
     }
   },
@@ -232,29 +338,182 @@
         "url": "https://arxiv.org/pdf/2606.17469v1"
       }
     ],
-    "score": 75,
+    "score": 70,
     "infographic": {
-      "key_insight": "LiST is a data platform that automates capture, curation, analysis, and sharing of materials science data across the full sample lifetime.",
-      "engineering_relevance": "It helps research facilities and materials teams create reproducible, searchable datasets that support publication, collaboration, ML/AI workflows, and future autonomous synthesis.",
+      "key_insight": "LiST is a materials data platform that automates capture, curation, analysis, and sharing across the full sample lifetime, linking experiments, theory, and publication-ready datasets.",
+      "engineering_relevance": "It gives materials facilities a scalable way to organize high-volume synthesis and characterization data, enabling reproducible workflows, faster iteration, and downstream AI/ML use.",
       "method": [
-        "Automated ingestion of synthesis, characterization, and modeling data",
-        "REST API access to curated sample records",
-        "Data packages with DOIs for publication-ready sharing"
+        "Automated capture of experimental and modeling data from synthesis to characterization and simulation",
+        "Curates data into searchable sample records and publication data packages with DOI assignment",
+        "Provides REST API access for sharing and integration with external tools"
       ],
-      "evidence_signal": "The platform currently hosts synthesis and property data for approximately 20,000 samples produced by the 2DCC using multiple growth techniques.",
-      "watch_item": "Long-term usefulness depends on consistent metadata standards and careful curation across diverse experimental and modeling workflows.",
+      "evidence_signal": "The platform currently hosts synthesis and property data for approximately twenty thousand samples produced with multiple growth techniques.",
+      "watch_item": "Broad adoption will depend on sustained metadata quality, workflow integration, and consistent curation across diverse experimental groups.",
       "hashtags": [
-        "#MaterialsScience",
-        "#DataInfrastructure",
-        "#AIforMaterials",
-        "#Reproducibility",
-        "#DigitalLab"
+        "#MaterialsInformatics",
+        "#DataPlatform",
+        "#2DMaterials",
+        "#ResearchInfrastructure",
+        "#AIforScience"
       ],
       "paper_id": "2026-06-16-arxiv-lifetime_sample_tracking_list_a_data_platform_for_materials_science",
       "paper_title": "Lifetime Sample Tracking (LiST): A Data Platform for Materials Science",
       "paper_date": "2026-06-16",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-06-18T14:09:42",
+      "generated_at": "2026-06-19T14:13:05",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-18-arxiv-autoregressive_modelling_and_synthetic_generation_of_high_fidelity_statistically_equivalen",
+    "arxiv_id": "2606.20117v1",
+    "date": "2026-06-18",
+    "title": "Autoregressive Modelling and Synthetic Generation of High-Fidelity, Statistically Equivalent 3D Microstructures for As-Manufactured Misalignments in Fiber-Reinforced Composites",
+    "authors": "Mohamad A. Raja, Clemens Dransfeld, Boyang Chen",
+    "abstract": "This study presents an integrated framework for processing, modelling, and generating statistically representative three-dimensional fiber microstructures from experimental X-ray-$μ$CT observations. First, an analytical slice-segment ellipse-intersection method is introduced to extract per-slice and per-fiber in-plane and out-of-plane misalignment profiles along the fiber depth. These descriptors are then used to construct a stochastic model that captures slice-wise misalignment distributions and their depth-wise evolution through, copula-based in-plane dependence, latent autoregressive continuity, and rare extreme-misalignment motifs. The model hyperparameters are calibrated using Bayesian optimization, achieving close agreement with the original statistical descriptors, with deviations generally below 10\\%. The optimized statistical model is coupled with a physical generation strategy that begins with variable-radius fiber seeding layer and proceeds through an iterative slice-by-slice 3D growth scheme, where the statistical layer guides fiber evolution and Delaunay-based neighbourhood construction with ellipse-based contact resolution ensures non-overlapping, radius-augmented synthetic microstructures. The framework successfully generates about 2400 synthetic fibers while preserving strong statistical fidelity to the original X-ray-$μ$CT data. The proposed pipeline provides a promising and scalable route for generating statistically equivalent, geometrically admissible, and simulation-ready fiber composite microstructures for virtual testing and analysis.",
+    "category": "Polymers and Composites",
+    "source": "arXiv",
+    "published": "2026-06-18T11:40:56Z",
+    "updated": "2026-06-18T11:40:56Z",
+    "primary_category": "cs.CE",
+    "categories": [
+      "cs.CE"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2606.20117v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2606.20117v1"
+      }
+    ],
+    "score": 68,
+    "infographic": {
+      "key_insight": "The paper combines slice-wise misalignment statistics with autoregressive synthetic growth to generate 3D fiber microstructures that closely match X-ray-μCT observations.",
+      "engineering_relevance": "This enables simulation-ready composite geometries for virtual testing, helping engineers study as-manufactured misalignment effects without relying solely on expensive experimental scans.",
+      "method": [
+        "Extract per-slice and per-fiber in-plane/out-of-plane misalignment profiles using an analytical ellipse-intersection approach.",
+        "Fit a stochastic model with copula-based dependence, latent autoregression, and rare extreme-misalignment motifs.",
+        "Generate non-overlapping synthetic fibers via layer-wise seeding, Delaunay neighborhoods, and ellipse-based contact resolution."
+      ],
+      "evidence_signal": "The optimized model reportedly matches the original statistical descriptors closely, with deviations generally below 10%, and generates about 2400 synthetic fibers.",
+      "watch_item": "The workflow depends on careful hyperparameter calibration and physically consistent contact handling, so robustness may vary when transferred to different composite systems or scan qualities.",
+      "hashtags": [
+        "#Composites",
+        "#MicrostructureModeling",
+        "#XrayCT",
+        "#SyntheticData",
+        "#ComputationalMaterials"
+      ],
+      "paper_id": "2026-06-18-arxiv-autoregressive_modelling_and_synthetic_generation_of_high_fidelity_statistically_equivalen",
+      "paper_title": "Autoregressive Modelling and Synthetic Generation of High-Fidelity, Statistically Equivalent 3D Microstructures for As-Manufactured Misalignments in Fiber-Reinforced Composites",
+      "paper_date": "2026-06-18",
+      "paper_category": "Polymers and Composites",
+      "generated_at": "2026-06-19T14:13:08",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-18-arxiv-minsurf_resolving_the_atomic_scale_stability_landscape_of_mineral_surfaces",
+    "arxiv_id": "2606.19798v1",
+    "date": "2026-06-18",
+    "title": "MinSurf: resolving the atomic-scale stability landscape of mineral surfaces",
+    "authors": "Fengzijun Pan, Zhoulin Liu, Pingyang Zhang, Jiaqiu Xu, Zepeng Fan, Dawei Wang",
+    "abstract": "Mineral surfaces govern interfacial reactivity in carbon mineralization, geo-energy storage, contaminant immobilization, heterogeneous catalysis and electrochemical interface engineering. Yet atomistic simulations often rely on commonly used facets or facet-level stability criteria, while distinct atomic terminations of the same crystallographic orientation are rarely resolved systematically because experimental characterization and density functional theory (DFT) calculations remain costly across large surface spaces. Here we present MinSurf, a high-throughput framework that resolves mineral surface selection as a surface-energy and morphology problem. MinSurf integrates surface enumeration, DFT labelling, machine-learning interatomic potentials and Wulff construction to predict stable terminations, surface-energy landscapes and equilibrium crystal morphologies. Applied to ten representative minerals, MinSurfSet comprises 764 surface slabs, with 90 corresponding oriented unit cells constructed as bulk references for surface-energy evaluation. The resulting MinNEP model predicts DFT surface energies with a mean absolute error of 0.0119 eV per Angstrom squared and achieves an overall acceleration of 1.14 x 10^4 relative to DFT. MinNEP preserves the DFT-derived morphology-determining surface-energy hierarchy and reproduces the dominant Wulff-exposed facets, while X-ray diffraction provides an independent crystallographic consistency check for alpha-quartz benchmark. By linking atomic terminations, surface energies and equilibrium morphologies, MinSurf provides reproducible and physically representative surface models for high-throughput simulations of mineral interfaces across energy, environmental and advanced inorganic materials.",
+    "category": "Crystal and Structure",
+    "source": "arXiv",
+    "published": "2026-06-18T05:00:43Z",
+    "updated": "2026-06-18T05:00:43Z",
+    "primary_category": "cond-mat.mtrl-sci",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2606.19798v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2606.19798v1"
+      }
+    ],
+    "score": 68,
+    "infographic": {
+      "key_insight": "MinSurf systematically resolves which atomic surface terminations are actually stable for a given mineral facet by combining surface-energy prediction with Wulff morphology analysis.",
+      "engineering_relevance": "It enables reproducible, physically representative mineral surface models for high-throughput simulations in carbon mineralization, catalysis, geo-energy storage, and related interface engineering problems.",
+      "method": [
+        "Enumerate many candidate surface terminations across mineral facets.",
+        "Label surfaces with DFT and train a machine-learning interatomic potential (MinNEP).",
+        "Use Wulff construction to link predicted surface energies to equilibrium crystal morphologies."
+      ],
+      "evidence_signal": "Across ten minerals, the framework built MinSurfSet with 764 slabs and 90 bulk references; MinNEP reached a 0.0119 eV/Å² MAE and about 1.14×10^4 speedup versus DFT.",
+      "watch_item": "Performance depends on the coverage and quality of the enumerated training surfaces, so unusual minerals or terminations outside the sampled space may need additional DFT validation.",
+      "hashtags": [
+        "#MaterialsInformatics",
+        "#MachineLearningPotentials",
+        "#SurfaceScience",
+        "#Mineralogy",
+        "#ComputationalMaterials"
+      ],
+      "paper_id": "2026-06-18-arxiv-minsurf_resolving_the_atomic_scale_stability_landscape_of_mineral_surfaces",
+      "paper_title": "MinSurf: resolving the atomic-scale stability landscape of mineral surfaces",
+      "paper_date": "2026-06-18",
+      "paper_category": "Crystal and Structure",
+      "generated_at": "2026-06-19T14:13:10",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-17-arxiv-coordination_sensitive_nanoscale_analysis_of_defect_driven_phase_transformation_in_si_dope",
+    "arxiv_id": "2606.19653v1",
+    "date": "2026-06-17",
+    "title": "Coordination-Sensitive Nanoscale Analysis of Defect-Driven Phase Transformation in Si-Doped (AlXGa1-X)2O3",
+    "authors": "Shaon Das, Jith Sarker, Christopher Chae, Lingyu Meng, Joel B. Varley, Hongping Zhao",
+    "abstract": "Defect-driven phase instability critically influences the structural reliability of ultrawide bandgap oxides, yet direct nanoscale metrics linking local chemistry to structural transformation remain limited. Here, we introduce a coordination-sensitive atom probe tomography framework that quantitatively resolves reductions in local cation coordination and links them directly to defect-driven phase transformation. Using Si-doped beta-(AlxGa1-x)2O3 heterostructures with controlled Al composition (6-17%) and doping levels (10^17-10^20 cm^-3), we show that gamma-phase inclusions emerge exclusively under the combined conditions of elevated Al content and heavy Si doping. Two-dimensional compositional mapping reveals pronounced lateral Al/Ga inhomogeneity in these regions, while nearest-neighbor and radial distribution analyses quantitatively resolve a significant reduction in first-shell Ga coordination, consistent with local cation deficiency. Correlative scanning transmission electron microscopy confirms that these coordination-depleted regions coincide spatially with gamma-phase inclusions. Density functional theory further supports this mechanism, demonstrating that Al incorporation reduces monoclinic lattice stability and, in conjunction with donor-induced vacancy formation, facilitates vacancy-mediated cation rearrangement and coordination collapse. Together, these results establish coordination loss as a measurable nanoscale signature directly linked to defect-driven phase instability. This framework provides a generalizable approach for probing defect-driven phase instability in doped and alloyed ultrawide bandgap semiconductors.",
+    "category": "Crystal and Structure",
+    "source": "arXiv",
+    "published": "2026-06-17T23:30:04Z",
+    "updated": "2026-06-17T23:30:04Z",
+    "primary_category": "cond-mat.mtrl-sci",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2606.19653v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2606.19653v1"
+      }
+    ],
+    "score": 68,
+    "infographic": {
+      "key_insight": "Si doping and higher Al content jointly trigger local coordination loss in beta-(AlxGa1-x)2O3, which correlates with gamma-phase inclusion formation and defect-driven phase instability.",
+      "engineering_relevance": "The work provides a nanoscale diagnostic for predicting structural reliability in ultrawide-bandgap oxides under composition and doping conditions relevant to device processing.",
+      "method": [
+        "Coordination-sensitive atom probe tomography to measure local cation coordination and composition.",
+        "2D compositional mapping plus nearest-neighbor/radial distribution analysis to detect inhomogeneity and coordination collapse.",
+        "Correlative STEM and DFT to verify spatial coincidence and explain vacancy-mediated phase transformation."
+      ],
+      "evidence_signal": "Gamma-phase inclusions appear only at 6-17% Al with heavy Si doping (10^17-10^20 cm^-3), and the abstract reports quantitative first-shell Ga coordination reduction consistent with cation deficiency.",
+      "watch_item": "The coordination-loss signature is compelling but is demonstrated on a specific Si-doped beta-(AlxGa1-x)2O3 system, so broader generalization to other oxides will need additional validation.",
+      "hashtags": [
+        "#UltrawideBandgap",
+        "#AtomProbeTomography",
+        "#DefectEngineering",
+        "#PhaseTransformation",
+        "#SemiconductorReliability"
+      ],
+      "paper_id": "2026-06-17-arxiv-coordination_sensitive_nanoscale_analysis_of_defect_driven_phase_transformation_in_si_dope",
+      "paper_title": "Coordination-Sensitive Nanoscale Analysis of Defect-Driven Phase Transformation in Si-Doped (AlXGa1-X)2O3",
+      "paper_date": "2026-06-17",
+      "paper_category": "Crystal and Structure",
+      "generated_at": "2026-06-19T14:13:14",
       "generator": "openai"
     }
   },
@@ -284,29 +543,29 @@
         "url": "https://arxiv.org/pdf/2606.17235v1"
       }
     ],
-    "score": 73,
+    "score": 68,
     "infographic": {
-      "key_insight": "A grain-growth model trained on synthetic data can generalize to out-of-distribution microstructures, and a boundary-masked attention design further improves accuracy by focusing on grain-boundary pixels.",
-      "engineering_relevance": "This suggests AI-driven microstructure evolution predictors can be made more robust for real materials workflows without retraining, especially when physics-guided attention aligns with boundary-driven growth behavior.",
+      "key_insight": "A physics-informed, boundary-masked attention mechanism improves out-of-distribution grain-growth prediction by focusing the model on grain-boundary pixels, yielding better robustness than a standard deep learning baseline.",
+      "engineering_relevance": "This suggests grain-growth models trained on synthetic data can be made more reliable for real microstructure evolution prediction, especially when used in materials design and process optimization workflows.",
       "method": [
-        "Evaluated a previously trained deep learning grain-growth predictor on three OOD cases: experimental microstructures, bimodal grain-size distributions, and abnormal grain growth.",
-        "Compared a baseline model against a physics-informed boundary-masked attention variant without retraining or fine-tuning.",
-        "Analyzed attention maps to check whether the model concentrated on grain boundaries in a physically meaningful way."
+        "Evaluated a pre-trained deep learning grain-growth model on three OOD cases: experimental microstructures, bimodal grain size distributions, and abnormal grain growth.",
+        "Added a boundary-masked attention mechanism that restricts attention to grain-boundary pixels.",
+        "Compared baseline vs. physics-informed attention without retraining or fine-tuning on OOD data."
       ],
-      "evidence_signal": "On bimodal microstructures, the boundary-masked model improved SSIM from 0.6221 to 0.7609 and reduced mean grain-size error from 8.75% to 3.57% across OOD evaluation.",
-      "watch_item": "The gains appear strongest when the test morphology remains close to the training domain, so robustness may be weaker for more severe distribution shifts or unseen boundary patterns.",
+      "evidence_signal": "Both models generalized to all three test cases, but the boundary-masked attention model gave the largest gain on bimodal microstructures, improving SSIM from 0.6221 to 0.7609 and reducing mean grain-size error from 8.75% to 3.57%.",
+      "watch_item": "The added benefit depends on how well the target morphology matches the training domain, so performance may be less reliable for strongly novel microstructures.",
       "hashtags": [
-        "#MaterialsAI",
         "#GrainGrowth",
         "#Microstructure",
         "#PhysicsInformedML",
-        "#OutOfDistribution"
+        "#OODGeneralization",
+        "#DeepLearningMaterials"
       ],
       "paper_id": "2026-06-15-arxiv-physics_informed_attention_mechanism_and_generalization_capability_of_deep_learning_based",
       "paper_title": "Physics-Informed Attention Mechanism and Generalization Capability of Deep Learning-Based Grain Growth Evolution Prediction",
       "paper_date": "2026-06-15",
       "paper_category": "Microstructure",
-      "generated_at": "2026-06-18T14:09:45",
+      "generated_at": "2026-06-19T14:13:17",
       "generator": "openai"
     }
   },
@@ -335,29 +594,337 @@
         "url": "https://arxiv.org/pdf/2606.17576v1"
       }
     ],
-    "score": 71,
+    "score": 66,
     "infographic": {
-      "key_insight": "This survey shows that magneto-active polymers at finite strains are best captured by a family of nonlinear, thermodynamically consistent constitutive models that account for anisotropy, field-induced stiffening, and dissipative effects.",
-      "engineering_relevance": "The reviewed models provide the theoretical basis for designing and simulating MAP-based sensors, actuators, vibration-control devices, adaptive structures, and soft robotic components.",
+      "key_insight": "The paper surveys finite-strain constitutive models for magneto-active polymers, showing how increasingly thermodynamically consistent frameworks capture anisotropy, nonlinearity, and dissipation under magnetic fields.",
+      "engineering_relevance": "These models support the design and simulation of smart soft materials for sensors, actuators, vibration control, adaptive structures, and soft robotics.",
       "method": [
-        "Reviews isotropic and anisotropic magnetoelastic constitutive laws",
-        "Covers invariant-based, spectral, variational, and polyconvex formulations",
-        "Includes microstructure-driven and magneto-viscoelastic modeling approaches"
+        "Reviews semi-empirical to nonlinear continuum formulations at finite strains",
+        "Covers isotropic, anisotropic, invariant-based, spectral, variational, polyconvex, microstructural, and magneto-viscoelastic models",
+        "Compares the governing variables, energy functions, coupling mechanisms, and assumptions behind each approach"
       ],
-      "evidence_signal": "The paper is a structured literature survey synthesizing model classes, physical assumptions, coupling mechanisms, and reported experimental behaviors rather than presenting a new dataset.",
-      "watch_item": "A key limitation is that reliable use in practice still depends on solving thermo-magneto-mechanical coupling, parameter identification, and robust numerical implementation.",
+      "evidence_signal": "The abstract reports a structured survey of prior constitutive frameworks rather than new experiments or benchmark data, emphasizing model classes and their reported capabilities.",
+      "watch_item": "Practical use still depends on reliable parameter identification and robust numerical implementation, especially for coupled thermo-magneto-mechanical and microstructure-sensitive effects.",
       "hashtags": [
         "#MagnetoActivePolymers",
         "#ConstitutiveModeling",
-        "#FiniteStrainMechanics",
-        "#SoftMaterials",
-        "#ComputationalMechanics"
+        "#FiniteStrain",
+        "#SoftRobotics",
+        "#SmartMaterials"
       ],
       "paper_id": "2026-06-16-arxiv-constitutive_modelling_of_magneto_active_polymers_at_finite_strains_a_survey",
       "paper_title": "Constitutive modelling of magneto-active polymers at finite strains: A survey",
       "paper_date": "2026-06-16",
       "paper_category": "Polymers and Composites",
-      "generated_at": "2026-06-18T14:09:48",
+      "generated_at": "2026-06-19T14:13:19",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-18-arxiv-exciton_transport_in_disordered_perovskite_nanocrystal_solids",
+    "arxiv_id": "2606.20275v1",
+    "date": "2026-06-18",
+    "title": "Exciton Transport in Disordered Perovskite Nanocrystal Solids",
+    "authors": "Simon Solari, Enrique Arévalo Rodríguez, Antonella Cutrupi, Amalia Coro, Marc Meléndez, Alicia De Andrés",
+    "abstract": "Solution-processed thin films of colloidal lead halide perovskite (LHP) nanocrystals (NCs) show great potential for the implementation into optoelectronic devices such as light-emitting diodes (LEDs), lasers, and solar cells. However, these hybrid LHP NC solids exhibit non-negligible size and shape polydispersity, which introduces both structural and energetic disorder. Here, we resolve the exciton dynamics in space, time, and energy to elucidate the impact of different forms of disorder (structural and energetic) on exciton transport. We show that the disorder depends sensitively on the length of the alkylamine ligand used in the synthesis. While shorter alkyl chain lengths lead to high polydispersity, longer alkyl chains lead to more monodispersed and smaller particles where quantum confinement becomes more pronounced and, consequently, lead to increased energetic disorder. Strikingly, we find that exciton transport is less efficient in NC solids with long alkyl chain ligands, despite having a significantly more monodisperse ensemble. This demonstrates that energetic disorder, rather than structural disorder, is the dominant factor for predicting exciton transport within these materials. These findings reveal the critical role of ligand engineering in designing high-performance optoelectronic devices based on hybrid LHP NCs, providing new insights into energy transport dynamics in disordered systems and highlighting the versatility of these materials for advanced photonic and optoelectronic applications.",
+    "category": "Crystal and Structure",
+    "source": "arXiv",
+    "published": "2026-06-18T14:19:18Z",
+    "updated": "2026-06-18T14:19:18Z",
+    "primary_category": "cond-mat.mtrl-sci",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2606.20275v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2606.20275v1"
+      }
+    ],
+    "score": 65,
+    "infographic": {
+      "key_insight": "Exciton transport in perovskite nanocrystal solids is governed more by energetic disorder than by size/shape polydispersity, and longer alkylamine ligands can reduce transport efficiency despite making the nanocrystals more uniform.",
+      "engineering_relevance": "Ligand length is a key design knob for tuning nanoscale order and exciton migration in lead halide perovskite films, with direct implications for LEDs, lasers, and solar cells.",
+      "method": [
+        "Resolved exciton dynamics in space, time, and energy",
+        "Compared nanocrystal solids synthesized with different alkylamine ligand lengths",
+        "Separated the effects of structural disorder from energetic disorder on transport"
+      ],
+      "evidence_signal": "The abstract reports that longer-chain ligands produced more monodispersed, smaller nanocrystals but also stronger energetic disorder and less efficient exciton transport.",
+      "watch_item": "The conclusions are specific to solution-processed disordered perovskite nanocrystal solids, so transport trends may shift with different compositions, ligands, or film-assembly conditions.",
+      "hashtags": [
+        "#Perovskite",
+        "#ExcitonTransport",
+        "#Nanocrystals",
+        "#Disorder",
+        "#Optoelectronics"
+      ],
+      "paper_id": "2026-06-18-arxiv-exciton_transport_in_disordered_perovskite_nanocrystal_solids",
+      "paper_title": "Exciton Transport in Disordered Perovskite Nanocrystal Solids",
+      "paper_date": "2026-06-18",
+      "paper_category": "Crystal and Structure",
+      "generated_at": "2026-06-19T14:13:21",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-18-arxiv-thickness_dependent_interlayer_coupling_and_semiconductor_to_semimetal_crossover_in_arsene",
+    "arxiv_id": "2606.19780v1",
+    "date": "2026-06-18",
+    "title": "Thickness-Dependent Interlayer Coupling and Semiconductor-to-Semimetal Crossover in Arsenene Multilayers",
+    "authors": "Jeonghwan Ahn, Seoung-Hun Kang, Jaron T. Krogel",
+    "abstract": "Interlayer interactions in layered materials are often assumed to transfer from the bilayer to the bulk, but this assumption can fail when chemically active out-of-plane orbitals participate in bonding. We combine diffusion quantum Monte Carlo (DMC) and density functional theory (DFT) to determine how interlayer coupling evolves in arsenene multilayers. DMC shows that bulk gray arsenic is compact, whereas the corresponding few-layer structures remain at substantially larger interlayer separations despite sharing the same nominal A$_{1}$B$_{-1}$ adjacent-layer registry. Registry alone therefore does not determine the bonding regime; thickness and coordination reshape the interlayer interaction. Among the tested functionals, SCAN+rVV10 most closely reproduces DMC equilibrium separations and stacking energetics. Using the DMC-benchmarked SCAN+rVV10 calculations, we predict a thickness-driven stacking sequence from A$_{1}$A$_{1}$ to A$_{1}$B$_{1}$ and finally bulk-like A$_{1}$B$_{-1}$. The structural crossover coincides with a stacking-dependent DFT band-gap collapse driven by enhanced interlayer As p$_{z}$ hybridization.",
+    "category": "Crystal and Structure",
+    "source": "arXiv",
+    "published": "2026-06-18T04:29:43Z",
+    "updated": "2026-06-18T04:29:43Z",
+    "primary_category": "cond-mat.mtrl-sci",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2606.19780v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2606.19780v1"
+      }
+    ],
+    "score": 65,
+    "infographic": {
+      "key_insight": "Arsenene’s interlayer bonding is thickness-dependent: few-layer sheets stay weakly coupled and more widely spaced than bulk, enabling a stacking change that drives a semiconductor-to-semimetal crossover.",
+      "engineering_relevance": "Accurate prediction of layer spacing, stacking order, and band gap in 2D arsenene is important for designing thickness-tunable electronic devices and van der Waals heterostructures.",
+      "method": [
+        "Combined diffusion quantum Monte Carlo (DMC) with density functional theory (DFT) to benchmark interlayer interactions.",
+        "Compared multiple functionals and found SCAN+rVV10 best matches DMC equilibrium separations and stacking energetics.",
+        "Used DMC-benchmarked SCAN+rVV10 to predict thickness-driven stacking and electronic transitions."
+      ],
+      "evidence_signal": "The abstract reports that DMC reveals bulk gray arsenic is compact while few-layer arsenene remains substantially more separated, and that the structural crossover coincides with a DFT band-gap collapse from enhanced As pz hybridization.",
+      "watch_item": "Registry alone is not enough to predict bonding or electronic behavior, so models must account for thickness and coordination rather than assuming bilayer-to-bulk transferability.",
+      "hashtags": [
+        "#Arsenene",
+        "#2DMaterials",
+        "#QuantumMonteCarlo",
+        "#DFT",
+        "#SemimetalCrossover"
+      ],
+      "paper_id": "2026-06-18-arxiv-thickness_dependent_interlayer_coupling_and_semiconductor_to_semimetal_crossover_in_arsene",
+      "paper_title": "Thickness-Dependent Interlayer Coupling and Semiconductor-to-Semimetal Crossover in Arsenene Multilayers",
+      "paper_date": "2026-06-18",
+      "paper_category": "Crystal and Structure",
+      "generated_at": "2026-06-19T14:13:24",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-17-arxiv-torchnep_ultra_efficient_and_accurate_training_of_neuroevolution_potentials",
+    "arxiv_id": "2606.19557v1",
+    "date": "2026-06-17",
+    "title": "TorchNEP: Ultra-Efficient and Accurate Training of Neuroevolution Potentials",
+    "authors": "Yong-Chao Wu, Xiaoya Chang, Tero Mäkinen, Amin Esfandiarpour, Jian-Li Shao, Tapio Ala-Nissila",
+    "abstract": "Neuroevolution Potential (NEP) is one of the most efficient machine-learned interatomic potential frameworks for large-scale atomistic simulations. However, its original training strategy remains computationally demanding, limiting systematic exploration of model architectures and training protocols. Here, we present TorchNEP, a PyTorch-based implementation of NEP that combines analytically derived gradients, adaptive optimization, and a two-stage training strategy. TorchNEP accelerates training by more than two orders of magnitude while maintaining full compatibility with existing NEP models. We further show that the improvement in predictive accuracy primarily originates from the two-stage training protocol rather than the optimization algorithm itself. Across diverse benchmark datasets, TorchNEP consistently improves force and stress predictions while maintaining comparable or improved energy accuracy. Benchmark evaluations on elemental and alloy systems demonstrate enhanced predictive performance for both atomic configurations and key materials properties. Furthermore, we show that increasing model complexity does not necessarily improve predictive performance despite reducing training errors. Overall, TorchNEP provides an efficient and flexible training framework for developing more accurate and robust machine-learned interatomic potentials.",
+    "category": "Materials Discovery",
+    "source": "arXiv",
+    "published": "2026-06-17T19:58:21Z",
+    "updated": "2026-06-17T19:58:21Z",
+    "primary_category": "physics.comp-ph",
+    "categories": [
+      "physics.comp-ph"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2606.19557v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2606.19557v1"
+      }
+    ],
+    "score": 65,
+    "infographic": {
+      "key_insight": "TorchNEP makes NEP training over 100× faster while improving prediction quality, with most accuracy gains coming from a two-stage training protocol.",
+      "engineering_relevance": "It enables faster, more practical development of machine-learned interatomic potentials for large-scale atomistic simulations in materials discovery.",
+      "method": [
+        "PyTorch-based NEP implementation with analytically derived gradients",
+        "Adaptive optimization plus a two-stage training strategy",
+        "Maintains compatibility with existing NEP models"
+      ],
+      "evidence_signal": "Across multiple benchmark datasets and elemental/alloy systems, TorchNEP improved force and stress predictions while maintaining comparable or better energy accuracy and materials-property predictions.",
+      "watch_item": "Higher model complexity did not necessarily improve predictive performance, so lower training error should not be assumed to mean a better potential.",
+      "hashtags": [
+        "#MaterialsDiscovery",
+        "#MachineLearningPotentials",
+        "#NeuroevolutionPotential",
+        "#PyTorch",
+        "#AtomisticSimulation"
+      ],
+      "paper_id": "2026-06-17-arxiv-torchnep_ultra_efficient_and_accurate_training_of_neuroevolution_potentials",
+      "paper_title": "TorchNEP: Ultra-Efficient and Accurate Training of Neuroevolution Potentials",
+      "paper_date": "2026-06-17",
+      "paper_category": "Materials Discovery",
+      "generated_at": "2026-06-19T14:13:26",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-17-arxiv-deposition_and_growth_of_the_alcocufeni_high_entropy_alloy_thin_film_molecular_dynamics_si",
+    "arxiv_id": "2606.19582v1",
+    "date": "2026-06-17",
+    "title": "Deposition and Growth of the AlCoCuFeNi High-Entropy Alloy Thin Film: Molecular Dynamics Simulation",
+    "authors": "Oleksandr I. Kushnerov, Valerij F. Bashev, Sergey I. Ryabtsev",
+    "abstract": "The growth of a thin film of a high-entropy AlCoCuFeNi alloy on a silicon (100) substrate was studied using molecular dynamics modeling. The simulation was carried out using the embedded atom model to describe the interactions among Al, Co, Cu, Ni, and Fe atoms. The interaction between Al, Co, Cu, Fe, Ni atoms and the Si substrate was modeled using the Lennard-Jones potential, while the interaction between silicon atoms was described using the Stillinger-Weber potential. The total simulation time was 50 ns. It was found that small clusters were formed at the first stage of deposition and that crystallization started after approximately 5 ns of simulation, when the characteristic cluster size was about 2 nm. At the end of the simulation, after 50 ns of modeling, the simulated film contained face-centered cubic, body-centered cubic, hexagonal close-packed, and amorphous phases. Analysis of the radial distribution function made it possible to determine nearest-neighbor distances and estimate the lattice parameters of these phases.",
+    "category": "Crystal and Structure",
+    "source": "arXiv",
+    "published": "2026-06-17T20:36:32Z",
+    "updated": "2026-06-17T20:36:32Z",
+    "primary_category": "cond-mat.mtrl-sci",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2606.19582v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2606.19582v1"
+      }
+    ],
+    "score": 64,
+    "infographic": {
+      "key_insight": "Molecular dynamics shows that AlCoCuFeNi thin-film deposition on Si(100) first forms nanoscale clusters, then begins crystallizing after about 5 ns into a mixed multi-phase structure.",
+      "engineering_relevance": "The results help guide high-entropy alloy thin-film processing by linking deposition time and cluster evolution to phase formation and lattice-scale structure on silicon substrates.",
+      "method": [
+        "Embedded atom model for Al, Co, Cu, Fe, and Ni interactions",
+        "Lennard-Jones potential for alloy–silicon interactions and Stillinger-Weber potential for Si–Si interactions",
+        "50 ns molecular dynamics simulation with radial distribution function analysis"
+      ],
+      "evidence_signal": "The abstract reports that crystallization starts near 5 ns when clusters reach about 2 nm, and by 50 ns the film contains FCC, BCC, HCP, and amorphous phases.",
+      "watch_item": "The study is simulation-based with a specific substrate/potential setup, so phase predictions may depend on force-field choice and may require experimental validation.",
+      "hashtags": [
+        "#MolecularDynamics",
+        "#HighEntropyAlloy",
+        "#ThinFilmGrowth",
+        "#CrystalStructure",
+        "#MaterialsSimulation"
+      ],
+      "paper_id": "2026-06-17-arxiv-deposition_and_growth_of_the_alcocufeni_high_entropy_alloy_thin_film_molecular_dynamics_si",
+      "paper_title": "Deposition and Growth of the AlCoCuFeNi High-Entropy Alloy Thin Film: Molecular Dynamics Simulation",
+      "paper_date": "2026-06-17",
+      "paper_category": "Crystal and Structure",
+      "generated_at": "2026-06-19T14:13:28",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-18-arxiv-interpretable_meta_learning_for_multi_objective_chemical_search",
+    "arxiv_id": "2606.20497v1",
+    "date": "2026-06-18",
+    "title": "Interpretable Meta-Learning for Multi-Objective Chemical Search",
+    "authors": "Antonio Varagnolo, Yulia Pimonova, Michael G. Taylor, Raphaël Pestourie, Nicholas E. Lubbers",
+    "abstract": "Navigating the vast space of synthetically accessible molecules demands surrogate models that are interpretable and capable of handling multiple competing objectives at the same time. Deep learning approaches struggle to satisfy them under the computational constraints of quantum-level chemistry. Here, we introduce a modular pipeline that combines interpretable linear meta-learning models and adaptive-confidence uncertainty quantification into an Efficient Global Optimization (EGO) framework for multi-objective molecular discovery. For the first time, linear meta-learning is deployed in a multi-objective chemical search setting: by training across chemical objectives and cheap auxiliary properties, the meta-learned surrogates acquire transferable chemical knowledge that adapts rapidly to new objectives from limited data. Evaluated empirically on a real large scale search for spin-crossover metal-organic complexes, the baseline performs 78% worse in Pareto sense than the meta-learning alternative. We also address the calibration challenges inherent to active search. Since optimal candidates typically lie precisely in the distributional tails, standard uncertainty estimates fail. We introduce an adaptive confidence-tuning algorithm that dynamically recalibrates the exploration-exploitation trade-off as the molecular search evolves. Empirically, dynamic confidence tuning further dominates over 50% of the statically calibrated front.",
+    "category": "Materials Discovery",
+    "source": "arXiv",
+    "published": "2026-06-18T17:12:48Z",
+    "updated": "2026-06-18T17:12:48Z",
+    "primary_category": "cs.CE",
+    "categories": [
+      "cs.CE",
+      "cond-mat.mtrl-sci"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2606.20497v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2606.20497v1"
+      }
+    ],
+    "score": 63,
+    "infographic": {
+      "key_insight": "A modular active-learning pipeline combines interpretable linear meta-learning with adaptive uncertainty calibration to improve multi-objective molecular search under limited data.",
+      "engineering_relevance": "The approach is useful for materials discovery workflows that need fast, transparent surrogate models to optimize competing chemistry objectives without the cost of full quantum evaluations.",
+      "method": [
+        "Meta-train linear surrogate models across related chemical objectives and cheap auxiliary properties.",
+        "Embed the surrogates in an Efficient Global Optimization loop for multi-objective search.",
+        "Adaptively recalibrate confidence during the search to balance exploration and exploitation as candidates shift toward distributional tails."
+      ],
+      "evidence_signal": "On a large-scale spin-crossover metal-organic complex search, the baseline was 78% worse in Pareto performance than the meta-learning approach, and dynamic confidence tuning outperformed over 50% of the statically calibrated front.",
+      "watch_item": "Performance may depend on the quality of auxiliary tasks and careful calibration, since uncertainty estimates in tail regions can still be brittle during active search.",
+      "hashtags": [
+        "#MaterialsDiscovery",
+        "#MetaLearning",
+        "#MultiObjectiveOptimization",
+        "#ActiveLearning",
+        "#UncertaintyQuantification"
+      ],
+      "paper_id": "2026-06-18-arxiv-interpretable_meta_learning_for_multi_objective_chemical_search",
+      "paper_title": "Interpretable Meta-Learning for Multi-Objective Chemical Search",
+      "paper_date": "2026-06-18",
+      "paper_category": "Materials Discovery",
+      "generated_at": "2026-06-19T14:13:30",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-17-arxiv-sequential_replica_exchange_with_solute_tempering_for_atomistic_modeling_of_supramolecular",
+    "arxiv_id": "2606.19418v1",
+    "date": "2026-06-17",
+    "title": "Sequential replica exchange with solute tempering for atomistic modeling of supramolecular polymer structures",
+    "authors": "Hadi H. Arefi, Takeshi Yamamoto",
+    "abstract": "Predicting detailed atomistic structures of self-assembling systems remains a challenge for all-atom molecular dynamics simulations. Replica exchange with solute tempering (REST) has been used to study those systems by accelerating all monomers in a global and uniform manner. While such a global approach can in principle predict any morphology of the system, it has computational drawbacks such as inefficient replica traversal due to order-disorder transitions and the growing number of replicas with system size. To address these issues, here we propose an alternative, stepwise construction approach to modeling supramolecular polymers under the assumption of one-dimensional polymerization. Specifically, we generate polymer structures by adding new monomers one by one to the system and applying REST to the new monomers to find their optimal binding positions based on an energy-based scoring function. The monomer addition and enhanced sampling are repeated sequentially until a polymer of desired length is obtained. We test the above procedure using a model supramolecular polymer in explicit solvent, and show that it can generate a polymer structure with characteristic H-bonding patterns at reduced computational costs, while also improving the efficiency of replica traversal significantly. We thus expect that the sequential REST will be useful for modeling supramolecular polymers, particularly for cases where global REST simulations are too demanding computationally.",
+    "category": "Crystal and Structure",
+    "source": "arXiv",
+    "published": "2026-06-17T17:54:38Z",
+    "updated": "2026-06-17T17:54:38Z",
+    "primary_category": "cond-mat.soft",
+    "categories": [
+      "cond-mat.soft",
+      "physics.chem-ph"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2606.19418v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2606.19418v1"
+      }
+    ],
+    "score": 62,
+    "infographic": {
+      "key_insight": "A sequential replica-exchange scheme with solute tempering builds supramolecular polymers one monomer at a time, enabling efficient atomistic structure prediction without globally tempering the whole system.",
+      "engineering_relevance": "The approach reduces the replica-count and traversal bottlenecks of conventional REST, making detailed polymer-assembly modeling more practical for large self-assembling molecular systems.",
+      "method": [
+        "Add one monomer to the growing polymer structure sequentially.",
+        "Apply REST only to the newly added monomers to sample binding positions.",
+        "Use an energy-based scoring function to select the best configuration at each growth step."
+      ],
+      "evidence_signal": "In an explicit-solvent model supramolecular polymer test, the method reproduced characteristic hydrogen-bonding patterns while improving replica traversal efficiency and lowering computational cost.",
+      "watch_item": "The method assumes one-dimensional polymerization, so its performance may be limited for systems with branching, competing morphologies, or strong deviations from sequential growth behavior.",
+      "hashtags": [
+        "#MolecularDynamics",
+        "#ReplicaExchange",
+        "#SupramolecularPolymers",
+        "#AtomisticModeling",
+        "#ComputationalMaterials"
+      ],
+      "paper_id": "2026-06-17-arxiv-sequential_replica_exchange_with_solute_tempering_for_atomistic_modeling_of_supramolecular",
+      "paper_title": "Sequential replica exchange with solute tempering for atomistic modeling of supramolecular polymer structures",
+      "paper_date": "2026-06-17",
+      "paper_category": "Crystal and Structure",
+      "generated_at": "2026-06-19T14:13:32",
       "generator": "openai"
     }
   },
@@ -386,656 +953,80 @@
         "url": "https://arxiv.org/pdf/2606.17852v1"
       }
     ],
-    "score": 67,
+    "score": 62,
     "infographic": {
-      "key_insight": "A split-head quantum GAN can separately model lattice bounds and atomic positions, improving structural diversity while preserving physically meaningful crystalline generation.",
-      "engineering_relevance": "This architecture offers a resource-efficient path for discovering novel crystalline materials by combining quantum feature mapping with physics-informed design priors.",
+      "key_insight": "A split-head quantum GAN separates lattice bounds from atomic coordinates, giving better structural diversity while architecture alone can preserve thermodynamic accuracy.",
+      "engineering_relevance": "The work suggests quantum-assisted generative models could accelerate crystalline materials discovery by balancing physical constraints with broader candidate exploration.",
       "method": [
-        "Use a quantum trunk with a split-head design to decouple cell-level lattice parameters from atomic coordinates.",
-        "Compare SH-QGAN against an architecture-matched classical ablation to isolate the effect of quantum circuits.",
-        "Evaluate generation on the constrained Mg-Mn-O materials system for thermodynamic and geometric validity."
+        "Use a physics-informed split-head generator to decouple cell parameters from atomic positions.",
+        "Compare SH-QGAN against an architecture-matched classical ablation to isolate quantum circuit effects.",
+        "Train and evaluate on the constrained Mg-Mn-O composition space for novel crystal generation."
       ],
-      "evidence_signal": "On Mg-Mn-O, the classical ablation achieved better thermodynamic precision, while SH-QGAN more than doubled geometric validity and produced novel metastable candidates near Mg2MnO4 stoichiometry.",
-      "watch_item": "Results suggest the quantum model boosts diversity, but performance depends on careful architecture matching and the limited near-term capacity of quantum hardware.",
+      "evidence_signal": "On the Mg-Mn-O system, the classical ablation was more thermodynamically precise, while SH-QGAN more than doubled geometric validity and produced novel metastable candidates near Mg2MnO4 stoichiometry.",
+      "watch_item": "Results come from a highly constrained benchmark, so gains in diversity and validity may not transfer directly to larger or less structured materials spaces.",
       "hashtags": [
         "#QuantumGAN",
         "#MaterialsDiscovery",
-        "#CrystallineMaterials",
-        "#GenerativeAI",
-        "#QuantumComputing"
+        "#CrystalGeneration",
+        "#QuantumComputing",
+        "#GenerativeModels"
       ],
       "paper_id": "2026-06-16-arxiv-split_head_quantum_generative_adversarial_network_for_crystalline_material_discovery",
       "paper_title": "Split-Head Quantum Generative Adversarial Network for Crystalline Material Discovery",
       "paper_date": "2026-06-16",
       "paper_category": "Materials Discovery",
-      "generated_at": "2026-06-18T14:09:51",
+      "generated_at": "2026-06-19T14:13:35",
       "generator": "openai"
     }
   },
   {
-    "id": "2026-06-12-arxiv-a_multi_level_architecture_for_reusable_materials_ontologies_the_ontocrafter_ceramics_onto",
-    "arxiv_id": "2606.14814v2",
-    "date": "2026-06-12",
-    "title": "A Multi-Level Architecture for Reusable Materials Ontologies -- The OntoCrafter Ceramics Ontology (OCO) as Reference Implementation",
-    "authors": "Thomas Pannek, Wolfgang Grond",
-    "abstract": "The Materials Science and Engineering ontology landscape is fragmented along multiple axes simultaneously. Horizontally: a recent survey identified 94 ontologies of which over 40 are structurally incompatible; each new application domain -- ceramics, polymers, batteries, smart materials -- typically restarts ontology design from scratch. Vertically: EU regulation (CSRD, CSDDD, PPWR, CBAM, R2R, AI Act, ESPR) forces material, manufacturing, supply-chain, and lifecycle data into integrated digital product passports, leaving ontologies that only address horizontal fragmentation incomplete for any contemporary consumer. And mechanistically: a vocabulary that records that BNT-BT has $d_{33} \\approx 580$ pC/N stores a fact but cannot surface why -- Bi-6s$^2$ lone-pair stereo-activity, anomalous Born effective charges, soft modes, defect chemistry -- without a systematic explanation skeleton. We propose a multi-level modular architecture with two independent classification axes -- level of abstraction (L0 bridges, L1 material-agnostic laboratory-notebook, L2 material-class-specific, L3 categorical reasoning) and consumer audience (material vs. compliance) -- in which the material-specific level is internally organised by a seven-tier mechanistic-explanation skeleton (Symmetry, Energy/DFT, Thermo/CALPHAD, Kinetics, Microstructure, Defect chemistry, Bonding) applicable to any crystalline ionic oxide. The level-and-audience modularity dissolves the horizontal fragmentation, the compliance audience absorbs the vertical regulation pressure, and the seven-tier organisation of Level 2 delivers the mechanistic explanation depth. We instantiate the architecture as the OntoCrafter Ceramics Ontology (OCO v0.94): 5,196 classes across 44 modules; 167,348 OWL axioms (40,454 logical); 1,674 properties; 829 cross-ontology bridge mappings; 1,172 SHACL shapes; 163 published competency questions.",
+    "id": "2026-06-18-arxiv-tunable_flat_bands_and_magnetism_in_triangulene_based_superatomic_graphene",
+    "arxiv_id": "2606.20321v1",
+    "date": "2026-06-18",
+    "title": "Tunable Flat Bands and magnetism in Triangulene-based Superatomic Graphene",
+    "authors": "Wenya Zhai, Tingfeng Zhang, Fengkun Chen, Xiuqin Lu, Yunlong Xia, Zengfu Ou",
+    "abstract": "Superatomic graphene platforms host a rich portfolio of flat-band-driven exotic quantum properties, yet their experimental realization remains challenging. Here, we report the bottom-up on-surface synthesis of superatomic graphene using phosphorus-doped triangulene as building blocks. Scanning tunneling microscopy and spectroscopy measurements resolve the well-defined honeycomb lattice of as-fabricated superatomic graphene and demonstrate the characteristic Dirac band and flat band electronic structures. Density functional theory calculations reveal that the flat bands originate from the in-plane p$_x,_y$-like frontier orbitals of the phosphorus-doped triangulene units, leading to intrinsic half-metallic behavior. Furthermore, oxygen functionalization of the molecular precursor enables deterministic modulation of the electronic structure and magnetic ordering. This work establishes a general platform for designing correlated quantum materials with tunable flat band properties.",
     "category": "Crystal and Structure",
     "source": "arXiv",
-    "published": "2026-06-12T10:10:19Z",
-    "updated": "2026-06-16T09:42:12Z",
+    "published": "2026-06-18T15:01:22Z",
+    "updated": "2026-06-18T15:01:22Z",
     "primary_category": "cond-mat.mtrl-sci",
     "categories": [
-      "cond-mat.mtrl-sci",
-      "cs.AI",
-      "physics.app-ph",
-      "physics.chem-ph",
-      "physics.comp-ph"
+      "cond-mat.mtrl-sci"
     ],
     "links": [
       {
         "title": "arXiv",
-        "url": "https://arxiv.org/abs/2606.14814v2"
+        "url": "https://arxiv.org/abs/2606.20321v1"
       },
       {
         "title": "PDF",
-        "url": "https://arxiv.org/pdf/2606.14814v2"
+        "url": "https://arxiv.org/pdf/2606.20321v1"
       }
     ],
-    "score": 67,
+    "score": 61,
     "infographic": {
-      "key_insight": "The paper proposes a reusable, multi-level ontology architecture that separates abstraction level and consumer audience, while embedding a seven-tier mechanistic explanation structure for materials knowledge.",
-      "engineering_relevance": "This enables materials ontologies to support both scientific reasoning and regulatory digital product passport needs without rebuilding a new ontology for each application domain.",
+      "key_insight": "Phosphorus-doped triangulene can be assembled into superatomic graphene with tunable flat bands and intrinsic magnetic behavior.",
+      "engineering_relevance": "This bottom-up strategy offers a programmable route to designer flat-band materials for spintronic and correlated-electron device concepts.",
       "method": [
-        "Define four abstraction levels: L0 bridges, L1 material-agnostic lab notebook, L2 material-class-specific, L3 categorical reasoning.",
-        "Use two audience tracks: material users and compliance users.",
-        "Organize L2 with seven mechanistic tiers: Symmetry, Energy/DFT, Thermo/CALPHAD, Kinetics, Microstructure, Defect chemistry, Bonding."
+        "On-surface bottom-up synthesis of superatomic graphene from phosphorus-doped triangulene precursors.",
+        "Scanning tunneling microscopy/spectroscopy to resolve lattice structure and electronic bands.",
+        "Density functional theory to identify orbital origin of the flat bands and predict magnetism; oxygen functionalization used for tuning."
       ],
-      "evidence_signal": "The reference implementation, OntoCrafter Ceramics Ontology (OCO v0.94), reports 5,196 classes, 167,348 OWL axioms, 829 bridge mappings, 1,172 SHACL shapes, and 163 competency questions.",
-      "watch_item": "The architecture is promising, but its practical value will depend on how consistently the modular levels and bridge mappings can be maintained across many materials domains and evolving regulations.",
+      "evidence_signal": "STM/STS directly observed the honeycomb lattice and characteristic Dirac and flat-band electronic signatures, consistent with DFT predictions of p_x,y-derived flat bands and half-metallicity.",
+      "watch_item": "The platform is demonstrated at the surface-assembled molecular scale, so translating the tunable magnetic/flat-band behavior into robust device architectures may require careful control of defects, ordering, and functionalization.",
       "hashtags": [
-        "#MaterialsOntology",
-        "#KnowledgeGraph",
-        "#DigitalProductPassport",
-        "#OntologyEngineering",
-        "#ComputationalMaterials"
-      ],
-      "paper_id": "2026-06-12-arxiv-a_multi_level_architecture_for_reusable_materials_ontologies_the_ontocrafter_ceramics_onto",
-      "paper_title": "A Multi-Level Architecture for Reusable Materials Ontologies -- The OntoCrafter Ceramics Ontology (OCO) as Reference Implementation",
-      "paper_date": "2026-06-12",
-      "paper_category": "Crystal and Structure",
-      "generated_at": "2026-06-18T14:09:54",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-06-12-arxiv-lapidaryengine_fully_conversational_crystal_generation",
-    "arxiv_id": "2606.14215v1",
-    "date": "2026-06-12",
-    "title": "LapidaryEngine: Fully Conversational Crystal Generation",
-    "authors": "Yusei Ito, Yuta Suzuki, Tomoya Murata, Masaki Adachi",
-    "abstract": "The emergence of Large Language Models (LLMs) has inspired the vision of generating bespoke crystal materials directly from natural-language instructions, enabling users to design materials through intuitive, conversational interaction. Existing text-to-crystal generative models represent important early steps toward this goal, but they suffer from two critical limitations: (i) restricted input formats that require highly structured descriptions (e.g., chemical formulas), and (ii) one-directional generation, where models can map text to crystal but cannot perform the inverse. These limitations prevent fully conversational workflows and hinder alignment with users' inherently ambiguous and evolving desiderata. We address these challenges with LapidaryEngine, the first model to support fully conversational crystal generation. LapidaryEngine accepts free-form natural-language requests and performs iterative refinement and editing in a dialogue-like manner. The key innovation is a pivot representation, a third, intermediate form that enables bidirectional translation between text and crystal structures despite the absence of direct paired datasets. Leveraging this pivot allows robust interpretation of user feedback and precise structural control. We demonstrate LapidaryEngine across diverse tasks, including insulator discovery, stability optimization, compositional modification, and structural editing, showcasing its ability to align generated materials with user intent in an interactive manner.",
-    "category": "Materials Discovery",
-    "source": "arXiv",
-    "published": "2026-06-12T07:52:40Z",
-    "updated": "2026-06-12T07:52:40Z",
-    "primary_category": "cs.LG",
-    "categories": [
-      "cs.LG"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2606.14215v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2606.14215v1"
-      }
-    ],
-    "score": 65,
-    "infographic": {
-      "key_insight": "LapidaryEngine enables fully conversational crystal design by translating free-form language into crystal structures and back through a pivot representation for iterative refinement.",
-      "engineering_relevance": "This could let materials engineers specify target properties in natural language, then interactively edit candidate crystals for faster discovery and tighter intent alignment.",
-      "method": [
-        "Accepts free-form natural-language requests instead of only structured formulas",
-        "Uses a pivot representation as an intermediate bridge for bidirectional text↔crystal translation",
-        "Supports dialogue-like iterative refinement, editing, and feedback-driven updates"
-      ],
-      "evidence_signal": "The abstract reports demonstrations across insulator discovery, stability optimization, compositional modification, and structural editing, showing task coverage rather than a single static generation benchmark.",
-      "watch_item": "Performance may depend on the quality of the pivot representation and robustness to ambiguous user prompts, especially without direct paired text-crystal data.",
-      "hashtags": [
-        "#MaterialsDiscovery",
-        "#CrystalGeneration",
-        "#LLMforScience",
-        "#GenerativeAI",
-        "#ConversationalAI"
-      ],
-      "paper_id": "2026-06-12-arxiv-lapidaryengine_fully_conversational_crystal_generation",
-      "paper_title": "LapidaryEngine: Fully Conversational Crystal Generation",
-      "paper_date": "2026-06-12",
-      "paper_category": "Materials Discovery",
-      "generated_at": "2026-06-18T14:09:56",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-06-13-arxiv-symmetry_aware_generative_design_of_flat_band_materials_beyond_known_crystal_net_prototype",
-    "arxiv_id": "2606.15321v1",
-    "date": "2026-06-13",
-    "title": "Symmetry-aware generative design of flat-band materials beyond known crystal-net prototypes",
-    "authors": "Yihao Wei, Ivan Savochkin, Artem Mishchenko, Xiangwen Wang, Qian Yang",
-    "abstract": "Flat electronic bands underlie a range of strongly correlated and topological phenomena, whose design in real materials has so far relied on a small catalogue of named geometric motifs such as kagome, Lieb, and pyrochlore nets. This discrete catalogue is by no means to exhaust the geometries that support flat bands in real compounds, as band flatness is a property of network connectivity. Here we combine a continuous geometric representation of crystal sublattices, with a symmetry-constrained generative model, to access a broader design space for materials hosting flat bands. The key step is to choose sublattice motifs that are outside the known geometric clusters, ensuring the novelty of the generated structures. We then introduce SkeleGen, which pins these unconventional skeletons to symmetry-compatible Wyckoff positions while denoising the surrounding chemistry, resulting in 9,352 crystal candidates that survive stability and flatnessscreening. Band flatness is confirmed using high throughput full DFT calculations, which agree well also with the tight-binding spectra of the isolated skeletons, supporting a geometric origin of the band flatness. We demonstrate \"out-of-distribution\" motifs as a new design principle to dramatically expand geometric repertoire for materials discovery, potentially beyond flat bands.",
-    "category": "Crystal and Structure",
-    "source": "arXiv",
-    "published": "2026-06-13T14:28:48Z",
-    "updated": "2026-06-13T14:28:48Z",
-    "primary_category": "cond-mat.mtrl-sci",
-    "categories": [
-      "cond-mat.mtrl-sci",
-      "cond-mat.mes-hall"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2606.15321v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2606.15321v1"
-      }
-    ],
-    "score": 64,
-    "infographic": {
-      "key_insight": "A symmetry-aware generative model can design flat-band materials from unconventional crystal skeletons beyond the usual kagome/Lieb/pyrochlore motif catalog.",
-      "engineering_relevance": "This expands the searchable design space for quantum materials discovery by generating symmetry-compatible, potentially synthesizable candidates with flat electronic bands.",
-      "method": [
-        "Represent sublattice geometry continuously to explore nonstandard crystal motifs",
-        "Use SkeleGen to place novel skeletons on symmetry-compatible Wyckoff positions",
-        "Denoise surrounding chemistry and screen candidates for stability and flat-band behavior"
-      ],
-      "evidence_signal": "The workflow produced 9,352 crystal candidates that passed stability and flatness screening, and high-throughput DFT confirmed flat bands consistent with tight-binding spectra of the isolated skeletons.",
-      "watch_item": "Flat-band predictions depend on geometric connectivity and DFT screening, so experimental synthesizability and robustness to distortions/disorder still need validation.",
-      "hashtags": [
-        "#MaterialsInformatics",
         "#FlatBands",
-        "#CrystalDesign",
-        "#GenerativeAI",
-        "#DFT"
+        "#SuperatomicGraphene",
+        "#Triangulene",
+        "#Spintronics",
+        "#QuantumMaterials"
       ],
-      "paper_id": "2026-06-13-arxiv-symmetry_aware_generative_design_of_flat_band_materials_beyond_known_crystal_net_prototype",
-      "paper_title": "Symmetry-aware generative design of flat-band materials beyond known crystal-net prototypes",
-      "paper_date": "2026-06-13",
+      "paper_id": "2026-06-18-arxiv-tunable_flat_bands_and_magnetism_in_triangulene_based_superatomic_graphene",
+      "paper_title": "Tunable Flat Bands and magnetism in Triangulene-based Superatomic Graphene",
+      "paper_date": "2026-06-18",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-06-18T14:09:59",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-06-17-arxiv-robust_and_interpretable_adaptation_of_equivariant_materials_foundation_models_via_sparsit",
-    "arxiv_id": "2606.18691v1",
-    "date": "2026-06-17",
-    "title": "Robust and Interpretable Adaptation of Equivariant Materials Foundation Models via Sparsity-promoting Fine-tuning",
-    "authors": "Youngwoo Cho, Seunghoon Yi, Wooil Yang, Sungmo Kang, Young-woo Son, Jaegul Choo",
-    "abstract": "Pre-trained materials foundation models, or machine learning interatomic potentials, leverage general physicochemical knowledge to effectively approximate potential energy surfaces. However, they often require domain-specific calibration due to physicochemical diversity as well as mismatches between practical computational settings and those used in constructing the pre-training data. To address this, we propose a sparsity-promoting fine-tuning method that selectively updates model parameters by exploiting the structural properties of E(3)-equivariant materials foundation models. On energy and force prediction tasks across molecular and crystalline benchmarks, our method matches or surpasses full fine-tuning and equivariant low-rank adaptation while updating only $\\sim$3~\\% of parameters, and in some cases as little as $\\sim$0.5~\\%. Beyond energy and force calibration, we further demonstrate task generalizability by applying our method to magnetic moment prediction and magnetism-aware total energy modeling. Finally, analysis of sparsity patterns reveals physically interpretable signatures, such as enhanced $d$-orbital contributions in transition metal systems. Overall, our results establish sparsity-promoting fine-tuning as a flexible and interpretable method for domain specialization of equivariant materials foundation models.",
-    "category": "Crystal and Structure",
-    "source": "arXiv",
-    "published": "2026-06-17T05:10:18Z",
-    "updated": "2026-06-17T05:10:18Z",
-    "primary_category": "cs.LG",
-    "categories": [
-      "cs.LG",
-      "cond-mat.mtrl-sci"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2606.18691v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2606.18691v1"
-      }
-    ],
-    "score": 63,
-    "infographic": {
-      "key_insight": "A sparsity-promoting fine-tuning strategy can adapt E(3)-equivariant materials foundation models with near-full-performance while changing only a tiny fraction of parameters, and the resulting sparse updates can be physically interpretable.",
-      "engineering_relevance": "This offers a practical, lower-cost way to calibrate interatomic potential models for new molecular and crystalline domains without retraining the whole network, making deployment more efficient and explainable.",
-      "method": [
-        "Selectively update parameters using sparsity-promoting fine-tuning rather than full fine-tuning.",
-        "Exploit the structural properties of E(3)-equivariant materials foundation models to preserve geometric consistency.",
-        "Use sparse update patterns to improve both calibration and interpretability."
-      ],
-      "evidence_signal": "Across molecular and crystalline benchmarks, the method matches or exceeds full fine-tuning and equivariant low-rank adaptation while updating only about 3% of parameters, and sometimes as little as 0.5%; it also generalizes to magnetic moment and magnetism-aware energy prediction.",
-      "watch_item": "Sparse adaptation may be sensitive to how the sparsity mask or regularization is chosen, so implementation details could affect stability and transferability across different materials tasks.",
-      "hashtags": [
-        "#MaterialsAI",
-        "#EquivariantML",
-        "#FineTuning",
-        "#InteratomicPotentials",
-        "#ScientificML"
-      ],
-      "paper_id": "2026-06-17-arxiv-robust_and_interpretable_adaptation_of_equivariant_materials_foundation_models_via_sparsit",
-      "paper_title": "Robust and Interpretable Adaptation of Equivariant Materials Foundation Models via Sparsity-promoting Fine-tuning",
-      "paper_date": "2026-06-17",
-      "paper_category": "Crystal and Structure",
-      "generated_at": "2026-06-18T14:10:01",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-06-17-arxiv-generalized_deformation_potential_and_machine_learning_approaches_for_electron_phonon_coup",
-    "arxiv_id": "2606.19130v1",
-    "date": "2026-06-17",
-    "title": "Generalized deformation potential and machine-learning approaches for electron-phonon coupling and thermoelectric transport in semiconductors",
-    "authors": "Ransell D'Souza, Ivana Savic",
-    "abstract": "The ability to compute electron-phonon coupling from first principles, using density functional perturbation theory and interpolation techniques, has enabled predictive calculations of electronic transport coefficients in crystalline materials. However, these methods are still computationally expensive. Here we present two inexpensive methods to obtain thermoelectric transport properties of semiconductors using a small number of electron-phonon matrix elements calculated from first principles. The first method combines models for coupling of electrons with different phonon modes whose parameters are obtained from $\\sim 10$ matrix elements per electronic band and phonon mode calculated from first principles. Within this method, we formulate the acoustic deformation potential model for arbitrary crystal symmetries and band extrema locations. The second method uses machine learning to interpolate $\\sim 100$ electron-phonon matrix elements per electronic band and phonon mode on dense reciprocal space grids in the parts of the Brillouin zone relevant for transport. We apply both methods to two-dimensional MoS$_2$ and show very good agreement with the state-of-the-art method. The calculated thermoelectric properties also agree well with experiments. We find that the machine-learning method is more accurate and straightforward to implement compared to the model approach.",
-    "category": "Crystal and Structure",
-    "source": "arXiv",
-    "published": "2026-06-17T14:42:09Z",
-    "updated": "2026-06-17T14:42:09Z",
-    "primary_category": "cond-mat.mtrl-sci",
-    "categories": [
-      "cond-mat.mtrl-sci",
-      "cond-mat.mes-hall"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2606.19130v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2606.19130v1"
-      }
-    ],
-    "score": 62,
-    "infographic": {
-      "key_insight": "Two low-cost surrogate approaches can estimate electron-phonon coupling and thermoelectric transport in semiconductors using far fewer first-principles matrix elements than full calculations.",
-      "engineering_relevance": "These methods can speed up predictive screening of semiconductor thermoelectrics while preserving accuracy enough for practical materials design.",
-      "method": [
-        "Generalized acoustic deformation-potential model built from ~10 first-principles matrix elements per band/phonon mode.",
-        "Machine-learning interpolation of ~100 electron-phonon matrix elements onto dense reciprocal-space grids.",
-        "Applied to 2D MoS2 for transport-relevant regions of the Brillouin zone."
-      ],
-      "evidence_signal": "Both approaches agree well with state-of-the-art calculations, and the resulting thermoelectric properties also match experiments closely.",
-      "watch_item": "The model-based approach requires careful parameterization for arbitrary symmetry and band-extremum locations, while the ML method depends on having enough representative matrix elements near transport-relevant k-points.",
-      "hashtags": [
-        "#ElectronPhononCoupling",
-        "#ThermoelectricTransport",
-        "#MachineLearningMaterials",
-        "#Semiconductors",
-        "#DFPT"
-      ],
-      "paper_id": "2026-06-17-arxiv-generalized_deformation_potential_and_machine_learning_approaches_for_electron_phonon_coup",
-      "paper_title": "Generalized deformation potential and machine-learning approaches for electron-phonon coupling and thermoelectric transport in semiconductors",
-      "paper_date": "2026-06-17",
-      "paper_category": "Crystal and Structure",
-      "generated_at": "2026-06-18T14:10:04",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-06-16-arxiv-akaitools_a_python_package_for_parsing_and_analyzing_akaikkr_electronic_structure_calculat",
-    "arxiv_id": "2606.18399v1",
-    "date": "2026-06-16",
-    "title": "akaitools: A Python package for parsing and analyzing AkaiKKR electronic structure calculations",
-    "authors": "Doğuhan Sarıtürk, Raymundo Arróyave",
-    "abstract": "The Korringa-Kohn-Rostoker (KKR) Green's function method is a first-principles electronic structure approach well suited to substitutionally disordered alloys through the Coherent Potential Approximation (CPA). AkaiKKR is a widely used implementation, known for efficient treatment of metallic systems and their magnetic properties. Its output, however, is unstructured plain text with no programmatic interface, leaving data extraction entirely to the user and making systematic or high-throughput studies impractical. akaitools is a Python package that parses AkaiKKR output files into structured, type-annotated Python objects. The package covers three output types: self-consistent field (SCF) results, which capture convergence history and per-atom electronic and magnetic properties; spin-resolved, orbital projected density of states for each CPA component; and Bloch spectral functions on a user-defined k-point path. Results come back as immutable dataclasses backed by NumPy arrays. Energy quantities are available in both Rydbergs and electronvolts, and results can be exported to Pandas DataFrames. A built-in plotting module produces Matplotlib figures for DOS curves and SCF convergence. A command-line interface provides file summaries and JSON export without any Python scripting. The package also includes a programmatic input file generator, so full calculation pipelines from input preparation to output analysis can be run in Python.",
-    "category": "Crystal and Structure",
-    "source": "arXiv",
-    "published": "2026-06-16T18:47:14Z",
-    "updated": "2026-06-16T18:47:14Z",
-    "primary_category": "cond-mat.mtrl-sci",
-    "categories": [
-      "cond-mat.mtrl-sci",
-      "physics.comp-ph"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2606.18399v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2606.18399v1"
-      }
-    ],
-    "score": 60,
-    "infographic": {
-      "key_insight": "akaitools turns AkaiKKR’s plain-text outputs into structured, Python-native objects for automated analysis, plotting, and pipeline integration.",
-      "engineering_relevance": "It enables faster, reproducible high-throughput studies of disordered and magnetic materials by removing manual parsing bottlenecks.",
-      "method": [
-        "Parses AkaiKKR SCF, DOS, and Bloch spectral function outputs into immutable dataclasses with NumPy arrays.",
-        "Supports unit handling in Rydbergs and electronvolts, plus export to Pandas DataFrames and JSON.",
-        "Includes Matplotlib plotting tools, a CLI for summaries, and an input-file generator for end-to-end workflows."
-      ],
-      "evidence_signal": "The abstract describes three covered output types and multiple utilities, but does not report benchmark datasets or quantitative performance evaluation.",
-      "watch_item": "Coverage is limited to the supported AkaiKKR output formats, so unsupported file variants or version changes may require parser updates.",
-      "hashtags": [
-        "#MaterialsInformatics",
-        "#Python",
-        "#ElectronicStructure",
-        "#KKR",
-        "#OpenSource"
-      ],
-      "paper_id": "2026-06-16-arxiv-akaitools_a_python_package_for_parsing_and_analyzing_akaikkr_electronic_structure_calculat",
-      "paper_title": "akaitools: A Python package for parsing and analyzing AkaiKKR electronic structure calculations",
-      "paper_date": "2026-06-16",
-      "paper_category": "Crystal and Structure",
-      "generated_at": "2026-06-18T14:10:07",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-06-16-arxiv-anisotropic_short_range_order_modulates_ferroelectric_switching_in_wurtzite_scaln_alloys",
-    "arxiv_id": "2606.18213v1",
-    "date": "2026-06-16",
-    "title": "Anisotropic Short-Range Order Modulates Ferroelectric Switching in Wurtzite ScAlN Alloys",
-    "authors": "Shunda Chen, Xianchao Dong, Xiaochen Jin, Tianshu Li",
-    "abstract": "Ferroelectric switching in wurtzite alloys is typically understood in terms of composition, strain, defects, and interfaces, while local chemical order is often neglected or treated as a secondary perturbation. Here we show that short-range order (SRO) is a previously overlooked microscopic variable that substantially influences the intrinsic switching barrier. Using first-principles canonical sampling, we find that wurtzite ScAlN develops a robust, highly anisotropic SRO that challenges the conventional random-alloy picture. This ordering suppresses in-plane Sc--N--Sc motifs while enhancing columnar mixed-cation chains along the polar $c$ axis, reflecting the symmetry-distinct polar and basal directions of the wurtzite lattice and reorganizing its polar connectivity. Relative to random-alloy structures, SRO systematically increases the intrinsic switching barrier across a broad composition range. Motif-resolved analysis further identifies the population of columnar Sc--N--Al--N--Sc motifs as the primary structural descriptor underlying switching-barrier variations among configurations with different local order. These results establish anisotropic SRO as an independent degree of freedom for tuning ferroelectric switching. More broadly, they reveal how local chemical order can couple to the symmetry-distinct directions of a polar semiconductor lattice to modify functional behavior. Our findings lay a foundation for SRO engineering as a route to tailoring switching barriers without changing alloy composition.",
-    "category": "Crystal and Structure",
-    "source": "arXiv",
-    "published": "2026-06-16T17:42:03Z",
-    "updated": "2026-06-16T17:42:03Z",
-    "primary_category": "cond-mat.mtrl-sci",
-    "categories": [
-      "cond-mat.mtrl-sci"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2606.18213v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2606.18213v1"
-      }
-    ],
-    "score": 60,
-    "infographic": {
-      "key_insight": "Anisotropic short-range chemical order in wurtzite ScAlN—not just composition—raises the intrinsic ferroelectric switching barrier by reorganizing local polar connectivity.",
-      "engineering_relevance": "Controlling local alloy ordering offers a new materials-engineering lever to tune ferroelectric switching energy in ScAlN without changing overall composition.",
-      "method": [
-        "First-principles canonical sampling of wurtzite ScAlN alloys",
-        "Comparison of short-range-ordered versus random-alloy configurations",
-        "Motif-resolved analysis of local Sc–N–Sc and Sc–N–Al–N–Sc structures"
-      ],
-      "evidence_signal": "Across a broad composition range, the simulations show that SRO systematically increases switching barriers and that columnar Sc–N–Al–N–Sc motifs best correlate with barrier variation.",
-      "watch_item": "The conclusions are based on atomistic simulation and motif statistics, so experimental confirmation of achievable SRO states and their stability will be important.",
-      "hashtags": [
-        "#Ferroelectrics",
-        "#Wurtzite",
-        "#AlloyOrdering",
-        "#FirstPrinciples",
-        "#MaterialsDesign"
-      ],
-      "paper_id": "2026-06-16-arxiv-anisotropic_short_range_order_modulates_ferroelectric_switching_in_wurtzite_scaln_alloys",
-      "paper_title": "Anisotropic Short-Range Order Modulates Ferroelectric Switching in Wurtzite ScAlN Alloys",
-      "paper_date": "2026-06-16",
-      "paper_category": "Crystal and Structure",
-      "generated_at": "2026-06-18T14:10:09",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-06-16-arxiv-impact_of_dynamic_electrostatic_disorder_on_hole_mobility_in_rubrene_a_nonadiabatic_molecu",
-    "arxiv_id": "2606.18090v1",
-    "date": "2026-06-16",
-    "title": "Impact of dynamic electrostatic disorder on hole mobility in rubrene: a nonadiabatic molecular dynamics investigation",
-    "authors": "Jan Elsner, Samuele Giannini, Jochen Blumberger",
-    "abstract": "High-mobility organic molecular crystals such as rubrene are important materials for organic electronics, yet a quantitatively predictive description of their charge transport properties remains challenging. Direct mixed quantum-classical nonadiabatic molecular dynamics simulations provide a promising route by explicitly propagating the charge carrier wavefunction, without assuming a specific transport mechanism. However, previous large-scale simulations of apolar molecular crystals have commonly neglected dynamic electrostatic disorder, since evaluation of electrostatic interactions is computationally demanding and the approximation appears plausible for apolar systems. Here, we use the damped shifted-force (DSF) real-space electrostatic summation method, combined with an efficient addition-subtraction scheme, to include dynamic electrostatic disorder in fragment orbital-based surface hopping (FOB-SH) simulations of room-temperature hole transport in rubrene. We find that electrostatic interactions increase the reorganization energy for (hypothetical) nearest neighbour hopping by 29 and 39 meV along the a and b-directions, respectively, relative to a baseline value of 152 meV obtained without electrostatics. In FOB-SH simulations, electrostatic interactions lead to increased site energy disorder, reducing the spatial extent of the hole wavefunction, as measured by a decrease in the inverse participation ratio from 13 to 9, and lowering the predicted mobility along the high-mobility direction from $35$ to $21~\\mathrm{cm^2 V^{-1}s^{-1}}$, in close agreement with experiment.",
-    "category": "Crystal and Structure",
-    "source": "arXiv",
-    "published": "2026-06-16T15:55:32Z",
-    "updated": "2026-06-16T15:55:32Z",
-    "primary_category": "cond-mat.mtrl-sci",
-    "categories": [
-      "cond-mat.mtrl-sci"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2606.18090v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2606.18090v1"
-      }
-    ],
-    "score": 60,
-    "infographic": {
-      "key_insight": "Including dynamic electrostatic disorder in rubrene charge-transport simulations substantially changes the predicted hole localization and mobility, bringing theory closer to experiment.",
-      "engineering_relevance": "For organic semiconductor modeling, electrostatics cannot be safely neglected even in apolar crystals if the goal is quantitatively accurate mobility prediction.",
-      "method": [
-        "Used fragment orbital-based surface hopping (FOB-SH) nonadiabatic molecular dynamics at room temperature.",
-        "Included long-range electrostatics with damped shifted-force (DSF) real-space summation plus an addition-subtraction scheme.",
-        "Compared transport metrics with and without electrostatic disorder, including reorganization energy, inverse participation ratio, and mobility."
-      ],
-      "evidence_signal": "Electrostatics increased nearest-neighbor reorganization energy by 29 meV (a) and 39 meV (b), reduced inverse participation ratio from 13 to 9, and lowered mobility from 35 to 21 cm^2 V^-1 s^-1, matching experiment more closely.",
-      "watch_item": "DSF electrostatics improve realism but add significant computational cost, so scalability and parameterization need care for larger crystals and longer simulations.",
-      "hashtags": [
-        "#OrganicSemiconductors",
-        "#ChargeTransport",
-        "#MolecularDynamics",
-        "#ElectrostaticDisorder",
-        "#Rubrene"
-      ],
-      "paper_id": "2026-06-16-arxiv-impact_of_dynamic_electrostatic_disorder_on_hole_mobility_in_rubrene_a_nonadiabatic_molecu",
-      "paper_title": "Impact of dynamic electrostatic disorder on hole mobility in rubrene: a nonadiabatic molecular dynamics investigation",
-      "paper_date": "2026-06-16",
-      "paper_category": "Crystal and Structure",
-      "generated_at": "2026-06-18T14:10:14",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-06-15-arxiv-stitching_molecular_worlds_together_with_physics_coupled_diffusion_models",
-    "arxiv_id": "2606.16147v1",
-    "date": "2026-06-15",
-    "title": "Stitching Molecular Worlds Together with Physics-Coupled Diffusion Models",
-    "authors": "Yanbin Wang, Yajie Cai, Ming Chen",
-    "abstract": "Complex chemical systems often contain multiple components or large molecules, giving rise to substantial chemical and conformational complexity. Modeling the structures of these systems is crucial for mechanistic understanding of chemical processes and rational design, but remains highly challenging for both conventional theoretical approaches and machine learning. Here, we introduce physical-interaction-coupled diffusion models (PICDiff), a framework that couples independently trained diffusion models for subsystems of a complex system through explicit bonded and nonbonded interactions during inference. PICDiff reduces the difficulty of applying generative models to chemically and conformationally complex systems by decomposing them into smaller subsystems that are less complex and more amenable to machine-learning-based modeling. Using peptide-polymer binding and polymer conformation sampling as examples, we demonstrate that PICDiff can quantitatively sample conformations and model the thermodynamics of complex chemical systems. These results show that PICDiff provides a general and practical approach for modeling complex chemical systems by combining learned models of simpler molecular subsystems through physical interactions.",
-    "category": "Materials Discovery",
-    "source": "arXiv",
-    "published": "2026-06-15T03:04:30Z",
-    "updated": "2026-06-15T03:04:30Z",
-    "primary_category": "physics.chem-ph",
-    "categories": [
-      "physics.chem-ph"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2606.16147v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2606.16147v1"
-      }
-    ],
-    "score": 60,
-    "infographic": {
-      "key_insight": "PICDiff stitches together independently trained diffusion models for molecular subsystems by enforcing explicit physical interactions during inference, enabling generative modeling of chemically complex systems.",
-      "engineering_relevance": "This offers a practical route to simulate large molecules and multi-component materials by breaking them into simpler parts while preserving physically meaningful structure and thermodynamics.",
-      "method": [
-        "Train separate diffusion models on smaller subsystems.",
-        "Couple subsystem trajectories during inference with bonded and nonbonded interactions.",
-        "Use the coupled sampler to generate conformations and estimate thermodynamic behavior."
-      ],
-      "evidence_signal": "The abstract reports quantitative evaluation on peptide-polymer binding and polymer conformation sampling, showing the method can sample conformations and model thermodynamics.",
-      "watch_item": "Performance depends on how well the subsystem models and interaction coupling capture cross-component physics; missed couplings could limit accuracy in more complex systems.",
-      "hashtags": [
-        "#MaterialsDiscovery",
-        "#DiffusionModels",
-        "#MolecularSimulation",
-        "#GenerativeAI",
-        "#PolymerScience"
-      ],
-      "paper_id": "2026-06-15-arxiv-stitching_molecular_worlds_together_with_physics_coupled_diffusion_models",
-      "paper_title": "Stitching Molecular Worlds Together with Physics-Coupled Diffusion Models",
-      "paper_date": "2026-06-15",
-      "paper_category": "Materials Discovery",
-      "generated_at": "2026-06-18T14:10:16",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-06-12-arxiv-distilling_latent_electrostatics_from_foundation_machine_learning_interatomic_potentials",
-    "arxiv_id": "2606.15001v1",
-    "date": "2026-06-12",
-    "title": "Distilling latent electrostatics from foundation machine learning interatomic potentials",
-    "authors": "Xiaoyu Wang, Bingqing Cheng",
-    "abstract": "Foundation machine learning interatomic potentials (MLIPs) have enabled atomistic simulations across broad regions of chemical and materials space, but many remain computationally expensive and lack explicit electrostatics, limiting their use for systems governed by long-range interactions and electrical response. Previously, we introduced Latent Ewald Summation (LES), which learns latent atomic charges and long-range electrostatics from density functional theory (DFT) energy and force labels alone. Here, we use LES to extract electrostatics that are latent in foundation models: energies and forces predicted by a teacher model are used to train a lightweight LES-augmented student MLIP, with optional fine-tuning on additional DFT data. The resulting models reduce computational cost while providing access to Born effective charge tensors, and infrared spectra. We benchmark student models distilled from a broad set of foundation MLIPs, including UMA, MACE, Orb, eSEN, GemNet-OC, PET, and EquiformerV2-based models, against experimental infrared spectra for liquid water, concentrated hydrochloric acid, and the anatase TiO2(101)-water interface. Across these systems, electrostatic response can be extracted from most foundation MLIPs. The benchmark further shows that the underlying DFT level and dataset used to train the teacher model play a larger role than architecture in determining electrostatic and spectroscopic accuracy. For the TiO2-water interface, fine-tuning with a modest amount of higher-level DFT data improves structural and infrared predictions. LES-based distillation therefore provides a practical route for converting foundation MLIPs into efficient, electrically responsive models, while also testing the physical fidelity encoded in foundation models.",
-    "category": "Microstructure",
-    "source": "arXiv",
-    "published": "2026-06-12T22:45:20Z",
-    "updated": "2026-06-12T22:45:20Z",
-    "primary_category": "physics.comp-ph",
-    "categories": [
-      "physics.comp-ph",
-      "cond-mat.mtrl-sci",
-      "cs.LG",
-      "physics.chem-ph"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2606.15001v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2606.15001v1"
-      }
-    ],
-    "score": 60,
-    "infographic": {
-      "key_insight": "Latent electrostatics can be distilled from foundation ML interatomic potentials into lightweight student models that retain long-range electrical response and spectroscopic capability.",
-      "engineering_relevance": "This enables cheaper atomistic simulations for systems where electrostatics matter, such as liquids and interfaces, while adding access to Born effective charges and infrared spectra.",
-      "method": [
-        "Train an LES-augmented student on teacher-predicted energies and forces.",
-        "Optionally fine-tune the student with additional higher-level DFT data.",
-        "Extract latent atomic charges and long-range electrostatics from foundation MLIPs."
-      ],
-      "evidence_signal": "The approach was benchmarked against experimental infrared spectra for liquid water, concentrated hydrochloric acid, and the anatase TiO2(101)-water interface, using distilled students from multiple foundation models.",
-      "watch_item": "Electrostatic and spectroscopic accuracy depends strongly on the teacher’s underlying DFT level and training data, so distillation cannot fully correct deficiencies in the original foundation model.",
-      "hashtags": [
-        "#MachineLearningInteratomicPotentials",
-        "#Electrostatics",
-        "#LatentEwaldSummation",
-        "#InfraredSpectroscopy",
-        "#MaterialsSimulation"
-      ],
-      "paper_id": "2026-06-12-arxiv-distilling_latent_electrostatics_from_foundation_machine_learning_interatomic_potentials",
-      "paper_title": "Distilling latent electrostatics from foundation machine learning interatomic potentials",
-      "paper_date": "2026-06-12",
-      "paper_category": "Microstructure",
-      "generated_at": "2026-06-18T14:10:19",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-06-17-arxiv-equivariant_graph_neural_networks_improve_optical_spectra_prediction_for_materials_screeni",
-    "arxiv_id": "2606.19133v1",
-    "date": "2026-06-17",
-    "title": "Equivariant Graph Neural Networks Improve Optical Spectra Prediction for Materials Screening",
-    "authors": "Kasper Helverskov Petersen, François R J Cornet, Martin Ovesen, Mikkel Jordahn, Kristian S. Thygesen, Mikkel N. Schmidt",
-    "abstract": "Scalable prediction of optical spectra is a critical component of high-throughput materials screening for optoelectronic applications such as solar cells. Existing surrogate models are trained on spectra computed from lower levels of theory or rely on rotation-invariant scalar features, limiting their geometric expressiveness. We explore the use of equivariant graph neural networks for optical spectra prediction, adapting GotenNet to this task and evaluating it on multiple datasets including a recently published collection of 10,533 structures with spectra computed at the level of the random phase approximation (RPA). The proposed model outperforms the current state of the art, with the largest gains in the 0-8 eV range and on predicting the static real permittivity, both of particular relevance for thin-film optics.",
-    "category": "Materials Discovery",
-    "source": "arXiv",
-    "published": "2026-06-17T14:44:02Z",
-    "updated": "2026-06-17T14:44:02Z",
-    "primary_category": "physics.optics",
-    "categories": [
-      "physics.optics",
-      "cond-mat.mtrl-sci",
-      "cs.AI"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2606.19133v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2606.19133v1"
-      }
-    ],
-    "score": 59,
-    "infographic": {
-      "key_insight": "Equivariant graph neural networks better capture 3D geometry, enabling more accurate optical spectrum prediction for materials than rotation-invariant surrogate models.",
-      "engineering_relevance": "This improves high-throughput screening of optoelectronic materials by speeding identification of candidates with desirable optical properties for devices like solar cells.",
-      "method": [
-        "Adapted the equivariant GNN GotenNet for optical spectra prediction.",
-        "Evaluated the model on multiple datasets, including 10,533 structures with RPA-computed spectra.",
-        "Compared performance against current state-of-the-art surrogate models, with gains strongest in the 0–8 eV range."
-      ],
-      "evidence_signal": "The abstract reports testing on multiple datasets and highlights a recently published set of 10,533 structures with RPA-level spectra, where the proposed model outperformed prior methods, especially for low-energy spectra and static real permittivity.",
-      "watch_item": "Performance gains may depend on access to high-quality training spectra and careful handling of computational cost when scaling equivariant models.",
-      "hashtags": [
-        "#MaterialsDiscovery",
-        "#GraphNeuralNetworks",
-        "#EquivariantML",
-        "#OpticalSpectra",
-        "#HighThroughputScreening"
-      ],
-      "paper_id": "2026-06-17-arxiv-equivariant_graph_neural_networks_improve_optical_spectra_prediction_for_materials_screeni",
-      "paper_title": "Equivariant Graph Neural Networks Improve Optical Spectra Prediction for Materials Screening",
-      "paper_date": "2026-06-17",
-      "paper_category": "Materials Discovery",
-      "generated_at": "2026-06-18T14:10:21",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-06-17-arxiv-evidence_for_multiband_superconductivity_in_2h_nbses",
-    "arxiv_id": "2606.19107v1",
-    "date": "2026-06-17",
-    "title": "Evidence for Multiband Superconductivity in 2H-NbSeS",
-    "authors": "K. Yadav, M. Lamba K. Bhattacharya, M. Majumder, S. Patnaik",
-    "abstract": "The nature of superconductivity in 2H-NbSe2 has generated sustained debate in the recent past. While angle resolved photoemission spectroscopy data have been interpreted as evidence for multiband superconductivity, the data from scanning tunneling microscope experiments relate to strongly anisotropic single-band superconductivity. In the later case, the charge density wave (CDW) order mimics the multigap character. Because the CDW reconstructs the Fermi surface and modifies the superconducting gap distribution, disentangling intrinsic multiband pairing from CDW-related effects is challenging. To address this issue, we investigate single-crystalline 2H-NbSeS, a mixed-chalcogen analogue of 2H-NbSe2 in which random Se/S substitution suppresses long-range CDW order while preserving the layered crystal structure P63/mmc. The material becomes superconducting below 6.0 K with moderate magnetic anisotropy. The upper critical field exhibits a pronounced upward curvature that cannot be described within a single-band framework but is well captured by a dirty-limit two-band model with a large diffusivity ratio. This indicates strong band-dependent scattering. The in-plane upper critical field exceeds the weak-coupling Pauli limit. Measurements of the lower critical field, superfluid density, and electronic specific heat are consistent with an interpretation of a fully gapped superconducting state with two nodeless gaps of different magnitudes.",
-    "category": "Crystal and Structure",
-    "source": "arXiv",
-    "published": "2026-06-17T14:21:40Z",
-    "updated": "2026-06-17T14:21:40Z",
-    "primary_category": "cond-mat.supr-con",
-    "categories": [
-      "cond-mat.supr-con",
-      "cond-mat.mtrl-sci",
-      "cond-mat.str-el"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2606.19107v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2606.19107v1"
-      }
-    ],
-    "score": 59,
-    "infographic": {
-      "key_insight": "Disordered Se/S substitution in 2H-NbSeS suppresses CDW order and reveals superconductivity best explained by two distinct nodeless bands rather than a single anisotropic gap.",
-      "engineering_relevance": "The work clarifies how chemical disorder can separate CDW effects from intrinsic multiband pairing, informing the design and interpretation of layered superconductors with tunable anisotropy and critical fields.",
-      "method": [
-        "Grow single-crystalline 2H-NbSeS with random Se/S substitution",
-        "Measure upper and lower critical fields, superfluid density, and electronic specific heat",
-        "Compare single-band and dirty-limit two-band models"
-      ],
-      "evidence_signal": "The upper critical field shows strong upward curvature and fits a dirty-limit two-band model, while thermodynamic and magnetic measurements support two fully gapped superconducting gaps.",
-      "watch_item": "Because disorder alters band scattering and can mask intrinsic electronic structure, the two-gap interpretation should be checked against complementary spectroscopic probes.",
-      "hashtags": [
-        "#Superconductivity",
-        "#Multiband",
-        "#UpperCriticalField",
-        "#CrystalStructure",
-        "#CondensedMatter"
-      ],
-      "paper_id": "2026-06-17-arxiv-evidence_for_multiband_superconductivity_in_2h_nbses",
-      "paper_title": "Evidence for Multiband Superconductivity in 2H-NbSeS",
-      "paper_date": "2026-06-17",
-      "paper_category": "Crystal and Structure",
-      "generated_at": "2026-06-18T14:10:23",
+      "generated_at": "2026-06-19T14:13:37",
       "generator": "openai"
     }
   }

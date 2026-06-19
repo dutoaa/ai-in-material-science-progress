@@ -1,24 +1,24 @@
 {
-  "key_insight": "A grain-growth model trained on synthetic data can generalize to out-of-distribution microstructures, and a boundary-masked attention design further improves accuracy by focusing on grain-boundary pixels.",
-  "engineering_relevance": "This suggests AI-driven microstructure evolution predictors can be made more robust for real materials workflows without retraining, especially when physics-guided attention aligns with boundary-driven growth behavior.",
+  "key_insight": "A physics-informed, boundary-masked attention mechanism improves out-of-distribution grain-growth prediction by focusing the model on grain-boundary pixels, yielding better robustness than a standard deep learning baseline.",
+  "engineering_relevance": "This suggests grain-growth models trained on synthetic data can be made more reliable for real microstructure evolution prediction, especially when used in materials design and process optimization workflows.",
   "method": [
-    "Evaluated a previously trained deep learning grain-growth predictor on three OOD cases: experimental microstructures, bimodal grain-size distributions, and abnormal grain growth.",
-    "Compared a baseline model against a physics-informed boundary-masked attention variant without retraining or fine-tuning.",
-    "Analyzed attention maps to check whether the model concentrated on grain boundaries in a physically meaningful way."
+    "Evaluated a pre-trained deep learning grain-growth model on three OOD cases: experimental microstructures, bimodal grain size distributions, and abnormal grain growth.",
+    "Added a boundary-masked attention mechanism that restricts attention to grain-boundary pixels.",
+    "Compared baseline vs. physics-informed attention without retraining or fine-tuning on OOD data."
   ],
-  "evidence_signal": "On bimodal microstructures, the boundary-masked model improved SSIM from 0.6221 to 0.7609 and reduced mean grain-size error from 8.75% to 3.57% across OOD evaluation.",
-  "watch_item": "The gains appear strongest when the test morphology remains close to the training domain, so robustness may be weaker for more severe distribution shifts or unseen boundary patterns.",
+  "evidence_signal": "Both models generalized to all three test cases, but the boundary-masked attention model gave the largest gain on bimodal microstructures, improving SSIM from 0.6221 to 0.7609 and reducing mean grain-size error from 8.75% to 3.57%.",
+  "watch_item": "The added benefit depends on how well the target morphology matches the training domain, so performance may be less reliable for strongly novel microstructures.",
   "hashtags": [
-    "#MaterialsAI",
     "#GrainGrowth",
     "#Microstructure",
     "#PhysicsInformedML",
-    "#OutOfDistribution"
+    "#OODGeneralization",
+    "#DeepLearningMaterials"
   ],
   "paper_id": "2026-06-15-arxiv-physics_informed_attention_mechanism_and_generalization_capability_of_deep_learning_based",
   "paper_title": "Physics-Informed Attention Mechanism and Generalization Capability of Deep Learning-Based Grain Growth Evolution Prediction",
   "paper_date": "2026-06-15",
   "paper_category": "Microstructure",
-  "generated_at": "2026-06-18T14:09:45",
+  "generated_at": "2026-06-19T14:13:17",
   "generator": "openai"
 }
