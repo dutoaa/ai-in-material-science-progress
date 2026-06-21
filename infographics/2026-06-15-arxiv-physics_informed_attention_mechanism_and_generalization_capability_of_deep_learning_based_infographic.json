@@ -1,24 +1,24 @@
 {
-  "key_insight": "A physics-informed, boundary-masked attention mechanism improves out-of-distribution grain-growth prediction by focusing the model on grain-boundary pixels, yielding better robustness than a standard deep learning baseline.",
-  "engineering_relevance": "This suggests grain-growth models trained on synthetic data can be made more reliable for real microstructure evolution prediction, especially when used in materials design and process optimization workflows.",
+  "key_insight": "A grain-growth model trained on synthetic data can still generalize to out-of-distribution microstructures, and adding boundary-masked attention makes it more accurate by focusing on grain boundaries.",
+  "engineering_relevance": "This suggests physics-informed attention can improve robustness of microstructure evolution predictors for real experimental and non-ideal materials states without retraining.",
   "method": [
-    "Evaluated a pre-trained deep learning grain-growth model on three OOD cases: experimental microstructures, bimodal grain size distributions, and abnormal grain growth.",
+    "Tested a pre-trained deep learning grain-growth model on three OOD cases: experimental microstructures, bimodal grain size distributions, and abnormal grain growth.",
     "Added a boundary-masked attention mechanism that restricts attention to grain-boundary pixels.",
-    "Compared baseline vs. physics-informed attention without retraining or fine-tuning on OOD data."
+    "Compared baseline and physics-informed attention models without retraining or fine-tuning on OOD data."
   ],
-  "evidence_signal": "Both models generalized to all three test cases, but the boundary-masked attention model gave the largest gain on bimodal microstructures, improving SSIM from 0.6221 to 0.7609 and reducing mean grain-size error from 8.75% to 3.57%.",
-  "watch_item": "The added benefit depends on how well the target morphology matches the training domain, so performance may be less reliable for strongly novel microstructures.",
+  "evidence_signal": "Across all three OOD cases, both models generalized successfully, with the largest gain in the bimodal case where SSIM improved from 0.6221 to 0.7609 and mean grain-size error dropped from 8.75% to 3.57%.",
+  "watch_item": "The improvement appears strongest when boundary morphology is similar to the training domain, so performance may be less predictable for highly novel microstructures.",
   "hashtags": [
     "#GrainGrowth",
     "#Microstructure",
-    "#PhysicsInformedML",
-    "#OODGeneralization",
-    "#DeepLearningMaterials"
+    "#PhysicsInformedAI",
+    "#OutOfDistribution",
+    "#MaterialsInformatics"
   ],
   "paper_id": "2026-06-15-arxiv-physics_informed_attention_mechanism_and_generalization_capability_of_deep_learning_based",
   "paper_title": "Physics-Informed Attention Mechanism and Generalization Capability of Deep Learning-Based Grain Growth Evolution Prediction",
   "paper_date": "2026-06-15",
   "paper_category": "Microstructure",
-  "generated_at": "2026-06-19T14:13:17",
+  "generated_at": "2026-06-21T13:04:39",
   "generator": "openai"
 }

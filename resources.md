@@ -1,6 +1,6 @@
 # AI materials science Progress Public Resources
 
-Generated: 2026-06-19
+Generated: 2026-06-21
 Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 
 ## 1. AdsMind: A Physics-Grounded Multi-Agent System for Self-Correcting Discovery of Adsorption Configurations on Heterogeneous Catalyst Surfaces
