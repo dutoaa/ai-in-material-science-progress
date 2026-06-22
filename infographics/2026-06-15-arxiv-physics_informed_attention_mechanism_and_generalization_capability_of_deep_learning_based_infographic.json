@@ -1,13 +1,13 @@
 {
-  "key_insight": "A grain-growth model trained on synthetic data can still generalize to out-of-distribution microstructures, and adding boundary-masked attention makes it more accurate by focusing on grain boundaries.",
-  "engineering_relevance": "This suggests physics-informed attention can improve robustness of microstructure evolution predictors for real experimental and non-ideal materials states without retraining.",
+  "key_insight": "A boundary-masked, physics-informed attention mechanism improves out-of-distribution grain-growth prediction by focusing the model on grain boundaries, while still generalizing without retraining.",
+  "engineering_relevance": "This suggests deep learning models trained on synthetic microstructure data can be deployed more reliably for real materials states, with better accuracy when the boundary morphology remains similar to the training domain.",
   "method": [
-    "Tested a pre-trained deep learning grain-growth model on three OOD cases: experimental microstructures, bimodal grain size distributions, and abnormal grain growth.",
-    "Added a boundary-masked attention mechanism that restricts attention to grain-boundary pixels.",
-    "Compared baseline and physics-informed attention models without retraining or fine-tuning on OOD data."
+    "Compare a baseline deep-learning grain-growth model and a physics-informed attention variant",
+    "Mask attention to grain-boundary pixels to encode curvature-driven grain-growth behavior",
+    "Evaluate both models on three OOD cases without retraining or fine-tuning"
   ],
-  "evidence_signal": "Across all three OOD cases, both models generalized successfully, with the largest gain in the bimodal case where SSIM improved from 0.6221 to 0.7609 and mean grain-size error dropped from 8.75% to 3.57%.",
-  "watch_item": "The improvement appears strongest when boundary morphology is similar to the training domain, so performance may be less predictable for highly novel microstructures.",
+  "evidence_signal": "On bimodal grain-size microstructures, SSIM improved from 0.6221 to 0.7609 and mean grain-size error dropped from 8.75% to 3.57%, with successful generalization across experimental, bimodal, and abnormal grain-growth cases.",
+  "watch_item": "The gain depends on how well the test microstructure boundary morphology matches the synthetic training distribution, so extreme morphology shifts may reduce the benefit.",
   "hashtags": [
     "#GrainGrowth",
     "#Microstructure",
@@ -19,6 +19,6 @@
   "paper_title": "Physics-Informed Attention Mechanism and Generalization Capability of Deep Learning-Based Grain Growth Evolution Prediction",
   "paper_date": "2026-06-15",
   "paper_category": "Microstructure",
-  "generated_at": "2026-06-21T13:04:39",
+  "generated_at": "2026-06-22T15:50:18",
   "generator": "openai"
 }

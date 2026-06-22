@@ -1,24 +1,24 @@
 {
-  "key_insight": "MinSurf turns mineral surface modeling from choosing a few common facets into a high-throughput, atomistically resolved search over surface terminations, energies, and equilibrium morphologies.",
-  "engineering_relevance": "This enables more physically representative interface models for applications such as carbon mineralization, geo-energy storage, contaminant immobilization, catalysis, and electrochemical engineering.",
+  "key_insight": "MinSurf systematically resolves mineral surface stability at the level of atomic terminations, linking surface energies to equilibrium morphologies rather than relying on facet-level assumptions.",
+  "engineering_relevance": "The framework helps engineers choose physically representative mineral surface models for faster, more reliable simulations in carbon mineralization, geo-energy storage, catalysis, and electrochemical interfaces.",
   "method": [
-    "Enumerate mineral surface terminations and build bulk reference cells for surface-energy evaluation.",
-    "Use DFT labels to train a machine-learning interatomic potential (MinNEP).",
-    "Combine predicted surface energies with Wulff construction to identify stable terminations and crystal morphologies."
+    "Enumerate candidate surface slabs and oriented unit cells across mineral crystal structures.",
+    "Label a subset with DFT, then train a machine-learning interatomic potential (MinNEP) to predict surface energies.",
+    "Use Wulff construction to translate surface-energy rankings into equilibrium crystal morphologies."
   ],
-  "evidence_signal": "Across ten minerals, MinSurfSet includes 764 surface slabs and 90 oriented unit cells; MinNEP reaches 0.0119 eV/Å² mean absolute error and about 1.14×10^4 acceleration versus DFT.",
-  "watch_item": "Results still depend on the quality and coverage of the enumerated training surfaces, so rare terminations outside the sampled space may remain less reliable.",
+  "evidence_signal": "Across ten representative minerals, MinSurfSet includes 764 surface slabs and MinNEP achieves a mean absolute error of 0.0119 eV/Å² with an overall speedup of 1.14×10^4 over DFT, while preserving the DFT-derived facet hierarchy.",
+  "watch_item": "Performance depends on the quality and coverage of the enumerated training surfaces, so rare terminations or minerals outside the benchmark set may require additional DFT labeling.",
   "hashtags": [
     "#MaterialsScience",
-    "#MineralSurfaces",
-    "#DFT",
+    "#SurfaceEnergy",
     "#MachineLearningPotentials",
-    "#WulffConstruction"
+    "#WulffConstruction",
+    "#ComputationalChemistry"
   ],
   "paper_id": "2026-06-18-arxiv-minsurf_resolving_the_atomic_scale_stability_landscape_of_mineral_surfaces",
   "paper_title": "MinSurf: resolving the atomic-scale stability landscape of mineral surfaces",
   "paper_date": "2026-06-18",
   "paper_category": "Crystal and Structure",
-  "generated_at": "2026-06-21T13:04:35",
+  "generated_at": "2026-06-22T15:50:12",
   "generator": "openai"
 }

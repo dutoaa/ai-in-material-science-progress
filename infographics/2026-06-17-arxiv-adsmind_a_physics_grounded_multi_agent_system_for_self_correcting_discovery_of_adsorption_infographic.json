@@ -1,24 +1,24 @@
 {
-  "key_insight": "AdsMind adds physics-grounded relaxation feedback to a multi-agent LLM search loop so it can self-correct adsorption-configuration guesses and reliably find low-energy catalyst surface structures.",
-  "engineering_relevance": "This can cut expensive DFT search effort for heterogeneous catalysis by making MLFF-accelerated discovery more reliable, interpretable, and automation-ready.",
+  "key_insight": "AdsMind adds a physics-grounded feedback loop to LLM-driven adsorption search, letting the system correct bad guesses after MLFF relaxation instead of relying on a single open-loop proposal.",
+  "engineering_relevance": "This can make heterogeneous catalyst screening faster and more reliable by sharply reducing the number of relaxations needed to find low-energy adsorbate configurations.",
   "method": [
-    "Multi-agent LLM proposes adsorption configurations for heterogeneous catalyst surfaces.",
-    "MLFF relaxation feedback is used in a closed loop to correct bad initial guesses.",
-    "The system is evaluated across multiple LLM backends and benchmark datasets, with DFT spot-checks on representative cases."
+    "Multi-agent LLM framework for proposing adsorption configurations",
+    "MLFF relaxation feedback used to detect and correct errors in a closed loop",
+    "Cross-backend self-correction to improve robustness and reduce energy dispersion"
   ],
-  "evidence_signal": "Across AA20 and OCD-GMAE62, AdsMind reports 100% and 98.8% success rates, uses only 4.11 and 4.67 MLFF relaxations per case on average, and DFT validation shows it fixes adsorption-energy sign errors seen in open-loop outputs.",
-  "watch_item": "Performance depends on the quality and transferability of the MLFF relaxation signal, so failure cases may still arise when the force field is inaccurate or the surface chemistry is highly out-of-distribution.",
+  "evidence_signal": "Across AA20 and OCD-GMAE62, AdsMind achieved 100% and 98.8% success rates, with only 4.11 and 4.67 MLFF relaxations per case, and DFT checks on six AA20 systems showed correct adsorption-energy sign in all tested cases.",
+  "watch_item": "Performance is benchmark-dependent and still relies on MLFF and DFT validation quality, so transfer to new surface-adsorbate chemistries may require careful retuning and verification.",
   "hashtags": [
     "#MaterialsDiscovery",
     "#Catalysis",
-    "#MachineLearning",
-    "#AutonomousAgents",
+    "#MachineLearningForceFields",
+    "#MultiAgentSystems",
     "#ComputationalChemistry"
   ],
   "paper_id": "2026-06-17-arxiv-adsmind_a_physics_grounded_multi_agent_system_for_self_correcting_discovery_of_adsorption",
   "paper_title": "AdsMind: A Physics-Grounded Multi-Agent System for Self-Correcting Discovery of Adsorption Configurations on Heterogeneous Catalyst Surfaces",
   "paper_date": "2026-06-17",
   "paper_category": "Materials Discovery",
-  "generated_at": "2026-06-21T13:04:16",
+  "generated_at": "2026-06-22T15:49:55",
   "generator": "openai"
 }
