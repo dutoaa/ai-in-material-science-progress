@@ -1,24 +1,24 @@
 {
-  "key_insight": "Universal MLIPs are best used as fast configuration-space generators, then relabeled with DFT to train material-specific models that achieve ab initio accuracy for difficult reactive processes.",
-  "engineering_relevance": "This workflow offers a practical route to produce reliable, material-specific atomistic models for simulations involving transport, barriers, and reactivity without relying on zero-shot universal potentials.",
+  "key_insight": "Universal ML interatomic potentials are best used as fast configuration-space generators, then relabeled with DFT to train material-specific models that achieve ab initio accuracy.",
+  "engineering_relevance": "This workflow can cut the cost of generating reliable reactive-material trajectories, enabling near-DFT-quality simulations and model development in days rather than weeks.",
   "method": [
-    "Compare 5 universal MLIPs across 7 chemically diverse systems",
-    "Run long MD with universal MLIPs to sample configurations",
-    "Sub-sample trajectories, relabel with DFT, and train/fine-tune material-specific MLIPs; use iterative self-training for the hardest case"
+    "Compare 5 universal MLIPs on 7 chemically diverse materials systems.",
+    "Use long MLIP-driven molecular dynamics to sample configurations, then sub-sample and relabel them with DFT.",
+    "Train or fine-tune material-specific MLIPs on the DFT-labeled dataset; for difficult cases, iterate self-training to expand coverage."
   ],
-  "evidence_signal": "The abstract reports that about 2,000 DFT-recalculated structures are often enough for accurate models, and the MoS2 sulfur-vacancy jump is recovered with only 600 first-principles calculations in total.",
-  "watch_item": "Performance on standard benchmarks can look strong while still missing target observables, so zero-shot deployment should not be assumed reliable for reactive or high-barrier events.",
+  "evidence_signal": "Across the tested systems, about 2,000 DFT-recalculated structures were often enough for accurate models, and the hardest MoS2 case was recovered with only 600 total first-principles calculations.",
+  "watch_item": "Zero-shot universal MLIPs can look strong on benchmarks yet still miss reactive, transport, and high-barrier processes, so DFT relabeling and iterative sampling remain essential for reliability.",
   "hashtags": [
     "#MachineLearningPotentials",
     "#MaterialsSimulation",
-    "#AbInitio",
+    "#DFT",
     "#MolecularDynamics",
-    "#DFT"
+    "#ComputationalMaterials"
   ],
   "paper_id": "2026-06-22-arxiv-universal_interatomic_potentials_as_configuration_space_generators_for_one_shot_and_iterat",
   "paper_title": "Universal Interatomic Potentials as Configuration-Space Generators for One-Shot and Iterative Fine-Tuning of Ab Initio-Accurate Material-Specific Models",
   "paper_date": "2026-06-22",
   "paper_category": "Crystal and Structure",
-  "generated_at": "2026-06-23T13:43:20",
+  "generated_at": "2026-06-24T13:21:50",
   "generator": "openai"
 }

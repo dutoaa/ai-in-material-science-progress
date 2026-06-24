@@ -1,24 +1,24 @@
 {
-  "key_insight": "INCARBench shows that LLMs can often produce plausible VASP INCAR settings, but truly correct scientific configurations remain much harder—especially when parameters are physically coupled.",
-  "engineering_relevance": "For computational materials workflows, this means LLMs may help draft or repair inputs, but expert validation is still essential before running expensive simulations.",
+  "key_insight": "INCARBench shows that LLMs can often choose plausible VASP settings, but scientifically correct configurations still fail when coupled parameters must satisfy multiple physics constraints at once.",
+  "engineering_relevance": "For computational materials workflows, the benchmark highlights that automated input generation and repair must be validated at the parameter and physics-consistency level, not just by overall semantic similarity.",
   "method": [
-    "Built INCARBench to evaluate LLMs on VASP INCAR configuration generation and repair.",
-    "Tested 19 model configurations across semantic accuracy, policy accuracy, and task-critical correctness.",
-    "Analyzed failure modes in challenging settings such as DFT+U, magnetism, and correlated materials."
+    "Built INCARBench to evaluate VASP INCAR configuration with two tasks: generation and repair.",
+    "Tested 19 model configurations across scientific input-setting scenarios.",
+    "Analyzed errors in challenging domains such as DFT+U, magnetism, and correlated materials."
   ],
-  "evidence_signal": "Across 19 model configurations, several achieved high semantic and policy accuracy, yet task-critical correctness was substantially lower, and repair tasks exposed weak configuration-preservation ability.",
-  "watch_item": "A major concern is that superficially valid parameter sets can still violate physical constraints, so automated outputs should not be trusted without domain-specific checks.",
+  "evidence_signal": "Across 19 model configurations, several models reached high semantic and policy accuracy, but task-critical correctness was much lower, and repair tests showed preserving valid settings is a separate challenge.",
+  "watch_item": "High-level correctness scores can be misleading because small parameter mistakes may still produce invalid or physically inconsistent simulations.",
   "hashtags": [
+    "#AIMaterialsScience",
     "#LLM4Science",
     "#VASP",
-    "#MaterialsInformatics",
     "#ComputationalMaterials",
-    "#AIforScience"
+    "#ScientificWorkflows"
   ],
   "paper_id": "2026-06-22-arxiv-incarbench_a_benchmark_for_scientific_configuration_in_vasp_incar_by_large_language_models",
   "paper_title": "INCARBench: A Benchmark for Scientific Configuration in VASP INCAR by Large Language Models",
   "paper_date": "2026-06-22",
   "paper_category": "AI materials science",
-  "generated_at": "2026-06-23T13:42:43",
+  "generated_at": "2026-06-24T13:21:05",
   "generator": "openai"
 }
