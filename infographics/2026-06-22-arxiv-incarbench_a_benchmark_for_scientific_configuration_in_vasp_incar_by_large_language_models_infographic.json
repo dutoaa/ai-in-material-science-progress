@@ -1,24 +1,24 @@
 {
-  "key_insight": "INCARBench shows that LLMs can often produce plausible VASP INCAR settings, but scientifically valid configurations require much stricter task-critical correctness than semantic similarity alone.",
-  "engineering_relevance": "For computational materials workflows, reliable AI assistants must respect coupled physics constraints such as DFT+U and magnetism, not just generate syntactically or semantically reasonable inputs.",
+  "key_insight": "INCARBench shows that LLMs can often produce plausible VASP INCAR settings, but scientifically valid configuration still breaks down when multiple physics constraints must be satisfied together.",
+  "engineering_relevance": "For computational materials workflows, this means LLM assistants may help draft or repair inputs, but their outputs still require expert verification for coupled settings like DFT+U, magnetism, and correlated systems.",
   "method": [
-    "Built INCARBench to evaluate LLMs on VASP INCAR configuration generation and repair",
-    "Tested 19 model configurations across semantic accuracy, policy accuracy, and task-critical correctness",
-    "Analyzed failures in coupled settings and compared repair ability with configuration preservation"
+    "Benchmark for VASP INCAR configuration generation",
+    "Benchmark for INCAR repair/correction tasks",
+    "Evaluated 19 model configurations across semantic, policy, and task-critical correctness"
   ],
-  "evidence_signal": "Across 19 model configurations, several models scored well on semantic/policy accuracy, but task-critical correctness was much lower, especially for coupled physics settings.",
-  "watch_item": "High preservation of already-valid parameters remains difficult, so deployment should include validation checks before running expensive simulations.",
+  "evidence_signal": "Across 19 model configurations, several models scored well on semantic and policy accuracy, yet task-critical correctness was much lower and repair performance showed that preserving valid settings remains difficult.",
+  "watch_item": "Do not assume a parameter list that looks correct is physically valid; coupled settings and mixed constraints are a major failure mode and need domain-aware checking.",
   "hashtags": [
-    "#AI4Materials",
-    "#LLM",
+    "#LLM4Science",
+    "#ComputationalMaterials",
     "#VASP",
-    "#ComputationalScience",
-    "#ScientificWorkflow"
+    "#DFTplusU",
+    "#AIforScience"
   ],
   "paper_id": "2026-06-22-arxiv-incarbench_a_benchmark_for_scientific_configuration_in_vasp_incar_by_large_language_models",
   "paper_title": "INCARBench: A Benchmark for Scientific Configuration in VASP INCAR by Large Language Models",
   "paper_date": "2026-06-22",
   "paper_category": "AI materials science",
-  "generated_at": "2026-06-25T13:14:52",
+  "generated_at": "2026-06-26T13:10:36",
   "generator": "openai"
 }
