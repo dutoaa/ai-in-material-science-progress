@@ -1,13 +1,13 @@
 {
-  "key_insight": "ARIA reduces LLM “contextual tunneling” by choosing between direct causal reasoning, analogical transfer, and parametric fallback based on how complete the Process-Structure-Property evidence is.",
-  "engineering_relevance": "This makes AI-assisted materials discovery more trustworthy and physically grounded, especially for forward prediction and inverse design in 2D materials.",
+  "key_insight": "ARIA reduces LLM “contextual tunneling” by forcing reasoning to follow complete process-structure-property causality, or else fall back to analogical or parametric reasoning.",
+  "engineering_relevance": "The framework makes AI-assisted materials discovery more trustworthy by producing auditable, physics-grounded predictions and inverse designs for 2D materials.",
   "method": [
-    "Builds a literature-derived knowledge graph with 2,839 extracted PSP relations",
-    "Uses a three-tier causal-aware cascade to route queries by evidence completeness",
-    "Provides auditable causal traces and can be strengthened with online literature search"
+    "Build a materials knowledge graph with 2,839 extracted process-structure-property relations from the literature.",
+    "Route each query through a three-tier cascade: causal reasoning, physics-informed analogical transfer, then explicit parametric fallback.",
+    "Condition knowledge use on mechanistic completeness to avoid over-anchoring on narrow retrieved evidence."
   ],
-  "evidence_signal": "The abstract reports evaluation on forward prediction and inverse design for 2D materials, with ARIA outperforming unaugmented and naive KG-augmented baselines.",
-  "watch_item": "Performance depends on the completeness and quality of extracted literature evidence, so sparse or noisy knowledge graphs may still limit reliability.",
+  "evidence_signal": "The paper evaluates ARIA on forward prediction and inverse design for 2D materials using a literature-derived knowledge graph, with additional gains reported when online literature search enriches evidence.",
+  "watch_item": "Performance may depend on the completeness and quality of extracted knowledge graphs and online evidence, so sparse or biased literature coverage could still limit reliability.",
   "hashtags": [
     "#MaterialsDiscovery",
     "#LLMReasoning",
@@ -19,6 +19,6 @@
   "paper_title": "ARIA: A Causal-Aware Framework for Rescuing LLM Reasoning in Trustworthy Materials Discovery",
   "paper_date": "2026-06-21",
   "paper_category": "Materials Discovery",
-  "generated_at": "2026-06-26T13:10:39",
+  "generated_at": "2026-06-27T12:08:46",
   "generator": "openai"
 }
