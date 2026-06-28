@@ -1,24 +1,24 @@
 {
-  "key_insight": "INCARBench shows that LLMs can often produce semantically plausible VASP INCAR settings, but scientifically valid configuration still breaks down when parameters are tightly coupled.",
-  "engineering_relevance": "This benchmark highlights that AI tools for computational materials engineering need constraint-aware validation, not just text-level or parameter-level correctness.",
+  "key_insight": "INCARBench shows that LLMs can often produce plausible VASP INCAR settings, but scientifically correct configurations remain much harder, especially when multiple physics constraints interact.",
+  "engineering_relevance": "For computational materials workflows, this means LLMs may assist with input setup, but their outputs still need expert validation before running expensive first-principles calculations.",
   "method": [
-    "Built INCARBench to test LLMs on VASP input configuration.",
-    "Evaluated both configuration generation and repair tasks.",
-    "Scored models on semantic accuracy, policy accuracy, and task-critical correctness."
+    "Benchmark for VASP INCAR configuration generation",
+    "Benchmark for INCAR repair of incorrect settings",
+    "Evaluated 19 model configurations across semantic, policy, and task-critical correctness"
   ],
-  "evidence_signal": "Across 19 model configurations, the study found strong gaps between semantic/policy accuracy and true task-critical correctness, especially for DFT+$U$, magnetism, and correlated-material settings.",
-  "watch_item": "High-quality repair is not the same as safe preservation: models may fix wrong parameters while unintentionally changing already-correct ones.",
+  "evidence_signal": "Across 19 model configurations, several models scored well on semantic and policy accuracy, but task-critical correctness was much lower, especially for DFT+U, magnetism, and correlated-material settings.",
+  "watch_item": "A key concern is that preserving already-correct configuration values during repair remains difficult, so automated edits can inadvertently break valid physics settings.",
   "hashtags": [
-    "#AIforScience",
+    "#LLM4Science",
     "#MaterialsInformatics",
     "#VASP",
-    "#LLMBenchmark",
-    "#ComputationalMaterials"
+    "#DFTplusU",
+    "#Benchmarking"
   ],
   "paper_id": "2026-06-22-arxiv-incarbench_a_benchmark_for_scientific_configuration_in_vasp_incar_by_large_language_models",
   "paper_title": "INCARBench: A Benchmark for Scientific Configuration in VASP INCAR by Large Language Models",
   "paper_date": "2026-06-22",
   "paper_category": "AI materials science",
-  "generated_at": "2026-06-27T12:08:44",
+  "generated_at": "2026-06-28T12:15:55",
   "generator": "openai"
 }
