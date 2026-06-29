@@ -1,24 +1,24 @@
 {
-  "key_insight": "Fine-tuning a foundation ML interatomic potential can recover the barocaloric phase transformation of ammonium sulfate with only 5–10 DFT configurations, whereas training from scratch needs more data and the base model alone fails.",
-  "engineering_relevance": "This shows a practical route to data-efficient, near-DFT atomistic screening of barocaloric materials, reducing the cost of discovering solid-state cooling candidates.",
+  "key_insight": "Data-efficient fine-tuning of a foundation ML interatomic potential can reproduce ammonium sulfate’s barocaloric phase transformation with only 5–10 DFT configurations.",
+  "engineering_relevance": "This lowers the DFT data burden for screening and simulating solid-state cooling materials, making atomistic discovery of barocaloric candidates more practical.",
   "method": [
-    "Train MACE-based MLIPs on ammonium sulfate using three strategies: from scratch, naive replay fine-tuning, and multihead replay fine-tuning.",
-    "Test each model in molecular dynamics across multiple training-set sizes for its ability to reproduce the temperature-driven structural phase transition.",
-    "Compare performance at both standard DFT and hybrid-DFT levels, including the impact of dispersion correction."
+    "Train MACE-based MLIPs from scratch or fine-tune the MACE-MPA-0 foundation model",
+    "Compare naive replay vs multihead replay fine-tuning across multiple training-set sizes",
+    "Test each model in molecular dynamics by checking whether the temperature-driven structural phase transition is recovered"
   ],
-  "evidence_signal": "Across evaluated training-set sizes, fine-tuned models reproduced the phase transformation with as few as 5–10 60-atom DFT configurations, while scratch-trained models broke down for small datasets and the foundation model missed the transition.",
-  "watch_item": "The result is system-specific and appears sensitive to including dispersion; extrapolation to other materials or phase-change mechanisms may require additional validation.",
+  "evidence_signal": "Across training-set sizes, fine-tuned models reproduced the phase transformation, while the foundation model alone and many from-scratch models failed; the study also reports that hybrid-DFT training and dispersion correction are needed for correct phase behavior.",
+  "watch_item": "The result is demonstrated on a prototypical single material system, so transferability to other barocaloric compounds and other phase-change chemistries still needs validation.",
   "hashtags": [
     "#MachineLearningPotentials",
-    "#BarocaloricMaterials",
-    "#PhaseTransformations",
-    "#FineTuning",
-    "#AtomisticSimulation"
+    "#Barocaloric",
+    "#SolidStateCooling",
+    "#MolecularDynamics",
+    "#MaterialsSimulation"
   ],
   "paper_id": "2026-06-24-arxiv-barocaloric_phase_transformation_from_data_efficient_fine_tuning_of_machine_learned_intera",
   "paper_title": "Barocaloric phase transformation from data efficient fine-tuning of machine learned interatomic potentials",
   "paper_date": "2026-06-24",
   "paper_category": "Microstructure",
-  "generated_at": "2026-06-28T12:15:50",
+  "generated_at": "2026-06-29T14:47:01",
   "generator": "openai"
 }
