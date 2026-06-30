@@ -1,24 +1,24 @@
 {
-  "key_insight": "CoTAR reconstructs molecular topology, formal charges, and unpaired electrons from condensed-phase trajectories by combining a GNN with HMM-based temporal smoothing and chemical priors.",
-  "engineering_relevance": "It makes universal ML interatomic potentials easier to analyze and reconnect to classical force fields, enabling bond-aware downstream MD workflows from atomistic simulation data.",
+  "key_insight": "CoTAR reconstructs molecular topology, formal charge, and unpaired electrons from condensed-phase MD trajectories by combining a GNN with HMM temporal smoothing and chemistry priors.",
+  "engineering_relevance": "This enables bond-aware analysis and downstream classical-force-field workflows for universal ML interatomic potentials that otherwise lack explicit molecular structure.",
   "method": [
-    "Builds a proximity graph from atomic species and coordinates and applies message passing with a van der Waals prior.",
-    "Uses chemical constraints plus a hidden Markov model to smooth topology predictions over time.",
-    "Infers bonds, formal charges, and unpaired electrons from total charge and local atomic environments."
+    "Message passing on a proximity graph with a van der Waals prior",
+    "Chemical-constraint decoding for bonds, charges, and unpaired electrons",
+    "HMM smoothing to enforce temporal consistency across snapshots"
   ],
-  "evidence_signal": "Across 128 topology-preserving condensed-phase systems, CoTAR reached a bond-order-weighted F1 score of 0.906 on classical-MD data, and few-shot fine-tuning raised valid-snapshot rate on uMLIP trajectories from 38.6% to 84.7%.",
-  "watch_item": "Performance depends on topology-preserving, nonreactive systems, so robustness on strongly reactive or bond-breaking trajectories may be limited.",
+  "evidence_signal": "On 128 nonreactive condensed-phase systems, CoTAR achieved a bond-order-weighted F1 score of 0.906 on classical-MD data, and few-shot fine-tuning improved uMLIP valid-snapshot rate from 38.6% to 84.7%.",
+  "watch_item": "Performance is reported for topology-preserving, nonreactive systems, so behavior on reactive chemistry or bond-breaking trajectories may be less reliable.",
   "hashtags": [
-    "#MachineLearning",
+    "#MaterialsInformatics",
     "#MolecularDynamics",
-    "#Microstructure",
     "#GraphNeuralNetworks",
-    "#MaterialsInformatics"
+    "#ChemicalTopology",
+    "#MachineLearningPotentials"
   ],
   "paper_id": "2026-06-26-arxiv-cotar_topology_and_atomic_state_reconstruction_in_condensed_phases",
   "paper_title": "CoTAR: Topology and Atomic State Reconstruction in Condensed Phases",
   "paper_date": "2026-06-26",
   "paper_category": "Microstructure",
-  "generated_at": "2026-06-29T14:46:52",
+  "generated_at": "2026-06-30T13:10:29",
   "generator": "openai"
 }
