@@ -1,16 +1,16 @@
 {
-  "key_insight": "A hybrid GNN-LSTM surrogate can learn how local short-fiber microstructure and loading history control the static stress-strain response of additively manufactured thermoplastic composites.",
-  "engineering_relevance": "This enables fast prediction of stiffness and damage-prone regions in SFT parts, supporting design screening and digital-twin workflows without repeated costly finite-element microstructure simulations.",
+  "key_insight": "A hybrid GNN-LSTM surrogate can learn the nonlinear static response of additively manufactured short-fiber thermoplastics directly from microstructure topology and history-dependent cell behavior.",
+  "engineering_relevance": "This enables fast, physics-informed prediction of stiffness and stress-strain response for complex SFT parts, supporting digital twins and screening of weak microstructural regions.",
   "method": [
-    "Reconstruct microstructures from micro-CT data and partition them into Voronoi-based fiber-interaction cells.",
-    "Homogenize each cell with nonlinear FE simulations that include matrix damage to generate training targets.",
-    "Train a GNN-LSTM to encode microstructural topology and history-dependent mechanical evolution."
+    "Reconstructed microstructures from micro-CT and partitioned them into Voronoi-based cells.",
+    "Ran nonlinear FE simulations per cell with matrix damage to generate local stress-strain responses.",
+    "Trained a GNN-LSTM to encode microstructural connectivity and mechanical evolution over loading history."
   ],
-  "evidence_signal": "The surrogate matches high-fidelity FE stress-strain predictions with about R^2 ≈ 0.98 and reduces computation by more than two orders of magnitude.",
-  "watch_item": "Performance may depend on the quality of micro-CT reconstruction, calibrated damage laws, and whether the training microstructures cover the full manufacturing variability of target parts.",
+  "evidence_signal": "The surrogate matches unseen FE results with about R² ≈ 0.98 and reduces computation by more than two orders of magnitude.",
+  "watch_item": "Performance may depend on the quality and representativeness of the reconstructed microstructures, so extrapolation to new materials or processing conditions should be validated carefully.",
   "hashtags": [
     "#GraphNeuralNetworks",
-    "#SurrogateModeling",
+    "#MaterialsInformatics",
     "#AdditiveManufacturing",
     "#ShortFiberComposites",
     "#DigitalTwin"
@@ -19,6 +19,6 @@
   "paper_title": "On Surrogate Modeling of Static Response of AM Short-Fiber Thermoplastics Using Graph Neural Networks",
   "paper_date": "2026-06-27",
   "paper_category": "Polymers and Composites",
-  "generated_at": "2026-06-30T13:10:01",
+  "generated_at": "2026-07-01T13:33:38",
   "generator": "openai"
 }

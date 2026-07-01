@@ -1,9 +1,17 @@
 # AI materials science Progress Public Resources
 
-Generated: 2026-06-30
+Generated: 2026-07-01
 Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 
-## 1. High-order tensor neural network for iteration-free structure relaxation
+## 1. Adaptive fine-tuning of foundation models for crystal structure prediction: Discovery of high-pressure phases in the CaFeNi system
+
+- Date: 2026-06-29
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2606.30870v1
+- PDF: https://arxiv.org/pdf/2606.30870v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-29-arxiv-adaptive_fine_tuning_of_foundation_models_for_crystal_structure_prediction_discovery_of_hi_infographic.json
+
+## 2. High-order tensor neural network for iteration-free structure relaxation
 
 - Date: 2026-06-29
 - Category: Materials Discovery
@@ -11,7 +19,7 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2606.29919v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-29-arxiv-high_order_tensor_neural_network_for_iteration_free_structure_relaxation_infographic.json
 
-## 2. Beyond Drug Discovery: The Nanotechnology Molecular Optimization (NMO) Benchmark
+## 3. Beyond Drug Discovery: The Nanotechnology Molecular Optimization (NMO) Benchmark
 
 - Date: 2026-06-29
 - Category: Materials Discovery
@@ -19,7 +27,7 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2606.30170v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-29-arxiv-beyond_drug_discovery_the_nanotechnology_molecular_optimization_nmo_benchmark_infographic.json
 
-## 3. Persona-Trained Monte Carlo: Estimating Market-Outcome Distributions via Swarms of Persona-Conditioned Neural Policy Bots in a Limit Order Book
+## 4. Persona-Trained Monte Carlo: Estimating Market-Outcome Distributions via Swarms of Persona-Conditioned Neural Policy Bots in a Limit Order Book
 
 - Date: 2026-06-28
 - Category: Materials Discovery
@@ -27,7 +35,7 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2606.29556v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-28-arxiv-persona_trained_monte_carlo_estimating_market_outcome_distributions_via_swarms_of_persona_infographic.json
 
-## 4. Optimizing Expert-Designed Crystal Graph Networks for Band-Gap Prediction with an Autonomous LLM Research Loop
+## 5. Optimizing Expert-Designed Crystal Graph Networks for Band-Gap Prediction with an Autonomous LLM Research Loop
 
 - Date: 2026-06-29
 - Category: Crystal and Structure
@@ -35,7 +43,7 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2606.29717v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-29-arxiv-optimizing_expert_designed_crystal_graph_networks_for_band_gap_prediction_with_an_autonomo_infographic.json
 
-## 5. On Surrogate Modeling of Static Response of AM Short-Fiber Thermoplastics Using Graph Neural Networks
+## 6. On Surrogate Modeling of Static Response of AM Short-Fiber Thermoplastics Using Graph Neural Networks
 
 - Date: 2026-06-27
 - Category: Polymers and Composites
@@ -43,7 +51,47 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2606.28996v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-27-arxiv-on_surrogate_modeling_of_static_response_of_am_short_fiber_thermoplastics_using_graph_neur_infographic.json
 
-## 6. Synthesizability and Mechanical Properties of High-Entropy Borides: First-Principles and Machine Learning Studies
+## 7. Prebiotic Chemistry Assemblies of L-Cysteine on Defect-Free Pyrite Terraces
+
+- Date: 2026-06-29
+- Category: Microstructure
+- arXiv: https://arxiv.org/abs/2606.30929v1
+- PDF: https://arxiv.org/pdf/2606.30929v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-29-arxiv-prebiotic_chemistry_assemblies_of_l_cysteine_on_defect_free_pyrite_terraces_infographic.json
+
+## 8. Hybrid Unet-Transformer Model for Generating Stress and Strain Fields from Composite Geometrics
+
+- Date: 2026-06-30
+- Category: Microstructure
+- arXiv: https://arxiv.org/abs/2606.31068v1
+- PDF: https://arxiv.org/pdf/2606.31068v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-30-arxiv-hybrid_unet_transformer_model_for_generating_stress_and_strain_fields_from_composite_geome_infographic.json
+
+## 9. Contrastive Regularization of Machine Learning Potentials
+
+- Date: 2026-06-30
+- Category: AI materials science
+- arXiv: https://arxiv.org/abs/2606.31660v1
+- PDF: https://arxiv.org/pdf/2606.31660v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-30-arxiv-contrastive_regularization_of_machine_learning_potentials_infographic.json
+
+## 10. Computed materials proposals depart from the structural memory of experimental discovery
+
+- Date: 2026-06-29
+- Category: Materials Discovery
+- arXiv: https://arxiv.org/abs/2606.30967v1
+- PDF: https://arxiv.org/pdf/2606.30967v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-29-arxiv-computed_materials_proposals_depart_from_the_structural_memory_of_experimental_discovery_infographic.json
+
+## 11. Bridging electrode preparation and electrocatalyst performance with physics-based causal AI
+
+- Date: 2026-06-29
+- Category: Materials Discovery
+- arXiv: https://arxiv.org/abs/2606.30898v1
+- PDF: https://arxiv.org/pdf/2606.30898v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-29-arxiv-bridging_electrode_preparation_and_electrocatalyst_performance_with_physics_based_causal_a_infographic.json
+
+## 12. Synthesizability and Mechanical Properties of High-Entropy Borides: First-Principles and Machine Learning Studies
 
 - Date: 2026-06-29
 - Category: Crystal and Structure
@@ -51,7 +99,7 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2606.30540v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-29-arxiv-synthesizability_and_mechanical_properties_of_high_entropy_borides_first_principles_and_ma_infographic.json
 
-## 7. The Role of Artificial Intelligence in the SKA Era
+## 13. The Role of Artificial Intelligence in the SKA Era
 
 - Date: 2026-06-26
 - Category: Materials Discovery
@@ -59,7 +107,15 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2606.28493v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-26-arxiv-the_role_of_artificial_intelligence_in_the_ska_era_infographic.json
 
-## 8. Interpretable Inverse Design of Metal-Organic Frameworks with Large Language Model Agents
+## 14. Optimizing Ti substitution for the enhanced densification, ionic conductivity, and microstructure of garnet-type Li$_7$La$_3$Zr$_2$O$_{12}$ solid electrolytes
+
+- Date: 2026-06-30
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2606.31669v1
+- PDF: https://arxiv.org/pdf/2606.31669v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-30-arxiv-optimizing_ti_substitution_for_the_enhanced_densification_ionic_conductivity_and_microstru_infographic.json
+
+## 15. Interpretable Inverse Design of Metal-Organic Frameworks with Large Language Model Agents
 
 - Date: 2026-06-28
 - Category: Materials Discovery
@@ -67,7 +123,7 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2606.29459v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-28-arxiv-interpretable_inverse_design_of_metal_organic_frameworks_with_large_language_model_agents_infographic.json
 
-## 9. Latent Genetic Algorithm for Crystal Structure Prediction
+## 16. Latent Genetic Algorithm for Crystal Structure Prediction
 
 - Date: 2026-06-28
 - Category: Crystal and Structure
@@ -75,7 +131,7 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2606.29220v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-28-arxiv-latent_genetic_algorithm_for_crystal_structure_prediction_infographic.json
 
-## 10. SFBench: The SciFy Scientific Feasibility Benchmark
+## 17. SFBench: The SciFy Scientific Feasibility Benchmark
 
 - Date: 2026-06-28
 - Category: AI materials science
@@ -83,82 +139,26 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2606.29630v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-28-arxiv-sfbench_the_scify_scientific_feasibility_benchmark_infographic.json
 
-## 11. A Differentiable DFT-Based Framework for Inverse Materials Design
+## 18. Geometrically necessary boundaries accommodate the residual elastic strain in cold-rolled Fe-3%Si
 
-- Date: 2026-06-24
-- Category: Materials Discovery
-- arXiv: https://arxiv.org/abs/2606.25502v1
-- PDF: https://arxiv.org/pdf/2606.25502v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-24-arxiv-a_differentiable_dft_based_framework_for_inverse_materials_design_infographic.json
+- Date: 2026-06-30
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2606.31538v1
+- PDF: https://arxiv.org/pdf/2606.31538v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-30-arxiv-geometrically_necessary_boundaries_accommodate_the_residual_elastic_strain_in_cold_rolled_infographic.json
 
-## 12. Concept Catalyst: Exploring Scrutable Interfaces to Structure K-12 Teacher Interactions with Generative AI
+## 19. Side-Chain Tuning of Thermal-Expansion Crossover in Metal-Organic Frameworks
+
+- Date: 2026-06-30
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2606.31417v1
+- PDF: https://arxiv.org/pdf/2606.31417v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-30-arxiv-side_chain_tuning_of_thermal_expansion_crossover_in_metal_organic_frameworks_infographic.json
+
+## 20. Concept Catalyst: Exploring Scrutable Interfaces to Structure K-12 Teacher Interactions with Generative AI
 
 - Date: 2026-06-29
 - Category: Materials Discovery
 - arXiv: https://arxiv.org/abs/2606.30590v1
 - PDF: https://arxiv.org/pdf/2606.30590v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-29-arxiv-concept_catalyst_exploring_scrutable_interfaces_to_structure_k_12_teacher_interactions_wit_infographic.json
-
-## 13. Graph Neural Networks Applications Across Domains: All Insights You Need
-
-- Date: 2026-06-25
-- Category: Materials Discovery
-- arXiv: https://arxiv.org/abs/2606.27202v1
-- PDF: https://arxiv.org/pdf/2606.27202v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-25-arxiv-graph_neural_networks_applications_across_domains_all_insights_you_need_infographic.json
-
-## 14. Surrogate-Gated Generation and Foundation-Model Embeddings for Bayesian Materials Design
-
-- Date: 2026-06-26
-- Category: Materials Discovery
-- arXiv: https://arxiv.org/abs/2606.28578v1
-- PDF: https://arxiv.org/pdf/2606.28578v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-26-arxiv-surrogate_gated_generation_and_foundation_model_embeddings_for_bayesian_materials_design_infographic.json
-
-## 15. CoTAR: Topology and Atomic State Reconstruction in Condensed Phases
-
-- Date: 2026-06-26
-- Category: Microstructure
-- arXiv: https://arxiv.org/abs/2606.27636v1
-- PDF: https://arxiv.org/pdf/2606.27636v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-26-arxiv-cotar_topology_and_atomic_state_reconstruction_in_condensed_phases_infographic.json
-
-## 16. A Combined Tight Binding with Machine Learning Potential Model for Magnesium Compounds
-
-- Date: 2026-06-24
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2606.25853v1
-- PDF: https://arxiv.org/pdf/2606.25853v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-24-arxiv-a_combined_tight_binding_with_machine_learning_potential_model_for_magnesium_compounds_infographic.json
-
-## 17. Unlocking the Visual Record of Materials Science: A Large-Scale Multimodal Dataset from Scientific Literature
-
-- Date: 2026-06-29
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2606.29667v1
-- PDF: https://arxiv.org/pdf/2606.29667v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-29-arxiv-unlocking_the_visual_record_of_materials_science_a_large_scale_multimodal_dataset_from_sci_infographic.json
-
-## 18. MALOQ: Massively Accelerated Learning of Operators for Quantum Transport
-
-- Date: 2026-06-27
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2606.28911v1
-- PDF: https://arxiv.org/pdf/2606.28911v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-27-arxiv-maloq_massively_accelerated_learning_of_operators_for_quantum_transport_infographic.json
-
-## 19. Ductility Design Rules for Tungsten based Refractory High Entropy Alloys from Sparse Experimental Datasets
-
-- Date: 2026-06-25
-- Category: Materials Discovery
-- arXiv: https://arxiv.org/abs/2606.26501v1
-- PDF: https://arxiv.org/pdf/2606.26501v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-25-arxiv-ductility_design_rules_for_tungsten_based_refractory_high_entropy_alloys_from_sparse_exper_infographic.json
-
-## 20. Spontaneous Symmetry Breaking and Emergent Helicity in Achiral D4h-Symmetric Zinc Phthalocyanine Condensates
-
-- Date: 2026-06-29
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2606.30494v1
-- PDF: https://arxiv.org/pdf/2606.30494v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-29-arxiv-spontaneous_symmetry_breaking_and_emergent_helicity_in_achiral_d4h_symmetric_zinc_phthaloc_infographic.json

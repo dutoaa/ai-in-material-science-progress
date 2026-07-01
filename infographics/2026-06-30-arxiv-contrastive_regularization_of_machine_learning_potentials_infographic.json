@@ -1,0 +1,24 @@
+{
+  "key_insight": "A machine-learning potential can be pointwise accurate on energies and forces yet still produce unphysical molecular trajectories, so the model must be trained to match the distribution it will generate, not just the labels it predicts.",
+  "engineering_relevance": "For molecular simulation workflows, CRMSE offers a lightweight post-training correction that improves sampling reliability without requiring new ab initio data, making learned potentials safer for downstream thermodynamic analysis.",
+  "method": [
+    "Start with a standard MSE-trained interatomic potential.",
+    "Run persistent Langevin chains from the model itself to find the configurations it samples incorrectly.",
+    "Add a contrastive regularizer based on KL divergence to raise the energy of spurious low-energy states and refine the Boltzmann distribution."
+  ],
+  "evidence_signal": "On MD17 ethanol and aspirin, CRMSE restores energy, interatomic-distance, and dihedral free-energy distributions to near-DFT agreement while keeping force errors low and energy errors within chemical accuracy, even with reduced training data.",
+  "watch_item": "The correction depends on the quality and stability of the persistent sampling procedure, so poor chain mixing or an inadequate exploration strategy could limit how well the spurious basins are identified.",
+  "hashtags": [
+    "#MachineLearningPotentials",
+    "#MolecularDynamics",
+    "#ContrastiveLearning",
+    "#ComputationalChemistry",
+    "#MaterialsAI"
+  ],
+  "paper_id": "2026-06-30-arxiv-contrastive_regularization_of_machine_learning_potentials",
+  "paper_title": "Contrastive Regularization of Machine Learning Potentials",
+  "paper_date": "2026-06-30",
+  "paper_category": "AI materials science",
+  "generated_at": "2026-07-01T13:33:50",
+  "generator": "openai"
+}
