@@ -1,24 +1,24 @@
 {
-  "key_insight": "A hybrid UNet-Transformer can translate composite microstructure images into stress and strain field maps with near-FEM accuracy for most tested geometries and loading conditions.",
-  "engineering_relevance": "This enables fast surrogate-based screening and physics-informed design of composite materials by replacing expensive FEM evaluations with image-to-field prediction.",
+  "key_insight": "A hybrid UNet-Transformer can translate composite microstructure images directly into detailed stress and strain fields with near-FEM accuracy on most geometries.",
+  "engineering_relevance": "This enables much faster surrogate evaluation for physics-informed composite design, reducing reliance on expensive finite element simulations.",
   "method": [
-    "UNet encoder-decoder captures multiscale geometric structure",
-    "Transformer layers model long-range mechanical dependencies across the microstructure",
-    "Attention maps (Grad-CAM/Grad-CAM++) highlight phase boundaries and contact regions"
+    "Input: composite geometry images from multiple two-phase tessellations and boundary conditions.",
+    "Model: UNet encoder-decoder plus Transformer attention to capture local and long-range mechanical context.",
+    "Output: predicts 10 stress/strain field types and uses Grad-CAM/Grad-CAM++ to inspect learned attention."
   ],
-  "evidence_signal": "The model reported very strong results across most subdatasets, including R2 up to 0.9991, SSIM up to 0.9936, and MAE as low as 0.0050, with six of eight subdatasets below 0.05 normalized MAE.",
-  "watch_item": "Performance drops on irregular square-grid cases with sparse soft-phase inclusions, indicating limited fidelity for sharp stress discontinuities and challenging geometries.",
+  "evidence_signal": "The model reports strong performance on most subdatasets, including R2 up to 0.9991 and SSIM up to 0.9936, with MAE below 0.05 on six of eight evaluated subdatasets.",
+  "watch_item": "Accuracy drops on irregular square-grid cases with sparse soft-phase inclusions, suggesting the model may struggle with sharp stress discontinuities.",
   "hashtags": [
     "#ComputationalMechanics",
     "#CompositeMaterials",
+    "#DeepLearning",
     "#UNet",
-    "#Transformer",
-    "#SurrogateModel"
+    "#Transformer"
   ],
   "paper_id": "2026-06-30-arxiv-hybrid_unet_transformer_model_for_generating_stress_and_strain_fields_from_composite_geome",
   "paper_title": "Hybrid Unet-Transformer Model for Generating Stress and Strain Fields from Composite Geometrics",
   "paper_date": "2026-06-30",
   "paper_category": "Microstructure",
-  "generated_at": "2026-07-01T13:33:47",
+  "generated_at": "2026-07-02T12:56:50",
   "generator": "openai"
 }

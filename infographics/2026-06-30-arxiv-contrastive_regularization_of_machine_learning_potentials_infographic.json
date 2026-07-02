@@ -1,24 +1,24 @@
 {
-  "key_insight": "A machine-learning potential can be pointwise accurate on energies and forces yet still produce unphysical molecular trajectories, so the model must be trained to match the distribution it will generate, not just the labels it predicts.",
-  "engineering_relevance": "For molecular simulation workflows, CRMSE offers a lightweight post-training correction that improves sampling reliability without requiring new ab initio data, making learned potentials safer for downstream thermodynamic analysis.",
+  "key_insight": "Standard MSE training can make an interatomic potential look accurate on held-out energies/forces while still producing physically wrong molecular dynamics samples, so the model must be trained against the distribution it generates.",
+  "engineering_relevance": "For computational chemistry and materials simulation, this means reliable force fields need distribution-aware calibration, not just pointwise regression accuracy, to produce trustworthy thermodynamics and sampling.",
   "method": [
-    "Start with a standard MSE-trained interatomic potential.",
-    "Run persistent Langevin chains from the model itself to find the configurations it samples incorrectly.",
-    "Add a contrastive regularizer based on KL divergence to raise the energy of spurious low-energy states and refine the Boltzmann distribution."
+    "Start with a machine-learning potential trained by standard MSE on DFT energies and forces.",
+    "Add a post-training contrastive regularization term (CRMSE) based on KL divergence between the model’s Boltzmann distribution and the target.",
+    "Use persistent Langevin chains to discover the configurations the model visits spuriously and raise their energy, without adding new ab initio data."
   ],
-  "evidence_signal": "On MD17 ethanol and aspirin, CRMSE restores energy, interatomic-distance, and dihedral free-energy distributions to near-DFT agreement while keeping force errors low and energy errors within chemical accuracy, even with reduced training data.",
-  "watch_item": "The correction depends on the quality and stability of the persistent sampling procedure, so poor chain mixing or an inadequate exploration strategy could limit how well the spurious basins are identified.",
+  "evidence_signal": "On ethanol and aspirin from MD17, CRMSE restored energy, distance, and dihedral free-energy distributions to near-quantitative agreement with DFT while keeping energy errors within chemical accuracy and preserving force accuracy.",
+  "watch_item": "The correction depends on generating meaningful persistent-chain samples, so stability and cost of the sampling step may matter for larger systems or more complex energy landscapes.",
   "hashtags": [
     "#MachineLearningPotentials",
     "#MolecularDynamics",
     "#ContrastiveLearning",
-    "#ComputationalChemistry",
-    "#MaterialsAI"
+    "#MaterialsAI",
+    "#DFT"
   ],
   "paper_id": "2026-06-30-arxiv-contrastive_regularization_of_machine_learning_potentials",
   "paper_title": "Contrastive Regularization of Machine Learning Potentials",
   "paper_date": "2026-06-30",
   "paper_category": "AI materials science",
-  "generated_at": "2026-07-01T13:33:50",
+  "generated_at": "2026-07-02T12:57:00",
   "generator": "openai"
 }
