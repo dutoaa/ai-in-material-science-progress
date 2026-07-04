@@ -1,13 +1,13 @@
 {
-  "key_insight": "A hybrid GNN-LSTM surrogate can learn how local fiber orientation, clustering, and porosity control the static nonlinear response of additively manufactured short-fiber thermoplastics.",
-  "engineering_relevance": "It enables fast, physics-informed screening of weak microstructural regions and supports digital-twin workflows for lightweight polymer composite parts.",
+  "key_insight": "A graph neural network with LSTM memory can learn the static mechanical response of additively manufactured short-fiber thermoplastics directly from reconstructed microstructure topology.",
+  "engineering_relevance": "This offers a fast surrogate for meso-scale finite-element analysis, enabling quicker design, screening, and digital-twin workflows for lightweight SFT components.",
   "method": [
-    "Reconstruct microstructures from micro-CT and discretize them into Voronoi-based interaction cells.",
-    "Run nonlinear FE homogenization on each cell with matrix damage to generate stress-strain histories.",
-    "Train a GNN-LSTM to encode microstructural topology plus response evolution over load history."
+    "Reconstructed microstructures from micro-CT and discretized them into Voronoi-based fiber-interaction cells.",
+    "Homogenized each cell with nonlinear finite-element simulations including matrix damage.",
+    "Trained a hybrid GNN-LSTM model to map microstructural connectivity and response history to stress-strain behavior."
   ],
-  "evidence_signal": "The surrogate matches unseen FE stress-strain responses with about R² ≈ 0.98 while reducing computation by more than two orders of magnitude.",
-  "watch_item": "Performance depends on representative training microstructures and experimentally calibrated damage laws, so extrapolation to very different processing conditions may be limited.",
+  "evidence_signal": "The surrogate matches unseen FE predictions with about R^2 ≈ 0.98 while reducing computational cost by more than two orders of magnitude.",
+  "watch_item": "Performance depends on the fidelity of microstructure reconstruction and calibrated damage laws, so extrapolation beyond the training microstructures may be unreliable.",
   "hashtags": [
     "#GraphNeuralNetworks",
     "#MaterialsInformatics",
@@ -19,6 +19,6 @@
   "paper_title": "On Surrogate Modeling of Static Response of AM Short-Fiber Thermoplastics Using Graph Neural Networks",
   "paper_date": "2026-06-27",
   "paper_category": "Polymers and Composites",
-  "generated_at": "2026-07-03T12:55:51",
+  "generated_at": "2026-07-04T12:06:51",
   "generator": "openai"
 }

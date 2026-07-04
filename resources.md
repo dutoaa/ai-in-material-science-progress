@@ -1,6 +1,6 @@
 # AI materials science Progress Public Resources
 
-Generated: 2026-07-03
+Generated: 2026-07-04
 Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 
 ## 1. Graph-Native Reinforcement Learning Enables Traceable Scientific Hypothesis Generation through Conceptual Recombination

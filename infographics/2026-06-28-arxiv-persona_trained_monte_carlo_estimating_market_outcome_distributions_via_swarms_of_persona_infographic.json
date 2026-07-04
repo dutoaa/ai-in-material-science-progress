@@ -1,24 +1,24 @@
 {
-  "key_insight": "Persona-Trained Monte Carlo estimates market-outcome distributions by simulating many heterogeneous, persona-conditioned trading bots in a limit order book and aggregating repeated runs into an ensemble of possible price-path outcomes.",
-  "engineering_relevance": "This provides a simulation-based framework for stress-testing market microstructure and systemic-risk scenarios when classical Monte Carlo or single-agent models are too narrow to capture trader heterogeneity.",
+  "key_insight": "Persona-Trained Monte Carlo estimates market-outcome distributions by simulating many persona-conditioned trading bots interacting in a limit order book, turning each swarm run into one Monte Carlo sample.",
+  "engineering_relevance": "The framework offers a way to stress-test market mechanisms, risk, and policy responses using controllable agent heterogeneity rather than relying only on classical price-path simulation.",
   "method": [
-    "Train one neural policy shared across bots, then condition each bot on a sampled persona vector representing trader heterogeneity.",
-    "Run swarms of bots in a continuous double auction; each simulated price path becomes one Monte Carlo sample.",
-    "Repeat across independent persona-population draws and estimate target market statistics from the resulting outcome ensemble."
+    "Train one neural policy shared across bots, conditioned on sampled persona parameters.",
+    "Run swarms in a continuous double auction to generate one outcome sample per simulation.",
+    "Repeat over independent persona draws to build an ensemble estimate of target market statistics."
   ],
-  "evidence_signal": "The paper is proposal-focused: it formalizes the PTMC estimator and validation roadmap but does not report implementation results, instead outlining evaluation via stylized facts, microstructure checks, and stress tests.",
-  "watch_item": "The main limitation is that the method is not yet implemented, so performance, calibration quality, and convergence behavior remain unvalidated in real market data.",
+  "evidence_signal": "The abstract describes a proposed, not yet implemented, framework and validation roadmap rather than reporting empirical results.",
+  "watch_item": "Because the method depends on learned persona distributions, training quality and calibration of heterogeneous agent behavior will strongly affect validity.",
   "hashtags": [
     "#MonteCarlo",
     "#AgentBasedModeling",
-    "#MarketMicrostructure",
-    "#DeepReinforcementLearning",
-    "#SystemicRisk"
+    "#LimitOrderBook",
+    "#ReinforcementLearning",
+    "#MarketMicrostructure"
   ],
   "paper_id": "2026-06-28-arxiv-persona_trained_monte_carlo_estimating_market_outcome_distributions_via_swarms_of_persona",
   "paper_title": "Persona-Trained Monte Carlo: Estimating Market-Outcome Distributions via Swarms of Persona-Conditioned Neural Policy Bots in a Limit Order Book",
   "paper_date": "2026-06-28",
   "paper_category": "Materials Discovery",
-  "generated_at": "2026-07-03T12:55:42",
+  "generated_at": "2026-07-04T12:06:40",
   "generator": "openai"
 }
