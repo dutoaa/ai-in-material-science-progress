@@ -1,6 +1,6 @@
 # AI materials science Progress Public Resources
 
-Generated: 2026-07-04
+Generated: 2026-07-05
 Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 
 ## 1. Graph-Native Reinforcement Learning Enables Traceable Scientific Hypothesis Generation through Conceptual Recombination
@@ -123,15 +123,7 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2606.29717v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-29-arxiv-optimizing_expert_designed_crystal_graph_networks_for_band_gap_prediction_with_an_autonomo_infographic.json
 
-## 16. On Surrogate Modeling of Static Response of AM Short-Fiber Thermoplastics Using Graph Neural Networks
-
-- Date: 2026-06-27
-- Category: Polymers and Composites
-- arXiv: https://arxiv.org/abs/2606.28996v1
-- PDF: https://arxiv.org/pdf/2606.28996v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-27-arxiv-on_surrogate_modeling_of_static_response_of_am_short_fiber_thermoplastics_using_graph_neur_infographic.json
-
-## 17. Vitriflow: calibrated amorphous structure ensembles from melt-quench simulation
+## 16. Vitriflow: calibrated amorphous structure ensembles from melt-quench simulation
 
 - Date: 2026-07-01
 - Category: Crystal and Structure
@@ -139,7 +131,7 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2607.01407v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-01-arxiv-vitriflow_calibrated_amorphous_structure_ensembles_from_melt_quench_simulation_infographic.json
 
-## 18. Effect of radially heterogeneous band gap collapse on formation of swift heavy ion tracks in Al2O3
+## 17. Effect of radially heterogeneous band gap collapse on formation of swift heavy ion tracks in Al2O3
 
 - Date: 2026-07-01
 - Category: Crystal and Structure
@@ -147,7 +139,7 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2607.01016v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-01-arxiv-effect_of_radially_heterogeneous_band_gap_collapse_on_formation_of_swift_heavy_ion_tracks_infographic.json
 
-## 19. Predicting Novel Stable Materials for Experimental Synthesis
+## 18. Predicting Novel Stable Materials for Experimental Synthesis
 
 - Date: 2026-07-02
 - Category: Materials Discovery
@@ -155,10 +147,18 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2607.01713v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-02-arxiv-predicting_novel_stable_materials_for_experimental_synthesis_infographic.json
 
-## 20. Many-body benchmarking of DFT local-registry energetics in bilayer InSe
+## 19. Many-body benchmarking of DFT local-registry energetics in bilayer InSe
 
 - Date: 2026-07-02
 - Category: AI materials science
 - arXiv: https://arxiv.org/abs/2607.01682v1
 - PDF: https://arxiv.org/pdf/2607.01682v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-02-arxiv-many_body_benchmarking_of_dft_local_registry_energetics_in_bilayer_inse_infographic.json
+
+## 20. Prebiotic Chemistry Assemblies of L-Cysteine on Defect-Free Pyrite Terraces
+
+- Date: 2026-06-29
+- Category: Microstructure
+- arXiv: https://arxiv.org/abs/2606.30929v1
+- PDF: https://arxiv.org/pdf/2606.30929v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-06-29-arxiv-prebiotic_chemistry_assemblies_of_l_cysteine_on_defect_free_pyrite_terraces_infographic.json

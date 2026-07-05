@@ -27,29 +27,29 @@
         "url": "https://arxiv.org/pdf/2607.00924v1"
       }
     ],
-    "score": 76,
+    "score": 81,
     "infographic": {
-      "key_insight": "Graph-PRefLexOR uses graph-native reasoning and reinforcement learning to generate materials hypotheses with explicit, traceable intermediate steps instead of opaque fluent text.",
-      "engineering_relevance": "For materials discovery workflows, this could make AI-assisted hypothesis generation more interpretable, reusable, and easier to validate before expensive experiments.",
+      "key_insight": "Graph-PRefLexOR uses graph-native reinforcement learning to turn open-ended materials reasoning into explicit, traceable multi-step hypothesis generation with stronger conceptual recombination.",
+      "engineering_relevance": "For materials discovery workflows, the method improves both answer quality and interpretability, helping researchers inspect how candidate hypotheses are built rather than relying on opaque language model outputs.",
       "method": [
-        "Fine-tune graph-native reasoning models with Group Relative Policy Optimization (GRPO).",
-        "Structure reasoning into phases: mechanism exploration, graph construction, pattern extraction, and hypothesis synthesis.",
-        "Link language generation to symbolic relational graphs to support causal tracing and reuse."
+        "Fine-tunes graph-native reasoning models with GRPO.",
+        "Forces explicit phases: mechanism exploration, graph construction, pattern extraction, and hypothesis synthesis.",
+        "Uses semantic and hidden-state analyses plus test-time graph expansion to study reasoning behavior."
       ],
-      "evidence_signal": "Evaluated on 100 open-ended materials science and mechanics questions, where the method reportedly improved performance by 40-65% over base models and achieved about 2-3× greater semantic diversity.",
-      "watch_item": "The gains come from bounded semantic recombination, so stronger traceability does not guarantee domain correctness or eliminate the need for expert validation.",
+      "evidence_signal": "Evaluated on 100 open-ended materials science and mechanics questions, where Graph-PRefLexOR shows 40–65% gains over base models and about 2–3× greater semantic diversity.",
+      "watch_item": "Performance is reported on a relatively small benchmark, so broader generalization to other materials domains and real design pipelines still needs validation.",
       "hashtags": [
         "#MaterialsDiscovery",
-        "#GraphAI",
+        "#GraphNeuralNetworks",
         "#ReinforcementLearning",
         "#ScientificAI",
-        "#HypothesisGeneration"
+        "#Interpretability"
       ],
       "paper_id": "2026-07-01-arxiv-graph_native_reinforcement_learning_enables_traceable_scientific_hypothesis_generation_thr",
       "paper_title": "Graph-Native Reinforcement Learning Enables Traceable Scientific Hypothesis Generation through Conceptual Recombination",
       "paper_date": "2026-07-01",
       "paper_category": "Materials Discovery",
-      "generated_at": "2026-07-05T12:15:04",
+      "generated_at": "2026-07-04T12:06:15",
       "generator": "openai"
     }
   },
@@ -78,29 +78,29 @@
         "url": "https://arxiv.org/pdf/2606.30870v1"
       }
     ],
-    "score": 76,
+    "score": 81,
     "infographic": {
-      "key_insight": "An adaptive, foundation-model-assisted crystal structure prediction workflow can cut DFT labeling cost while maintaining accuracy and discovering new stable phases.",
-      "engineering_relevance": "This approach makes evolutionary crystal structure prediction more practical for complex multicomponent materials by efficiently focusing expensive quantum calculations on the most informative structures.",
+      "key_insight": "An adaptive, foundation-model-assisted crystal structure prediction workflow can cut DFT labeling effort while still finding stable phases in complex alloys.",
+      "engineering_relevance": "This approach makes high-throughput materials discovery more practical for multicomponent systems by reducing the cost of evolutionary CSP without sacrificing accuracy.",
       "method": [
-        "Start from a pretrained machine-learning interatomic potential (MLIP) to explore candidate crystal structures quickly.",
-        "Iteratively select compact, representative, and physically relevant subsets of structures for DFT labeling.",
-        "Fine-tune the MLIP self-consistently during evolutionary search to improve system-specific prediction quality."
+        "Start from a pretrained machine-learning interatomic potential.",
+        "Run evolutionary CSP to explore candidate crystal structures.",
+        "Iteratively select compact, representative structures for DFT labeling and fine-tune the model self-consistently."
       ],
-      "evidence_signal": "The workflow reproduces the known low-pressure convex hull for Ca-Fe-Ni and predicts Ca6FeNi as thermodynamically stable above 100 GPa.",
-      "watch_item": "Performance still depends on the quality of the pretrained potential and the selection strategy for which candidate structures are sent to DFT.",
+      "evidence_signal": "The workflow reproduces the known low-pressure convex hull for Ca--Fe--Ni and predicts a new stable compound, Ca6FeNi, above 100 GPa.",
+      "watch_item": "Performance depends on how well the adaptive selection captures physically relevant configurations; poor sampling could miss important phases.",
       "hashtags": [
+        "#MaterialsInformatics",
         "#CrystalStructurePrediction",
         "#MachineLearningPotentials",
-        "#MaterialsDiscovery",
-        "#DFT",
+        "#HighPressureMaterials",
         "#FoundationModels"
       ],
       "paper_id": "2026-06-29-arxiv-adaptive_fine_tuning_of_foundation_models_for_crystal_structure_prediction_discovery_of_hi",
       "paper_title": "Adaptive fine-tuning of foundation models for crystal structure prediction: Discovery of high-pressure phases in the CaFeNi system",
       "paper_date": "2026-06-29",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-07-05T12:15:06",
+      "generated_at": "2026-07-04T12:06:17",
       "generator": "openai"
     }
   },
@@ -130,29 +130,29 @@
         "url": "https://arxiv.org/pdf/2607.00926v1"
       }
     ],
-    "score": 74,
+    "score": 79,
     "infographic": {
-      "key_insight": "Human feedback can steer synthetic data generation so a meta-learning model better matches an unobserved target distribution and generalizes more reliably under distribution shift.",
-      "engineering_relevance": "For materials discovery and other high-stakes scientific settings with sparse target data, GMHF offers a practical human-in-the-loop path to build robust surrogate models and reduce deployment risk.",
+      "key_insight": "GMHF uses expert feedback to steer a generative model toward the target domain, improving meta-learning generalization under distribution shift.",
+      "engineering_relevance": "For materials discovery and other data-scarce engineering problems, this offers a practical way to inject domain knowledge into synthetic data generation when target data are unavailable or limited.",
       "method": [
-        "Uses a theoretical generalization-error analysis to link performance to divergence between generated and target distributions.",
-        "Combines a Conditional Neural ODE as a generative digital twin with a reinforcement learning agent.",
-        "Iteratively updates latent physical parameters using expert feedback to align synthetic trajectories with human beliefs about target physics."
+        "Conditional Neural ODE acts as a generative digital twin for producing candidate target-like trajectories.",
+        "A reinforcement learning agent updates latent physical parameters using human feedback.",
+        "Theory links better alignment between generated data and human beliefs to lower generalization risk."
       ],
-      "evidence_signal": "On a nonlinear Duffing oscillator, the method lowers deployment loss as expert reliability increases, and divergence between generated and target data decreases under reliable feedback; results also extend to a non-dynamical probabilistic model.",
-      "watch_item": "Performance depends on the quality and reliability of expert feedback, so noisy or inconsistent human input could limit gains and complicate deployment.",
+      "evidence_signal": "On a nonlinear Duffing oscillator, stronger expert reliability reduced deployment loss and decreased divergence between generated and target data; a probabilistic model test showed the approach is not limited to ODE systems.",
+      "watch_item": "Performance depends on the quality and reliability of human feedback, so noisy or biased expert input could steer generation in the wrong direction.",
       "hashtags": [
-        "#GenerativeMetaLearning",
-        "#HumanInTheLoopAI",
-        "#MaterialsDiscovery",
+        "#MetaLearning",
+        "#HumanInTheLoop",
+        "#GenerativeModeling",
         "#DistributionShift",
-        "#ReinforcementLearning"
+        "#MaterialsDiscovery"
       ],
       "paper_id": "2026-07-01-arxiv-human_machine_collaboration_on_generative_meta_learning_model_and_algorithm",
       "paper_title": "Human-Machine Collaboration on Generative Meta-Learning: Model and Algorithm",
       "paper_date": "2026-07-01",
       "paper_category": "Materials Discovery",
-      "generated_at": "2026-07-05T12:15:09",
+      "generated_at": "2026-07-04T12:06:20",
       "generator": "openai"
     }
   },
@@ -181,29 +181,29 @@
         "url": "https://arxiv.org/pdf/2606.29919v1"
       }
     ],
-    "score": 69,
+    "score": 74,
     "infographic": {
-      "key_insight": "HotRelax predicts relaxed crystal structures in a single forward pass, removing iterative optimization and the need for DFT force labels.",
-      "engineering_relevance": "This could substantially speed up high-throughput materials screening by making structure relaxation faster, simpler, and more scalable.",
+      "key_insight": "HotRelax predicts fully relaxed atomic structures in a single forward pass, replacing iterative optimization with an end-to-end high-order tensor neural network.",
+      "engineering_relevance": "This can greatly speed up high-throughput materials screening and catalytic workflow pipelines by reducing the cost and complexity of structure relaxation.",
       "method": [
-        "High-order tensor message-passing neural network",
-        "Trained on paired unrelaxed and relaxed structures",
-        "One-shot, end-to-end relaxation without post-processing"
+        "Trains on paired unrelaxed and relaxed structures, not DFT force labels.",
+        "Uses high-order tensor message passing to model structural changes.",
+        "Outputs a relaxed structure directly, with no iterative inference or post-processing."
       ],
-      "evidence_signal": "The model was evaluated on five diverse datasets spanning bulk crystals, layered materials, and catalysts, and showed lower errors than several state-of-the-art end-to-end relaxation baselines.",
-      "watch_item": "Performance should still be validated across new chemistries and edge-case structures where training coverage may be limited.",
+      "evidence_signal": "The model was evaluated on five diverse datasets covering 3D bulk crystals, 2D layered materials, and catalysts, and showed strong benchmark performance with low prediction errors and energetically close relaxed structures.",
+      "watch_item": "As a one-shot relaxation model, performance may depend on how well the training distribution matches the target chemistry and structure classes.",
       "hashtags": [
         "#MaterialsDiscovery",
-        "#MachineLearning",
+        "#MachineLearningPotentials",
         "#StructureRelaxation",
-        "#NeuralNetworks",
-        "#ComputationalChemistry"
+        "#GraphNeuralNetworks",
+        "#HighThroughputScreening"
       ],
       "paper_id": "2026-06-29-arxiv-high_order_tensor_neural_network_for_iteration_free_structure_relaxation",
       "paper_title": "High-order tensor neural network for iteration-free structure relaxation",
       "paper_date": "2026-06-29",
       "paper_category": "Materials Discovery",
-      "generated_at": "2026-07-05T12:15:11",
+      "generated_at": "2026-07-04T12:06:22",
       "generator": "openai"
     }
   },
@@ -234,29 +234,29 @@
         "url": "https://arxiv.org/pdf/2607.02219v1"
       }
     ],
-    "score": 67,
+    "score": 72,
     "infographic": {
-      "key_insight": "The paper turns alloy short-range-order design into a differentiable optimization problem, enabling direct gradient-based search from target SRO to target mechanical property.",
-      "engineering_relevance": "This gives materials engineers a faster, scalable way to design high-entropy alloys with desired stiffness while preserving thermodynamic realism.",
+      "key_insight": "The paper turns short-range-order alloy design into a differentiable optimization problem, enabling direct inverse design from target SRO to target mechanical property.",
+      "engineering_relevance": "This provides a faster, scalable route for designing multi-principal-element alloys with prescribed stiffness while keeping the generated structures physically realistic.",
       "method": [
-        "Treats atomic occupancies as continuous variables so gradient descent can replace random-swap reverse Monte Carlo.",
-        "Adds a physics-based correction term to keep generated structures realistic across multi-element alloys.",
-        "Uses a small neural network to map composition and SRO statistics to mechanical properties, closing the design loop."
+        "Replace random-swap reverse Monte Carlo with gradient descent on continuous atom occupancies.",
+        "Add a physics-based correction term to preserve thermodynamic realism for multi-element alloys.",
+        "Use a small neural network to map composition and SRO statistics to mechanical properties, closing the design loop."
       ],
-      "evidence_signal": "Across nine FCC and BCC alloys, the workflow captured SRO-driven stiffness shifts from -20% to +57%, scaled better than random-swap search, and matched three of four Co-Cr-Ni target stiffness values within 6%.",
-      "watch_item": "The approach depends on sufficiently large supercells; the abstract warns that 108-atom cells can give misleading trends and suggests at least 864 atoms for reliable direction and magnitude.",
+      "evidence_signal": "Across nine FCC and BCC alloys, the method reproduced SRO-driven stiffness shifts from -20% to +57%, was 6x faster and 8x more accurate on 4000-atom systems, and matched 3 of 4 Co-Cr-Ni target stiffness values within 6%.",
+      "watch_item": "The approach depends on sufficiently large simulation cells for reliable SRO/property trends; the paper notes that 108-atom cells can mispredict results and at least 864 atoms are needed for accurate direction and magnitude.",
       "hashtags": [
         "#MaterialsDiscovery",
         "#HighEntropyAlloys",
         "#InverseDesign",
-        "#ShortRangeOrder",
-        "#DifferentiableOptimization"
+        "#DifferentiableOptimization",
+        "#ShortRangeOrder"
       ],
       "paper_id": "2026-07-02-arxiv-differentiable_inverse_design_of_short_range_order_in_high_entropy_alloys_from_target_sro",
       "paper_title": "Differentiable inverse design of short-range order in high-entropy alloys: from target sro to target property",
       "paper_date": "2026-07-02",
       "paper_category": "Materials Discovery",
-      "generated_at": "2026-07-05T12:15:13",
+      "generated_at": "2026-07-04T12:06:24",
       "generator": "openai"
     }
   },
@@ -285,29 +285,29 @@
         "url": "https://arxiv.org/pdf/2607.02012v1"
       }
     ],
-    "score": 66,
+    "score": 71,
     "infographic": {
-      "key_insight": "Transition-metal substitution turns Ga2O2 from a weak gas adsorber into a tunable platform for selective room-temperature sensing or permanent toxic-gas scavenging.",
-      "engineering_relevance": "These doped monolayers could enable low-power atmospheric sensors and reusable detoxification materials for industrial and environmental monitoring.",
+      "key_insight": "Transition-metal substitution turns a weakly sensing Ga2O2 monolayer into a tunable platform for room-temperature gas detection or permanent toxic-gas scavenging.",
+      "engineering_relevance": "This offers a scalable design route for atmospheric monitoring and environmental detoxification using atomically engineered 2D materials.",
       "method": [
-        "First-principles DFT screening of seven TM substitutions: Pd, Zn, Zr, Mo, Ag, Ti, and Pt",
-        "Stability checks using formation/binding energies, lattice distortion analysis, and molecular dynamics simulations",
-        "Adsorption and selectivity evaluation against eight toxic industrial gases and three environmental gases"
+        "Performed first-principles DFT calculations on Ga2O2 monolayers substituted with Pd, Zn, Zr, Mo, Ag, Ti, and Pt.",
+        "Checked structural stability using formation/binding energies, lattice distortion, and molecular dynamics.",
+        "Evaluated adsorption and electronic response against eight toxic industrial gases and three environmental gases."
       ],
-      "evidence_signal": "The abstract reports negative formation and binding energies, minimal structural distortion, and up to eight-order-of-magnitude conductivity enhancement for Ag-substituted Ga2O2 when exposed to NO.",
-      "watch_item": "Selectivity and capture performance are computational predictions, so experimental synthesis, defect control, and ambient-condition validation will be critical before deployment.",
+      "evidence_signal": "Across the tested gases, the substituted monolayers showed strong selectivity and performance shifts, including up to an eight-order-of-magnitude conductivity enhancement for Ag-substituted Ga2O2 with NO adsorption.",
+      "watch_item": "The conclusions are computational and depend on idealized adsorption conditions, so real-device performance may change with defects, humidity, and competing ambient gases.",
       "hashtags": [
         "#DFT",
         "#GasSensing",
-        "#TransitionMetalDoping",
         "#2DMaterials",
-        "#EnvironmentalDetoxification"
+        "#ToxicGasCapture",
+        "#MaterialsDesign"
       ],
       "paper_id": "2026-07-02-arxiv-transition_metal_tailored_ga_2_o_2_monolayer_from_room_temperature_gas_sensing_to_chemical",
       "paper_title": "Transition-Metal Tailored $Ga_{2}O_{2}$ Monolayer: From Room-Temperature Gas Sensing to Chemical Scavenging",
       "paper_date": "2026-07-02",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-07-05T12:15:16",
+      "generated_at": "2026-07-04T12:06:26",
       "generator": "openai"
     }
   },
@@ -336,29 +336,29 @@
         "url": "https://arxiv.org/pdf/2607.01997v1"
       }
     ],
-    "score": 66,
+    "score": 71,
     "infographic": {
-      "key_insight": "HVAF spraying can produce thick NiTi coatings that retain martensitic transformation and functional shape-memory behavior after annealing, despite a heterogeneous microstructure.",
-      "engineering_relevance": "This enables durable NiTi surface coatings for smart actuation and functional protection on engineering components, offering an alternative to brittle ceramic coatings.",
+      "key_insight": "HVAF spraying can produce thick NiTi coatings that retain martensitic transformation and functional shape-memory behavior after annealing, despite microstructural defects.",
+      "engineering_relevance": "This offers a practical route to wear- and damage-resistant smart coatings for components that need both surface protection and thermomechanical actuation.",
       "method": [
-        "High velocity air fuel (HVAF) thermal spray of NiTi onto mild steel",
-        "Four processing-parameter sets to tune coating quality",
-        "Post-processing evaluation of composition, porosity, microstructure, phase transformation, and thermomechanical response"
+        "HVAF thermal spraying of NiTi onto mild steel using four processing parameter sets",
+        "Characterization of composition, porosity, microstructure, and phase transformation behavior",
+        "Post-spray annealing followed by bending, nanoindentation, and scratch-based functional tests"
       ],
-      "evidence_signal": "The coatings were assessed by microstructural and phase-characterization tests plus functional checks including cooling-induced transformation, 3-point bending thermal actuation, nanoindentation, and scratch-based shape-memory response.",
-      "watch_item": "As-sprayed coatings require annealing, and their inhomogeneity, oxides, voids, and limited tensile strength may constrain reliability and scalability.",
+      "evidence_signal": "The coatings were evaluated by composition and microstructure analysis, phase-transformation measurements, and functional tests showing thermal actuation and shape-memory response.",
+      "watch_item": "As-sprayed coatings are highly defective and need annealing; tensile strength remains limited, so processing control and substrate adhesion must be managed carefully.",
       "hashtags": [
         "#NiTi",
         "#ShapeMemoryAlloy",
+        "#HVAFSpraying",
         "#ThermalSpray",
-        "#HVAF",
         "#SmartCoatings"
       ],
       "paper_id": "2026-07-02-arxiv-hvaf_spraying_of_niti_coatings_microstructure_phase_transformation_and_shape_memory_behavi",
       "paper_title": "HVAF Spraying of NiTi Coatings: Microstructure, Phase Transformation and Shape Memory Behavior",
       "paper_date": "2026-07-02",
       "paper_category": "Microstructure",
-      "generated_at": "2026-07-05T12:15:18",
+      "generated_at": "2026-07-04T12:06:29",
       "generator": "openai"
     }
   },
@@ -387,29 +387,29 @@
         "url": "https://arxiv.org/pdf/2607.01004v1"
       }
     ],
-    "score": 63,
+    "score": 68,
     "infographic": {
-      "key_insight": "An ML-enhanced multi-minima iterative genetic algorithm can discover both ground-state and metastable crystal structures without relying on existing structural databases.",
-      "engineering_relevance": "This enables more reliable inverse design of complex materials, especially when the target phase sits in a rugged energy landscape with strong chemical incompatibilities.",
+      "key_insight": "An ML-enhanced multi-minima iterative genetic algorithm can discover truly novel crystal structures by exploring complex energy landscapes beyond database-trained methods.",
+      "engineering_relevance": "This enables more reliable prediction of stable and metastable phases for designing new quantum and magnetic materials from composition alone.",
       "method": [
-        "Combine an ANN-based interatomic potential with a genetic algorithm search.",
-        "Use an iterative penalty scheme inspired by metadynamics to avoid revisiting previously found minima.",
-        "Map both global minima and competing metastable phases for a given composition."
+        "Combines an ANN-based interatomic potential with an iterative genetic algorithm.",
+        "Adds a metadynamics-inspired penalty to avoid revisiting known minima and promote broader structure search.",
+        "Targets both global minima and competing metastable phases in complex ternary systems."
       ],
-      "evidence_signal": "On the La-Co-Pb system, the method predicted the Pbam ground state of La4Co4Pb and exactly matched the independently XRD-determined orthorhombic structure of La5CoPb2 using only composition information.",
-      "watch_item": "Performance may depend on the quality and transferability of the ANN potential, so difficult chemistries or sparse training data could still limit reliability.",
+      "evidence_signal": "The method correctly predicted the Pbam ground-state structure of La4Co4Pb and the orthorhombic structure of La5CoPb2, matching independent x-ray diffraction results.",
+      "watch_item": "Performance may depend on the quality of the ML potential and the ability of the search strategy to sufficiently cover very rugged, high-dimensional composition spaces.",
       "hashtags": [
         "#MaterialsDiscovery",
         "#CrystalStructurePrediction",
-        "#MachineLearning",
         "#GeneticAlgorithm",
-        "#ComputationalMaterials"
+        "#MachineLearning",
+        "#ComputationalMaterialsScience"
       ],
       "paper_id": "2026-07-01-arxiv-complex_crystal_structure_prediction_using_ml_enhanced_multi_minima_iterative_genetic_algo",
       "paper_title": "Complex crystal structure prediction using ML-enhanced multi-minima iterative genetic algorithm",
       "paper_date": "2026-07-01",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-07-05T12:15:20",
+      "generated_at": "2026-07-04T12:06:31",
       "generator": "openai"
     }
   },
@@ -438,29 +438,29 @@
         "url": "https://arxiv.org/pdf/2607.00540v1"
       }
     ],
-    "score": 62,
+    "score": 67,
     "infographic": {
-      "key_insight": "A general-purpose atomic cluster expansion (ACE) potential can model niobium with near-DFT accuracy across diverse crystal defects, phonons, high-pressure states, and fracture scenarios.",
-      "engineering_relevance": "This enables fast, large-scale atomistic simulation of niobium for structural reliability and extreme-environment design without relying on full DFT calculations.",
+      "key_insight": "A general-purpose ACE interatomic potential can capture niobium’s diverse atomic environments with near-DFT accuracy while remaining efficient enough for large-scale simulation.",
+      "engineering_relevance": "This enables more reliable prediction of niobium behavior for defects, phonons, high-pressure response, dislocation motion, and fracture in computational materials design.",
       "method": [
-        "Trained an ACE interatomic potential on thousands of DFT structures covering many local atomic environments.",
-        "Validated the model against phonons, high-pressure behavior, dislocation glide barriers, and fracture.",
-        "Compared performance with empirical and machine-learning potentials, including a new universal ML model."
+        "Trained an atomic cluster expansion (ACE) potential on thousands of DFT-generated niobium structures.",
+        "Covered a wide range of local environments to improve transferability and robustness.",
+        "Benchmarked against empirical and ML potentials across multiple target properties, including a near-million-atom fracture simulation."
       ],
-      "evidence_signal": "The abstract reports training on thousands of DFT configurations and testing the ACE in a near-million-atom molecular dynamics fracture simulation.",
-      "watch_item": "Despite strong transferability, the potential still requires careful validation outside the niobium environments represented in the training set.",
+      "evidence_signal": "The model was validated on thousands of DFT structures and tested across phonons, high-pressure behavior, dislocation-glide barriers, and a near-million-atom molecular dynamics fracture case.",
+      "watch_item": "Transferability still depends on whether new simulations stay within the diverse but finite DFT training domain; extrapolation to unseen defect chemistries or extreme conditions should be checked carefully.",
       "hashtags": [
         "#AtomicClusterExpansion",
-        "#InteratomicPotentials",
+        "#InteratomicPotential",
         "#Niobium",
-        "#MolecularDynamics",
-        "#MaterialsInformatics"
+        "#MaterialsSimulation",
+        "#MachineLearningForMaterials"
       ],
       "paper_id": "2026-07-01-arxiv-a_general_purpose_atomic_cluster_expansion_interatomic_potential_for_niobium",
       "paper_title": "A general-purpose atomic cluster expansion interatomic potential for niobium",
       "paper_date": "2026-07-01",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-07-05T12:15:23",
+      "generated_at": "2026-07-04T12:06:33",
       "generator": "openai"
     }
   },
@@ -491,29 +491,29 @@
         "url": "https://arxiv.org/pdf/2607.02329v1"
       }
     ],
-    "score": 59,
+    "score": 64,
     "infographic": {
-      "key_insight": "The paper shows that autonomous LLM research can be made reliable in frontier physics by grounding every stage in literature, reproduction, and adversarial review rather than relying on internal priors.",
-      "engineering_relevance": "It proposes a fault-tolerant multi-session pipeline that can move from literature mining to validated first-principles computation and manuscript drafting, suggesting a template for high-stakes scientific automation.",
+      "key_insight": "A fault-tolerant, literature-grounded LLM pipeline can autonomously move from a large physics corpus to a publishable manuscript while avoiding ungrounded hallucinations by forcing calibration against reproduced references and shared on-disk state across fresh sessions.",
+      "engineering_relevance": "This suggests a scalable architecture for high-stakes scientific automation: isolate sessions, anchor reasoning to external literature, and insert checkpointed reproduction steps to keep autonomous discovery numerically and scientifically grounded.",
       "method": [
-        "Mapped 11,083 recent condensed-matter arXiv papers to identify a research direction.",
-        "Used fresh-context sessions with on-disk shared state, plus literature reproduction checkpoints to calibrate methodology.",
-        "Ran novel first-principles computations and adversarial reviews before writing the manuscript."
+        "Map a corpus of 11,083 recent condensed-matter arXiv papers to identify a research direction.",
+        "Use 47 fresh-context sessions in six phases with shared on-disk state and 2,162 literature-consultation events.",
+        "Ground the pipeline through reproduction checkpoints, first-principles computations, and adversarial review."
       ],
-      "evidence_signal": "The abstract reports 47 fresh-context sessions, 2,162 literature-consultation events, and three substantive physics findings, with paired ablations used to isolate the role of calibration checkpoints.",
-      "watch_item": "The approach still depends on reproduction access, curated literature anchors, and bounded human intervention when calibration failures occur, so robustness may vary across domains.",
+      "evidence_signal": "The abstract reports three substantive physics findings, six-phase execution across 47 sessions, and 2,162 literature-consultation events as evidence of end-to-end autonomous but grounded research.",
+      "watch_item": "The approach still depends on bounded human intervention when reproduction fails, so real-world deployment needs robust failure detection and explicit oversight at calibration checkpoints.",
       "hashtags": [
-        "#AutonomousResearch",
-        "#LLM4Science",
+        "#AIAutonomy",
         "#ComputationalPhysics",
+        "#LLMAgents",
         "#GroundedAI",
-        "#FaultTolerance"
+        "#ScientificWorkflow"
       ],
       "paper_id": "2026-07-02-arxiv-grounded_autonomous_research_a_fault_tolerant_llm_pipeline_from_corpus_to_manuscript_in_fr",
       "paper_title": "Grounded autonomous research: a fault-tolerant LLM pipeline from corpus to manuscript in frontier computational physics",
       "paper_date": "2026-07-02",
       "paper_category": "Microstructure",
-      "generated_at": "2026-07-05T12:15:25",
+      "generated_at": "2026-07-04T12:06:36",
       "generator": "openai"
     }
   },
@@ -546,29 +546,29 @@
         "url": "https://arxiv.org/pdf/2606.30170v1"
       }
     ],
-    "score": 59,
+    "score": 64,
     "infographic": {
-      "key_insight": "The paper introduces the Nanotechnology Molecular Optimization (NMO) Benchmark, replacing drug-style proxy objectives with quantum-simulation-based tasks that better test and enable molecular discovery for nanotechnology.",
-      "engineering_relevance": "NMO provides a more realistic optimization target for materials engineers by enforcing physical structural constraints and rewarding molecules that can translate into scientifically meaningful nanomaterial candidates.",
+      "key_insight": "The NMO Benchmark replaces drug-like proxy goals with quantum-simulation-based nanotechnology targets, exposing that simple, scientifically grounded methods can outperform popular generative optimization systems.",
+      "engineering_relevance": "For materials discovery, NMO provides a more realistic evaluation and optimization framework for designing molecules with nanotechnology-relevant properties rather than benchmark-specific drug metrics.",
       "method": [
-        "Quantum-simulation oracles define the optimization tasks instead of proxy property predictors.",
-        "A new molecular representation encodes hard structural constraints explicitly.",
-        "A domain-agnostic pretraining strategy reduces bias from pharmaceutical datasets."
+        "Built a benchmark suite with quantum simulations as the oracle instead of proxy property predictors",
+        "Added strict protocols and hard structural constraints to prioritize scientific utility over leaderboard overfitting",
+        "Introduced a new baseline using structural-constraint-aware representations plus domain-agnostic pretraining to reduce pharmaceutical dataset bias"
       ],
-      "evidence_signal": "The authors evaluate on physics-based NMO tasks with rugged fitness landscapes and report that their new baseline outperforms advanced molecular optimization methods, achieving better physical properties and revealing new structural motifs.",
-      "watch_item": "Because the benchmark uses strict physics-based constraints and difficult landscapes, methods tuned for standard drug-discovery benchmarks may fail without careful adaptation to the domain.",
+      "evidence_signal": "Across the NMO tasks, advanced molecular optimization methods underperformed simpler approaches, while the new baseline surpassed state-of-the-art physical-property results and uncovered previously unknown structural motifs.",
+      "watch_item": "Because the tasks are physics-based with rugged landscapes and strict constraints, performance may depend heavily on accurate simulation setup and careful representation of structural feasibility.",
       "hashtags": [
         "#MaterialsDiscovery",
-        "#MolecularOptimization",
         "#Nanotechnology",
+        "#MolecularOptimization",
         "#QuantumSimulation",
-        "#Benchmarking"
+        "#AIforScience"
       ],
       "paper_id": "2026-06-29-arxiv-beyond_drug_discovery_the_nanotechnology_molecular_optimization_nmo_benchmark",
       "paper_title": "Beyond Drug Discovery: The Nanotechnology Molecular Optimization (NMO) Benchmark",
       "paper_date": "2026-06-29",
       "paper_category": "Materials Discovery",
-      "generated_at": "2026-07-05T12:15:28",
+      "generated_at": "2026-07-04T12:06:38",
       "generator": "openai"
     }
   },
@@ -598,29 +598,29 @@
         "url": "https://arxiv.org/pdf/2606.29556v1"
       }
     ],
-    "score": 59,
+    "score": 64,
     "infographic": {
-      "key_insight": "Persona-Trained Monte Carlo (PTMC) estimates market-outcome distributions by simulating many interacting trading bots conditioned on diverse persona parameters, so uncertainty comes from heterogeneous agents rather than price alone.",
-      "engineering_relevance": "The framework offers a modular way to study microstructure, stress scenarios, and systemic risk with synthetic market experiments when real-world testing is impractical.",
+      "key_insight": "Persona-Trained Monte Carlo estimates market-outcome distributions by simulating many persona-conditioned trading bots interacting in a limit order book, turning each swarm run into one Monte Carlo sample.",
+      "engineering_relevance": "The framework offers a way to stress-test market mechanisms, risk, and policy responses using controllable agent heterogeneity rather than relying only on classical price-path simulation.",
       "method": [
-        "Train one neural trading policy and condition it on sampled persona attributes.",
-        "Run swarms of persona-conditioned bots in a continuous double auction to generate one market trajectory per simulation.",
-        "Repeat across independent persona draws to estimate target outcome distributions and compare against baselines."
+        "Train one neural policy shared across bots, conditioned on sampled persona parameters.",
+        "Run swarms in a continuous double auction to generate one outcome sample per simulation.",
+        "Repeat over independent persona draws to build an ensemble estimate of target market statistics."
       ],
-      "evidence_signal": "The abstract reports a proposed, formalized estimator with a four-level validation roadmap, but no implementation or empirical results are presented.",
-      "watch_item": "Because PTMC is not yet implemented, its realism depends heavily on how well the learned persona distribution, policy training, and validation benchmarks match actual market behavior.",
+      "evidence_signal": "The abstract describes a proposed, not yet implemented, framework and validation roadmap rather than reporting empirical results.",
+      "watch_item": "Because the method depends on learned persona distributions, training quality and calibration of heterogeneous agent behavior will strongly affect validity.",
       "hashtags": [
         "#MonteCarlo",
         "#AgentBasedModeling",
-        "#MarketMicrostructure",
+        "#LimitOrderBook",
         "#ReinforcementLearning",
-        "#SystemicRisk"
+        "#MarketMicrostructure"
       ],
       "paper_id": "2026-06-28-arxiv-persona_trained_monte_carlo_estimating_market_outcome_distributions_via_swarms_of_persona",
       "paper_title": "Persona-Trained Monte Carlo: Estimating Market-Outcome Distributions via Swarms of Persona-Conditioned Neural Policy Bots in a Limit Order Book",
       "paper_date": "2026-06-28",
       "paper_category": "Materials Discovery",
-      "generated_at": "2026-07-05T12:15:30",
+      "generated_at": "2026-07-04T12:06:40",
       "generator": "openai"
     }
   },
@@ -649,29 +649,29 @@
         "url": "https://arxiv.org/pdf/2607.00906v1"
       }
     ],
-    "score": 58,
+    "score": 63,
     "infographic": {
-      "key_insight": "A stepped semi-coherent Cr-rich BCC/Ni-rich FCC eutectic interface with Ni segregation enables strain-gradient-driven dislocation activity, twinning, and interfacial shear, producing strong but ductile plastic co-deformation.",
-      "engineering_relevance": "Designing ultrafine eutectic microstructures with controlled interlamellar spacing and interface chemistry could improve strength-ductility balance in additively manufactured structural alloys.",
+      "key_insight": "A stepped semi-coherent Cr/Ni eutectic interface with nanoscale Ni segregation enables strain-gradient-driven dislocation activity, twinning, and interfacial shear so the hard BCC phase can plastically co-deform with the FCC phase instead of cracking.",
+      "engineering_relevance": "Designing ultrafine eutectic microstructures with controlled interlamellar spacing and interface chemistry could yield high-strength metals that retain usable ductility under loading.",
       "method": [
-        "Atomic-resolution STEM/HR-STEM to map interface structure, orientation relationship, and local chemistry",
-        "In situ micro-compression and micro-tension testing in SEM to observe deformation and failure modes",
-        "Atomistic modeling to probe how interface structure/chemistry affects slip activation"
+        "Electron-beam powder bed fusion to create a lamellar Cr-rich BCC / Ni-rich FCC eutectic (~450 nm spacing)",
+        "Atomic-resolution STEM / HR-STEM to resolve interface structure, Kurdjumov-Sachs orientation, and local Ni enrichment",
+        "In situ SEM micro-compression and tension plus correlative TEM to track deformation mechanisms"
       ],
-      "evidence_signal": "The abstract reports large plastic strains at high flow stress without cracking, with correlative microscopy showing a sequence of dislocation accumulation, twinning, interfacial shear, and later BCC dislocation activity.",
-      "watch_item": "The mechanism is demonstrated on a specific additively manufactured Cr-Ni eutectic with ~450 nm spacing, so performance may depend strongly on processing window and interface stability.",
+      "evidence_signal": "The abstract reports stable high flow stress with large plastic strains and no cracking in in situ tests, supporting interface-mediated co-deformation.",
+      "watch_item": "The mechanism is demonstrated for one ultrafine eutectic alloy system, so broader applicability will depend on whether similar interface structures and chemistry can be reproducibly engineered in other materials.",
       "hashtags": [
+        "#MaterialsScience",
         "#Microstructure",
-        "#AdditiveManufacturing",
-        "#DislocationPlasticity",
-        "#EutecticAlloy",
-        "#MaterialsDesign"
+        "#Plasticity",
+        "#ElectronBeamAdditiveManufacturing",
+        "#Nanomechanics"
       ],
       "paper_id": "2026-07-01-arxiv-strengthening_and_interface_mediated_plastic_co_deformation_in_an_ultrafine_cr_ni_eutectic",
       "paper_title": "Strengthening and interface-mediated plastic co-deformation in an ultrafine Cr-Ni eutectic: A nanomechanical investigation",
       "paper_date": "2026-07-01",
       "paper_category": "Microstructure",
-      "generated_at": "2026-07-05T12:15:32",
+      "generated_at": "2026-07-04T12:06:43",
       "generator": "openai"
     }
   },
@@ -700,20 +700,20 @@
         "url": "https://arxiv.org/pdf/2607.00717v1"
       }
     ],
-    "score": 58,
+    "score": 63,
     "infographic": {
-      "key_insight": "Atomic cluster expansion (ACE) potentials can bring screw-dislocation predictions in bcc refractory metals much closer to DFT, but transferability depends strongly on what data are included and on the specific element.",
-      "engineering_relevance": "More accurate dislocation models can improve prediction of flow stress and plasticity in high-temperature refractory metals used in extreme environments.",
+      "key_insight": "Atomic Cluster Expansion (ACE) potentials can capture screw-dislocation physics in bcc refractory metals far better than prior interatomic and many ML potentials, with near-DFT performance for Mo and W.",
+      "engineering_relevance": "These improved potentials enable more reliable prediction of flow stress, glide behavior, and kink-pair energetics for refractory-metal design under high-temperature and high-stress conditions.",
       "method": [
-        "Extended an existing DFT database for V, Nb, Ta, Mo, and W",
-        "Trained a set of ACE interatomic potentials",
-        "Benchmarked Peierls barriers, glide planes, and kink-pair activation enthalpies against DFT and analytic models"
+        "Extended an existing DFT training database to build ACE potentials for V, Nb, Ta, Mo, and W.",
+        "Benchmarked the models against screw-dislocation properties, especially Peierls barriers and glide planes.",
+        "Evaluated kink-pair activation enthalpies using Kocks' law and a line-tension model for Nb, Mo, and W."
       ],
-      "evidence_signal": "The ACE models achieve near-DFT accuracy for Mo and W and substantial improvements for V, Nb, and Ta, including reliable kink-pair enthalpies for Nb, Mo, and W.",
-      "watch_item": "A single-humped Peierls barrier is not enough to validate dislocation glide accuracy, so database composition and broader defect benchmarking remain critical.",
+      "evidence_signal": "The abstract reports substantial improvements over classical and some machine-learning potentials, with near-DFT screw-dislocation accuracy for Mo and W and improved predictions for V, Nb, and Ta.",
+      "watch_item": "A single-humped Peierls barrier is not sufficient to validate dislocation transferability; database composition and element-specific energetics remain critical.",
       "hashtags": [
         "#AtomisticModeling",
-        "#ACEpotentials",
+        "#AtomicClusterExpansion",
         "#Dislocations",
         "#BCCMetals",
         "#MaterialsInformatics"
@@ -722,7 +722,7 @@
       "paper_title": "Atomic Cluster Expansion Potentials for Screw Dislocations in BCC Refractory Metals",
       "paper_date": "2026-07-01",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-07-05T12:15:35",
+      "generated_at": "2026-07-04T12:06:46",
       "generator": "openai"
     }
   },
@@ -753,29 +753,81 @@
         "url": "https://arxiv.org/pdf/2606.29717v1"
       }
     ],
-    "score": 58,
+    "score": 63,
     "infographic": {
-      "key_insight": "An autonomous LLM coding agent improved a crystal graph network for band-gap prediction and achieved the best no-pretraining result on MatBench by combining known modeling ideas in a new implementation.",
-      "engineering_relevance": "This suggests LLM-driven research loops can accelerate materials-model optimization for property prediction, helping engineers rapidly refine structure-to-property predictors on standard benchmarks.",
+      "key_insight": "An autonomous LLM coding agent improved a crystal graph neural network for band-gap prediction by recombining known techniques into a stronger model.",
+      "engineering_relevance": "This shows LLM agents can help optimize materials-property predictors on standard benchmarks, accelerating model iteration for computational materials discovery.",
       "method": [
-        "Built an expert-designed crystal graph network for band-gap prediction.",
+        "Used a general-purpose coding agent to design and refine a crystal graph network.",
         "Added element-pair features on message-passing edges.",
-        "Included a crystal space-group embedding and other borrowed ML improvements."
+        "Incorporated a crystal space-group embedding and other known ML methods."
       ],
-      "evidence_signal": "On the MatBench band-gap benchmark with more than 100k crystals, the agent-produced model outperformed all 17 reported expert-designed models while training without external pretraining.",
-      "watch_item": "The gains appear to come from integrating known techniques rather than discovering fundamentally new methods, so transferability and novelty should be interpreted cautiously.",
+      "evidence_signal": "On the MatBench band-gap benchmark with more than 100k crystals, the agent-produced model trained without external pretraining outperformed all seventeen expert-designed baselines reported for the task.",
+      "watch_item": "The gain came from implementing established ideas rather than discovering fundamentally new physics-aware architectures, so autonomous search may optimize existing designs more than create novel ones.",
       "hashtags": [
         "#MaterialsInformatics",
         "#CrystalGraphs",
-        "#BandGapPrediction",
+        "#MachineLearning",
         "#LLMAgents",
-        "#ComputationalScience"
+        "#BandGapPrediction"
       ],
       "paper_id": "2026-06-29-arxiv-optimizing_expert_designed_crystal_graph_networks_for_band_gap_prediction_with_an_autonomo",
       "paper_title": "Optimizing Expert-Designed Crystal Graph Networks for Band-Gap Prediction with an Autonomous LLM Research Loop",
       "paper_date": "2026-06-29",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-07-05T12:15:37",
+      "generated_at": "2026-07-04T12:06:49",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-27-arxiv-on_surrogate_modeling_of_static_response_of_am_short_fiber_thermoplastics_using_graph_neur",
+    "arxiv_id": "2606.28996v1",
+    "date": "2026-06-27",
+    "title": "On Surrogate Modeling of Static Response of AM Short-Fiber Thermoplastics Using Graph Neural Networks",
+    "authors": "Pharindra Pathak, Vipin Kumar, Trenton M. Ricks, Suhasini Gururaja, Siddhartha Srivastava",
+    "abstract": "Short-fiber thermoplastic (SFT) composites are increasingly employed in lightweight aerospace and automotive structures owing to their favorable strength-to-weight ratio, high production rates, and recyclability. Unlike continuous-fiber systems, the mechanical response of SFTs is governed by mesoscale interactions among fiber orientation, spatial clustering, and manufacturing-induced porosity. These features exhibit significant spatial variability in manufactured components and influence stiffness, damage initiation, and nonlinear deformation. Although mesoscale finite element (FE) models can resolve such heterogeneity, their application to realistic three-dimensional microstructures remains computationally intractable. A data-driven surrogate framework is proposed to predict the mechanical behavior of additively manufactured, compression-molded (AM-CM) SFTs. Microstructures reconstructed from micro-computed tomography data were discretized into Voronoi-based cells representing distinct fiber-interaction neighborhoods. Each cell was homogenized via nonlinear FE simulations incorporating matrix damage, and the resulting stress-strain responses trained a hybrid Graph Neural Network-Long Short-Term Memory (GNN-LSTM) architecture encoding microstructural topology and history-dependent mechanical evolution. The surrogate accurately predicts stiffness and stress-strain behavior of unseen microstructures, achieving $R^2\\approx 0.98$ relative to high-fidelity FE simulations with over two orders-of-magnitude reduction in computational cost. Coupling the framework with experimentally calibrated damage laws demonstrates that fiber orientation, clustering, and porosity collectively govern local effective stiffness. The approach provides a physics-informed, data-efficient pathway to identify mechanically weak microstructural cells and accelerate digital-twin development for SFT components.",
+    "category": "Polymers and Composites",
+    "source": "arXiv",
+    "published": "2026-06-27T16:18:48Z",
+    "updated": "2026-06-27T16:18:48Z",
+    "primary_category": "cs.LG",
+    "categories": [
+      "cs.LG",
+      "cond-mat.mtrl-sci"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2606.28996v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2606.28996v1"
+      }
+    ],
+    "score": 63,
+    "infographic": {
+      "key_insight": "A graph neural network with LSTM memory can learn the static mechanical response of additively manufactured short-fiber thermoplastics directly from reconstructed microstructure topology.",
+      "engineering_relevance": "This offers a fast surrogate for meso-scale finite-element analysis, enabling quicker design, screening, and digital-twin workflows for lightweight SFT components.",
+      "method": [
+        "Reconstructed microstructures from micro-CT and discretized them into Voronoi-based fiber-interaction cells.",
+        "Homogenized each cell with nonlinear finite-element simulations including matrix damage.",
+        "Trained a hybrid GNN-LSTM model to map microstructural connectivity and response history to stress-strain behavior."
+      ],
+      "evidence_signal": "The surrogate matches unseen FE predictions with about R^2 ≈ 0.98 while reducing computational cost by more than two orders of magnitude.",
+      "watch_item": "Performance depends on the fidelity of microstructure reconstruction and calibrated damage laws, so extrapolation beyond the training microstructures may be unreliable.",
+      "hashtags": [
+        "#GraphNeuralNetworks",
+        "#MaterialsInformatics",
+        "#ShortFiberComposites",
+        "#AdditiveManufacturing",
+        "#DigitalTwin"
+      ],
+      "paper_id": "2026-06-27-arxiv-on_surrogate_modeling_of_static_response_of_am_short_fiber_thermoplastics_using_graph_neur",
+      "paper_title": "On Surrogate Modeling of Static Response of AM Short-Fiber Thermoplastics Using Graph Neural Networks",
+      "paper_date": "2026-06-27",
+      "paper_category": "Polymers and Composites",
+      "generated_at": "2026-07-04T12:06:51",
       "generator": "openai"
     }
   },
@@ -805,29 +857,29 @@
         "url": "https://arxiv.org/pdf/2607.01407v1"
       }
     ],
-    "score": 57,
+    "score": 62,
     "infographic": {
-      "key_insight": "Vitriflow makes melt-quench amorphous-structure generation explicit and material-specific by linking numerical settings, thermal protocol, screening, and convergence into one calibrated decision chain.",
-      "engineering_relevance": "This gives computational materials engineers a reproducible way to build and compare amorphous ensembles without relying on hidden default choices or ad hoc post-processing.",
+      "key_insight": "Vitriflow turns melt-quench amorphous model generation into an explicit, material-specific decision workflow that calibrates simulation settings and screens artefacts to produce reproducible structure ensembles.",
+      "engineering_relevance": "This gives computational materials engineers a practical way to choose melt-quench parameters and validation criteria based on the target material and structural question, rather than relying on fixed defaults.",
       "method": [
-        "Calibrate melt-quench parameters using descriptor-based protocol selection and numerical stability checks.",
-        "Apply user-defined artefact screening to separate valid amorphous structures from defects or recrystallised states.",
-        "Assess statistical convergence in a material-specific structural descriptor space, with optional DFT refinement for selected systems."
+        "Checks numerical stability before generating structures",
+        "Calibrates protocol choices using descriptors and user-defined artefact screening",
+        "Assesses statistical convergence in a material-specific descriptor space"
       ],
-      "evidence_signal": "The abstract reports demonstrations on a-SiO2, a-Si3N4, and a-Sm2O3, including separation of defect-free versus oxygen-bridge-defective silica, DFT-refinement response tracking, and removal of recrystallised Sm2O3 structures.",
-      "watch_item": "The framework depends on chosen descriptors and screening rules, so performance may vary across materials if those criteria are not well tuned.",
+      "evidence_signal": "The abstract reports demonstrations on a-SiO2, a-Si3N4, and a-Sm2O3, including separation of defective silica, DFT-refinement response for nitride, and removal of recrystallised oxide structures.",
+      "watch_item": "The workflow depends on descriptor quality and screening choices, so results may be sensitive to how the material-specific criteria are defined and tuned.",
       "hashtags": [
-        "#MaterialsInformatics",
-        "#AmorphousMaterials",
-        "#MolecularDynamics",
-        "#ComputationalMaterials",
-        "#Reproducibility"
+        "#materialsinformatics",
+        "#meltquench",
+        "#amorphousmaterials",
+        "#molecularsimulation",
+        "#computationalmaterials"
       ],
       "paper_id": "2026-07-01-arxiv-vitriflow_calibrated_amorphous_structure_ensembles_from_melt_quench_simulation",
       "paper_title": "Vitriflow: calibrated amorphous structure ensembles from melt-quench simulation",
       "paper_date": "2026-07-01",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-07-05T12:15:39",
+      "generated_at": "2026-07-04T12:06:53",
       "generator": "openai"
     }
   },
@@ -856,29 +908,29 @@
         "url": "https://arxiv.org/pdf/2607.01016v1"
       }
     ],
-    "score": 57,
+    "score": 62,
     "infographic": {
-      "key_insight": "Radially varying band-gap collapse around a swift heavy ion track in Al2O3 creates a transient metal-like core and changes how energy is deposited into the lattice.",
-      "engineering_relevance": "Track-damage predictions for ion-irradiated oxides should account for spatially heterogeneous electronic structure, not just uniform electron-to-atom energy transfer.",
+      "key_insight": "Swift heavy ion impacts in Al2O3 create a radially nonuniform band-gap collapse, with metallic behavior near the track core and partial gap shrinkage farther out, which strongly changes how energy is transferred to the lattice.",
+      "engineering_relevance": "Track-damage models for irradiated oxides should account for spatially varying electronic structure, because ignoring radial band-gap collapse can underpredict discontinuous damage formation along ion paths.",
       "method": [
-        "TREKIS Monte Carlo simulates initial electronic and ionic excitation after ion passage.",
-        "DFT-based molecular dynamics tracks band-structure evolution in the ion track.",
-        "Radial energy-to-lattice heating is estimated using the local band-gap reduction profile."
+        "TREKIS Monte Carlo simulates the initial electronic and ionic excitation from the ion passage.",
+        "DFT-based molecular dynamics tracks time-dependent band-structure changes in the ion track.",
+        "The resulting radial band-gap profile is used to estimate local atomic heating and damage."
       ],
-      "evidence_signal": "For a 700 MeV Bi ion, the abstract reports band-gap collapse within ~2 nm, reduced gaps at ~3–5 nm, and little change beyond ~5 nm, leading to more discontinuous damage patterns than uniform-deposition models.",
-      "watch_item": "The approach depends on coupled simulation assumptions and material-specific band-gap dynamics, so transferability to other ions, energies, or oxides needs validation.",
+      "evidence_signal": "The abstract reports that a 700 MeV Bi ion causes metallization within about 2 nm of the trajectory, a 3–5 nm band-gap shrinkage zone, and little effect beyond 5 nm.",
+      "watch_item": "The conclusions rely on a coupled simulation workflow, so accuracy may depend on how well the electronic-excitation and DFT-MD models represent real irradiation conditions.",
       "hashtags": [
-        "#SwiftHeavyIon",
+        "#SwiftHeavyIons",
         "#Al2O3",
         "#BandGapCollapse",
-        "#IonTrack",
+        "#IonTracks",
         "#MaterialsModeling"
       ],
       "paper_id": "2026-07-01-arxiv-effect_of_radially_heterogeneous_band_gap_collapse_on_formation_of_swift_heavy_ion_tracks",
       "paper_title": "Effect of radially heterogeneous band gap collapse on formation of swift heavy ion tracks in Al2O3",
       "paper_date": "2026-07-01",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-07-05T12:15:41",
+      "generated_at": "2026-07-04T12:06:57",
       "generator": "openai"
     }
   },
@@ -908,29 +960,29 @@
         "url": "https://arxiv.org/pdf/2607.01713v1"
       }
     ],
-    "score": 56,
+    "score": 61,
     "infographic": {
-      "key_insight": "A hierarchical screening workflow can turn many machine-learning-predicted stable compounds into a smaller, experimentally actionable set of high-confidence synthesis targets.",
-      "engineering_relevance": "This framework helps materials engineers prioritize candidates more realistically by filtering for thermodynamic and dynamical stability across increasingly rigorous first-principles checks.",
+      "key_insight": "A hierarchical stability-screening pipeline can turn many computationally stable compounds into a much smaller set of experimentally plausible synthesis targets.",
+      "engineering_relevance": "The framework helps materials engineers prioritize candidates using progressively stricter thermodynamic and dynamical filters before committing to costly experimental synthesis.",
       "method": [
-        "Start from 894 reported stable materials and curate 603 unique structures.",
-        "Screen stability with complete PBE phase diagrams, then apply harmonic phonon and finite-temperature MD dynamical checks using machine-learning interatomic potentials.",
-        "Refine with SCAN phase diagrams and rank candidates by decomposition enthalpy and chemical-space completeness."
+        "Curated 603 unique structures from 894 previously reported stable materials.",
+        "Applied complete PBE phase diagrams, then harmonic-phonon and finite-temperature MD dynamical screening.",
+        "Refined with SCAN phase diagrams and ranked candidates by decomposition enthalpy plus chemical-space completeness."
       ],
-      "evidence_signal": "From 603 unique structures, only 298 remained thermodynamically stable on full PBE phase diagrams, 166 passed dynamical screening, 109 survived SCAN refinement, and 25 were prioritized for synthesis.",
-      "watch_item": "The workflow is computationally intensive and depends on the accuracy of phase diagrams, phonons, and ML potentials, so false positives or missed candidates remain possible.",
+      "evidence_signal": "From the 603 curated structures, only 298 remained PBE-stable, 166 passed both dynamical criteria, 109 survived SCAN refinement, and 25 were prioritized as high-confidence synthesis targets.",
+      "watch_item": "The screening depends on the quality and completeness of competing-phase databases and model-based dynamical stability predictions, so some true experimental targets may still be missed.",
       "hashtags": [
         "#MaterialsDiscovery",
-        "#ComputationalMaterials",
         "#MachineLearning",
-        "#StableMaterials",
-        "#SynthesisPlanning"
+        "#StabilityScreening",
+        "#ComputationalMaterials",
+        "#ExperimentalSynthesis"
       ],
       "paper_id": "2026-07-02-arxiv-predicting_novel_stable_materials_for_experimental_synthesis",
       "paper_title": "Predicting Novel Stable Materials for Experimental Synthesis",
       "paper_date": "2026-07-02",
       "paper_category": "Materials Discovery",
-      "generated_at": "2026-07-05T12:15:44",
+      "generated_at": "2026-07-04T12:06:59",
       "generator": "openai"
     }
   },
@@ -959,81 +1011,29 @@
         "url": "https://arxiv.org/pdf/2607.01682v1"
       }
     ],
-    "score": 55,
+    "score": 60,
     "infographic": {
-      "key_insight": "Many-body DMC reveals that bilayer InSe stacking energies depend on full registry and electronic response, not just the interfacial Se motif, exposing much larger corrugation than DFT predicts.",
-      "engineering_relevance": "DFT-based moiré and relaxation models for twisted layered materials may significantly underpredict domain formation and electronic reconstruction unless their local stacking energetics are re-benchmarked.",
+      "key_insight": "DFT can miss the true local stacking energetics of bilayer InSe: registries with the same interfacial Se motif are not actually nearly degenerate once many-body effects are included.",
+      "engineering_relevance": "Moiré and relaxation models built from DFT may underestimate stacking-energy corrugation, leading to incorrect predictions of domain formation, structural relaxation, and electronic reconstruction in twisted layered materials.",
       "method": [
-        "Benchmark local-registry energetics of bilayer InSe with diffusion quantum Monte Carlo (DMC).",
-        "Compare DMC against DFT for stackings AB, AAr, and ABr that share the same interfacial Se registry.",
-        "Assess whether similar charge-density responses imply similar energies, and test the registry dependence beyond atomic motif alone."
+        "Benchmarked bilayer InSe local-registry energetics with diffusion quantum Monte Carlo (DMC).",
+        "Compared DMC results against DFT predictions for AB, AAr, and ABr stackings.",
+        "Analyzed how charge-density response and full registry dependence affect stacking stability."
       ],
-      "evidence_signal": "The abstract reports that DFT keeps AB, AAr, and ABr nearly degenerate within 1.5 meV/f.u., while DMC separates them by 8(5) and 41(4) meV/f.u., with up to 60(7) meV/f.u. between the most and least stable registries.",
-      "watch_item": "Results are specific to bilayer InSe, so transferring them to other 2D materials or moiré models still requires system-specific many-body validation.",
+      "evidence_signal": "The abstract reports that DFT places AB, AAr, and ABr within 1.5 meV/f.u., whereas DMC separates them by 8(5) and 41(4) meV/f.u., with a 60(7) meV/f.u. spread between the most and least stable registries.",
+      "watch_item": "These results are specific to bilayer InSe, so extending the conclusion to other materials or twist angles may require separate many-body benchmarking.",
       "hashtags": [
         "#DFT",
-        "#DiffusionQuantumMonteCarlo",
-        "#InSe",
-        "#MoireMaterials",
-        "#ComputationalMaterialsScience"
+        "#DMC",
+        "#MoiréMaterials",
+        "#BilayerInSe",
+        "#ComputationalMaterials"
       ],
       "paper_id": "2026-07-02-arxiv-many_body_benchmarking_of_dft_local_registry_energetics_in_bilayer_inse",
       "paper_title": "Many-body benchmarking of DFT local-registry energetics in bilayer InSe",
       "paper_date": "2026-07-02",
       "paper_category": "AI materials science",
-      "generated_at": "2026-07-05T12:15:46",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-06-29-arxiv-prebiotic_chemistry_assemblies_of_l_cysteine_on_defect_free_pyrite_terraces",
-    "arxiv_id": "2606.30929v1",
-    "date": "2026-06-29",
-    "title": "Prebiotic Chemistry Assemblies of L-Cysteine on Defect-Free Pyrite Terraces",
-    "authors": "Adriana E. Candia, Sindy J. Rodríguez, Vanina G. Franco, Mario C. G. Passeggi, Jorge Lobo-Checa, Myriam H. Aguirre",
-    "abstract": "Wächtershäuser's theory proposes iron-sulfur minerals as key platforms for molecular synthesis and supramolecular organization in prebiotic environments. However, defects have been traditionally considered at the center of such assemblies, thereby underestimating the contributions of regular and pristine interfaces. Here, we combine scanning tunneling microscopy and spectroscopy (STM/STS) with density functional theory (DFT) to investigate the fundamental prebiotic chemistry system of L-Cysteine (L-Cys) on defectless FeS$_2$(100) terraces. To do so, we first achieved atomically ordered, defect-free terraces that act as support of two distinct supramolecular phases of L-Cys: one compact, highly ordered supramolecular network and another less packed, labile supramolecular network. We unveil trimer-based intermolecular interactions to be at the origin of these pattern formations. These results demonstrate that L-Cys self-assemblies can be hosted on flawless FeS$_2$ terraces due to the cooperative interplay between substrate electronic structure and intermolecular interactions, without the participation of dominant defects. Therefore, the autocatalytic activity of pyrite could have triggered the on-surface polymerization process of these non-static self-assembled structures under primordial conditions, thereby endorsing Wächtershäuser's postulates on the origin of life.",
-    "category": "Microstructure",
-    "source": "arXiv",
-    "published": "2026-06-29T21:30:38Z",
-    "updated": "2026-06-29T21:30:38Z",
-    "primary_category": "cond-mat.mtrl-sci",
-    "categories": [
-      "cond-mat.mtrl-sci",
-      "physics.chem-ph"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2606.30929v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2606.30929v1"
-      }
-    ],
-    "score": 55,
-    "infographic": {
-      "key_insight": "Defect-free FeS2(100) terraces can host two self-organized L-cysteine supramolecular phases, showing that pristine pyrite surfaces—not just defects—can drive prebiotic molecular assembly.",
-      "engineering_relevance": "This suggests surface crystallinity and electronic structure are critical design variables for catalytic/mineral interfaces intended to promote controlled self-assembly and polymerization.",
-      "method": [
-        "STM/STS to image and probe L-cysteine adsorption on pyrite terraces",
-        "DFT calculations to identify intermolecular and substrate-driven stabilization",
-        "Comparison of two supramolecular phases: compact ordered vs. less packed labile networks"
-      ],
-      "evidence_signal": "The abstract reports atomically ordered, defect-free FeS2 terraces and identifies trimer-based interactions consistent with the observed STM patterns, supported by DFT.",
-      "watch_item": "The assemblies were observed under specific surface-preparation and UHV-style characterization conditions, so extending the mechanism to realistic prebiotic environments requires caution.",
-      "hashtags": [
-        "#PrebioticChemistry",
-        "#Pyrite",
-        "#STM",
-        "#DFT",
-        "#SupramolecularAssembly"
-      ],
-      "paper_id": "2026-06-29-arxiv-prebiotic_chemistry_assemblies_of_l_cysteine_on_defect_free_pyrite_terraces",
-      "paper_title": "Prebiotic Chemistry Assemblies of L-Cysteine on Defect-Free Pyrite Terraces",
-      "paper_date": "2026-06-29",
-      "paper_category": "Microstructure",
-      "generated_at": "2026-07-05T12:15:48",
+      "generated_at": "2026-07-04T12:07:01",
       "generator": "openai"
     }
   }
