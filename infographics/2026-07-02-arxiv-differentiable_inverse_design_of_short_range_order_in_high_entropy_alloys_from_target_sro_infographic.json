@@ -1,24 +1,24 @@
 {
-  "key_insight": "The paper turns short-range-order alloy design into a differentiable optimization problem, enabling direct gradient-based tuning from target SRO to target property.",
-  "engineering_relevance": "This provides a faster, scalable workflow for designing multi-principal-element alloys with mechanically targeted behavior instead of relying on separate structure search and property screening.",
+  "key_insight": "The paper turns short-range-order alloy design into a differentiable optimization problem, enabling direct gradient-based search from a target SRO pattern or property to an alloy structure.",
+  "engineering_relevance": "This offers a faster, scalable route to inverse design of high-entropy alloys, helping engineers tune stiffness and other properties without relying on slow random-swap searches.",
   "method": [
-    "Replace random-swap reverse Monte Carlo with continuous occupancy variables optimized by gradient descent.",
-    "Add a physics-based correction to keep generated SRO thermodynamically realistic for multi-element alloys.",
-    "Use a small neural network to map composition and SRO statistics to mechanical properties, closing the design loop."
+    "Treat atom occupancy as continuous so gradient descent can optimize SRO matching directly.",
+    "Add a physics-based correction term to keep generated structures thermodynamically realistic across many elements.",
+    "Use a small neural network to map composition and SRO statistics to mechanical properties, closing the loop from target property to design."
   ],
-  "evidence_signal": "Across nine FCC/BCC alloys, the pipeline reproduced SRO-driven stiffness changes from -20% to +57% and matched three of four cobalt-chromium-nickel target stiffness values within 6%.",
-  "watch_item": "Accuracy depends on sufficiently large simulation cells; the abstract notes that 108-atom cells can mispredict both the direction and magnitude of SRO-induced property changes.",
+  "evidence_signal": "Across nine FCC and BCC alloys, the pipeline reproduced SRO-driven stiffness shifts from -20% to +57%, matched 3 of 4 Co-Cr-Ni target stiffness values within 6%, and showed 864+ atoms are needed for reliable trend prediction.",
+  "watch_item": "Results depend on sufficiently large supercells; commonly used 108-atom cells can give misleading property trends, so cell-size convergence must be checked.",
   "hashtags": [
     "#MaterialsDiscovery",
     "#HighEntropyAlloys",
-    "#DifferentiableOptimization",
-    "#ShortRangeOrder",
+    "#InverseDesign",
+    "#GradientDescent",
     "#ComputationalMaterials"
   ],
   "paper_id": "2026-07-02-arxiv-differentiable_inverse_design_of_short_range_order_in_high_entropy_alloys_from_target_sro",
   "paper_title": "Differentiable inverse design of short-range order in high-entropy alloys: from target sro to target property",
   "paper_date": "2026-07-02",
   "paper_category": "Materials Discovery",
-  "generated_at": "2026-07-06T14:22:47",
+  "generated_at": "2026-07-07T13:18:58",
   "generator": "openai"
 }
