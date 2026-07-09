@@ -1,24 +1,24 @@
 {
-  "key_insight": "EquiFiLM adds a simple charge-conditioning FiLM block to equivariant foundation force fields, enabling accurate modeling of externally driven changes in the potential energy surface without sacrificing E(3)-equivariance.",
-  "engineering_relevance": "This lets materials simulations capture charging, fields, and excitation-driven processes with near-DFT fidelity using only a small amount of new labeled data and no extra inference cost.",
+  "key_insight": "EquiFiLM adds charge-conditioned feature-wise modulation to an existing equivariant force field so it can learn external-state effects, like charging, without breaking E(3)-equivariance.",
+  "engineering_relevance": "This enables foundation ML force fields to model driven processes such as charge injection and photoexcitation with only a small amount of new DFT data and no inference-cost penalty.",
   "method": [
-    "Per-layer Feature-wise Linear Modulation (FiLM) conditions scalar channels on an external variable such as charge.",
-    "Wraps a pretrained equivariant foundation MLFF backbone without changing the core architecture.",
-    "Learns charge-dependent energy and force corrections from minimal DFT training data."
+    "Insert a per-layer FiLM block into scalar channels of an equivariant MLFF backbone.",
+    "Condition the potential energy surface on external variables such as charge while preserving exact equivariance.",
+    "Demonstrate the approach on liquid water with MACE-MatPES, producing the E-MACE model."
   ],
-  "evidence_signal": "On charged liquid water, E-MACE reduced force RMSE from 21.3 to 6.96 meV/Å and energy RMSE from 6.1 to 0.1 meV/atom on the training charges, while remaining stable across held-out interpolation and extrapolation charges.",
-  "watch_item": "Performance depends on having representative conditioning data; extrapolation beyond the tested charge range or to different driven physics may still require careful validation.",
+  "evidence_signal": "On four training charges, E-MACE reduced force RMSE from 21.3 to 6.96 meV/Å and energy RMSE from 6.1 to 0.1 meV/atom, and it remained accurate and stable across seven held-out charges.",
+  "watch_item": "Performance depends on having representative conditioning data across the external-state range; strong extrapolation beyond the tested charges may still be risky.",
   "hashtags": [
     "#MachineLearningForceFields",
     "#EquivariantML",
-    "#MaterialsSimulation",
-    "#ChargeConditioning",
+    "#MaterialsInformatics",
+    "#MolecularDynamics",
     "#DFT"
   ],
   "paper_id": "2026-07-06-arxiv-equifilm_charge_conditioned_equivariant_force_fields_via_feature_wise_linear_modulation",
   "paper_title": "EquiFiLM: Charge-Conditioned Equivariant Force Fields via Feature-wise Linear Modulation",
   "paper_date": "2026-07-06",
   "paper_category": "Crystal and Structure",
-  "generated_at": "2026-07-08T12:19:43",
+  "generated_at": "2026-07-09T13:48:13",
   "generator": "openai"
 }

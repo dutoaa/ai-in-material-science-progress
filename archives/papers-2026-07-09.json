@@ -1,0 +1,1038 @@
+[
+  {
+    "id": "2026-07-06-arxiv-equifilm_charge_conditioned_equivariant_force_fields_via_feature_wise_linear_modulation",
+    "arxiv_id": "2607.05559v1",
+    "date": "2026-07-06",
+    "title": "EquiFiLM: Charge-Conditioned Equivariant Force Fields via Feature-wise Linear Modulation",
+    "authors": "Samuel Sahel-Schackis, Ken-ichi Nomura, Aiichiro Nakano, Matthias F. Kling, Thomas Linker",
+    "abstract": "Foundation machine learning force fields (MLFFs) such as MACE-MP-0 and UMA cover broad chemical space at near density functional theory (DFT) accuracy. However, they assume equilibrium ground-state physics and do not natively handle externally induced changes to the electronic state, such as charging, applied fields, or electronic excitation, which limits their use for driven processes such as photoexcitation and charge injection. We propose EquiFiLM, a lightweight extension that adds continuous external conditioning to any equivariant foundation MLFF via a per-layer Feature-wise Linear Modulation (FiLM) block, learning externally driven changes to the potential energy surface from minimal training data. The block modulates only scalar channels and preserves E(3)-equivariance exactly. We demonstrate the recipe on charged liquid water with the foundation model MACE-MatPES as the backbone, yielding E-MACE. On the four training charges, E-MACE delivers a $3.1\\times$ reduction in force RMSE ($21.3$ to $6.96$ meV/$\\mathring{A}$) and a $61\\times$ reduction in per-atom energy RMSE ($6.1$ to $0.1$ meV/atom) over a baseline without EquiFiLM trained on the same data, at indistinguishable inference cost. Across seven held-out interpolation and extrapolation charges, force RMSE stays within $18-61$ meV/$\\mathring{A}$ and energy RMSE within $0.7-5.4$ meV/atom. The model runs stable molecular dynamics across the full range tested and predicts the charge-dependent first-shell response of the reduced pair distribution function probed by ultrafast electron diffraction. Adding this conditioning axis to the foundation requires only a few thousand DFT-labeled frames, against the $\\approx 10^8$ structures of a charge-aware foundation trained from scratch. The recipe is backbone- and conditioning-agnostic: it applies without architectural change to any equivariant MLFF with scalar interaction-layer channels.",
+    "category": "Crystal and Structure",
+    "source": "arXiv",
+    "published": "2026-07-06T18:56:53Z",
+    "updated": "2026-07-06T18:56:53Z",
+    "primary_category": "cs.LG",
+    "categories": [
+      "cs.LG",
+      "cond-mat.mtrl-sci",
+      "physics.chem-ph",
+      "physics.comp-ph"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2607.05559v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2607.05559v1"
+      }
+    ],
+    "score": 88,
+    "infographic": {
+      "key_insight": "EquiFiLM adds a simple charge-conditioning FiLM block to equivariant foundation force fields, enabling accurate modeling of externally driven changes in the potential energy surface without sacrificing E(3)-equivariance.",
+      "engineering_relevance": "This lets materials simulations capture charging, fields, and excitation-driven processes with near-DFT fidelity using only a small amount of new labeled data and no extra inference cost.",
+      "method": [
+        "Per-layer Feature-wise Linear Modulation (FiLM) conditions scalar channels on an external variable such as charge.",
+        "Wraps a pretrained equivariant foundation MLFF backbone without changing the core architecture.",
+        "Learns charge-dependent energy and force corrections from minimal DFT training data."
+      ],
+      "evidence_signal": "On charged liquid water, E-MACE reduced force RMSE from 21.3 to 6.96 meV/Å and energy RMSE from 6.1 to 0.1 meV/atom on the training charges, while remaining stable across held-out interpolation and extrapolation charges.",
+      "watch_item": "Performance depends on having representative conditioning data; extrapolation beyond the tested charge range or to different driven physics may still require careful validation.",
+      "hashtags": [
+        "#MachineLearningForceFields",
+        "#EquivariantML",
+        "#MaterialsSimulation",
+        "#ChargeConditioning",
+        "#DFT"
+      ],
+      "paper_id": "2026-07-06-arxiv-equifilm_charge_conditioned_equivariant_force_fields_via_feature_wise_linear_modulation",
+      "paper_title": "EquiFiLM: Charge-Conditioned Equivariant Force Fields via Feature-wise Linear Modulation",
+      "paper_date": "2026-07-06",
+      "paper_category": "Crystal and Structure",
+      "generated_at": "2026-07-08T12:19:43",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-06-arxiv-a_distributional_framework_for_generative_modeling_of_molecular_crystals",
+    "arxiv_id": "2607.05266v1",
+    "date": "2026-07-06",
+    "title": "A Distributional Framework for Generative Modeling of Molecular Crystals",
+    "authors": "Michael Kilgour, Alex Dong, Mark E. Tuckerman, Jutta Rogal",
+    "abstract": "Molecular crystals are a highly polymorphic class of materials, with a single molecule commonly crystallizing via multiple packing patterns, making structure and property prediction very challenging. Crystal structure prediction typically comprises the production of sets of promising candidate structures, each considered in isolation rather than as samples in a thermodynamic distribution. Likewise, modern generative approaches to this problem, despite naturally sampling distributions of crystals, lack a concrete formulation of the distributions being sampled. Two components are required to impart meaning to the distributions of crystals generated under such models: a canonical parameterization, and a loss function which equilibrates the generated samples to some target distribution. We develop such a parameterization, and train energy-based generative flow networks (GFlowNets) to approximate the Boltzmann distribution over crystal structures for target molecules and space groups. Combined, these components comprise our MXtalGFlow framework for molecular crystal modeling. Going beyond sampling disconnected sets of low-energy structures, MXtalGFlow yields a thermodynamic distribution over crystal structures. We sample and analyze distributions of crystals for two molecules, each under two energy functions, a Lennard-Jones potential and the Universal Model for Atoms. We characterize the local structural basins about the known polymorphs, and identify additional as-yet un-reported packing modes with competitive probabilities to the known experimental structures. With MXtalGFlow, we illustrate how to define and train a model to sample a thermodynamically meaningful distribution of molecular crystals, and analyze such a distribution to glean useful information.",
+    "category": "Crystal and Structure",
+    "source": "arXiv",
+    "published": "2026-07-06T16:16:47Z",
+    "updated": "2026-07-06T16:16:47Z",
+    "primary_category": "cond-mat.mtrl-sci",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2607.05266v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2607.05266v1"
+      }
+    ],
+    "score": 80,
+    "infographic": {
+      "key_insight": "MXtalGFlow reframes molecular crystal prediction as learning a thermodynamic distribution over structures, rather than generating isolated candidate crystals.",
+      "engineering_relevance": "This enables more physically meaningful crystal design workflows by sampling polymorph probabilities and revealing competitive packing modes under chosen energy models and space groups.",
+      "method": [
+        "Define a canonical parameterization of molecular crystal structures.",
+        "Train energy-based Generative Flow Networks (GFlowNets) to match the Boltzmann distribution over crystals.",
+        "Analyze sampled distributions to identify basins around known polymorphs and new plausible packings."
+      ],
+      "evidence_signal": "The abstract reports tests on two molecules under two energy functions (Lennard-Jones and Universal Model for Atoms), with comparisons to known experimental polymorphs and additional predicted packing modes.",
+      "watch_item": "Results depend on the chosen energy model and space-group/parameterization assumptions, so distribution quality may shift if the physics model or structural constraints are imperfect.",
+      "hashtags": [
+        "#MolecularCrystals",
+        "#GFlowNets",
+        "#GenerativeModeling",
+        "#Polymorphism",
+        "#ComputationalMaterials"
+      ],
+      "paper_id": "2026-07-06-arxiv-a_distributional_framework_for_generative_modeling_of_molecular_crystals",
+      "paper_title": "A Distributional Framework for Generative Modeling of Molecular Crystals",
+      "paper_date": "2026-07-06",
+      "paper_category": "Crystal and Structure",
+      "generated_at": "2026-07-08T12:19:45",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-07-arxiv-modelling_the_mean_inner_potential_of_alloyed_and_strained_materials",
+    "arxiv_id": "2607.05948v1",
+    "date": "2026-07-07",
+    "title": "Modelling the mean inner potential of alloyed and strained materials",
+    "authors": "Marco Schowalter, Peer Kruse, Andreas Rosenauer",
+    "abstract": "In this publication, we study the influence of strain and alloying on the mean inner potential (MIP) using density functional theory (DFT) within an augmented plane waves plus local orbitals basis set. Two major effects have been identified allowing to model the influence of strain and alloying on the mean inner potential with a reasonable accuracy. First, alloying for constant volume results in a linear relationship between the MIP and the concentration. Second, the MIP scales with changes in volume as we already pointed out in an earlier publication (M. Schowalter, D. Lamoen, A. Rosenauer, P. Kruse, and D. Gerthsen, Appl. Phys. Lett. 85, 4938-4940 (2004)). Specifically, a linear relationship between MIP and concentration x was found for AlGaAs (nearly no change in lattice parameter), whereas InGaP and GeSi (volume changes with concentration x) exhibits a clear bowing. The bowing can be modeled by taking the rescaling of the MIP with the varying volume additionally into account. The rescaling could be also used to model the dependence of the MIP on strained binary cells and the density dependence of e.g. amorphous materials.",
+    "category": "Crystal and Structure",
+    "source": "arXiv",
+    "published": "2026-07-07T07:47:35Z",
+    "updated": "2026-07-07T07:47:35Z",
+    "primary_category": "cond-mat.mtrl-sci",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2607.05948v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2607.05948v1"
+      }
+    ],
+    "score": 73,
+    "infographic": {
+      "key_insight": "The mean inner potential (MIP) of alloys is governed mainly by two effects: linear composition dependence at constant volume and rescaling with volume change under strain.",
+      "engineering_relevance": "This provides a practical way to predict electrostatic potential variations in alloyed, strained, and density-varying materials for semiconductor and TEM-based analysis.",
+      "method": [
+        "DFT calculations using an augmented plane waves plus local orbitals basis set",
+        "Compare MIP trends across alloy concentration and lattice-volume changes",
+        "Separate composition effects from volume/strain-driven rescaling"
+      ],
+      "evidence_signal": "The abstract reports consistent trends across multiple materials: linear MIP vs concentration for AlGaAs and clear bowing for InGaP and GeSi when volume changes are included.",
+      "watch_item": "The model appears empirical at the rescaling level, so accuracy may depend on whether a material follows the same volume–composition coupling as the studied systems.",
+      "hashtags": [
+        "#DensityFunctionalTheory",
+        "#MeanInnerPotential",
+        "#AlloyModeling",
+        "#StrainEngineering",
+        "#ComputationalMaterials"
+      ],
+      "paper_id": "2026-07-07-arxiv-modelling_the_mean_inner_potential_of_alloyed_and_strained_materials",
+      "paper_title": "Modelling the mean inner potential of alloyed and strained materials",
+      "paper_date": "2026-07-07",
+      "paper_category": "Crystal and Structure",
+      "generated_at": "2026-07-08T12:19:48",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-05-arxiv-data_driven_prediction_of_nacl_type_entropy_stabilized_oxide_compositions_from_first_princ",
+    "arxiv_id": "2607.04502v1",
+    "date": "2026-07-05",
+    "title": "Data-Driven Prediction of NaCl-Type Entropy-Stabilized Oxide Compositions from First-Principles and Supervised Learning",
+    "authors": "Sebastien Junier, Celine Barreteau, David Berardan, Yann-Andrev Kerneur, Jean-Claude Crivello",
+    "abstract": "Entropy-stabilized oxides (ESOs) open access to vast multicomponent compositional spaces, but identifying promising candidates remains challenging because of the large number of possible mixtures and the need to assess their stability against competing phases. In this work, we develop a high-throughput computational framework to screen equimolar quinary ESOs in the NaCl structure type by combining density functional theory (DFT), special quasirandom structures (SQS), convex-hull thermodynamics, and supervised machine learning. A consistent reference database of binary and ternary ordered oxides, including disordered phases such as all binary cation combinations in the NaCl-type oxide, is first constructed using GGA and meta-GGA calculations. Quinary disordered phases are then described by SQS supercells and used to train machine-learning models that predict the distance to the convex hull and the corresponding stabilization temperature over the full set of 4368 possible equimolar quinary compositions generated from 16 cation species. Among the tested models, an optimized multilayer perceptron provides the best predictive performance, with a test error of about 4 kJ/mol, while requiring explicit DFT calculations for only about 10% of the quinary systems. Comparison with experimental synthesis tests and computed decomposition paths further shows that the approach captures the main stability trends and the dominant competing phases, although absolute stabilization temperatures remain affected by systematic thermodynamic approximations. These results establish an efficient route for the data-driven exploration of multicomponent oxides and provide practical guidance for the experimental search for new ESOs.",
+    "category": "Crystal and Structure",
+    "source": "arXiv",
+    "published": "2026-07-05T21:03:22Z",
+    "updated": "2026-07-05T21:03:22Z",
+    "primary_category": "cond-mat.mtrl-sci",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.dis-nn"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2607.04502v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2607.04502v1"
+      }
+    ],
+    "score": 69,
+    "infographic": {
+      "key_insight": "A hybrid DFT + machine-learning workflow can rapidly screen thousands of equimolar quinary NaCl-type entropy-stabilized oxide compositions and identify the most promising stable candidates.",
+      "engineering_relevance": "This provides a practical route to reduce expensive first-principles calculations while accelerating materials discovery for multicomponent oxides.",
+      "method": [
+        "Built a reference database of binary and ternary oxides using GGA/meta-GGA DFT.",
+        "Represented quinary compositions with SQS supercells and convex-hull thermodynamics.",
+        "Trained supervised models to predict distance to hull and stabilization temperature across 4368 compositions."
+      ],
+      "evidence_signal": "An optimized multilayer perceptron achieved the best performance, with about 4 kJ/mol test error, while requiring explicit DFT for only around 10% of the quinary systems.",
+      "watch_item": "Predicted stabilization temperatures still depend on thermodynamic approximations, so absolute values may be systematically biased even when trends are captured.",
+      "hashtags": [
+        "#MaterialsInformatics",
+        "#DFT",
+        "#MachineLearning",
+        "#EntropyStabilizedOxides",
+        "#ComputationalMaterials"
+      ],
+      "paper_id": "2026-07-05-arxiv-data_driven_prediction_of_nacl_type_entropy_stabilized_oxide_compositions_from_first_princ",
+      "paper_title": "Data-Driven Prediction of NaCl-Type Entropy-Stabilized Oxide Compositions from First-Principles and Supervised Learning",
+      "paper_date": "2026-07-05",
+      "paper_category": "Crystal and Structure",
+      "generated_at": "2026-07-08T12:19:51",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-07-arxiv-multiscale_modelling_of_diffusion_and_retention_of_hydrogen_in_multi_occupancy_traps_in_ir",
+    "arxiv_id": "2607.06122v1",
+    "date": "2026-07-07",
+    "title": "Multiscale modelling of diffusion and retention of hydrogen in multi-occupancy traps in irradiated bcc metals",
+    "authors": "Daniel Mason, Sanjeet Kaur, Samanyu Tirumala, Prashanth Srinivasan, Ville Jantunen, Max Boleininger",
+    "abstract": "We use molecular dynamics simulations to directly compute the effective diffusivity of hydrogen gas atoms in homogeneous distributions of monovacancies in tungsten and vanadium, and voids in tungsten. Rather than fitting the results to an Arrhenius law, we compare to an analytic approximation for the effective diffusivity recently derived for multi-occupancy traps [Kaur et al (2025), Phys. Rev. Mater. 9:125404]. We find good agreement between full atomistic simulation and our theory, validating the analytic model for diffusivity for materials containing nanoscale defects characteristic of radiation damage. There are no parameters fitted, only physically motivated quantities that can be computed with static density functional or atomistic potential calculations. In this study we prove rapid convergence of hydrogen trap occupation to the steady state using lattice kinetic Monte Carlo, the spontaneous emergence of voids in tungsten using atomistic simulation with empirical potentials, and molecular hydrogen formation in voids using molecular dynamics. We conclude with a prediction for diffusion and retention of hydrogen in voids in tungsten starting from first principles. This work shows that not only is the analytic form for diffusivity and retention in multi-occupancy traps a practical scheme for making predictive simulations of hydrogen isotope diffusion and retention in irradiated microstructures, derived and parameterized from first principles, it is superior to existing single-occupancy trap formalisms.",
+    "category": "Crystal and Structure",
+    "source": "arXiv",
+    "published": "2026-07-07T10:33:07Z",
+    "updated": "2026-07-07T10:33:07Z",
+    "primary_category": "cond-mat.mtrl-sci",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2607.06122v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2607.06122v1"
+      }
+    ],
+    "score": 68,
+    "infographic": {
+      "key_insight": "A first-principles multiscale model accurately predicts hydrogen diffusion and retention in irradiated bcc metals by treating traps as multi-occupancy defects rather than single-occupancy sites.",
+      "engineering_relevance": "The framework enables predictive simulation of hydrogen behavior in radiation-damaged tungsten and vanadium, supporting better lifetime and embrittlement assessment for fusion and nuclear materials.",
+      "method": [
+        "Molecular dynamics to compute effective hydrogen diffusivity in monovacancies and voids",
+        "Lattice kinetic Monte Carlo to verify rapid convergence to steady-state trap occupancy",
+        "Analytic multi-occupancy-trap theory compared against atomistic simulation without fitted parameters"
+      ],
+      "evidence_signal": "The abstract reports good agreement between full atomistic simulations and the analytic diffusivity model across monovacancies in tungsten and vanadium and voids in tungsten, validating the theory for nanoscale radiation-damage defects.",
+      "watch_item": "The approach depends on physically computed defect and trap parameters, so accuracy will hinge on the quality of the underlying density functional theory or interatomic potential descriptions of the irradiated microstructure.",
+      "hashtags": [
+        "#HydrogenDiffusion",
+        "#IrradiationDamage",
+        "#MultiscaleModeling",
+        "#Tungsten",
+        "#MaterialsSimulation"
+      ],
+      "paper_id": "2026-07-07-arxiv-multiscale_modelling_of_diffusion_and_retention_of_hydrogen_in_multi_occupancy_traps_in_ir",
+      "paper_title": "Multiscale modelling of diffusion and retention of hydrogen in multi-occupancy traps in irradiated bcc metals",
+      "paper_date": "2026-07-07",
+      "paper_category": "Crystal and Structure",
+      "generated_at": "2026-07-08T12:19:54",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-07-arxiv-phonon_mediated_thermal_transport_in_nanocrystalline_silicon_using_machine_learning_intera",
+    "arxiv_id": "2607.06470v1",
+    "date": "2026-07-07",
+    "title": "Phonon-Mediated Thermal Transport in Nanocrystalline Silicon Using Machine-Learning Interatomic Potentials",
+    "authors": "Houssem Rezgui, Catalina Coll Benejam, Miguel Pruneda, Clivia M. Sotomayor Torres",
+    "abstract": "Understanding phonon-mediated heat transport in structurally complex materials remains a central challenge for next-generation electronic and nanomechanical devices, where grain boundaries and interfacial disorder strongly limit thermal dissipation. Although classical interatomic potentials enable large-scale simulations, their limited transferability can lead to inaccuracies in vibrational properties and interfacial phonon scattering. In this work, we develop a machine-learning based framework for modeling thermal transport in bulk and nanocrystalline silicon by combining Gaussian approximation potential (GAP) and multi-atomic cluster expansion (MACE) models with lattice-dynamical calculations and non-equilibrium molecular dynamics (NEMD). Harmonic and anharmonic force constants derived from machine-learning interatomic potentials (MLIPs) are used within a unified Phonopy/Phono3py workflow to compute phonon dispersions, lifetimes, and lattice thermal conductivity, providing an internally consistent description of vibrational properties. In nanocrystalline silicon, NEMD simulations directly quantify the thermal boundary resistance associated with grain boundaries and reveal its sensitivity to interfacial roughness and the underlying interatomic description. Compared with the Stillinger-Weber and Tersoff potentials, the MLIPs provide a more accurate and internally consistent description of bulk and interfacial phonon transport, enabling more predictive modeling of nanoscale thermal transport in low-dimensional materials.",
+    "category": "Crystal and Structure",
+    "source": "arXiv",
+    "published": "2026-07-07T16:29:31Z",
+    "updated": "2026-07-07T16:29:31Z",
+    "primary_category": "cond-mat.mtrl-sci",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.mes-hall"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2607.06470v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2607.06470v1"
+      }
+    ],
+    "score": 65,
+    "infographic": {
+      "key_insight": "Machine-learning interatomic potentials can give a more internally consistent and accurate picture of phonon transport in bulk and nanocrystalline silicon than traditional empirical potentials.",
+      "engineering_relevance": "This enables better prediction of thermal conductivity and grain-boundary thermal resistance for designing nanoscale electronic and nanomechanical devices.",
+      "method": [
+        "Train and use GAP and MACE machine-learning interatomic potentials for silicon.",
+        "Derive harmonic and anharmonic force constants with a unified Phonopy/Phono3py workflow.",
+        "Run NEMD to quantify grain-boundary thermal boundary resistance in nanocrystalline silicon."
+      ],
+      "evidence_signal": "The abstract reports comparisons against Stillinger-Weber and Tersoff potentials, with the MLIPs producing more accurate bulk phonons and interfacial heat-transport predictions.",
+      "watch_item": "Results still depend on the quality and transferability of the ML potential and on how well the grain-boundary structure and roughness are represented in simulation.",
+      "hashtags": [
+        "#MachineLearningPotentials",
+        "#PhononTransport",
+        "#ThermalConductivity",
+        "#NanocrystallineSilicon",
+        "#MolecularDynamics"
+      ],
+      "paper_id": "2026-07-07-arxiv-phonon_mediated_thermal_transport_in_nanocrystalline_silicon_using_machine_learning_intera",
+      "paper_title": "Phonon-Mediated Thermal Transport in Nanocrystalline Silicon Using Machine-Learning Interatomic Potentials",
+      "paper_date": "2026-07-07",
+      "paper_category": "Crystal and Structure",
+      "generated_at": "2026-07-08T12:19:56",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-07-arxiv-pluralis_v0_1_towards_a_multicultural_multimodal_multilingual_benchmark_for_ai_risk_and_re",
+    "arxiv_id": "2607.06196v1",
+    "date": "2026-07-07",
+    "title": "Pluralis v0.1: Towards a Multicultural, Multimodal, Multilingual Benchmark for AI Risk and Reliability",
+    "authors": "Alicia Parrish, Rajat Shinde, Sanket Badhe, Xinyi Bai, Sree Bhargavi Balija, Hua-Rong Chu",
+    "abstract": "Current AI safety evaluation and benchmarking frameworks predominantly rely on Western-centric culture-agnostic defaults that mask critical regional laws, socio-linguistic nuances, and cultural taboos, leaving Vision-Language Models (VLMs) vulnerable in global deployments. We introduce Pluralis v0.1: a novel multimodal, multi-regional, and multilingual dataset built from a culture-first perspective. Spanning 6,448 prompts across six Asia-Pacific countries (Bangladesh, India, Korea, Pakistan, Singapore, Taiwan) and eight languages, Pluralis diverges from prior work by natively sourcing localized safety hazards rather than adapting Western datasets. Crucially, it introduces a multimodal evaluation paradigm: user text (e.g., \"Should I gift this?\") and an image referring to \"this\" (e.g., a clock) - both innocuous in isolation, but synergistically triggering specific legal or cultural violations. Pluralis disentangles universal safety violations from localized cultural appropriateness, establishing the latter as a first-class evaluation axis. To operationalize this, we present Judge-Pluralis, an agreement-gated LLM-as-a-Judge ensemble trained on examples classified in an empirically derived cultural taxonomy. Observing VLM behavior on a subset of the Pluralis surfaces recurring, locale-specific failure modes such as image misidentifications with downstream harm, missed item-context-locale interactions, and inadequate refusals. These failure modes vary systematically across locales and languages, exposing blind spots that globally averaged metrics conceal. Ultimately, Pluralis is not presented as a solved evaluation framework for cultural alignment, but rather as a first step and catalyst for future innovation. We call upon the research community to utilize this foundation to advance the science of multilingual, multicultural evaluation to better support AI cultural alignment globally.",
+    "category": "Energy Materials",
+    "source": "arXiv",
+    "published": "2026-07-07T12:21:52Z",
+    "updated": "2026-07-07T12:21:52Z",
+    "primary_category": "cs.CL",
+    "categories": [
+      "cs.CL",
+      "cs.CY"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2607.06196v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2607.06196v1"
+      }
+    ],
+    "score": 65,
+    "infographic": {
+      "key_insight": "Pluralis v0.1 shows that AI safety is not universally culture-agnostic: multimodal VLM failures can depend strongly on local laws, languages, and cultural context.",
+      "engineering_relevance": "For global AI deployment, safety evaluation must include region-specific and multilingual benchmarks so models are reliable beyond Western-centric defaults.",
+      "method": [
+        "Built 6,448 multimodal prompts across six Asia-Pacific countries and eight languages.",
+        "Paired text with images so harmless-looking inputs can combine into culture- or law-sensitive failures.",
+        "Introduced Judge-Pluralis, an agreement-gated LLM-as-a-Judge ensemble grounded in a cultural taxonomy."
+      ],
+      "evidence_signal": "The abstract reports systematic, locale- and language-dependent failure modes on a Pluralis subset, including image misidentification, missed item-context-locale interactions, and inadequate refusals.",
+      "watch_item": "This is an early benchmark, so results may depend on the chosen cultural taxonomy, judge ensemble, and coverage of locales and scenarios.",
+      "hashtags": [
+        "#AISafety",
+        "#MultimodalAI",
+        "#MultilingualAI",
+        "#Benchmarking",
+        "#CulturalAlignment"
+      ],
+      "paper_id": "2026-07-07-arxiv-pluralis_v0_1_towards_a_multicultural_multimodal_multilingual_benchmark_for_ai_risk_and_re",
+      "paper_title": "Pluralis v0.1: Towards a Multicultural, Multimodal, Multilingual Benchmark for AI Risk and Reliability",
+      "paper_date": "2026-07-07",
+      "paper_category": "Energy Materials",
+      "generated_at": "2026-07-08T12:19:58",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-05-arxiv-ml_and_ai_for_density_functional_theory_different_priorities_for_kohn_sham_and_orbital_fre",
+    "arxiv_id": "2607.04095v1",
+    "date": "2026-07-05",
+    "title": "ML and AI for density functional theory: different priorities for Kohn-Sham and orbital-free DFT, for electronic and nuclear DFT",
+    "authors": "Xin-Hui Wu, Sergei Manzhos",
+    "abstract": "We overview similarities and, importantly, differences in computational bottlenecks and accuracy requirements that can be addressed with machine learning (ML) and artificial intelligence (AI) techniques in electronic and nuclear DFT. From these follow different promising methodological and algorithmic choices depending on whether one machine learns the exchange correlation (XC) functional, the kinetic energy functional (KEF), the density or the basis functions. In particular, while the popular deep neural networks remain a potent choice in the context of KS DFT, we highlight their disadvantages when building KEFs and highlight conceptual advantages - yet to be fully realized - of symbolic regression for both electronic and nuclear DFT. We point out promising approaches that can be carried from the more extensively investigated ML-enhanced electronic DFT to nuclear DFT.",
+    "category": "AI materials science",
+    "source": "arXiv",
+    "published": "2026-07-05T03:16:48Z",
+    "updated": "2026-07-05T03:16:48Z",
+    "primary_category": "physics.chem-ph",
+    "categories": [
+      "physics.chem-ph",
+      "cond-mat.mtrl-sci",
+      "nucl-th",
+      "quant-ph"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2607.04095v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2607.04095v1"
+      }
+    ],
+    "score": 65,
+    "infographic": {
+      "key_insight": "The paper argues that ML/AI methods for DFT should be chosen differently depending on whether the target is Kohn-Sham or orbital-free DFT, because the bottlenecks and accuracy needs differ for exchange-correlation, kinetic energy, density, and basis-function learning.",
+      "engineering_relevance": "For computational materials and nuclear modeling, the right ML strategy can reduce DFT cost while preserving accuracy, but only if it matches the specific functional or representation being approximated.",
+      "method": [
+        "Compare ML targets across DFT: exchange-correlation functional, kinetic energy functional, density, and basis functions.",
+        "Favor deep neural networks for Kohn-Sham DFT where they are already strong, but be more cautious for kinetic energy functionals.",
+        "Highlight symbolic regression as a promising, conceptually transparent direction, especially for orbital-free and nuclear DFT."
+      ],
+      "evidence_signal": "This is an overview paper synthesizing prior electronic and nuclear DFT work, emphasizing differences in computational bottlenecks and accuracy requirements rather than reporting a single benchmark dataset.",
+      "watch_item": "Promising ML methods may not transfer directly between Kohn-Sham and orbital-free or from electronic to nuclear DFT, so model choice must be tailored to the target functional and error sensitivity.",
+      "hashtags": [
+        "#DFT",
+        "#MachineLearning",
+        "#ArtificialIntelligence",
+        "#MaterialsScience",
+        "#SymbolicRegression"
+      ],
+      "paper_id": "2026-07-05-arxiv-ml_and_ai_for_density_functional_theory_different_priorities_for_kohn_sham_and_orbital_fre",
+      "paper_title": "ML and AI for density functional theory: different priorities for Kohn-Sham and orbital-free DFT, for electronic and nuclear DFT",
+      "paper_date": "2026-07-05",
+      "paper_category": "AI materials science",
+      "generated_at": "2026-07-08T12:20:01",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-07-arxiv-from_closed_loop_optimization_to_open_decision_making_coupled_digital_twins_for_predictive",
+    "arxiv_id": "2607.05758v1",
+    "date": "2026-07-07",
+    "title": "From Closed-Loop Optimization to Open Decision Making: Coupled Digital Twins for Predictive and Autonomous Microscopy",
+    "authors": "Yu Liu, Boris Slautin, Ian Mercer, Jon-Paul Maria, Sergei V. Kalinin",
+    "abstract": "Automated experimentation is moving from closed-loop optimization toward open decision-making, where human or AI planners must forecast the consequences of candidate actions before executing them. Such forecasts require a model of both sides of the experiment: how the sample is likely to respond and what the instrument is likely to detect. We therefore introduce a coupled digital-twin framework that separates these roles and then links them. In this framework, the sample twin encodes material state inferred from prior knowledge and measurements till the moment. The instrument twin captures signal formation, feedback dynamics, and operating constraints based on prior knowledge. When coupled, the two twins estimate expected outcomes, uncertainty, and risk for candidate microscope operations. For amplitude-modulation scanning probe microscopy, we realize this framework with a physics-informed encoder of force-distance curves, a deterministic scanner model of cantilever and feedback dynamics, and sparse learned residual corrections. The encoder first recovers scanner-driving descriptors with sub-nanometer accuracy. The calibrated scanner then reproduces typical traces within a few nanometers and identifies operating-point noise amplification as the main source of mismatch. Supplementary phase analysis localizes residual error to the phase channel, which clarifies where added physics is needed. Together, these results establish coupled sample and instrument twins as a practical foundation for predictive microscope operation and autonomous experimental planning.",
+    "category": "Materials Discovery",
+    "source": "arXiv",
+    "published": "2026-07-07T02:31:01Z",
+    "updated": "2026-07-07T02:31:01Z",
+    "primary_category": "cond-mat.mtrl-sci",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cs.LG"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2607.05758v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2607.05758v1"
+      }
+    ],
+    "score": 64,
+    "infographic": {
+      "key_insight": "The paper separates microscopy into a sample twin and an instrument twin, then couples them to predict outcomes, uncertainty, and risk before acting.",
+      "engineering_relevance": "This provides a practical framework for autonomous microscopy planning, helping operators and AI choose safer, more informative actions in closed-loop experiments.",
+      "method": [
+        "Physics-informed encoder reconstructs scanner-driving descriptors from force-distance curves.",
+        "Deterministic scanner model simulates cantilever and feedback dynamics with sparse learned residual corrections.",
+        "Coupled twins jointly forecast expected measurement outcomes and operating risk for candidate microscope operations."
+      ],
+      "evidence_signal": "In amplitude-modulation scanning probe microscopy, the encoder recovered descriptors with sub-nanometer accuracy and the calibrated scanner reproduced typical traces within a few nanometers, with mismatch traced mainly to operating-point noise amplification and phase-channel residuals.",
+      "watch_item": "Performance depends on accurate calibration of both twins, and residual errors in the phase channel suggest that missing physics can still limit predictive fidelity.",
+      "hashtags": [
+        "#DigitalTwins",
+        "#AutonomousMicroscopy",
+        "#ScanningProbeMicroscopy",
+        "#MaterialsDiscovery",
+        "#AIforScience"
+      ],
+      "paper_id": "2026-07-07-arxiv-from_closed_loop_optimization_to_open_decision_making_coupled_digital_twins_for_predictive",
+      "paper_title": "From Closed-Loop Optimization to Open Decision Making: Coupled Digital Twins for Predictive and Autonomous Microscopy",
+      "paper_date": "2026-07-07",
+      "paper_category": "Materials Discovery",
+      "generated_at": "2026-07-08T12:20:03",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-06-arxiv-data_driven_atomistic_modelling_of_hybrid_halide_perovskite_passivation",
+    "arxiv_id": "2607.05321v1",
+    "date": "2026-07-06",
+    "title": "Data-driven atomistic modelling of hybrid halide perovskite passivation",
+    "authors": "Laura-Bianca Paşca, Henry J. Snaith, Volker L. Deringer",
+    "abstract": "Molecular passivation of surface defects is key to improving the optoelectronic performance of hybrid halide perovskite materials, but the underlying atomistic mechanisms are incompletely understood. While machine-learned interatomic potentials are now widely used to simulate complex molecular and crystalline systems, their application to experimentally-realistic scenarios - such as molecules coordinating to perovskite surfaces - is still far from trivial. Here, we describe a multistep training pipeline, resembling continuous fine-tuning used for large language models, to underpin atomistic modelling and computational experiments in this domain. Our protocol involves two components: (i) a large, curated, and open dataset of diverse metal and hybrid halide perovskite structures ('hyP-26'); and (ii) a small, specialised dataset for an amino-silane molecule passivating the surface, providing highly specific information for fine-tuning. We apply this approach to explore collective behaviour at a mixed-composition halide perovskite surface passivated with a varying coverage of amino-silane molecules, revealing an evolution of interactions with increasing molecular surface coverage.",
+    "category": "Crystal and Structure",
+    "source": "arXiv",
+    "published": "2026-07-06T16:59:26Z",
+    "updated": "2026-07-06T16:59:26Z",
+    "primary_category": "cond-mat.mtrl-sci",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "physics.comp-ph"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2607.05321v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2607.05321v1"
+      }
+    ],
+    "score": 63,
+    "infographic": {
+      "key_insight": "A two-stage, continuously fine-tuned machine-learning workflow can capture how amino-silane molecules passivate hybrid halide perovskite surfaces and how surface interactions change with molecular coverage.",
+      "engineering_relevance": "The approach provides a practical route to design more reliable passivation strategies for perovskite optoelectronic devices using atomistic simulations informed by realistic data.",
+      "method": [
+        "Build a large, curated open dataset of diverse metal and hybrid halide perovskite structures (hyP-26).",
+        "Fine-tune the model with a small, specialized dataset for amino-silane adsorption/passivation on the surface.",
+        "Use the trained potential to simulate mixed-composition perovskite surfaces across varying molecular coverages."
+      ],
+      "evidence_signal": "The abstract reports a multistep training pipeline combining a broad public dataset and a focused passivation dataset, then applying the model to study coverage-dependent surface interactions.",
+      "watch_item": "Because realistic molecule-on-surface passivation is highly specialized, model transferability outside the curated chemistries and training conditions may be limited.",
+      "hashtags": [
+        "#Perovskites",
+        "#MachineLearningPotentials",
+        "#SurfacePassivation",
+        "#AtomisticSimulation",
+        "#MaterialsInformatics"
+      ],
+      "paper_id": "2026-07-06-arxiv-data_driven_atomistic_modelling_of_hybrid_halide_perovskite_passivation",
+      "paper_title": "Data-driven atomistic modelling of hybrid halide perovskite passivation",
+      "paper_date": "2026-07-06",
+      "paper_category": "Crystal and Structure",
+      "generated_at": "2026-07-08T12:20:06",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-06-arxiv-dpti_an_automated_thermodynamic_integration_workflow_for_phase_diagram_calculations_with_m",
+    "arxiv_id": "2607.05015v1",
+    "date": "2026-07-06",
+    "title": "dpti: An Automated Thermodynamic Integration Workflow for Phase Diagram Calculations with Machine Learning Interatomic Potentials",
+    "authors": "Fengbo Yuan, Xin Zhong, Donghao Zheng, Jinzhe Zeng, Linfeng Zhang, Han Wang",
+    "abstract": "Thermodynamic integration (TI) is a widely used approach for computing free energies and phase diagrams. However, TI calculations driven by machine learning interatomic potentials (MLIPs) remain technically challenging because they require careful design of reversible integration paths and many closely related molecular dynamics (MD) tasks for each phase and state point. To address these challenges, we present dpti, an open-source Python package that automates TI workflows for phase diagram calculations with MLIPs. dpti connects reference systems with analytically known free energies to MLIP-described atomic and molecular solids and liquids through reversible integration paths. Given JSON input files, dpti generates and runs the required MD tasks, computes free energy contributions, estimates errors, and propagates coexistence points into phase boundaries. We demonstrate the usage of dpti with two examples driven by Deep Potential models: a silica phase diagram involving beta-quartz, coesite, and melt, and the ice Ih-liquid water phase boundary. dpti provides a useful tool for automated phase diagram calculations of materials modeled by MLIPs.",
+    "category": "Microstructure",
+    "source": "arXiv",
+    "published": "2026-07-06T12:56:52Z",
+    "updated": "2026-07-06T12:56:52Z",
+    "primary_category": "physics.comp-ph",
+    "categories": [
+      "physics.comp-ph",
+      "cond-mat.mtrl-sci"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2607.05015v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2607.05015v1"
+      }
+    ],
+    "score": 63,
+    "infographic": {
+      "key_insight": "dpti automates thermodynamic integration workflows to compute phase diagrams with machine learning interatomic potentials, reducing the manual effort of setting up reversible free-energy calculations.",
+      "engineering_relevance": "The package streamlines free-energy and coexistence-point calculations for solids and liquids, making MLIP-based phase diagram prediction more practical for materials design.",
+      "method": [
+        "Builds reversible thermodynamic integration paths from analytically known reference systems to MLIP-described phases.",
+        "Automatically generates, runs, and manages the required molecular dynamics tasks from JSON inputs.",
+        "Computes free-energy contributions, estimates uncertainties, and propagates coexistence points into phase boundaries."
+      ],
+      "evidence_signal": "The abstract reports demonstration on two Deep Potential case studies: a silica phase diagram (beta-quartz, coesite, melt) and the ice Ih–liquid water boundary.",
+      "watch_item": "Accurate results still depend on carefully designed reversible paths and reliable MD sampling, so setup quality and convergence remain important.",
+      "hashtags": [
+        "#ThermodynamicIntegration",
+        "#MachineLearningInteratomicPotentials",
+        "#PhaseDiagrams",
+        "#MaterialsSimulation",
+        "#MolecularDynamics"
+      ],
+      "paper_id": "2026-07-06-arxiv-dpti_an_automated_thermodynamic_integration_workflow_for_phase_diagram_calculations_with_m",
+      "paper_title": "dpti: An Automated Thermodynamic Integration Workflow for Phase Diagram Calculations with Machine Learning Interatomic Potentials",
+      "paper_date": "2026-07-06",
+      "paper_category": "Microstructure",
+      "generated_at": "2026-07-08T12:20:09",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-06-arxiv-vasp_plugins_linking_the_vienna_ab_initio_simulation_package_with_python",
+    "arxiv_id": "2607.04622v1",
+    "date": "2026-07-06",
+    "title": "VASP Plugins: Linking the Vienna ab-initio Simulation Package with Python",
+    "authors": "Sudarshan Vijay, Martijn Marsman, Georg Kresse, Martin Schlipf",
+    "abstract": "Implementing novel features and experimental algorithms into widely adopted density functional theory (DFT) codes is frequently hindered by complex legacy architectures and the use of compiled languages such as Fortran. These production codes, while optimised for high-performance computing clusters, present significant hurdles for software development and rapid prototyping, often requiring deep expertise in the code's internal structure to modify. To address this challenge, we present a Python plugin infrastructure for the Vienna ab-initio Simulation Package (VASP) that combines computational efficiency with the flexibility of high-level scripting. Our architecture uses a C++ intermediate layer and pybind11 to expose VASP data as NumPy arrays via shared memory buffers, ensuring high performance without data duplication. We implement two categories of plugins: those that modify quantities at the end of each converged self-consistent field (SCF) cycle, such as structure and force_and_stress, and those that operate during the SCF cycle, such as local_potential and occupancies. We demonstrate the utility of our implementation through three applications, structure relaxation using the scipy library, implementing an implicit solvent model, and adding the DFT-D4 dispersion corrections. This infrastructure effectively bridges the gap between high-performance electronic structure routines and the widespread scientific Python ecosystem.",
+    "category": "Crystal and Structure",
+    "source": "arXiv",
+    "published": "2026-07-06T03:04:15Z",
+    "updated": "2026-07-06T03:04:15Z",
+    "primary_category": "cond-mat.mtrl-sci",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2607.04622v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2607.04622v1"
+      }
+    ],
+    "score": 63,
+    "infographic": {
+      "key_insight": "VASP plugins use a Python-facing architecture to add or prototype features in a production DFT code without sacrificing performance.",
+      "engineering_relevance": "This makes it easier to extend legacy HPC electronic-structure software with modern scientific Python tools while avoiding costly data copying.",
+      "method": [
+        "C++ intermediate layer exposes VASP data to Python via pybind11",
+        "Shared-memory NumPy buffers provide zero-duplication data access",
+        "Two plugin modes: post-SCF updates and in-SCF operations"
+      ],
+      "evidence_signal": "The abstract reports three demonstration applications: structure relaxation with SciPy, an implicit solvent model, and DFT-D4 dispersion corrections.",
+      "watch_item": "Because plugins interact with a complex legacy codebase and shared-memory data flow, correctness and synchronization across SCF iterations must be handled carefully.",
+      "hashtags": [
+        "#DFT",
+        "#VASP",
+        "#Python",
+        "#HPC",
+        "#MaterialsInformatics"
+      ],
+      "paper_id": "2026-07-06-arxiv-vasp_plugins_linking_the_vienna_ab_initio_simulation_package_with_python",
+      "paper_title": "VASP Plugins: Linking the Vienna ab-initio Simulation Package with Python",
+      "paper_date": "2026-07-06",
+      "paper_category": "Crystal and Structure",
+      "generated_at": "2026-07-08T12:20:11",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-06-arxiv-drug_release_dynamics_from_a_three_layer_composite_contact_lens_in_the_vial_eye_wear_with",
+    "arxiv_id": "2607.05633v1",
+    "date": "2026-07-06",
+    "title": "Drug release dynamics from a three-layer composite contact lens in the vial, eye wear with blinking, and blister pack settings",
+    "authors": "Daniel M. Anderson, Rayanne A. Luke",
+    "abstract": "In this work we design a multi-layer model of composite contact lens drug release. Such lenses have been designed by encapsulating drug-polymer films in contact lens hydrogels. Composite lenses can promote sustained discharge of drug and achieve near zero-order release kinetics, thus surpassing other ocular delivery methods that are limited by short residence times and an undesirable initial burst release. Our model is informed by in vivo data, and includes three coupled partial differential equation layers to simulate the composite lens. We mathematically investigate the effect of composite contact lens design characteristics on the time to $50\\%$ therapeutic drug release ($t_{50}$) in the vial, eye, and blister pack settings. In the eye setting, we incorporate our prior model that considers the effect of many blinks on the pre- and post-lens tear film drug concentrations. We simulate drug cumulative release profiles and study the variability of $t_{50}$ across: (1) the ratio of the drug-polymer film to hydrogel diffusion coefficients, (2) the centerline of the polymer film within the hydrogel, and (3) the polymer film thickness. In the blister pack setting, we study storage questions that may inform future commercial design. This work may help medical professionals better understand the mechanics of contact lens drug delivery and predict targeted tissue transport of ophthalmic drugs.",
+    "category": "Polymers and Composites",
+    "source": "arXiv",
+    "published": "2026-07-06T20:49:47Z",
+    "updated": "2026-07-06T20:49:47Z",
+    "primary_category": "physics.bio-ph",
+    "categories": [
+      "physics.bio-ph"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2607.05633v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2607.05633v1"
+      }
+    ],
+    "score": 61,
+    "infographic": {
+      "key_insight": "A three-layer composite contact lens model predicts how lens architecture and storage/wear conditions control sustained ocular drug release, with an emphasis on time to 50% release.",
+      "engineering_relevance": "The results can guide contact lens design and packaging choices to improve ophthalmic drug delivery while reducing burst release and extending therapeutic residence time.",
+      "method": [
+        "Coupled PDE model of a drug-polymer film embedded in a hydrogel contact lens",
+        "Simulated release in three settings: vial, blinking eye, and blister pack storage",
+        "Swept design variables including diffusion-coefficient ratio, film position, and film thickness"
+      ],
+      "evidence_signal": "The model is informed by in vivo data and evaluated through cumulative release profiles and variability in t50 across lens design and use scenarios.",
+      "watch_item": "Predictions depend on model assumptions and parameterization, so translation to new drugs, materials, or patient blinking behavior may require revalidation.",
+      "hashtags": [
+        "#ContactLensDrugDelivery",
+        "#OphthalmicTransport",
+        "#PDEModeling",
+        "#PolymerComposites",
+        "#SustainedRelease"
+      ],
+      "paper_id": "2026-07-06-arxiv-drug_release_dynamics_from_a_three_layer_composite_contact_lens_in_the_vial_eye_wear_with",
+      "paper_title": "Drug release dynamics from a three-layer composite contact lens in the vial, eye wear with blinking, and blister pack settings",
+      "paper_date": "2026-07-06",
+      "paper_category": "Polymers and Composites",
+      "generated_at": "2026-07-08T12:20:14",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-06-arxiv-disentangling_electronic_and_lattice_contributions_to_transient_absorption_in_metal_halide",
+    "arxiv_id": "2607.04840v1",
+    "date": "2026-07-06",
+    "title": "Disentangling Electronic and Lattice Contributions to Transient Absorption in Metal Halide Perovskites: A First-Principles Study of CH3NH3PbBr3",
+    "authors": "Lu Qiao, Ronaldo Rodrigues Pela, Claudia Draxl",
+    "abstract": "Soft lattices combined with strong electron-phonon coupling in metal halide perovskites result in a complex interplay between electronic and lattice degrees of freedom. This interplay complicates the interpretation of time-resolved excitation spectra like pump-probe spectra. Here, we develop a first-principles approach that combines a nonequilibrium extension of the Bethe-Salpeter equation with \\textit{ab initio} molecular dynamics to resolve the origin of transient absorption. This approach can quantitatively disentangle electronic and thermal lattice contributions across femtosecond-to-picosecond timescales. Exemplified with \\ce{CH3NH3PbBr3}, we find that on the femtosecond scale, both X-ray and optical transient absorption spectra are dominated by electronic contributions: Photoinduced Coulomb screening weakens the effective electron-hole interaction and blueshifts the excitonic resonances, whereas Pauli blocking is negligible. On the picosecond scale, thermal lattice contributions become essential, with distinct mechanisms dominating different spectral regions: Lattice vibrations lead to spectral redistribution in the X-ray transient absorption spectrum, whereas lattice expansion blueshifts the optical transient absorption spectrum.",
+    "category": "Materials Discovery",
+    "source": "arXiv",
+    "published": "2026-07-06T09:10:59Z",
+    "updated": "2026-07-06T09:10:59Z",
+    "primary_category": "cond-mat.mtrl-sci",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2607.04840v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2607.04840v1"
+      }
+    ],
+    "score": 61,
+    "infographic": {
+      "key_insight": "A first-principles nonequilibrium BSE plus ab initio molecular dynamics framework can separate electronic and thermal lattice effects in transient absorption of CH3NH3PbBr3 across femtosecond-to-picosecond timescales.",
+      "engineering_relevance": "The method improves interpretation of pump-probe spectroscopy in soft perovskites, helping engineers connect measured spectral shifts to specific ultrafast mechanisms.",
+      "method": [
+        "Nonequilibrium extension of the Bethe-Salpeter equation for excited-state spectra",
+        "Ab initio molecular dynamics to capture thermal lattice motion",
+        "Comparative analysis of X-ray and optical transient absorption across timescales"
+      ],
+      "evidence_signal": "The abstract reports quantitative agreement in disentangling transient absorption into electronic-dominated femtosecond responses and lattice-dominated picosecond responses, with distinct mechanisms for X-ray versus optical spectra.",
+      "watch_item": "The approach is computationally intensive and may be challenging to transfer to larger systems or longer timescales without approximations.",
+      "hashtags": [
+        "#MaterialsDiscovery",
+        "#Perovskites",
+        "#TransientAbsorption",
+        "#FirstPrinciples",
+        "#ExcitedStateDynamics"
+      ],
+      "paper_id": "2026-07-06-arxiv-disentangling_electronic_and_lattice_contributions_to_transient_absorption_in_metal_halide",
+      "paper_title": "Disentangling Electronic and Lattice Contributions to Transient Absorption in Metal Halide Perovskites: A First-Principles Study of CH3NH3PbBr3",
+      "paper_date": "2026-07-06",
+      "paper_category": "Materials Discovery",
+      "generated_at": "2026-07-08T12:20:17",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-01-arxiv-graph_native_reinforcement_learning_enables_traceable_scientific_hypothesis_generation_thr",
+    "arxiv_id": "2607.00924v1",
+    "date": "2026-07-01",
+    "title": "Graph-Native Reinforcement Learning Enables Traceable Scientific Hypothesis Generation through Conceptual Recombination",
+    "authors": "Subhadeep Pal, Shashwat Sourav, Tirthankar Ghosal, Markus J. Buehler",
+    "abstract": "Accelerating materials discovery requires AI systems that can generate scientifically valid hypotheses through multi-step, domain-grounded reasoning. Standard large language models often produce fluent but weakly traceable responses to open-ended materials design problems, making it difficult to determine whether final answers are supported by coherent intermediate reasoning. We develop Graph-PRefLexOR, a family of graph-native reasoning models fine-tuned with Group Relative Policy Optimization (GRPO) to organize reasoning into explicit phases for mechanism exploration, graph construction, pattern extraction, and hypothesis synthesis. This design links neural language generation with symbolic relational structure, enabling causal connections to be constructed, inspected, and reused. On 100 open-ended questions from materials science and mechanics literature, Graph-PRefLexOR achieves 40-65% improvements over corresponding base models, with the largest gains in reasoning traceability. Embedding analyses show broader semantic exploration and approximately 2-3 times greater semantic diversity than baselines. Semantic backtracking and layer-wise hidden-state analyses further show stronger alignment between structured reasoning and final answers. Finally, test-time graph expansion reveals that additional compute primarily increases long-range conceptual recombination within a bounded semantic space, rather than simply expanding semantic coverage. These results establish graph-native reinforcement learning as a pathway toward interpretable AI systems for scientific hypothesis generation in materials design and other scientific applications.",
+    "category": "Materials Discovery",
+    "source": "arXiv",
+    "published": "2026-07-01T13:26:10Z",
+    "updated": "2026-07-01T13:26:10Z",
+    "primary_category": "cs.AI",
+    "categories": [
+      "cs.AI",
+      "cond-mat.mtrl-sci",
+      "cs.CL",
+      "cs.LG"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2607.00924v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2607.00924v1"
+      }
+    ],
+    "score": 61,
+    "infographic": {
+      "key_insight": "Graph-PRefLexOR uses graph-native reinforcement learning to make scientific hypothesis generation more traceable by forcing reasoning into explicit, reusable phases.",
+      "engineering_relevance": "For materials discovery pipelines, this offers a more interpretable way to generate and audit candidate mechanisms and design hypotheses than standard fluent-only LLM outputs.",
+      "method": [
+        "Fine-tune graph-native reasoning models with GRPO.",
+        "Structure inference into mechanism exploration, graph construction, pattern extraction, and hypothesis synthesis.",
+        "Use semantic/backtracking and hidden-state analyses to verify alignment between reasoning and final answers."
+      ],
+      "evidence_signal": "Evaluated on 100 open-ended materials science and mechanics questions, with reported 40-65% gains over base models and 2-3x higher semantic diversity.",
+      "watch_item": "Performance is demonstrated on a relatively small benchmark, so broader generalization and compute cost for graph expansion still need validation.",
+      "hashtags": [
+        "#MaterialsDiscovery",
+        "#GraphAI",
+        "#ReinforcementLearning",
+        "#ScientificAI",
+        "#ExplainableAI"
+      ],
+      "paper_id": "2026-07-01-arxiv-graph_native_reinforcement_learning_enables_traceable_scientific_hypothesis_generation_thr",
+      "paper_title": "Graph-Native Reinforcement Learning Enables Traceable Scientific Hypothesis Generation through Conceptual Recombination",
+      "paper_date": "2026-07-01",
+      "paper_category": "Materials Discovery",
+      "generated_at": "2026-07-08T12:20:20",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-06-arxiv-recovering_cloud_microstructures_with_cascaded_diffusion_inversion",
+    "arxiv_id": "2607.05637v1",
+    "date": "2026-07-06",
+    "title": "Recovering Cloud Microstructures with Cascaded Diffusion Inversion",
+    "authors": "Hanan Gani, Guy Pulik, Daniel Rosenfeld, Duncan Watson-Parris, Salman Khan",
+    "abstract": "High-resolution satellite imagery is critical for observing fine-scale cloud structures that inform weather modification strategies like cloud seeding for rain-enhancement. However, the spatial resolution of current geostationary and polar-orbiting satellites is often insufficient for capturing small cloud features. Current super-resolution methodologies are suited for natural images and, therefore, struggle to generalize to satellite-captured spectral images of cloud cover. To address this, we propose a two-stage diffusion-based super-resolution framework to enhance the resolution of multi-spectral cloud microstructures by a factor of $4\\times$. Specifically, we use inverse diffusion to recover the high resolution properties from low resolution. Stage 1 utilizes real-world paired data to learn robust degradation handling and inter-sensor alignment, while Stage 2 employs a self-supervised internal downgrading of high resolution data to refine structural learning and texture synthesis. Our approach outperforms the state-of-the-art transformer and diffusion-based baselines in both reconstruction accuracy and visual quality. We demonstrate that the two-stage method better captures fine cloud microstructures (e.g. convective turrets and cloud gaps) that are crucial for effective cloud seeding decisions. Ablation studies confirm the complementary benefits of the two stages: Stage 1 excels in coarse structural fidelity, while Stage 2 contributes enhanced detail and realism. These results highlight a practical path toward improving cloud microphysics analysis and as a step towards utilizing AI for climate and sustainability. Our code and models are publicly available at: https://github.com/hananshafi/superresolution-cloud-microphysics.",
+    "category": "Crystal and Structure",
+    "source": "arXiv",
+    "published": "2026-07-06T20:57:39Z",
+    "updated": "2026-07-06T20:57:39Z",
+    "primary_category": "cs.CV",
+    "categories": [
+      "cs.CV"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2607.05637v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2607.05637v1"
+      }
+    ],
+    "score": 60,
+    "infographic": {
+      "key_insight": "A two-stage diffusion inversion pipeline can recover fine cloud microstructures from low-resolution multispectral satellite imagery with 4× super-resolution.",
+      "engineering_relevance": "This improves the fidelity of cloud microphysics observations, which can support better weather-modification decisions such as cloud seeding and broader climate analysis.",
+      "method": [
+        "Stage 1: train on real paired low/high-resolution data to learn sensor degradation and alignment.",
+        "Stage 2: self-supervised internal downgrading of high-resolution data to refine structures and synthesize realistic textures.",
+        "Use cascaded diffusion inversion to reconstruct high-frequency cloud details from low-resolution inputs."
+      ],
+      "evidence_signal": "The abstract reports that the method outperforms transformer-based and diffusion-based baselines on reconstruction accuracy and visual quality, with ablations showing Stage 1 helps coarse fidelity and Stage 2 adds detail.",
+      "watch_item": "Performance may depend on the quality and representativeness of paired multispectral satellite data, and generalization across sensors or atmospheric conditions should be validated.",
+      "hashtags": [
+        "#DiffusionModels",
+        "#SuperResolution",
+        "#RemoteSensing",
+        "#CloudMicrophysics",
+        "#ClimateAI"
+      ],
+      "paper_id": "2026-07-06-arxiv-recovering_cloud_microstructures_with_cascaded_diffusion_inversion",
+      "paper_title": "Recovering Cloud Microstructures with Cascaded Diffusion Inversion",
+      "paper_date": "2026-07-06",
+      "paper_category": "Crystal and Structure",
+      "generated_at": "2026-07-08T12:20:22",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-06-arxiv-rethinking_benchmarks_and_models_for_enzyme_specificity_prediction",
+    "arxiv_id": "2607.05084v1",
+    "date": "2026-07-06",
+    "title": "Rethinking Benchmarks and Models for Enzyme Specificity Prediction",
+    "authors": "Elizabeth H. Mahood, Natália Komorníková, Tomáš Pluskal, Pranam Chatterjee",
+    "abstract": "Artificial Intelligence has had a profound impact on the biological sciences, and in particular has accelerated research on protein form and function. Enzymes are no exception: a surge of predictive models have been recently developed to address a range of enzyme tasks. Models addressing enzyme-substrate (ES) or enzyme-reaction (ER) compatibility could be especially valuable for enzyme annotation, biosynthetic pathway elucidation, and biocatalyst retrieval, the central challenge of which is the identification of a true catalyst (or truly compatible reaction) among many similar candidates. While existing models report strong performance on alternative benchmarks, less is known about their capabilities in this regime. Herein, we benchmark four recently released ES and ER prediction models, using tasks and datasets tailored to this setting. We first show that two representative ES prediction models perform near random baselines across two enzyme families when considering enzymes and substrates not encountered during training. To evaluate additional models across a consistent dataset, we next assemble the largest cytochrome P450 (CYP) reaction dataset to date, 2,922 reactions across 768 enzymes, and construct a CYP ranking benchmark requiring the correct enzyme to be prioritized among all CYPs in its native organism. We again find that most models do not outperform sequence-based (BLAST) baselines even after fine-tuning. We finally adapt the bimolecular structure prediction model Boltz to ES prediction by training supervised classifiers on residue-ligand pair embeddings, and show that this approach consistently surpasses the BLAST baselines on our CYP ranking benchmark. Together, our results argue for more discovery-relevant benchmarking and suggest that interaction-aware representations from full biomolecular complexes may provide a promising basis for enzyme prioritization.",
+    "category": "Materials Discovery",
+    "source": "arXiv",
+    "published": "2026-07-06T13:48:02Z",
+    "updated": "2026-07-06T13:48:02Z",
+    "primary_category": "q-bio.BM",
+    "categories": [
+      "q-bio.BM"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2607.05084v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2607.05084v1"
+      }
+    ],
+    "score": 60,
+    "infographic": {
+      "key_insight": "Most enzyme specificity models look strong on standard tests but fail on discovery-relevant settings where the true enzyme or substrate is unseen.",
+      "engineering_relevance": "For enzyme annotation and biocatalyst discovery, models must rank the correct catalyst among many close candidates, not just classify familiar pairs.",
+      "method": [
+        "Benchmarked four recent enzyme-substrate and enzyme-reaction models on unseen-enzyme/unseen-substrate settings",
+        "Built a large cytochrome P450 dataset with 2,922 reactions from 768 enzymes and a native-organism ranking task",
+        "Adapted Boltz interaction embeddings with supervised classifiers for enzyme-substrate prediction"
+      ],
+      "evidence_signal": "On the new CYP ranking benchmark, most models did not beat BLAST baselines even after fine-tuning, while Boltz-derived features consistently did.",
+      "watch_item": "Performance depends strongly on benchmark design, so results from random-split or familiar-pair evaluations may overestimate real-world usefulness.",
+      "hashtags": [
+        "#EnzymeAI",
+        "#Biocatalysis",
+        "#ProteinML",
+        "#Benchmarking",
+        "#MaterialsDiscovery"
+      ],
+      "paper_id": "2026-07-06-arxiv-rethinking_benchmarks_and_models_for_enzyme_specificity_prediction",
+      "paper_title": "Rethinking Benchmarks and Models for Enzyme Specificity Prediction",
+      "paper_date": "2026-07-06",
+      "paper_category": "Materials Discovery",
+      "generated_at": "2026-07-08T12:20:25",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-07-arxiv-economised_path_integrals",
+    "arxiv_id": "2607.06414v1",
+    "date": "2026-07-07",
+    "title": "Economised path integrals",
+    "authors": "Zezhu Zeng, David E. Manolopoulos",
+    "abstract": "The Hessian of the ring polymer spring potential in the standard Trotter path integral is a $P\\times P$ symmetric circulant matrix with a centroid eigenvalue of zero. All such matrices commute and are diagonalised by the same bead to normal mode transformation matrix, and their eigenvalues contain $\\lceil P/2\\rceil-1$ degenerate pairs by symmetry. However, this still leaves some freedom to improve on the Trotter approximation: one can optimise the remaining $\\lfloor P/2\\rfloor$ independent non-zero normal mode frequencies to fit the exact quantum mechanical radii of gyration of harmonic ring polymers with frequencies in the range $0\\leω\\leω_{\\rm max}$, where $ω_{\\rm max}$ is the maximum physical frequency in the problem of interest. The optimisation involves solving a simple least squares problem for the optimum (economised or \"Eco\") internal mode frequencies. The remainder of the calculation then proceeds in the same way as a Trotter path integral calculation. An example application to hexagonal ice shows that the convergence of the Eco path integral is comparable to that of the 4th order Suzuki-Chin path integral, but with purely 2nd order Trotter effort. There is no need to calculate the projected Hessians that arise in the Suzuki-Chin method by finite differences, there is no need to develop any new estimators for observables, and once the Eco frequencies have been calculated the implementation of the Eco path integral involves changing just a few lines of a Trotter path integral code. To provide a more impressive example we have implemented the Eco method in GPUMD and used it to converge the (negative) thermal expansion coefficient and the constant pressure heat capacity of MOF-5 with a machine-learned neuroevolution potential.",
+    "category": "Polymers and Composites",
+    "source": "arXiv",
+    "published": "2026-07-07T15:45:10Z",
+    "updated": "2026-07-07T15:45:10Z",
+    "primary_category": "physics.chem-ph",
+    "categories": [
+      "physics.chem-ph",
+      "cond-mat.mtrl-sci"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2607.06414v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2607.06414v1"
+      }
+    ],
+    "score": 59,
+    "infographic": {
+      "key_insight": "Eco path integrals optimize the internal ring-polymer frequencies to better match quantum harmonic behavior while keeping the same simple Trotter-style workflow.",
+      "engineering_relevance": "This gives near-Suzuki-Chin accuracy with much lower implementation overhead, making high-accuracy quantum nuclear sampling easier to deploy in existing codes.",
+      "method": [
+        "Fit the non-zero normal-mode frequencies by least squares to exact quantum radii of gyration.",
+        "Keep the standard bead-to-normal-mode transformation and the rest of the Trotter path-integral machinery unchanged.",
+        "Use the optimized frequencies to improve convergence for observables in realistic materials simulations."
+      ],
+      "evidence_signal": "The abstract reports that for hexagonal ice the Eco path integral converges comparably to 4th-order Suzuki-Chin while retaining 2nd-order Trotter effort, and it was also applied in GPUMD to MOF-5 thermal expansion and heat capacity.",
+      "watch_item": "The optimization is tuned against harmonic-ring-polymer radius-of-gyration targets, so performance may depend on the frequency range and problem class used to build the Eco parameters.",
+      "hashtags": [
+        "#PathIntegrals",
+        "#MolecularSimulation",
+        "#QuantumNuclei",
+        "#MaterialsModeling",
+        "#ComputationalPhysics"
+      ],
+      "paper_id": "2026-07-07-arxiv-economised_path_integrals",
+      "paper_title": "Economised path integrals",
+      "paper_date": "2026-07-07",
+      "paper_category": "Polymers and Composites",
+      "generated_at": "2026-07-08T12:20:28",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-07-arxiv-long_term_performance_of_sipms_in_space_environment_measured_by_grbalpha_grbbeta_and_vzlus",
+    "arxiv_id": "2607.06318v1",
+    "date": "2026-07-07",
+    "title": "Long-term performance of SiPMs in space environment measured by GRBAlpha, GRBBeta, and VZLUSAT-2 CubeSats",
+    "authors": "Jakub Ripa, Filip Munz, Marianna Dafcikova, Andras Pal, Norbert Werner, Masanori Ohno",
+    "abstract": "In this work, we report the successful application of silicon photomultipliers (SiPMs) in gamma-ray burst (GRB) detectors used in CubeSats operating in the low Earth orbit (LEO) radiation environment. It is known that SiPMs are susceptible to radiation damage, leading to an increase in the dark count rate. This results in an increase in the low-energy threshold in detectors combining SiPMs and scintillators. Despite this drawback, they became popular in gamma-ray detectors on CubeSats due to their low operating voltage, small size and fast response. Therefore, it is important to characterise their long-term performance in the space environment. Here, we describe the changes in the dark count rate and low-energy threshold of S13360-3050PE multi-pixel photon counters (MPPCs) by Hamamatsu Photonics K.K., using measurements from the GRBAlpha, GRBBeta, and VZLUSAT-2 CubeSats. In the case of GRBAlpha, the measurement of SiPM performance in space lasted over 4 years. GRBAlpha was a 1U CubeSat launched on 2021/03/22 to a 550 km altitude polar orbit carrying a CsI(Tl) scintillator GRB detector employing eight MPPCs and sensitive in the range of ~30-900 keV. GRBAlpha de-orbited on 2025/06/09. VZLUSAT-2 was a 3U CubeSat launched on 2022/01/13 to a 535 km altitude polar orbit and de-orbited on 2025/11/30. GRBBeta was launched on 2024/07/09 to a 580 km altitude, 62° inclination orbit. Both VZLUSAT-2 and GRBBeta carry detectors similar to the one on GRBAlpha. We have flight-proven the Hamamatsu MPPCs S13360-3050 PE and demonstrated that SiPMs, shielded by 2.5 mm of PbSb alloy, can be used in a LEO environment on a scientific mission lasting beyond 4 years. This shows the potential for SiPMs to be employed in future satellites.",
+    "category": "AI materials science",
+    "source": "arXiv",
+    "published": "2026-07-07T14:18:38Z",
+    "updated": "2026-07-07T14:18:38Z",
+    "primary_category": "astro-ph.IM",
+    "categories": [
+      "astro-ph.IM"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2607.06318v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2607.06318v1"
+      }
+    ],
+    "score": 59,
+    "infographic": {
+      "key_insight": "Hamamatsu S13360-3050PE SiPMs remained operational in CubeSat gamma-ray detectors for more than four years in low Earth orbit, showing they can survive space radiation when adequately shielded.",
+      "engineering_relevance": "This supports using compact, low-voltage SiPM-based scintillation detectors for long-duration space missions where size, power, and fast response matter.",
+      "method": [
+        "Tracked dark count rate and low-energy threshold over time in flight.",
+        "Compared performance across GRBAlpha, GRBBeta, and VZLUSAT-2 CubeSats.",
+        "Used CsI(Tl) scintillator detectors with 2.5 mm PbSb shielding."
+      ],
+      "evidence_signal": "Flight data from GRBAlpha over 4+ years showed that shielded SiPMs could be used successfully in LEO despite radiation-driven degradation trends.",
+      "watch_item": "Radiation damage still increases dark count rate and can raise the low-energy threshold, so mission design must account for shielding, orbit, and expected lifetime.",
+      "hashtags": [
+        "#SiPM",
+        "#CubeSat",
+        "#SpaceRadiation",
+        "#GammaRayDetectors",
+        "#MaterialsEngineering"
+      ],
+      "paper_id": "2026-07-07-arxiv-long_term_performance_of_sipms_in_space_environment_measured_by_grbalpha_grbbeta_and_vzlus",
+      "paper_title": "Long-term performance of SiPMs in space environment measured by GRBAlpha, GRBBeta, and VZLUSAT-2 CubeSats",
+      "paper_date": "2026-07-07",
+      "paper_category": "AI materials science",
+      "generated_at": "2026-07-08T12:20:30",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-07-arxiv-deep_learning_hamiltonian_reveals_twist_tunable_flat_bands_and_nonlinear_photocurrents_in",
+    "arxiv_id": "2607.06053v1",
+    "date": "2026-07-07",
+    "title": "Deep-learning Hamiltonian reveals twist-tunable flat bands and nonlinear photocurrents in SrTiO3 moire bilayers",
+    "authors": "Meiyang Yu, Chen Shen, Ruiwen Xie, Jingwei Tao, Lijun Zhang, Hongbin Zhang",
+    "abstract": "The extension of moire physics to complex oxides offers new ways to manipulate electronic states, but the large oxide moire supercells make systematic first-principles calculations demanding. Here, we combine density functional theory with the E(3)-equivariant deep-learning Hamiltonian framework DeepH-E3 to investigate the twist-angle-dependent electronic structure and optical responses of twisted bilayer SrTiO3. The model is trained on untwisted bilayers with different interlayer-sliding configurations and then applied to commensurate twisted bilayers with twist angles from 8.80 degrees to 53.13 degrees. Compared with the untwisted bilayer, decreasing twist angle systematically flattens the valence bands and leads to nearly dispersionless bands at the smallest angles studied. Based on the predicted Hamiltonians, we evaluate the dielectric response, second-harmonic generation (SHG), shift current, and spin Hall conductivity. The dielectric response and spin Hall conductivity remain close to those of the untwisted bilayer, whereas the nonlinear optical responses are more strongly affected by twisting. SHG is strongly enhanced relative to the weak untwisted response, and the shift current shows a clear twist-angle dependence within the response-calculation range (53.13 degrees-22.62 degrees). These results show that twist engineering can control electronic and optoelectronic responses in oxide moire systems.",
+    "category": "Crystal and Structure",
+    "source": "arXiv",
+    "published": "2026-07-07T09:30:53Z",
+    "updated": "2026-07-07T09:30:53Z",
+    "primary_category": "cond-mat.mtrl-sci",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2607.06053v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2607.06053v1"
+      }
+    ],
+    "score": 59,
+    "infographic": {
+      "key_insight": "Twist angle in SrTiO3 bilayers can flatten valence bands and strongly amplify nonlinear optical responses, especially second-harmonic generation.",
+      "engineering_relevance": "DeepH-E3 enables scalable first-principles-like prediction of moiré oxide electronic and optoelectronic behavior without directly solving every large supercell.",
+      "method": [
+        "Train an E(3)-equivariant deep-learning Hamiltonian on DFT data for untwisted SrTiO3 bilayers with different interlayer slide configurations.",
+        "Apply the learned Hamiltonian to commensurate twisted bilayers spanning 8.80° to 53.13°.",
+        "Use predicted Hamiltonians to compute dielectric response, SHG, shift current, and spin Hall conductivity."
+      ],
+      "evidence_signal": "The model predicts systematic valence-band flattening as twist angle decreases, with SHG strongly enhanced and shift current showing twist dependence over 53.13° to 22.62°.",
+      "watch_item": "The approach is trained on untwisted/slid configurations, so transferability to more strongly relaxed, defected, or less commensurate moiré structures may require additional validation.",
+      "hashtags": [
+        "#MoiréMaterials",
+        "#OxideElectronics",
+        "#DeepLearningHamiltonian",
+        "#Twistronics",
+        "#NonlinearOptics"
+      ],
+      "paper_id": "2026-07-07-arxiv-deep_learning_hamiltonian_reveals_twist_tunable_flat_bands_and_nonlinear_photocurrents_in",
+      "paper_title": "Deep-learning Hamiltonian reveals twist-tunable flat bands and nonlinear photocurrents in SrTiO3 moire bilayers",
+      "paper_date": "2026-07-07",
+      "paper_category": "Crystal and Structure",
+      "generated_at": "2026-07-08T12:20:33",
+      "generator": "openai"
+    }
+  }
+]
