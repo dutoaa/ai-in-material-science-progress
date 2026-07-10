@@ -1,13 +1,13 @@
 {
-  "key_insight": "Adding site-projected orbital density of states (pDOS) to graph node features injects local electronic-structure information and substantially improves materials property prediction.",
-  "engineering_relevance": "This offers a practical way to boost graph neural network accuracy for screening materials when first-principles electronic information is available.",
+  "key_insight": "Augmenting graph neural network atom features with site-projected density of states from DFT captures local electronic structure and significantly improves materials property prediction.",
+  "engineering_relevance": "This offers a practical way to build more accurate property predictors for materials discovery by combining first-principles electronic information with crystal-graph learning.",
   "method": [
-    "Compute pDOS fingerprints from DFT for each atomic site.",
-    "Fuse pDOS with Pettifor elemental embeddings before message passing.",
-    "Use a spectral attention-gating mechanism to highlight relevant orbitals and energy windows."
+    "Compute orbital-projected density of states (pDOS) fingerprints for each atomic site from DFT.",
+    "Fuse pDOS features with Pettifor elemental embeddings before message passing in a graph neural network.",
+    "Use a spectral attention-gating mechanism to identify which orbitals and energy ranges matter most for each target property."
   ],
-  "evidence_signal": "Compared with an elemental-descriptor baseline, pDOS augmentation reduced prediction error by 22.9% for superconducting Tc and 27.9% for the optical dielectric constant ε∞.",
-  "watch_item": "The benefit depends on training-set size and can shrink for smaller datasets, so pDOS features may be less effective when data are limited relative to feature dimensionality.",
+  "evidence_signal": "Compared with an elemental-descriptor baseline, pDOS augmentation reduced errors by 22.9% for superconducting Tc and 27.9% for optical dielectric constant ε∞, with gains comparable to doubling the training set.",
+  "watch_item": "The benefit depends on dataset size and is weaker when the training set is smaller than the pDOS feature dimension, so the added electronic descriptors may not help equally in data-scarce cases.",
   "hashtags": [
     "#MaterialsInformatics",
     "#GraphNeuralNetworks",
@@ -19,6 +19,6 @@
   "paper_title": "Machine Learning Materials Properties by Encoding Orbital-Projected Density of States",
   "paper_date": "2026-07-08",
   "paper_category": "Crystal and Structure",
-  "generated_at": "2026-07-09T13:48:02",
+  "generated_at": "2026-07-10T13:10:17",
   "generator": "openai"
 }
