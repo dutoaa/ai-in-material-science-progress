@@ -1,6 +1,6 @@
 # AI materials science Progress Public Resources
 
-Generated: 2026-07-10
+Generated: 2026-07-11
 Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 
 ## 1. MLIP Studio: An Open Platform for Interactive Benchmarking and Atomistic Simulations Using Machine Learning Interatomic Potentials
@@ -139,7 +139,15 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2607.08474v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-09-arxiv-layer_resolved_electronic_structure_and_correlation_of_low_n_square_planar_nickelates_a_df_infographic.json
 
-## 18. MatBind: A Shared Embedding Space for Multimodal Materials Characterization
+## 18. Quantum weight and low-loss EELS signatures of Wannier quantum geometry in black phosphorus
+
+- Date: 2026-07-09
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2607.08438v1
+- PDF: https://arxiv.org/pdf/2607.08438v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-09-arxiv-quantum_weight_and_low_loss_eels_signatures_of_wannier_quantum_geometry_in_black_phosphoru_infographic.json
+
+## 19. MatBind: A Shared Embedding Space for Multimodal Materials Characterization
 
 - Date: 2026-07-09
 - Category: Crystal and Structure
@@ -147,18 +155,10 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2607.08470v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-09-arxiv-matbind_a_shared_embedding_space_for_multimodal_materials_characterization_infographic.json
 
-## 19. Large-scale pseudopotential density functional theory calculations using orthogonalized enriched finite element basis
+## 20. Large-scale pseudopotential density functional theory calculations using orthogonalized enriched finite element basis
 
 - Date: 2026-07-07
 - Category: Polymers and Composites
 - arXiv: https://arxiv.org/abs/2607.06848v1
 - PDF: https://arxiv.org/pdf/2607.06848v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-07-arxiv-large_scale_pseudopotential_density_functional_theory_calculations_using_orthogonalized_en_infographic.json
-
-## 20. Modelling the mean inner potential of alloyed and strained materials
-
-- Date: 2026-07-07
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2607.05948v1
-- PDF: https://arxiv.org/pdf/2607.05948v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-07-arxiv-modelling_the_mean_inner_potential_of_alloyed_and_strained_materials_infographic.json

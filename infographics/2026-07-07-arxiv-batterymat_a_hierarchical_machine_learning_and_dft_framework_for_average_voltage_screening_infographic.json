@@ -1,24 +1,24 @@
 {
-  "key_insight": "BatteryMat combines fast machine-learning screening with DFT validation to rank lithium-ion cathode candidates by average voltage while preserving thermodynamic consistency.",
-  "engineering_relevance": "The framework can accelerate cathode discovery across large materials databases by narrowing millions of structures to a small set of DFT-ready leads.",
+  "key_insight": "BatteryMat combines machine learning, force-field delithiation, and automated DFT into a three-tier screening pipeline to efficiently rank lithium-ion cathode candidates while preserving thermodynamic consistency.",
+  "engineering_relevance": "The framework enables scalable discovery of promising cathode materials from very large databases without relying on DFT for every candidate, making it useful for high-throughput materials screening workflows.",
   "method": [
-    "Tier 1: ALIGNN predicts average voltage as a rapid surrogate screen over JARVIS-DFT and Alexandria structures.",
-    "Tier 2: ALIGNN-FF delithiation profiles validate survivors using force-field-based voltage traces.",
-    "Tier 3: automated supercell DFT with PBE+U or optB88-vdW+U finalizes voltage and capacity estimates, with the functional chosen by spacegroup."
+    "Use ALIGNN as the first-pass surrogate to screen lithium-containing structures for average voltage.",
+    "Validate top candidates with ALIGNN-FF delithiation profiles before running automated PBE+U or optB88-vdW+U supercell DFT.",
+    "Automatically choose the exchange-correlation functional by spacegroup and recompute the Li metal reference in the same basis to remove voltage offsets."
   ],
-  "evidence_signal": "ALIGNN-FF training on 7,610 delithiation voltages achieved MAE 0.17 V and R² = 0.94, and the DFT tier matched four commercial cathodes within about 0.3 V of experimental average voltage.",
-  "watch_item": "The ML model is only distilling the force-field protocol and the pipeline prioritizes existing structures, so surrogate hits still require careful DFT validation before being treated as confirmed cathodes.",
+  "evidence_signal": "ALIGNN-FF training on 7,610 voltages achieved MAE 0.17 V and R² = 0.94, while DFT validation on four commercial cathodes matched experimental average voltage within 0.3 V and volumetric capacity within 5%.",
+  "watch_item": "The ML model is only validated against the force-field delithiation protocol, so surrogate predictions still require DFT confirmation before being treated as confirmed cathodes.",
   "hashtags": [
-    "#BatteryMat",
     "#MaterialsDiscovery",
-    "#LiionBatteries",
+    "#BatteryMaterials",
     "#MachineLearning",
-    "#DFT"
+    "#DensityFunctionalTheory",
+    "#CathodeScreening"
   ],
   "paper_id": "2026-07-07-arxiv-batterymat_a_hierarchical_machine_learning_and_dft_framework_for_average_voltage_screening",
   "paper_title": "BatteryMat: a hierarchical machine-learning and DFT framework for average-voltage screening of lithium-ion cathode materials",
   "paper_date": "2026-07-07",
   "paper_category": "Materials Discovery",
-  "generated_at": "2026-07-10T13:10:32",
+  "generated_at": "2026-07-11T11:50:58",
   "generator": "openai"
 }

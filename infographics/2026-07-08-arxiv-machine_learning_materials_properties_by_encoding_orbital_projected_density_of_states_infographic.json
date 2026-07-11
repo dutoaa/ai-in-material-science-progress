@@ -1,24 +1,24 @@
 {
-  "key_insight": "Augmenting graph neural network atom features with site-projected density of states from DFT captures local electronic structure and significantly improves materials property prediction.",
-  "engineering_relevance": "This offers a practical way to build more accurate property predictors for materials discovery by combining first-principles electronic information with crystal-graph learning.",
+  "key_insight": "Adding site-projected orbital density of states (pDOS) to atomic graph-node features gives graph neural networks direct electronic-structure context, substantially improving materials-property prediction.",
+  "engineering_relevance": "This offers a practical route to higher-accuracy screening of functional materials by combining DFT-derived electronic fingerprints with crystal-graph learning.",
   "method": [
-    "Compute orbital-projected density of states (pDOS) fingerprints for each atomic site from DFT.",
-    "Fuse pDOS features with Pettifor elemental embeddings before message passing in a graph neural network.",
-    "Use a spectral attention-gating mechanism to identify which orbitals and energy ranges matter most for each target property."
+    "Compute pDOS fingerprints from density functional theory for each atomic site.",
+    "Fuse pDOS with Pettifor elemental embeddings before message passing in a graph neural network.",
+    "Use an interpretable spectral attention-gating module to identify the most relevant orbitals and energy windows."
   ],
-  "evidence_signal": "Compared with an elemental-descriptor baseline, pDOS augmentation reduced errors by 22.9% for superconducting Tc and 27.9% for optical dielectric constant ε∞, with gains comparable to doubling the training set.",
-  "watch_item": "The benefit depends on dataset size and is weaker when the training set is smaller than the pDOS feature dimension, so the added electronic descriptors may not help equally in data-scarce cases.",
+  "evidence_signal": "Compared with an elemental-descriptor baseline, pDOS augmentation reduced prediction error by 22.9% for superconducting Tc and 27.9% for optical dielectric constant ε∞, with gains comparable to doubling the training set.",
+  "watch_item": "Benefits depend on dataset size; for smaller training sets the pDOS vector can be too high-dimensional relative to available data, limiting improvement.",
   "hashtags": [
     "#MaterialsInformatics",
     "#GraphNeuralNetworks",
     "#DensityFunctionalTheory",
-    "#DensityOfStates",
-    "#MachineLearningMaterials"
+    "#ElectronicStructure",
+    "#MachineLearning"
   ],
   "paper_id": "2026-07-08-arxiv-machine_learning_materials_properties_by_encoding_orbital_projected_density_of_states",
   "paper_title": "Machine Learning Materials Properties by Encoding Orbital-Projected Density of States",
   "paper_date": "2026-07-08",
   "paper_category": "Crystal and Structure",
-  "generated_at": "2026-07-10T13:10:17",
+  "generated_at": "2026-07-11T11:50:44",
   "generator": "openai"
 }
