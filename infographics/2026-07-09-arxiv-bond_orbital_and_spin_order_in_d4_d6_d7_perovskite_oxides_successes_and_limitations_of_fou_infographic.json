@@ -1,24 +1,24 @@
 {
-  "key_insight": "Foundation ML interatomic potentials can capture simple geometric order in correlated perovskites, but their performance drops sharply as the order becomes more symmetry-sensitive or purely electronic.",
-  "engineering_relevance": "This work shows where off-the-shelf ML potentials are reliable for accelerated atomistic simulation of correlated oxides and where DFT or specialized training is still needed.",
+  "key_insight": "Foundation ML interatomic potentials can capture simple geometric order in correlated oxides, but they still struggle with symmetry-sensitive bond/orbital order and fail on purely local spin-state transitions.",
+  "engineering_relevance": "For materials modeling workflows, this means MLIPs may be reliable for some structural dynamics in complex oxides, but DFT or specialized models remain necessary when orbital and spin ordering control the physics.",
   "method": [
+    "Tested three foundation MLIPs with no system-specific training",
     "Ran 1 ns molecular dynamics on 80- and 160-atom supercells",
-    "Swept temperatures from 50 to 300 K",
-    "Compared three foundation potentials against three low-temperature order types in LaMnO3, LaCoO3, and NdNiO3"
+    "Evaluated low-temperature order in LaMnO3, LaCoO3, and NdNiO3 from 50 to 300 K"
   ],
-  "evidence_signal": "The authors evaluated three foundation potentials on three correlated ABO3 oxides and found they succeeded for NdNiO3’s scalar order, partially captured LaMnO3’s vector bond order, and failed on LaCoO3’s spin-state crossover.",
-  "watch_item": "Off-the-shelf foundation MLIPs may miss local multiplet/spin-state physics even when they reproduce structural magnitudes, so validation is essential before using them for correlated oxides.",
+  "evidence_signal": "The models were benchmarked on three distinct correlated perovskites spanning scalar, vector, and on-site order, revealing a clear hierarchy of success: NdNiO3 was captured, LaMnO3 only partly captured, and LaCoO3 remained inaccessible.",
+  "watch_item": "Performance may look strong on average while still missing the correct symmetry or local electronic state, so order parameters must be checked explicitly rather than relying on structural fidelity alone.",
   "hashtags": [
-    "#MachineLearningPotentials",
-    "#CorrelatedOxides",
+    "#MaterialsAI",
+    "#InteratomicPotentials",
     "#Perovskites",
-    "#MaterialsSimulation",
-    "#DensityFunctionalTheory"
+    "#StronglyCorrelatedMaterials",
+    "#MolecularDynamics"
   ],
   "paper_id": "2026-07-09-arxiv-bond_orbital_and_spin_order_in_d4_d6_d7_perovskite_oxides_successes_and_limitations_of_fou",
   "paper_title": "Bond, orbital and spin order in d4/d6/d7 perovskite oxides: successes and limitations of foundation interatomic potentials",
   "paper_date": "2026-07-09",
   "paper_category": "Crystal and Structure",
-  "generated_at": "2026-07-11T11:51:03",
+  "generated_at": "2026-07-12T11:58:00",
   "generator": "openai"
 }

@@ -1,6 +1,6 @@
 # AI materials science Progress Public Resources
 
-Generated: 2026-07-11
+Generated: 2026-07-12
 Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 
 ## 1. MLIP Studio: An Open Platform for Interactive Benchmarking and Atomistic Simulations Using Machine Learning Interatomic Potentials

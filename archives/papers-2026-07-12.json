@@ -24,19 +24,19 @@
         "url": "https://arxiv.org/pdf/2607.07606v1"
       }
     ],
-    "score": 92,
+    "score": 97,
     "infographic": {
-      "key_insight": "MLIP Studio unifies 60+ universal machine learning interatomic potentials in one interactive platform, making MLIP benchmarking and atomistic workflows much easier to run and compare.",
-      "engineering_relevance": "It helps researchers and engineers rapidly screen models for property prediction, optimization, and simulation tasks while reducing dependence on fragmented software stacks and expensive DFT runs.",
+      "key_insight": "MLIP Studio unifies 60+ universal machine learning interatomic potentials into one interactive platform for benchmarking, property prediction, and atomistic simulation workflows.",
+      "engineering_relevance": "It helps materials and chemistry researchers rapidly compare model accuracy and computational cost, lowering barriers to practical MLIP use in DFT-adjacent simulations.",
       "method": [
         "Interactive web platform for molecules and materials",
-        "Supports property prediction, geometry optimization, vibrational/EOS analysis, spin-state determination, and custom model deployment",
-        "Automated benchmarking with parity plots, sortable error tables, and performance comparisons"
+        "Supports property prediction, geometry optimization, vibrational/equation-of-state analysis, and spin-state determination",
+        "Includes custom model deployment plus high-throughput benchmarking with parity plots and sortable error tables"
       ],
-      "evidence_signal": "The abstract reports that MLIP-based pre-optimization can reduce subsequent DFT optimization effort by about 33× and includes a CrCl3/sapphire case study for cross-model comparison.",
-      "watch_item": "Results depend on model selection, reference data quality, and careful validation because different MLIPs can behave unevenly across elements, properties, and interfaces.",
+      "evidence_signal": "The abstract reports a ~33× reduction in DFT optimization effort when using MLIP-based pre-optimization, alongside a case study on CrCl3/sapphire and benchmarked computational performance.",
+      "watch_item": "Performance and reliability can vary across models and elements, so task-specific validation is still needed before using an MLIP in production workflows.",
       "hashtags": [
-        "#MachineLearningInteratomicPotentials",
+        "#MachineLearningPotentials",
         "#AtomisticSimulation",
         "#MaterialsInformatics",
         "#DFT",
@@ -46,7 +46,7 @@
       "paper_title": "MLIP Studio: An Open Platform for Interactive Benchmarking and Atomistic Simulations Using Machine Learning Interatomic Potentials",
       "paper_date": "2026-07-08",
       "paper_category": "Property Prediction",
-      "generated_at": "2026-07-12T11:57:40",
+      "generated_at": "2026-07-11T11:50:41",
       "generator": "openai"
     }
   },
@@ -75,29 +75,29 @@
         "url": "https://arxiv.org/pdf/2607.07339v1"
       }
     ],
-    "score": 86,
+    "score": 91,
     "infographic": {
-      "key_insight": "Adding site-projected orbital density of states (pDOS) to graph neural network node features gives the model direct electronic-structure context and substantially improves materials property prediction.",
-      "engineering_relevance": "This offers a practical route to higher-accuracy, first-principles-informed screening of materials properties when crystal structure alone is not enough.",
+      "key_insight": "Adding site-projected orbital density of states (pDOS) to atomic graph-node features gives graph neural networks direct electronic-structure context, substantially improving materials-property prediction.",
+      "engineering_relevance": "This offers a practical route to higher-accuracy screening of functional materials by combining DFT-derived electronic fingerprints with crystal-graph learning.",
       "method": [
-        "Compute pDOS fingerprints from DFT for each atomic site.",
+        "Compute pDOS fingerprints from density functional theory for each atomic site.",
         "Fuse pDOS with Pettifor elemental embeddings before message passing in a graph neural network.",
-        "Use a spectral attention-gating mechanism to identify which orbitals and energy windows matter most."
+        "Use an interpretable spectral attention-gating module to identify the most relevant orbitals and energy windows."
       ],
       "evidence_signal": "Compared with an elemental-descriptor baseline, pDOS augmentation reduced prediction error by 22.9% for superconducting Tc and 27.9% for optical dielectric constant ε∞, with gains comparable to doubling the training set.",
-      "watch_item": "The benefit depends on training-set size and is weaker for smaller datasets, so pDOS feature length and data availability should be matched carefully.",
+      "watch_item": "Benefits depend on dataset size; for smaller training sets the pDOS vector can be too high-dimensional relative to available data, limiting improvement.",
       "hashtags": [
         "#MaterialsInformatics",
         "#GraphNeuralNetworks",
         "#DensityFunctionalTheory",
         "#ElectronicStructure",
-        "#MachineLearningMaterials"
+        "#MachineLearning"
       ],
       "paper_id": "2026-07-08-arxiv-machine_learning_materials_properties_by_encoding_orbital_projected_density_of_states",
       "paper_title": "Machine Learning Materials Properties by Encoding Orbital-Projected Density of States",
       "paper_date": "2026-07-08",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-07-12T11:57:42",
+      "generated_at": "2026-07-11T11:50:44",
       "generator": "openai"
     }
   },
@@ -126,21 +126,21 @@
         "url": "https://arxiv.org/pdf/2607.07456v1"
       }
     ],
-    "score": 78,
+    "score": 83,
     "infographic": {
-      "key_insight": "The paper introduces a multi-scale machine learning framework that jointly models chemical, spin, and structural disorder in alloys to predict thermodynamic phase behavior.",
-      "engineering_relevance": "This enables more reliable design and screening of complex magnetic alloys, including high-entropy and spintronic materials, without relying solely on expensive trial-and-error simulations or experiments.",
+      "key_insight": "A multi-scale ML framework can jointly model chemical, spin, and structural disorder in alloys to predict thermodynamics and phase transitions.",
+      "engineering_relevance": "This provides a practical predictive tool for designing complex magnetic alloys and other disordered materials with target thermal and structural properties.",
       "method": [
-        "Couples graph neural networks and machine-learning interatomic potentials with Monte Carlo and molecular dynamics.",
-        "Captures configurational disorder (chemical/spin) together with local lattice distortions from interstitials.",
-        "Applies the framework to bcc Fe-Co-C as a prototypical multi-disorder alloy."
+        "Combine graph neural networks and machine-learning interatomic potentials",
+        "Use Monte Carlo for configurational/spin sampling and molecular dynamics for structural evolution",
+        "Apply the framework to bcc Fe-Co with interstitial C as a multi-disorder test case"
       ],
-      "evidence_signal": "The framework predicts the Fe-Co order-to-disorder transition at 1,000 K and melting at 1,690 K, closely matching experimental values of 1,006 K and about 1,700 K, and also reproduces tetragonal-to-nearly-cubic transitions in Fe-Co-C.",
-      "watch_item": "Accuracy depends on the quality and transferability of the trained ML models and potentials across temperature, composition, and disorder regimes not explicitly covered in training.",
+      "evidence_signal": "The framework predicted the Fe-Co order-disorder transition at 1,000 K and melting at 1,690 K, closely matching experimental values of 1,006 K and about 1,700 K.",
+      "watch_item": "Accuracy depends on the quality and transferability of the trained models and the sampled disorder states for each alloy system.",
       "hashtags": [
         "#MachineLearningMaterials",
-        "#DisorderedAlloys",
-        "#MagneticAlloys",
+        "#AlloyDesign",
+        "#MagneticMaterials",
         "#MolecularDynamics",
         "#MonteCarlo"
       ],
@@ -148,7 +148,7 @@
       "paper_title": "A Multi-Scale Machine Learning Framework for Coupled Chemical, Spin, and Structural Disorder in Alloys",
       "paper_date": "2026-07-08",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-07-12T11:57:45",
+      "generated_at": "2026-07-11T11:50:46",
       "generator": "openai"
     }
   },
@@ -177,29 +177,29 @@
         "url": "https://arxiv.org/pdf/2607.08518v1"
       }
     ],
-    "score": 77,
+    "score": 82,
     "infographic": {
-      "key_insight": "PhononScore is a fast, phonon-aware scoring function that ranks crystal structures by dynamical stability without requiring explicit phonon calculations.",
-      "engineering_relevance": "It provides a practical second-level screening tool for high-throughput materials discovery, allowing generated candidates to be reranked before costly DFT phonon analysis.",
+      "key_insight": "PhononScore is a fast, phonon-aware scoring function that ranks crystal candidates by dynamical stability directly from structure, avoiding expensive explicit phonon calculations.",
+      "engineering_relevance": "It provides a second-level stability filter for high-throughput materials discovery, making it practical for reranking, active learning, and reinforcement learning in closed-loop crystal generation.",
       "method": [
-        "Trained on a multi-fidelity dataset of 157,463 crystal structures with phonon stability labels.",
-        "Predicts a unified stability score directly from crystal structures.",
-        "Used as a feedback signal for crystal generation, active learning, and reinforcement learning."
+        "Built a multi-fidelity phonon dataset with 157,463 crystal structures.",
+        "Trained a unified model to predict a dynamical-stability score from crystal structures.",
+        "Used the score to rerank outputs from crystal generation models and a DFT-finetuned variant for higher-fidelity screening."
       ],
-      "evidence_signal": "On PhononBench, average dynamical stability rate improved from 30.7% to 83.7% across nine generator pools, with Top-10 candidates reaching 97.5%; PhononScore-DFT achieved 93.0% Top-100 stability on a high-fidelity DFT-PBE benchmark.",
-      "watch_item": "Performance may depend on dataset coverage and transfer to chemistries or structure types not well represented in the training set.",
+      "evidence_signal": "On PhononBench, PhononScore raised the average stability rate of candidate pools from 30.7% to 83.7% and achieved 97.5% stability in the Top-10; the DFT-finetuned model reached 93.0% Top-100 stability on a high-fidelity benchmark.",
+      "watch_item": "Performance may depend on the coverage and fidelity of the training data, so transfer to chemically out-of-distribution crystals or truly novel compositions should be validated carefully.",
       "hashtags": [
         "#MaterialsDiscovery",
-        "#PhononScore",
+        "#Phonons",
         "#CrystalGeneration",
-        "#DynamicalStability",
-        "#ActiveLearning"
+        "#MachineLearning",
+        "#DynamicalStability"
       ],
       "paper_id": "2026-07-09-arxiv-phononscore_a_phonon_aware_scoring_function_for_dynamical_stability",
       "paper_title": "PhononScore: a phonon-aware scoring function for dynamical stability",
       "paper_date": "2026-07-09",
       "paper_category": "Materials Discovery",
-      "generated_at": "2026-07-12T11:57:47",
+      "generated_at": "2026-07-11T11:50:49",
       "generator": "openai"
     }
   },
@@ -228,29 +228,29 @@
         "url": "https://arxiv.org/pdf/2607.07604v1"
       }
     ],
-    "score": 76,
+    "score": 81,
     "infographic": {
-      "key_insight": "Human chemists and an LLM can each propose viable synthesis recipes, and together they can accelerate discovery of new materials—here enabling the discovery of Ba3PtO5 with a new structural prototype.",
-      "engineering_relevance": "Closed-loop human–AI synthesis planning can shorten the path from candidate generation to experimentally validated materials, which is valuable for scalable materials design pipelines.",
+      "key_insight": "Human and LLM-generated synthesis recipes performed similarly, and their closed-loop collaboration enabled discovery of a new material prototype, Ba3PtO5.",
+      "engineering_relevance": "The study shows that combining expert judgment with LLM assistance can accelerate materials synthesis planning and improve discovery in well-defined chemical families.",
       "method": [
-        "Generated synthesis recipes for known and unknown Ruddlesden-Popper-related materials using both humans and an LLM.",
-        "Tested the recipes in-lab and fed experimental outcomes back into the collaboration loop for a second round.",
-        "Focused on the Ruddlesden-Popper homologous series as a well-studied but still discovery-rich phase space."
+        "Generate synthesis recipes for known and unknown Ruddlesden-Popper candidates using both humans and LLMs.",
+        "Test recipes experimentally in the lab and feed outcomes back into a closed-loop collaboration cycle.",
+        "Compare success rates across two rounds for known vs. unknown materials."
       ],
-      "evidence_signal": "The abstract reports similar experimental success rates for humans and LLMs across rounds, with high performance on known materials and much lower but nonzero success on unknown materials, culminating in discovery of Ba3PtO5.",
-      "watch_item": "Results depend on the chosen materials family and lab validation workflow, so performance may not generalize to other chemistries or synthesis constraints.",
+      "evidence_signal": "Experimental validation showed comparable success rates for humans and LLMs: 83% vs 75% for known materials in round one, 17% vs 22% for unknown materials in round one, 79% vs 71% in round two for known materials, and 22% vs 14% for unknown materials in round two.",
+      "watch_item": "The strong results are specific to the chosen Ruddlesden-Popper/RSP phase space, so performance may not transfer directly to more chemically diverse materials systems.",
       "hashtags": [
         "#MaterialsDiscovery",
         "#LLM",
-        "#HumanAI",
+        "#AIforScience",
         "#SynthesisPlanning",
-        "#ClosedLoopScience"
+        "#ClosedLoopLearning"
       ],
       "paper_id": "2026-07-08-arxiv-human_and_llm_collaboration_for_accelerated_materials_synthesis_and_discovery",
       "paper_title": "Human and LLM Collaboration for Accelerated Materials Synthesis and Discovery",
       "paper_date": "2026-07-08",
       "paper_category": "Materials Discovery",
-      "generated_at": "2026-07-12T11:57:50",
+      "generated_at": "2026-07-11T11:50:51",
       "generator": "openai"
     }
   },
@@ -282,29 +282,29 @@
         "url": "https://arxiv.org/pdf/2607.05559v1"
       }
     ],
-    "score": 68,
+    "score": 73,
     "infographic": {
-      "key_insight": "EquiFiLM adds a simple charge-conditioning FiLM block to equivariant force fields so a pretrained foundation MLFF can learn driven, non-equilibrium physics without breaking E(3)-equivariance.",
-      "engineering_relevance": "This enables fast, DFT-accurate simulations of charge-dependent materials processes such as photoexcitation, charge injection, and field-driven dynamics with only a small amount of new labeled data.",
+      "key_insight": "EquiFiLM adds continuous charge conditioning to equivariant foundation force fields with a simple FiLM block on scalar channels, enabling accurate modeling of driven electronic-state changes without breaking E(3)-equivariance.",
+      "engineering_relevance": "This lets researchers adapt existing ML force-field backbones to charged, excited, or field-driven materials processes using only a small amount of new DFT data and no inference-time cost increase.",
       "method": [
-        "Insert per-layer FiLM modulation on scalar channels of an equivariant backbone.",
-        "Condition the force field continuously on external variables such as charge.",
-        "Apply the recipe to MACE-MatPES to create E-MACE for charged liquid water."
+        "Insert per-layer Feature-wise Linear Modulation (FiLM) conditioned on external charge into an equivariant MLFF.",
+        "Modulate only scalar interaction channels so rotational and translational equivariance are preserved exactly.",
+        "Demonstrate the approach on liquid water using MACE-MatPES as the backbone, producing E-MACE."
       ],
-      "evidence_signal": "On four training charges, E-MACE reduced force RMSE from 21.3 to 6.96 meV/Å and energy RMSE from 6.1 to 0.1 meV/atom versus a baseline, while maintaining stable dynamics and strong interpolation/extrapolation performance on seven held-out charges.",
-      "watch_item": "Performance depends on having scalar channels in the backbone and on the quality/coverage of the limited charge-conditioned training set, especially when extrapolating beyond the trained charge range.",
+      "evidence_signal": "On four training charges, E-MACE cut force RMSE from 21.3 to 6.96 meV/Å and energy RMSE from 6.1 to 0.1 meV/atom, and it remained stable across seven held-out interpolation/extrapolation charges and molecular dynamics tests.",
+      "watch_item": "The approach still depends on representative labeled data across the conditioning range, so strong extrapolation beyond the sampled charge regime may remain uncertain.",
       "hashtags": [
         "#MachineLearningForceFields",
         "#EquivariantML",
-        "#MaterialsInformatics",
-        "#ChargeConditioning",
-        "#DFT"
+        "#MaterialsAI",
+        "#DFT",
+        "#MolecularSimulation"
       ],
       "paper_id": "2026-07-06-arxiv-equifilm_charge_conditioned_equivariant_force_fields_via_feature_wise_linear_modulation",
       "paper_title": "EquiFiLM: Charge-Conditioned Equivariant Force Fields via Feature-wise Linear Modulation",
       "paper_date": "2026-07-06",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-07-12T11:57:52",
+      "generated_at": "2026-07-11T11:50:55",
       "generator": "openai"
     }
   },
@@ -333,29 +333,29 @@
         "url": "https://arxiv.org/pdf/2607.06645v1"
       }
     ],
-    "score": 67,
+    "score": 72,
     "infographic": {
-      "key_insight": "BatteryMat uses a three-tier ML-to-DFT screening pipeline to rapidly rank lithium-ion cathode candidates while preserving thermodynamic consistency through automated voltage validation.",
-      "engineering_relevance": "It enables scalable cathode discovery from millions of structures by combining fast surrogate screening with higher-fidelity DFT checks before experimental investment.",
+      "key_insight": "BatteryMat combines machine learning, force-field delithiation, and automated DFT into a three-tier screening pipeline to efficiently rank lithium-ion cathode candidates while preserving thermodynamic consistency.",
+      "engineering_relevance": "The framework enables scalable discovery of promising cathode materials from very large databases without relying on DFT for every candidate, making it useful for high-throughput materials screening workflows.",
       "method": [
-        "ALIGNN screens JARVIS-DFT and Alexandria structures for candidate cathodes.",
-        "ALIGNN-FF predicts delithiation voltage profiles as an intermediate validation tier.",
-        "Automated PBE+U or optB88-vdW+U DFT recomputes average voltages with a consistent Li-metal reference."
+        "Use ALIGNN as the first-pass surrogate to screen lithium-containing structures for average voltage.",
+        "Validate top candidates with ALIGNN-FF delithiation profiles before running automated PBE+U or optB88-vdW+U supercell DFT.",
+        "Automatically choose the exchange-correlation functional by spacegroup and recompute the Li metal reference in the same basis to remove voltage offsets."
       ],
-      "evidence_signal": "ALIGNN achieved MAE 0.17 V and R² = 0.94 against 7,610 ALIGNN-FF delithiation voltages, and the DFT tier matched experimental average voltages within about 0.3 V for four benchmark cathodes.",
-      "watch_item": "The top-ranked structures are only surrogate-level leads until DFT validation, and the ALIGNN metric reflects fidelity to the force-field labels rather than direct agreement with experiment.",
+      "evidence_signal": "ALIGNN-FF training on 7,610 voltages achieved MAE 0.17 V and R² = 0.94, while DFT validation on four commercial cathodes matched experimental average voltage within 0.3 V and volumetric capacity within 5%.",
+      "watch_item": "The ML model is only validated against the force-field delithiation protocol, so surrogate predictions still require DFT confirmation before being treated as confirmed cathodes.",
       "hashtags": [
         "#MaterialsDiscovery",
-        "#BatteryML",
-        "#DFT",
-        "#CathodeScreening",
-        "#ComputationalMaterials"
+        "#BatteryMaterials",
+        "#MachineLearning",
+        "#DensityFunctionalTheory",
+        "#CathodeScreening"
       ],
       "paper_id": "2026-07-07-arxiv-batterymat_a_hierarchical_machine_learning_and_dft_framework_for_average_voltage_screening",
       "paper_title": "BatteryMat: a hierarchical machine-learning and DFT framework for average-voltage screening of lithium-ion cathode materials",
       "paper_date": "2026-07-07",
       "paper_category": "Materials Discovery",
-      "generated_at": "2026-07-12T11:57:55",
+      "generated_at": "2026-07-11T11:50:58",
       "generator": "openai"
     }
   },
@@ -384,29 +384,29 @@
         "url": "https://arxiv.org/pdf/2607.08327v1"
       }
     ],
-    "score": 66,
+    "score": 71,
     "infographic": {
-      "key_insight": "Accurate exact exchange is essential to capture electronic localization in BiVO4, which stabilizes the monoclinic ground state and links symmetry breaking to oxygen-site charge transfer.",
-      "engineering_relevance": "Selecting a functional that reproduces the crystal structure also improves predicted band gaps and effective masses, making this directly useful for designing oxide photocatalysts and photoelectrodes.",
+      "key_insight": "Accurate exact-exchange treatment is needed to capture electronic localization that stabilizes monoclinic BiVO4 and explains its symmetry-breaking distortion.",
+      "engineering_relevance": "The study links functional choice to crystal structure, band gap, and carrier masses, guiding more reliable screening and design of oxide photocatalysts.",
       "method": [
-        "Systematically compare exchange-correlation treatments with and without spin-orbit coupling.",
-        "Compute dense Brillouin-zone band structures for tetragonal and monoclinic phases.",
-        "Relate structural stability to charge transfer, lattice symmetry, and electronic localization."
+        "Compare exchange-correlation functionals with and without spin-orbit coupling",
+        "Use dense Brillouin-zone sampling to compute band structures and effective masses",
+        "Analyze charge transfer between inequivalent oxygen sites to identify the distortion mechanism"
       ],
-      "evidence_signal": "The study benchmarks phase stability and electronic structure against dense-sampling DFT results, showing that the monoclinic phase is stabilized only when exact exchange is treated accurately and that predicted band gaps improve after excitonic and thermal corrections.",
-      "watch_item": "Band edges lie away from standard high-symmetry paths, so sparse k-point sampling or path-only band analysis can miss the true gap and misestimate carrier masses.",
+      "evidence_signal": "The abstract reports that the functional best reproducing the monoclinic structure also yields excellent band-gap predictions once excitonic and thermal effects are included.",
+      "watch_item": "Results depend sensitively on the exchange-correlation approximation, so semi-local DFT may miss the ground-state phase and should not be used alone for phase-stability conclusions.",
       "hashtags": [
-        "#BiVO4",
         "#DFT",
-        "#ExactExchange",
+        "#BiVO4",
         "#Photocatalysis",
+        "#ElectronicStructure",
         "#CrystalSymmetry"
       ],
       "paper_id": "2026-07-09-arxiv-interplay_between_electronic_structure_chemical_bonding_and_lattice_symmetry_in_bismuth_va",
       "paper_title": "Interplay between Electronic Structure, Chemical Bonding, and Lattice Symmetry in Bismuth Vanadate",
       "paper_date": "2026-07-09",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-07-12T11:57:57",
+      "generated_at": "2026-07-11T11:51:00",
       "generator": "openai"
     }
   },
@@ -436,29 +436,29 @@
         "url": "https://arxiv.org/pdf/2607.08351v1"
       }
     ],
-    "score": 63,
+    "score": 68,
     "infographic": {
-      "key_insight": "Foundation ML interatomic potentials can capture simple geometric order in correlated oxides, but they still struggle with symmetry-sensitive bond/orbital order and fail on purely local spin-state transitions.",
-      "engineering_relevance": "For materials modeling workflows, this means MLIPs may be reliable for some structural dynamics in complex oxides, but DFT or specialized models remain necessary when orbital and spin ordering control the physics.",
+      "key_insight": "Foundation ML interatomic potentials can capture simple geometric order in correlated perovskites, but their performance drops sharply as the order becomes more symmetry-sensitive or purely electronic.",
+      "engineering_relevance": "This work shows where off-the-shelf ML potentials are reliable for accelerated atomistic simulation of correlated oxides and where DFT or specialized training is still needed.",
       "method": [
-        "Tested three foundation MLIPs with no system-specific training",
         "Ran 1 ns molecular dynamics on 80- and 160-atom supercells",
-        "Evaluated low-temperature order in LaMnO3, LaCoO3, and NdNiO3 from 50 to 300 K"
+        "Swept temperatures from 50 to 300 K",
+        "Compared three foundation potentials against three low-temperature order types in LaMnO3, LaCoO3, and NdNiO3"
       ],
-      "evidence_signal": "The models were benchmarked on three distinct correlated perovskites spanning scalar, vector, and on-site order, revealing a clear hierarchy of success: NdNiO3 was captured, LaMnO3 only partly captured, and LaCoO3 remained inaccessible.",
-      "watch_item": "Performance may look strong on average while still missing the correct symmetry or local electronic state, so order parameters must be checked explicitly rather than relying on structural fidelity alone.",
+      "evidence_signal": "The authors evaluated three foundation potentials on three correlated ABO3 oxides and found they succeeded for NdNiO3’s scalar order, partially captured LaMnO3’s vector bond order, and failed on LaCoO3’s spin-state crossover.",
+      "watch_item": "Off-the-shelf foundation MLIPs may miss local multiplet/spin-state physics even when they reproduce structural magnitudes, so validation is essential before using them for correlated oxides.",
       "hashtags": [
-        "#MaterialsAI",
-        "#InteratomicPotentials",
+        "#MachineLearningPotentials",
+        "#CorrelatedOxides",
         "#Perovskites",
-        "#StronglyCorrelatedMaterials",
-        "#MolecularDynamics"
+        "#MaterialsSimulation",
+        "#DensityFunctionalTheory"
       ],
       "paper_id": "2026-07-09-arxiv-bond_orbital_and_spin_order_in_d4_d6_d7_perovskite_oxides_successes_and_limitations_of_fou",
       "paper_title": "Bond, orbital and spin order in d4/d6/d7 perovskite oxides: successes and limitations of foundation interatomic potentials",
       "paper_date": "2026-07-09",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-07-12T11:58:00",
+      "generated_at": "2026-07-11T11:51:03",
       "generator": "openai"
     }
   },
@@ -490,29 +490,29 @@
         "url": "https://arxiv.org/pdf/2607.07708v1"
       }
     ],
-    "score": 62,
+    "score": 67,
     "infographic": {
-      "key_insight": "SciReasoner turns structural data into addressable tokens so one multimodal model can make accurate, interpretable predictions across proteins, molecules, and crystals under domain-specific scientific constraints.",
-      "engineering_relevance": "For materials and molecular engineering, this suggests a practical path to models that not only predict structure-property outcomes better, but also expose evidence traces that support design decisions and verification.",
+      "key_insight": "SciReasoner turns structures into explicit, addressable tokens so a foundation model can predict and explain structure-property relationships across proteins, molecules, and crystals under scientific constraints.",
+      "engineering_relevance": "The approach could improve materials discovery workflows by coupling high-accuracy property prediction with transparent, inspectable reasoning traces for screening and decision support.",
       "method": [
         "Discretizes coordinates, topologies, and periodic connectivities into a unified structure-aware vocabulary.",
-        "Uses structural tokens as evidence units for native reasoning across biology, chemistry, and materials science.",
-        "Supports interpretable traces such as fragment-level disconnection and precursor verification in retrosynthesis."
+        "Uses structural tokens as evidence units for multimodal reasoning across biology, chemistry, and materials science.",
+        "Produces traceable outputs such as disconnection steps, precursor verification, and phase-separated representations."
       ],
-      "evidence_signal": "Across 86 benchmarks, SciReasoner reports state-of-the-art results on 67 tasks, including Gene Ontology Cellular Component Fmax improving from 0.42 to 0.55 for low-homology and orphan-like proteins, and single-step retrosynthesis accuracy rising from 0.63 to 0.72.",
-      "watch_item": "Because the approach relies on discretizing structural information into tokens, performance and interpretability may depend on the chosen encoding resolution and how well it transfers to new structure types or edge-case geometries.",
+      "evidence_signal": "Across 86 benchmarks, the model reports state-of-the-art performance on 67 tasks, including GO Cellular Component Fmax improving from 0.42 to 0.55 and retrosynthesis accuracy from 0.63 to 0.72.",
+      "watch_item": "Performance and interpretability may depend on careful tokenization of structural inputs, and the abstract does not specify robustness to noisy, incomplete, or out-of-distribution structures.",
       "hashtags": [
-        "#MaterialsAI",
-        "#ScientificFoundationModel",
+        "#AIforMaterials",
         "#StructureProperty",
+        "#ScientificFoundationModel",
         "#InterpretableAI",
-        "#ComputationalScience"
+        "#CrystalScience"
       ],
       "paper_id": "2026-07-08-arxiv-accurate_interdisciplinary_and_transparent_structure_property_understanding_with_deep_nati",
       "paper_title": "Accurate, Interdisciplinary and Transparent Structure-property Understanding with Deep Native Structural Reasoning",
       "paper_date": "2026-07-08",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-07-12T11:58:02",
+      "generated_at": "2026-07-11T11:51:05",
       "generator": "openai"
     }
   },
@@ -541,29 +541,29 @@
         "url": "https://arxiv.org/pdf/2607.05266v1"
       }
     ],
-    "score": 60,
+    "score": 65,
     "infographic": {
-      "key_insight": "MXtalGFlow turns molecular crystal generation into sampling a thermodynamically meaningful Boltzmann distribution over crystal structures rather than just listing isolated low-energy candidates.",
-      "engineering_relevance": "This gives crystal structure prediction a distributional foundation that can help prioritize polymorphs, quantify competing packings, and guide materials screening under realistic energetic conditions.",
+      "key_insight": "MXtalGFlow turns molecular crystal generation from isolated candidate search into sampling a thermodynamically meaningful distribution over crystal structures.",
+      "engineering_relevance": "This gives crystal structure prediction a principled way to explore polymorph landscapes and prioritize experimentally plausible packings beyond just the lowest-energy hits.",
       "method": [
-        "Define a canonical crystal parameterization for target molecules and space groups.",
-        "Train energy-based GFlowNets to match the Boltzmann distribution over crystal structures.",
-        "Analyze sampled basins around known polymorphs and compare against multiple energy models."
+        "Defines a canonical parameterization for molecular crystal structures.",
+        "Trains energy-based GFlowNets to match the Boltzmann distribution over crystals.",
+        "Analyzes sampled distributions around known polymorphs and additional packing modes."
       ],
-      "evidence_signal": "The framework is evaluated on two molecules under two energy functions (Lennard-Jones and Universal Model for Atoms), recovering known polymorph basins and surfacing additional competitive packing modes.",
-      "watch_item": "Results depend on the chosen parameterization, space-group constraints, and energy model, so distribution quality may shift if these assumptions are changed.",
+      "evidence_signal": "The framework is evaluated on two molecules under two energy models (Lennard-Jones and Universal Model for Atoms), with analysis of local basins, known polymorphs, and new competitive packing modes.",
+      "watch_item": "Results depend on the chosen energy function and space-group parameterization, so distribution quality may be sensitive to modeling assumptions and representation choices.",
       "hashtags": [
         "#MolecularCrystals",
-        "#GenerativeModeling",
+        "#GenerativeAI",
         "#GFlowNet",
         "#CrystalStructurePrediction",
-        "#MaterialsInformatics"
+        "#MaterialsScience"
       ],
       "paper_id": "2026-07-06-arxiv-a_distributional_framework_for_generative_modeling_of_molecular_crystals",
       "paper_title": "A Distributional Framework for Generative Modeling of Molecular Crystals",
       "paper_date": "2026-07-06",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-07-12T11:58:04",
+      "generated_at": "2026-07-11T11:51:07",
       "generator": "openai"
     }
   },
@@ -592,20 +592,20 @@
         "url": "https://arxiv.org/pdf/2607.07472v1"
       }
     ],
-    "score": 59,
+    "score": 64,
     "infographic": {
-      "key_insight": "The paper shows how to compute stress accurately in localized-orbital DFT, including linear-scaling formulations, and finds that stress converges well with modest density-matrix cutoffs.",
-      "engineering_relevance": "This enables reliable pressure- and volume-dependent simulations, including stable large-scale isothermal-isobaric molecular dynamics, in linear-scaling electronic structure workflows.",
+      "key_insight": "The paper extends stress calculations to localized-orbital DFT and shows that linear-scaling stress can converge well with modest density-matrix cutoffs.",
+      "engineering_relevance": "This enables reliable stress-based simulations, including large-scale isothermal-isobaric molecular dynamics, in scalable DFT workflows.",
       "method": [
-        "Derive stress expressions for localized orbital DFT in both exact-diagonalization and linear-scaling regimes",
-        "Implement and test the approach in the large-scale DFT code Conquest",
-        "Compare convergence of stress against energy and forces across materials with different band gaps"
+        "Derived stress expressions for localized-basis DFT in both exact diagonalization and linear-scaling regimes",
+        "Implemented the approach in the large-scale Conquest DFT code",
+        "Benchmarked convergence of stress versus density-matrix range across materials with different band gaps"
       ],
-      "evidence_signal": "The abstract reports convergence tests showing excellent stress convergence for modest cutoffs and stable, accurate large-scale NPT molecular dynamics.",
-      "watch_item": "Accuracy depends on choosing a sufficiently large density-matrix range cutoff, which may need material-specific testing to ensure stress convergence.",
+      "evidence_signal": "The abstract reports convergence tests showing excellent stress accuracy at modest cutoffs and stable, accurate NPT molecular dynamics.",
+      "watch_item": "Stress accuracy depends on the chosen density-matrix cutoff, so insufficient range may degrade convergence for some materials.",
       "hashtags": [
         "#DFT",
-        "#StressTensor",
+        "#StressCalculation",
         "#LinearScaling",
         "#MolecularDynamics",
         "#ComputationalMaterials"
@@ -614,7 +614,7 @@
       "paper_title": "Stress calculation in linear scaling DFT: convergence and dynamics",
       "paper_date": "2026-07-08",
       "paper_category": "Property Prediction",
-      "generated_at": "2026-07-12T11:58:07",
+      "generated_at": "2026-07-11T11:51:11",
       "generator": "openai"
     }
   },
@@ -644,29 +644,29 @@
         "url": "https://arxiv.org/pdf/2607.08003v1"
       }
     ],
-    "score": 58,
+    "score": 63,
     "infographic": {
-      "key_insight": "A frontier language model, constrained to reason over explicit reaction networks, can generate experimentally testable catalyst-selectivity hypotheses and uncover actionable levers for CO2 electroreduction.",
-      "engineering_relevance": "This enables mechanism-guided catalyst design that moves beyond static descriptors toward targeted control of selectivity in complex electrochemical processes.",
+      "key_insight": "A frontier language model, constrained to explicit reaction-network reasoning, can generate experimentally testable catalyst-selectivity hypotheses and uncover control levers for CO2 electroreduction.",
+      "engineering_relevance": "The framework enabled the design of a copper-iron oxide catalyst that achieved about 3x higher acetate selectivity than matched Cu-rich baselines, showing a practical path from mechanism to materials optimization.",
       "method": [
-        "Built a human-AI co-thinking workflow that enforces reaction-network invariance.",
-        "Used network reasoning to identify pathway branch points for acetate formation in CO2 reduction.",
-        "Translated inferred levers into a prospective Cu-Fe oxide catalyst design."
+        "Enforced network-invariant reasoning over explicit chemical reaction graphs instead of relying on static descriptors.",
+        "Used human-AI co-thinking to extract testable hypotheses about pathway competition in CO2 electroreduction.",
+        "Translated mechanistic levers into synthesis targets: local alkalinity, iron incorporation, and limited proton-donor access."
       ],
-      "evidence_signal": "The abstract reports prospective synthesis and experimental confirmation of a copper-iron oxide catalyst that achieved a threefold increase in acetate selectivity versus matched Cu-rich baselines.",
-      "watch_item": "Performance depends on the quality and completeness of the explicit reaction network, so missing mechanistic steps or poor graph specification could limit reliability.",
+      "evidence_signal": "The abstract reports prospective synthesis and experimental confirmation of a Cu-Fe oxide catalyst with roughly threefold improved acetate selectivity over Cu-rich controls.",
+      "watch_item": "Performance depends on having accurate, explicit reaction networks and may not transfer cleanly when the mechanistic graph is incomplete or uncertain.",
       "hashtags": [
         "#MaterialsDiscovery",
         "#Catalysis",
         "#CO2Reduction",
-        "#AIMaterials",
+        "#AIGuidedDesign",
         "#ReactionNetworks"
       ],
       "paper_id": "2026-07-09-arxiv-reaction_network_reasoning_with_frontier_models_for_experimentally_confirmed_catalyst_sele",
       "paper_title": "Reaction-network reasoning with frontier models for experimentally confirmed catalyst-selectivity hypotheses",
       "paper_date": "2026-07-09",
       "paper_category": "Materials Discovery",
-      "generated_at": "2026-07-12T11:58:09",
+      "generated_at": "2026-07-11T11:51:13",
       "generator": "openai"
     }
   },
@@ -696,29 +696,29 @@
         "url": "https://arxiv.org/pdf/2607.08527v1"
       }
     ],
-    "score": 56,
+    "score": 61,
     "infographic": {
-      "key_insight": "Molecular dynamics shows that nanoparticle size controls thermal shape stability in polymer nanofluids, with 28-atom particles losing their concentric shell structure at higher temperature while 42- and 56-atom particles remain stable.",
-      "engineering_relevance": "The results help guide nanoparticle size selection and operating temperature windows for designing thermally stable nanofluids and soft-matter composites.",
+      "key_insight": "Molecular dynamics shows that nanoparticle size controls thermal shape stability in polymeric nanofluids, with 28-atom particles destabilizing at higher temperature while 42- and 56-atom particles remain structurally stable.",
+      "engineering_relevance": "This helps guide nanoparticle sizing and fluid-particle affinity design for nanofluids that must retain structure under operating temperature changes.",
       "method": [
-        "Molecular dynamics simulations of polymeric nanofluids with soft nanoparticles.",
-        "Computed one-dimensional RDF and three-dimensional angle-dependent RDF (ARDF).",
-        "Compared particles of 28, 42, and 56 atoms in polymer melt and in isolation across temperature changes."
+        "Molecular dynamics simulation of soft, nonrigid nanoparticles in a polymer melt",
+        "Computed one-dimensional RDF and three-dimensional angle-dependent RDF (ARDF)",
+        "Compared particles of 28, 42, and 56 atoms with and without the base fluid across temperatures"
       ],
-      "evidence_signal": "The abstract reports temperature-dependent RDF/ARDF changes showing shell breakdown for 28-atom nanoparticles and preserved concentric shells for 42- and 56-atom particles.",
-      "watch_item": "The conclusions appear to be based on a limited set of nanoparticle sizes and interaction conditions, so broader generalization to other chemistries or longer time scales may require additional validation.",
+      "evidence_signal": "The abstract reports structural response trends from RDF/ARDF analysis, showing shell breakdown for 28-atom nanoparticles from T=1.2 to T=1.8, but preserved concentric shells for 42- and 56-atom particles.",
+      "watch_item": "The conclusions are based on simulation results for specific model sizes and interaction conditions, so transferability to real nanofluids depends on how well the force field and polymer-particle affinity represent the target system.",
       "hashtags": [
-        "#MolecularDynamics",
         "#Nanofluids",
+        "#MolecularDynamics",
         "#RadialDistributionFunction",
-        "#NanoparticleStability",
-        "#ComputationalMaterials"
+        "#MaterialsSimulation",
+        "#NanoparticleStability"
       ],
       "paper_id": "2026-07-09-arxiv-the_radial_distribution_functions_of_nanofluids_molecular_dynamics_simulations",
       "paper_title": "The Radial Distribution Functions of Nanofluids: Molecular Dynamics Simulations",
       "paper_date": "2026-07-09",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-07-12T11:58:12",
+      "generated_at": "2026-07-11T11:51:16",
       "generator": "openai"
     }
   },
@@ -748,29 +748,29 @@
         "url": "https://arxiv.org/pdf/2607.08361v1"
       }
     ],
-    "score": 56,
+    "score": 61,
     "infographic": {
-      "key_insight": "Vacuum-deposited, in situ encapsulated polycrystalline croconic acid thin films retain strong ferroelectricity and deliver useful piezoelectric and pyroelectric energy-harvesting performance on flexible substrates.",
-      "engineering_relevance": "This offers a low-temperature, solvent-free route to scalable, lead-free organic devices for multisource environmental energy harvesting.",
+      "key_insight": "Vacuum-sublimed, polycrystalline croconic acid thin films can retain robust ferroelectric behavior and deliver both piezoelectric and pyroelectric energy-harvesting functionality when protected by in situ encapsulation.",
+      "engineering_relevance": "The work points to a scalable, solvent-free route for flexible, lead-free organic energy harvesters that can integrate thermal and mechanical energy conversion in one device platform.",
       "method": [
-        "Vacuum-sublimed croconic acid (CA) films were deposited onto Ar plasma-treated flexible substrates.",
-        "Films were stabilized by in situ encapsulation with an adamantane-based remote plasma polymer.",
-        "The CA layer was integrated into multilayer piezoelectric/pyroelectric device stacks with dielectric polymer layers."
+        "Vacuum sublimation of croconic acid onto Ar plasma-treated flexible substrates",
+        "In situ encapsulation with an adamantane-based remote plasma polymer to suppress ambient degradation",
+        "Integration into multilayer piezoelectric and pyroelectric devices for macroscopic testing"
       ],
-      "evidence_signal": "Piezoresponse force microscopy showed robust ferroelectric domains and low coercive fields, while device testing reached up to 37 µW m−2 and a pyroelectric coefficient of about 10 µC m−2 K−1.",
-      "watch_item": "Macroscopic output depends strongly on film thickness and stack design, so performance may vary without careful process optimization.",
+      "evidence_signal": "Piezoresponse force microscopy showed well-defined ferroelectric domains and low nanoscale coercive fields, while device tests reached power densities up to 37 microW m-2 and a pyroelectric coefficient of about 10 microC m-2 K-1.",
+      "watch_item": "Performance depends strongly on film thickness and device architecture, so reproducibility and long-term stability will need validation across larger-area scalable fabrication.",
       "hashtags": [
-        "#Ferroelectric",
+        "#Ferroelectrics",
         "#EnergyHarvesting",
         "#OrganicMaterials",
-        "#FlexibleElectronics",
-        "#Pyroelectric"
+        "#Pyroelectrics",
+        "#FlexibleElectronics"
       ],
       "paper_id": "2026-07-09-arxiv-polycrystalline_ferroelectric_croconic_acid_for_multisource_environmental_energy_harvestin",
       "paper_title": "Polycrystalline ferroelectric croconic acid for multisource environmental energy harvesting",
       "paper_date": "2026-07-09",
       "paper_category": "Materials Discovery",
-      "generated_at": "2026-07-12T11:58:14",
+      "generated_at": "2026-07-11T11:51:19",
       "generator": "openai"
     }
   },
@@ -800,29 +800,29 @@
         "url": "https://arxiv.org/pdf/2607.08617v1"
       }
     ],
-    "score": 55,
+    "score": 60,
     "infographic": {
-      "key_insight": "Large-scale ML-driven first-principles simulations show that amorphous indium oxide contains edge-sharing polyhedral chains and peroxide-like O–O bonds that explain its high electron mobility and self-doping behavior.",
-      "engineering_relevance": "The work provides a structure-property blueprint for optimizing a-In2O3 in thin-film transistors and photoanodes, including a potential route to tune conductivity and optical absorption through controlled amorphization.",
+      "key_insight": "Large-scale machine-learned simulations reveal that amorphous indium oxide contains edge-sharing polyhedral chains and peroxide-like O-O bonds that explain its high mobility and intrinsic n-type behavior.",
+      "engineering_relevance": "These structural fingerprints provide actionable guidance for designing amorphous oxide semiconductors and improving photoelectrochemical performance through controlled amorphization.",
       "method": [
-        "Trained a MACE machine-learned interatomic potential on first-principles molecular dynamics trajectories.",
-        "Generated amorphous structures up to 5120 atoms, far larger than typical ab initio models.",
-        "Compared simulated X-ray structure factors and vibrational signatures with experimental observables."
+        "Trained a MACE machine-learned interatomic potential on first-principles molecular dynamics data.",
+        "Generated and analyzed amorphous structures with up to 5120 atoms, far beyond typical ab initio cell sizes.",
+        "Compared computed X-ray structure factors and vibrational signatures with experiment."
       ],
-      "evidence_signal": "The simulated X-ray structure factors agree quantitatively with experiment, and the predicted peroxide-related Raman feature near 850 cm^-1 offers a direct experimental check.",
-      "watch_item": "The structural conclusions rely on ML-potential extrapolation from first-principles data, so transferability outside the training regime and across preparation conditions should be validated.",
+      "evidence_signal": "The simulations reproduce experimental X-ray structure factors quantitatively and predict a Raman-active feature near 850 cm^-1 associated with peroxide-like bonds.",
+      "watch_item": "The peroxide-like bond interpretation and quasi-crystalline regions should be validated across synthesis conditions and experimental probes, since amorphous networks can be sample-dependent.",
       "hashtags": [
-        "#AmorphousMaterials",
+        "#AmorphousOxides",
         "#MachineLearningPotentials",
-        "#IndiumOxide",
         "#FirstPrinciplesSimulation",
-        "#MaterialsEngineering"
+        "#MaterialsStructure",
+        "#ThinFilmTransistors"
       ],
       "paper_id": "2026-07-09-arxiv-large_scale_first_principle_simulations_of_amorphous_indium_oxide",
       "paper_title": "Large-scale first-principle simulations of amorphous indium oxide",
       "paper_date": "2026-07-09",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-07-12T11:58:16",
+      "generated_at": "2026-07-11T11:51:22",
       "generator": "openai"
     }
   },
@@ -853,29 +853,29 @@
         "url": "https://arxiv.org/pdf/2607.08474v1"
       }
     ],
-    "score": 55,
+    "score": 60,
     "infographic": {
-      "key_insight": "Spacer-layer Cl doping can tune low-n square-planar nickelates to a Ni valence and correlation regime similar to superconducting higher-n compounds, making n=2 and n=3 candidates for superconductivity.",
-      "engineering_relevance": "This provides a chemically practical design route to engineer nickelate superconductors by adjusting spacer-layer composition rather than relying only on difficult control of layer number.",
+      "key_insight": "Spacer-layer Cl doping can tune low-n square-planar nickelates to a superconductivity-relevant Ni valence, making n=2 and n=3 La-based compounds electronically resemble higher-n superconducting nickelates.",
+      "engineering_relevance": "This suggests a chemically practical route to design and synthesize new low-dimensional nickelate superconductors without heavily altering the NiO2 planes.",
       "method": [
-        "Used DFT+DMFT to model layer-resolved electronic structure and Ni-d orbital correlations.",
-        "Compared electron-compensated La-based n=2 and n=3 nickelates against superconducting higher-n nickelates.",
-        "Evaluated whether Cl substitution preserves the low-energy Ni-d electronic structure while shifting valence."
+        "DFT + DMFT to resolve layer-dependent electronic structure and correlation.",
+        "Model electron-compensated low-n La-based nickelates with spacer-layer Cl substitution.",
+        "Compare Ni-d correlation strength and low-energy Ni-d states against higher-n superconducting compounds."
       ],
-      "evidence_signal": "The abstract reports a theoretical evaluation showing that Cl-doped n=2 and n=3 compounds reach Ni-d correlations comparable to superconducting higher-n members while retaining the characteristic low-energy electronic structure.",
-      "watch_item": "The result is a prediction from electronic-structure calculations, so the proposed superconductivity still requires experimental synthesis and validation, including control of Cl incorporation and structural stability.",
+      "evidence_signal": "The abstract reports that targeted n=2 and n=3 compounds develop Ni-d correlations comparable to superconducting higher-n nickelates while retaining the characteristic low-energy Ni-d electronic structure.",
+      "watch_item": "The proposal is a computational prediction, so experimental feasibility, disorder from Cl substitution, and actual superconducting transition behavior still need verification.",
       "hashtags": [
         "#Nickelates",
+        "#DFTDMFT",
         "#Superconductivity",
-        "#DFT",
-        "#DMFT",
-        "#MaterialsDesign"
+        "#MaterialsDesign",
+        "#PropertyPrediction"
       ],
       "paper_id": "2026-07-09-arxiv-layer_resolved_electronic_structure_and_correlation_of_low_n_square_planar_nickelates_a_df",
       "paper_title": "Layer-resolved Electronic Structure and Correlation of Low-$n$ Square-planar Nickelates: A DFT+DMFT Prediction of Superconducting Candidates",
       "paper_date": "2026-07-09",
       "paper_category": "Property Prediction",
-      "generated_at": "2026-07-12T11:58:18",
+      "generated_at": "2026-07-11T11:51:25",
       "generator": "openai"
     }
   },
@@ -904,29 +904,29 @@
         "url": "https://arxiv.org/pdf/2607.08438v1"
       }
     ],
-    "score": 55,
+    "score": 60,
     "infographic": {
-      "key_insight": "Black phosphorus’s momentum-space quantum geometry can be linked to a measurable low-loss EELS signal through a restricted quantum weight that remains well behaved even when single-band quantum metrics become singular.",
-      "engineering_relevance": "This provides a practical bulk spectroscopic route to quantify integrated quantum geometry in anisotropic 2D materials, useful for guiding optoelectronic and quantum-device design.",
+      "key_insight": "Black phosphorus’s momentum-resolved quantum geometry can be linked to a measurable low-loss EELS quantum weight, providing an experimentally accessible bulk signature of Wannier quantum geometry.",
+      "engineering_relevance": "This gives a practical way to probe and compare anisotropic electronic structure in layered materials using low-loss EELS, even when band-resolved metrics are obscured by degeneracies.",
       "method": [
-        "Built a 32-band DFT-Wannier Hamiltonian for analytic momentum-derivative geometry calculations.",
-        "Computed single-band and occupied-manifold quantum metric / quantum weight maps and enforced restricted Souza-Wilkens-Martin sum rules.",
-        "Excluded zero-loss contributions to define an experimentally relevant restricted quantum weight for low-loss EELS."
+        "Built a 32-band DFT–Wannier Hamiltonian for black phosphorus.",
+        "Computed quantum metric and quantum weight from analytic momentum derivatives, including occupied-manifold projectors.",
+        "Introduced a restricted quantum weight Kii(ωc) that excludes the zero-loss region and satisfies the restricted Souza–Wilkens–Martin sum rule."
       ],
-      "evidence_signal": "The abstract reports nearly isotropic in-plane restricted quantum weight, Kzz/Kxx = 0.972 ± 0.005, with only a small +0.46% per eV U drift under Hubbard-Hartree corrections.",
-      "watch_item": "Raw single-band quantum metric maps can be misleading in the conventional cell because folding and near-degeneracies create genuine singularities, so masked or occupied-manifold quantities should be used.",
+      "evidence_signal": "The abstract reports nearly isotropic in-plane quantum weight, Kzz/Kxx = 0.972 ± 0.005, and a small but resolved +0.46% per eV U drift under Hubbard–Hartree corrections.",
+      "watch_item": "Single-band quantum metrics can become singular or misleading in the conventional cell due to folding and near-degeneracies, so masked or occupied-manifold analyses are required.",
       "hashtags": [
-        "#BlackPhosphorus",
         "#QuantumGeometry",
+        "#BlackPhosphorus",
         "#EELS",
         "#DFTWannier",
-        "#MaterialsScience"
+        "#MaterialsPhysics"
       ],
       "paper_id": "2026-07-09-arxiv-quantum_weight_and_low_loss_eels_signatures_of_wannier_quantum_geometry_in_black_phosphoru",
       "paper_title": "Quantum weight and low-loss EELS signatures of Wannier quantum geometry in black phosphorus",
       "paper_date": "2026-07-09",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-07-12T11:58:21",
+      "generated_at": "2026-07-11T11:51:27",
       "generator": "openai"
     }
   },
@@ -955,29 +955,29 @@
         "url": "https://arxiv.org/pdf/2607.08470v1"
       }
     ],
-    "score": 54,
+    "score": 59,
     "infographic": {
-      "key_insight": "MatBind learns a single shared embedding space that aligns crystal structures, simulated pXRD, DOS, and text, enabling zero-shot cross-modal retrieval across materials representations.",
-      "engineering_relevance": "This gives materials engineers a practical way to search, compare, and fuse heterogeneous characterization data from one unified latent space instead of siloed workflows.",
+      "key_insight": "MatBind learns a single shared embedding space that aligns crystal structures, simulated pXRD, DOS, and text, enabling cross-modal retrieval even between modalities never directly paired in training.",
+      "engineering_relevance": "This gives materials engineers a practical way to search, compare, and integrate multimodal characterization data across databases and workflows using one representation.",
       "method": [
-        "Contrastive learning with crystal structure as the central anchor modality",
-        "Aligns four modalities: structure, pXRD, DOS, and text",
-        "Enables emergent retrieval between modalities that were never explicitly paired during training"
+        "Contrastive learning with crystal structure as the central anchor modality.",
+        "Aligns four modalities: structure, pXRD, DOS, and text.",
+        "Supports zero-shot retrieval by exploiting emergent shared geometry in the embedding space."
       ],
-      "evidence_signal": "The abstract reports systematic retrieval improvement when multiple modalities are combined at query time, and the learned space organizes materials by physically meaningful properties without explicit supervision.",
-      "watch_item": "Performance may depend on the quality and consistency of simulated or text-derived modalities, and real-world deployment will need careful handling of missing, noisy, or weakly paired data.",
+      "evidence_signal": "The abstract reports that retrieval improves when modalities are combined at query time and that the learned space organizes materials by physically meaningful properties without explicit supervision.",
+      "watch_item": "Because pXRD is simulated from structures and the framework depends on a shared embedding assumption, real-world performance may vary when modalities are noisy, incomplete, or experimentally inconsistent.",
       "hashtags": [
         "#MaterialsInformatics",
-        "#MultimodalLearning",
         "#ContrastiveLearning",
+        "#MultimodalLearning",
         "#CrystalStructure",
-        "#XRayDiffraction"
+        "#XRD"
       ],
       "paper_id": "2026-07-09-arxiv-matbind_a_shared_embedding_space_for_multimodal_materials_characterization",
       "paper_title": "MatBind: A Shared Embedding Space for Multimodal Materials Characterization",
       "paper_date": "2026-07-09",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-07-12T11:58:23",
+      "generated_at": "2026-07-11T11:51:30",
       "generator": "openai"
     }
   },
@@ -1006,29 +1006,29 @@
         "url": "https://arxiv.org/pdf/2607.06848v1"
       }
     ],
-    "score": 53,
+    "score": 58,
     "infographic": {
-      "key_insight": "Orthogonalized enriched finite elements combine the completeness of classical finite elements with compact atom-centered enrichment functions to make pseudopotential DFT faster and more scalable.",
-      "engineering_relevance": "This framework reduces degrees of freedom, runtime, and memory for large-scale Kohn-Sham DFT, improving feasibility for high-electron-count simulations on parallel computers.",
+      "key_insight": "Orthogonalized enriched finite elements combine finite-element completeness with atom-centered efficiency to make large-scale pseudopotential DFT faster and more memory-efficient.",
+      "engineering_relevance": "This framework can reduce the computational and memory burden of Kohn-Sham DFT for large non-periodic systems, enabling more practical high-fidelity simulations on available HPC resources.",
       "method": [
         "Augment classical finite elements with compact atom-centered enrichment functions.",
-        "Orthogonalize enrichment functions against the finite element basis to improve conditioning and simplify overlap-matrix inversion.",
-        "Use residual-based Chebyshev subspace iteration to solve the Kohn-Sham eigenproblem efficiently despite approximate overlap inversion."
+        "Orthogonalize the enrichment functions against the finite-element basis to improve conditioning and overlap-matrix inversion.",
+        "Use a residual-based Chebyshev subspace iteration that tolerates approximate inverse-overlap evaluations."
       ],
-      "evidence_signal": "Benchmarks up to 39,083 electrons show the enriched basis cuts degrees of freedom by 5-7×, computational cost by 5-9×, and memory by 4-5× relative to classical finite elements, while maintaining accuracy and parallel scalability.",
-      "watch_item": "Performance depends on accurate and stable construction of enrichment functions and approximate overlap inversion, so implementation quality may strongly affect conditioning and convergence.",
+      "evidence_signal": "Benchmarks up to 39,083 electrons show a 5–7× reduction in degrees of freedom, 5–9× lower computational cost, and 4–5× less memory than the classical finite-element basis.",
+      "watch_item": "Performance depends on accurate orthogonalization and stable approximate overlap inversion, so implementation details may affect conditioning and scalability in new systems.",
       "hashtags": [
         "#DFT",
-        "#FiniteElementMethod",
-        "#ComputationalMaterials",
+        "#FiniteElementMethods",
         "#HighPerformanceComputing",
-        "#ElectronicStructure"
+        "#ComputationalMaterialsScience",
+        "#ScalableAlgorithms"
       ],
       "paper_id": "2026-07-07-arxiv-large_scale_pseudopotential_density_functional_theory_calculations_using_orthogonalized_en",
       "paper_title": "Large-scale pseudopotential density functional theory calculations using orthogonalized enriched finite element basis",
       "paper_date": "2026-07-07",
       "paper_category": "Polymers and Composites",
-      "generated_at": "2026-07-12T11:58:25",
+      "generated_at": "2026-07-11T11:51:33",
       "generator": "openai"
     }
   }
