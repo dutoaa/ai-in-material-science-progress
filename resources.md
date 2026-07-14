@@ -1,9 +1,17 @@
 # AI materials science Progress Public Resources
 
-Generated: 2026-07-12
+Generated: 2026-07-14
 Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 
-## 1. MLIP Studio: An Open Platform for Interactive Benchmarking and Atomistic Simulations Using Machine Learning Interatomic Potentials
+## 1. The evolution of AI from image interpretation toward scientific inference in nanoparticle electron microscopy
+
+- Date: 2026-07-11
+- Category: Materials Discovery
+- arXiv: https://arxiv.org/abs/2607.10388v1
+- PDF: https://arxiv.org/pdf/2607.10388v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-11-arxiv-the_evolution_of_ai_from_image_interpretation_toward_scientific_inference_in_nanoparticle_infographic.json
+
+## 2. MLIP Studio: An Open Platform for Interactive Benchmarking and Atomistic Simulations Using Machine Learning Interatomic Potentials
 
 - Date: 2026-07-08
 - Category: Property Prediction
@@ -11,7 +19,15 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2607.07606v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-08-arxiv-mlip_studio_an_open_platform_for_interactive_benchmarking_and_atomistic_simulations_using_infographic.json
 
-## 2. Machine Learning Materials Properties by Encoding Orbital-Projected Density of States
+## 3. CatRetriever: Contrastive Representation Learning for Slab-to-Bulk Retrieval in Generative Catalyst Discovery
+
+- Date: 2026-07-13
+- Category: Materials Discovery
+- arXiv: https://arxiv.org/abs/2607.11712v1
+- PDF: https://arxiv.org/pdf/2607.11712v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-13-arxiv-catretriever_contrastive_representation_learning_for_slab_to_bulk_retrieval_in_generative_infographic.json
+
+## 4. Machine Learning Materials Properties by Encoding Orbital-Projected Density of States
 
 - Date: 2026-07-08
 - Category: Crystal and Structure
@@ -19,7 +35,31 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2607.07339v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-08-arxiv-machine_learning_materials_properties_by_encoding_orbital_projected_density_of_states_infographic.json
 
-## 3. A Multi-Scale Machine Learning Framework for Coupled Chemical, Spin, and Structural Disorder in Alloys
+## 5. Data-efficient continuous conditional denoising diffusion model for microstructure generation
+
+- Date: 2026-07-11
+- Category: Microstructure
+- arXiv: https://arxiv.org/abs/2607.10429v1
+- PDF: https://arxiv.org/pdf/2607.10429v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-11-arxiv-data_efficient_continuous_conditional_denoising_diffusion_model_for_microstructure_generat_infographic.json
+
+## 6. AutoMatBench: An Automatic Optimization Toolkit for the Acceleration of Material Properties Prediction Benchmarking
+
+- Date: 2026-07-13
+- Category: Materials Discovery
+- arXiv: https://arxiv.org/abs/2607.11526v1
+- PDF: https://arxiv.org/pdf/2607.11526v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-13-arxiv-automatbench_an_automatic_optimization_toolkit_for_the_acceleration_of_material_properties_infographic.json
+
+## 7. Tiling decomposition multiplicity predicts stability of GaN(0001) surface reconstructions
+
+- Date: 2026-07-13
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2607.11105v1
+- PDF: https://arxiv.org/pdf/2607.11105v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-13-arxiv-tiling_decomposition_multiplicity_predicts_stability_of_gan_0001_surface_reconstructions_infographic.json
+
+## 8. A Multi-Scale Machine Learning Framework for Coupled Chemical, Spin, and Structural Disorder in Alloys
 
 - Date: 2026-07-08
 - Category: Crystal and Structure
@@ -27,7 +67,7 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2607.07456v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-08-arxiv-a_multi_scale_machine_learning_framework_for_coupled_chemical_spin_and_structural_disorder_infographic.json
 
-## 4. PhononScore: a phonon-aware scoring function for dynamical stability
+## 9. PhononScore: a phonon-aware scoring function for dynamical stability
 
 - Date: 2026-07-09
 - Category: Materials Discovery
@@ -35,7 +75,7 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2607.08518v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-09-arxiv-phononscore_a_phonon_aware_scoring_function_for_dynamical_stability_infographic.json
 
-## 5. Human and LLM Collaboration for Accelerated Materials Synthesis and Discovery
+## 10. Human and LLM Collaboration for Accelerated Materials Synthesis and Discovery
 
 - Date: 2026-07-08
 - Category: Materials Discovery
@@ -43,122 +83,82 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2607.07604v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-08-arxiv-human_and_llm_collaboration_for_accelerated_materials_synthesis_and_discovery_infographic.json
 
-## 6. EquiFiLM: Charge-Conditioned Equivariant Force Fields via Feature-wise Linear Modulation
+## 11. Direct writing of individual quantum dots
 
-- Date: 2026-07-06
+- Date: 2026-07-13
 - Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2607.05559v1
-- PDF: https://arxiv.org/pdf/2607.05559v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-06-arxiv-equifilm_charge_conditioned_equivariant_force_fields_via_feature_wise_linear_modulation_infographic.json
+- arXiv: https://arxiv.org/abs/2607.11864v1
+- PDF: https://arxiv.org/pdf/2607.11864v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-13-arxiv-direct_writing_of_individual_quantum_dots_infographic.json
 
-## 7. BatteryMat: a hierarchical machine-learning and DFT framework for average-voltage screening of lithium-ion cathode materials
+## 12. Synthesis of Ti2B2Clx MBenes in molten salts from theoretical and experimental perspectives
 
-- Date: 2026-07-07
-- Category: Materials Discovery
-- arXiv: https://arxiv.org/abs/2607.06645v1
-- PDF: https://arxiv.org/pdf/2607.06645v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-07-arxiv-batterymat_a_hierarchical_machine_learning_and_dft_framework_for_average_voltage_screening_infographic.json
-
-## 8. Interplay between Electronic Structure, Chemical Bonding, and Lattice Symmetry in Bismuth Vanadate
-
-- Date: 2026-07-09
+- Date: 2026-07-13
 - Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2607.08327v1
-- PDF: https://arxiv.org/pdf/2607.08327v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-09-arxiv-interplay_between_electronic_structure_chemical_bonding_and_lattice_symmetry_in_bismuth_va_infographic.json
+- arXiv: https://arxiv.org/abs/2607.11550v1
+- PDF: https://arxiv.org/pdf/2607.11550v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-13-arxiv-synthesis_of_ti2b2clx_mbenes_in_molten_salts_from_theoretical_and_experimental_perspective_infographic.json
 
-## 9. Bond, orbital and spin order in d4/d6/d7 perovskite oxides: successes and limitations of foundation interatomic potentials
+## 13. Auditing Machine-Learning Models and Their Training Data with Explainability and First-Principles Verification: Application to Spin Hall Conductivity
 
-- Date: 2026-07-09
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2607.08351v1
-- PDF: https://arxiv.org/pdf/2607.08351v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-09-arxiv-bond_orbital_and_spin_order_in_d4_d6_d7_perovskite_oxides_successes_and_limitations_of_fou_infographic.json
-
-## 10. Accurate, Interdisciplinary and Transparent Structure-property Understanding with Deep Native Structural Reasoning
-
-- Date: 2026-07-08
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2607.07708v1
-- PDF: https://arxiv.org/pdf/2607.07708v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-08-arxiv-accurate_interdisciplinary_and_transparent_structure_property_understanding_with_deep_nati_infographic.json
-
-## 11. A Distributional Framework for Generative Modeling of Molecular Crystals
-
-- Date: 2026-07-06
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2607.05266v1
-- PDF: https://arxiv.org/pdf/2607.05266v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-06-arxiv-a_distributional_framework_for_generative_modeling_of_molecular_crystals_infographic.json
-
-## 12. Stress calculation in linear scaling DFT: convergence and dynamics
-
-- Date: 2026-07-08
+- Date: 2026-07-10
 - Category: Property Prediction
-- arXiv: https://arxiv.org/abs/2607.07472v1
-- PDF: https://arxiv.org/pdf/2607.07472v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-08-arxiv-stress_calculation_in_linear_scaling_dft_convergence_and_dynamics_infographic.json
+- arXiv: https://arxiv.org/abs/2607.09910v1
+- PDF: https://arxiv.org/pdf/2607.09910v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-10-arxiv-auditing_machine_learning_models_and_their_training_data_with_explainability_and_first_pri_infographic.json
 
-## 13. Reaction-network reasoning with frontier models for experimentally confirmed catalyst-selectivity hypotheses
+## 14. PAC Studio Machine Learning: Human-in-the-Loop Analysis of TDPAC Spectra
 
-- Date: 2026-07-09
+- Date: 2026-07-13
 - Category: Materials Discovery
-- arXiv: https://arxiv.org/abs/2607.08003v1
-- PDF: https://arxiv.org/pdf/2607.08003v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-09-arxiv-reaction_network_reasoning_with_frontier_models_for_experimentally_confirmed_catalyst_sele_infographic.json
+- arXiv: https://arxiv.org/abs/2607.11298v1
+- PDF: https://arxiv.org/pdf/2607.11298v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-13-arxiv-pac_studio_machine_learning_human_in_the_loop_analysis_of_tdpac_spectra_infographic.json
 
-## 14. The Radial Distribution Functions of Nanofluids: Molecular Dynamics Simulations
+## 15. Oxygen-nonstoichiometry-driven phase transition in $\mathrm{Sr}_{1-x}\mathrm{Nd}_{x}\mathrm{CoO}_{3-δ}$ ($x = 0.1, 0.2, 0.3$) perovskites
 
-- Date: 2026-07-09
+- Date: 2026-07-11
 - Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2607.08527v1
-- PDF: https://arxiv.org/pdf/2607.08527v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-09-arxiv-the_radial_distribution_functions_of_nanofluids_molecular_dynamics_simulations_infographic.json
+- arXiv: https://arxiv.org/abs/2607.10346v1
+- PDF: https://arxiv.org/pdf/2607.10346v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-11-arxiv-oxygen_nonstoichiometry_driven_phase_transition_in_mathrm_sr_1_x_mathrm_nd_x_mathrm_coo_3_infographic.json
 
-## 15. Polycrystalline ferroelectric croconic acid for multisource environmental energy harvesting
+## 16. Anisotropic representations for E(3)-equivariant machine learning coarse-grained potentials
+
+- Date: 2026-07-10
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2607.10002v1
+- PDF: https://arxiv.org/pdf/2607.10002v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-10-arxiv-anisotropic_representations_for_e_3_equivariant_machine_learning_coarse_grained_potentials_infographic.json
+
+## 17. Grain-boundary-mediated kinetic arrest in graphite-to-diamond transformation
 
 - Date: 2026-07-09
+- Category: Microstructure
+- arXiv: https://arxiv.org/abs/2607.08868v1
+- PDF: https://arxiv.org/pdf/2607.08868v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-09-arxiv-grain_boundary_mediated_kinetic_arrest_in_graphite_to_diamond_transformation_infographic.json
+
+## 18. From PBS to ePBS: the Microstructure of Block Building
+
+- Date: 2026-07-13
 - Category: Materials Discovery
-- arXiv: https://arxiv.org/abs/2607.08361v1
-- PDF: https://arxiv.org/pdf/2607.08361v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-09-arxiv-polycrystalline_ferroelectric_croconic_acid_for_multisource_environmental_energy_harvestin_infographic.json
+- arXiv: https://arxiv.org/abs/2607.11240v1
+- PDF: https://arxiv.org/pdf/2607.11240v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-13-arxiv-from_pbs_to_epbs_the_microstructure_of_block_building_infographic.json
 
-## 16. Large-scale first-principle simulations of amorphous indium oxide
+## 19. Effect of annealing temperature on the structure and properties of co-sputtered Fe-Mn-Sn films near 2:1:1 ratio
 
-- Date: 2026-07-09
+- Date: 2026-07-13
 - Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2607.08617v1
-- PDF: https://arxiv.org/pdf/2607.08617v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-09-arxiv-large_scale_first_principle_simulations_of_amorphous_indium_oxide_infographic.json
+- arXiv: https://arxiv.org/abs/2607.11077v1
+- PDF: https://arxiv.org/pdf/2607.11077v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-13-arxiv-effect_of_annealing_temperature_on_the_structure_and_properties_of_co_sputtered_fe_mn_sn_f_infographic.json
 
-## 17. Layer-resolved Electronic Structure and Correlation of Low-$n$ Square-planar Nickelates: A DFT+DMFT Prediction of Superconducting Candidates
+## 20. Telecom-band Chiral Light Detection through Hidden Giant Third-Order Nonlinear Circular Dichroism in Two-dimensional Halide Perovskite
 
-- Date: 2026-07-09
-- Category: Property Prediction
-- arXiv: https://arxiv.org/abs/2607.08474v1
-- PDF: https://arxiv.org/pdf/2607.08474v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-09-arxiv-layer_resolved_electronic_structure_and_correlation_of_low_n_square_planar_nickelates_a_df_infographic.json
-
-## 18. Quantum weight and low-loss EELS signatures of Wannier quantum geometry in black phosphorus
-
-- Date: 2026-07-09
+- Date: 2026-07-13
 - Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2607.08438v1
-- PDF: https://arxiv.org/pdf/2607.08438v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-09-arxiv-quantum_weight_and_low_loss_eels_signatures_of_wannier_quantum_geometry_in_black_phosphoru_infographic.json
-
-## 19. MatBind: A Shared Embedding Space for Multimodal Materials Characterization
-
-- Date: 2026-07-09
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2607.08470v1
-- PDF: https://arxiv.org/pdf/2607.08470v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-09-arxiv-matbind_a_shared_embedding_space_for_multimodal_materials_characterization_infographic.json
-
-## 20. Large-scale pseudopotential density functional theory calculations using orthogonalized enriched finite element basis
-
-- Date: 2026-07-07
-- Category: Polymers and Composites
-- arXiv: https://arxiv.org/abs/2607.06848v1
-- PDF: https://arxiv.org/pdf/2607.06848v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-07-arxiv-large_scale_pseudopotential_density_functional_theory_calculations_using_orthogonalized_en_infographic.json
+- arXiv: https://arxiv.org/abs/2607.11037v1
+- PDF: https://arxiv.org/pdf/2607.11037v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-13-arxiv-telecom_band_chiral_light_detection_through_hidden_giant_third_order_nonlinear_circular_di_infographic.json

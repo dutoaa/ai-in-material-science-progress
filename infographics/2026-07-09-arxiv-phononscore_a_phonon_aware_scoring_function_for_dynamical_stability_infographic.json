@@ -1,24 +1,24 @@
 {
-  "key_insight": "PhononScore is a fast, phonon-aware scoring function that ranks crystal structures by dynamical stability without requiring explicit phonon calculations.",
-  "engineering_relevance": "It provides a practical second-level screening tool for high-throughput materials discovery, allowing generated candidates to be reranked before costly DFT phonon analysis.",
+  "key_insight": "PhononScore is a fast, phonon-aware scoring function that ranks crystal structures by dynamical stability without expensive explicit phonon calculations.",
+  "engineering_relevance": "It provides a practical stability filter for high-throughput materials discovery, enabling second-level reranking of generated crystals in screening, active learning, and reinforcement learning loops.",
   "method": [
-    "Trained on a multi-fidelity dataset of 157,463 crystal structures with phonon stability labels.",
+    "Trained on a multi-fidelity phonon dataset of 157,463 crystal structures.",
     "Predicts a unified stability score directly from crystal structures.",
-    "Used as a feedback signal for crystal generation, active learning, and reinforcement learning."
+    "Optionally fine-tuned with DFT-PBE phonon data for high-fidelity screening."
   ],
-  "evidence_signal": "On PhononBench, average dynamical stability rate improved from 30.7% to 83.7% across nine generator pools, with Top-10 candidates reaching 97.5%; PhononScore-DFT achieved 93.0% Top-100 stability on a high-fidelity DFT-PBE benchmark.",
-  "watch_item": "Performance may depend on dataset coverage and transfer to chemistries or structure types not well represented in the training set.",
+  "evidence_signal": "On PhononBench, it raised average candidate-pool stability from 30.7% to 83.7% across nine generation models, with Top-10 stability reaching 97.5%; on a DFT benchmark, PhononScore-DFT achieved 93.0% Top-100 stability.",
+  "watch_item": "Performance depends on the quality and coverage of the training data, so out-of-distribution crystal chemistries may still require explicit phonon verification.",
   "hashtags": [
     "#MaterialsDiscovery",
-    "#PhononScore",
     "#CrystalGeneration",
+    "#Phonons",
     "#DynamicalStability",
-    "#ActiveLearning"
+    "#AIforScience"
   ],
   "paper_id": "2026-07-09-arxiv-phononscore_a_phonon_aware_scoring_function_for_dynamical_stability",
   "paper_title": "PhononScore: a phonon-aware scoring function for dynamical stability",
   "paper_date": "2026-07-09",
   "paper_category": "Materials Discovery",
-  "generated_at": "2026-07-12T11:57:47",
+  "generated_at": "2026-07-14T12:10:19",
   "generator": "openai"
 }
