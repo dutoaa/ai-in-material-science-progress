@@ -1,24 +1,24 @@
 {
-  "key_insight": "A model-agnostic audit can verify both whether a materials ML model is learning real physics and whether its training labels are correct, using explainability plus targeted DFT checks.",
-  "engineering_relevance": "For spin Hall conductivity prediction, a composition-only Random Forest reaches competitive accuracy without relaxed structures, enabling screening across many more candidate compositions than structure-dependent models.",
+  "key_insight": "A model-agnostic audit combining explainability, counterfactual checks, and DFT verification can expose both spurious learned correlations and wrong training labels in materials-property prediction.",
+  "engineering_relevance": "For spin Hall conductivity screening, this enables cheaper composition-only models to be used at scale while still detecting when predictions or labels are physically unreliable.",
   "method": [
-    "Use SHAP and counterfactual partial dependence to detect feature–property entanglement.",
-    "Apply Rashomon-style cross-model verification to see whether different models agree on the learned signal.",
-    "Confirm suspicious findings with targeted first-principles DFT calculations on selected compounds and labels."
+    "Use SHAP and partial dependence to test whether features track physics or training-set artifacts.",
+    "Cross-check multiple models with Rashomon-style verification to see if explanations are stable.",
+    "Validate suspicious findings with targeted DFT calculations on selected compounds."
   ],
-  "evidence_signal": "The audit found a Pt-free compound whose true SHC was nearly 4× the model prediction and uncovered a 30× error in the HfC training label.",
-  "watch_item": "The protocol still depends on a small number of carefully chosen DFT validations, so its reliability hinges on selecting informative audit cases.",
+  "evidence_signal": "On intrinsic spin Hall conductivity, the composition-only Random Forest matched structure-aware model performance, but DFT showed a Pt-free compound was underpredicted by nearly 4× and revealed a 30× error in the HfC training label.",
+  "watch_item": "The audit still depends on a small number of targeted DFT calculations, so its reliability is limited by the quality and coverage of those first-principles checks.",
   "hashtags": [
     "#MaterialsInformatics",
+    "#MachineLearning",
     "#ExplainableAI",
     "#DFT",
-    "#SpinHallConductivity",
-    "#ModelAuditing"
+    "#SpinHallConductivity"
   ],
   "paper_id": "2026-07-10-arxiv-auditing_machine_learning_models_and_their_training_data_with_explainability_and_first_pri",
   "paper_title": "Auditing Machine-Learning Models and Their Training Data with Explainability and First-Principles Verification: Application to Spin Hall Conductivity",
   "paper_date": "2026-07-10",
   "paper_category": "Property Prediction",
-  "generated_at": "2026-07-14T12:10:30",
+  "generated_at": "2026-07-15T12:14:04",
   "generator": "openai"
 }
