@@ -25,17 +25,17 @@
         "url": "https://arxiv.org/pdf/2607.10388v1"
       }
     ],
-    "score": 91,
+    "score": 96,
     "infographic": {
-      "key_insight": "AI is turning nanoparticle electron microscopy from manual image interpretation into a quantitative platform for structural, dynamic, and scientific inference.",
-      "engineering_relevance": "For materials discovery, these methods can speed nanoparticle characterization, connect structure to properties, and support closed-loop experimentation for faster design decisions.",
+      "key_insight": "AI is shifting nanoparticle electron microscopy from image interpretation to scientific inference by extracting structure, dynamics, and properties from TEM, HRTEM, STEM, and in situ datasets.",
+      "engineering_relevance": "This enables faster, more quantitative nanoparticle characterization and supports closed-loop materials discovery by linking microscopy, simulations, and synthesis conditions.",
       "method": [
-        "Uses ML/DL for particle detection, segmentation, and morphology quantification in TEM/STEM/HRTEM data.",
-        "Applies advanced models such as transformers, self-supervised learning, foundation models, and physics-informed learning.",
-        "Combines microscopy with simulations, metadata, and multimodal inputs to infer 2D-to-3D structure and in situ dynamics."
+        "Conventional ML, CNNs, and transformer models for detection, segmentation, morphology, and defect analysis",
+        "Self-supervised, foundation, and multimodal learning for atomic-resolution restoration and 2D-to-3D inference",
+        "Physics-informed and autonomous workflows that combine microscopy with simulations, metadata, and in situ experiments"
       ],
-      "evidence_signal": "The review synthesizes methodologies across multiple microscopy modes and explicitly evaluates their advantages, limitations, benchmarking needs, and data requirements.",
-      "watch_item": "Performance depends strongly on high-quality labeled data, robust benchmarking, and careful validation before deployment in autonomous workflows.",
+      "evidence_signal": "The review synthesizes applications across multiple microscopy modalities and explicitly assesses benchmarking, data requirements, advantages, and limitations of current AI methods.",
+      "watch_item": "Performance can be limited by scarce labeled data, weak benchmarking, and the challenge of ensuring physically consistent predictions across heterogeneous experiments.",
       "hashtags": [
         "#AIforMaterials",
         "#ElectronMicroscopy",
@@ -47,7 +47,7 @@
       "paper_title": "The evolution of AI from image interpretation toward scientific inference in nanoparticle electron microscopy",
       "paper_date": "2026-07-11",
       "paper_category": "Materials Discovery",
-      "generated_at": "2026-07-18T11:51:42",
+      "generated_at": "2026-07-17T12:07:49",
       "generator": "openai"
     }
   },
@@ -76,29 +76,29 @@
         "url": "https://arxiv.org/pdf/2607.14025v1"
       }
     ],
-    "score": 85,
+    "score": 90,
     "infographic": {
-      "key_insight": "WEST is an open-source, highly scalable excited-state simulation code that unifies GW, BSE, TDDFT, and defect embedding without explicit virtual states.",
-      "engineering_relevance": "It enables predictive excited-state calculations on thousand-atom systems with GPU-accelerated strong scaling, making it useful for materials discovery and large-scale screening.",
+      "key_insight": "WEST is a scalable open-source platform for excited-state materials simulations that unifies GW, BSE, TDDFT, and quantum defect embedding without explicit virtual states.",
+      "engineering_relevance": "Its low-rank algorithms, localization strategies, hierarchical parallelism, and GPU acceleration make accurate excited-state calculations feasible for thousand-atom systems.",
       "method": [
-        "Combines density functional and density matrix perturbation theory to avoid explicit virtual electronic states.",
-        "Uses low-rank dielectric screening/exact-exchange representations plus localization to improve scaling.",
-        "Implements hierarchical parallelization and GPU acceleration for near-ideal scaling on thousands of GPUs."
+        "Uses density functional and density matrix perturbation theory in a common framework",
+        "Represents dielectric screening and exact exchange with low-rank approximations",
+        "Adds hierarchical parallelization and GPU support for near-ideal strong scaling"
       ],
-      "evidence_signal": "The abstract reports representative applications across spin defects, self-trapped excitons, and liquid water/ice, including systems with more than a thousand atoms and near-ideal strong scaling to thousands of GPUs.",
-      "watch_item": "Performance and usability may depend on careful workflow integration and hardware access, especially for very large GPU-enabled runs and cross-package interoperability.",
+      "evidence_signal": "The abstract reports representative applications across spin defects, perovskites, water, and ice, including systems with more than a thousand atoms and strong scaling to thousands of GPUs.",
+      "watch_item": "Performance and accuracy may depend on careful parallel workflow integration, and the abstract does not quantify benchmark errors or memory limits across all supported methods.",
       "hashtags": [
         "#MaterialsDiscovery",
-        "#ExcitedStates",
-        "#GWPython",
-        "#HPC",
-        "#ComputationalMaterials"
+        "#ExcitedStateSimulation",
+        "#QuantumMaterials",
+        "#GPUAcceleration",
+        "#ComputationalMaterialsScience"
       ],
       "paper_id": "2026-07-15-arxiv-the_west_code_for_large_scale_excited_state_materials_simulations",
       "paper_title": "The WEST code for large-scale excited-state materials simulations",
       "paper_date": "2026-07-15",
       "paper_category": "Materials Discovery",
-      "generated_at": "2026-07-18T11:51:45",
+      "generated_at": "2026-07-17T12:07:51",
       "generator": "openai"
     }
   },
@@ -129,29 +129,29 @@
         "url": "https://arxiv.org/pdf/2607.14827v1"
       }
     ],
-    "score": 77,
+    "score": 82,
     "infographic": {
-      "key_insight": "SevenNet-Polar extends an equivariant GNN to predict Born effective charges alongside energy, forces, and stress, delivering accurate charge-aware materials simulations at scale.",
-      "engineering_relevance": "The model makes electric-field and polarization-sensitive atomistic simulation much faster and more practical for complex oxides, defects, and large supercell systems.",
+      "key_insight": "SevenNet-Polar extends equivariant graph neural networks to predict Born effective charges alongside energy, forces, and stress with high accuracy and strong transferability.",
+      "engineering_relevance": "It enables faster charge-aware atomistic simulations under electric fields, making large-scale studies of defects, interfaces, and ionic materials more practical.",
       "method": [
-        "Built on the SevenNet equivariant graph neural network architecture.",
-        "Trained multitask models for energy, forces, stress, and Born effective charges.",
-        "Used FlashTP acceleration to support large-scale multi-GPU and single-GPU inference."
+        "SevenNet-based equivariant multitask GNN for energy, forces, stress, and BEC.",
+        "Separate BEC-only predictors and all-in-one multitask models for ZrO2, Li3PO4, and perovskites.",
+        "FlashTP acceleration for large-scale inference on multi-GPU systems and consumer GPUs."
       ],
-      "evidence_signal": "The abstract reports BEC-only RMSE as low as 0.0043 e and multitask accuracy of 1.0 meV/atom for energy, 12 meV/angstrom for forces, 0.05 GPa for stress, and 0.0029 e for BEC.",
-      "watch_item": "BEC scaling is less favorable than energy/force/stress, and generalization to unseen environments should still be validated for each new material class.",
+      "evidence_signal": "The abstract reports BEC RMSE as low as 0.0043 e for BEC-only models and 0.0029 e for multitask models, with energy/force/stress errors of 1.0 meV/atom, 12 meV/angstrom, and 0.05 GPa, respectively.",
+      "watch_item": "Scaling behavior for diagonal and off-diagonal BEC components is less favorable than for energy, forces, and stress, so accuracy may degrade in more challenging or out-of-distribution environments.",
       "hashtags": [
-        "#MaterialsInformatics",
+        "#MachineLearning",
+        "#MaterialsScience",
         "#GraphNeuralNetworks",
         "#BornEffectiveCharge",
-        "#MolecularDynamics",
-        "#ComputationalMaterials"
+        "#AtomisticSimulation"
       ],
       "paper_id": "2026-07-16-arxiv-sevennet_polar_for_multitask_prediction_of_energy_forces_stress_and_born_effective_charges",
       "paper_title": "SevenNet-Polar for MultiTask Prediction of Energy, Forces, Stress, and Born Effective Charges: Development and Application to ZrO$_2$, Li$_3$PO$_4$, and Perovskites",
       "paper_date": "2026-07-16",
       "paper_category": "Microstructure",
-      "generated_at": "2026-07-18T11:51:47",
+      "generated_at": "2026-07-17T12:07:54",
       "generator": "openai"
     }
   },
@@ -184,29 +184,29 @@
         "url": "https://arxiv.org/pdf/2607.15195v1"
       }
     ],
-    "score": 71,
+    "score": 76,
     "infographic": {
-      "key_insight": "SciPhyRL turns portfolio optimization into a physics-informed continuous-time control problem, learning cost-aware trading policies directly from historical trajectories via a pathwise Hamilton-Jacobi formulation.",
-      "engineering_relevance": "The framework offers a data-driven way to deploy multi-period allocation policies that explicitly balance return, risk, and transaction costs, making it relevant for scalable decision systems under real market frictions.",
+      "key_insight": "SciPhyRL turns dynamic portfolio optimization into a data-driven physics-informed control problem by solving a projected Hamilton-Jacobi-Bellman equation directly from historical trajectories.",
+      "engineering_relevance": "The framework offers a practical offline decision-making method for cost-aware, multi-period allocation problems where execution frictions, turnover, and risk must be balanced under real-world constraints.",
       "method": [
-        "Reformulates portfolio control in an extended state space with cumulative costs",
-        "Solves the HJB/pathwise Hamilton-Jacobi equation offline using PINN from observed trajectories",
-        "Uses discrete target holdings and a quadratic price-impact model for practical execution"
+        "Uses extended-state continuous-time reinforcement learning with cumulative costs included explicitly.",
+        "Projects the HJB equation onto observed paths and solves it with a PINN in a single offline pass.",
+        "Recasts control as a discrete target holding and models execution with quadratic price impact."
       ],
-      "evidence_signal": "On a 14-asset ETF universe with an engineered oracle signal, the learned Gibbs policy showed strong out-of-sample Sharpe ratio gains versus static and myopic baselines.",
-      "watch_item": "Performance may depend on the quality and stability of the engineered signal and on how well the quadratic impact model matches real execution conditions.",
+      "evidence_signal": "On a 14-asset ETF universe with an engineered oracle signal, the learned Gibbs policy outperformed static and myopic baselines out of sample with stronger Sharpe ratio and controlled turnover/volatility.",
+      "watch_item": "Performance depends on the quality and realism of the offline signal and market-impact assumptions, so results may be less robust when those inputs are misspecified.",
       "hashtags": [
         "#ReinforcementLearning",
-        "#PhysicsInformedNN",
         "#PortfolioOptimization",
-        "#OptimalControl",
-        "#QuantFinance"
+        "#PhysicsInformedNets",
+        "#HamiltonJacobiBellman",
+        "#FinancialEngineering"
       ],
       "paper_id": "2026-07-16-arxiv-sciphy_reinforcement_learning_for_portfolio_optimization",
       "paper_title": "SciPhy Reinforcement Learning for Portfolio Optimization",
       "paper_date": "2026-07-16",
       "paper_category": "Materials Discovery",
-      "generated_at": "2026-07-18T11:51:50",
+      "generated_at": "2026-07-17T12:07:57",
       "generator": "openai"
     }
   },
@@ -235,29 +235,29 @@
         "url": "https://arxiv.org/pdf/2607.14795v1"
       }
     ],
-    "score": 71,
+    "score": 76,
     "infographic": {
-      "key_insight": "Explicitly sampling non-ideal configurational entropy, together with vibrational entropy, changes predicted binary phase stability and can shift transition temperatures substantially.",
-      "engineering_relevance": "This provides a more physically faithful atomistic route to construct composition-temperature phase diagrams for alloy design and phase-stability prediction.",
+      "key_insight": "Explicitly sampling non-ideal configurational entropy, together with vibrational entropy, significantly changes predicted binary alloy phase boundaries and lowers the AuCu order-disorder transition temperature toward experiment.",
+      "engineering_relevance": "The method enables more reliable atomistic phase-diagram construction for alloy design by directly computing composition-temperature stability from free energies rather than relying on ideal-solution assumptions.",
       "method": [
-        "Alchemical thermodynamic integration with composition-dependent transformations",
-        "Monte Carlo identity-exchange moves to sample configurational entropy",
-        "Molecular dynamics to capture vibrational contributions along the free-energy path"
+        "Extend non-equilibrium thermodynamic integration to composition-dependent transformations via alchemical interpolation of interactions.",
+        "Combine Monte Carlo identity-exchange moves with molecular dynamics to sample configurational and vibrational entropy along the integration path.",
+        "Use ACE interatomic potentials trained on DFT data (LDA, PBE, r2SCAN) to compute Au-Cu phase diagrams."
       ],
-      "evidence_signal": "For Au-Cu, explicit configurational sampling lowered the AuCu order-disorder transition from about 810 K to 710 K for the LDA-trained ACE potential, closer to the experimental 683 K.",
-      "watch_item": "Predictions remain strongly sensitive to the chosen exchange-correlation functional, so improved entropy sampling does not by itself guarantee quantitative accuracy.",
+      "evidence_signal": "For AuCu, explicit configurational sampling reduced the predicted order-disorder transition from about 810 K to 710 K (closer to the experimental 683 K) and broadened the solid-solution stability range.",
+      "watch_item": "Predicted accuracy is highly sensitive to the chosen exchange-correlation functional, so agreement for one model should not be taken as broadly predictive without careful functional validation.",
       "hashtags": [
+        "#MaterialsScience",
         "#PhaseDiagrams",
         "#AlloyDesign",
-        "#ConfigurationalEntropy",
-        "#ThermodynamicIntegration",
-        "#ComputationalMaterials"
+        "#MolecularSimulation",
+        "#Entropy"
       ],
       "paper_id": "2026-07-16-arxiv-computing_binary_alloy_phase_diagrams_with_explicit_configurational_and_vibrational_entrop",
       "paper_title": "Computing binary alloy phase diagrams with explicit configurational and vibrational entropy",
       "paper_date": "2026-07-16",
       "paper_category": "Microstructure",
-      "generated_at": "2026-07-18T11:51:52",
+      "generated_at": "2026-07-17T12:07:59",
       "generator": "openai"
     }
   },
@@ -286,29 +286,29 @@
         "url": "https://arxiv.org/pdf/2607.13467v1"
       }
     ],
-    "score": 68,
+    "score": 73,
     "infographic": {
-      "key_insight": "A physics-informed residual neural network can model hot deformation and dynamic recrystallization in a Mo-rich titanium alloy more accurately and more physically than standard constitutive equations.",
-      "engineering_relevance": "This enables more reliable process design for hot working, forging, and thermomechanical scheduling of Ti-6Al-4Mo-1V-0.1Si components.",
+      "key_insight": "Physics-informed residual neural networks can model hot deformation and dynamic recrystallization in a Mo-rich titanium alloy more accurately and interpretably than conventional constitutive equations.",
+      "engineering_relevance": "The approach can improve thermomechanical process design for titanium alloys by predicting flow stress and recrystallization behavior across wide temperature and strain-rate windows.",
       "method": [
-        "Built two stacked residual physics-informed neural networks (STAR-PINNs) from flow-stress data across 800–1050 °C and 0.01–10 s⁻¹.",
-        "Enforced constitutive physics such as strain hardening, strain-rate sensitivity, thermal softening, post-peak softening, and DRV/DRX behavior via automatic differentiation.",
-        "Added a DRX-aware dual-output design with JMAK-Avrami regularization, DRX saturation constraints, and Arrhenius consistency to link recrystallization fraction with stress."
+        "Two stacked residual PINNs were trained on experimental flow-stress curves from 800–1050 °C and 0.01–10 s⁻¹.",
+        "An enhanced model enforced constitutive physics such as thermal softening, strain-rate sensitivity, strain hardening, and post-peak softening via automatic differentiation.",
+        "A DRX-aware model added dual outputs, JMAK-Avrami regularization, DRX saturation constraints, and Arrhenius consistency to link recrystallization fraction with stress."
       ],
-      "evidence_signal": "The DRX-aware model achieved RMSE 11.69 MPa, MAE 4.83 MPa, R² 0.9850, and cross-validated RMSE 12.47 ± 0.26 MPa while reproducing flow curves, DRX kinetics, and Zener-Hollomon trends.",
-      "watch_item": "Performance is demonstrated on one alloy dataset, so transferability to other alloys, wider strain paths, or processing windows still needs validation.",
+      "evidence_signal": "The DRX-aware STAR-PINN reported RMSE 11.69 MPa, MAE 4.83 MPa, R² 0.9850, and cross-validated RMSE 12.47 ± 0.26 MPa while reproducing flow curves, DRX kinetics, and Zener–Hollomon trends.",
+      "watch_item": "Performance may depend on the quality and coverage of the experimental dataset, and the added physics constraints/latent fusion could require careful tuning to avoid overconstraining the model.",
       "hashtags": [
-        "#PhysicsInformedAI",
+        "#PhysicsInformedML",
         "#ConstitutiveModeling",
-        "#TitaniumAlloy",
+        "#TitaniumAlloys",
         "#DynamicRecrystallization",
-        "#MaterialsInformatics"
+        "#ComputationalMaterials"
       ],
       "paper_id": "2026-07-15-arxiv-physics_informed_residual_deep_learning_for_constitutive_modeling_of_hot_deformation_and_d",
       "paper_title": "Physics-Informed Residual Deep Learning for Constitutive Modeling of Hot Deformation and Dynamic Recrystallization in a Mo-Rich $α+β$ Titanium Alloy",
       "paper_date": "2026-07-15",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-07-18T11:51:55",
+      "generated_at": "2026-07-17T12:08:02",
       "generator": "openai"
     }
   },
@@ -337,29 +337,29 @@
         "url": "https://arxiv.org/pdf/2607.14972v1"
       }
     ],
-    "score": 66,
+    "score": 71,
     "infographic": {
-      "key_insight": "Phosphorus doping plus oxygen vacancies on CeO2(111) work synergistically to enhance formaldehyde oxidation by strengthening adsorption, lowering the C–H cleavage barrier, and stabilizing active Ce3+ sites.",
-      "engineering_relevance": "This suggests a practical route to designing low-temperature ceria catalysts for indoor air purification and catalytic oxidation of volatile organic compounds.",
+      "key_insight": "Phosphorus doping synergizes with oxygen vacancies on CeO2(111) to create a more active surface for formaldehyde oxidation by strengthening adsorption, lowering the C–H cleavage barrier, and improving product release.",
+      "engineering_relevance": "This suggests a practical route to design low-temperature ceria-based oxidation catalysts with better activity and regeneration for indoor air purification and related VOC control.",
       "method": [
-        "Static DFT to model P substitution and oxygen-vacancy effects on CeO2(111).",
-        "Dynamic DFT simulations to probe adsorption, bond cleavage, and product desorption.",
-        "Electronic-structure analysis of band gap changes and Ce3+ state formation."
+        "Static DFT to probe surface structure, electronic states, and adsorption energetics",
+        "Dynamic DFT to assess oxidation pathways and reaction kinetics",
+        "Comparison of pristine, P-doped, and vacancy-containing CeO2(111) surfaces"
       ],
-      "evidence_signal": "The abstract reports quantitative DFT evidence: the band gap drops from 2.26 to 2.09 eV, HCHO adsorption strengthens from -0.62 eV to -2.65 eV, and the C–H cleavage barrier decreases by 0.84 eV on the defective P-doped surface.",
-      "watch_item": "The conclusions are based on first-principles simulations, so experimental validation under realistic catalyst conditions is still needed.",
+      "evidence_signal": "The abstract reports a band-gap reduction from 2.26 to 2.09 eV, adsorption energy strengthening from -0.62 eV to -2.65 eV, and a 0.84 eV lower C–H cleavage barrier on the defective P-doped surface.",
+      "watch_item": "The conclusions are based on first-principles simulations, so experimental validation under realistic catalyst conditions, coverage effects, and long-term stability are still needed.",
       "hashtags": [
         "#DFT",
         "#Catalysis",
         "#Ceria",
-        "#FormaldehydeOxidation",
-        "#MaterialsDesign"
+        "#OxygenVacancy",
+        "#FormaldehydeOxidation"
       ],
       "paper_id": "2026-07-16-arxiv-synergistic_effects_of_phosphorus_doping_and_oxygen_vacancies_on_formaldehyde_oxidation_ov",
       "paper_title": "Synergistic Effects of Phosphorus Doping and Oxygen Vacancies on Formaldehyde Oxidation over CeO$_2$(111): A First Principles Investigation",
       "paper_date": "2026-07-16",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-07-18T11:51:58",
+      "generated_at": "2026-07-17T12:08:05",
       "generator": "openai"
     }
   },
@@ -389,17 +389,17 @@
         "url": "https://arxiv.org/pdf/2607.14951v1"
       }
     ],
-    "score": 64,
+    "score": 69,
     "infographic": {
-      "key_insight": "Sulfur vacancies in MoS2 do not diffuse independently; instead, their motion is collective and changes with defect concentration, producing clustered and concentration-dependent transport regimes.",
-      "engineering_relevance": "This concentration-sensitive vacancy diffusion helps explain memristive behavior in MoS2 devices and can guide defect engineering for more reliable electronic and memory-device performance.",
+      "key_insight": "Sulfur vacancies in MoS2 do not diffuse independently; instead, they form concentration-dependent clusters that can transition from immobile defects to connected networks and finally to classical diffusion.",
+      "engineering_relevance": "Because vacancy mobility changes strongly with defect concentration, MoS2 device behavior such as memristive switching can be tuned or destabilized by local defect clustering.",
       "method": [
-        "Kinetic Monte Carlo simulations of sulfur-vacancy dynamics",
-        "Transition rates derived from machine-learning interatomic potential molecular dynamics",
-        "Cluster analysis across varying vacancy concentrations"
+        "Kinetic Monte Carlo simulations of sulfur-vacancy motion in MoS2",
+        "Transition rates derived from molecular dynamics with a machine-learning interatomic potential",
+        "Cluster statistics used to identify transport regimes across vacancy concentrations"
       ],
-      "evidence_signal": "The abstract reports three transport regimes across concentration ranges, with immobile/small-cluster behavior at low concentration, a fluctuating connected network with concentration-dependent diffusion in the intermediate regime, and classical diffusion with anisotropic cluster growth at high concentration.",
-      "watch_item": "The results depend on simulated vacancy rates and idealized defect concentrations, so device-scale behavior may also be influenced by temperature, strain, boundaries, and other real-material effects.",
+      "evidence_signal": "The abstract reports three distinct regimes, including a broad intermediate cluster-size distribution and a concentration-dependent diffusion coefficient, supporting the link between defect density and transport.",
+      "watch_item": "The diffusion behavior is inferred from simulations and rate models, so device-scale predictions may depend on the accuracy of the learned potential and the assumed vacancy environment.",
       "hashtags": [
         "#MoS2",
         "#VacancyDiffusion",
@@ -411,7 +411,7 @@
       "paper_title": "Self-organized defect clustering and concentration-dependent vacancy diffusion in MoS$_2$",
       "paper_date": "2026-07-16",
       "paper_category": "Microstructure",
-      "generated_at": "2026-07-18T11:52:00",
+      "generated_at": "2026-07-17T12:08:08",
       "generator": "openai"
     }
   },
@@ -443,29 +443,29 @@
         "url": "https://arxiv.org/pdf/2607.13688v1"
       }
     ],
-    "score": 64,
+    "score": 69,
     "infographic": {
-      "key_insight": "A hypernetwork-conditioned hybrid physics-data surrogate can accurately predict multiscale mechanics across different microstructures, enabling efficient optimization of graded mycelium composites.",
-      "engineering_relevance": "This makes FE\u0000b2-style multiscale design of sustainable, functionally graded materials tractable and helps reduce peak stress through microstructure-aware optimization.",
+      "key_insight": "A microstructure-conditioned hybrid surrogate, implemented with a hypernetwork, can accurately predict multiscale behavior across varying microstructures using far less data than standard surrogates.",
+      "engineering_relevance": "This enables practical multiscale optimization of graded sustainable composites and supports microstructure-aware design that can significantly reduce peak stress.",
       "method": [
-        "Condition a microscale surrogate on microstructural variables using a hypernetwork.",
-        "Combine physics-based structure with data-driven prediction for multiscale mechanical behavior.",
-        "Extend conditioning to manufacturing variables to link process, microstructure, and macroscopic response."
+        "Condition a physics-data hybrid surrogate on microstructural variables via a hypernetwork.",
+        "Use the surrogate inside multiscale optimization for functionally graded mycelium-woodchip composites.",
+        "Extend conditioning to manufacturing variables to link process inputs to macroscale response."
       ],
-      "evidence_signal": "The conditioned surrogate was validated against full FE\u0000b2 simulation and used to optimize a graded disk, reducing peak stress by 42% versus a random microstructure.",
-      "watch_item": "Performance may depend on the representativeness of the small training set and the fidelity of the microstructure/manufacturing variables used for conditioning.",
+      "evidence_signal": "The conditioned model was validated against full FE^2 simulation and used to optimize a graded disk, reducing peak stress by 42% relative to a random-microstructure design.",
+      "watch_item": "Performance may depend on how well the training data spans the relevant microstructure and manufacturing-variable space, so extrapolation outside the trained regime could be unreliable.",
       "hashtags": [
         "#MaterialsDiscovery",
-        "#MultiscaleModeling",
-        "#SurrogateModel",
-        "#MyceliumComposites",
-        "#SustainableMaterials"
+        "#SurrogateModeling",
+        "#MultiscaleOptimization",
+        "#SustainableMaterials",
+        "#MyceliumComposites"
       ],
       "paper_id": "2026-07-15-arxiv-microstructure_conditioned_surrogate_models_for_graded_multiscale_optimization_of_mycelium",
       "paper_title": "Microstructure-Conditioned Surrogate Models for Graded Multiscale Optimization of Mycelium Composites",
       "paper_date": "2026-07-15",
       "paper_category": "Materials Discovery",
-      "generated_at": "2026-07-18T11:52:03",
+      "generated_at": "2026-07-17T12:08:10",
       "generator": "openai"
     }
   },
@@ -495,29 +495,29 @@
         "url": "https://arxiv.org/pdf/2607.14287v1"
       }
     ],
-    "score": 63,
+    "score": 68,
     "infographic": {
-      "key_insight": "XCT-SAM improves industrial XCT defect segmentation by adapting SAM in two stages, first through alloy microstructures and then to XCT, which helps bridge the large domain gap.",
-      "engineering_relevance": "The method offers a practical low-parameter way to deploy foundation models for additive manufacturing quality control where labeled XCT data are scarce and defects are hard to segment.",
+      "key_insight": "XCT-SAM improves industrial XCT defect segmentation by sequentially adapting SAM with parameter-efficient Conv-LoRA, first on alloy microstructures and then on XCT to bridge the domain gap.",
+      "engineering_relevance": "This offers a practical path to deploy foundation models for additive manufacturing quality inspection when labeled XCT data are scarce and defects are subtle.",
       "method": [
-        "Fine-tune SAM with Conv-LoRA adapters instead of full-model training.",
-        "Use sequential domain adaptation: natural image prior -> alloy microstructure -> XCT.",
-        "Train only about 4.15M parameters while keeping over 99% of SAM frozen."
+        "Freeze most of SAM and train only ~4.15M parameters with Conv-LoRA adapters (r=2).",
+        "Use an intermediate alloy-microstructure adaptation step before transferring to XCT images.",
+        "Inject convolutional spatial bias into SAM to better capture microstructural defect patterns."
       ],
-      "evidence_signal": "The approach was evaluated on out-of-distribution CycleGAN-XCT benchmarks and real NIST XCT scans, where it achieved the best overall IoU and Dice scores versus zero-shot SAM and other adapted baselines.",
-      "watch_item": "Performance may depend on the quality of the intermediate alloy-microstructure transfer and on how well the adapted model generalizes to new XCT scan conditions.",
+      "evidence_signal": "The method is evaluated on out-of-distribution CycleGAN-XCT benchmarks and real NIST XCT scans, where it achieves the best overall IoU and Dice versus zero-shot SAM and other adapted baselines.",
+      "watch_item": "Performance may depend on the quality and relevance of the intermediate alloy-microstructure dataset, so transfer gains may not generalize equally across all XCT acquisition conditions.",
       "hashtags": [
         "#XCT",
         "#SAM",
-        "#AdditiveManufacturing",
         "#DefectSegmentation",
-        "#ParameterEfficientFineTuning"
+        "#AdditiveManufacturing",
+        "#DomainAdaptation"
       ],
       "paper_id": "2026-07-15-arxiv-xct_sam_sequential_parameter_efficient_domain_adaptation_of_sam_for_industrial_xct_defect",
       "paper_title": "XCT-SAM: Sequential Parameter-Efficient Domain Adaptation of SAM for Industrial XCT Defect Segmentation",
       "paper_date": "2026-07-15",
       "paper_category": "Microstructure",
-      "generated_at": "2026-07-18T11:52:06",
+      "generated_at": "2026-07-17T12:08:12",
       "generator": "openai"
     }
   },
@@ -546,29 +546,29 @@
         "url": "https://arxiv.org/pdf/2607.13846v1"
       }
     ],
-    "score": 63,
+    "score": 68,
     "infographic": {
-      "key_insight": "Replacing half of Ni with Mn in Cu2NiXY4 kesterite chalcogenides preserves the tetragonal crystal structure but systematically narrows the bandgap through d-p orbital hybridization.",
-      "engineering_relevance": "This suggests Mn doping is a practical tuning knob for designing kesterite semiconductors with adjustable bandgaps for optoelectronic devices.",
+      "key_insight": "Mn substitution at the Ni site in Cu2NiXY4 kesterites preserves the tetragonal structure while systematically narrowing the bandgap through orbital hybridization near the band edges.",
+      "engineering_relevance": "This provides a simple compositional route to tune kesterite semiconductor bandgaps for optoelectronic devices such as absorbers, photodetectors, and related tunable electronic materials.",
       "method": [
-        "First-principles DFT study of Cu2NiXY4 (X = Sn, Ge, Si; Y = S, Se) compounds",
-        "Used the mBJ+U approach to improve bandgap prediction accuracy",
-        "Modeled 50% Ni→Mn substitution in the kesterite unit cell due to crystallographic constraints"
+        "DFT calculations on the Cu2NiXY4 family (X = Sn, Ge, Si; Y = S, Se).",
+        "Used the mBJ+U approach to improve bandgap accuracy.",
+        "Modeled 50% Ni→Mn substitution within the kesterite unit cell due to crystallographic constraints."
       ],
-      "evidence_signal": "Across the full family, the bandgap decreased from 1.028–3.397 eV to 1.007–3.333 eV, with Cu2NiSnS4 dropping from 1.59 eV to 1.49 eV.",
-      "watch_item": "The reported substitution level is 50% in the unit cell, so lower Mn concentrations would require supercell modeling and may change the trends.",
+      "evidence_signal": "Across all studied compounds, the bandgap decreased from 1.028–3.397 eV to 1.007–3.333 eV after Mn substitution; Cu2NiSnS4 specifically dropped from 1.59 eV to 1.49 eV.",
+      "watch_item": "The study uses a 50% substitution in the primitive kesterite cell, so lower Mn concentrations will need supercell calculations and may yield different trends.",
       "hashtags": [
         "#DFT",
         "#Kesterite",
         "#BandgapEngineering",
-        "#MnDoping",
-        "#Optoelectronics"
+        "#Optoelectronics",
+        "#MaterialsScience"
       ],
       "paper_id": "2026-07-15-arxiv-first_principles_study_of_structural_and_electronic_properties_of_mn_doped_cu2nixy4_x_sn_g",
       "paper_title": "First-principles Study of Structural and Electronic Properties of Mn-doped Cu2NiXY4 (X=Sn, Ge, Si; Y=S, Se) Chalcogenide Semiconductors",
       "paper_date": "2026-07-15",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-07-18T11:52:08",
+      "generated_at": "2026-07-17T12:08:16",
       "generator": "openai"
     }
   },
@@ -599,29 +599,29 @@
         "url": "https://arxiv.org/pdf/2607.15008v1"
       }
     ],
-    "score": 62,
+    "score": 67,
     "infographic": {
-      "key_insight": "In rough lubricated contacts, two-component lubrication outperforms single fluids by preserving plug flow to lower speeds and minimizing friction, wear, and material transfer, while single fluids can develop cavitation-driven stress release after asperity collisions.",
-      "engineering_relevance": "For boundary and mixed-lubrication design, the results suggest that fluid pairing and interfacial geometry can be as important as viscosity in controlling friction, load support, and wear.",
+      "key_insight": "Rough, deformable lubricated contacts can exhibit plug flow and cavitation, and a two-fluid lubricant outperforms single-component water or dodecane by lowering friction and material transfer while delaying flow breakdown.",
+      "engineering_relevance": "The results suggest that mixed-lubricant strategies may improve boundary and mixed-lubrication performance in real rough contacts without relying on polymer brushes.",
       "method": [
         "Non-equilibrium molecular dynamics of sliding between rough, deformable surfaces",
-        "Compared water, n-dodecane, and immiscible two-fluid lubrication under identical geometry and loading",
-        "Analyzed friction, load-bearing capacity, plug flow, cavitation, and wear-particle formation"
+        "Compared water, n-dodecane, and an immiscible two-fluid lubricant under identical geometry",
+        "Tracked friction, load-bearing behavior, plug flow, cavitation, and wear response"
       ],
-      "evidence_signal": "The abstract reports direct simulation comparisons showing water has stronger speed dependence but lower load support than n-dodecane, while the mixed lubricant achieves the lowest friction and material transfer and best preserves plug flow.",
-      "watch_item": "These findings come from molecular dynamics under specific rough-contact conditions, so transfer to real systems may depend on surface chemistry, roughness, and fluid immiscibility.",
+      "evidence_signal": "The simulations show water has stronger speed dependence but lower load-bearing capacity than n-dodecane, while the two-fluid system has the lowest friction and material transfer and maintains plug flow to the lowest sliding speed.",
+      "watch_item": "The findings come from atomistic simulations, so real-contact performance may depend on surface chemistry, scale, and lubricant miscibility beyond the modeled conditions.",
       "hashtags": [
-        "#MolecularDynamics",
         "#Tribology",
-        "#BoundaryLubrication",
+        "#MolecularDynamics",
+        "#Lubrication",
         "#Cavitation",
-        "#Wear"
+        "#MaterialsScience"
       ],
       "paper_id": "2026-07-16-arxiv-plug_flow_and_cavitation_in_rough_lubricated_contacts_molecular_dynamics_of_single_vs_two",
       "paper_title": "Plug Flow and Cavitation in Rough Lubricated Contacts: Molecular Dynamics of Single- vs. Two-Component Fluids",
       "paper_date": "2026-07-16",
       "paper_category": "Microstructure",
-      "generated_at": "2026-07-18T11:52:11",
+      "generated_at": "2026-07-17T12:08:18",
       "generator": "openai"
     }
   },
@@ -650,29 +650,29 @@
         "url": "https://arxiv.org/pdf/2607.15224v1"
       }
     ],
-    "score": 60,
+    "score": 65,
     "infographic": {
-      "key_insight": "An exact hyperfine-relaxation model shows that localized carrier spins in metal-halide perovskites relax through different nuclear channels, with electrons mainly coupled to halogens and holes to metal nuclei.",
-      "engineering_relevance": "This provides a way to predict and tune spin lifetimes in perovskites by choosing lighter halogens and metal cations, which is useful for spintronic and optoelectronic device design.",
+      "key_insight": "An exact hyperfine-relaxation model shows that localized carrier spins in metal-halide perovskites relax through different nuclear channels, with holes generally more affected than electrons and lifetimes strongly tied to halogen/metal composition.",
+      "engineering_relevance": "This gives a predictive route to tune spin lifetime and carrier localization in perovskite optospintronic devices by selecting lighter halogens and metal cations.",
       "method": [
-        "Adapted a muon spin relaxation framework to carrier spin dynamics.",
+        "Adapted a muon-spin relaxation framework to carrier spin dynamics in perovskites.",
         "Solved longitudinal spin relaxation exactly across arbitrary hyperfine correlation times.",
         "Applied the model to time-resolved Faraday rotation data to extract localization volume and correlation time."
       ],
-      "evidence_signal": "The abstract reports fits to time-resolved Faraday rotation data from two perovskite samples, where the exact solution outperformed a mono-exponential approximation and enabled parameter extraction.",
-      "watch_item": "The model is calibrated on localized-carrier measurements, so its applicability may be limited for delocalized transport regimes or samples with strong structural heterogeneity.",
+      "evidence_signal": "The model was tested against time-resolved Faraday rotation data from two perovskite samples and showed that a single-exponential approximation is insufficient in the intermediate correlation regime.",
+      "watch_item": "The conclusions rely on a localized-carrier hyperfine picture, so applicability may be reduced for more delocalized carriers or materials outside the studied perovskite compositions.",
       "hashtags": [
         "#Perovskites",
         "#SpinRelaxation",
         "#HyperfineInteraction",
-        "#Spintronics",
-        "#FaradayRotation"
+        "#Optospintronics",
+        "#MaterialsModeling"
       ],
       "paper_id": "2026-07-16-arxiv-hyperfine_driven_spin_relaxation_of_charge_carriers_in_metal_halide_perovskites",
       "paper_title": "Hyperfine driven spin relaxation of charge carriers in metal-halide perovskites",
       "paper_date": "2026-07-16",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-07-18T11:52:14",
+      "generated_at": "2026-07-17T12:08:21",
       "generator": "openai"
     }
   },
@@ -701,29 +701,29 @@
         "url": "https://arxiv.org/pdf/2607.14978v1"
       }
     ],
-    "score": 59,
+    "score": 64,
     "infographic": {
-      "key_insight": "A high-selectivity, non-metallic deep ICP-RIE process can fully etch 16 μm single-crystal diamond membranes and then enable room-temperature bonding onto silica for diamond-on-silica heterostructures.",
-      "engineering_relevance": "This offers a scalable, contamination-free fabrication route for integrated diamond photonics and quantum sensing devices using commercially accessible substrates and low-temperature bonding.",
+      "key_insight": "A single-layer SiO2 hard mask plus multi-step oxygen ICP-RIE enables complete through-etching of 16 µm single-crystal diamond membranes, and the remaining oxide can be used directly for room-temperature bonding to silica.",
+      "engineering_relevance": "This provides a scalable, contamination-free route to diamond-on-silica heterostructures for integrated quantum photonics and sensing without metal masks or high-temperature bonding.",
       "method": [
-        "Single-layer SiO2 hard mask with multi-step oxygen ICP-RIE",
-        "Diamond-to-SiO2 etch selectivity of 15:1 for deep, well-defined features",
-        "O2 plasma activation plus sodium silicate interlayer for room-temperature bonding"
+        "High-selectivity O2-based ICP-RIE with a SiO2 hard mask to etch deep diamond features.",
+        "Room-temperature bonding after O2 plasma activation using a sodium silicate interlayer.",
+        "Use of the residual oxide as the bonding surface for transfer to SiO2 substrates."
       ],
-      "evidence_signal": "The abstract reports complete through-etching of a 16 μm NV-doped diamond membrane, preserved surface roughness, negligible micromasking, and optically transparent bonded films with no detectable parasitic photoluminescence.",
-      "watch_item": "The process depends on precise plasma etch control and reliable oxide/silicate surface preparation, which may affect yield and reproducibility at larger scales.",
+      "evidence_signal": "The abstract reports complete through-etch of a 16 µm-thick NV-doped diamond membrane, ~15:1 diamond-to-SiO2 selectivity, preserved sidewall/surface quality, and no detectable parasitic photoluminescence after bonding.",
+      "watch_item": "Process scalability may depend on tightly controlling plasma etch uniformity and interlayer bonding quality to avoid membrane damage or variability in optical performance.",
       "hashtags": [
-        "#DiamondPhotonics",
-        "#ICP-RIE",
-        "#QuantumSensing",
+        "#DiamondMEMS",
+        "#ICP_RIE",
+        "#QuantumPhotonics",
         "#RoomTemperatureBonding",
-        "#Microfabrication"
+        "#SilicaIntegration"
       ],
       "paper_id": "2026-07-16-arxiv-scalable_fabrication_of_diamond_on_silica_heterostructures_via_high_selectivity_deep_icp_r",
       "paper_title": "Scalable Fabrication of Diamond-on-Silica Heterostructures via High-Selectivity Deep ICP-RIE and Room-Temperature Bonding",
       "paper_date": "2026-07-16",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-07-18T11:52:16",
+      "generated_at": "2026-07-17T12:08:25",
       "generator": "openai"
     }
   },
@@ -753,29 +753,29 @@
         "url": "https://arxiv.org/pdf/2607.15120v1"
       }
     ],
-    "score": 58,
+    "score": 63,
     "infographic": {
-      "key_insight": "By tuning chemical vapor transport growth conditions, the authors suppressed a prominent electrically active defect in CrSBr by up to an order of magnitude, with evidence pointing to a sulfur-related vacancy complex.",
-      "engineering_relevance": "This provides a practical growth recipe for producing higher-quality CrSBr crystals with lower defect density, which is important for improving magneto-electrical device performance and reproducibility.",
+      "key_insight": "Optimizing chemical vapor transport growth conditions can suppress a dominant electrically active defect in CrSBr by up to an order of magnitude, pointing to a sulfur-related vacancy complex as the likely origin of the D* signature.",
+      "engineering_relevance": "This provides a practical growth-control strategy for improving crystal quality and tuning defect populations in CrSBr, which is critical for reliable magneto-electrical device performance.",
       "method": [
-        "Correlated CVT growth conditions with defect densities measured by conductive atomic force microscopy (CAFM).",
-        "Varied precursor stoichiometry and growth temperature while keeping the temperature gradient fixed.",
-        "Used thermodynamic modeling and density functional theory to identify the likely atomic nature of the D* defect."
+        "Correlated CVT growth parameters with defect densities measured by conductive atomic force microscopy (CAFM).",
+        "Varied precursor stoichiometry and found sulfur- and bromine-rich conditions reduced D* defect density.",
+        "Lowered absolute growth temperatures while keeping the temperature gradient fixed to further suppress defects, supported by thermodynamic modeling and DFT."
       ],
-      "evidence_signal": "CAFM observations showed the D* defect concentration dropped by up to 10× under sulfur- and bromine-rich, lower-temperature growth conditions.",
-      "watch_item": "The defect assignment is model-based rather than directly atomically resolved, so the D* identification as a sulfur-related vacancy complex should be treated as a well-supported hypothesis pending further structural confirmation.",
+      "evidence_signal": "CAFM measurements showed the D* defect concentration could be reduced by up to 10× under optimized growth conditions, consistent with modeling that assigns D* to a sulfur-related vacancy complex rather than an isolated point defect.",
+      "watch_item": "The defect assignment is model-supported rather than directly atomically resolved, so further microscopic validation may be needed before generalizing the growth recipe across all CrSBr synthesis setups.",
       "hashtags": [
         "#CrSBr",
+        "#DefectEngineering",
         "#CrystalGrowth",
-        "#Defects",
-        "#MaterialsScience",
-        "#DFT"
+        "#CAFM",
+        "#MaterialsScience"
       ],
       "paper_id": "2026-07-16-arxiv-growth_controlled_suppression_of_electrically_active_defects_in_crsbr",
       "paper_title": "Growth-controlled suppression of electrically active defects in CrSBr",
       "paper_date": "2026-07-16",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-07-18T11:52:18",
+      "generated_at": "2026-07-17T12:08:28",
       "generator": "openai"
     }
   },
@@ -806,29 +806,29 @@
         "url": "https://arxiv.org/pdf/2607.15032v1"
       }
     ],
-    "score": 58,
+    "score": 63,
     "infographic": {
-      "key_insight": "Liquid transport growth (LTG) uses a molten flux under a temperature gradient to separate dissolution from crystallization, enabling high-yield growth of single crystals for quantum materials that are hard to grow by conventional methods.",
-      "engineering_relevance": "LTG provides a practical crystal-growth route for tuning stoichiometry, defect concentration, and crystal quality in materials where performance depends strongly on growth conditions.",
+      "key_insight": "Liquid transport growth uses a molten flux and a temperature gradient to decouple dissolution from crystal formation, enabling high-yield single-crystal growth for quantum materials with narrow growth windows or temperature-sensitive stoichiometry.",
+      "engineering_relevance": "The method offers a practical route to improve crystal quality, yield, and compositional control for research-scale synthesis of quantum materials used in electronics and condensed-matter studies.",
       "method": [
-        "Use a horizontal furnace to impose a controlled temperature gradient across a sealed ampoule.",
-        "Let charge dissolve in the hot zone and transport through the molten flux to a cooler crystallization zone.",
-        "Maintain crystallization near constant temperature to target narrow growth windows and sensitive stoichiometries."
+        "Use a molten flux as the transport medium instead of a vapor.",
+        "Maintain a deliberate temperature gradient to drive continuous solute transport.",
+        "Separate dissolution and precipitation spatially so growth can start before full charge dissolution."
       ],
-      "evidence_signal": "The review supports LTG with multiple representative quantum materials examples, including Fe3Sn2, CrTe3, YFe2Ge2, UTe2, CeRh2As2, MoTe2, WTe2, and LuNb6Sn6.",
-      "watch_item": "LTG remains partly empirical, so melt stability, ampoule geometry, and precise thermal control must be managed carefully to avoid nonuniform growth or instability.",
+      "evidence_signal": "The abstract cites multiple representative materials and practical growth variables, indicating the review synthesizes case studies and design considerations rather than presenting a single new benchmark dataset.",
+      "watch_item": "LTG still depends on careful control of furnace conditions, melt stability, and ampoule geometry, so reproducibility can be limited by setup-specific optimization.",
       "hashtags": [
         "#CrystalGrowth",
-        "#LiquidTransportGrowth",
         "#QuantumMaterials",
-        "#MaterialsEngineering",
+        "#FluxGrowth",
+        "#MaterialsSynthesis",
         "#SingleCrystals"
       ],
       "paper_id": "2026-07-16-arxiv-recent_progress_on_liquid_transport_growth_of_quantum_materials",
       "paper_title": "Recent progress on liquid transport growth of quantum materials",
       "paper_date": "2026-07-16",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-07-18T11:52:21",
+      "generated_at": "2026-07-17T12:08:30",
       "generator": "openai"
     }
   },
@@ -858,29 +858,29 @@
         "url": "https://arxiv.org/pdf/2607.14246v1"
       }
     ],
-    "score": 58,
+    "score": 63,
     "infographic": {
-      "key_insight": "A property’s steerable range is split into a small knob-controlled part and a larger example-only part, and this split is set by the training data before model training.",
-      "engineering_relevance": "For crystal-structure generation, example-based steering can reach targets that prompts, tags, or guidance scales cannot, enabling broader and more reliable design control.",
+      "key_insight": "Generative models have a fixed \"steering budget\": knobs can only move part of a property range, while concrete examples can reach the rest, often larger part.",
+      "engineering_relevance": "For materials generation, example-based steering can achieve property targets and structural patterns that prompts or tags cannot, improving controllability in crystal design.",
       "method": [
-        "Audit the training data to estimate the property’s steering budget.",
-        "Construct an example set from learned instances rather than adding new training.",
-        "Use examples to span the full reachable range, including targets that are hard to express as knobs."
+        "Audit the training data to estimate each property's steerable budget before training.",
+        "Split steering into knob-reachable and example-only regions.",
+        "Build an example set from learned model behavior to cover the full budget, including targets that are hard to express in words."
       ],
-      "evidence_signal": "The paper reports a cheap training-data audit and tests the claims by verifying them in two domains, including crystal-structure generation.",
-      "watch_item": "The example set must be built carefully from what the model already learned, and the budget estimate may vary by property and dataset.",
+      "evidence_signal": "The paper validates the budget idea with falsifiable tests in two domains—image generation and crystal-structure generation—showing when knobs suffice and when examples are needed.",
+      "watch_item": "The example-based approach depends on the quality and representativeness of the training data budget, so limited or biased data may reduce reachable control.",
       "hashtags": [
         "#GenerativeAI",
         "#CrystalStructure",
         "#MaterialsInformatics",
-        "#ModelSteering",
-        "#ExampleBasedControl"
+        "#Controllability",
+        "#AIforScience"
       ],
       "paper_id": "2026-07-15-arxiv-the_steering_budget_examples_beat_knobs",
       "paper_title": "The Steering Budget: Examples beat Knobs",
       "paper_date": "2026-07-15",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-07-18T11:52:23",
+      "generated_at": "2026-07-17T12:08:33",
       "generator": "openai"
     }
   },
@@ -912,29 +912,29 @@
         "url": "https://arxiv.org/pdf/2607.14838v1"
       }
     ],
-    "score": 57,
+    "score": 62,
     "infographic": {
-      "key_insight": "A single crowder density can drive a polymer through a coil→globule→coil reentrant transition because attractive crowders first bridge monomers and then saturate binding sites, breaking the bridges at high density.",
-      "engineering_relevance": "This identifies saturable bridging as a minimal design rule for tuning polymer compaction and re-expansion in crowded soft-matter, biomaterial, and charged-polymer systems.",
+      "key_insight": "A single attractive crowder species can drive a full coil-globule-coil reentrant transition by saturable bridging: collapse at low crowder density and reexpansion when binding sites saturate at high density.",
+      "engineering_relevance": "This identifies crowder density as a minimal control knob for tuning polymer compaction in crowded soft-matter and biomolecular environments, including charged systems.",
       "method": [
         "Molecular dynamics simulations of coarse-grained polymers with one species of attractive crowder",
-        "Sweep crowder volume fraction φc to track conformational changes",
-        "Compare against purely repulsive crowders and charged polymers with explicit counterions"
+        "Systematic variation of crowder volume fraction φc to probe collapse/reexpansion behavior",
+        "Comparison against purely repulsive crowders and charged-polymer cases with explicit counterions"
       ],
-      "evidence_signal": "The abstract reports that size distributions and conformational statistics show a full reentrant trajectory with attractive crowders, while repulsive crowders give only monotonic compaction and SAW-like behavior.",
-      "watch_item": "The mechanism depends on model assumptions about coarse-graining and binding saturation, so real systems may shift quantitatively if crowder chemistry, stiffness, or solvent effects differ.",
+      "evidence_signal": "The abstract reports a complete reentrant transition in simulation, loss of SAW-universal size-distribution collapse under bridging, and strong crowding-driven expansion in the charged-polymer case.",
+      "watch_item": "The mechanism depends on saturable binding/bridging assumptions in a coarse-grained model, so quantitative transfer to specific materials will require parameter validation.",
       "hashtags": [
-        "#polymerphysics",
-        "#crowding",
-        "#reentranttransition",
-        "#molecularsimulation",
-        "#softmatter"
+        "#PolymerPhysics",
+        "#Crowding",
+        "#ReentrantTransition",
+        "#MolecularDynamics",
+        "#SoftMatter"
       ],
       "paper_id": "2026-07-16-arxiv-density_driven_reentrant_polymer_transitions_via_saturable_bridging_crowders",
       "paper_title": "Density-driven reentrant polymer transitions via saturable bridging crowders",
       "paper_date": "2026-07-16",
       "paper_category": "Microstructure",
-      "generated_at": "2026-07-18T11:52:26",
+      "generated_at": "2026-07-17T12:08:36",
       "generator": "openai"
     }
   },
@@ -963,29 +963,29 @@
         "url": "https://arxiv.org/pdf/2607.13979v1"
       }
     ],
-    "score": 57,
+    "score": 62,
     "infographic": {
-      "key_insight": "Adaptive superpixels compress large 2D diffraction datasets by merging low-information pixels while preserving key structure, enabling faster and more interpretable downstream analysis.",
-      "engineering_relevance": "This offers a practical preprocessing step for 4D-STEM and synchrotron diffraction workflows where data volume is a major bottleneck for machine learning and phase mapping.",
+      "key_insight": "Adaptive superpixels can compress 2D diffraction data while preserving high-information features and symmetry, making downstream analysis more interpretable and efficient.",
+      "engineering_relevance": "This provides a practical preprocessing strategy for large 4D-STEM and synchrotron diffraction datasets, reducing computation and accelerating materials phase mapping.",
       "method": [
-        "Group pixels into variable-area superpixels based on variance minimization.",
-        "Compare top-down K-means clustering with bottom-up agglomerative clustering.",
-        "Accelerate superpixel construction using Gaussian random projection before distance-based clustering."
+        "Group neighboring detector pixels into variable-size superpixels based on information content",
+        "Compare two variance-minimizing schemes: K-means clustering (top-down) and agglomerative clustering (bottom-up)",
+        "Accelerate superpixel construction with Gaussian random projection before distance-based clustering"
       ],
-      "evidence_signal": "The abstract reports superior scaling and interpretability for the bottom-up method and over 100-fold acceleration for phase mapping with non-negative matrix factorization on a 4D-STEM dataset.",
-      "watch_item": "Because the approach is distance-based and data-dependent, superpixel quality may be sensitive to parameter choices and the choice of projection/clustering settings.",
+      "evidence_signal": "The abstract reports superior scaling and interpretability for agglomerative clustering and over 100-fold acceleration for NMF-based phase mapping on a 4D-STEM dataset using superpixels.",
+      "watch_item": "Because the method is distance-based, performance may depend on projection quality, clustering choices, and how well the superpixel layout matches the underlying diffraction symmetries.",
       "hashtags": [
         "#4DSTEM",
-        "#DiffractionData",
+        "#Diffraction",
         "#Superpixels",
-        "#MaterialsInformatics",
-        "#MachineLearning"
+        "#MachineLearning",
+        "#MaterialsInformatics"
       ],
       "paper_id": "2026-07-15-arxiv-using_superpixels_for_interpretable_feature_reduction_in_large_2d_diffraction_datasets",
       "paper_title": "Using superpixels for interpretable feature reduction in large 2D diffraction datasets",
       "paper_date": "2026-07-15",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-07-18T11:52:29",
+      "generated_at": "2026-07-17T12:08:38",
       "generator": "openai"
     }
   },
@@ -1015,29 +1015,29 @@
         "url": "https://arxiv.org/pdf/2607.11712v1"
       }
     ],
-    "score": 57,
+    "score": 62,
     "infographic": {
-      "key_insight": "CatRetriever learns a shared latent space that lets a slab-level catalyst query retrieve plausible parent bulk crystals, closing the gap between surface generation and bulk material identification.",
-      "engineering_relevance": "This enables generative catalyst discovery workflows to screen candidates not only for surface activity but also for bulk-dependent feasibility, including stability, symmetry, and synthesizability.",
+      "key_insight": "CatRetriever learns a shared latent space for slabs and bulk crystals so a generated catalyst surface can be traced back to plausible parent bulk structures.",
+      "engineering_relevance": "This connects surface generative catalyst design to bulk-dependent screening, helping engineers assess synthesizability, stability, and adsorption performance in one workflow.",
       "method": [
-        "Contrastive learning aligns slab and bulk crystal representations in a common embedding space.",
-        "A slab query is used to retrieve candidate parent bulk structures from a reference database.",
-        "An extended pipeline combines retrieval with generative search expansion and adsorption-energy distribution analysis."
+        "Contrastive representation learning aligns slab and bulk embeddings.",
+        "Treat slab-to-bulk mapping as a retrieval task from a slab query.",
+        "Extend retrieval with generative search-space expansion and adsorption-energy analysis for candidate selection."
       ],
-      "evidence_signal": "The model reports strong retrieval performance, with R@1 above 91% and R@3 above 98% on both in-distribution and holdout evaluation sets.",
-      "watch_item": "Retrieval quality depends on the completeness and bias of the bulk reference space, so missing or rare crystal families could limit parent-structure recovery.",
+      "evidence_signal": "The abstract reports strong retrieval accuracy, with R@1 above 91% and R@3 above 98% on both in-distribution and holdout sets.",
+      "watch_item": "Retrieval quality depends on the representativeness of the training corpus, so novel chemistries or uncommon surface motifs may still be misranked.",
       "hashtags": [
         "#MaterialsDiscovery",
         "#Catalysis",
-        "#InverseDesign",
         "#RepresentationLearning",
-        "#GenerativeAI"
+        "#InverseDesign",
+        "#CrystalStructures"
       ],
       "paper_id": "2026-07-13-arxiv-catretriever_contrastive_representation_learning_for_slab_to_bulk_retrieval_in_generative",
       "paper_title": "CatRetriever: Contrastive Representation Learning for Slab-to-Bulk Retrieval in Generative Catalyst Discovery",
       "paper_date": "2026-07-13",
       "paper_category": "Materials Discovery",
-      "generated_at": "2026-07-18T11:52:31",
+      "generated_at": "2026-07-17T12:08:40",
       "generator": "openai"
     }
   }

@@ -1,24 +1,24 @@
 {
-  "key_insight": "XCT-SAM improves industrial XCT defect segmentation by sequentially adapting SAM with parameter-efficient Conv-LoRA, first on alloy microstructures and then on XCT to bridge the domain gap.",
-  "engineering_relevance": "This offers a practical path to deploy foundation models for additive manufacturing quality inspection when labeled XCT data are scarce and defects are subtle.",
+  "key_insight": "XCT-SAM improves industrial XCT defect segmentation by adapting SAM in two stages, first through alloy microstructures and then to XCT, which helps bridge the large domain gap.",
+  "engineering_relevance": "The method offers a practical low-parameter way to deploy foundation models for additive manufacturing quality control where labeled XCT data are scarce and defects are hard to segment.",
   "method": [
-    "Freeze most of SAM and train only ~4.15M parameters with Conv-LoRA adapters (r=2).",
-    "Use an intermediate alloy-microstructure adaptation step before transferring to XCT images.",
-    "Inject convolutional spatial bias into SAM to better capture microstructural defect patterns."
+    "Fine-tune SAM with Conv-LoRA adapters instead of full-model training.",
+    "Use sequential domain adaptation: natural image prior -> alloy microstructure -> XCT.",
+    "Train only about 4.15M parameters while keeping over 99% of SAM frozen."
   ],
-  "evidence_signal": "The method is evaluated on out-of-distribution CycleGAN-XCT benchmarks and real NIST XCT scans, where it achieves the best overall IoU and Dice versus zero-shot SAM and other adapted baselines.",
-  "watch_item": "Performance may depend on the quality and relevance of the intermediate alloy-microstructure dataset, so transfer gains may not generalize equally across all XCT acquisition conditions.",
+  "evidence_signal": "The approach was evaluated on out-of-distribution CycleGAN-XCT benchmarks and real NIST XCT scans, where it achieved the best overall IoU and Dice scores versus zero-shot SAM and other adapted baselines.",
+  "watch_item": "Performance may depend on the quality of the intermediate alloy-microstructure transfer and on how well the adapted model generalizes to new XCT scan conditions.",
   "hashtags": [
     "#XCT",
     "#SAM",
-    "#DefectSegmentation",
     "#AdditiveManufacturing",
-    "#DomainAdaptation"
+    "#DefectSegmentation",
+    "#ParameterEfficientFineTuning"
   ],
   "paper_id": "2026-07-15-arxiv-xct_sam_sequential_parameter_efficient_domain_adaptation_of_sam_for_industrial_xct_defect",
   "paper_title": "XCT-SAM: Sequential Parameter-Efficient Domain Adaptation of SAM for Industrial XCT Defect Segmentation",
   "paper_date": "2026-07-15",
   "paper_category": "Microstructure",
-  "generated_at": "2026-07-17T12:08:12",
+  "generated_at": "2026-07-18T11:52:06",
   "generator": "openai"
 }

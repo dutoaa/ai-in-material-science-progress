@@ -1,6 +1,6 @@
 # AI materials science Progress Public Resources
 
-Generated: 2026-07-17
+Generated: 2026-07-18
 Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 
 ## 1. The evolution of AI from image interpretation toward scientific inference in nanoparticle electron microscopy
