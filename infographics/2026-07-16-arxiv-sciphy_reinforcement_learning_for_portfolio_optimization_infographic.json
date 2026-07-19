@@ -1,24 +1,24 @@
 {
-  "key_insight": "SciPhyRL turns portfolio optimization into a physics-informed continuous-time control problem, learning cost-aware trading policies directly from historical trajectories via a pathwise Hamilton-Jacobi formulation.",
-  "engineering_relevance": "The framework offers a data-driven way to deploy multi-period allocation policies that explicitly balance return, risk, and transaction costs, making it relevant for scalable decision systems under real market frictions.",
+  "key_insight": "SciPhyRL turns dynamic portfolio optimization into a data-driven pathwise HJB problem solved offline with PINNs, enabling cost-aware multi-period allocation from historical trajectories.",
+  "engineering_relevance": "The framework offers a practical control-engineering template for large-scale decision systems where transaction costs, volatility, and signal decay must be handled jointly under short-horizon constraints.",
   "method": [
-    "Reformulates portfolio control in an extended state space with cumulative costs",
-    "Solves the HJB/pathwise Hamilton-Jacobi equation offline using PINN from observed trajectories",
-    "Uses discrete target holdings and a quadratic price-impact model for practical execution"
+    "Extend the state with cumulative costs and formulate the control problem in continuous time.",
+    "Project the HJB onto observed paths and solve the resulting pathwise Hamilton-Jacobi equation directly from data using a PINN.",
+    "Replace continuous trading rate control with discrete target holdings to realize signal-implied positions immediately and model execution via quadratic price impact."
   ],
-  "evidence_signal": "On a 14-asset ETF universe with an engineered oracle signal, the learned Gibbs policy showed strong out-of-sample Sharpe ratio gains versus static and myopic baselines.",
-  "watch_item": "Performance may depend on the quality and stability of the engineered signal and on how well the quadratic impact model matches real execution conditions.",
+  "evidence_signal": "On a 14-asset ETF universe with an engineered oracle signal, the learned Gibbs policy outperformed static and myopic baselines out of sample with improved Sharpe ratio.",
+  "watch_item": "Performance depends on the quality and realism of the offline signal/data and on the quadratic impact model matching actual market microstructure.",
   "hashtags": [
     "#ReinforcementLearning",
-    "#PhysicsInformedNN",
     "#PortfolioOptimization",
-    "#OptimalControl",
+    "#PINN",
+    "#HJB",
     "#QuantFinance"
   ],
   "paper_id": "2026-07-16-arxiv-sciphy_reinforcement_learning_for_portfolio_optimization",
   "paper_title": "SciPhy Reinforcement Learning for Portfolio Optimization",
   "paper_date": "2026-07-16",
   "paper_category": "Materials Discovery",
-  "generated_at": "2026-07-18T11:51:50",
+  "generated_at": "2026-07-19T11:56:01",
   "generator": "openai"
 }

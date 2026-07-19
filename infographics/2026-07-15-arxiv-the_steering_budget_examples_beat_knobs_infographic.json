@@ -1,24 +1,24 @@
 {
-  "key_insight": "A property’s steerable range is split into a small knob-controlled part and a larger example-only part, and this split is set by the training data before model training.",
-  "engineering_relevance": "For crystal-structure generation, example-based steering can reach targets that prompts, tags, or guidance scales cannot, enabling broader and more reliable design control.",
+  "key_insight": "A model’s steerable range is split by the training data into a knob-reachable part and a larger example-only part, so examples can move properties farther than prompts or guidance scales alone.",
+  "engineering_relevance": "For crystal and structure generation, this suggests that auditing the training set can tell engineers when simple conditioning is sufficient and when example-based steering is needed to reach desired material properties.",
   "method": [
-    "Audit the training data to estimate the property’s steering budget.",
-    "Construct an example set from learned instances rather than adding new training.",
-    "Use examples to span the full reachable range, including targets that are hard to express as knobs."
+    "Audit the training data to estimate the property's total steering budget before model training.",
+    "Construct a small example set from the model’s learned representations, rather than adding new training data.",
+    "Use examples to steer across the full budget, including targets that are hard to express with knobs or text."
   ],
-  "evidence_signal": "The paper reports a cheap training-data audit and tests the claims by verifying them in two domains, including crystal-structure generation.",
-  "watch_item": "The example set must be built carefully from what the model already learned, and the budget estimate may vary by property and dataset.",
+  "evidence_signal": "The abstract reports a cheap training-data audit and falsifiable claims verified in two domains, image generation and crystal-structure generation.",
+  "watch_item": "The approach depends on the property budget present in the training data, so if the data underrepresents the target region or examples are poorly composed, the reachable steering range may still be limited.",
   "hashtags": [
     "#GenerativeAI",
     "#CrystalStructure",
     "#MaterialsInformatics",
     "#ModelSteering",
-    "#ExampleBasedControl"
+    "#AIForScience"
   ],
   "paper_id": "2026-07-15-arxiv-the_steering_budget_examples_beat_knobs",
   "paper_title": "The Steering Budget: Examples beat Knobs",
   "paper_date": "2026-07-15",
   "paper_category": "Crystal and Structure",
-  "generated_at": "2026-07-18T11:52:23",
+  "generated_at": "2026-07-19T11:56:31",
   "generator": "openai"
 }
