@@ -1,17 +1,17 @@
 {
-  "key_insight": "SevenNet-Polar is a multitask equivariant GNN that predicts Born effective charges alongside energy, forces, and stress with near-DFT accuracy, enabling fast charge-aware materials simulations.",
-  "engineering_relevance": "It lowers the computational barrier for electric-field and polarization-aware modeling, making large-scale atomistic simulations of functional oxides and perovskites practical on GPUs.",
+  "key_insight": "SevenNet-Polar adds accurate, fast prediction of Born effective charges to a SevenNet-based equivariant GNN, enabling charge-aware materials simulations alongside energy, forces, and stress.",
+  "engineering_relevance": "The model makes electric-field-sensitive atomistic simulation much cheaper and more scalable, supporting practical studies of polarization, defects, interfaces, and dynamics in complex oxides.",
   "method": [
-    "Built on the SevenNet equivariant graph neural network architecture.",
-    "Trained BEC-only and all-in-one multitask models for energy, forces, stress, and Born effective charges.",
-    "Accelerated inference with FlashTP for large-scale simulations on single and multi-GPU systems."
+    "Equivariant graph neural network built on the SevenNet architecture",
+    "Multitask training for energy, forces, stress, and Born effective charges",
+    "Uses FlashTP acceleration for large-scale GPU inference and simulation"
   ],
-  "evidence_signal": "The abstract reports BEC RMSE as low as 0.0043 e for BEC-only models and 0.0029 e in multitask models, with energy/force/stress errors of 1.0 meV/atom, 12 meV/angstrom, and 0.05 GPa, respectively.",
-  "watch_item": "BEC scaling is less favorable than energy, force, and stress, so accuracy may degrade more noticeably when extrapolating to unseen structural environments or highly off-distribution configurations.",
+  "evidence_signal": "The abstract reports BEC-only RMSE as low as 0.0043 e and multitask performance of 1.0 meV/atom energy, 12 meV/angstrom forces, 0.05 GPa stress, and 0.0029 e BEC, with robust generalization to unseen NEB and grain-boundary environments.",
+  "watch_item": "Performance may depend on coverage of local environments in the training set, and off-diagonal BEC components scale less favorably than energy, force, and stress errors.",
   "hashtags": [
-    "#MaterialsInformatics",
+    "#MaterialsAI",
     "#GraphNeuralNetworks",
-    "#BornEffectiveCharges",
+    "#BornEffectiveCharge",
     "#MolecularDynamics",
     "#ComputationalMaterials"
   ],
@@ -19,6 +19,6 @@
   "paper_title": "SevenNet-Polar for MultiTask Prediction of Energy, Forces, Stress, and Born Effective Charges: Development and Application to ZrO$_2$, Li$_3$PO$_4$, and Perovskites",
   "paper_date": "2026-07-16",
   "paper_category": "Microstructure",
-  "generated_at": "2026-07-19T11:55:59",
+  "generated_at": "2026-07-20T13:03:58",
   "generator": "openai"
 }
