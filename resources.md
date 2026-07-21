@@ -1,9 +1,73 @@
 # AI materials science Progress Public Resources
 
-Generated: 2026-07-20
+Generated: 2026-07-21
 Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 
-## 1. Symbolic Predicate-Guided Language Agents for Inverse Design of Perovskite Oxides
+## 1. Correcting DFT formation energies towards experimental accuracy using foundational MLIPs and latent-feature delta-learning
+
+- Date: 2026-07-20
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2607.18092v1
+- PDF: https://arxiv.org/pdf/2607.18092v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-20-arxiv-correcting_dft_formation_energies_towards_experimental_accuracy_using_foundational_mlips_a_infographic.json
+
+## 2. Chemical filters for ultra-high-throughput materials screening and generation
+
+- Date: 2026-07-20
+- Category: Materials Discovery
+- arXiv: https://arxiv.org/abs/2607.17910v1
+- PDF: https://arxiv.org/pdf/2607.17910v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-20-arxiv-chemical_filters_for_ultra_high_throughput_materials_screening_and_generation_infographic.json
+
+## 3. Going Beyond the d-band Center to Design Intermetallic Catalysts for Nitrogen Reduction: A High-Throughput DFT and Machine Learning Study
+
+- Date: 2026-07-20
+- Category: Materials Discovery
+- arXiv: https://arxiv.org/abs/2607.17463v1
+- PDF: https://arxiv.org/pdf/2607.17463v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-20-arxiv-going_beyond_the_d_band_center_to_design_intermetallic_catalysts_for_nitrogen_reduction_a_infographic.json
+
+## 4. Machine Learning Potential-Driven Molecular Dynamics Simulations of Dehydrogenation in Pristine and Doped MgH$_2$
+
+- Date: 2026-07-20
+- Category: Materials Discovery
+- arXiv: https://arxiv.org/abs/2607.18182v1
+- PDF: https://arxiv.org/pdf/2607.18182v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-20-arxiv-machine_learning_potential_driven_molecular_dynamics_simulations_of_dehydrogenation_in_pri_infographic.json
+
+## 5. Study of ordering in (MoCrTi)$_{100-x}$Al$_x$ refractory high-entropy alloys using machine learning interatomic potential
+
+- Date: 2026-07-20
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2607.18099v1
+- PDF: https://arxiv.org/pdf/2607.18099v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-20-arxiv-study_of_ordering_in_mocrti_100_x_al_x_refractory_high_entropy_alloys_using_machine_learni_infographic.json
+
+## 6. CORAL: Learning Amyloid Fibril Ligand Docking with Cooperative Binding Rewards
+
+- Date: 2026-07-19
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2607.17412v1
+- PDF: https://arxiv.org/pdf/2607.17412v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-19-arxiv-coral_learning_amyloid_fibril_ligand_docking_with_cooperative_binding_rewards_infographic.json
+
+## 7. Response-function-optimized phase field modeling of solute trapping and solute drag in rapid alloy solidification
+
+- Date: 2026-07-19
+- Category: Microstructure
+- arXiv: https://arxiv.org/abs/2607.17370v1
+- PDF: https://arxiv.org/pdf/2607.17370v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-19-arxiv-response_function_optimized_phase_field_modeling_of_solute_trapping_and_solute_drag_in_rap_infographic.json
+
+## 8. LLM-Driven Cross-Paradigm Design for Quantum Optimal Control
+
+- Date: 2026-07-20
+- Category: Materials Discovery
+- arXiv: https://arxiv.org/abs/2607.17498v1
+- PDF: https://arxiv.org/pdf/2607.17498v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-20-arxiv-llm_driven_cross_paradigm_design_for_quantum_optimal_control_infographic.json
+
+## 9. Symbolic Predicate-Guided Language Agents for Inverse Design of Perovskite Oxides
 
 - Date: 2026-07-17
 - Category: Materials Discovery
@@ -11,7 +75,7 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2607.15535v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-17-arxiv-symbolic_predicate_guided_language_agents_for_inverse_design_of_perovskite_oxides_infographic.json
 
-## 2. The WEST code for large-scale excited-state materials simulations
+## 10. The WEST code for large-scale excited-state materials simulations
 
 - Date: 2026-07-15
 - Category: Materials Discovery
@@ -19,146 +83,82 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2607.14025v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-15-arxiv-the_west_code_for_large_scale_excited_state_materials_simulations_infographic.json
 
-## 3. SevenNet-Polar for MultiTask Prediction of Energy, Forces, Stress, and Born Effective Charges: Development and Application to ZrO$_2$, Li$_3$PO$_4$, and Perovskites
+## 11. CuCrZr heat-sink irradiation performance reveals new challenges for thermonuclear fusion reactors
 
-- Date: 2026-07-16
+- Date: 2026-07-20
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2607.17594v1
+- PDF: https://arxiv.org/pdf/2607.17594v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-20-arxiv-cucrzr_heat_sink_irradiation_performance_reveals_new_challenges_for_thermonuclear_fusion_r_infographic.json
+
+## 12. Defect configuration, not nitrogen content, governs the mechanical integrity of nitrogen-doped graphene: a molecular dynamics study
+
+- Date: 2026-07-20
 - Category: Microstructure
-- arXiv: https://arxiv.org/abs/2607.14827v2
-- PDF: https://arxiv.org/pdf/2607.14827v2
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-16-arxiv-sevennet_polar_for_multitask_prediction_of_energy_forces_stress_and_born_effective_charges_infographic.json
+- arXiv: https://arxiv.org/abs/2607.18129v1
+- PDF: https://arxiv.org/pdf/2607.18129v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-20-arxiv-defect_configuration_not_nitrogen_content_governs_the_mechanical_integrity_of_nitrogen_dop_infographic.json
 
-## 4. Phase-Field Simulation of Dendrite Evolution in All-Solid-State Sodium Batteries during Cycling
+## 13. First-principles electronic transport properties of Ti and Ti-6Al-4V for modeling ultrashort-pulse laser ablation
 
-- Date: 2026-07-16
-- Category: Microstructure
-- arXiv: https://arxiv.org/abs/2607.15387v1
-- PDF: https://arxiv.org/pdf/2607.15387v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-16-arxiv-phase_field_simulation_of_dendrite_evolution_in_all_solid_state_sodium_batteries_during_cy_infographic.json
+- Date: 2026-07-20
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2607.18085v1
+- PDF: https://arxiv.org/pdf/2607.18085v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-20-arxiv-first_principles_electronic_transport_properties_of_ti_and_ti_6al_4v_for_modeling_ultrasho_infographic.json
 
-## 5. SciPhy Reinforcement Learning for Portfolio Optimization
+## 14. Superconductivity in MgHCu3 perovskite revisited
 
-- Date: 2026-07-16
+- Date: 2026-07-20
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2607.18117v1
+- PDF: https://arxiv.org/pdf/2607.18117v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-20-arxiv-superconductivity_in_mghcu3_perovskite_revisited_infographic.json
+
+## 15. Informatics Modeling of High Tg Polymers: Assessing the Role of Processing versus Chemistry
+
+- Date: 2026-07-20
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2607.17925v1
+- PDF: https://arxiv.org/pdf/2607.17925v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-20-arxiv-informatics_modeling_of_high_tg_polymers_assessing_the_role_of_processing_versus_chemistry_infographic.json
+
+## 16. First-principles electron-phonon scattering in real-time TDDFT
+
+- Date: 2026-07-19
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2607.17265v1
+- PDF: https://arxiv.org/pdf/2607.17265v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-19-arxiv-first_principles_electron_phonon_scattering_in_real_time_tddft_infographic.json
+
+## 17. Optimal Market Making in Prediction Markets
+
+- Date: 2026-07-20
 - Category: Materials Discovery
-- arXiv: https://arxiv.org/abs/2607.15195v1
-- PDF: https://arxiv.org/pdf/2607.15195v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-16-arxiv-sciphy_reinforcement_learning_for_portfolio_optimization_infographic.json
+- arXiv: https://arxiv.org/abs/2607.17991v1
+- PDF: https://arxiv.org/pdf/2607.17991v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-20-arxiv-optimal_market_making_in_prediction_markets_infographic.json
 
-## 6. Computing binary alloy phase diagrams with explicit configurational and vibrational entropy
+## 18. Phase-field modeling of TiO2 nanocarving via reaction with hydrogen-bearing gas
 
-- Date: 2026-07-16
+- Date: 2026-07-20
 - Category: Microstructure
-- arXiv: https://arxiv.org/abs/2607.14795v1
-- PDF: https://arxiv.org/pdf/2607.14795v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-16-arxiv-computing_binary_alloy_phase_diagrams_with_explicit_configurational_and_vibrational_entrop_infographic.json
+- arXiv: https://arxiv.org/abs/2607.18172v1
+- PDF: https://arxiv.org/pdf/2607.18172v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-20-arxiv-phase_field_modeling_of_tio2_nanocarving_via_reaction_with_hydrogen_bearing_gas_infographic.json
 
-## 7. Atomistic mechanism of corrosion-induced grain boundary migration in NiCr alloys in molten FLiNaK
+## 19. Optimal transition states for polaron hopping transport without supercells
 
-- Date: 2026-07-17
+- Date: 2026-07-20
+- Category: AI materials science
+- arXiv: https://arxiv.org/abs/2607.18096v1
+- PDF: https://arxiv.org/pdf/2607.18096v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-20-arxiv-optimal_transition_states_for_polaron_hopping_transport_without_supercells_infographic.json
+
+## 20. The Recurrent Structural Frameworks of Stable Inorganic Materials
+
+- Date: 2026-07-20
 - Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2607.16167v1
-- PDF: https://arxiv.org/pdf/2607.16167v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-17-arxiv-atomistic_mechanism_of_corrosion_induced_grain_boundary_migration_in_nicr_alloys_in_molten_infographic.json
-
-## 8. Exploring the Potential of BY3 (Y = P, As) Monolayers as High-Capacity and Rapid-Diffusion Anodes for Sodium-Ion Batteries
-
-- Date: 2026-07-16
-- Category: Property Prediction
-- arXiv: https://arxiv.org/abs/2607.15514v1
-- PDF: https://arxiv.org/pdf/2607.15514v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-16-arxiv-exploring_the_potential_of_by3_y_p_as_monolayers_as_high_capacity_and_rapid_diffusion_anod_infographic.json
-
-## 9. Physics-Informed Residual Deep Learning for Constitutive Modeling of Hot Deformation and Dynamic Recrystallization in a Mo-Rich $α+β$ Titanium Alloy
-
-- Date: 2026-07-15
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2607.13467v1
-- PDF: https://arxiv.org/pdf/2607.13467v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-15-arxiv-physics_informed_residual_deep_learning_for_constitutive_modeling_of_hot_deformation_and_d_infographic.json
-
-## 10. Synergistic Effects of Phosphorus Doping and Oxygen Vacancies on Formaldehyde Oxidation over CeO$_2$(111): A First Principles Investigation
-
-- Date: 2026-07-16
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2607.14972v1
-- PDF: https://arxiv.org/pdf/2607.14972v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-16-arxiv-synergistic_effects_of_phosphorus_doping_and_oxygen_vacancies_on_formaldehyde_oxidation_ov_infographic.json
-
-## 11. A Dynamical Phase-Field Model for the Optical Properties of Ferroelectrics
-
-- Date: 2026-07-17
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2607.16180v1
-- PDF: https://arxiv.org/pdf/2607.16180v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-17-arxiv-a_dynamical_phase_field_model_for_the_optical_properties_of_ferroelectrics_infographic.json
-
-## 12. Microstructure-Conditioned Surrogate Models for Graded Multiscale Optimization of Mycelium Composites
-
-- Date: 2026-07-15
-- Category: Materials Discovery
-- arXiv: https://arxiv.org/abs/2607.13688v1
-- PDF: https://arxiv.org/pdf/2607.13688v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-15-arxiv-microstructure_conditioned_surrogate_models_for_graded_multiscale_optimization_of_mycelium_infographic.json
-
-## 13. XCT-SAM: Sequential Parameter-Efficient Domain Adaptation of SAM for Industrial XCT Defect Segmentation
-
-- Date: 2026-07-15
-- Category: Microstructure
-- arXiv: https://arxiv.org/abs/2607.14287v1
-- PDF: https://arxiv.org/pdf/2607.14287v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-15-arxiv-xct_sam_sequential_parameter_efficient_domain_adaptation_of_sam_for_industrial_xct_defect_infographic.json
-
-## 14. First-principles Study of Structural and Electronic Properties of Mn-doped Cu2NiXY4 (X=Sn, Ge, Si; Y=S, Se) Chalcogenide Semiconductors
-
-- Date: 2026-07-15
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2607.13846v1
-- PDF: https://arxiv.org/pdf/2607.13846v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-15-arxiv-first_principles_study_of_structural_and_electronic_properties_of_mn_doped_cu2nixy4_x_sn_g_infographic.json
-
-## 15. Plug Flow and Cavitation in Rough Lubricated Contacts: Molecular Dynamics of Single- vs. Two-Component Fluids
-
-- Date: 2026-07-16
-- Category: Microstructure
-- arXiv: https://arxiv.org/abs/2607.15008v1
-- PDF: https://arxiv.org/pdf/2607.15008v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-16-arxiv-plug_flow_and_cavitation_in_rough_lubricated_contacts_molecular_dynamics_of_single_vs_two_infographic.json
-
-## 16. Subgrain-resolved Analysis of Degradation in Cu Metallization via Scanning 3DXRD and Thermomechanical Modeling
-
-- Date: 2026-07-17
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2607.16108v1
-- PDF: https://arxiv.org/pdf/2607.16108v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-17-arxiv-subgrain_resolved_analysis_of_degradation_in_cu_metallization_via_scanning_3dxrd_and_therm_infographic.json
-
-## 17. Interface-Engineered Giant Multistate Resistance Switching in Altermagnetic CrSb Multiferroic Tunnel Junctions
-
-- Date: 2026-07-17
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2607.15728v1
-- PDF: https://arxiv.org/pdf/2607.15728v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-17-arxiv-interface_engineered_giant_multistate_resistance_switching_in_altermagnetic_crsb_multiferr_infographic.json
-
-## 18. Terahertz Time-Domain Spectroscopy as a Universal Defect Fingerprinting Tool for Organic Halide Perovskite Solar Cells
-
-- Date: 2026-07-17
-- Category: Microstructure
-- arXiv: https://arxiv.org/abs/2607.15538v1
-- PDF: https://arxiv.org/pdf/2607.15538v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-17-arxiv-terahertz_time_domain_spectroscopy_as_a_universal_defect_fingerprinting_tool_for_organic_h_infographic.json
-
-## 19. Hyperfine driven spin relaxation of charge carriers in metal-halide perovskites
-
-- Date: 2026-07-16
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2607.15224v1
-- PDF: https://arxiv.org/pdf/2607.15224v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-16-arxiv-hyperfine_driven_spin_relaxation_of_charge_carriers_in_metal_halide_perovskites_infographic.json
-
-## 20. Scalable Fabrication of Diamond-on-Silica Heterostructures via High-Selectivity Deep ICP-RIE and Room-Temperature Bonding
-
-- Date: 2026-07-16
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2607.14978v1
-- PDF: https://arxiv.org/pdf/2607.14978v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-16-arxiv-scalable_fabrication_of_diamond_on_silica_heterostructures_via_high_selectivity_deep_icp_r_infographic.json
+- arXiv: https://arxiv.org/abs/2607.17911v1
+- PDF: https://arxiv.org/pdf/2607.17911v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-20-arxiv-the_recurrent_structural_frameworks_of_stable_inorganic_materials_infographic.json
