@@ -1,5 +1,58 @@
 [
   {
+    "id": "2026-07-21-arxiv-atlas_a_foundation_neural_sampler_for_amorphous_materials",
+    "arxiv_id": "2607.19198v1",
+    "date": "2026-07-21",
+    "title": "ATLAS: A Foundation Neural Sampler for Amorphous Materials",
+    "authors": "Mouyang Cheng, Denis Blessing, Botao Yu, Gerhard Neumann, Mingda Li, Carles Domingo-Enrich",
+    "abstract": "Amorphous materials exhibit exceptional mechanical and functional properties, yet their rugged energy landscapes are notoriously difficult to sample. Below the glass-transition temperature, conventional molecular dynamics and Monte Carlo become inefficient because equilibration relies on rare barrier-crossing events, while data-driven generative models are constrained by scarce and biased reference ensembles. Here, we introduce ATLAS, an efficient sampler that learns a diffusion process to generate Boltzmann-distributed amorphous structures directly from a target energy function. Parameterized by an equivariant graph neural network, ATLAS generalizes across system size, temperature, and composition. By exploiting the time reversal of the diffusion process, it enables efficient estimation of thermodynamic quantities and steering toward target observables. In two-dimensional Kob-Andersen systems, ATLAS reproduces parallel tempering Markov chain Monte Carlo structural distributions, free energies and entropies, achieving below 0.2% free energy error in the low-temperature glass regime with over 500-fold fewer energy evaluations. In Cu-Zr and Cr-Co-Ni metallic glasses, ATLAS recovers experimentally observed short-range-order trends and steers structures toward prescribed order parameters and optimized bulk moduli. Moreover, composition-amortized pretraining outperforms composition-specific training from scratch, reduces inverse-design costs by several hundred-fold, and enables sampling with expensive universal machine learning interatomic potentials. Coupled to a large language model agent, ATLAS searches an eight-element space for high-entropy metallic glasses balancing stiffness and ductility, identifying a converged Pareto frontier within 480 oracle evaluations. Together, these results establish ATLAS as a foundation model for sampling, steering and designing amorphous materials.",
+    "category": "Materials Discovery",
+    "source": "arXiv",
+    "published": "2026-07-21T15:31:49Z",
+    "updated": "2026-07-21T15:31:49Z",
+    "primary_category": "cond-mat.mtrl-sci",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cs.LG",
+      "physics.comp-ph"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2607.19198v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2607.19198v1"
+      }
+    ],
+    "score": 115,
+    "infographic": {
+      "key_insight": "ATLAS learns a diffusion-based sampler that directly generates Boltzmann-distributed amorphous structures from an energy function, enabling efficient sampling, estimation, and design in rugged glassy landscapes.",
+      "engineering_relevance": "This could dramatically reduce the cost of simulating and optimizing metallic glasses and other amorphous materials, accelerating inverse design of strength, ductility, and thermodynamic properties.",
+      "method": [
+        "Equivariant graph neural network parameterizes a reversible diffusion sampler.",
+        "Uses time reversal to estimate thermodynamic quantities and steer toward target observables.",
+        "Supports composition-amortized pretraining and coupling to expensive interatomic potentials or LLM-guided search."
+      ],
+      "evidence_signal": "On 2D Kob-Andersen glasses, ATLAS matched parallel-tempering MCMC distributions and achieved below 0.2% free-energy error in the low-temperature regime with over 500-fold fewer energy evaluations; it also reproduced experimental short-range-order trends in Cu-Zr and Cr-Co-Ni systems.",
+      "watch_item": "Performance depends on the quality of the target energy model and may be sensitive when transferring to new chemistries, system sizes, or observables outside the training distribution.",
+      "hashtags": [
+        "#MaterialsScience",
+        "#DiffusionModels",
+        "#AmorphousMaterials",
+        "#MetallicGlasses",
+        "#InverseDesign"
+      ],
+      "paper_id": "2026-07-21-arxiv-atlas_a_foundation_neural_sampler_for_amorphous_materials",
+      "paper_title": "ATLAS: A Foundation Neural Sampler for Amorphous Materials",
+      "paper_date": "2026-07-21",
+      "paper_category": "Materials Discovery",
+      "generated_at": "2026-07-22T12:23:42",
+      "generator": "openai"
+    }
+  },
+  {
     "id": "2026-07-20-arxiv-correcting_dft_formation_energies_towards_experimental_accuracy_using_foundational_mlips_a",
     "arxiv_id": "2607.18092v1",
     "date": "2026-07-20",
@@ -24,29 +77,81 @@
         "url": "https://arxiv.org/pdf/2607.18092v1"
       }
     ],
-    "score": 95,
+    "score": 90,
     "infographic": {
-      "key_insight": "Foundational MLIPs trained at r2SCAN level can correct DFT formation energies toward experimental accuracy, and latent-feature delta-learning pushes the error below 50 meV/atom without extra DFT.",
-      "engineering_relevance": "This provides a more accurate, fully open-source pathway for screening thermodynamic stability and prioritizing candidate materials in high-throughput discovery pipelines.",
+      "key_insight": "Foundational MLIPs can act as a high-accuracy bridge from DFT formation energies to experiment, and their latent features enable even better delta-learning corrections.",
+      "engineering_relevance": "This offers a practical, open-source route to more reliable stability screening of candidate materials without extra costly DFT calculations.",
       "method": [
-        "Compare MC3D thermodynamic stability data against OQMD, Materials Project, and experimental formation enthalpies.",
-        "Use PET-OMATPES foundational MLIP energies as a higher-accuracy replacement for GGA-based formation energies.",
-        "Train delta-learning models on latent MLIP features to further refine formation-energy predictions."
+        "Benchmark MC3D formation energies against OQMD, Materials Project, and experimental enthalpies.",
+        "Use PET-OMATPES, a foundational MLIP trained at the r2SCAN level, to correct formation energies.",
+        "Train delta-learning models on MLIP latent features to further reduce error and preserve phase-stability trends."
       ],
-      "evidence_signal": "The abstract reports more than a 40% reduction in mean absolute error versus GGA and an end result below 50 meV/atom, comparable to experimental uncertainty.",
-      "watch_item": "Performance depends on the quality and domain coverage of the foundational MLIP and on careful regularization to avoid distorting relative phase stability.",
+      "evidence_signal": "Across the benchmarked crystal datasets, the MLIP correction reduced mean absolute error by over 40% relative to GGA, and latent-feature delta-learning pushed it below 50 meV/atom.",
+      "watch_item": "The correction quality may depend on the coverage of the MLIP’s training domain and careful regularization to avoid distorting relative phase stability.",
       "hashtags": [
         "#MaterialsInformatics",
-        "#MachineLearningInteratomicPotentials",
-        "#DensityFunctionalTheory",
-        "#DeltaLearning",
-        "#ThermodynamicStability"
+        "#MachineLearningPotentials",
+        "#DFT",
+        "#CrystalStructure",
+        "#MaterialsDiscovery"
       ],
       "paper_id": "2026-07-20-arxiv-correcting_dft_formation_energies_towards_experimental_accuracy_using_foundational_mlips_a",
       "paper_title": "Correcting DFT formation energies towards experimental accuracy using foundational MLIPs and latent-feature delta-learning",
       "paper_date": "2026-07-20",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-07-21T12:22:47",
+      "generated_at": "2026-07-22T12:23:45",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-20-arxiv-gqd_adsnet_graph_neural_networks_unlock_rapid_exploration_of_transition_metal_adsorption_o",
+    "arxiv_id": "2607.18591v1",
+    "date": "2026-07-20",
+    "title": "GQD-AdsNet: Graph Neural Networks Unlock Rapid Exploration of Transition Metal Adsorption on Graphene Quantum Dots",
+    "authors": "Lara Goncebat, Rodrigo Echeveste, Matías Gerard, Frederik Tielens, Gustavo Belletti, Paola Quaino",
+    "abstract": "In recent years, interest in single-atom catalysts supported on carbon-based structures has grown considerably due to their high catalytic activity and efficient uses of metal atoms. However, the design and characterization of these materials through first-principles calculations are computationally expensive, limiting the exploration of a large number of possible configurations. Here, we developed a framework based on graph neural networks (GNNs) to predict the adsorption energies of transition metals on graphene quantum dots (GQDs). The model was trained using data obtained from density functional theory calculations and achieved an $R^2$ of 0.906 with an MAE of 0.101 eV, while reducing computational cost by roughly six orders of magnitude relative to DFT. This methodology provides an efficient tool for the accelerated screening and rational design of new catalysts based on carbon nanostructures.",
+    "category": "Materials Discovery",
+    "source": "arXiv",
+    "published": "2026-07-20T23:56:51Z",
+    "updated": "2026-07-20T23:56:51Z",
+    "primary_category": "cond-mat.mtrl-sci",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cs.LG"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2607.18591v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2607.18591v1"
+      }
+    ],
+    "score": 85,
+    "infographic": {
+      "key_insight": "A graph neural network can accurately predict transition-metal adsorption energies on graphene quantum dots, enabling rapid screening of catalyst candidates without exhaustive DFT calculations.",
+      "engineering_relevance": "This approach can dramatically speed up materials discovery for single-atom catalyst design on carbon nanostructures while preserving near-DFT-level predictive quality.",
+      "method": [
+        "Trained a GNN on density functional theory adsorption-energy data for transition metals on graphene quantum dots.",
+        "Used graph-based learning to map atomic structure to adsorption energy.",
+        "Applied the model as a fast surrogate for high-throughput catalyst screening."
+      ],
+      "evidence_signal": "The model achieved R^2 = 0.906 and MAE = 0.101 eV, with an estimated computational cost reduction of about six orders of magnitude versus DFT.",
+      "watch_item": "Performance depends on the DFT training set, so reliability may drop for adsorption motifs or metal/GQD chemistries outside the data distribution.",
+      "hashtags": [
+        "#MaterialsDiscovery",
+        "#GraphNeuralNetworks",
+        "#Catalysis",
+        "#SingleAtomCatalysts",
+        "#DFT"
+      ],
+      "paper_id": "2026-07-20-arxiv-gqd_adsnet_graph_neural_networks_unlock_rapid_exploration_of_transition_metal_adsorption_o",
+      "paper_title": "GQD-AdsNet: Graph Neural Networks Unlock Rapid Exploration of Transition Metal Adsorption on Graphene Quantum Dots",
+      "paper_date": "2026-07-20",
+      "paper_category": "Materials Discovery",
+      "generated_at": "2026-07-22T12:23:48",
       "generator": "openai"
     }
   },
@@ -77,29 +182,29 @@
         "url": "https://arxiv.org/pdf/2607.17910v1"
       }
     ],
-    "score": 82,
+    "score": 77,
     "infographic": {
-      "key_insight": "The paper introduces a configurable chemical validity operator that filters and guides AI-generated inorganic materials using oxidation-state-aware chemical rules.",
-      "engineering_relevance": "It improves the reliability of generative materials design by rejecting implausible compositions while preserving promising low-energy candidates for faster screening workflows.",
+      "key_insight": "A configurable chemical validity operator converts heuristic oxidation-state rules into a tunable prior that screens and guides generative materials models toward more plausible inorganic compositions.",
+      "engineering_relevance": "This provides a practical filter-and-reward layer for ultra-high-throughput materials discovery, improving the reliability of AI-generated candidates without fully sacrificing exploratory search.",
       "method": [
-        "Built on SMACT with a data-informed oxidation-state model and tunable thresholds.",
-        "Applied the operator to benchmark six generative crystal models for chemical validity screening.",
-        "Used the same filter as a reinforcement-learning reward to steer a latent diffusion model."
+        "Built on SMACT with a data-informed oxidation-state model and user-tunable thresholds",
+        "Evaluated six state-of-the-art inorganic crystal generative models against chemical plausibility and convex-hull proximity",
+        "Used the same operator both as a screening filter and as a reinforcement-learning reward for latent diffusion generation"
       ],
-      "evidence_signal": "In benchmarking, most models matched stoichiometry but often missed realistic oxidation-state combinations; filtering removed compositions with rarely observed oxidation states while keeping compounds near the convex hull.",
-      "watch_item": "Because the filter depends on configurable chemical heuristics and observed oxidation-state data, overly strict thresholds could exclude novel but potentially valid materials.",
+      "evidence_signal": "Benchmarking showed most models captured stoichiometry but often missed realistic oxidation-state combinations; filtering removed rare-oxidation-state compositions while retaining many low-energy compounds near the convex hull.",
+      "watch_item": "Chemical rules are configurable rather than absolute, so overly conservative thresholds may exclude valid novel chemistries or bias exploration toward well-observed states.",
       "hashtags": [
         "#MaterialsDiscovery",
         "#GenerativeAI",
-        "#InorganicChemistry",
         "#ChemicalValidity",
+        "#InorganicCrystals",
         "#AIMaterials"
       ],
       "paper_id": "2026-07-20-arxiv-chemical_filters_for_ultra_high_throughput_materials_screening_and_generation",
       "paper_title": "Chemical filters for ultra-high-throughput materials screening and generation",
       "paper_date": "2026-07-20",
       "paper_category": "Materials Discovery",
-      "generated_at": "2026-07-21T12:22:50",
+      "generated_at": "2026-07-22T12:23:51",
       "generator": "openai"
     }
   },
@@ -128,29 +233,29 @@
         "url": "https://arxiv.org/pdf/2607.17463v1"
       }
     ],
-    "score": 82,
+    "score": 77,
     "infographic": {
-      "key_insight": "For intermetallic NRR catalysts, s- and p-band features can be more predictive than the traditional d-band center, especially for N2 and N2H adsorption.",
-      "engineering_relevance": "This provides a compact, ML-ready descriptor set for screening non-noble intermetallics and accelerating catalyst design for sustainable ammonia synthesis.",
+      "key_insight": "For intermetallic NRR catalysts, s- and p-band descriptors can predict adsorption better than the traditional d-band center, revealing a broader electronic design rule for activity.",
+      "engineering_relevance": "This enables faster, lower-cost screening of non-noble catalyst compositions for sustainable ammonia synthesis using compact ML models trained on DFT data.",
       "method": [
-        "Built a dataset of 47 bimetallic intermetallic compounds with ~1,200 DFT adsorption data points for N2, N2H, and NH3 across surface sites.",
-        "Trained machine learning models using intrinsic properties, s/p/d-band centers and fillings, and neighboring-atom Bader charges.",
-        "Used SHAP analysis to rank the most influential descriptors and test the d-band-centric assumption."
+        "Built a 47-IMC DFT dataset covering ~1,200 adsorption sites for N2, N2H, and NH3.",
+        "Trained machine learning models using intrinsic properties, band centers/fillings, and neighboring-atom Bader charges.",
+        "Used SHAP analysis to identify the most important descriptors and rank s/p contributions versus d-band metrics."
       ],
-      "evidence_signal": "The models achieved mean absolute errors of 0.26 eV for N2, 0.39 eV for N2H, and 0.17 eV for NH3 using only 20 key features.",
-      "watch_item": "The descriptor ranking is derived from a relatively limited set of intermetallics, so transferability to wider catalyst families and real operating conditions should be validated.",
+      "evidence_signal": "The models achieved MAEs of 0.26 eV for N2, 0.39 eV for N2H, and 0.17 eV for NH3 using only 20 key features.",
+      "watch_item": "The descriptor ranking is derived from a relatively small chemical space of 47 IMCs, so transferability to broader catalyst families should be validated before deployment.",
       "hashtags": [
         "#MaterialsDiscovery",
-        "#Catalysis",
         "#MachineLearning",
         "#DFT",
-        "#AmmoniaSynthesis"
+        "#Catalysis",
+        "#NitrogenReduction"
       ],
       "paper_id": "2026-07-20-arxiv-going_beyond_the_d_band_center_to_design_intermetallic_catalysts_for_nitrogen_reduction_a",
       "paper_title": "Going Beyond the d-band Center to Design Intermetallic Catalysts for Nitrogen Reduction: A High-Throughput DFT and Machine Learning Study",
       "paper_date": "2026-07-20",
       "paper_category": "Materials Discovery",
-      "generated_at": "2026-07-21T12:22:53",
+      "generated_at": "2026-07-22T12:23:54",
       "generator": "openai"
     }
   },
@@ -179,29 +284,29 @@
         "url": "https://arxiv.org/pdf/2607.18182v1"
       }
     ],
-    "score": 79,
+    "score": 74,
     "infographic": {
-      "key_insight": "ML-driven molecular dynamics shows that MgH2 dehydrogenation is governed by subsurface H2 formation and that Ni is the most effective dopant, with optimal catalysts falling in a narrow Miedema electron-density window.",
-      "engineering_relevance": "These results provide a quantitative design rule for selecting catalytic dopants that accelerate hydrogen release in MgH2-based storage materials.",
+      "key_insight": "ML-driven molecular dynamics shows that MgH2 dehydrogenation is governed by subsurface H2 formation and that Ni is the best dopant for accelerating hydrogen release.",
+      "engineering_relevance": "The results provide a quantitative design rule for selecting catalyst/dopant chemistry to improve hydrogen-storage materials and hydrogen-pump performance.",
       "method": [
         "ML potential-driven molecular dynamics on pristine and doped MgH2",
-        "Surface comparison across low-index facets to identify the most active surface",
-        "Descriptor screening of 22 dopants using machine learning analysis"
+        "Surface-orientation screening to identify the most active low-index facet",
+        "Descriptor learning across 22 dopants to link electronic structure with H release"
       ],
-      "evidence_signal": "The abstract reports systematic simulations and screening that identify the MgH2 (100) surface, Ni dopant, and a volcano relation between Miedema electron density and hydrogen release.",
-      "watch_item": "The conclusions depend on the accuracy and transferability of the trained ML potential and may require experimental validation across broader operating conditions.",
+      "evidence_signal": "The abstract reports systematic simulations, 22-dopant screening, and a volcano trend with an optimal Miedema electron-density window for hydrogen release.",
+      "watch_item": "The conclusions rely on ML-MD fidelity and descriptor transferability, so experimental validation and broader materials testing are still needed.",
       "hashtags": [
-        "#MaterialsDiscovery",
-        "#MachineLearning",
+        "#MachineLearningPotentials",
         "#MolecularDynamics",
         "#HydrogenStorage",
-        "#Catalysis"
+        "#MgH2",
+        "#MaterialsDiscovery"
       ],
       "paper_id": "2026-07-20-arxiv-machine_learning_potential_driven_molecular_dynamics_simulations_of_dehydrogenation_in_pri",
       "paper_title": "Machine Learning Potential-Driven Molecular Dynamics Simulations of Dehydrogenation in Pristine and Doped MgH$_2$",
       "paper_date": "2026-07-20",
       "paper_category": "Materials Discovery",
-      "generated_at": "2026-07-21T12:22:55",
+      "generated_at": "2026-07-22T12:23:56",
       "generator": "openai"
     }
   },
@@ -231,29 +336,80 @@
         "url": "https://arxiv.org/pdf/2607.18099v1"
       }
     ],
-    "score": 79,
+    "score": 74,
     "infographic": {
-      "key_insight": "Machine-learning Monte Carlo/molecular-dynamics simulations show that Al content controls whether (MoCrTi) alloys undergo one or two chemical order-disorder transitions, with B2-type ordering strongly tied to composition.",
-      "engineering_relevance": "Chemical ordering can substantially increase stiffness and produce a non-monotonic strength/stiffness trend, helping identify compositions such as Mo30Cr30Ti30Al10 for high-temperature structural design.",
+      "key_insight": "Machine-learning-driven hybrid Monte Carlo/molecular dynamics shows that chemical ordering in (MoCrTi)$_{100-x}$Al$_x$ refractory high-entropy alloys can produce one or two order-disorder transitions and strongly alter stiffness.",
+      "engineering_relevance": "By tuning Al content to control B2-type ordering, designers can target higher elastic moduli and non-monotonic stiffness peaks for high-temperature refractory alloy applications.",
       "method": [
-        "Universal machine-learning interatomic potential",
-        "Hybrid Monte Carlo + molecular dynamics",
-        "Temperature-dependent heat capacity and short-range order analysis"
+        "Universal machine learning interatomic potential",
+        "Hybrid Monte Carlo + molecular dynamics simulations",
+        "Analyze heat capacity, short-range order, and elastic constants across compositions and temperatures"
       ],
-      "evidence_signal": "The abstract reports simulated thermodynamic and mechanical trends across multiple compositions, including heat-capacity peaks, short-range order parameters, and elastic constants/moduli.",
-      "watch_item": "Results depend on the accuracy and transferability of the trained interatomic potential, so predictions should be validated against experiments or higher-fidelity calculations.",
+      "evidence_signal": "The abstract reports temperature-dependent heat-capacity and short-range-order signatures, plus composition-dependent elastic constants/moduli, to distinguish single versus two-stage ordering transitions.",
+      "watch_item": "The conclusions depend on the accuracy and transferability of the machine-learning potential and the extent to which the simulated compositions and temperatures represent real processing conditions.",
       "hashtags": [
         "#HighEntropyAlloys",
-        "#MachineLearningPotentials",
+        "#MachineLearningPotential",
         "#ChemicalOrdering",
-        "#B2Phase",
+        "#MonteCarloMD",
         "#RefractoryMaterials"
       ],
       "paper_id": "2026-07-20-arxiv-study_of_ordering_in_mocrti_100_x_al_x_refractory_high_entropy_alloys_using_machine_learni",
       "paper_title": "Study of ordering in (MoCrTi)$_{100-x}$Al$_x$ refractory high-entropy alloys using machine learning interatomic potential",
       "paper_date": "2026-07-20",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-07-21T12:22:58",
+      "generated_at": "2026-07-22T12:24:00",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-21-arxiv-spatially_resolved_in_situ_characterisation_of_competing_martensitic_transformation_pathwa",
+    "arxiv_id": "2607.19239v1",
+    "date": "2026-07-21",
+    "title": "Spatially resolved in-situ characterisation of competing martensitic transformation pathways during nanoscratch in 316H Stainless Steel",
+    "authors": "A. Kareer, R. W. Kerr, D. Craven, A. V. Davydok, C. Krywka, D. M. Collins",
+    "abstract": "Localised surface deformation beneath frictional contacts generates a tribolayer whose microstructure and properties differ from the bulk. In austenitic stainless steels, this tribolayer forms through two competing martensitic transformation pathways. Here, these pathways are isolated in 316H stainless steel using in-situ synchrotron X-ray nanodiffractometry combined with nanoscratch testing, which together yield spatial maps of the evolving strain field beneath a single sliding asperity. Finite element modelling interprets the resulting distribution of martensitic phases, revealing a pressure driven pathway selection where hydrostatic compression ahead of the contact suppresses $α'$ formation and favours the $γ\\rightarrow \\varepsilon$ transformation, while lateral sliding relieves this constraint and introduces a shear strain driving $\\varepsilon \\rightarrow α'$ , producing an overall sequential $γ\\rightarrow \\varepsilon \\rightarrow α'$ pathway in the tribolayer. Where hydrostatic constraint persists, $\\varepsilon$-martensite is retained; where material piles up and is unconstrained above the surface, the transformation proceeds directly to $α'$. The $γ$-austenite adjacent to $α'$- martensite shows elevated dislocation density, indicating that $α'$ formation is accommodated by plastic deformation in the surrounding matrix. This distinction could explain differences in galling performance among iron-based and cobalt-based hardfacing alloys, where the $\\varepsilon$-martensite forming cobalt alloys offer superior galling resistance. The methodology presented resolves transient microstructural states inaccessible to static measurements of macroscale, multiple asperity contacts, establishing a route to mechanistic insight across tribological phenomena more broadly.",
+    "category": "Microstructure",
+    "source": "arXiv",
+    "published": "2026-07-21T16:08:55Z",
+    "updated": "2026-07-21T16:08:55Z",
+    "primary_category": "cond-mat.mtrl-sci",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2607.19239v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2607.19239v1"
+      }
+    ],
+    "score": 73,
+    "infographic": {
+      "key_insight": "Nanoscratch-induced martensitic transformation in 316H stainless steel follows a stress-dependent sequence, with hydrostatic compression favoring γ→ε and shear under sliding promoting ε→α′, yielding a local γ→ε→α′ pathway in the tribolayer.",
+      "engineering_relevance": "Understanding how contact pressure and shear select martensitic pathways can help design stainless steels and hardfacing alloys with better wear, galling, and surface durability.",
+      "method": [
+        "In-situ synchrotron X-ray nanodiffractometry during nanoscratch testing",
+        "Spatial mapping of evolving strain and phase distributions beneath a single asperity",
+        "Finite element modelling to interpret pressure, constraint, and shear-driven transformation pathways"
+      ],
+      "evidence_signal": "The abstract reports spatially resolved experimental phase maps and strain fields, supported by finite element modeling that links hydrostatic constraint and shear to the observed martensitic phase distribution.",
+      "watch_item": "The conclusions are drawn from a single-contact nanoscratch geometry, so translation to complex real-world multi-asperity tribological conditions may require additional validation.",
+      "hashtags": [
+        "#Martensite",
+        "#Tribology",
+        "#StainlessSteel",
+        "#SynchrotronXRay",
+        "#InSituCharacterization"
+      ],
+      "paper_id": "2026-07-21-arxiv-spatially_resolved_in_situ_characterisation_of_competing_martensitic_transformation_pathwa",
+      "paper_title": "Spatially resolved in-situ characterisation of competing martensitic transformation pathways during nanoscratch in 316H Stainless Steel",
+      "paper_date": "2026-07-21",
+      "paper_category": "Microstructure",
+      "generated_at": "2026-07-22T12:24:03",
       "generator": "openai"
     }
   },
@@ -282,29 +438,29 @@
         "url": "https://arxiv.org/pdf/2607.17412v1"
       }
     ],
-    "score": 78,
+    "score": 73,
     "infographic": {
-      "key_insight": "CORAL trains a reinforcement-learning docking model to capture the cooperative, groove-stacking binding geometry unique to amyloid fibrils, rather than treating them like globular protein targets.",
-      "engineering_relevance": "The method could improve structure-guided discovery of amyloid-binding diagnostics and therapeutics by producing more realistic ligand poses and better affinity ranking for fibril targets.",
+      "key_insight": "CORAL uses reinforcement learning to teach a docking model the cooperative stacking behavior unique to amyloid fibrils, improving ligand pose prediction beyond standard protein docking methods.",
+      "engineering_relevance": "The method can accelerate design of amyloid-targeting probes and therapeutics by better predicting how small molecules bind to fibril grooves.",
       "method": [
-        "Uses reinforcement learning to generate ligand pose distributions for amyloid fibrils.",
-        "Adds a reward that combines protein-ligand docking affinity with cooperative ligand-ligand stacking energy.",
-        "Targets the cross-β groove geometry characteristic of amyloid fibrils."
+        "Generative docking model trained with reinforcement learning",
+        "Reward combines protein-ligand affinity and ligand-ligand cooperative stacking energy",
+        "Designed for cross-β groove binding geometry in amyloid fibrils"
       ],
-      "evidence_signal": "The paper reports evaluation on experimentally resolved structures plus a curated amyloid-ligand set built from model-generated poses validated by domain experts, with improved pose quality and affinity correlation over baselines.",
-      "watch_item": "Performance may depend on the quality of the cooperative-energy reward and the limited, curated evaluation data, so broader validation on more real amyloid complexes is still needed.",
+      "evidence_signal": "The approach was evaluated on experimentally resolved amyloid-ligand structures and a curated expert-validated set, showing better pose quality and affinity correlation than baseline dockers.",
+      "watch_item": "Performance depends on the quality and breadth of scarce amyloid-ligand structural data, so generalization to new fibril targets may still be limited.",
       "hashtags": [
-        "#AmyloidFibrils",
-        "#MolecularDocking",
+        "#AmyloidDocking",
         "#ReinforcementLearning",
-        "#DrugDiscovery",
-        "#StructuralBiology"
+        "#MolecularDesign",
+        "#StructuralBiology",
+        "#ComputationalChemistry"
       ],
       "paper_id": "2026-07-19-arxiv-coral_learning_amyloid_fibril_ligand_docking_with_cooperative_binding_rewards",
       "paper_title": "CORAL: Learning Amyloid Fibril Ligand Docking with Cooperative Binding Rewards",
       "paper_date": "2026-07-19",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-07-21T12:23:01",
+      "generated_at": "2026-07-22T12:24:05",
       "generator": "openai"
     }
   },
@@ -334,29 +490,80 @@
         "url": "https://arxiv.org/pdf/2607.17370v1"
       }
     ],
-    "score": 74,
+    "score": 69,
     "infographic": {
-      "key_insight": "An optimization-based phase-field calibration can embed sharp-interface solute trapping and solute-drag response functions into diffuse-interface simulations of rapid alloy solidification.",
-      "engineering_relevance": "This enables more quantitative prediction and control of microsegregation and solidification morphology in rapid casting and additive-manufacturing-like conditions.",
+      "key_insight": "An optimization-based phase-field calibration can embed target nonequilibrium interface response functions, enabling accurate modeling of solute trapping, solute drag, and rapid-solidification morphology.",
+      "engineering_relevance": "This gives alloy designers a practical way to predict microsegregation and growth patterns under rapid solidification using phase-field simulations with tunable interface kinetics.",
       "method": [
-        "Treat interfacial diffusivity interpolation as a tunable degree of freedom.",
-        "Fit 1D steady-state phase-field solutions to continuous-growth-model targets for velocity-dependent trapping and drag-modified liquidus kinetics.",
-        "Apply the calibrated model in 2D directional-solidification simulations and extend it to multicomponent dilute alloys."
+        "Treat interfacial diffusivity interpolation as a free parameter for response matching.",
+        "Fit one-dimensional steady-state phase-field solutions to sharp-interface continuous-growth-model targets.",
+        "Extend the calibrated formulation to multicomponent dilute alloys with independently specified partition and liquidus responses."
       ],
-      "evidence_signal": "The abstract reports that the calibrated model reproduces prescribed response functions in dilute Al-Cu and that 2D simulations capture morphology shifts as solute drag increases.",
-      "watch_item": "The approach depends on accurate target response functions and on 1D calibration assumptions, so transferability to complex geometries or strongly non-dilute systems may require additional validation.",
+      "evidence_signal": "The calibrated model was validated against prescribed velocity-dependent response functions and then tested in 2D directional solidification, where increasing solute drag produced a progression from dendritic/cellular growth to banded morphologies.",
+      "watch_item": "The approach relies on careful optimization of interfacial diffusivity in a large-interface phase-field model, so accuracy may depend on how well the target sharp-interface kinetics are known and enforced.",
       "hashtags": [
         "#PhaseField",
-        "#Solidification",
+        "#RapidSolidification",
         "#SoluteTrapping",
         "#SoluteDrag",
-        "#AlloyDesign"
+        "#AlloyModeling"
       ],
       "paper_id": "2026-07-19-arxiv-response_function_optimized_phase_field_modeling_of_solute_trapping_and_solute_drag_in_rap",
       "paper_title": "Response-function-optimized phase field modeling of solute trapping and solute drag in rapid alloy solidification",
       "paper_date": "2026-07-19",
       "paper_category": "Microstructure",
-      "generated_at": "2026-07-21T12:23:03",
+      "generated_at": "2026-07-22T12:24:08",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-20-arxiv-data_efficient_training_of_linear_ace_potentials_through_leverage_guided_subset_selection",
+    "arxiv_id": "2607.18524v1",
+    "date": "2026-07-20",
+    "title": "Data-Efficient Training of Linear ACE Potentials through Leverage-Guided Subset Selection of ASSYST Structure Pools",
+    "authors": "Aynour Khosravi, Marvin Poul, Jörg Neugebauer, Chad Sinclair",
+    "abstract": "The construction of machine-learned interatomic potentials (MLIPs) is often limited by the cost of generating large density-functional-theory (DFT) training datasets. For systematically generated structure pools such as ASSYST, a central practical question is how many configurations must be labeled to achieve reliable accuracy. Here we assess geometry-based, label-free subset selection for training linear Atomic Cluster Expansion (ACE) potentials. Using statistical leverage scores and CUR-type sampling, we compare leverage-guided selection against random, energy-based, and force-based baselines under controlled iterative protocols. Elemental Al provides the primary benchmark, with Cu and Al-Cu alloys used for transfer validation. Leverage-guided subsets recover plateau-level energy and force accuracy using substantially smaller labeled fractions (approximately 30-40%) than random sampling, corresponding to an effective 2-3x reduction in DFT labeling for the systems studied. In alloy tests, defect energetics remain comparable across strategies once sufficient chemical diversity is included, while leverage selection maintains competitive accuracy at reduced training size. These results demonstrate that descriptor-space-guided, label-free subsampling can significantly reduce DFT workload for linear ACE models trained on ASSYST structure pools without degrading defect-level fidelity.",
+    "category": "Crystal and Structure",
+    "source": "arXiv",
+    "published": "2026-07-20T21:35:06Z",
+    "updated": "2026-07-20T21:35:06Z",
+    "primary_category": "cond-mat.mtrl-sci",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2607.18524v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2607.18524v1"
+      }
+    ],
+    "score": 67,
+    "infographic": {
+      "key_insight": "Geometry-based leverage score sampling can pick a much smaller but similarly informative subset of ASSYST structures for training linear ACE potentials.",
+      "engineering_relevance": "This reduces DFT labeling cost by about 2–3× while preserving energy, force, and defect-level accuracy, making MLIP development faster and cheaper.",
+      "method": [
+        "Build linear ACE potentials on ASSYST-generated structure pools.",
+        "Compare leverage-guided CUR-type subset selection with random, energy-based, and force-based sampling.",
+        "Validate on Al and test transfer on Cu and Al-Cu alloys."
+      ],
+      "evidence_signal": "Leverage-guided subsets reached plateau-level energy and force accuracy using roughly 30–40% of labeled configurations, with comparable defect energetics once chemical diversity was sufficient.",
+      "watch_item": "Performance depends on having a representative structure pool and enough chemical diversity, so overly narrow pools may limit transferability.",
+      "hashtags": [
+        "#MaterialsInformatics",
+        "#MachineLearningPotentials",
+        "#DensityFunctionalTheory",
+        "#ActiveLearning",
+        "#AtomicClusterExpansion"
+      ],
+      "paper_id": "2026-07-20-arxiv-data_efficient_training_of_linear_ace_potentials_through_leverage_guided_subset_selection",
+      "paper_title": "Data-Efficient Training of Linear ACE Potentials through Leverage-Guided Subset Selection of ASSYST Structure Pools",
+      "paper_date": "2026-07-20",
+      "paper_category": "Crystal and Structure",
+      "generated_at": "2026-07-22T12:24:11",
       "generator": "openai"
     }
   },
@@ -385,29 +592,80 @@
         "url": "https://arxiv.org/pdf/2607.17498v1"
       }
     ],
-    "score": 72,
+    "score": 67,
     "infographic": {
-      "key_insight": "QOC-Workbench uses an LLM to autonomously generate, test, and transfer quantum optimal control strategies across different hardware and Hamiltonian settings, enabling cross-paradigm protocol design beyond fixed-form numerical tuning.",
-      "engineering_relevance": "This offers a practical route to design hardware-compliant quantum control protocols for annealing, state engineering, and adiabatic computation with less expert intervention.",
+      "key_insight": "QOC-Workbench uses an LLM as an autonomous quantum co-scientist to invent and validate cross-paradigm quantum optimal control protocols that go beyond parameter tuning.",
+      "engineering_relevance": "The approach helps translate quantum control ideas into hardware-compliant protocols for different platforms, reducing expert design effort and improving practicality under strict experimental constraints.",
       "method": [
-        "LLM parses physics literature and proposes structural control hypotheses",
-        "LLM writes simulation code to validate candidate protocols",
-        "Learns reusable control motifs and, for harder cases, shifts to an amortized GNN generator for scalable coefficient paths"
+        "LLM reads physics literature and proposes structural hypotheses for control protocols",
+        "Workflow writes and runs simulation code to test candidate controls",
+        "Builds cross-paradigm control motifs and, in one case, amortizes variational counterdiabatic driving with a GNN generator"
       ],
-      "evidence_signal": "The abstract reports successful demonstrations in three settings—Rydberg MIS arrays, XXZ spin chains, and random transverse-field Ising models—with protocols that outperform literature baselines and transfer to larger unseen systems.",
-      "watch_item": "Because the workflow depends on LLM-generated hypotheses and simulation-based validation, reliability and reproducibility will hinge on rigorous auditing, benchmark coverage, and hardware-accurate modeling.",
+      "evidence_signal": "The abstract reports successful demonstrations on three settings—Rydberg MIS arrays, XXZ spin chains, and random transverse-field Ising models—with discovered controls that outperform literature baselines and transfer to larger unseen systems.",
+      "watch_item": "Because the workflow depends on LLM-generated hypotheses and simulation validation, robustness, reproducibility, and hardware transfer still need careful verification on real devices.",
       "hashtags": [
         "#QuantumOptimalControl",
-        "#LargeLanguageModels",
+        "#LLMforScience",
         "#QuantumComputing",
-        "#MaterialsDiscovery",
-        "#AutonomousDiscovery"
+        "#AutonomousDesign",
+        "#MaterialsDiscovery"
       ],
       "paper_id": "2026-07-20-arxiv-llm_driven_cross_paradigm_design_for_quantum_optimal_control",
       "paper_title": "LLM-Driven Cross-Paradigm Design for Quantum Optimal Control",
       "paper_date": "2026-07-20",
       "paper_category": "Materials Discovery",
-      "generated_at": "2026-07-21T12:23:06",
+      "generated_at": "2026-07-22T12:24:13",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-20-arxiv-lm2alloy_investigating_llm_generated_formal_specifications_for_automated_test_derivation_i",
+    "arxiv_id": "2607.18555v1",
+    "date": "2026-07-20",
+    "title": "LM2Alloy: Investigating LLM-Generated Formal Specifications for Automated Test Derivation in Production Software",
+    "authors": "Tasmim Rashid, Muhammad Zubair Malik",
+    "abstract": "We present an exploratory study on using Large Language Models (LLMs) to generate Alloy formal specifications from both requirements documentation and production source code, and to derive executable test cases from those specifications. We evaluate on two real open-source Python libraries: Flipper, a feature flag management system, and Cerberus, a data validation library. In both cases, the LLM produced workable Alloy specifications and executable tests without any manual correction. For Flipper, our pipeline uncovered a genuine bug that the existing test suite had missed: the library silently accepts duplicate flag names, directly contradicting its documented uniqueness requirement. A direct LLM baseline--generating tests from the same README but skipping the Alloy step--achieved 68% branch coverage yet failed to catch this bug across all three independent runs. This suggests that introducing a formal intermediate representation can surface constraint-level defects that coverage-oriented generation may miss. For Cerberus, the code-derived specification captured an implicit abstraction over sized types that the documentation-derived spec omitted, producing two additional tests. Across both libraries, code-based specifications showed lower variance in test generation (mean SD = 2.15) than documentation-based ones (mean SD = 5.0), though whether this generalises remains an open question. Index Terms--formal specifications, Alloy, large language models, automated testing, specification drift, software validation.",
+    "category": "Microstructure",
+    "source": "arXiv",
+    "published": "2026-07-20T22:41:55Z",
+    "updated": "2026-07-20T22:41:55Z",
+    "primary_category": "cs.SE",
+    "categories": [
+      "cs.SE"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2607.18555v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2607.18555v1"
+      }
+    ],
+    "score": 66,
+    "infographic": {
+      "key_insight": "Using an LLM to generate Alloy as an intermediate formal specification can expose constraint-level bugs in production software that direct test generation may miss.",
+      "engineering_relevance": "For software-intensive engineering workflows, this suggests a practical path to convert requirements or source code into executable tests that improve defect detection beyond coverage alone.",
+      "method": [
+        "LLM generates Alloy specifications from README requirements or from production source code.",
+        "Executable tests are then derived from the Alloy model and run on real Python libraries.",
+        "A direct LLM-only test-generation baseline is compared against the Alloy-mediated pipeline."
+      ],
+      "evidence_signal": "On Flipper and Cerberus, the LLM produced usable Alloy specs and tests without manual correction; the Alloy-based pipeline found a real duplicate-flag bug in Flipper that the direct baseline missed across three runs.",
+      "watch_item": "Results come from only two open-source libraries, so the apparent benefit of code-derived specifications and reduced variance may not generalize to other systems or specification styles.",
+      "hashtags": [
+        "#LLMTesting",
+        "#Alloy",
+        "#FormalMethods",
+        "#AutomatedTesting",
+        "#SoftwareValidation"
+      ],
+      "paper_id": "2026-07-20-arxiv-lm2alloy_investigating_llm_generated_formal_specifications_for_automated_test_derivation_i",
+      "paper_title": "LM2Alloy: Investigating LLM-Generated Formal Specifications for Automated Test Derivation in Production Software",
+      "paper_date": "2026-07-20",
+      "paper_category": "Microstructure",
+      "generated_at": "2026-07-22T12:24:16",
       "generator": "openai"
     }
   },
@@ -436,29 +694,131 @@
         "url": "https://arxiv.org/pdf/2607.15535v1"
       }
     ],
-    "score": 71,
+    "score": 66,
     "infographic": {
-      "key_insight": "A DSL-guided LLM agent can improve inverse materials design by grounding natural-language rules in symbolic predicates and statistical evidence.",
-      "engineering_relevance": "This offers a practical path to faster, more interpretable discovery of candidate perovskite oxides without requiring large task-specific training datasets.",
+      "key_insight": "A DSL-guided, symbolic-predicate loop can make LLM agents more reliable for inverse materials design by grounding natural-language rules in statistical evidence.",
+      "engineering_relevance": "This offers a practical route to design candidate perovskite oxides for target properties without requiring large task-specific training datasets or retraining.",
       "method": [
-        "Translate natural-language design rules into chemistry DSL predicates.",
-        "Use accumulated materials data to test, validate, and refine rules during iterative agentic search.",
-        "Deploy a multi-agent framework (ORCHESTRA) for inverse design of double perovskite oxides under multiple target-property objectives."
+        "Translate natural-language design rules into predicates in a chemistry DSL.",
+        "Use accumulated materials data to test, validate, and refine rules during iterative agent search.",
+        "Deploy a multi-agent framework (ORCHESTRA) for inverse design of double perovskite oxides."
       ],
-      "evidence_signal": "The abstract reports that DSL-guided symbolic predicates helped the agent identify unsupported rules, validate new rules, and improve the rule store across iterative design cycles, with better performance than natural-language-only rules.",
-      "watch_item": "Performance gains depend on the quality and coverage of the DSL, data availability for statistical grounding, and careful handling of unsupported or incorrect rules.",
+      "evidence_signal": "The abstract reports that symbolic predicates helped identify unsupported rules, validate newly proposed rules, and improve the rule store over iterative design cycles, with better performance than natural-language-only rules, especially for harder target properties.",
+      "watch_item": "Performance depends on the quality and coverage of the underlying materials data and DSL predicates, so weak statistical grounding could mislead rule refinement.",
       "hashtags": [
         "#MaterialsDiscovery",
         "#InverseDesign",
         "#LLMAgents",
-        "#PerovskiteOxides",
-        "#AIforScience"
+        "#Perovskites",
+        "#ChemistryDSL"
       ],
       "paper_id": "2026-07-17-arxiv-symbolic_predicate_guided_language_agents_for_inverse_design_of_perovskite_oxides",
       "paper_title": "Symbolic Predicate-Guided Language Agents for Inverse Design of Perovskite Oxides",
       "paper_date": "2026-07-17",
       "paper_category": "Materials Discovery",
-      "generated_at": "2026-07-21T12:23:09",
+      "generated_at": "2026-07-22T12:24:19",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-21-arxiv-thermal_and_electrical_conductivity_of_a_refractory_high_entropy_alloy_after_high_pressure",
+    "arxiv_id": "2607.19123v1",
+    "date": "2026-07-21",
+    "title": "Thermal and electrical conductivity of a refractory high-entropy alloy after high-pressure torsion: Electron versus phonon contributions",
+    "authors": "Jacqueline Hidalgo-Jimenez, Payam Edalati, Md Amirul Islam, Makoto Arita, Bidyut Baran Saha, Kaveh Edalati",
+    "abstract": "The equiatomic refractory high-entropy alloy TiZrHfNbTa was processed by high-pressure torsion (HPT) to investigate the effect of nanostructuring and defect engineering on thermal and electrical transport properties. Severe plastic deformation (SPD) via the HPT treatment induces substantial accumulation of dislocations, grain refinement to the nanometer level (average: 40 nm), and partial transformation from the BCC phase to the omega phase. While hardness increases to a steady state with processing, the specific heat capacity exhibits a non-monotonic behavior: it decreases at low strains due to the suppression of low-frequency vibrational modes by dislocations, then partially recovers at high strains due to anharmonic vibrations at newly formed high-angle grain boundaries. Thermal conductivity decreases at low strains but shows a slight recovery at high strains, whereas electrical conductivity decreases monotonically to a steady state without recovery. Analysis using the Wiedemann-Franz law reveals that the electronic contribution dominates thermal transport, while the phononic contribution (limited by the scattering of phonons on defects) is only 11 to 23%, depending on the degree of straining. The contrasting evolution of thermal and electrical conductivity is ascribed to the transition from dislocation-dominated vibrations at low strains to grain boundary-dominated vibrations at high strains, which affects phonons and electrons with different efficiencies.",
+    "category": "Microstructure",
+    "source": "arXiv",
+    "published": "2026-07-21T14:10:42Z",
+    "updated": "2026-07-21T14:10:42Z",
+    "primary_category": "cond-mat.mtrl-sci",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2607.19123v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2607.19123v1"
+      }
+    ],
+    "score": 65,
+    "infographic": {
+      "key_insight": "High-pressure torsion nanostructures TiZrHfNbTa so strongly that phonon transport is suppressed much more than electron transport, making the alloy’s thermal behavior change differently from its electrical behavior.",
+      "engineering_relevance": "This suggests severe plastic deformation can be used to tune refractory high-entropy alloys for targeted thermal management while preserving useful electrical conduction.",
+      "method": [
+        "Applied high-pressure torsion (HPT) severe plastic deformation to equiatomic TiZrHfNbTa.",
+        "Measured thermal conductivity, electrical conductivity, specific heat, and hardness across strain levels.",
+        "Related transport changes to dislocation accumulation, ~40 nm grain refinement, and partial BCC-to-omega transformation."
+      ],
+      "evidence_signal": "The abstract reports a monotonic drop in electrical conductivity, a low-strain decrease then high-strain partial recovery in thermal conductivity, and a Wiedemann–Franz analysis showing electrons dominate heat transport while phonons contribute only 11–23%.",
+      "watch_item": "The property evolution is strain-dependent and non-monotonic, so processing windows must be controlled carefully if the goal is reproducible thermal/electrical performance.",
+      "hashtags": [
+        "#HighEntropyAlloy",
+        "#HighPressureTorsion",
+        "#ThermalConductivity",
+        "#ElectricalConductivity",
+        "#MicrostructureEngineering"
+      ],
+      "paper_id": "2026-07-21-arxiv-thermal_and_electrical_conductivity_of_a_refractory_high_entropy_alloy_after_high_pressure",
+      "paper_title": "Thermal and electrical conductivity of a refractory high-entropy alloy after high-pressure torsion: Electron versus phonon contributions",
+      "paper_date": "2026-07-21",
+      "paper_category": "Microstructure",
+      "generated_at": "2026-07-22T12:24:37",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-21-arxiv-deciphering_mechanoluminescence_how_the_nature_of_mechanical_stress_and_structural_dimensi",
+    "arxiv_id": "2607.19003v1",
+    "date": "2026-07-21",
+    "title": "Deciphering Mechanoluminescence: How the Nature of Mechanical Stress and Structural Dimensionality Shape Mechanisms and Responses",
+    "authors": "Alexis Duval, Xavier Rocquefelte, Yann Gueguen, Patrick Houizot, Tanguy Rouxel",
+    "abstract": "Mechanoluminescent materials exhibit a broad spectrum of controllable light-emission responses to mechanical stimuli of varying types and magnitudes. Yet progress toward high-performance systems remains constrained by an incomplete and often contradictory mechanistic understanding. Here, density functional theory (DFT) calculations optimized for the quantitative treatment of point defects are used to systematically investigate the interplay between stress type (hydrostatic vs. shear) and active-phase dimensionality (1D vs. 3D), using $SrAl_2O_4:Eu^{2+}, Dy^{3+}$ and $Ba_4Si_6O_{16}:Eu^{2+}, Ho^{3+}$ as representative model systems. Two distinct emission-driving mechanisms are identified: a piezoelectric contribution, and a second, apparently universal, mechanism arising from stress-induced structural reorganization at point defects sites. These results establish a design framework for mechanoluminescent materials in which crystal dimensionality, stress type and stress-sensitive point defects are deliberately matched to tune emission behavior and overall performance.",
+    "category": "Microstructure",
+    "source": "arXiv",
+    "published": "2026-07-21T11:37:46Z",
+    "updated": "2026-07-21T11:37:46Z",
+    "primary_category": "cond-mat.mtrl-sci",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2607.19003v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2607.19003v1"
+      }
+    ],
+    "score": 65,
+    "infographic": {
+      "key_insight": "Mechanoluminescence is governed by two emission pathways—a piezoelectric effect and a universal defect-driven structural reorganization—whose activation depends on whether stress is hydrostatic or shear and on whether the active phase is 1D or 3D.",
+      "engineering_relevance": "By matching crystal dimensionality, stress mode, and stress-sensitive point defects, engineers can rationally tune light-output strength and response behavior in mechanoluminescent materials.",
+      "method": [
+        "DFT calculations optimized for quantitative point-defect treatment",
+        "Systematic comparison of hydrostatic versus shear stress",
+        "Modeling two representative systems: SrAl2O4:Eu2+,Dy3+ and Ba4Si6O16:Eu2+,Ho3+"
+      ],
+      "evidence_signal": "The abstract reports a systematic computational study that identifies two distinct mechanisms across representative 1D and 3D model materials, rather than relying on a single empirical dataset.",
+      "watch_item": "The conclusions are based on DFT models of selected representative compounds, so real-material performance may still depend on defect concentrations, microstructure, and synthesis conditions.",
+      "hashtags": [
+        "#Mechanoluminescence",
+        "#DFT",
+        "#PointDefects",
+        "#MaterialsDesign",
+        "#Microstructure"
+      ],
+      "paper_id": "2026-07-21-arxiv-deciphering_mechanoluminescence_how_the_nature_of_mechanical_stress_and_structural_dimensi",
+      "paper_title": "Deciphering Mechanoluminescence: How the Nature of Mechanical Stress and Structural Dimensionality Shape Mechanisms and Responses",
+      "paper_date": "2026-07-21",
+      "paper_category": "Microstructure",
+      "generated_at": "2026-07-22T12:24:40",
       "generator": "openai"
     }
   },
@@ -487,29 +847,132 @@
         "url": "https://arxiv.org/pdf/2607.14025v1"
       }
     ],
-    "score": 70,
+    "score": 65,
     "infographic": {
-      "key_insight": "WEST is an open-source, plane-wave code that unifies multiple excited-state methods in a single framework and scales to very large materials simulations without explicitly computing virtual states.",
-      "engineering_relevance": "It enables practical, GPU-accelerated prediction of quasiparticle, optical, and non-adiabatic properties for systems with more than a thousand atoms, supporting materials discovery workflows.",
+      "key_insight": "WEST is an open-source, GPU-scalable excited-state simulation code that unifies GW, Bethe-Salpeter, TDDFT, and related methods without explicit virtual states.",
+      "engineering_relevance": "It enables accurate large-scale predictions of quasiparticle, optical, and defect-related excited-state properties for materials systems with thousands of atoms.",
       "method": [
-        "Full-frequency GW, Bethe-Salpeter equation, TDDFT, and quantum defect embedding in one codebase",
-        "Avoids explicit virtual electronic states using density functional and density matrix perturbation theory",
-        "Uses low-rank screening/exact-exchange representations, localization, and hierarchical parallelization with GPU acceleration"
+        "Common algorithmic framework for GW, QDE, BSE, and TDDFT",
+        "Uses density functional/density matrix perturbation theory plus low-rank screening and exact-exchange representations",
+        "Hierarchical parallelization and GPU acceleration for near-ideal strong scaling"
       ],
-      "evidence_signal": "The abstract reports near-ideal strong scaling to thousands of GPUs and representative applications across spin defects, perovskites, water, and ice.",
-      "watch_item": "Performance and accuracy likely depend on careful workflow setup, parallel hardware availability, and method-specific convergence choices for large excited-state calculations.",
+      "evidence_signal": "The abstract highlights representative applications and near-ideal strong scaling to thousands of GPUs, with systems exceeding 1,000 atoms.",
+      "watch_item": "Performance and accuracy depend on sophisticated implementations of low-rank/localization approximations and GPU-aware workflows, which may limit ease of adoption or portability.",
       "hashtags": [
         "#MaterialsDiscovery",
         "#ExcitedStates",
-        "#QuantumMaterials",
+        "#GW",
         "#GPUComputing",
-        "#ComputationalScience"
+        "#ComputationalMaterials"
       ],
       "paper_id": "2026-07-15-arxiv-the_west_code_for_large_scale_excited_state_materials_simulations",
       "paper_title": "The WEST code for large-scale excited-state materials simulations",
       "paper_date": "2026-07-15",
       "paper_category": "Materials Discovery",
-      "generated_at": "2026-07-21T12:23:12",
+      "generated_at": "2026-07-22T12:24:42",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-20-arxiv-towards_a_universal_model_for_spin_orbit_coupled_wannier_hamiltonians",
+    "arxiv_id": "2607.18403v1",
+    "date": "2026-07-20",
+    "title": "Towards a universal model for spin-orbit coupled Wannier Hamiltonians",
+    "authors": "Alexander C. Tyner",
+    "abstract": "While machine learning interatomic potentials (MLiPs) have matured to revolutionize material science, deep learning models for electronic structure are just beginning to emerge and restricted, almost exclusively, to non-orthogonal basis Hamiltonians. We introduce G(Wa)NN, the first deep-learning model capable of generating the electronic Hamiltonian of solid-state systems in an orthogonal Wannier basis. G(Wa)NN is trained on an unprecedented, diverse dataset of more than 111K Wannier Hamiltonians (150M+ hopping matrices) spanning 69 elements. The combination of optimized inference and linear-scaling methods for orthogonal Hamiltonians unlock transport simulations at massive scales (10K+ atoms). Crucially, the framework supports local finetuning, allowing users to adapt the base model to custom Wannier Hamiltonian datasets. To seamlessly translate these predictions into physical observables, we introduce Tailwater, a Python package providing an API interface to G(Wa)NN alongside a high performance post-processing library. Tailwater enables automated projection of the predicted Hamiltonian into an arbitrary low-energy subspace-directly mirroring familiar Wannier90 workflows-and includes a suite of Kernel Polynomial Method (KPM) functions that exploit the orthogonal basis to achieve strict linear scaling for spectral observables. The Tailwater ecosystem, with the G(Wa)NN model at its core, aims to help bridge the gap between deep learning and macro-scale quantum transport simulations.",
+    "category": "Crystal and Structure",
+    "source": "arXiv",
+    "published": "2026-07-20T18:00:35Z",
+    "updated": "2026-07-20T18:00:35Z",
+    "primary_category": "cond-mat.mtrl-sci",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2607.18403v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2607.18403v1"
+      }
+    ],
+    "score": 64,
+    "infographic": {
+      "key_insight": "G(Wa)NN is a deep-learning model that predicts spin-orbit-coupled electronic Hamiltonians directly in an orthogonal Wannier basis, enabling scalable quantum transport workflows.",
+      "engineering_relevance": "This can accelerate large-scale materials and device simulations by combining accurate Hamiltonian generation with linear-scaling post-processing for systems beyond 10K atoms.",
+      "method": [
+        "Trained on 111K+ Wannier Hamiltonians spanning 69 elements",
+        "Uses a universal model plus local finetuning for custom datasets",
+        "Paired with Tailwater for automated subspace projection and KPM-based spectral calculations"
+      ],
+      "evidence_signal": "The abstract reports training on an unprecedented dataset of more than 111K Wannier Hamiltonians and 150M+ hopping matrices across 69 elements.",
+      "watch_item": "Performance may depend on the quality and compatibility of the target Wannierization/projection workflow, so adapting to new materials likely requires careful validation.",
+      "hashtags": [
+        "#MaterialsInformatics",
+        "#DeepLearning",
+        "#WannierHamiltonians",
+        "#QuantumTransport",
+        "#SpinOrbitCoupling"
+      ],
+      "paper_id": "2026-07-20-arxiv-towards_a_universal_model_for_spin_orbit_coupled_wannier_hamiltonians",
+      "paper_title": "Towards a universal model for spin-orbit coupled Wannier Hamiltonians",
+      "paper_date": "2026-07-20",
+      "paper_category": "Crystal and Structure",
+      "generated_at": "2026-07-22T12:24:45",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-21-arxiv-complete_hierarchy_of_nonrelativistic_odd_parity_spin_splitting_in_collinear_magnets",
+    "arxiv_id": "2607.19303v1",
+    "date": "2026-07-21",
+    "title": "Complete Hierarchy of Nonrelativistic Odd-Parity Spin Splitting in Collinear Magnets",
+    "authors": "Yichen Liu, Junxi Yu, Pu Zhang, Cheng-Cheng Liu",
+    "abstract": "Momentum-dependent nonrelativistic spin splitting provides a symmetry fingerprint of collinear magnets and can govern unconventional electronic, magnonic, and transport phenomena. Whereas even-parity $s$-, $d$-, $g$-, and $i$-wave splittings in collinear magnets have been extensively studied, odd-parity counterparts remain unexplored beyond the $p$-wave and $f$-wave classes. Here, using group theory, we establish the complete classification of odd-parity spin splitting in collinear magnets. We show that, in addition to the $p$-wave and $f$-wave forms, $h$- and $k$-wave splittings with $\\ell=5$ and $7$ are allowed, while $m$-wave splitting with $\\ell=9$ constitutes the upper bound. We derive a complete mapping from crystallographic point-group irreducible representations to the lowest-order odd-parity basis functions and formulate the coupling rule between a symmetry-breaking axial field and the parent Néel order that selects the induced odd-parity class. We further construct minimal lattice models that realize $h$-, $k$-, and $m$-wave splitting. Guided by this classification, we screen the MAGNDATA database and show that circularly polarized light can drive the $\\mathcal{PT}$-symmetric antiferromagnets Fe$_2$TeO$_6$ and MgFe$_6$Ge$_6$ into $h$-wave and $k$-wave phases, respectively, exhibiting the hallmark spin splittings in both electronic bands and magnon spectra. Symmetry analysis and Berry-curvature calculations show that collinear odd-parity magnets of both $h$- and $k$-wave allow an anomalous Hall response, whereas the $m$-wave class forbids it. Together, these results complete the partial-wave hierarchy of odd-parity spin splitting in collinear magnets and establish symmetry criteria for anomalous transport in the high-partial-wave classes.",
+    "category": "Crystal and Structure",
+    "source": "arXiv",
+    "published": "2026-07-21T17:15:03Z",
+    "updated": "2026-07-21T17:15:03Z",
+    "primary_category": "cond-mat.mtrl-sci",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.mes-hall"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2607.19303v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2607.19303v1"
+      }
+    ],
+    "score": 63,
+    "infographic": {
+      "key_insight": "The paper completes the symmetry classification of nonrelativistic odd-parity spin splitting in collinear magnets, showing allowed classes from p- and f-wave up to h-, k-, and m-wave with m-wave as the upper bound.",
+      "engineering_relevance": "This provides a design rule for creating and selecting magnetic materials or light-driven phases with targeted spin splitting and potentially controllable anomalous Hall responses.",
+      "method": [
+        "Used group theory to map crystallographic point-group irreducible representations to lowest-order odd-parity basis functions.",
+        "Derived a coupling rule linking symmetry-breaking axial fields and parent Néel order to the induced spin-splitting class.",
+        "Built minimal lattice models and screened MAGNDATA to identify real materials and light-induced phase control cases."
+      ],
+      "evidence_signal": "The abstract reports a database screening plus symmetry analysis and Berry-curvature calculations, including light-driven h-wave and k-wave phases in Fe2TeO6 and MgFe6Ge6 and corresponding anomalous Hall predictions.",
+      "watch_item": "The classification is symmetry-based, so realizing the predicted high-partial-wave phases still depends on achieving the required magnetic order or external-field conditions in practice.",
+      "hashtags": [
+        "#SpinSplitting",
+        "#Magnetism",
+        "#GroupTheory",
+        "#AnomalousHall",
+        "#MaterialsDesign"
+      ],
+      "paper_id": "2026-07-21-arxiv-complete_hierarchy_of_nonrelativistic_odd_parity_spin_splitting_in_collinear_magnets",
+      "paper_title": "Complete Hierarchy of Nonrelativistic Odd-Parity Spin Splitting in Collinear Magnets",
+      "paper_date": "2026-07-21",
+      "paper_category": "Crystal and Structure",
+      "generated_at": "2026-07-22T12:24:48",
       "generator": "openai"
     }
   },
@@ -539,492 +1002,29 @@
         "url": "https://arxiv.org/pdf/2607.17594v1"
       }
     ],
-    "score": 68,
+    "score": 63,
     "infographic": {
-      "key_insight": "CuCrZr’s nano-precipitation strengthening is not stable under fusion-relevant irradiation: it degrades by different mechanisms at low and high temperatures.",
-      "engineering_relevance": "This threatens the long-term reliability of CuCrZr heat-sinks in fusion reactors and signals a need for new Cu-based alloys that retain strength under neutron exposure.",
+      "key_insight": "CuCrZr’s nano-precipitation hardening is not stable under fusion-relevant irradiation: precipitates dissolve or re-form depending on temperature, while transmutation and defect formation further degrade the alloy.",
+      "engineering_relevance": "This challenges the long-term reliability of CuCrZr as a heat-sink material in fusion reactors and points to the need for new Cu-based alloys that retain strength under neutron exposure.",
       "method": [
-        "In situ TEM during heavy-ion irradiation",
-        "He implantation experiments",
-        "Thermodynamic and transmutation modelling"
+        "In situ transmission electron microscopy during heavy-ion irradiation and He implantation",
+        "Thermodynamic and transmutation modelling",
+        "Comparison of low-temperature ballistic dissolution versus high-temperature dissolution/re-precipitation"
       ],
-      "evidence_signal": "The abstract reports consistent precipitate degradation under both irradiation-temperature extremes, plus He/Kr defect formation and a modeled five-year transmutation shift toward Ni-Zr intermetallics.",
-      "watch_item": "Ion-irradiation dose rates differ from reactor neutron conditions, so direct lifetime translation to actual fusion service needs caution.",
+      "evidence_signal": "The abstract reports direct microstructural observations showing precipitate degradation, plus modelling of helium bubbles, Kr-rich voids, and five-year transmutation toward Ni-Zr intermetallics.",
+      "watch_item": "Ion irradiation occurs at much higher dose rates than reactor neutron conditions, so the balance of mechanisms may differ in-service.",
       "hashtags": [
         "#FusionMaterials",
         "#CuCrZr",
         "#IrradiationDamage",
-        "#TEM",
-        "#HeatSinkAlloys"
+        "#HeatSinkAlloy",
+        "#MaterialsDegradation"
       ],
       "paper_id": "2026-07-20-arxiv-cucrzr_heat_sink_irradiation_performance_reveals_new_challenges_for_thermonuclear_fusion_r",
       "paper_title": "CuCrZr heat-sink irradiation performance reveals new challenges for thermonuclear fusion reactors",
       "paper_date": "2026-07-20",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-07-21T12:23:14",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-07-20-arxiv-defect_configuration_not_nitrogen_content_governs_the_mechanical_integrity_of_nitrogen_dop",
-    "arxiv_id": "2607.18129v1",
-    "date": "2026-07-20",
-    "title": "Defect configuration, not nitrogen content, governs the mechanical integrity of nitrogen-doped graphene: a molecular dynamics study",
-    "authors": "Indranil Rudra, Jahid Emon, A. K. M. Monjur Morshed",
-    "abstract": "The mechanical reliability of nitrogen-doped graphene is often attributed to its nitrogen content, yet nitrogen occurs in chemically distinct configurations whose individual mechanical roles, and whose interactions with other defects, remain unresolved. Here, molecular dynamics simulations of uniaxial tension are used to separate the contributions of nitrogen chemistry, missing atoms, and defect arrangement to the strength and fracture of graphene. Three size-matched defects, a graphitic-nitrogen cluster, a void, and a pyridinic-nitrogen cluster, are compared so that two controlled contrasts isolate the effects of edge chemistry and of the vacancy independently. The graphitic cluster leaves the mechanical properties essentially unchanged (a strength reduction of <1 %), whereas the void degrades the ultimate strength by ~23 % and the pyridinic cluster, which combines the same vacancy with edge nitrogen, is the most damaging (~30 %), failing abruptly from its nitrogen-decorated rim rather than through the damage-tolerant process of the bare void. The mechanical impact of a nitrogen cluster is therefore governed by whether it carries vacancies, not by nitrogen itself. When a nitrogen cluster and a void coexist, their interaction is controlled by orientation relative to the load: in-line defects interact negligibly and fail at the more severe member, whereas side-by-side defects couple through overlapping stress fields and weaken the sheet progressively as they approach, an interaction that persists to separations of ~80 Å. These results establish that the mechanical integrity of nitrogen-modified graphene is determined by the configuration of defects, the bonding environment of nitrogen, and the arrangement of coexisting defects relative to the load, rather than by nitrogen content or defect density alone, thereby providing a basis for defect-tolerant design.",
-    "category": "Microstructure",
-    "source": "arXiv",
-    "published": "2026-07-20T16:23:33Z",
-    "updated": "2026-07-20T16:23:33Z",
-    "primary_category": "cond-mat.mtrl-sci",
-    "categories": [
-      "cond-mat.mtrl-sci"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2607.18129v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2607.18129v1"
-      }
-    ],
-    "score": 65,
-    "infographic": {
-      "key_insight": "Mechanical failure in nitrogen-doped graphene is controlled by defect configuration and vacancy content, not by nitrogen content alone.",
-      "engineering_relevance": "Defect-tolerant graphene design should prioritize avoiding vacancies and harmful defect arrangements, since nitrogen chemistry by itself has little effect unless it alters the vacancy geometry.",
-      "method": [
-        "Molecular dynamics simulations of uniaxial tensile loading",
-        "Compared three size-matched defects: graphitic-N cluster, bare void, and pyridinic-N cluster",
-        "Evaluated how defect orientation and spacing change interaction between a nitrogen cluster and a void"
-      ],
-      "evidence_signal": "The simulations show <1% strength loss for graphitic-N, about 23% loss for a void, and about 30% loss for a pyridinic-N cluster, with defect interactions persisting to roughly 80 Å.",
-      "watch_item": "The conclusions are based on atomistic simulation under uniaxial tension, so performance may differ for other load states, temperatures, or larger-scale microstructures.",
-      "hashtags": [
-        "#Graphene",
-        "#NitrogenDoping",
-        "#MolecularDynamics",
-        "#Defects",
-        "#MaterialsDesign"
-      ],
-      "paper_id": "2026-07-20-arxiv-defect_configuration_not_nitrogen_content_governs_the_mechanical_integrity_of_nitrogen_dop",
-      "paper_title": "Defect configuration, not nitrogen content, governs the mechanical integrity of nitrogen-doped graphene: a molecular dynamics study",
-      "paper_date": "2026-07-20",
-      "paper_category": "Microstructure",
-      "generated_at": "2026-07-21T12:23:18",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-07-20-arxiv-first_principles_electronic_transport_properties_of_ti_and_ti_6al_4v_for_modeling_ultrasho",
-    "arxiv_id": "2607.18085v1",
-    "date": "2026-07-20",
-    "title": "First-principles electronic transport properties of Ti and Ti-6Al-4V for modeling ultrashort-pulse laser ablation",
-    "authors": "Korbinian Hobmaier, Guillaume E. Allemand, Alberto Marmodoro, Matthieu J. Verstraete, Ján Minár, Heinz P. Huber",
-    "abstract": "Predictive modeling of ultrashort-pulse laser ablation requires temperature-dependent material parameters derived from the electronic structure, namely the electronic thermal conductivity, electron--phonon coupling, and heat capacity. These parameters are well documented for elemental metals but remain sparsely documented for alloys, apart from application-relevant exceptions such as stainless steels. The technologically important titanium alloy Ti-6Al-4V is a prominent example, which is still modeled using elemental-titanium values. We compute the electronic transport of hcp Ti and Ti-6Al-4V from first principles, using the Kubo--Greenwood formalism within the Korringa--Kohn--Rostoker coherent-potential-approximation framework, treating chemical and thermal disorder on equal footing. For elemental Ti, the calculated electrical resistivity agrees with independent \\textsc{abinit} electron--phonon calculations and experiment, and also reproduces the high-temperature saturation near the Mott--Ioffe--Regel limit. Under electron--phonon nonequilibrium, the electronic thermal conductivity saturates and then decreases with electronic temperature, reaching a maximum of about \\SI{2.97}{\\kilo\\watt\\per\\metre\\per\\kelvin} in Ti but only \\SI{0.47}{\\kilo\\watt\\per\\metre\\per\\kelvin} in Ti-6Al-4V, a factor of 6.4 lower. In two-temperature-model simulations the alloy and elemental parameter sets yield peak lattice temperatures differing by only about 1.4\\%, consistent with reported experimental ablation thresholds that differ by about 3\\%, well within their measurement uncertainties. Replacing the first-principles thermal conductivity with the low-temperature Drude limit shifts the peak lattice temperature by up to 19\\%, showing that the functional form of the transport model is even more important than the elemental vs alloy distinction for predictive accuracy.",
-    "category": "Crystal and Structure",
-    "source": "arXiv",
-    "published": "2026-07-20T15:53:00Z",
-    "updated": "2026-07-20T15:53:00Z",
-    "primary_category": "cond-mat.mtrl-sci",
-    "categories": [
-      "cond-mat.mtrl-sci"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2607.18085v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2607.18085v1"
-      }
-    ],
-    "score": 65,
-    "infographic": {
-      "key_insight": "First-principles transport calculations show that Ti-6Al-4V has much lower electronic thermal conductivity than elemental Ti, and that the transport model form strongly affects ultrashort-pulse laser ablation predictions.",
-      "engineering_relevance": "For predictive laser-ablation modeling, alloy-specific electronic parameters from electronic structure are more important than reusing elemental Ti values, and accurate temperature-dependent conductivity is critical.",
-      "method": [
-        "Computed electronic transport for hcp Ti and Ti-6Al-4V from first principles.",
-        "Used Kubo-Greenwood within the Korringa-Kohn-Rostoker coherent-potential-approximation framework.",
-        "Included chemical and thermal disorder to obtain temperature-dependent conductivity, coupling, and heat-capacity inputs."
-      ],
-      "evidence_signal": "The calculated Ti resistivity matches independent ab initio and experimental trends, while Ti-6Al-4V reaches only about 0.47 kW m^-1 K^-1 versus 2.97 kW m^-1 K^-1 for Ti, and the model choice can shift peak lattice temperature by up to 19%.",
-      "watch_item": "The results emphasize that using a low-temperature Drude limit or elemental-property shortcuts can materially distort ablation predictions, especially outside calibrated temperature ranges.",
-      "hashtags": [
-        "#MaterialsScience",
-        "#ElectronicTransport",
-        "#LaserAblation",
-        "#FirstPrinciples",
-        "#Ti64"
-      ],
-      "paper_id": "2026-07-20-arxiv-first_principles_electronic_transport_properties_of_ti_and_ti_6al_4v_for_modeling_ultrasho",
-      "paper_title": "First-principles electronic transport properties of Ti and Ti-6Al-4V for modeling ultrashort-pulse laser ablation",
-      "paper_date": "2026-07-20",
-      "paper_category": "Crystal and Structure",
-      "generated_at": "2026-07-21T12:23:21",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-07-20-arxiv-superconductivity_in_mghcu3_perovskite_revisited",
-    "arxiv_id": "2607.18117v1",
-    "date": "2026-07-20",
-    "title": "Superconductivity in MgHCu3 perovskite revisited",
-    "authors": "Piotr Szkudlarek, Wojciech Grochala",
-    "abstract": "We reexamine the crystal structure, electronic structure, lattice dynamics, phonon dispersion, electron-phonon coupling, and superconducting properties of MgHCu3 perovskite using the PBEsol and PBE functionals. This perovskite phase was recently proposed to exhibit superconductivity with the critical superconducting temperature, TC, of 42 K, which falls slightly over the classical 40 K limit for the phonon driven superconductivity. We show that although the crystal and electronic structure of this hypothetical compound are quite robust with respect to the k point mesh and functional used, yet the phonons and phonon related properties are extremely sensitive to the density of the grid chosen as well as functional used for calculations. Correspondingly, the values of the critical superconducting temperature calculated here for different Gaussian broadenings vary in a broad range of ca. 10 to 31 K and they do not exceed the classical limit. We suggest that the properties of this and many other high TC hydrides claimed should be thoroughly scrutinized using a variety of functionals, and benchmarked with experiment, to provide more reliable values of TC.",
-    "category": "Crystal and Structure",
-    "source": "arXiv",
-    "published": "2026-07-20T16:12:11Z",
-    "updated": "2026-07-20T16:12:11Z",
-    "primary_category": "cond-mat.supr-con",
-    "categories": [
-      "cond-mat.supr-con",
-      "cond-mat.mtrl-sci"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2607.18117v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2607.18117v1"
-      }
-    ],
-    "score": 64,
-    "infographic": {
-      "key_insight": "MgHCu3 remains structurally and electronically robust, but its phonons and predicted superconducting Tc are highly sensitive to computational setup, challenging the earlier 42 K claim.",
-      "engineering_relevance": "The study shows that superconductivity predictions for hydride perovskites must be benchmarked across functionals and k-point/phonon grids before being trusted for materials screening.",
-      "method": [
-        "Recomputed crystal and electronic structure with PBEsol and PBE.",
-        "Evaluated lattice dynamics and phonon dispersion using different grid densities.",
-        "Calculated electron-phonon coupling and Tc under multiple Gaussian broadenings."
-      ],
-      "evidence_signal": "Across settings, the computed critical temperature varied widely from about 10 K to 31 K, and never exceeded the classical 40 K limit.",
-      "watch_item": "Predicted superconducting properties are highly sensitive to numerical resolution and functional choice, so single-setup Tc claims may be unreliable.",
-      "hashtags": [
-        "#Superconductivity",
-        "#Hydrides",
-        "#DFT",
-        "#Phonons",
-        "#MaterialsScience"
-      ],
-      "paper_id": "2026-07-20-arxiv-superconductivity_in_mghcu3_perovskite_revisited",
-      "paper_title": "Superconductivity in MgHCu3 perovskite revisited",
-      "paper_date": "2026-07-20",
-      "paper_category": "Crystal and Structure",
-      "generated_at": "2026-07-21T12:23:23",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-07-20-arxiv-informatics_modeling_of_high_tg_polymers_assessing_the_role_of_processing_versus_chemistry",
-    "arxiv_id": "2607.17925v1",
-    "date": "2026-07-20",
-    "title": "Informatics Modeling of High Tg Polymers: Assessing the Role of Processing versus Chemistry",
-    "authors": "Qinrui Liu, Scott R. Broderick",
-    "abstract": "Despite the advances in structure-based modeling of polymer properties, accurately predicting glass transition temperature (Tg) is still challenging for polymers whose behavior is strongly influenced by intermolecular interactions and processing conditions. We previously developed a machine-learning model based on polymer topological descriptors to predict Tg. The model performed well and was based solely on the chemistry and structure of the polymer without any inclusion of processing parameters. In this work, we have extended that work by first applying that same model to a larger range of polymers and second by integrating processing parameters into the feature set. The chemistry-based model still demonstrates consistent predictive performance for most polymers, indicating that Tg is indeed primarily chemistry and structure driven and not strongly impacted by processing. However, several polymers exhibited deviations between predicted and experimental Tg values. Detailed analysis reveals that these differences are related to strong intermolecular interactions and processing-dependent factors, particularly for polymers prepared by solution casting and high temperature annealing. These results demonstrate that molecular topology provides a strong foundation for Tg prediction; however, this approach also screens out those classes of polymers for with processing conditions play an important role.",
-    "category": "Crystal and Structure",
-    "source": "arXiv",
-    "published": "2026-07-20T13:20:51Z",
-    "updated": "2026-07-20T13:20:51Z",
-    "primary_category": "cond-mat.mtrl-sci",
-    "categories": [
-      "cond-mat.mtrl-sci"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2607.17925v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2607.17925v1"
-      }
-    ],
-    "score": 64,
-    "infographic": {
-      "key_insight": "Polymer glass transition temperature (Tg) is predicted well by chemistry and molecular topology alone for most high-Tg polymers, while processing effects matter mainly for specific outliers.",
-      "engineering_relevance": "For polymer design and screening, topological descriptors offer a strong first-pass Tg predictor, but processing history should be considered for materials with strong intermolecular interactions or sensitive fabrication routes.",
-      "method": [
-        "Built a machine-learning model using polymer topological descriptors to predict Tg.",
-        "Extended evaluation to a larger polymer set.",
-        "Compared chemistry-only features against an expanded feature set including processing parameters."
-      ],
-      "evidence_signal": "The chemistry-based model maintained consistent predictive performance across most polymers, with notable prediction gaps appearing for solution-cast and high-temperature-annealed samples.",
-      "watch_item": "Processing-dependent effects can cause significant Tg deviations in certain polymer classes, so chemistry-only predictions may miss important outliers.",
-      "hashtags": [
-        "#PolymerML",
-        "#GlassTransition",
-        "#MaterialsInformatics",
-        "#StructureProperty",
-        "#ProcessingEffects"
-      ],
-      "paper_id": "2026-07-20-arxiv-informatics_modeling_of_high_tg_polymers_assessing_the_role_of_processing_versus_chemistry",
-      "paper_title": "Informatics Modeling of High Tg Polymers: Assessing the Role of Processing versus Chemistry",
-      "paper_date": "2026-07-20",
-      "paper_category": "Crystal and Structure",
-      "generated_at": "2026-07-21T12:23:26",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-07-19-arxiv-first_principles_electron_phonon_scattering_in_real_time_tddft",
-    "arxiv_id": "2607.17265v1",
-    "date": "2026-07-19",
-    "title": "First-principles electron-phonon scattering in real-time TDDFT",
-    "authors": "Zhengwei Nie, Subhojit Pal, Marti Lüders, Alexander Buccheri, Hannes Hübener, Shunsuke A. Sato",
-    "abstract": "Real-time time-dependent density functional theory provides a first-principles description of coherent electron dynamics in laser-driven solids, but its unitary formulation cannot capture the irreversible scattering, relaxation, and decoherence processes that drive excited carriers toward equilibrium. Here, we develop a dissipative rt-TDDFT framework in which first-principles electron-phonon interactions enter the evolution of the reduced one-body density matrix through self-energy-derived collision integrals within the Born-Markov approximation. The approach retains the quantum-coherent real-time propagation of the electronic system while introducing phonon-mediated transitions that redistribute carriers in energy and crystal momentum, thereby incorporating the microscopic momentum-transfer processes responsible for relaxation in real materials. The resulting framework provides a practical first-principles route to simulate relaxation, decoherence, and time-resolved spectroscopic signatures in realistic crystalline materials.",
-    "category": "Crystal and Structure",
-    "source": "arXiv",
-    "published": "2026-07-19T14:13:41Z",
-    "updated": "2026-07-19T14:13:41Z",
-    "primary_category": "cond-mat.mtrl-sci",
-    "categories": [
-      "cond-mat.mtrl-sci"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2607.17265v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2607.17265v1"
-      }
-    ],
-    "score": 64,
-    "infographic": {
-      "key_insight": "The paper extends real-time TDDFT with first-principles electron-phonon scattering so laser-excited carriers can relax, decohere, and redistribute in energy and momentum.",
-      "engineering_relevance": "This provides a predictive simulation tool for nonequilibrium carrier dynamics in crystalline materials, useful for interpreting ultrafast spectroscopy and designing optoelectronic devices.",
-      "method": [
-        "Propagate the reduced one-body density matrix in real time within rt-TDDFT.",
-        "Add phonon-mediated collision integrals from electron-phonon self-energies using the Born-Markov approximation.",
-        "Retain coherent electronic evolution while enabling irreversible scattering and relaxation."
-      ],
-      "evidence_signal": "The abstract presents a theoretical framework and claims its ability to capture relaxation and time-resolved spectroscopic signatures, but it does not report benchmark datasets or numerical validation here.",
-      "watch_item": "The Born-Markov treatment may limit accuracy when memory effects, strong coupling, or highly non-Markovian phonon dynamics are important.",
-      "hashtags": [
-        "#RTTDDFT",
-        "#ElectronPhonon",
-        "#UltrafastDynamics",
-        "#FirstPrinciples",
-        "#MaterialsSimulation"
-      ],
-      "paper_id": "2026-07-19-arxiv-first_principles_electron_phonon_scattering_in_real_time_tddft",
-      "paper_title": "First-principles electron-phonon scattering in real-time TDDFT",
-      "paper_date": "2026-07-19",
-      "paper_category": "Crystal and Structure",
-      "generated_at": "2026-07-21T12:23:28",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-07-20-arxiv-optimal_market_making_in_prediction_markets",
-    "arxiv_id": "2607.17991v1",
-    "date": "2026-07-20",
-    "title": "Optimal Market Making in Prediction Markets",
-    "authors": "Dominik Feil, Max Nendel",
-    "abstract": "Prediction markets are attracting growing attention as trading volumes rise and their practical relevance increases. To ensure efficient price discovery, liquidity provision becomes ever more important. Due to the binary settlement structure in prediction markets, optimal market making leads to an optimization problem that is fundamentally different from the ones studied in classical settings. In this paper, we develop a stochastic control framework for prediction markets in which the market price is modeled as a conditional probability of the outcome that is generated by a transformed latent belief diffusion. A market maker selects bid and ask quotes to maximize expected terminal wealth while controlling both mark-to-market inventory risk and the settlement risk of remaining positions at resolution. We derive the associated Hamilton--Jacobi--Bellman equation and characterize the unique optimal bid and ask quotes. By transforming the equation to the latent belief space and using a fixed-point argument, we prove existence and uniqueness of a classical solution and verify the resulting optimal quoting strategy. In addition, we provide a numerical analysis, which reveals how optimal liquidity provision in prediction markets depends on inventory, market beliefs, time to resolution, and risk aversion. Further, we demonstrate that the optimal quoting strategy substantially improves downside protection while preserving most of its expected profit relative to a myopic benchmark that maximizes the instantaneous expected mark-to-market profit.",
-    "category": "Materials Discovery",
-    "source": "arXiv",
-    "published": "2026-07-20T14:22:52Z",
-    "updated": "2026-07-20T14:22:52Z",
-    "primary_category": "q-fin.TR",
-    "categories": [
-      "q-fin.TR",
-      "math.OC",
-      "q-fin.MF"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2607.17991v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2607.17991v1"
-      }
-    ],
-    "score": 63,
-    "infographic": {
-      "key_insight": "A stochastic control model shows how a prediction-market maker can optimally set bid/ask quotes to balance expected profit against inventory and settlement risk under binary outcomes.",
-      "engineering_relevance": "The result gives a principled pricing and liquidity-provision policy for real-time trading systems where market design must manage adverse inventory exposure and terminal payout risk.",
-      "method": [
-        "Model the market price as a conditional probability generated by a transformed latent belief diffusion.",
-        "Formulate market making as an HJB optimal control problem with terminal wealth, inventory risk, and resolution risk.",
-        "Solve for the unique optimal bid/ask quotes via a latent-space transformation and fixed-point existence/uniqueness argument."
-      ],
-      "evidence_signal": "The abstract reports a numerical analysis comparing the optimal strategy with a myopic benchmark, showing better downside protection while retaining most expected profit.",
-      "watch_item": "The framework depends on model assumptions about belief diffusion, binary settlement, and risk preferences, so performance may degrade if the market dynamics are misspecified.",
-      "hashtags": [
-        "#PredictionMarkets",
-        "#MarketMaking",
-        "#StochasticControl",
-        "#OptimalQuoting",
-        "#RiskManagement"
-      ],
-      "paper_id": "2026-07-20-arxiv-optimal_market_making_in_prediction_markets",
-      "paper_title": "Optimal Market Making in Prediction Markets",
-      "paper_date": "2026-07-20",
-      "paper_category": "Materials Discovery",
-      "generated_at": "2026-07-21T12:23:31",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-07-20-arxiv-phase_field_modeling_of_tio2_nanocarving_via_reaction_with_hydrogen_bearing_gas",
-    "arxiv_id": "2607.18172v1",
-    "date": "2026-07-20",
-    "title": "Phase-field modeling of TiO2 nanocarving via reaction with hydrogen-bearing gas",
-    "authors": "Alireza Seifi, Sheikh Akbar, Yanzhou Ji",
-    "abstract": "TiO2 nanocrystals can be fabricated by carving the TiO2 bulk polycrystals using reductive H2-bearing gases, yielding single-crystal [001] nanowire arrays. However, the origin of the strongly anisotropic nanowire morphology during nanocarving remains largely unexplored. In this study, we formulate a 2-D phase-field model to investigate the TiO2 morphology evolution during nanocarving processes. The model incorporates TiO2 reduction reaction, Ti3+ diffusion, and anisotropies in surface energy, diffusivity and reaction rate. Through systematic simulations in both single- and poly-crystals, we elucidate the roles of different anisotropy factors in nanocrystal morphologies at different carving stages, identifying the strong reaction rate anisotropy as the dominant factor for experimentally observed nanowire morphologies. We further explore the effect of grain misorientation angle, generating a nanocarving morphology map to guide grain orientation control. This study provides insights into microstructure evolution mechanisms during nanocarving and guidances for related microstructure control.",
-    "category": "Microstructure",
-    "source": "arXiv",
-    "published": "2026-07-20T17:12:37Z",
-    "updated": "2026-07-20T17:12:37Z",
-    "primary_category": "cond-mat.mtrl-sci",
-    "categories": [
-      "cond-mat.mtrl-sci",
-      "cond-mat.mes-hall"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2607.18172v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2607.18172v1"
-      }
-    ],
-    "score": 62,
-    "infographic": {
-      "key_insight": "A 2-D phase-field model shows that strong anisotropy in the TiO2 surface reaction rate is the main driver of the observed [001] nanowire morphology during H2-assisted nanocarving.",
-      "engineering_relevance": "The results provide a practical orientation-control map for tuning TiO2 microstructures and guiding fabrication of aligned nanowire arrays.",
-      "method": [
-        "Phase-field model of TiO2 nanocarving in H2-bearing gas",
-        "Includes TiO2 reduction, Ti3+ diffusion, and anisotropic surface energy, diffusivity, and reaction rate",
-        "Simulated single-crystal and polycrystal cases across grain misorientation angles"
-      ],
-      "evidence_signal": "Systematic simulations across carving stages and grain orientations were used to isolate the dominant anisotropy factor and generate a nanocarving morphology map.",
-      "watch_item": "The study is 2-D and model-based, so 3-D effects, parameter calibration, and real gas/defect complexities may limit direct transfer to experiments.",
-      "hashtags": [
-        "#PhaseFieldModeling",
-        "#TiO2",
-        "#Nanocarving",
-        "#MicrostructureEvolution",
-        "#MaterialsSimulation"
-      ],
-      "paper_id": "2026-07-20-arxiv-phase_field_modeling_of_tio2_nanocarving_via_reaction_with_hydrogen_bearing_gas",
-      "paper_title": "Phase-field modeling of TiO2 nanocarving via reaction with hydrogen-bearing gas",
-      "paper_date": "2026-07-20",
-      "paper_category": "Microstructure",
-      "generated_at": "2026-07-21T12:23:34",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-07-20-arxiv-optimal_transition_states_for_polaron_hopping_transport_without_supercells",
-    "arxiv_id": "2607.18096v1",
-    "date": "2026-07-20",
-    "title": "Optimal transition states for polaron hopping transport without supercells",
-    "authors": "Vasilii Vasilchenko, Matteo Giantomassi, Samuel Poncé, Xavier Gonze",
-    "abstract": "Polaron formation localizes charge carriers and drives a crossover from band-like to hopping transport in materials. Hopping dynamics can be obtained from DFT supercell calculations of transition states, but these suffer from polaron self-interaction, spurious electrostatics, and poor scaling with polaron size. We introduce a supercell-free framework for \\textit{ab initio} polaron hopping transport based on variational polaron equations and the string method. The approach optimizes transition states between self-trapped polaron states directly in reciprocal space and provides the polaron configurations along the path, enabling evaluation of adiabatic hopping rates and mobilities. We apply the method to LiF and rutile TiO$_2$, revealing multi-step and anisotropic hopping mechanisms. In rutile TiO$_2$, the computed electron-polaron mobility agrees with experiment, whereas band-like Boltzmann transport substantially overestimates the mobility. Our results establish a scalable route to first-principles polaron-hopping dynamics in materials in which charge motion is governed by self-trapping.",
-    "category": "AI materials science",
-    "source": "arXiv",
-    "published": "2026-07-20T15:58:39Z",
-    "updated": "2026-07-20T15:58:39Z",
-    "primary_category": "cond-mat.mtrl-sci",
-    "categories": [
-      "cond-mat.mtrl-sci"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2607.18096v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2607.18096v1"
-      }
-    ],
-    "score": 62,
-    "infographic": {
-      "key_insight": "A supercell-free variational/string-method framework can locate optimal polaron hopping transition states directly in reciprocal space, enabling first-principles hopping transport calculations without supercell artifacts.",
-      "engineering_relevance": "This provides a scalable way to predict mobility in self-trapped-charge materials, improving reliability for materials design where conventional band-transport models fail.",
-      "method": [
-        "Use variational polaron equations to represent self-trapped charge states without explicit supercells.",
-        "Apply the string method to optimize transition states and trace the polaron path between minima.",
-        "Compute adiabatic hopping rates and mobilities from the resulting polaron configurations."
-      ],
-      "evidence_signal": "The method is demonstrated on LiF and rutile TiO2, where it reveals multi-step, anisotropic hopping and yields TiO2 electron-polaron mobility consistent with experiment.",
-      "watch_item": "The approach targets self-trapping regimes, so its accuracy and practicality depend on having a well-defined polaronic state and a reliable variational model for the material.",
-      "hashtags": [
-        "#materialsScience",
-        "#polaronTransport",
-        "#DFT",
-        "#firstPrinciples",
-        "#mobility"
-      ],
-      "paper_id": "2026-07-20-arxiv-optimal_transition_states_for_polaron_hopping_transport_without_supercells",
-      "paper_title": "Optimal transition states for polaron hopping transport without supercells",
-      "paper_date": "2026-07-20",
-      "paper_category": "AI materials science",
-      "generated_at": "2026-07-21T12:23:36",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-07-20-arxiv-the_recurrent_structural_frameworks_of_stable_inorganic_materials",
-    "arxiv_id": "2607.17911v1",
-    "date": "2026-07-20",
-    "title": "The Recurrent Structural Frameworks of Stable Inorganic Materials",
-    "authors": "Roee Asher, Nadav Moav, Lee A. Burton",
-    "abstract": "The number of possible crystal structures vastly exceeds the number realized among thermodynamically stable inorganic materials, suggesting that experimentally accessible structure space is organized around a limited set of preferred structural frameworks. Analysis of 23,160 structures on the thermodynamic convex hull identifies 6,820 distinct structural frameworks, of which 2,382 recur across multiple chemically distinct materials and are therefore classified as structural prototypes. Within a filtered dataset, metallic systems exhibit particularly strong structural recurrence, with 6,270 materials grouped into 535 frameworks and 327 prototypes, while 5,557 ionic compounds occupy 1,704 frameworks and 696 prototypes. These results demonstrate that stable inorganic materials occupy a highly compressible region of structure space and establish a recurrence-based catalog of structural prototypes that provides an empirical measure of framework prevalence, enabling the relative likelihood of structural frameworks in future materials to be estimated from their recurrence among known compounds.",
-    "category": "Crystal and Structure",
-    "source": "arXiv",
-    "published": "2026-07-20T13:07:02Z",
-    "updated": "2026-07-20T13:07:02Z",
-    "primary_category": "cond-mat.mtrl-sci",
-    "categories": [
-      "cond-mat.mtrl-sci"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2607.17911v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2607.17911v1"
-      }
-    ],
-    "score": 62,
-    "infographic": {
-      "key_insight": "Stable inorganic materials occupy a highly recurrent, compressible set of structural frameworks, with many chemically distinct compounds reusing the same prototypes.",
-      "engineering_relevance": "A recurrence-based prototype catalog can help materials engineers prioritize likely crystal frameworks when searching for new stable compounds.",
-      "method": [
-        "Analyze 23,160 thermodynamically stable inorganic structures on the convex hull.",
-        "Group structures into distinct frameworks and identify recurring ones as structural prototypes.",
-        "Compare recurrence patterns across metallic and ionic subsets."
-      ],
-      "evidence_signal": "The abstract reports 6,820 distinct frameworks among 23,160 stable structures, with 2,382 recurring prototypes; in filtered subsets, 6,270 metallic systems map to 535 frameworks and 327 prototypes, while 5,557 ionic compounds map to 1,704 frameworks and 696 prototypes.",
-      "watch_item": "Framework recurrence is an empirical measure and may depend on dataset filtering, structure representation choices, and how chemically distinct materials are defined.",
-      "hashtags": [
-        "#materialsinformatics",
-        "#crystallography",
-        "#structurespace",
-        "#materialsdesign",
-        "#computationalchemistry"
-      ],
-      "paper_id": "2026-07-20-arxiv-the_recurrent_structural_frameworks_of_stable_inorganic_materials",
-      "paper_title": "The Recurrent Structural Frameworks of Stable Inorganic Materials",
-      "paper_date": "2026-07-20",
-      "paper_category": "Crystal and Structure",
-      "generated_at": "2026-07-21T12:23:40",
+      "generated_at": "2026-07-22T12:24:51",
       "generator": "openai"
     }
   }
