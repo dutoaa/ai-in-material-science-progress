@@ -1,24 +1,24 @@
 {
-  "key_insight": "Geometry-based leverage score sampling can pick a much smaller but similarly informative subset of ASSYST structures for training linear ACE potentials.",
-  "engineering_relevance": "This reduces DFT labeling cost by about 2–3× while preserving energy, force, and defect-level accuracy, making MLIP development faster and cheaper.",
+  "key_insight": "Geometry-only leverage scores can choose a much smaller, label-free training subset that still reaches near-plateau accuracy for linear ACE potentials.",
+  "engineering_relevance": "This can cut DFT labeling cost by about 23x for ASSYST-generated training pools while preserving force, energy, and defect-level performance.",
   "method": [
-    "Build linear ACE potentials on ASSYST-generated structure pools.",
-    "Compare leverage-guided CUR-type subset selection with random, energy-based, and force-based sampling.",
-    "Validate on Al and test transfer on Cu and Al-Cu alloys."
+    "Compute statistical leverage scores from structure descriptors in ASSYST pools",
+    "Use CUR-type, leverage-guided subset sampling for iterative training",
+    "Compare against random, energy-based, and force-based selection baselines"
   ],
-  "evidence_signal": "Leverage-guided subsets reached plateau-level energy and force accuracy using roughly 30–40% of labeled configurations, with comparable defect energetics once chemical diversity was sufficient.",
-  "watch_item": "Performance depends on having a representative structure pool and enough chemical diversity, so overly narrow pools may limit transferability.",
+  "evidence_signal": "In Al benchmarks, leverage-selected subsets achieved plateau-level energy and force accuracy using roughly 30% to 40% of the labeled data, with alloy transfer tests showing comparable defect energetics once chemical diversity was sufficient.",
+  "watch_item": "The gain depends on having a well-structured pool and enough chemical/defect diversity, so performance may drop if the candidate set is not representative.",
   "hashtags": [
-    "#MaterialsInformatics",
     "#MachineLearningPotentials",
-    "#DensityFunctionalTheory",
+    "#DFT",
+    "#AtomicClusterExpansion",
     "#ActiveLearning",
-    "#AtomicClusterExpansion"
+    "#MaterialsInformatics"
   ],
   "paper_id": "2026-07-20-arxiv-data_efficient_training_of_linear_ace_potentials_through_leverage_guided_subset_selection",
   "paper_title": "Data-Efficient Training of Linear ACE Potentials through Leverage-Guided Subset Selection of ASSYST Structure Pools",
   "paper_date": "2026-07-20",
   "paper_category": "Crystal and Structure",
-  "generated_at": "2026-07-22T12:24:11",
+  "generated_at": "2026-07-23T12:23:49",
   "generator": "openai"
 }
