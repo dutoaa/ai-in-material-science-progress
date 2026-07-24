@@ -1,24 +1,24 @@
 {
-  "key_insight": "Foundational MLIPs can substantially improve DFT formation energies toward experimental accuracy, and latent-feature delta-learning pushes errors below 50 meV/atom.",
-  "engineering_relevance": "This provides a more accurate, open-source route to screen crystal stability and prioritize candidate materials without additional expensive DFT calculations.",
+  "key_insight": "Foundational r$^2$SCAN-trained ML interatomic potentials can correct DFT formation energies toward experimental accuracy, and latent-feature delta-learning pushes errors below 50 meV/atom without extra DFT calculations.",
+  "engineering_relevance": "This provides a practical, reproducible path to rank crystal stability more reliably in materials screening pipelines using existing structures and low-cost post-processing corrections.",
   "method": [
-    "Benchmarked MC3D formation energies against OQMD, Materials Project, and experimental enthalpies.",
-    "Used PET-OMATPES, a foundational MLIP trained at r2SCAN level, to correct GGA-based formation energies.",
-    "Trained classical delta-learning models on latent MLIP features to further refine predictions and preserve phase-stability trends."
+    "Compare MC3D thermodynamic stability against OQMD, Materials Project, and experimental formation enthalpies",
+    "Use PET-OMATPES foundational MLIP to replace/augment GGA-level formation energies",
+    "Train classical delta-learning models on latent MLIP features with regularization to refine energy corrections"
   ],
-  "evidence_signal": "The abstract reports more than a 40% reduction in mean absolute error relative to GGA, with final errors below 50 meV/atom, comparable to experimental uncertainty.",
-  "watch_item": "The correction quality may depend on the MLIP’s training domain and the regularization choice, so extrapolation to unfamiliar chemistries should be checked carefully.",
+  "evidence_signal": "The abstract reports more than a 40% MAE reduction versus GGA and final errors below 50 meV/atom, comparable to experimental uncertainty.",
+  "watch_item": "Corrections may alter relative phase stability if latent-feature models are not carefully regularized, so stability rankings should be checked for unintended shifts.",
   "hashtags": [
     "#MaterialsScience",
-    "#DensityFunctionalTheory",
     "#MachineLearning",
-    "#CrystalStability",
-    "#DeltaLearning"
+    "#DFT",
+    "#CrystalStructure",
+    "#MLIPs"
   ],
   "paper_id": "2026-07-20-arxiv-correcting_dft_formation_energies_towards_experimental_accuracy_using_foundational_mlips_a",
   "paper_title": "Correcting DFT formation energies towards experimental accuracy using foundational MLIPs and latent-feature delta-learning",
   "paper_date": "2026-07-20",
   "paper_category": "Crystal and Structure",
-  "generated_at": "2026-07-23T12:23:04",
+  "generated_at": "2026-07-24T12:17:34",
   "generator": "openai"
 }
