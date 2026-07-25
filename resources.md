@@ -1,6 +1,6 @@
 # AI materials science Progress Public Resources
 
-Generated: 2026-07-24
+Generated: 2026-07-25
 Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 
 ## 1. ATLAS: A Foundation Neural Sampler for Amorphous Materials
@@ -19,7 +19,15 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2607.20681v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-22-arxiv-a_high_dimensional_neural_network_potential_for_finite_temperature_phenomena_in_niti_marte_infographic.json
 
-## 3. Graph Neural Network Force Fields (GPTFF-mol) for Organic Molecules from Optimization Trajectories (OpenGEM26)
+## 3. Machine learning based prediction of optical properties in two-dimensional Mo-W-S-Se-Te transition-metal dichalcogenide alloys through physics-informed sampling
+
+- Date: 2026-07-23
+- Category: Property Prediction
+- arXiv: https://arxiv.org/abs/2607.21246v1
+- PDF: https://arxiv.org/pdf/2607.21246v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-23-arxiv-machine_learning_based_prediction_of_optical_properties_in_two_dimensional_mo_w_s_se_te_tr_infographic.json
+
+## 4. Graph Neural Network Force Fields (GPTFF-mol) for Organic Molecules from Optimization Trajectories (OpenGEM26)
 
 - Date: 2026-07-23
 - Category: Materials Discovery
@@ -27,21 +35,13 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2607.21369v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-23-arxiv-graph_neural_network_force_fields_gptff_mol_for_organic_molecules_from_optimization_trajec_infographic.json
 
-## 4. MatDiffract: A Material-Informed Automated Analysis Platform for X-ray Powder Diffraction
+## 5. MatDiffract: A Material-Informed Automated Analysis Platform for X-ray Powder Diffraction
 
 - Date: 2026-07-23
 - Category: Crystal and Structure
 - arXiv: https://arxiv.org/abs/2607.20880v1
 - PDF: https://arxiv.org/pdf/2607.20880v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-23-arxiv-matdiffract_a_material_informed_automated_analysis_platform_for_x_ray_powder_diffraction_infographic.json
-
-## 5. Machine learning based prediction of optical properties in two-dimensional Mo-W-S-Se-Te transition-metal dichalcogenide alloys through physics-informed sampling
-
-- Date: 2026-07-23
-- Category: Property Prediction
-- arXiv: https://arxiv.org/abs/2607.21246v1
-- PDF: https://arxiv.org/pdf/2607.21246v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-23-arxiv-machine_learning_based_prediction_of_optical_properties_in_two_dimensional_mo_w_s_se_te_tr_infographic.json
 
 ## 6. Lifetime effects and satellites in the photoelectron spectrum of platinum metal
 
@@ -115,7 +115,15 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2607.20728v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-22-arxiv-analytical_forces_from_the_bethe_salpeter_equation_for_large_scale_excited_state_relaxatio_infographic.json
 
-## 15. Strong correlations and local self-energies from on-site ensembles
+## 15. Reading and Steering Representations of Materials-Science Mechanisms in an Open-Weight Language Model
+
+- Date: 2026-07-22
+- Category: AI materials science
+- arXiv: https://arxiv.org/abs/2607.20058v1
+- PDF: https://arxiv.org/pdf/2607.20058v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-22-arxiv-reading_and_steering_representations_of_materials_science_mechanisms_in_an_open_weight_lan_infographic.json
+
+## 16. Strong correlations and local self-energies from on-site ensembles
 
 - Date: 2026-07-23
 - Category: Crystal and Structure
@@ -123,7 +131,7 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2607.21490v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-23-arxiv-strong_correlations_and_local_self_energies_from_on_site_ensembles_infographic.json
 
-## 16. Uni-XAS: Alignment-Driven Bidirectional Multimodal Learning for X-ray Absorption Spectroscopy
+## 17. Uni-XAS: Alignment-Driven Bidirectional Multimodal Learning for X-ray Absorption Spectroscopy
 
 - Date: 2026-07-23
 - Category: Materials Discovery
@@ -131,7 +139,7 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2607.20906v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-23-arxiv-uni_xas_alignment_driven_bidirectional_multimodal_learning_for_x_ray_absorption_spectrosco_infographic.json
 
-## 17. Writhe-Based Polymer Link Classification Using Machine Learning
+## 18. Writhe-Based Polymer Link Classification Using Machine Learning
 
 - Date: 2026-07-22
 - Category: Polymers and Composites
@@ -139,7 +147,7 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2607.20657v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-22-arxiv-writhe_based_polymer_link_classification_using_machine_learning_infographic.json
 
-## 18. Machine Learning Potential-Driven Molecular Dynamics Simulations of Dehydrogenation in Pristine and Doped MgH$_2$
+## 19. Machine Learning Potential-Driven Molecular Dynamics Simulations of Dehydrogenation in Pristine and Doped MgH$_2$
 
 - Date: 2026-07-20
 - Category: Materials Discovery
@@ -147,18 +155,10 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2607.18182v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-20-arxiv-machine_learning_potential_driven_molecular_dynamics_simulations_of_dehydrogenation_in_pri_infographic.json
 
-## 19. Study of ordering in (MoCrTi)$_{100-x}$Al$_x$ refractory high-entropy alloys using machine learning interatomic potential
+## 20. Study of ordering in (MoCrTi)$_{100-x}$Al$_x$ refractory high-entropy alloys using machine learning interatomic potential
 
 - Date: 2026-07-20
 - Category: Crystal and Structure
 - arXiv: https://arxiv.org/abs/2607.18099v1
 - PDF: https://arxiv.org/pdf/2607.18099v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-20-arxiv-study_of_ordering_in_mocrti_100_x_al_x_refractory_high_entropy_alloys_using_machine_learni_infographic.json
-
-## 20. Spatially resolved in-situ characterisation of competing martensitic transformation pathways during nanoscratch in 316H Stainless Steel
-
-- Date: 2026-07-21
-- Category: Microstructure
-- arXiv: https://arxiv.org/abs/2607.19239v1
-- PDF: https://arxiv.org/pdf/2607.19239v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-21-arxiv-spatially_resolved_in_situ_characterisation_of_competing_martensitic_transformation_pathwa_infographic.json

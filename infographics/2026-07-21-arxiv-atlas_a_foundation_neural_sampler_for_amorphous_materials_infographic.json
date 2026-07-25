@@ -1,24 +1,24 @@
 {
-  "key_insight": "ATLAS learns a diffusion-based sampler that directly generates Boltzmann-distributed amorphous structures from an energy function, enabling efficient sampling, thermodynamic estimation, and property steering in rugged glassy landscapes.",
-  "engineering_relevance": "This offers a practical route to model and design metallic glasses and other amorphous materials with far fewer energy evaluations than conventional molecular simulation.",
+  "key_insight": "ATLAS learns a diffusion-based sampler for amorphous materials that directly generates Boltzmann-distributed structures from an energy function, enabling efficient sampling, thermodynamic estimation, and inverse design.",
+  "engineering_relevance": "This could accelerate discovery and optimization of metallic glasses and other disordered materials by replacing costly equilibration and brute-force search with a reusable, composition-general sampler.",
   "method": [
-    "Equivariant graph neural network parameterizes a time-reversed diffusion sampler.",
-    "Works across system size, temperature, and composition, including expensive ML interatomic potentials.",
-    "Uses sampling-time guidance to estimate free energies/entropies and steer toward target observables."
+    "Equivariant graph neural network parameterizes a diffusion process over atomic structures.",
+    "Uses time reversal of diffusion to estimate free energies, entropies, and other observables efficiently.",
+    "Supports composition-amortized pretraining and steering toward target properties with optional LLM-guided search."
   ],
-  "evidence_signal": "In 2D Kob-Andersen systems, ATLAS matches parallel-tempering MCMC distributions and achieves below 0.2% free-energy error in the low-temperature glass regime with over 500-fold fewer energy evaluations; it also recovers experimental short-range-order trends in Cu-Zr and Cr-Co-Ni glasses.",
-  "watch_item": "Performance depends on the quality and coverage of the target energy model; composition-amortized pretraining and LLM-guided search may still be limited by oracle accuracy and extrapolation outside the training distribution.",
+  "evidence_signal": "On 2D Kob-Andersen systems, ATLAS matches parallel-tempering MCMC distributions and thermodynamic quantities with below 0.2% free-energy error in the low-temperature glass regime using over 500-fold fewer energy evaluations.",
+  "watch_item": "Performance may depend on the quality and cost of the target energy function or interatomic potential, especially when scaling to new chemistries or expensive oracle evaluations.",
   "hashtags": [
     "#MaterialsDiscovery",
     "#AmorphousMaterials",
-    "#DiffusionModel",
-    "#MolecularSimulation",
-    "#GenerativeAI"
+    "#DiffusionModels",
+    "#InverseDesign",
+    "#ComputationalMaterials"
   ],
   "paper_id": "2026-07-21-arxiv-atlas_a_foundation_neural_sampler_for_amorphous_materials",
   "paper_title": "ATLAS: A Foundation Neural Sampler for Amorphous Materials",
   "paper_date": "2026-07-21",
   "paper_category": "Materials Discovery",
-  "generated_at": "2026-07-24T12:17:17",
+  "generated_at": "2026-07-25T12:01:39",
   "generator": "openai"
 }
