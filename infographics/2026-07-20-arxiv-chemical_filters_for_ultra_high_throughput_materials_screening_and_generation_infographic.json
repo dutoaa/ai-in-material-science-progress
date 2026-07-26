@@ -1,13 +1,13 @@
 {
-  "key_insight": "A configurable chemical validity operator turns heuristic oxidation-state rules into a tunable prior that filters and guides generative materials discovery toward chemically plausible compositions.",
-  "engineering_relevance": "This gives materials-design pipelines a practical control knob for balancing exploration versus chemical realism, improving the reliability of ultra-high-throughput screening and generation.",
+  "key_insight": "A configurable chemical validity operator turns heuristic oxidation-state rules into a tunable prior that screens and guides generative materials models toward more physically plausible compositions.",
+  "engineering_relevance": "This improves reliability of ultra-high-throughput materials discovery by filtering unrealistic outputs while preserving promising low-energy candidates and enabling reward-based guidance during generation.",
   "method": [
-    "Built on SMACT to evaluate compositions using a data-informed oxidation-state model.",
-    "Exposes tunable thresholds so users can shift from permissive to conservative chemical constraints.",
-    "Can be used both as a screening filter and as a reinforcement-learning reward for generative models."
+    "Built on SMACT to encode oxidation-state chemistry as a data-informed validity filter with adjustable strictness.",
+    "Benchmarked six generative crystal models to assess stoichiometry, oxidation-state realism, and post-filtering retention near the convex hull.",
+    "Applied the same operator as a reinforcement-learning reward to steer a latent diffusion model toward chemically grounded outputs."
   ],
-  "evidence_signal": "Benchmarking six inorganic-crystal generative models showed they often reproduce stoichiometry but under-represent realistic oxidation-state combinations; the filter removed compositions relying on rarely observed oxidation states while retaining low-energy compounds near the convex hull.",
-  "watch_item": "Because the operator depends on heuristic and data-informed oxidation-state assumptions, overly strict settings may reject novel but potentially valid candidates.",
+  "evidence_signal": "Benchmarking showed most models captured stoichiometry but under-represented realistic oxidation-state combinations, and filtering removed rare oxidation-state compositions while keeping low-energy compounds near the convex hull.",
+  "watch_item": "Chemical validity thresholds are configurable and data-informed, so overly conservative settings may exclude novel but plausible compositions or bias exploration.",
   "hashtags": [
     "#MaterialsDiscovery",
     "#GenerativeAI",
@@ -19,6 +19,6 @@
   "paper_title": "Chemical filters for ultra-high-throughput materials screening and generation",
   "paper_date": "2026-07-20",
   "paper_category": "Materials Discovery",
-  "generated_at": "2026-07-25T12:02:08",
+  "generated_at": "2026-07-26T12:02:07",
   "generator": "openai"
 }

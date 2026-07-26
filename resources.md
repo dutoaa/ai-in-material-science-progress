@@ -1,6 +1,6 @@
 # AI materials science Progress Public Resources
 
-Generated: 2026-07-25
+Generated: 2026-07-26
 Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 
 ## 1. ATLAS: A Foundation Neural Sampler for Amorphous Materials
