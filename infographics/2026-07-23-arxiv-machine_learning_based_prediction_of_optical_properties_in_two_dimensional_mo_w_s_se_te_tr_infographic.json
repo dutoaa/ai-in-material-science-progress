@@ -1,17 +1,17 @@
 {
-  "key_insight": "A physics-informed TabPFN model can accurately predict frequency-dependent dielectric spectra of Mo-W-S-Se-Te TMD alloys from sparse ab initio data, including unseen alloy compositions.",
-  "engineering_relevance": "This enables faster screening and design of tunable 2D optoelectronic materials by reducing reliance on costly first-principles calculations.",
+  "key_insight": "A physics-informed TabPFN can accurately predict frequency-dependent optical dielectric spectra of complex Mo-W-S-Se-Te TMD alloys from limited DFT data.",
+  "engineering_relevance": "This enables rapid screening of compositionally tuned 2D optoelectronic materials without the cost of exhaustive first-principles calculations.",
   "method": [
-    "Generated 99 DFT-calculated alloy structures spanning binary to quinary Mo-W-S-Se-Te compositions.",
-    "Used a physics-informed, non-uniform energy subsampling strategy focused on the optically active region above the band gap.",
-    "Trained a tabular prior-fitted network (TabPFN) and compared it with Extra Trees and XGBoost baselines."
+    "Generated 99 DFT alloy structures across binary to quinary Mo-W-S-Se-Te compositions.",
+    "Trained a tabular prior-fitted network on quaternary alloys using non-uniform, energy-focused physics-informed subsampling.",
+    "Predicted dielectric response and derived optical properties, then compared against Extra Trees and XGBoost baselines."
   ],
-  "evidence_signal": "Trained only on quaternary alloys, TabPFN achieved R2 > 0.98 and MAE below 0.10 for all four dielectric components on held-out quaternary cases, and reached zero-shot R2 > 0.97 for quinary alloys.",
-  "watch_item": "Performance depends on the representativeness of the DFT dataset and the chosen energy-sampling scheme, so extrapolation to other TMD chemistries or spectral regimes should be validated carefully.",
+  "evidence_signal": "Held-out quaternary alloys were reconstructed with R2 > 0.98 and MAE below 0.10 for all dielectric components, and quinary zero-shot predictions reached R2 > 0.97.",
+  "watch_item": "The approach depends on carefully chosen energy subsampling and may be sensitive when extrapolating beyond the optically active region or outside the tested alloy space.",
   "hashtags": [
     "#MaterialsInformatics",
-    "#MachineLearning",
-    "#Optoelectronics",
+    "#OpticalProperties",
+    "#TabPFN",
     "#2DTMDs",
     "#PhysicsInformedML"
   ],
@@ -19,6 +19,6 @@
   "paper_title": "Machine learning based prediction of optical properties in two-dimensional Mo-W-S-Se-Te transition-metal dichalcogenide alloys through physics-informed sampling",
   "paper_date": "2026-07-23",
   "paper_category": "Property Prediction",
-  "generated_at": "2026-07-26T12:01:43",
+  "generated_at": "2026-07-27T13:38:10",
   "generator": "openai"
 }
