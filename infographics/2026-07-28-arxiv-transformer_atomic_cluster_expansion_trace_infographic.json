@@ -1,24 +1,24 @@
 {
-  "key_insight": "TRACE is an energy-conserving interatomic potential that combines atomic cluster expansion correlations with local cross-attention to model many-body chemistry and materials behavior without passing learned states between atoms.",
-  "engineering_relevance": "It offers a single scalable architecture for molecular dynamics across crystals, liquids, and reactions, with results close to experiment on laptop-scale training and testing.",
+  "key_insight": "TRACE combines ACE density correlations with local multihead cross-attention to model complex many-body atomic interactions in an energy-conserving, O(3)-equivariant way without passing learned state between atoms.",
+  "engineering_relevance": "It offers a single scalable potential architecture that can reproduce crystal phase ordering, liquid structure, and reaction barriers for diverse chemistry on modest hardware.",
   "method": [
-    "O(3)-equivariant atomic cluster expansion density correlations build the center state.",
-    "Local multihead cross-attention queries fixed tensorial neighbor features based on species and geometry.",
-    "No learned message passing state is propagated between atoms; the model remains energy-conserving."
+    "ACE-style density correlations create per-atom equivariant states.",
+    "Local multihead cross-attention queries fixed tensorial neighbor features defined by species and geometry.",
+    "The model is trained as an energy-conserving interatomic potential for molecular dynamics and enhanced sampling."
   ],
-  "evidence_signal": "The abstract reports successful evaluation on polymorphic cesium lead iodide, liquid water, and methyl migration, including a CsPbI3 phase crossing near 580 K, water O–O peak at 2.85 Å, and methyl migration barrier of 27.92±0.03 kcal/mol versus experiment.",
-  "watch_item": "Because performance is shown on specific benchmark systems and relies on enhanced or umbrella sampling for barriers, broader transferability and sampling cost should be checked carefully.",
+  "evidence_signal": "The abstract reports validation on cesium lead iodide, liquid water, and methyl migration, including a ~580 K phase-crossing prediction, an O–O peak at 2.85 Å vs 2.80 Å experiment, and an activation free energy of 27.92±0.03 kcal/mol vs 29.2±1.1 kcal/mol.",
+  "watch_item": "Performance depends on accurate training data and enhanced-sampling setup, so transfer to new chemistries or barrier-crossing problems may require careful recalibration and validation.",
   "hashtags": [
     "#MachineLearningPotentials",
     "#AtomisticSimulation",
+    "#TransformerModel",
     "#MaterialsScience",
-    "#MolecularDynamics",
-    "#EquivariantAI"
+    "#MolecularDynamics"
   ],
   "paper_id": "2026-07-28-arxiv-transformer_atomic_cluster_expansion_trace",
   "paper_title": "Transformer Atomic Cluster Expansion: TRACE",
   "paper_date": "2026-07-28",
   "paper_category": "Crystal and Structure",
-  "generated_at": "2026-07-29T12:59:03",
+  "generated_at": "2026-07-30T12:28:01",
   "generator": "openai"
 }

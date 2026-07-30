@@ -1,6 +1,6 @@
 # AI materials science Progress Public Resources
 
-Generated: 2026-07-29
+Generated: 2026-07-30
 Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 
 ## 1. Catalyst Diffusion Transformer: Generative Inverse Design of Heterogeneous Catalysts
@@ -19,31 +19,7 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2607.26018v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-28-arxiv-extracting_atomic_environments_for_machine_learning_interatomic_potentials_infographic.json
 
-## 3. Aligning Heterogeneous DFT Datasets: A Graph Neural Network Approach to Cross-Functional Formation Energies
-
-- Date: 2026-07-27
-- Category: Property Prediction
-- arXiv: https://arxiv.org/abs/2607.24327v1
-- PDF: https://arxiv.org/pdf/2607.24327v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-27-arxiv-aligning_heterogeneous_dft_datasets_a_graph_neural_network_approach_to_cross_functional_fo_infographic.json
-
-## 4. Machine-Learning Potentials for sodium-potassium chloride mixtures: Predicting thermophysical properties and phase behavior of multicomponent salts
-
-- Date: 2026-07-27
-- Category: Microstructure
-- arXiv: https://arxiv.org/abs/2607.25022v1
-- PDF: https://arxiv.org/pdf/2607.25022v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-27-arxiv-machine_learning_potentials_for_sodium_potassium_chloride_mixtures_predicting_thermophysic_infographic.json
-
-## 5. MANDALA: An E(3)-Equivariant Graph Neural Network Framework for Learning Electronic-Structure Operators with Observable Guidance
-
-- Date: 2026-07-27
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2607.24997v1
-- PDF: https://arxiv.org/pdf/2607.24997v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-27-arxiv-mandala_an_e_3_equivariant_graph_neural_network_framework_for_learning_electronic_structur_infographic.json
-
-## 6. Transformer Atomic Cluster Expansion: TRACE
+## 3. Transformer Atomic Cluster Expansion: TRACE
 
 - Date: 2026-07-28
 - Category: Crystal and Structure
@@ -51,7 +27,55 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2607.25652v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-28-arxiv-transformer_atomic_cluster_expansion_trace_infographic.json
 
-## 7. Ionic Diffusion Properties of Rare-Earth High-Entropy Oxides from a Machine-Learned Interatomic Potential
+## 4. Aligning Heterogeneous DFT Datasets: A Graph Neural Network Approach to Cross-Functional Formation Energies
+
+- Date: 2026-07-27
+- Category: Property Prediction
+- arXiv: https://arxiv.org/abs/2607.24327v1
+- PDF: https://arxiv.org/pdf/2607.24327v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-27-arxiv-aligning_heterogeneous_dft_datasets_a_graph_neural_network_approach_to_cross_functional_fo_infographic.json
+
+## 5. Machine-Learning Potentials for sodium-potassium chloride mixtures: Predicting thermophysical properties and phase behavior of multicomponent salts
+
+- Date: 2026-07-27
+- Category: Microstructure
+- arXiv: https://arxiv.org/abs/2607.25022v1
+- PDF: https://arxiv.org/pdf/2607.25022v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-27-arxiv-machine_learning_potentials_for_sodium_potassium_chloride_mixtures_predicting_thermophysic_infographic.json
+
+## 6. MANDALA: An E(3)-Equivariant Graph Neural Network Framework for Learning Electronic-Structure Operators with Observable Guidance
+
+- Date: 2026-07-27
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2607.24997v1
+- PDF: https://arxiv.org/pdf/2607.24997v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-27-arxiv-mandala_an_e_3_equivariant_graph_neural_network_framework_for_learning_electronic_structur_infographic.json
+
+## 7. Computational Study of Water Adsorption and Dissociative Mechanisms Impacting g-C3N4's Optical and Electronic Properties
+
+- Date: 2026-07-29
+- Category: AI materials science
+- arXiv: https://arxiv.org/abs/2607.26667v1
+- PDF: https://arxiv.org/pdf/2607.26667v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-29-arxiv-computational_study_of_water_adsorption_and_dissociative_mechanisms_impacting_g_c3n4_s_opt_infographic.json
+
+## 8. Structure-Property Correlation of Cr/Cu-MnFeCoNi High-Entropy Alloys for Alkaline Water Electrolysis
+
+- Date: 2026-07-29
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2607.26888v1
+- PDF: https://arxiv.org/pdf/2607.26888v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-29-arxiv-structure_property_correlation_of_cr_cu_mnfeconi_high_entropy_alloys_for_alkaline_water_el_infographic.json
+
+## 9. Crystal forming ability of amorphous refractory metals under nanoindentation: a molecular dynamics study
+
+- Date: 2026-07-29
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2607.26881v1
+- PDF: https://arxiv.org/pdf/2607.26881v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-29-arxiv-crystal_forming_ability_of_amorphous_refractory_metals_under_nanoindentation_a_molecular_d_infographic.json
+
+## 10. Ionic Diffusion Properties of Rare-Earth High-Entropy Oxides from a Machine-Learned Interatomic Potential
 
 - Date: 2026-07-23
 - Category: Crystal and Structure
@@ -59,7 +83,23 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2607.21726v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-23-arxiv-ionic_diffusion_properties_of_rare_earth_high_entropy_oxides_from_a_machine_learned_intera_infographic.json
 
-## 8. SAGE-Net: Semantics-Augmented Geometric Encoder for Material Property Prediction
+## 11. Physics-informed Machine Learning Prediction of Hubbard Interaction Parameters
+
+- Date: 2026-07-29
+- Category: Materials Discovery
+- arXiv: https://arxiv.org/abs/2607.26422v1
+- PDF: https://arxiv.org/pdf/2607.26422v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-29-arxiv-physics_informed_machine_learning_prediction_of_hubbard_interaction_parameters_infographic.json
+
+## 12. Materials Behavior as Mechanism Ensembles: A Probabilistic Framework for Emergent Behaviors
+
+- Date: 2026-07-29
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2607.27163v1
+- PDF: https://arxiv.org/pdf/2607.27163v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-29-arxiv-materials_behavior_as_mechanism_ensembles_a_probabilistic_framework_for_emergent_behaviors_infographic.json
+
+## 13. SAGE-Net: Semantics-Augmented Geometric Encoder for Material Property Prediction
 
 - Date: 2026-07-24
 - Category: Crystal and Structure
@@ -67,7 +107,15 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2607.22271v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-24-arxiv-sage_net_semantics_augmented_geometric_encoder_for_material_property_prediction_infographic.json
 
-## 9. Citrine Informatics: Chemical & Materials Development Platform
+## 14. No band gap, no problem: Defects in InAs using a band-avoiding occupation-constrained density functional theory
+
+- Date: 2026-07-29
+- Category: Property Prediction
+- arXiv: https://arxiv.org/abs/2607.27095v1
+- PDF: https://arxiv.org/pdf/2607.27095v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-29-arxiv-no_band_gap_no_problem_defects_in_inas_using_a_band_avoiding_occupation_constrained_densit_infographic.json
+
+## 15. Citrine Informatics: Chemical & Materials Development Platform
 
 - Date: 2026-07-27
 - Category: Materials Discovery
@@ -75,7 +123,7 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2607.25039v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-27-arxiv-citrine_informatics_chemical_materials_development_platform_infographic.json
 
-## 10. Stoichiometric cluster learning for few-shot property prediction of multi-ionic integrated energetic materials
+## 16. Stoichiometric cluster learning for few-shot property prediction of multi-ionic integrated energetic materials
 
 - Date: 2026-07-25
 - Category: Crystal and Structure
@@ -83,7 +131,23 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2607.23208v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-25-arxiv-stoichiometric_cluster_learning_for_few_shot_property_prediction_of_multi_ionic_integrated_infographic.json
 
-## 11. An Ontology for Machine Learning Interatomic Potentials
+## 17. Transient Detour and Cooperative Oxygen Exchange in the Polarization Switching of Ferroelectric Hf0.5Zr0.5O2
+
+- Date: 2026-07-29
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2607.26597v1
+- PDF: https://arxiv.org/pdf/2607.26597v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-29-arxiv-transient_detour_and_cooperative_oxygen_exchange_in_the_polarization_switching_of_ferroele_infographic.json
+
+## 18. Thermodynamics-Informed Machine Learning for Energy Materials Discovery
+
+- Date: 2026-07-28
+- Category: Materials Discovery
+- arXiv: https://arxiv.org/abs/2607.26296v1
+- PDF: https://arxiv.org/pdf/2607.26296v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-28-arxiv-thermodynamics_informed_machine_learning_for_energy_materials_discovery_infographic.json
+
+## 19. An Ontology for Machine Learning Interatomic Potentials
 
 - Date: 2026-07-25
 - Category: Property Prediction
@@ -91,74 +155,10 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2607.23219v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-25-arxiv-an_ontology_for_machine_learning_interatomic_potentials_infographic.json
 
-## 12. A high-dimensional neural network potential for finite-temperature phenomena in NiTi martensite
+## 20. Formation of $\mathrm{L}1_2$-ordered $γ'$-$\mathrm{Ni}_3\mathrm{Al}$ precipitates in ternary Cu-Ni-Al alloys modelled using an ab initio concentration wave theory and atomistic simulations
 
-- Date: 2026-07-22
+- Date: 2026-07-29
 - Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2607.20681v1
-- PDF: https://arxiv.org/pdf/2607.20681v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-22-arxiv-a_high_dimensional_neural_network_potential_for_finite_temperature_phenomena_in_niti_marte_infographic.json
-
-## 13. Charge-Density-Wave Phase Transitions in Monolayer 1T-TaS2 from Universal Machine Learning Molecular Dynamics
-
-- Date: 2026-07-24
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2607.22316v1
-- PDF: https://arxiv.org/pdf/2607.22316v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-24-arxiv-charge_density_wave_phase_transitions_in_monolayer_1t_tas2_from_universal_machine_learning_infographic.json
-
-## 14. Graph Neural Network Force Fields (GPTFF-mol) for Organic Molecules from Optimization Trajectories (OpenGEM26)
-
-- Date: 2026-07-23
-- Category: Materials Discovery
-- arXiv: https://arxiv.org/abs/2607.21369v1
-- PDF: https://arxiv.org/pdf/2607.21369v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-23-arxiv-graph_neural_network_force_fields_gptff_mol_for_organic_molecules_from_optimization_trajec_infographic.json
-
-## 15. Bosonic Condensed Phase Real-time Dynamics from Ring Polymer Molecular Dynamics
-
-- Date: 2026-07-28
-- Category: Microstructure
-- arXiv: https://arxiv.org/abs/2607.25892v1
-- PDF: https://arxiv.org/pdf/2607.25892v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-28-arxiv-bosonic_condensed_phase_real_time_dynamics_from_ring_polymer_molecular_dynamics_infographic.json
-
-## 16. Physics-Guided Interpretable Machine Learning Framework for Anomalous Transport in Crowded Media with Tunable Flexibility
-
-- Date: 2026-07-28
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2607.25827v1
-- PDF: https://arxiv.org/pdf/2607.25827v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-28-arxiv-physics_guided_interpretable_machine_learning_framework_for_anomalous_transport_in_crowded_infographic.json
-
-## 17. Integrating moment tensor potentials with finite-element modeling for heat transfer prediction in FLiBe-based molten salt systems
-
-- Date: 2026-07-28
-- Category: Property Prediction
-- arXiv: https://arxiv.org/abs/2607.25803v1
-- PDF: https://arxiv.org/pdf/2607.25803v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-28-arxiv-integrating_moment_tensor_potentials_with_finite_element_modeling_for_heat_transfer_predic_infographic.json
-
-## 18. Laser induced optical reconfiguration in Ge_Sb_Te Films with composition dependent response
-
-- Date: 2026-07-28
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2607.25713v1
-- PDF: https://arxiv.org/pdf/2607.25713v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-28-arxiv-laser_induced_optical_reconfiguration_in_ge_sb_te_films_with_composition_dependent_respons_infographic.json
-
-## 19. MatDiffract: A Material-Informed Automated Analysis Platform for X-ray Powder Diffraction
-
-- Date: 2026-07-23
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2607.20880v2
-- PDF: https://arxiv.org/pdf/2607.20880v2
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-23-arxiv-matdiffract_a_material_informed_automated_analysis_platform_for_x_ray_powder_diffraction_infographic.json
-
-## 20. A DFT and Machine Learning-Assisted Study on the Lattice Thermal Conductivity of LiCdSb for Thermoelectric Applications
-
-- Date: 2026-07-25
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2607.23203v1
-- PDF: https://arxiv.org/pdf/2607.23203v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-25-arxiv-a_dft_and_machine_learning_assisted_study_on_the_lattice_thermal_conductivity_of_licdsb_fo_infographic.json
+- arXiv: https://arxiv.org/abs/2607.27108v1
+- PDF: https://arxiv.org/pdf/2607.27108v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-29-arxiv-formation_of_mathrm_l_1_2_ordered_mathrm_ni_3_mathrm_al_precipitates_in_ternary_cu_ni_al_a_infographic.json
