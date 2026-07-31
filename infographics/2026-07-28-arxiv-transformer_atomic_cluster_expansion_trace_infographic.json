@@ -1,17 +1,17 @@
 {
-  "key_insight": "TRACE combines ACE density correlations with local multihead cross-attention to model complex many-body atomic interactions in an energy-conserving, O(3)-equivariant way without passing learned state between atoms.",
-  "engineering_relevance": "It offers a single scalable potential architecture that can reproduce crystal phase ordering, liquid structure, and reaction barriers for diverse chemistry on modest hardware.",
+  "key_insight": "TRACE is a unified, energy-conserving interatomic potential that pairs ACE density correlations with local cross-attention to model many-body chemistry and crystal physics without passing learned states between atoms.",
+  "engineering_relevance": "It offers a scalable route to accurate molecular dynamics on a laptop-class machine, supporting phase transitions, liquid structure, and reaction barriers with one architecture.",
   "method": [
-    "ACE-style density correlations create per-atom equivariant states.",
-    "Local multihead cross-attention queries fixed tensorial neighbor features defined by species and geometry.",
-    "The model is trained as an energy-conserving interatomic potential for molecular dynamics and enhanced sampling."
+    "ACE-based O(3)-equivariant center states capture many-body density correlations.",
+    "Local multihead cross-attention queries fixed tensorial neighbor features determined by species and geometry.",
+    "No learned message passing state is propagated between atoms, preserving energy conservation and efficiency."
   ],
-  "evidence_signal": "The abstract reports validation on cesium lead iodide, liquid water, and methyl migration, including a ~580 K phase-crossing prediction, an O–O peak at 2.85 Å vs 2.80 Å experiment, and an activation free energy of 27.92±0.03 kcal/mol vs 29.2±1.1 kcal/mol.",
-  "watch_item": "Performance depends on accurate training data and enhanced-sampling setup, so transfer to new chemistries or barrier-crossing problems may require careful recalibration and validation.",
+  "evidence_signal": "The model was evaluated on polymorphic cesium lead iodide, liquid water, and methyl migration, matching key experimental or high-level reference targets such as a ~580 K phase crossing, an O–O distance of 2.85 Å, and a 27.92±0.03 kcal/mol barrier.",
+  "watch_item": "Performance may depend on high-quality reference data and enhanced sampling for rare transitions, so transferability outside the demonstrated chemistries and phase spaces remains to be validated.",
   "hashtags": [
     "#MachineLearningPotentials",
     "#AtomisticSimulation",
-    "#TransformerModel",
+    "#Transformer",
     "#MaterialsScience",
     "#MolecularDynamics"
   ],
@@ -19,6 +19,6 @@
   "paper_title": "Transformer Atomic Cluster Expansion: TRACE",
   "paper_date": "2026-07-28",
   "paper_category": "Crystal and Structure",
-  "generated_at": "2026-07-30T12:28:01",
+  "generated_at": "2026-07-31T12:54:14",
   "generator": "openai"
 }

@@ -22,7 +22,7 @@
     <header>
       <div>
         <h1>AI materials science Research Papers - Daily Top 20</h1>
-        <p class="sub">Collected 2026-07-30. Ranked from recent arXiv AI materials science papers, with OpenAI infographic summaries where credentials are available.</p>
+        <p class="sub">Collected 2026-07-31. Ranked from recent arXiv AI materials science papers, with OpenAI infographic summaries where credentials are available.</p>
       </div>
       <nav class="actions">
         <a href="papers.json">Data JSON</a>
@@ -31,7 +31,26 @@
     </header>
     <section class="grid">
       <article class="paper">
-        <div class="meta"><span>Materials Discovery</span><span>arXiv</span><strong>91</strong></div>
+        <div class="meta"><span>Property Prediction</span><span>arXiv</span><strong>87</strong></div>
+        <p class="date">2026-07-30</p>
+        <h2>Fast and Accurate Foundation Models for Equivariant Machine-Learned Interatomic Potentials</h2>
+        <p class="authors">Seán R. Kavanagh, Chuin Wei Tan, Menghang Wang, Marc L. Descoteaux, Gabriel de Miranda Nascimento, Ulrik Unneberg</p>
+        <p class="abstract">Machine-learned interatomic potentials (MLIPs) have emerged as a transformative tool for computational materials science and chemistry, with universal potentials trained on large and diverse datasets now routinely deployed as &#x27;foundation models&#x27; for downstream fine-tuning in targeted chemical spaces. Many scientific applications of the resulting models, such as molecular dynamics (MD), require high inference and training speeds as well as accuracy. In this work, we examine the limits of equivariant MLIPs, which directly encode physical symmetries in model architectures, to achieve these competing targets -- particularly in the regime of extremely large datasets where data efficiency is less critical. We show how this trade-off can be addressed, and present a family of foundation potentials in the NequIP and Allegro equivariant MLIP architectures which achieve leading inference speeds and strong scalability as well as excellent accuracies across a range of community benchmarks -- spanning materials discovery, thermal conductivity prediction, and near-equilibrium mechanical and thermodynamic properties. Accelerations implemented within the NequIP infrastructure now permit training of high-accuracy foundation potentials on ultra-large datasets with dramatically reduced computational cost. Alongside, we show that efforts to improve model accuracy for materials discovery should focus on dataset diversity and improved, consistent descriptions of transition metal compound energy surfaces.</p>
+        <div class="links"><a href="https://arxiv.org/abs/2607.28461v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2607.28461v1" target="_blank" rel="noreferrer">PDF</a></div>
+        <section class="info">
+          <h3>OpenAI Infographic Summary</h3>
+          <p><b>Key insight:</b> Equivariant foundation MLIPs can be made both fast and accurate by using architectures and training strategies that scale to ultra-large datasets without sacrificing key physics symmetries.</p>
+          <p><b>Engineering relevance:</b> These models can accelerate molecular dynamics and materials screening by delivering high-throughput inference and scalable training for practical, community-benchmark applications.</p>
+          <ul><li>Evaluated NequIP and Allegro equivariant MLIP architectures as foundation potentials.</li><li>Implemented accelerations in the NequIP infrastructure to reduce training cost on ultra-large datasets.</li><li>Benchmarked accuracy and speed across materials discovery, thermal conductivity, and near-equilibrium mechanical/thermodynamic tasks.</li></ul>
+          <p><b>Evidence signal:</b> The paper reports strong scalability, leading inference speeds, and excellent accuracy across multiple community benchmarks, including large-dataset regimes.</p>
+          <p><b>Watch item:</b> Performance gains may depend on dataset diversity and consistent transition-metal energy-surface descriptions, so transfer to new chemical spaces still needs careful validation.</p>
+          <div class="tags"><span>#MachineLearningPotentials</span> <span>#EquivariantML</span> <span>#MaterialsInformatics</span> <span>#MolecularDynamics</span> <span>#FoundationModels</span></div>
+        </section>
+      </article>
+    
+
+      <article class="paper">
+        <div class="meta"><span>Materials Discovery</span><span>arXiv</span><strong>86</strong></div>
         <p class="date">2026-07-27</p>
         <h2>Catalyst Diffusion Transformer: Generative Inverse Design of Heterogeneous Catalysts</h2>
         <p class="authors">Hayoung Doo, Dong Hyeon Mok, Seoin Back, Jonggeol Na</p>
@@ -39,18 +58,75 @@
         <div class="links"><a href="https://arxiv.org/abs/2607.24272v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2607.24272v1" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> CatDiT is a diffusion-transformer inverse design framework that generates novel heterogeneous catalysts while jointly controlling adsorbate type, binding energy, and catalyst class.</p>
-          <p><b>Engineering relevance:</b> It offers a scalable way to accelerate catalyst discovery by narrowing huge design spaces to candidate sets that satisfy target activity and structural constraints.</p>
-          <ul><li>Learns compressed latent representations of catalyst structures for efficient training and fast sampling.</li><li>Uses a generative diffusion transformer to produce valid catalysts across intermetallic alloys and oxide surfaces.</li><li>Supports multi-conditional generation with both discrete and continuous property control.</li></ul>
-          <p><b>Evidence signal:</b> For nitrogen reduction reaction design, the model produced 28 DFT-relaxed alloy candidates within the target activity window and above the pure-metal *N-*H scaling line, about a 1.5× enrichment over the source distribution.</p>
-          <p><b>Watch item:</b> Performance depends on the quality and coverage of the latent training data, and DFT validation is still required to confirm candidate viability.</p>
-          <div class="tags"><span>#MaterialsDiscovery</span> <span>#CatalystDesign</span> <span>#DiffusionModels</span> <span>#InverseDesign</span> <span>#ComputationalChemistry</span></div>
+          <p><b>Key insight:</b> CatDiT uses a diffusion-transformer generative model in latent space to inverse-design heterogeneous catalysts with simultaneous control over adsorbate, binding energy, and catalyst class.</p>
+          <p><b>Engineering relevance:</b> This provides a scalable way to rapidly screen and enrich catalyst candidates for reaction-specific targets, reducing reliance on exhaustive trial-and-error discovery.</p>
+          <ul><li>Compress catalyst structures into latent representations for efficient training and sampling.</li><li>Condition generation on discrete and continuous properties at the same time.</li><li>Generate valid, novel candidates across intermetallic alloys and oxide surfaces.</li></ul>
+          <p><b>Evidence signal:</b> For nitrogen reduction reaction design, the model produced 28 DFT-relaxed alloy candidates within the target activity window and above the pure-metal *N-*H scaling line, giving about 1.5× enrichment over the source distribution.</p>
+          <p><b>Watch item:</b> Performance depends on the quality and coverage of the latent training space, so generalization to less-represented catalyst chemistries may be limited.</p>
+          <div class="tags"><span>#MaterialsDiscovery</span> <span>#CatalystDesign</span> <span>#GenerativeAI</span> <span>#DiffusionModels</span> <span>#InverseDesign</span></div>
         </section>
       </article>
     
 
       <article class="paper">
-        <div class="meta"><span>AI materials science</span><span>arXiv</span><strong>81</strong></div>
+        <div class="meta"><span>Materials Discovery</span><span>arXiv</span><strong>84</strong></div>
+        <p class="date">2026-07-29</p>
+        <h2>Machine Learning for Designing Undesignable Metal-Organic Frameworks</h2>
+        <p class="authors">Satya Kokonda</p>
+        <p class="abstract">Many crucial processes are too complex for computational modeling, requiring experimentation to identify promising materials. Here, a methodology for material design is presented, while photocatalysis is presented as a specific case-study. Metal-Organic Frameworks (MOFs) are a subset of highly promising porous nanomaterials, used in a variety of unmodellable applications. Reinforcement learning generated 60,000 novel MOFs optimized for CO/H20 selectivity. A predictor funnel system was created, iteratively removing low-scoring MOFs to 10,986 potential candidates, improving computational efficiency by 276%. While trained Crystal Graph Convolutional Neural Network (CGCNN) models predicted features for creating a fitness function incorporating stability, catalytic ability, material cost, sustainability, and adsorption while allowing the inclusion of application specific design criterion. This designed function provides a computational method to model photocatalytic performance- and filtered down to two promising MOFs which each pass a myriad of synthesis criteria, first a Cr-based MOF with photocatalyst score 230% higher than the control. Second, a Zn-based MOF outperforms the best control across all relevant metrics, demonstrating robustness against variable fitness functions. This work designed 20 materials, each 125% better than the control for this application. Furthermore, analysis revealed insightful design patterns, such as the significant influence of metal cluster N262 on catalytic performance, providing a method for future work to narrow the chemical space. By incorporating industrially applicable features such as cost or stability of the material, this work successfully designs industrially promising materials in otherwise unmodellable processes such as drug delivery, while paving a method for multi-objective optimization incorporating 260% more features than prior work.</p>
+        <div class="links"><a href="https://arxiv.org/abs/2607.27368v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2607.27368v1" target="_blank" rel="noreferrer">PDF</a></div>
+        <section class="info">
+          <h3>OpenAI Infographic Summary</h3>
+          <p><b>Key insight:</b> A reinforcement-learning workflow can generate and rank novel MOFs for photocatalysis by combining a CGCNN-based predictor funnel with a multi-objective fitness function.</p>
+          <p><b>Engineering relevance:</b> The approach offers a scalable design pipeline for screening industrially relevant porous materials while balancing performance, stability, cost, and sustainability constraints.</p>
+          <ul><li>Generated 60,000 novel MOFs with reinforcement learning.</li><li>Used a predictor funnel to iteratively filter candidates down to 10,986.</li><li>Trained CGCNN models to build a multi-objective fitness function and identify top-performing MOFs.</li></ul>
+          <p><b>Evidence signal:</b> The abstract reports 20 designed materials that were 125% better than the control, including one Cr-based MOF with a 230% higher photocatalyst score and one Zn-based MOF that outperformed the best control across relevant metrics.</p>
+          <p><b>Watch item:</b> Results depend on model predictions and abstract-level validation, so experimental synthesis and real-world stability testing are still needed before deployment.</p>
+          <div class="tags"><span>#MachineLearning</span> <span>#MaterialsDiscovery</span> <span>#MetalOrganicFrameworks</span> <span>#Photocatalysis</span> <span>#ReinforcementLearning</span></div>
+        </section>
+      </article>
+    
+
+      <article class="paper">
+        <div class="meta"><span>Property Prediction</span><span>arXiv</span><strong>79</strong></div>
+        <p class="date">2026-07-30</p>
+        <h2>Chem World: A Large-Scale Benchmark and Physics-Informed Framework for Trustworthy Chemical Property Prediction</h2>
+        <p class="authors">Tianyou Bai, Huan Wang, Mingchen Gao, Fangyue Lin, Pinze Ren, Zhenlin Zhao</p>
+        <p class="abstract">Chemical property prediction plays a critical role in accelerating scientific discovery in chemistry, materials science, and drug development. However, existing benchmarks often suffer from limited task diversity, fragmented datasets, and inconsistent evaluation protocols, making it challenging to systematically assess the reliability and generalization of AI models. In this work, we introduce Chem World, a comprehensive benchmark for chemical property prediction that integrates 17 diverse chemical datasets with over 800,000 molecular samples, covering various properties including density, electrical conductivity, solubility, and other molecular characteristics. Chem World provides a unified platform for evaluating AI models across multiple property prediction tasks. Furthermore, we propose Mixture-PINN, a physics-informed neural network based prediction framework that incorporates chemical prior knowledge into data-driven learning, improving the accuracy, robustness, and reliability of chemical property prediction. Extensive experiments on Chem World demonstrate the effectiveness of our approach compared with existing methods. By combining large-scale standardized evaluation with physics-informed learning, Chem World establishes a foundation for developing trustworthy AI systems for computational chemistry and advancing AI-driven scientific discovery.</p>
+        <div class="links"><a href="https://arxiv.org/abs/2607.28079v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2607.28079v1" target="_blank" rel="noreferrer">PDF</a></div>
+        <section class="info">
+          <h3>OpenAI Infographic Summary</h3>
+          <p><b>Key insight:</b> Chem World standardizes chemical property prediction across 17 datasets and pairs it with a physics-informed model to improve trustworthiness and generalization.</p>
+          <p><b>Engineering relevance:</b> This benchmark and model can help materials and chemistry teams compare predictors fairly and accelerate screening for properties such as density, conductivity, and solubility.</p>
+          <ul><li>Built Chem World: 17 datasets, 800,000+ molecular samples, unified evaluation.</li><li>Introduced Mixture-PINN to inject chemical prior knowledge into learning.</li><li>Evaluated multiple property prediction tasks under a consistent protocol.</li></ul>
+          <p><b>Evidence signal:</b> The abstract reports extensive experiments on a large-scale benchmark spanning over 800,000 molecules and multiple property types, showing improved performance over existing methods.</p>
+          <p><b>Watch item:</b> Benchmark results depend on dataset quality and protocol consistency, so performance may still vary when transferring to new chemistries or noisy experimental settings.</p>
+          <div class="tags"><span>#Cheminformatics</span> <span>#MaterialsInformatics</span> <span>#PropertyPrediction</span> <span>#PhysicsInformedAI</span> <span>#Benchmarking</span></div>
+        </section>
+      </article>
+    
+
+      <article class="paper">
+        <div class="meta"><span>Crystal and Structure</span><span>arXiv</span><strong>78</strong></div>
+        <p class="date">2026-07-29</p>
+        <h2>MatCreatioNN: Machine learning-guided computational discovery of photocatalysts for environmental applications</h2>
+        <p class="authors">Satya Kokonda</p>
+        <p class="abstract">The rational design of photocatalysts for environmental remediation and CO2 conversion remains limited by the high computational cost and sparse experimental data describing multi-parameter photocatalytic behavior. This work presents an integrated machine-learning framework that couples reinforcement learning-based metal-organic framework (MOF) generation with a multi-stage Crystal Graph Convolutional Neural Network (CGCNN) prediction funnel to identify photocatalysts optimized across multiple electronic and structural features. 120,000 MOF candidates were generated and screened using 13 key descriptors, including band-gap suitability, CO2/H2O selectivity, adsorption energy, and structural stability. The funnel approach reduced computational cost by 4.13-fold while maintaining predictive robustness. Two top candidates, a Cr-based and a Zn-based MOF, exhibited predicted photocatalytic fitness values of 1.70 +/- 0.25 and 1.20 +/- 0.05 fold higher respectively than benchmark materials such as PCN-224(Zr), demonstrating simultaneous improvements in light absorption, redox energetics, and framework durability. Simulated X-ray diffraction patterns confirmed strong structural agreement with experimentally synthesized MOFs, indicating high synthesizability. Post-hoc analysis revealed recurring structural motifs, such as the N262 metal cluster, that correlated strongly with high predicted photocatalytic activity. These results highlight the potential of data-driven methods to accelerate discovery of efficient and durable photocatalysts for environmental and energy-related transformations, providing a foundation for experimental realization and large-scale implementation of computationally designed MOFs.</p>
+        <div class="links"><a href="https://arxiv.org/abs/2607.27295v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2607.27295v1" target="_blank" rel="noreferrer">PDF</a></div>
+        <section class="info">
+          <h3>OpenAI Infographic Summary</h3>
+          <p><b>Key insight:</b> MatCreatioNN combines reinforcement learning MOF generation with a multi-stage CGCNN funnel to rapidly discover photocatalyst candidates that balance light absorption, redox performance, adsorption, and stability.</p>
+          <p><b>Engineering relevance:</b> The framework can reduce screening cost while prioritizing synthesizable MOFs for environmental remediation and CO2 conversion, accelerating practical photocatalyst design.</p>
+          <ul><li>Generate 120,000 MOF candidates using reinforcement learning</li><li>Screen 13 descriptors with a staged CGCNN prediction funnel</li><li>Use post-hoc motif analysis and simulated XRD for synthesizability checks</li></ul>
+          <p><b>Evidence signal:</b> The funnel cut computational cost by 4.13× and identified Cr- and Zn-based MOFs with predicted photocatalytic fitness 1.70±0.25 and 1.20±0.05 times above benchmark PCN-224(Zr).</p>
+          <p><b>Watch item:</b> Predictions are computational and hinge on sparse experimental validation, so real-world performance, stability, and synthesis yield still need confirmation.</p>
+          <div class="tags"><span>#MachineLearning</span> <span>#MOFs</span> <span>#Photocatalysis</span> <span>#CGCNN</span> <span>#MaterialsDiscovery</span></div>
+        </section>
+      </article>
+    
+
+      <article class="paper">
+        <div class="meta"><span>AI materials science</span><span>arXiv</span><strong>76</strong></div>
         <p class="date">2026-07-28</p>
         <h2>Extracting Atomic Environments for Machine Learning Interatomic Potentials</h2>
         <p class="authors">Jared C. Stimac, Fei Zhou, Kyle Bushick, Bo Lei, Sebastien Hamel, Amit Samanta</p>
@@ -58,37 +134,37 @@
         <div class="links"><a href="https://arxiv.org/abs/2607.26018v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2607.26018v1" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> A simple atom-selection strategy called &quot;deletions&quot; more reliably extracts local atomic environments from large simulations for DFT training than more elaborate methods.</p>
-          <p><b>Engineering relevance:</b> This enables more accurate and efficient generation of reference data for machine-learning interatomic potentials in large-scale molecular dynamics and active-learning workflows.</p>
-          <ul><li>Benchmark multiple extraction approaches for embedding local environments into smaller periodic DFT cells</li><li>Test across diverse systems: amorphous SiO2, Ta with screw dislocations, and molten C</li><li>Compare geometry choices and passivation needs for the extracted atom sets</li></ul>
-          <p><b>Evidence signal:</b> The abstract reports a benchmark study across several material systems and states that deletions consistently outperformed alternative extraction methods.</p>
-          <p><b>Watch item:</b> Performance may depend on how well the extracted cluster and any passivating envelope preserve the local chemistry at the chosen boundary.</p>
-          <div class="tags"><span>#MachineLearningPotentials</span> <span>#AtomisticSimulation</span> <span>#DensityFunctionalTheory</span> <span>#MaterialsInformatics</span> <span>#MolecularDynamics</span></div>
+          <p><b>Key insight:</b> A simple deletion-based atom extraction strategy gives the most reliable small periodic DFT-ready environments for training interatomic potentials from large-scale simulations.</p>
+          <p><b>Engineering relevance:</b> This helps active-learning and on-the-fly potential development by making it easier to generate accurate, compact reference calculations from very large atomistic systems.</p>
+          <ul><li>Benchmark multiple ways to carve out local atomic environments from bulk simulations for periodic DFT.</li><li>Compare shape/size choices and the use of passivating envelopes for extracted clusters.</li><li>Test on diverse materials: amorphous SiO2, Ta with screw dislocations, and molten C.</li></ul>
+          <p><b>Evidence signal:</b> The abstract reports a benchmark across multiple material classes, and the deletion method outperformed alternative extraction approaches.</p>
+          <p><b>Watch item:</b> Performance may depend on how well the extracted region and any boundary passivation preserve the local physics needed for DFT accuracy.</p>
+          <div class="tags"><span>#MaterialsInformatics</span> <span>#MachineLearningPotentials</span> <span>#DFT</span> <span>#MolecularDynamics</span> <span>#ActiveLearning</span></div>
         </section>
       </article>
     
 
       <article class="paper">
-        <div class="meta"><span>Crystal and Structure</span><span>arXiv</span><strong>80</strong></div>
-        <p class="date">2026-07-28</p>
-        <h2>Transformer Atomic Cluster Expansion: TRACE</h2>
-        <p class="authors">Paramvir Ahlawat</p>
-        <p class="abstract">Designing machine-learning interatomic potentials involves achieving the precise representation of complex many-body interactions alongside the efficiency required for scalable molecular dynamics. We introduce Transformer Atomic Cluster Expansion (TRACE), an energy-conserving architecture that combines atomic cluster expansion density correlations with local multihead cross-attention. The correlations form an O(3)-equivariant state for each center, which queries tensorial neighbor features that remain fixed functions of species and geometry. No learned state is passed between atoms. On a laptop MacBook-M1, we train and test TRACE for polymorphic cesium lead iodide, liquid water, and intramolecular methyl migration against experiments. For cesium lead iodide, TRACE reproduces the r$^2$SCAN+rVV10 ordering of four polymorphs and gives a classical edge-sharing hexagonal non-perovskite($δ$) to corner-sharing cubic perovskite($α$) Gibbs-free-energy crossing $\simeq$580K near the experimental observations of $\simeq$600K. By employing enhanced sampling to cross high energy barriers, the same TRACE potential successfully captures the $δ$-to-$α$ perovskite transformation without any reinforcement learning. A water potential trained on a reduced set of CCSD(T) configurations places the first oxygen--oxygen maximum at 2.85~Å, compared to the experimental value of 2.80~Å. For the gas-phase methyl migration in 2,2-dimethylisoindene, umbrella sampling yields an activation free energy of $27.92\pm0.03$~kcal~mol$^{-1}$, in close agreement with the experimental measurement of $29.2\pm1.1$~kcal~mol$^{-1}$. Across these diverse benchmarks, a single unified architecture successfully captures multi-species crystallization, liquid structures, phase diagrams, and chemical reactivity.</p>
-        <div class="links"><a href="https://arxiv.org/abs/2607.25652v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2607.25652v1" target="_blank" rel="noreferrer">PDF</a></div>
+        <div class="meta"><span>Microstructure</span><span>arXiv</span><strong>74</strong></div>
+        <p class="date">2026-07-30</p>
+        <h2>Deep Learning for Accelerated Long-Horizon Forecasting of Multicomponent Multiphase Microstructure Evolution in High-Entropy Alloys</h2>
+        <p class="authors">Hamidreza Razavi, Nele Moelans</p>
+        <p class="abstract">Phase-field modeling provides a powerful approach for predicting microstructure evolution but becomes computationally prohibitive for multicomponent and multiphase systems over large spatial and temporal scales. This work presents an AE-GCN-LSTM surrogate framework for long-horizon forecasting of microstructure evolution in the multicomponent AlCrFeNi high-entropy alloy system containing coexisting BCC and FCC phases. A multi-head autoencoder compresses the four elemental concentration fields and phase-field order parameter into latent representations, which are formulated as graphs for learning their spatial and temporal evolution. The framework accurately forecasts microstructure evolution over horizons extending to 3,000,000 simulation timesteps. Its robustness is systematically evaluated under previously unseen conditions without retraining, fine-tuning, or parameter adaptation. These evaluations include variations in FCC precipitate size and initial position, microstructures containing one, two, and five FCC precipitates, and complex phase interactions involving precipitate merging and splitting. Although trained only on 100 x 100 computational domains containing a single nominal alloy composition, the framework is successfully transferred to larger 256 x 256 and 512 x 512 systems and to previously unseen AlCrFeNi compositions. Across the evaluated configurations, the model preserves the dominant phase morphology and compositional evolution while providing computational speedups ranging from approximately 7200 to 62300 relative to conventional phase-field simulations. These results demonstrate that latent graph-based AE-GCN-LSTM forecasting provides a scalable and computationally efficient surrogate for long-horizon simulation of multicomponent, multiphase microstructures and offers a promising foundation for high-throughput alloy design.</p>
+        <div class="links"><a href="https://arxiv.org/abs/2607.27820v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2607.27820v1" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> TRACE combines ACE density correlations with local multihead cross-attention to model complex many-body atomic interactions in an energy-conserving, O(3)-equivariant way without passing learned state between atoms.</p>
-          <p><b>Engineering relevance:</b> It offers a single scalable potential architecture that can reproduce crystal phase ordering, liquid structure, and reaction barriers for diverse chemistry on modest hardware.</p>
-          <ul><li>ACE-style density correlations create per-atom equivariant states.</li><li>Local multihead cross-attention queries fixed tensorial neighbor features defined by species and geometry.</li><li>The model is trained as an energy-conserving interatomic potential for molecular dynamics and enhanced sampling.</li></ul>
-          <p><b>Evidence signal:</b> The abstract reports validation on cesium lead iodide, liquid water, and methyl migration, including a ~580 K phase-crossing prediction, an O–O peak at 2.85 Å vs 2.80 Å experiment, and an activation free energy of 27.92±0.03 kcal/mol vs 29.2±1.1 kcal/mol.</p>
-          <p><b>Watch item:</b> Performance depends on accurate training data and enhanced-sampling setup, so transfer to new chemistries or barrier-crossing problems may require careful recalibration and validation.</p>
-          <div class="tags"><span>#MachineLearningPotentials</span> <span>#AtomisticSimulation</span> <span>#TransformerModel</span> <span>#MaterialsScience</span> <span>#MolecularDynamics</span></div>
+          <p><b>Key insight:</b> An AE-GCN-LSTM surrogate can forecast multicomponent, multiphase microstructure evolution in high-entropy alloys far beyond the training horizon while preserving key morphology and composition trends.</p>
+          <p><b>Engineering relevance:</b> This enables orders-of-magnitude faster phase-field-style simulation for alloy design, large-domain scaling, and high-throughput screening.</p>
+          <ul><li>Multi-head autoencoder compresses four concentration fields plus phase-field order parameter into latent variables.</li><li>Latent states are converted into graphs and propagated with GCN-LSTM for spatial-temporal forecasting.</li><li>Model is trained on 100×100 AlCrFeNi phase-field simulations and then transferred to larger and unseen conditions.</li></ul>
+          <p><b>Evidence signal:</b> The abstract reports accurate forecasting up to 3,000,000 timesteps and speedups of about 7,200 to 62,300× across unseen precipitate configurations, larger domains, and new compositions.</p>
+          <p><b>Watch item:</b> The surrogate is validated from a single nominal training composition and phase-field dataset, so generalization outside the evaluated alloy/physics space may still require careful verification.</p>
+          <div class="tags"><span>#MaterialsInformatics</span> <span>#MicrostructureEvolution</span> <span>#DeepLearning</span> <span>#PhaseFieldModeling</span> <span>#HighEntropyAlloys</span></div>
         </section>
       </article>
     
 
       <article class="paper">
-        <div class="meta"><span>Property Prediction</span><span>arXiv</span><strong>78</strong></div>
+        <div class="meta"><span>Property Prediction</span><span>arXiv</span><strong>73</strong></div>
         <p class="date">2026-07-27</p>
         <h2>Aligning Heterogeneous DFT Datasets: A Graph Neural Network Approach to Cross-Functional Formation Energies</h2>
         <p class="authors">Yidong Huang, Tenglong Lu, Hanwen Kang, Junfeng Huang, Sheng Meng, Miao Liu</p>
@@ -96,18 +172,18 @@
         <div class="links"><a href="https://arxiv.org/abs/2607.24327v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2607.24327v1" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> A graph neural network can learn cross-functional energy corrections, aligning heterogeneous DFT formation energies onto a common high-accuracy scale.</p>
-          <p><b>Engineering relevance:</b> This enables legacy PBE datasets to be upgraded toward r2SCAN-like quality, improving materials screening for phase stability, batteries, and reaction thermodynamics.</p>
-          <ul><li>Train on 380,190 structurally paired PBE-r2SCAN entries from MatPES</li><li>Predict residual energy offsets from atomic structure with a GPTFF-based GNN</li><li>Apply learned corrections to convert PBE energies to r2SCAN-level estimates</li></ul>
-          <p><b>Evidence signal:</b> On the MatPES benchmark, the model achieved 14.3 meV/atom MAE for PBE-to-r2SCAN conversion, outperforming CHGNet at 18.2 meV/atom.</p>
-          <p><b>Watch item:</b> Performance depends on the availability and representativeness of paired cross-functional training data, so transfer to new chemistries or DFT settings may require recalibration.</p>
-          <div class="tags"><span>#MaterialsAI</span> <span>#GraphNeuralNetworks</span> <span>#DFT</span> <span>#FormationEnergy</span> <span>#TransferLearning</span></div>
+          <p><b>Key insight:</b> A graph neural network can learn cross-functional energy corrections to align heterogeneous DFT formation energies onto a common, higher-accuracy scale.</p>
+          <p><b>Engineering relevance:</b> This enables legacy and multi-source PBE datasets to be upgraded toward r2SCAN-quality data for more reliable materials screening, stability prediction, and foundation model training.</p>
+          <ul><li>Train on 380,190 paired PBE-r2SCAN structures from MatPES.</li><li>Use a structure-aware graph neural network (GPTFF) to predict residual energy shifts.</li><li>Convert PBE energies into r2SCAN-level formation energies via transfer learning.</li></ul>
+          <p><b>Evidence signal:</b> On MatPES, the model reduced PBE-to-r2SCAN conversion error to 14.3 meV/atom MAE, outperforming CHGNet at 18.2 meV/atom; the underlying PBE-r2SCAN discrepancy averages 107 meV/atom.</p>
+          <p><b>Watch item:</b> Performance depends on the availability and representativeness of paired datasets, so extrapolation to unseen chemistries, functionals, or pseudopotential settings may be less reliable.</p>
+          <div class="tags"><span>#MaterialsAI</span> <span>#DFT</span> <span>#GraphNeuralNetwork</span> <span>#TransferLearning</span> <span>#FormationEnergy</span></div>
         </section>
       </article>
     
 
       <article class="paper">
-        <div class="meta"><span>Microstructure</span><span>arXiv</span><strong>77</strong></div>
+        <div class="meta"><span>Microstructure</span><span>arXiv</span><strong>72</strong></div>
         <p class="date">2026-07-27</p>
         <h2>Machine-Learning Potentials for sodium-potassium chloride mixtures: Predicting thermophysical properties and phase behavior of multicomponent salts</h2>
         <p class="authors">Karim Zongo, Hao Sun, Zijian Meng, Christopher Maxwell, Edmanuel Torres, Laurent Karim Béland</p>
@@ -115,18 +191,18 @@
         <div class="links"><a href="https://arxiv.org/abs/2607.25022v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2607.25022v1" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> A DFT-trained moment tensor potential can efficiently model NaCl–KCl melts and capture temperature- and composition-dependent thermophysical trends and phase behavior.</p>
-          <p><b>Engineering relevance:</b> This enables large-scale simulation-based screening of multicomponent molten-salt systems for heat-transfer, energy-storage, and process-design applications, while highlighting where experimental calibration is still needed.</p>
-          <ul><li>Trained a moment tensor potential on DFT data for NaCl, KCl, NaCl–KCl mixtures, and NaK alloy.</li><li>Tested the effect of D3 dispersion corrections on model performance.</li><li>Used the potential in molecular dynamics to predict density, diffusion, radial structure, heat capacity, thermal conductivity, and the NaCl–KCl phase diagram.</li></ul>
-          <p><b>Evidence signal:</b> The model reproduces many temperature- and composition-dependent trends across multiple properties, but some absolute values deviate systematically from expected behavior.</p>
-          <p><b>Watch item:</b> Transferability is strong for trends, but quantitative predictions still require experimental validation and possible calibration for reliable engineering use.</p>
-          <div class="tags"><span>#MachineLearningPotentials</span> <span>#MoltenSalts</span> <span>#MolecularDynamics</span> <span>#DFT</span> <span>#MaterialsInformatics</span></div>
+          <p><b>Key insight:</b> A DFT-trained moment tensor potential can extend molecular dynamics predictions for NaCl-KCl melts across temperatures and compositions, capturing many trends in thermophysical properties and phase behavior.</p>
+          <p><b>Engineering relevance:</b> This provides a faster, transferable modeling route for screening molten-salt systems in thermal energy, electrochemical, and process applications, while reducing reliance on exhaustive first-principles simulations.</p>
+          <ul><li>Trained a moment tensor potential on DFT data for NaCl, KCl, NaCl-KCl mixtures, and NaK alloy.</li><li>Compared the impact of including D3 dispersion corrections.</li><li>Used large-scale molecular dynamics to predict densities, diffusion, radial structure, heat capacity, thermal conductivity, and the NaCl-KCl phase diagram.</li></ul>
+          <p><b>Evidence signal:</b> The model reproduces many temperature- and composition-dependent trends, but the abstract notes persistent deviations in several absolute property values.</p>
+          <p><b>Watch item:</b> Quantitative accuracy is not yet fully reliable without experimental validation and calibration, especially for absolute thermophysical properties.</p>
+          <div class="tags"><span>#MachineLearningPotentials</span> <span>#MoltenSalts</span> <span>#DFT</span> <span>#MolecularDynamics</span> <span>#MaterialsInformatics</span></div>
         </section>
       </article>
     
 
       <article class="paper">
-        <div class="meta"><span>Crystal and Structure</span><span>arXiv</span><strong>77</strong></div>
+        <div class="meta"><span>Crystal and Structure</span><span>arXiv</span><strong>72</strong></div>
         <p class="date">2026-07-27</p>
         <h2>MANDALA: An E(3)-Equivariant Graph Neural Network Framework for Learning Electronic-Structure Operators with Observable Guidance</h2>
         <p class="authors">Bartosz Brzoza, Wiktoria Szopa, Zakaria Elabid, Vincent Martinetto, Varadarajan Rengaraj, Mani Lokamani</p>
@@ -134,18 +210,18 @@
         <div class="links"><a href="https://arxiv.org/abs/2607.24997v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2607.24997v1" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> MANDALA learns electronic-structure operators with E(3)-equivariant GNNs, enabling direct prediction of quantum observables beyond energies and forces.</p>
-          <p><b>Engineering relevance:</b> This framework can extend scalable materials modeling to band structures, densities of states, charge distributions, and other electronic properties needed in computational chemistry and materials design.</p>
-          <ul><li>Unified learning of block-sparse Hamiltonian, overlap, and density matrices</li><li>E(3)-equivariant graph neural network workflow with modular abstractions for basis conversion, sparse blocks, and irrep mapping</li><li>Observable-guided evaluation from predicted operators, including band energy, electron count, DOS, and band structure</li></ul>
-          <p><b>Evidence signal:</b> The abstract describes direct evaluation of electronic observables from predicted operators and positions the framework as a scalable implementation across multiple electronic-structure backends.</p>
-          <p><b>Watch item:</b> Performance and transferability will depend on basis choice, sparse operator representation, and the quality of training data for heterogeneous chemistries.</p>
-          <div class="tags"><span>#MaterialsInformatics</span> <span>#GraphNeuralNetworks</span> <span>#EquivariantML</span> <span>#ElectronicStructure</span> <span>#ComputationalChemistry</span></div>
+          <p><b>Key insight:</b> MANDALA is an E(3)-equivariant GNN framework that learns electronic-structure operators, not just energies and forces, enabling direct prediction of quantum observables.</p>
+          <p><b>Engineering relevance:</b> It provides a scalable path to recover band structures, densities of states, charge distributions, and electron counts for materials modeling workflows that need electronic detail beyond standard MLIPs.</p>
+          <ul><li>Unified block-sparse representation of Hamiltonian, overlap, and density matrices</li><li>Modular pipeline for basis conversion, sparse block handling, irrep mapping, graph construction, model definition, and training</li><li>Observable-guided evaluation from predicted operators</li></ul>
+          <p><b>Evidence signal:</b> The abstract states that MANDALA evaluates observables such as band energy, electron count, density of states, and band structure directly from predicted electronic-structure matrices.</p>
+          <p><b>Watch item:</b> Performance will depend on the quality of basis conversion and sparse operator reconstruction, which may add implementation complexity across different backends and chemistries.</p>
+          <div class="tags"><span>#ComputationalMaterials</span> <span>#GraphNeuralNetworks</span> <span>#EquivariantAI</span> <span>#ElectronicStructure</span> <span>#DensityFunctionalTheory</span></div>
         </section>
       </article>
     
 
       <article class="paper">
-        <div class="meta"><span>AI materials science</span><span>arXiv</span><strong>76</strong></div>
+        <div class="meta"><span>AI materials science</span><span>arXiv</span><strong>71</strong></div>
         <p class="date">2026-07-29</p>
         <h2>Computational Study of Water Adsorption and Dissociative Mechanisms Impacting g-C3N4&#x27;s Optical and Electronic Properties</h2>
         <p class="authors">Amil Aligayev, Ulkar Jabbarli, F. Javier Domınguez-Gutierrez, Ulkar Samadova, Jialin Li, Stefanos Papanikolaou</p>
@@ -153,18 +229,94 @@
         <div class="links"><a href="https://arxiv.org/abs/2607.26667v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2607.26667v1" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> Water adsorption and especially H2O dissociation on g-C3N4 nanosheets can substantially improve optical absorbance and electrical conductance, making the material more promising for photocatalytic water splitting.</p>
-          <p><b>Engineering relevance:</b> These results inform the design and screening of g-C3N4-based photocatalysts for cleaner hydrogen production and sustainable energy systems.</p>
-          <ul><li>DFT calculations to benchmark the pristine nanosheet and adsorption states</li><li>SCC-DFTB simulations to probe OH and H2O effects on electronic and optical properties</li><li>ReaxFF molecular dynamics to model multi-H2O emission and H2 evolution trends</li></ul>
-          <p><b>Evidence signal:</b> The abstract reports a computational comparison showing that dissociated water states outperform the pristine nanosheet in both absorbance and conductance.</p>
-          <p><b>Watch item:</b> Because the study is simulation-based, real-world performance may differ due to defects, solvent effects, surface contamination, and synthesis-dependent structure.</p>
-          <div class="tags"><span>#gC3N4</span> <span>#WaterSplitting</span> <span>#Photocatalysis</span> <span>#DFT</span> <span>#MolecularDynamics</span></div>
+          <p><b>Key insight:</b> Water dissociation on g-C3N4 nanosheets markedly improves optical absorbance and electrical conductance, making the material more promising for photocatalytic water splitting.</p>
+          <p><b>Engineering relevance:</b> The study provides a multiscale computational basis for screening and optimizing g-C3N4-based photocatalysts for sustainable hydrogen production.</p>
+          <ul><li>DFT calculations benchmarked the electronic and optical properties of pristine and water-adsorbed g-C3N4.</li><li>SCC-DFTB simulations examined OH/H2O adsorption effects on nanosheet behavior.</li><li>ReaxFF molecular dynamics modeled multiple H2O emissions and estimated H2 evolution trends.</li></ul>
+          <p><b>Evidence signal:</b> The abstract reports a comparative computational evaluation showing stronger absorbance and conductance after H2O dissociation into HO and O relative to the pristine nanosheet.</p>
+          <p><b>Watch item:</b> Because the conclusions are based on atomistic simulations, real-world photocatalytic performance may differ under defects, temperature, solvent, and experimental surface conditions.</p>
+          <div class="tags"><span>#MaterialsScience</span> <span>#Photocatalysis</span> <span>#DFT</span> <span>#MolecularDynamics</span> <span>#HydrogenProduction</span></div>
         </section>
       </article>
     
 
       <article class="paper">
-        <div class="meta"><span>Crystal and Structure</span><span>arXiv</span><strong>73</strong></div>
+        <div class="meta"><span>Materials Discovery</span><span>arXiv</span><strong>70</strong></div>
+        <p class="date">2026-07-30</p>
+        <h2>FinSMART: Financial Sentiment Analysis for Algorithmic Trading through Market-Aligned Reinforcement Learning</h2>
+        <p class="authors">Giorgos Iacovides, Wuyang Zhou, Danilo Mandic</p>
+        <p class="abstract">Recent advances in Generative AI have substantially improved financial sentiment analysis through post-trained financial large language models (LLMs). However, existing approaches remain confined to a market-agnostic, supervised learning paradigm that relies on limited, static and human-annotated datasets, and thus are incapable of adapting to evolving market conditions. To address this limitation, we introduce FinSMART, the first market-aligned reinforcement learning framework for financial sentiment analysis, which directly optimizes sentiment signals using realized market outcomes. To deal with the noisy, non-stationary, and multifactorial nature of financial markets, FinSMART incorporates a signal extraction pipeline that combines market-aware data filtering with a discrete asymmetric trading reward, enabling stable reinforcement learning from economically meaningful market feedback. Experimental results demonstrate that FinSMART significantly outperforms existing state-of-the-art methods in profitability, risk-adjusted performance, and sentiment signal quality, improving cumulative trading returns by 220% over the strongest baseline. Uniquely, the FinSMART framework naturally supports market-aware retraining, at any point in time, by replacing costly manual annotation with newly observed financial articles and their realized market outcomes. Such a retraining strategy enables the model to continuously adapt to changing market dynamics, resulting in consistent performance gains over its static counterpart. These findings demonstrate the practical applicability of market-aligned reinforcement learning and highlight its potential as a next-generation paradigm for developing adaptive financial LLMs.</p>
+        <div class="links"><a href="https://arxiv.org/abs/2607.28127v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2607.28127v1" target="_blank" rel="noreferrer">PDF</a></div>
+        <section class="info">
+          <h3>OpenAI Infographic Summary</h3>
+          <p><b>Key insight:</b> FinSMART replaces static, human-labeled financial sentiment training with reinforcement learning that directly optimizes sentiment signals from realized market outcomes.</p>
+          <p><b>Engineering relevance:</b> The framework offers a practical way to build adaptive trading-oriented AI systems that can retrain on fresh market data without costly manual annotation.</p>
+          <ul><li>Market-aware data filtering to reduce noise and focus on economically meaningful articles</li><li>Discrete asymmetric trading reward to convert market outcomes into stable RL feedback</li><li>Market-aligned retraining using newly observed articles and realized returns</li></ul>
+          <p><b>Evidence signal:</b> According to the abstract, FinSMART outperforms strong baselines across profitability, risk-adjusted performance, and sentiment signal quality, with cumulative trading returns improving by 220%.</p>
+          <p><b>Watch item:</b> Because financial markets are noisy and non-stationary, the reward design and retraining pipeline may be sensitive to regime shifts and evaluation period choice.</p>
+          <div class="tags"><span>#FinancialAI</span> <span>#ReinforcementLearning</span> <span>#SentimentAnalysis</span> <span>#AlgorithmicTrading</span> <span>#AdaptiveLLMs</span></div>
+        </section>
+      </article>
+    
+
+      <article class="paper">
+        <div class="meta"><span>Crystal and Structure</span><span>arXiv</span><strong>70</strong></div>
+        <p class="date">2026-07-28</p>
+        <h2>Transformer Atomic Cluster Expansion: TRACE</h2>
+        <p class="authors">Paramvir Ahlawat</p>
+        <p class="abstract">Designing machine-learning interatomic potentials involves achieving the precise representation of complex many-body interactions alongside the efficiency required for scalable molecular dynamics. We introduce Transformer Atomic Cluster Expansion (TRACE), an energy-conserving architecture that combines atomic cluster expansion density correlations with local multihead cross-attention. The correlations form an O(3)-equivariant state for each center, which queries tensorial neighbor features that remain fixed functions of species and geometry. No learned state is passed between atoms. On a laptop MacBook-M1, we train and test TRACE for polymorphic cesium lead iodide, liquid water, and intramolecular methyl migration against experiments. For cesium lead iodide, TRACE reproduces the r$^2$SCAN+rVV10 ordering of four polymorphs and gives a classical edge-sharing hexagonal non-perovskite($δ$) to corner-sharing cubic perovskite($α$) Gibbs-free-energy crossing $\simeq$580K near the experimental observations of $\simeq$600K. By employing enhanced sampling to cross high energy barriers, the same TRACE potential successfully captures the $δ$-to-$α$ perovskite transformation without any reinforcement learning. A water potential trained on a reduced set of CCSD(T) configurations places the first oxygen--oxygen maximum at 2.85~Å, compared to the experimental value of 2.80~Å. For the gas-phase methyl migration in 2,2-dimethylisoindene, umbrella sampling yields an activation free energy of $27.92\pm0.03$~kcal~mol$^{-1}$, in close agreement with the experimental measurement of $29.2\pm1.1$~kcal~mol$^{-1}$. Across these diverse benchmarks, a single unified architecture successfully captures multi-species crystallization, liquid structures, phase diagrams, and chemical reactivity.</p>
+        <div class="links"><a href="https://arxiv.org/abs/2607.25652v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2607.25652v1" target="_blank" rel="noreferrer">PDF</a></div>
+        <section class="info">
+          <h3>OpenAI Infographic Summary</h3>
+          <p><b>Key insight:</b> TRACE is a unified, energy-conserving interatomic potential that pairs ACE density correlations with local cross-attention to model many-body chemistry and crystal physics without passing learned states between atoms.</p>
+          <p><b>Engineering relevance:</b> It offers a scalable route to accurate molecular dynamics on a laptop-class machine, supporting phase transitions, liquid structure, and reaction barriers with one architecture.</p>
+          <ul><li>ACE-based O(3)-equivariant center states capture many-body density correlations.</li><li>Local multihead cross-attention queries fixed tensorial neighbor features determined by species and geometry.</li><li>No learned message passing state is propagated between atoms, preserving energy conservation and efficiency.</li></ul>
+          <p><b>Evidence signal:</b> The model was evaluated on polymorphic cesium lead iodide, liquid water, and methyl migration, matching key experimental or high-level reference targets such as a ~580 K phase crossing, an O–O distance of 2.85 Å, and a 27.92±0.03 kcal/mol barrier.</p>
+          <p><b>Watch item:</b> Performance may depend on high-quality reference data and enhanced sampling for rare transitions, so transferability outside the demonstrated chemistries and phase spaces remains to be validated.</p>
+          <div class="tags"><span>#MachineLearningPotentials</span> <span>#AtomisticSimulation</span> <span>#Transformer</span> <span>#MaterialsScience</span> <span>#MolecularDynamics</span></div>
+        </section>
+      </article>
+    
+
+      <article class="paper">
+        <div class="meta"><span>AI materials science</span><span>arXiv</span><strong>69</strong></div>
+        <p class="date">2026-07-30</p>
+        <h2>Vibe-FDTR: An agent-oriented framework for reproducible frequency-domain thermoreflectance data analysis</h2>
+        <p class="authors">Fuwei Yang, Weiheng Li, Bai Song</p>
+        <p class="abstract">Frequency-domain thermoreflectance (FDTR) is a laser pump-probe technique widely used to measure thermal properties at the micro- and nanoscale; however, it relies on a complex data analysis procedure that demands substantial domain expertise and is susceptible to subtle human errors. Here, we present Vibe-FDTR, an agent-oriented framework that enables large language model (LLM) agents to perform reliable and reproducible FDTR analyses directly from natural language requests. This framework couples a configuration-driven FDTR code package, which enforces physical and parametric consistency, with procedural agent skills that translate user intentions into organized and verifiable analysis steps. We evaluate Vibe-FDTR using a controlled benchmark with two levels: synthetic single-step tasks and real-data multi-step tasks based on measurements of gold-coated graphite samples. Across the two levels, agents using Vibe-FDTR achieve success rates of 100% and 98.9%, respectively. In sharp contrast, ablating skills (Code-agent) reduces performance to 91.4% and 36.7%, which drops further to 38.6% and 0% when the domain package is also omitted (Agent-only). Beyond success rate, Vibe-FDTR also reduces computational cost by 87.7% relative to the Code-agent variant and cuts execution time by more than 60%. Finally, an optional expert mode supports experimental planning via autonomous sensitivity and uncertainty evaluations, and formulates physically grounded recommendations for underspecified tasks. These results demonstrate that encapsulating domain code and expert knowledge into agent skills offers a promising route toward low-barrier, autonomous, and trustworthy thermal metrology.</p>
+        <div class="links"><a href="https://arxiv.org/abs/2607.28200v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2607.28200v1" target="_blank" rel="noreferrer">PDF</a></div>
+        <section class="info">
+          <h3>OpenAI Infographic Summary</h3>
+          <p><b>Key insight:</b> Vibe-FDTR turns natural-language requests into reproducible FDTR analysis by pairing LLM agents with a configuration-driven, physically consistent domain codebase.</p>
+          <p><b>Engineering relevance:</b> The framework lowers the expertise barrier for thermal metrology while improving reliability, speed, and cost efficiency for microscale heat-transport characterization.</p>
+          <ul><li>Agent skills translate user intent into ordered, verifiable FDTR analysis steps.</li><li>A configuration-driven code package enforces physical and parameter consistency.</li><li>An optional expert mode performs sensitivity and uncertainty analysis for planning.</li></ul>
+          <p><b>Evidence signal:</b> In benchmark tests, Vibe-FDTR achieved 100% success on synthetic single-step tasks and 98.9% on real-data multi-step tasks, outperforming ablated variants.</p>
+          <p><b>Watch item:</b> Results depend on a tightly integrated domain package and skill design, so robustness may drop if the FDTR configuration, physical assumptions, or workflow constraints are not carefully maintained.</p>
+          <div class="tags"><span>#Thermoreflectance</span> <span>#LLMAgents</span> <span>#MaterialsInformatics</span> <span>#ReproducibleResearch</span> <span>#ThermalMetrology</span></div>
+        </section>
+      </article>
+    
+
+      <article class="paper">
+        <div class="meta"><span>Microstructure</span><span>arXiv</span><strong>68</strong></div>
+        <p class="date">2026-07-30</p>
+        <h2>Transport Evidence of Magnetic Polarization in the Altermagnetic Candidate MnTe</h2>
+        <p class="authors">Younes Ghorbani, Nayana Devaraj, Joshua Maile, Samuel Poage, Qihua Zhang, Maria Hilse</p>
+        <p class="abstract">The ability to precisely control magnetic properties is central to the development of future spin-based electronics. In this work, we report the successful growth of epitaxial α-MnTe thin films on InP(111) substrates using molecular beam epitaxy. Magneto-transport measurements at low temperatures reveal a distinct, hysteretic butterfly longitudinal magnetoresistance alongside a nonlinear transverse magneto-resistance response, suggesting the presence of a finite net magnetic polarization in the films. To understand the origin of this behavior, density functional theory (DFT) calculations were performed. While pristine bulk MnTe is a compensated antiferromagnet, our computational results suggest multiple pathways through which a finite magnetization can emerge in thin-film geometries, including interface-induced symmetry breaking and point defects. These findings demonstrate an epitaxial route for engineering magnetic responses in thin films.</p>
+        <div class="links"><a href="https://arxiv.org/abs/2607.28441v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2607.28441v1" target="_blank" rel="noreferrer">PDF</a></div>
+        <section class="info">
+          <h3>OpenAI Infographic Summary</h3>
+          <p><b>Key insight:</b> Epitaxial α-MnTe thin films on InP(111) show transport signatures consistent with a finite net magnetic polarization, despite bulk MnTe being a compensated antiferromagnet.</p>
+          <p><b>Engineering relevance:</b> The work points to a thin-film route for tuning magnetic response in spintronic materials through epitaxial growth, interfaces, and defect engineering.</p>
+          <ul><li>Molecular beam epitaxy growth of α-MnTe on InP(111)</li><li>Low-temperature magnetotransport measurements (longitudinal and transverse magnetoresistance)</li><li>DFT calculations of bulk and thin-film/defect-induced magnetic behavior</li></ul>
+          <p><b>Evidence signal:</b> A hysteretic butterfly-like longitudinal magnetoresistance and nonlinear transverse magnetoresistance were observed, and DFT indicated symmetry breaking or point defects can generate finite magnetization in thin films.</p>
+          <p><b>Watch item:</b> Transport signatures imply magnetic polarization but do not by themselves prove the exact microscopic source, so interface and defect effects need direct structural/magnetic verification.</p>
+          <div class="tags"><span>#MnTe</span> <span>#Altermagnetism</span> <span>#Spintronics</span> <span>#Magnetotransport</span> <span>#DFT</span></div>
+        </section>
+      </article>
+    
+
+      <article class="paper">
+        <div class="meta"><span>Crystal and Structure</span><span>arXiv</span><strong>68</strong></div>
         <p class="date">2026-07-29</p>
         <h2>Structure-Property Correlation of Cr/Cu-MnFeCoNi High-Entropy Alloys for Alkaline Water Electrolysis</h2>
         <p class="authors">Shreyasi Chattopadhyaya, Raphael B. de Oliveira, Deepti Gangwar, Tymofii S Pieshkov, Marcelo L. Pereira Junior, Dhiman Banik</p>
@@ -172,18 +324,18 @@
         <div class="links"><a href="https://arxiv.org/abs/2607.26888v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2607.26888v1" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> Replacing Cr with Cu in MnFeCoNi high-entropy alloys strengthens bifunctional alkaline water-splitting performance by tuning surface chemistry and reaction-intermediate binding.</p>
-          <p><b>Engineering relevance:</b> A single-element substitution can be used as a practical design lever to create cheaper, higher-activity HEA electrocatalysts for hydrogen and oxygen evolution.</p>
-          <ul><li>Compared CrMnFeCoNi (HEA-Cr) against MnFeCoNiCu (HEA-Cu) under the same alkaline HER/OER conditions.</li><li>Used electrochemical performance metrics including overpotential and Tafel slope to assess catalytic activity.</li><li>Supported experiments with computational electronic-structure analysis of H*, O*, OH*, and OOH* binding.</li></ul>
-          <p><b>Evidence signal:</b> HEA-Cu outperformed HEA-Cr for both HER and OER, reaching a lower overpotential of 538 mV and a Tafel slope of 165 mV dec-1, with simulations indicating more favorable intermediate binding.</p>
-          <p><b>Watch item:</b> The Cu-rich surface formed after OER suggests the catalyst may undergo composition changes during operation, so durability and long-term stability should be verified.</p>
-          <div class="tags"><span>#HighEntropyAlloys</span> <span>#Electrocatalysis</span> <span>#WaterSplitting</span> <span>#AlkalineElectrolysis</span> <span>#MaterialsDesign</span></div>
+          <p><b>Key insight:</b> Replacing Cr with Cu in MnFeCoNi high-entropy alloys substantially improves bifunctional alkaline water-splitting activity by tuning surface chemistry and intermediate binding.</p>
+          <p><b>Engineering relevance:</b> A single-element substitution in HEAs can be used as a practical design lever to develop more efficient, lower-cost electrocatalysts for hydrogen production.</p>
+          <ul><li>Compared CrMnFeCoNi (HEA-Cr) and MnFeCoNiCu (HEA-Cu) under the same alkaline HER/OER conditions.</li><li>Combined electrochemical testing with computational electronic-structure analysis of reaction-intermediate binding.</li><li>Examined post-OER surface evolution to assess Cu redistribution and shell formation.</li></ul>
+          <p><b>Evidence signal:</b> HEA-Cu showed better HER and OER performance than HEA-Cr, including a lower overpotential of 538 mV and a Tafel slope of 165 mV dec-1, consistent with computed favorable binding energies for H*, O*, OH*, and OOH*.</p>
+          <p><b>Watch item:</b> The reported Cu migration and Cu-rich shell after OER suggests that long-term stability and surface reconstruction must be considered before deployment.</p>
+          <div class="tags"><span>#HighEntropyAlloys</span> <span>#Electrocatalysis</span> <span>#WaterElectrolysis</span> <span>#HydrogenEvolution</span> <span>#OxygenEvolution</span></div>
         </section>
       </article>
     
 
       <article class="paper">
-        <div class="meta"><span>Crystal and Structure</span><span>arXiv</span><strong>73</strong></div>
+        <div class="meta"><span>Crystal and Structure</span><span>arXiv</span><strong>68</strong></div>
         <p class="date">2026-07-29</p>
         <h2>Crystal forming ability of amorphous refractory metals under nanoindentation: a molecular dynamics study</h2>
         <p class="authors">Prashant Dwivedi, Alberto Fraile, Tomas Polcar</p>
@@ -191,37 +343,18 @@
         <div class="links"><a href="https://arxiv.org/abs/2607.26881v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2607.26881v1" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> Nanoindentation can mechanically trigger amorphous-to-bcc devitrification in refractory metals, and the ease of crystal formation varies strongly across the series with V easiest and W hardest.</p>
-          <p><b>Engineering relevance:</b> This suggests amorphous refractory coatings can be ranked for contact-load stability, helping engineers choose compositions that better resist unwanted crystallization under service.</p>
-          <ul><li>Melt-quenched amorphous V, Nb, Mo, Ta, and W to 300 K</li><li>Validated interatomic potentials against ab initio liquid radial distribution functions</li><li>Ran large-scale molecular dynamics nanoindentation and tracked bcc fraction versus depth</li></ul>
-          <p><b>Evidence signal:</b> The abstract reports a CFA metric from sigmoidal bcc-fraction depth curves, a roughly fourfold spread across metals, and a velocity scaling of CFA ∝ v^-m with mean exponent 1.08.</p>
-          <p><b>Watch item:</b> Results come from molecular dynamics with fitted potentials, so transferability to real coatings, defects, and experimental loading rates may be limited.</p>
-          <div class="tags"><span>#MolecularDynamics</span> <span>#Nanoindentation</span> <span>#RefractoryMetals</span> <span>#AmorphousMaterials</span> <span>#Devitrification</span></div>
+          <p><b>Key insight:</b> Nanoindentation can trigger shear-driven devitrification in amorphous refractory metals, and their crystal forming ability varies strongly across the series, with V transforming most readily and W most resistant.</p>
+          <p><b>Engineering relevance:</b> The results help predict when protective amorphous coatings may crystallize under contact loading, guiding refractory alloy selection for harder and more stable surfaces.</p>
+          <ul><li>Melt-quenched amorphous V, Nb, Mo, Ta, and W were prepared and validated against ab initio liquid radial distribution functions.</li><li>Large-scale molecular dynamics nanoindentation was used to measure bcc transformation kinetics and local atomic deformation.</li><li>A grain population balance framework linked nucleation, growth, and coalescence to the final microstructure.</li></ul>
+          <p><b>Evidence signal:</b> The study reports a sigmoidal bcc-fraction-versus-depth response, a CFA ranking of V &gt; Mo &gt; Nb &gt; Ta &gt; W, and a velocity scaling of CFA ∝ v^-m with mean exponent 1.08.</p>
+          <p><b>Watch item:</b> The findings come from simulation with specific interatomic potentials and loading conditions, so direct transfer to experiments and different coating chemistries should be done cautiously.</p>
+          <div class="tags"><span>#MolecularDynamics</span> <span>#Nanoindentation</span> <span>#AmorphousMetals</span> <span>#Devitrification</span> <span>#RefractoryMetals</span></div>
         </section>
       </article>
     
 
       <article class="paper">
-        <div class="meta"><span>Crystal and Structure</span><span>arXiv</span><strong>73</strong></div>
-        <p class="date">2026-07-23</p>
-        <h2>Ionic Diffusion Properties of Rare-Earth High-Entropy Oxides from a Machine-Learned Interatomic Potential</h2>
-        <p class="authors">Mary Kathleen Caucci, Billy E. Yang, Saeed S. I. Almishal, Jon-Paul Maria, Susan B. Sinnott</p>
-        <p class="abstract">Rare-earth high-entropy oxides (RE-HEOs) have emerged as a promising class of functional ceramics for solid-state electrochemical applications due to their chemical complexity, structural tunability, and potential for fast oxygen-ion transport. In this work, we investigate oxygen diffusion in ceria-based RE-HEOs of the form Ce$_x$(YLaPrSm)$_{1-x}$O$_{2-δ}$ using classical molecular dynamics simulations driven by the Crystal Hamiltonian Graph Neural Network (CHGNet) machine-learned interatomic potential. To improve predictive accuracy for lanthanide-containing systems, we benchmark three CHGNet variants, including a fine-tuned r$^2$SCAN-trained model, against targeted density functional theory (DFT) data that explicitly include f-valence electrons. Simulations across temperature, Ce content, oxygen vacancy concentration, and both fluorite and bixbyite structures reveal that oxygen transport in RE-HEOs is governed by the interplay of two factors: the concentration of mobile vacancies and the local cation environment through which they hop. At fixed composition, ionic conductivity exhibits a non-monotonic dependence on vacancy concentration, with optimal diffusion occurring at moderate vacancy levels and reduced mobility at higher concentrations. Increasing Ce content lowers migration activation energies and enhances diffusivity through low-barrier diffusion networks built from Ce-Ce and Ce-Y edges. Analysis of individual oxygen hopping events provides atomistic insight into how local chemical environments and short-range cation ordering govern transport in high-entropy oxides. Overall, this work demonstrates that machine-learned interatomic potentials can resolve composition-structure-transport relationships in chemically complex oxides, and identifies active pathways through which compositional tuning can enhance oxygen-ion conductivity in RE-HEO materials.</p>
-        <div class="links"><a href="https://arxiv.org/abs/2607.21726v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2607.21726v1" target="_blank" rel="noreferrer">PDF</a></div>
-        <section class="info">
-          <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> Oxygen-ion transport in rare-earth high-entropy oxides is controlled by both vacancy availability and the local cation environment, with Ce-rich compositions enabling faster low-barrier diffusion pathways.</p>
-          <p><b>Engineering relevance:</b> The results point to composition tuning as a practical lever for designing more conductive solid-state electrolyte ceramics with improved oxygen-ion mobility.</p>
-          <ul><li>Classical molecular dynamics with the CHGNet machine-learned interatomic potential</li><li>Benchmarking three CHGNet variants against targeted DFT data with explicit f-valence electrons</li><li>Systematic scans over temperature, Ce content, vacancy concentration, and fluorite vs bixbyite structures</li></ul>
-          <p><b>Evidence signal:</b> The abstract reports that conductivity shows a non-monotonic dependence on vacancy concentration and that Ce addition lowers migration barriers and increases diffusivity.</p>
-          <p><b>Watch item:</b> Transferability depends on how well the CHGNet variants capture lanthanide f-electron chemistry, so validation against DFT for new compositions remains important.</p>
-          <div class="tags"><span>#HighEntropyOxides</span> <span>#OxygenDiffusion</span> <span>#MachineLearningPotentials</span> <span>#SolidStateElectrolytes</span> <span>#MolecularDynamics</span></div>
-        </section>
-      </article>
-    
-
-      <article class="paper">
-        <div class="meta"><span>Materials Discovery</span><span>arXiv</span><strong>72</strong></div>
+        <div class="meta"><span>Materials Discovery</span><span>arXiv</span><strong>67</strong></div>
         <p class="date">2026-07-29</p>
         <h2>Physics-informed Machine Learning Prediction of Hubbard Interaction Parameters</h2>
         <p class="authors">Jiyeon Kim, Indukuru Ramesh Reddy, Bongjae Kim, Sooran Kim</p>
@@ -229,107 +362,31 @@
         <div class="links"><a href="https://arxiv.org/abs/2607.26422v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2607.26422v1" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> Physics-informed machine learning can accurately predict cRPA-derived Hubbard parameters (Ueff, V, J) for transition-metal oxides while revealing how localization, hybridization, and elemental chemistry control electronic interactions.</p>
-          <p><b>Engineering relevance:</b> The approach can accelerate screening of correlated materials for DFT+U, DFT+DMFT, and DFT+U+V workflows by replacing expensive cRPA calculations with fast, interpretable predictions.</p>
-          <ul><li>Train ensemble ML models on cRPA-calculated Hubbard parameters for TMOs</li><li>Use physically motivated descriptors such as TM-d bandwidth and TM-d/O-p band-center separation</li><li>Derive explicit analytical expressions via regression-based brute-force search</li></ul>
-          <p><b>Evidence signal:</b> The ensemble models report RMSEs of 0.148 eV for Ueff, 0.062 eV for V, and 0.007 eV for J, indicating strong predictive accuracy.</p>
-          <p><b>Watch item:</b> Model performance may depend on the chemistry and structure represented in the training set, so extrapolation to unfamiliar materials should be validated carefully.</p>
-          <div class="tags"><span>#MaterialsInformatics</span> <span>#MachineLearning</span> <span>#CorrelatedMaterials</span> <span>#DensityFunctionalTheory</span> <span>#HubbardU</span></div>
+          <p><b>Key insight:</b> Physics-informed machine learning can predict cRPA-derived Hubbard parameters for transition-metal oxides with high accuracy while revealing physically interpretable trends behind electron correlation and screening.</p>
+          <p><b>Engineering relevance:</b> This enables faster, scalable screening of materials for DFT+U, DFT+DMFT, and related beyond-DFT workflows without relying on expensive cRPA calculations for every candidate.</p>
+          <ul><li>Ensemble ML models trained on electronic, structural, and atomic descriptors</li><li>Regression-based brute-force search to derive explicit analytical expressions</li><li>Physically motivated features including TM-d bandwidth and TM-d/O-p band-center separation</li></ul>
+          <p><b>Evidence signal:</b> The abstract reports low test errors of 0.148 eV for Ueff, 0.062 eV for V, and 0.007 eV for J on transition-metal oxides.</p>
+          <p><b>Watch item:</b> The models are trained on cRPA data for TM oxides, so transfer to other chemistries or low-data regimes may require retraining and careful validation.</p>
+          <div class="tags"><span>#MaterialsDiscovery</span> <span>#MachineLearning</span> <span>#HubbardU</span> <span>#DFTplusU</span> <span>#ComputationalMaterials</span></div>
         </section>
       </article>
     
 
       <article class="paper">
-        <div class="meta"><span>Crystal and Structure</span><span>arXiv</span><strong>70</strong></div>
-        <p class="date">2026-07-29</p>
-        <h2>Materials Behavior as Mechanism Ensembles: A Probabilistic Framework for Emergent Behaviors</h2>
-        <p class="authors">Brad L. Boyce, Mitchell A. Wood, Krishna Garikipati, Andreas E. Robertson, Jeffrey Larson, Ishan Srivastava</p>
-        <p class="abstract">Materials behavior is often treated as a deterministic mapping from structure to properties, yet many important phenomena emerge from the conditional activation of multiple mechanisms across scales. This is especially evident in fatigue of metals, where crack growth is typically modeled as monotonic and irreversible process, despite evidence that local microstructure, loading history, and competing unit processes can shift the balance among propagation, arrest, and self-healing. Here we present a probabilistic framework that describes materials behavior as an ensemble of constituent mechanisms whose activation, interaction, and evolution determine emergent outcomes. The framework connects mechanism activation, state evolution, and macroscopic observables in a probabilistic way. In the case of fatigue crack propagation, it reframes damage tolerance as an inference problem over mechanism competition and provides a basis for integrating multiscale simulation, multimodal characterization, and machine learning. The same logic extends to other physical and chemical systems suggesting a portable framework for any system in which emergent behavior reflects mechanism competition under changing conditions. The broader ambition of this perspective review is a shift from correlating structure and performance after the fact to identifying, in advance, the conditions that make desired emergent behavior probable.</p>
-        <div class="links"><a href="https://arxiv.org/abs/2607.27163v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2607.27163v1" target="_blank" rel="noreferrer">PDF</a></div>
+        <div class="meta"><span>Microstructure</span><span>arXiv</span><strong>66</strong></div>
+        <p class="date">2026-07-30</p>
+        <h2>Optimization of magneto-electric properties in Lead-free (x)Co1.2Ti0.2Fe1.6O4 - (100-x)BaTiO3 based composites</h2>
+        <p class="authors">Rajeev Dwivedi, Samanway Mohanta, Ashutosh Anand, Abhinash Tripathy, Najnin Bano, Dharmendra Kumar</p>
+        <p class="abstract">This work presents a systematic study of lead-free multiferroic composites of (x)Co1.2Ti0.2Fe1.6O4 - (100-x)BaTiO3 (x = 10, 20, 30), which were synthesized by a solid-state reaction method to investigate the effects of composition and sintering temperature on their structural , electrical, magnetic, and magnetoelectric (ME) properties. X-ray diffraction along with Rietveld refinement confirms the coexistence of tetragonal BaTiO3 (BTO) and cubic spinel Co1.2Ti0.2Fe1.6O4 (CTFO) phases. Microstructural analysis shows that densification and grain growth are better at higher sintering temperatures, leading to better coupling between the two phases. Dielectric and ferroelectric studies indicate lossy polarization-electric field (P-E) behaviour due to leakage from the conductive phase, while magnetic properties show increased magnetization with increasing ferrite content. All composites exhibit ME coefficients, which depend on the composition and sintering conditions; the highest ME coefficient (~1.28 mV/cm.Oe) was observed for the 30CTFO - 70BTO composite sintered at 1200 °C. This improvement is due to the optimal balance between magnetostrictive and piezoelectric responses and improved interfacial strain transfer. These results demonstrate that simultaneous optimization of dopant-modified composition and sintering conditions is essential for achieving improved magnetoelectric coupling in bulk multiferroic composites. Moreover, the results demonstrate the potential of lead-free composites for multifunctional device applications in next-generation, low-power technologies, including high-density non-volatile memory (e.g. FeRAM/MRAM), magnetic field sensors, spintronic devices, and actuators.</p>
+        <div class="links"><a href="https://arxiv.org/abs/2607.27717v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2607.27717v1" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> Materials behavior is modeled as a probabilistic ensemble of competing mechanisms, where emergent outcomes arise from which mechanisms activate, interact, and evolve under changing conditions.</p>
-          <p><b>Engineering relevance:</b> This framework can improve prediction and design of fatigue damage tolerance by turning crack growth and arrest into an inference problem over competing unit processes.</p>
-          <ul><li>Represent behavior as an ensemble of constituent mechanisms across scales</li><li>Connect mechanism activation, state evolution, and macroscopic observables probabilistically</li><li>Use the framework to integrate simulation, characterization, and machine learning</li></ul>
-          <p><b>Evidence signal:</b> The abstract presents a perspective framework and motivates it with fatigue crack propagation as a case study, but does not report quantitative results or benchmark performance.</p>
-          <p><b>Watch item:</b> Practical use will depend on whether mechanism probabilities can be estimated reliably from sparse, noisy multiscale data.</p>
-          <div class="tags"><span>#MaterialsScience</span> <span>#Fatigue</span> <span>#ProbabilisticModeling</span> <span>#MechanismCompetition</span> <span>#MultiscaleDesign</span></div>
-        </section>
-      </article>
-    
-
-      <article class="paper">
-        <div class="meta"><span>Crystal and Structure</span><span>arXiv</span><strong>70</strong></div>
-        <p class="date">2026-07-24</p>
-        <h2>SAGE-Net: Semantics-Augmented Geometric Encoder for Material Property Prediction</h2>
-        <p class="authors">Guanghui Zhang, Yuxuan Yao, Kieran B. Spooner, Jun Yin, Dan Han, David O. Scanlon</p>
-        <p class="abstract">Reliable structure-property modeling is crucial for accelerating materials discovery, where crystal graphs and structure-derived crystallographic descriptions provide complementary geometric and semantic information. Existing multimodal materials models primarily incorporate textual information through post-encoding fusion, latent-space alignment, or attention-based representation interaction mechanisms. However, in most cases, crystallographic semantics are introduced after structural encoding and therefore cannot directly guide the formation of atom-level crystal-graph representations. Here, we present Semantics-Augmented Geometric Encoder Network (SAGE-Net), a flexible multimodal framework that injects description-derived chemical and crystallographic semantics into geometric message passing. SAGE-Net introduces Semantic-Guided Message Passing (SGMP), which gates atom-level updates and enables crystallographic semantics to directly modulate local geometric interactions across multiple graph neural network (GNN) backbones. Across benchmarks covering bandgap, mechanical, transport-related properties, and synthesizability assessment, the SAGE-Net instantiated with different GNN backbones achieves the lowest MAE on eight out of ten JARVIS-DFT regression targets and delivers strong or highly competitive performance against both structure-based and multimodal baselines. For synthesizability assessment, the SAGE-Net demonstrate outstanding classification performance and high recall rates. Interpretability analysis unravels that SAGE-Net effectively captures physically interpretable crystallographic features, viz. space group, dimensionality, polyhedral environments, among others. Together, these results demonstrate SGMP-based SAGE-Net as a general and transferable framework for deeply integrated multimodal materials learning.</p>
-        <div class="links"><a href="https://arxiv.org/abs/2607.22271v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2607.22271v1" target="_blank" rel="noreferrer">PDF</a></div>
-        <section class="info">
-          <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> SAGE-Net injects crystallographic semantics directly into geometric message passing, letting text-derived structure descriptors actively guide atom-level crystal graph learning for better property prediction.</p>
-          <p><b>Engineering relevance:</b> This makes multimodal materials models more transferable and physically informed, improving predictions for screening candidate materials in design and discovery workflows.</p>
-          <ul><li>Semantic-Guided Message Passing (SGMP) gates atom updates using description-derived chemical and crystallographic semantics.</li><li>The framework can be attached to multiple GNN backbones for flexible multimodal learning.</li><li>It combines structural graphs with crystallographic descriptions instead of fusing text only after encoding.</li></ul>
-          <p><b>Evidence signal:</b> Across JARVIS-DFT benchmarks, SAGE-Net achieved the lowest MAE on 8 of 10 regression targets and showed strong synthesizability classification performance with high recall.</p>
-          <p><b>Watch item:</b> Performance may depend on the quality and consistency of the crystallographic descriptions used to generate semantic signals, which could limit robustness across datasets.</p>
-          <div class="tags"><span>#MaterialsInformatics</span> <span>#GraphNeuralNetworks</span> <span>#CrystalStructures</span> <span>#MultimodalLearning</span> <span>#PropertyPrediction</span></div>
-        </section>
-      </article>
-    
-
-      <article class="paper">
-        <div class="meta"><span>Property Prediction</span><span>arXiv</span><strong>68</strong></div>
-        <p class="date">2026-07-29</p>
-        <h2>No band gap, no problem: Defects in InAs using a band-avoiding occupation-constrained density functional theory</h2>
-        <p class="authors">Peter A. Schultz, Arthur H. Edwards, Evan M. Anderson, Anthony C. Knighton, Leopoldo Diaz</p>
-        <p class="abstract">Density functional theory (DFT) underestimates the experimental band gap---the infamous band gap problem. As the band gap defines the energy scale of defect levels, this complicates computation of charge transition energies for atomic defects. In the extreme case of narrow-gap semiconductors, the DFT band gap collapses to zero, seemingly precluding quantitative predictions of defect levels. We present a band-avoiding occupation-constrained DFT (ba-occ-DFT) approach that prevents spurious occupation of band-edge states and enables reliable total energy calculations of atomic defects. Application to indium arsenide (InAs) shows that ba-occ-DFT circumvents the band gap problem, separates band-edge errors from defect level calculations, and enables rigorous defect level predictions in a narrow-gap semiconductor despite a zero DFT band gap.</p>
-        <div class="links"><a href="https://arxiv.org/abs/2607.27095v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2607.27095v1" target="_blank" rel="noreferrer">PDF</a></div>
-        <section class="info">
-          <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> Band-avoiding occupation-constrained DFT (ba-occ-DFT) can compute defect energetics reliably even when standard DFT predicts a zero band gap.</p>
-          <p><b>Engineering relevance:</b> This provides a practical route to predict defect charge-transition levels in narrow-gap semiconductors such as InAs, improving defect-aware materials design.</p>
-          <ul><li>Constrain electronic occupations to avoid spurious filling of band-edge states.</li><li>Separate band-edge errors from defect-level energetics in total-energy calculations.</li><li>Apply the approach to InAs, a narrow-gap case where the DFT gap collapses to zero.</li></ul>
-          <p><b>Evidence signal:</b> The abstract reports that ba-occ-DFT yields rigorous defect level predictions for InAs despite a zero DFT band gap.</p>
-          <p><b>Watch item:</b> The method depends on correctly identifying and constraining band-edge states, which may require careful implementation for complex defect structures.</p>
-          <div class="tags"><span>#DFT</span> <span>#Defects</span> <span>#Semiconductors</span> <span>#InAs</span> <span>#MaterialsScience</span></div>
-        </section>
-      </article>
-    
-
-      <article class="paper">
-        <div class="meta"><span>Materials Discovery</span><span>arXiv</span><strong>67</strong></div>
-        <p class="date">2026-07-27</p>
-        <h2>Citrine Informatics: Chemical &amp; Materials Development Platform</h2>
-        <p class="authors">Maxwell C. Venetos, Steven J. Brown, Kenneth Kroenlein, Steven K. Kauwe, James E. Saal, Marco Musto</p>
-        <p class="abstract">Data-driven materials discovery promises to compress the historically decades-long path from invention to deployment, yet translating individual successes into sustained industrial discovery programs remains difficult. Three obstacles recur: experimental data are scarce, costly, and published in formats that resist reuse; conventional accuracy metrics overstate model performance under the extrapolative conditions that define discovery; and realistic design spaces are bounded by physics, manufacturability, supply, and cost. We present the Citrine Platform, developed over more than a decade as an integrated response to these obstacles, and organize it as four cooperating stages within a closed sequential learning loop. Stage 1 ingests and featurizes data through the Graphical Expression of Materials Data (GEMD) model, which treats process history, measurement uncertainty, and provenance as first-class features. Stage 2 builds machine learning models with well-calibrated uncertainty, including multivariate prediction intervals for correlated objectives, and validates them with extrapolative cross-validation and dynamic discovery metrics rather than random held-out splits. Stage 3 encodes compositional, physical, processing, and economic constraints directly into the design space, and Stage 4 applies the FUELS sequential learning framework with uncertainty-aware acquisition functions to navigate large constrained spaces under tight evaluation budgets. Published case studies spanning organic semiconductors, autonomous nanoparticle synthesis, and benchmark optimization tasks demonstrate two- to nine-fold reductions in experimental effort relative to random search, illustrating a stack in which data, modeling, and design-space layers continuously co-evolve.</p>
-        <div class="links"><a href="https://arxiv.org/abs/2607.25039v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2607.25039v1" target="_blank" rel="noreferrer">PDF</a></div>
-        <section class="info">
-          <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> The paper presents the Citrine Platform as a closed-loop materials discovery system that combines data curation, uncertainty-aware modeling, constrained design, and sequential learning to make industrial discovery more scalable.</p>
-          <p><b>Engineering relevance:</b> For materials and chemical engineering, it offers a practical framework for reducing experimental burden while respecting real-world constraints such as physics, manufacturability, supply, and cost.</p>
-          <ul><li>GEMD data model captures process history, measurement uncertainty, and provenance during ingestion/featurization.</li><li>Models use calibrated uncertainty and extrapolative validation, including multivariate prediction intervals for correlated targets.</li><li>FUELS sequential learning selects new experiments with uncertainty-aware acquisition functions inside constrained design spaces.</li></ul>
-          <p><b>Evidence signal:</b> Across case studies and benchmark tasks, the platform reports two- to nine-fold reductions in experimental effort versus random search, with evaluation emphasizing extrapolative cross-validation and dynamic discovery metrics instead of random splits.</p>
-          <p><b>Watch item:</b> Performance depends on high-quality, well-structured data and realistic constraints, so implementation can be limited by sparse data, domain-specific encoding effort, and the risk of overtrusting models outside validated regimes.</p>
-          <div class="tags"><span>#MaterialsDiscovery</span> <span>#SequentialLearning</span> <span>#UncertaintyQuantification</span> <span>#ActiveLearning</span> <span>#ChemicalEngineering</span></div>
-        </section>
-      </article>
-    
-
-      <article class="paper">
-        <div class="meta"><span>Crystal and Structure</span><span>arXiv</span><strong>67</strong></div>
-        <p class="date">2026-07-25</p>
-        <h2>Stoichiometric cluster learning for few-shot property prediction of multi-ionic integrated energetic materials</h2>
-        <p class="authors">Ming-Yu Guo, Wei-Jia Zou, Yu Shang, Wei-Xiong Zhang</p>
-        <p class="abstract">Multi-ionic materials pose a distinct representational challenge in machine learning-driven materials design. Different from single-molecule or composition-based materials, their properties arise from how charged building blocks aggregate into specific assemblies. Here, we show how pretrained machine-learned interatomic potentials (MLIPs) can bypass full crystal-structure prediction and support pre-synthesis screening from stoichiometric ionic clusters using multi-ionic integrated explosives (MIXs) as a synthesis-facing example. This strategy combines a stoichiometric ionic-cluster representation, which represents each candidate material by a non-periodic, stoichiometry-preserved formula-unit cluster, with multi-task fine-tuning (MT-FT), which adapts a pretrained atomistic backbone while retaining the energy--force objective as physical regularization for the sparse detonation-velocity labels. With the pretrained backbone regularized by MT-FT, this surrogate provides a cross-validated screen across only 25 structurally curated perovskite-type energetic materials (PEMs) with experimentally derived Kamlet--Jacobs (K--J) detonation velocities. Representation probes show that the learned descriptors implicitly retain site-aware ionic organization, density information, and coarse packing compatibility, implying why non-periodic clusters can remain predictive before full crystal structures are known. The surrogate extends known PEMs chemistry to three newly synthesized ABX$_4$ materials with both unseen ABX$_4$ stoichiometry and an unseen ethylenediammonium B-site cation, yielding three-point concordance with K--J reference velocities and a mean absolute error (MAE) of 92~m$\cdot$s$^{-1}$ without retraining. Together, these results establish stoichiometry-preserved cluster learning as a synthesis-facing screening strategy for data-scarce multi-ionic materials.</p>
-        <div class="links"><a href="https://arxiv.org/abs/2607.23208v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2607.23208v1" target="_blank" rel="noreferrer">PDF</a></div>
-        <section class="info">
-          <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> Stoichiometry-preserved ionic clusters, paired with a pretrained MLIP and multi-task fine-tuning, can predict detonation performance of multi-ionic energetic materials before full crystal structures are available.</p>
-          <p><b>Engineering relevance:</b> This offers a synthesis-facing screening route for data-scarce energetic materials, helping prioritize promising compositions earlier in the design pipeline.</p>
-          <ul><li>Encode each candidate as a non-periodic stoichiometric ionic-cluster representation.</li><li>Fine-tune a pretrained atomistic backbone with an energy-force objective as physical regularization.</li><li>Use multi-task fine-tuning to adapt to sparse detonation-velocity labels while retaining transferable structure-chemistry signals.</li></ul>
-          <p><b>Evidence signal:</b> The approach was cross-validated on 25 curated perovskite-type energetic materials and achieved 3-point concordance on three newly synthesized ABX4 compounds with a mean absolute error of 92 m·s^-1 without retraining.</p>
-          <p><b>Watch item:</b> Performance is demonstrated on a small, curated dataset, so broader generalization to more diverse chemistries and less structured systems still needs validation.</p>
-          <div class="tags"><span>#MaterialsInformatics</span> <span>#MachineLearning</span> <span>#EnergeticMaterials</span> <span>#CrystalStructure</span> <span>#FewShotLearning</span></div>
+          <p><b>Key insight:</b> Optimizing ferrite content and sintering temperature in lead-free Co1.2Ti0.2Fe1.6O4–BaTiO3 composites strengthens interfacial coupling, with 30CTFO–70BTO sintered at 1200 °C giving the best magnetoelectric response.</p>
+          <p><b>Engineering relevance:</b> The study identifies a practical route to lead-free multiferroic composites for low-power sensors, memory, spintronic, and actuator devices.</p>
+          <ul><li>Solid-state synthesis of (x)Co1.2Ti0.2Fe1.6O4–(100-x)BaTiO3 composites with x = 10, 20, 30.</li><li>Varied sintering temperature to tune densification, grain growth, and phase coupling.</li><li>Measured structure, microstructure, dielectric/ferroelectric, magnetic, and magnetoelectric properties.</li></ul>
+          <p><b>Evidence signal:</b> XRD/Rietveld confirmed coexisting tetragonal BaTiO3 and cubic spinel CTFO phases, and the highest ME coefficient reported was ~1.28 mV/cm.Oe for 30CTFO–70BTO sintered at 1200 °C.</p>
+          <p><b>Watch item:</b> The ferroelectric response is lossy due to leakage from the conductive ferrite phase, so electrical losses may limit device performance and stability.</p>
+          <div class="tags"><span>#MagnetoelectricComposites</span> <span>#LeadFreeMaterials</span> <span>#Multiferroics</span> <span>#BaTiO3</span> <span>#SpinelFerrite</span></div>
         </section>
       </article>
     
@@ -337,75 +394,18 @@
       <article class="paper">
         <div class="meta"><span>Crystal and Structure</span><span>arXiv</span><strong>66</strong></div>
         <p class="date">2026-07-29</p>
-        <h2>Transient Detour and Cooperative Oxygen Exchange in the Polarization Switching of Ferroelectric Hf0.5Zr0.5O2</h2>
-        <p class="authors">Ryotaro Sahashi, Po-Yen Chen, Teruyasu Mizoguchi</p>
-        <p class="abstract">Hafnium zirconium oxide (HZO) has attracted significant attention as a core material for next-generation non-volatile memories due to its excellent ferroelectricity in the ultra-thin film regime and its CMOS process compatibility. However, the exploration of its polarization switching mechanism has predominantly relied on static energy barrier analyses, leaving the transient bond formation and cooperative dynamic mechanisms under actual electric field driving unresolved. In this study, we performed Electric-Field-Induced MD simulations on a defect-free ideal HZO lattice using a fine-tuned machine learning force field (MACEField). As a result, we successfully reproduced the P-E hysteresis loop dynamically and demonstrated that the polarization switching in HZO is driven not by conventional simple displacement models (S:N/S:T models), but by the dynamic mutual exchange of 3-coordinated oxygen (O3c) and 4-coordinated oxygen (O4c). Analysis of the oxygen atom displacement trajectories revealed that this pathway is accompanied by a unique &quot;detour&quot; behavior originating from transient cation-oxygen bond formation. Furthermore, we identified an &quot;internal self-compensation mechanism&quot; in which the local volumetric expansion and contraction accompanying the coordination number changes are effectively offset within the cell. These findings provide, from a dynamic perspective, a microscopic physical origin of for HZO&#x27;s exceptional ability to sustain stable polarization switching without macroscopic strain, a property that has long distinguished HZO from conventional perovskite ferroelectrics yet lacked atomistic explanation. These findings suggest that preserving the integrity of cooperative O3c/O4c exchange pathways, rather than minimizing individual atomic displacements, is the key design principle for endurance and scalability in next-generation ferroelectric memories.</p>
-        <div class="links"><a href="https://arxiv.org/abs/2607.26597v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2607.26597v1" target="_blank" rel="noreferrer">PDF</a></div>
+        <h2>Optimization of Epitaxial Mn4N Thin Films Grown by Sputtering for Spintronic Applications</h2>
+        <p class="authors">Teodor Apetrei, Emre Demiroglu, Caner Deger, Can Onur Avci, Silvia Damerio</p>
+        <p class="abstract">Ferrimagnetic Mn4N has recently emerged as a promising rare-earth-free platform for spintronic devices due to its low magnetization, high domain wall mobility, and strong anomalous Hall response. However, the realization of thin films with robust perpendicular magnetic anisotropy (PMA) and spin-orbit torque (SOT) functionality through scalable deposition techniques remains a significant challenge. In this work, we systematically investigate the growth of Mn4N thin films by reactive magnetron sputtering and determine the conditions required to achieve high-quality films suitable for SOT applications. We demonstrate that epitaxial, single-crystalline Mn4N films with strong PMA can be obtained on MgO(100), whereas films deposited on SrTiO3(100) exhibit a textured structure. The optimized films show square-shaped hysteresis loops with high remanence, large and tunable coercivity, and a pronounced anomalous Hall effect. By combining structural, magnetic, and magnetotransport characterization with density functional theory calculations, we reveal that epitaxial strain plays a key role in tuning magnetic anisotropy, while also showing that it is not the only contributing factor. In particular, our results emphasize the importance of interfacial effects in stabilizing PMA. Finally, we demonstrate efficient current-induced magnetization switching in Mn4N/Pt bilayers, confirming strong interfacial spin transparency. These findings establish sputtered Mn4N as a promising and versatile material platform for energy-efficient spin-orbitronic devices.</p>
+        <div class="links"><a href="https://arxiv.org/abs/2607.27419v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2607.27419v1" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> Ferroelectric polarization switching in Hf0.5Zr0.5O2 occurs through a cooperative O3c/O4c oxygen-exchange pathway with a transient bond-formation detour, rather than a simple displacement-only mechanism.</p>
-          <p><b>Engineering relevance:</b> This dynamic atomistic mechanism explains how HZO can switch polarization stably without macroscopic strain, supporting design rules for durable and scalable non-volatile ferroelectric memories.</p>
-          <ul><li>Electric-field-induced molecular dynamics simulations were run on a defect-free ideal HZO lattice.</li><li>A fine-tuned MACEField machine-learning force field was used to capture switching dynamics.</li><li>Atomic trajectories were analyzed to identify coordination changes, transient cation–oxygen bonding, and local volume compensation.</li></ul>
-          <p><b>Evidence signal:</b> The simulation dynamically reproduced the P–E hysteresis loop and revealed coordinated oxygen exchange, detour behavior, and internal self-compensation during switching.</p>
-          <p><b>Watch item:</b> The results are based on an ideal defect-free lattice, so real-device defects, interfaces, and processing variability may alter the switching pathway.</p>
-          <div class="tags"><span>#Ferroelectrics</span> <span>#HZO</span> <span>#MolecularDynamics</span> <span>#MachineLearningPotential</span> <span>#NonvolatileMemory</span></div>
-        </section>
-      </article>
-    
-
-      <article class="paper">
-        <div class="meta"><span>Materials Discovery</span><span>arXiv</span><strong>66</strong></div>
-        <p class="date">2026-07-28</p>
-        <h2>Thermodynamics-Informed Machine Learning for Energy Materials Discovery</h2>
-        <p class="authors">Pol Benítez, Cibrán López, Claudio Cazorla</p>
-        <p class="abstract">Machine learning (ML) is transforming materials discovery by enabling rapid prediction of properties that previously required computationally expensive first-principles calculations. Yet most current ML models remain fundamentally limited to zero-temperature descriptions, learning static lattice energies while neglecting the thermodynamic effects that govern materials behaviour at finite temperature. Because phase stability, functional response, and performance are governed by free-energy landscapes rather than static energies alone, this limitation represents a major barrier to predictive materials design under realistic operating conditions. In this Perspective, we argue that developing thermodynamics-informed ML constitutes one of the most important and least explored frontiers in materials discovery. We examine the fundamental shortcomings of energy-based models, highlighting the essential roles of entropy and anharmonicity in determining free energies and materials functionality. We review emerging strategies, including machine-learned interatomic potentials and hybrid ML-statistical mechanics frameworks, while identifying key challenges related to data availability, transferability, and thermodynamic consistency. Building on these advances, we outline a roadmap for thermodynamics-informed ML centred on direct free-energy learning, entropy-aware representations, and adaptive sampling across temperature. We highlight the transformative opportunities this paradigm offers for energy materials and argue that the next generation of ML models must move beyond static energy predictions towards a thermodynamic description of materials behaviour under realistic operating conditions.</p>
-        <div class="links"><a href="https://arxiv.org/abs/2607.26296v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2607.26296v1" target="_blank" rel="noreferrer">PDF</a></div>
-        <section class="info">
-          <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> Thermodynamics-informed machine learning is needed to predict materials behavior realistically because free energies, not static lattice energies, control stability and functionality at finite temperature.</p>
-          <p><b>Engineering relevance:</b> For energy materials design, ML models must capture entropy and anharmonic effects to reliably screen performance under operating conditions rather than only at 0 K.</p>
-          <ul><li>Learn direct free-energy models instead of only static energies</li><li>Use machine-learned interatomic potentials and hybrid ML-statistical mechanics frameworks</li><li>Adopt entropy-aware representations and adaptive sampling across temperature</li></ul>
-          <p><b>Evidence signal:</b> The paper is a Perspective that synthesizes current approaches and challenges rather than reporting a new benchmark dataset or numerical evaluation.</p>
-          <p><b>Watch item:</b> A key implementation risk is thermodynamic consistency and transferability, especially when training data are limited and temperature-dependent effects are underrepresented.</p>
-          <div class="tags"><span>#MachineLearning</span> <span>#MaterialsDiscovery</span> <span>#Thermodynamics</span> <span>#FreeEnergy</span> <span>#EnergyMaterials</span></div>
-        </section>
-      </article>
-    
-
-      <article class="paper">
-        <div class="meta"><span>Property Prediction</span><span>arXiv</span><strong>66</strong></div>
-        <p class="date">2026-07-25</p>
-        <h2>An Ontology for Machine Learning Interatomic Potentials</h2>
-        <p class="authors">Daniel Hernández, Jong Hyun Jung, Yuji Ikeda, Yongliang Ou, Pranav Kumar, Tom Schächtel</p>
-        <p class="abstract">Machine learning interatomic potentials (MLIPs) approximate quantum-mechanical energies and forces---conventionally computed by density functional theory (DFT) or wave-function methods---at a fraction of the cost. The field encompasses a growing ecosystem of algorithms, training datasets, hyperparameters, and target materials, yet the metadata needed to systematically compare, reproduce, and build upon MLIP studies remains scattered across papers, scripts, and ad-hoc file formats. We present the MLIPs ontology, an OWL 2 DL ontology that captures the concepts needed to describe MLIP methods, their hyperparameters, training datasets with DFT provenance, and published benchmarks. The ontology is organized into three modules---Method, Training Data, and Benchmark---and connects existing ontologies in materials science (MDO, CMSO/ASMO) and machine learning (ML-Schema), complementing dataset-side schemas such as Croissant. It declares 27 formal axioms enforcing data completeness and consistency, including property chains that link trained models to their methods and training data. We demonstrate the ontology through a running example based on Moment Tensor Potentials and evaluate it through competency-question execution on a 20-paper seeded knowledge graph, OWL reasoning, and comparison with existing ontologies.</p>
-        <div class="links"><a href="https://arxiv.org/abs/2607.23219v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2607.23219v1" target="_blank" rel="noreferrer">PDF</a></div>
-        <section class="info">
-          <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> The paper introduces an OWL 2 DL ontology that standardizes how machine learning interatomic potentials are described, linked to training data, and compared across studies.</p>
-          <p><b>Engineering relevance:</b> It improves reproducibility and benchmarking for MLIPs by making method, dataset provenance, and hyperparameter metadata machine-readable and interoperable.</p>
-          <ul><li>Built a three-module ontology: Method, Training Data, and Benchmark.</li><li>Connected MLIP metadata to existing materials and ML schemas, including DFT provenance.</li><li>Added formal axioms and property chains to enforce completeness and consistency.</li></ul>
-          <p><b>Evidence signal:</b> The ontology was tested with competency questions on a 20-paper seeded knowledge graph, OWL reasoning, and comparison against existing ontologies.</p>
-          <p><b>Watch item:</b> Adoption may depend on how easily researchers can map diverse legacy MLIP files and paper metadata into the ontology without manual curation.</p>
-          <div class="tags"><span>#MachineLearningPotentials</span> <span>#MaterialsInformatics</span> <span>#Ontology</span> <span>#Reproducibility</span> <span>#Benchmarking</span></div>
-        </section>
-      </article>
-    
-
-      <article class="paper">
-        <div class="meta"><span>Crystal and Structure</span><span>arXiv</span><strong>65</strong></div>
-        <p class="date">2026-07-29</p>
-        <h2>Formation of $\mathrm{L}1_2$-ordered $γ&#x27;$-$\mathrm{Ni}_3\mathrm{Al}$ precipitates in ternary Cu-Ni-Al alloys modelled using an ab initio concentration wave theory and atomistic simulations</h2>
-        <p class="authors">Christopher D. Woodgate, Hubert J. Naguszewski, Samuel L. Deacon, Mathys P. Potel, Ján Minár, David Quigley</p>
-        <p class="abstract">Precipitation-strengthened Cu-Ni-Al alloys are of interest for technological applications because coherent, $\mathrm{L}1_2$-ordered $γ&#x27;$-$\mathrm{Ni}_3\mathrm{Al}$ precipitates can confer high mechanical strength while allowing the material to retain many of the good transport properties characteristic of elemental Cu. In this work, we study the thermodynamics and phase stability of the pseudobinary $\textrm{Cu}_x (\textrm{Ni}_{3/4} \textrm{Al}_{1/4})_{1-x}$ system, $0 \leq x \leq 1$. We use a computational modelling framework combining first-principles electronic structure calculations with a concentration wave analysis from which atom-atom effective pair interactions are extracted for use in atomistic Monte Carlo simulations. Our modelling reveals three distinct, composition-dependent regimes of phase behaviour, in qualitative agreement with the experimentally determined phase diagram. At low Cu content, Cu is soluble in the $\mathrm{L}1_2$-ordered $\mathrm{Ni}_3\mathrm{Al}$ phase, with a single identifiable phase transition corresponding to chemical ordering between Ni and Al. At intermediate compositions, this high-temperature ordering is followed at lower temperatures by phase separation of Cu and $\mathrm{L}1_2$-ordered $\mathrm{Ni}_3\mathrm{Al}$. Finally, at high Cu content, $\mathrm{L}1_2$-ordered $\mathrm{Ni}_3\mathrm{Al}$ precipitates directly from the solid solution, with no clearly identifiable secondary transition. We relate these phase transformations to features of the underlying electronic structures of the considered alloys. Overall, this work demonstrates a computationally efficient workflow capturing both chemical ordering and coherent precipitation in multicomponent substitutional alloys, with relevance to the study of phenomena such as precipitation strengthening.</p>
-        <div class="links"><a href="https://arxiv.org/abs/2607.27108v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2607.27108v1" target="_blank" rel="noreferrer">PDF</a></div>
-        <section class="info">
-          <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> A first-principles-to-Monte Carlo workflow predicts when Cu-Ni-Al alloys form ordered L1_2 Ni3Al precipitates versus remain as solid solution, with composition controlling the phase pathway.</p>
-          <p><b>Engineering relevance:</b> The results help design precipitation-strengthened Cu-based alloys that retain good conductivity while gaining strength from coherent gamma-prime Ni3Al precipitates.</p>
-          <ul><li>Ab initio electronic-structure calculations to derive atom-atom effective pair interactions.</li><li>Concentration-wave theory to analyze ordering and phase stability.</li><li>Atomistic Monte Carlo simulations to map temperature-composition phase behavior.</li></ul>
-          <p><b>Evidence signal:</b> The modeled phase behavior shows three composition-dependent regimes that qualitatively agree with the experimentally determined phase diagram.</p>
-          <p><b>Watch item:</b> The study is qualitative with respect to experimental agreement, so quantitative phase boundaries and kinetics may still require further validation.</p>
-          <div class="tags"><span>#MaterialsInformatics</span> <span>#ComputationalMaterials</span> <span>#PhaseStability</span> <span>#MonteCarloSimulation</span> <span>#PrecipitationStrengthening</span></div>
+          <p><b>Key insight:</b> Reactive sputtering can produce epitaxial Mn4N thin films with strong perpendicular magnetic anisotropy and current-driven switching, making them promising for spintronic devices.</p>
+          <p><b>Engineering relevance:</b> The work identifies scalable growth conditions for rare-earth-free Mn4N films that combine robust magnetic anisotropy, large anomalous Hall response, and efficient spin-orbit torque functionality.</p>
+          <ul><li>Reactive magnetron sputtering of Mn4N on MgO(100) and SrTiO3(100) substrates</li><li>Structural, magnetic, and magnetotransport characterization of film quality and anisotropy</li><li>Density functional theory to assess the roles of strain and interfaces in PMA</li></ul>
+          <p><b>Evidence signal:</b> The optimized epitaxial films show square hysteresis loops, high remanence, tunable coercivity, pronounced anomalous Hall effect, and current-induced switching in Mn4N/Pt bilayers.</p>
+          <p><b>Watch item:</b> PMA is influenced not only by epitaxial strain but also by interfacial effects, so device performance may depend sensitively on substrate and interface engineering.</p>
+          <div class="tags"><span>#Mn4N</span> <span>#Spintronics</span> <span>#ThinFilms</span> <span>#PerpendicularMagneticAnisotropy</span> <span>#SOT</span></div>
         </section>
       </article>
     </section>
