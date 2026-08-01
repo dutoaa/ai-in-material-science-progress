@@ -27,17 +27,17 @@
         "url": "https://arxiv.org/pdf/2607.28461v1"
       }
     ],
-    "score": 82,
+    "score": 87,
     "infographic": {
-      "key_insight": "Equivariant foundation potentials can deliver both fast inference and strong accuracy by scaling NequIP and Allegro to very large datasets, reducing the usual speed-versus-accuracy trade-off.",
-      "engineering_relevance": "This enables practical high-throughput molecular dynamics and materials screening with lower training cost, making MLIPs more usable for large-scale computational chemistry and materials workflows.",
+      "key_insight": "Equivariant foundation MLIPs can be made both fast and accurate by using architectures and training strategies that scale to ultra-large datasets without sacrificing key physics symmetries.",
+      "engineering_relevance": "These models can accelerate molecular dynamics and materials screening by delivering high-throughput inference and scalable training for practical, community-benchmark applications.",
       "method": [
-        "Built foundation MLIPs within NequIP and Allegro using equivariant architectures that encode physical symmetries.",
-        "Optimized training infrastructure to support ultra-large datasets with much lower computational cost.",
-        "Benchmarked performance across community tasks including materials discovery, thermal conductivity, and near-equilibrium properties."
+        "Evaluated NequIP and Allegro equivariant MLIP architectures as foundation potentials.",
+        "Implemented accelerations in the NequIP infrastructure to reduce training cost on ultra-large datasets.",
+        "Benchmarked accuracy and speed across materials discovery, thermal conductivity, and near-equilibrium mechanical/thermodynamic tasks."
       ],
-      "evidence_signal": "The models were evaluated on multiple community benchmarks spanning materials discovery, thermal conductivity prediction, and near-equilibrium mechanical and thermodynamic properties, showing leading speed and strong scalability with excellent accuracy.",
-      "watch_item": "Accuracy gains may depend more on dataset diversity and consistent transition-metal energy surface descriptions than on architecture alone, so data quality and coverage remain critical implementation risks.",
+      "evidence_signal": "The paper reports strong scalability, leading inference speeds, and excellent accuracy across multiple community benchmarks, including large-dataset regimes.",
+      "watch_item": "Performance gains may depend on dataset diversity and consistent transition-metal energy-surface descriptions, so transfer to new chemical spaces still needs careful validation.",
       "hashtags": [
         "#MachineLearningPotentials",
         "#EquivariantML",
@@ -49,7 +49,7 @@
       "paper_title": "Fast and Accurate Foundation Models for Equivariant Machine-Learned Interatomic Potentials",
       "paper_date": "2026-07-30",
       "paper_category": "Property Prediction",
-      "generated_at": "2026-08-01T12:00:39",
+      "generated_at": "2026-07-31T12:53:44",
       "generator": "openai"
     }
   },
@@ -79,29 +79,29 @@
         "url": "https://arxiv.org/pdf/2607.24272v1"
       }
     ],
-    "score": 81,
+    "score": 86,
     "infographic": {
-      "key_insight": "CatDiT is a unified diffusion-transformer framework that inverse-designs heterogeneous catalysts by jointly controlling adsorbate type, binding energy, and catalyst class in a compressed latent space.",
-      "engineering_relevance": "It offers a scalable route to rapidly screen and generate candidate catalysts for reaction-specific targets, reducing the trial-and-error burden in materials discovery.",
+      "key_insight": "CatDiT uses a diffusion-transformer generative model in latent space to inverse-design heterogeneous catalysts with simultaneous control over adsorbate, binding energy, and catalyst class.",
+      "engineering_relevance": "This provides a scalable way to rapidly screen and enrich catalyst candidates for reaction-specific targets, reducing reliance on exhaustive trial-and-error discovery.",
       "method": [
-        "Learns compressed latent representations of catalyst structures for efficient training and fast sampling.",
-        "Uses a diffusion transformer to generate valid, novel catalysts across intermetallic alloys and oxide surfaces.",
-        "Supports multi-conditional generation on discrete and continuous properties for targeted inverse design."
+        "Compress catalyst structures into latent representations for efficient training and sampling.",
+        "Condition generation on discrete and continuous properties at the same time.",
+        "Generate valid, novel candidates across intermetallic alloys and oxide surfaces."
       ],
-      "evidence_signal": "For nitrogen reduction reaction design, the model produced 28 DFT-relaxed alloy candidates within the target activity window and above the pure-metal *N-*H scaling line, achieving about 1.5× enrichment over the source distribution.",
-      "watch_item": "Performance depends on the quality and coverage of the latent training data, and DFT relaxation is still required to verify generated candidates.",
+      "evidence_signal": "For nitrogen reduction reaction design, the model produced 28 DFT-relaxed alloy candidates within the target activity window and above the pure-metal *N-*H scaling line, giving about 1.5× enrichment over the source distribution.",
+      "watch_item": "Performance depends on the quality and coverage of the latent training space, so generalization to less-represented catalyst chemistries may be limited.",
       "hashtags": [
+        "#MaterialsDiscovery",
         "#CatalystDesign",
         "#GenerativeAI",
         "#DiffusionModels",
-        "#MaterialsDiscovery",
         "#InverseDesign"
       ],
       "paper_id": "2026-07-27-arxiv-catalyst_diffusion_transformer_generative_inverse_design_of_heterogeneous_catalysts",
       "paper_title": "Catalyst Diffusion Transformer: Generative Inverse Design of Heterogeneous Catalysts",
       "paper_date": "2026-07-27",
       "paper_category": "Materials Discovery",
-      "generated_at": "2026-08-01T12:00:41",
+      "generated_at": "2026-07-31T12:53:47",
       "generator": "openai"
     }
   },
@@ -130,29 +130,29 @@
         "url": "https://arxiv.org/pdf/2607.27368v1"
       }
     ],
-    "score": 79,
+    "score": 84,
     "infographic": {
-      "key_insight": "A reinforcement-learning plus CGCNN pipeline can generate and rank novel metal-organic frameworks (MOFs) for photocatalysis by optimizing multiple practical objectives at once.",
-      "engineering_relevance": "The approach offers a computational design workflow for screening industrially relevant porous materials with constraints such as stability, cost, sustainability, and adsorption performance.",
+      "key_insight": "A reinforcement-learning workflow can generate and rank novel MOFs for photocatalysis by combining a CGCNN-based predictor funnel with a multi-objective fitness function.",
+      "engineering_relevance": "The approach offers a scalable design pipeline for screening industrially relevant porous materials while balancing performance, stability, cost, and sustainability constraints.",
       "method": [
         "Generated 60,000 novel MOFs with reinforcement learning.",
-        "Used a predictor funnel to prune candidates to 10,986 for efficient evaluation.",
-        "Built a multi-objective fitness function from CGCNN-predicted properties and application-specific criteria."
+        "Used a predictor funnel to iteratively filter candidates down to 10,986.",
+        "Trained CGCNN models to build a multi-objective fitness function and identify top-performing MOFs."
       ],
-      "evidence_signal": "The abstract reports two top MOFs that passed synthesis criteria, including one Cr-based design with a photocatalyst score 230% above the control and a Zn-based design that outperformed the best control across relevant metrics.",
-      "watch_item": "Results depend on model predictions and the chosen fitness function, so experimental validation is still needed before deployment.",
+      "evidence_signal": "The abstract reports 20 designed materials that were 125% better than the control, including one Cr-based MOF with a 230% higher photocatalyst score and one Zn-based MOF that outperformed the best control across relevant metrics.",
+      "watch_item": "Results depend on model predictions and abstract-level validation, so experimental synthesis and real-world stability testing are still needed before deployment.",
       "hashtags": [
-        "#MaterialsDiscovery",
         "#MachineLearning",
-        "#MOF",
+        "#MaterialsDiscovery",
+        "#MetalOrganicFrameworks",
         "#Photocatalysis",
-        "#MultiObjectiveOptimization"
+        "#ReinforcementLearning"
       ],
       "paper_id": "2026-07-29-arxiv-machine_learning_for_designing_undesignable_metal_organic_frameworks",
       "paper_title": "Machine Learning for Designing Undesignable Metal-Organic Frameworks",
       "paper_date": "2026-07-29",
       "paper_category": "Materials Discovery",
-      "generated_at": "2026-08-01T12:00:43",
+      "generated_at": "2026-07-31T12:53:49",
       "generator": "openai"
     }
   },
@@ -182,29 +182,29 @@
         "url": "https://arxiv.org/pdf/2607.28079v1"
       }
     ],
-    "score": 74,
+    "score": 79,
     "infographic": {
-      "key_insight": "Chem World standardizes chemical property prediction across 17 datasets and pairs the benchmark with a physics-informed model, Mixture-PINN, to improve trustworthiness and generalization.",
-      "engineering_relevance": "The framework supports more reliable screening and design pipelines in chemistry, materials, and drug discovery by reducing benchmark fragmentation and embedding chemical priors into prediction.",
+      "key_insight": "Chem World standardizes chemical property prediction across 17 datasets and pairs it with a physics-informed model to improve trustworthiness and generalization.",
+      "engineering_relevance": "This benchmark and model can help materials and chemistry teams compare predictors fairly and accelerate screening for properties such as density, conductivity, and solubility.",
       "method": [
-        "Build a unified benchmark spanning 17 datasets and 800,000+ molecular samples.",
-        "Train Mixture-PINN with physics-informed constraints plus data-driven learning.",
-        "Evaluate models under a consistent protocol across multiple property tasks."
+        "Built Chem World: 17 datasets, 800,000+ molecular samples, unified evaluation.",
+        "Introduced Mixture-PINN to inject chemical prior knowledge into learning.",
+        "Evaluated multiple property prediction tasks under a consistent protocol."
       ],
-      "evidence_signal": "The abstract reports over 800,000 molecular samples across 17 datasets and states that extensive experiments show Mixture-PINN outperforms existing methods.",
-      "watch_item": "Performance may depend on the quality and coverage of the selected datasets and on how well the physics priors match each property/task.",
+      "evidence_signal": "The abstract reports extensive experiments on a large-scale benchmark spanning over 800,000 molecules and multiple property types, showing improved performance over existing methods.",
+      "watch_item": "Benchmark results depend on dataset quality and protocol consistency, so performance may still vary when transferring to new chemistries or noisy experimental settings.",
       "hashtags": [
-        "#ChemWorld",
+        "#Cheminformatics",
+        "#MaterialsInformatics",
         "#PropertyPrediction",
         "#PhysicsInformedAI",
-        "#MolecularML",
-        "#TrustworthyAI"
+        "#Benchmarking"
       ],
       "paper_id": "2026-07-30-arxiv-chem_world_a_large_scale_benchmark_and_physics_informed_framework_for_trustworthy_chemical",
       "paper_title": "Chem World: A Large-Scale Benchmark and Physics-Informed Framework for Trustworthy Chemical Property Prediction",
       "paper_date": "2026-07-30",
       "paper_category": "Property Prediction",
-      "generated_at": "2026-08-01T12:00:46",
+      "generated_at": "2026-07-31T12:53:51",
       "generator": "openai"
     }
   },
@@ -234,21 +234,21 @@
         "url": "https://arxiv.org/pdf/2607.27295v1"
       }
     ],
-    "score": 73,
+    "score": 78,
     "infographic": {
-      "key_insight": "MatCreatioNN combines reinforcement-learning MOF generation with a multi-stage CGCNN screening funnel to rapidly discover photocatalysts optimized for environmental remediation and CO2 conversion.",
-      "engineering_relevance": "The framework shows how AI can cut computational screening cost while preserving accuracy, helping engineers prioritize synthesizable MOFs with improved light absorption, redox behavior, and stability.",
+      "key_insight": "MatCreatioNN combines reinforcement learning MOF generation with a multi-stage CGCNN funnel to rapidly discover photocatalyst candidates that balance light absorption, redox performance, adsorption, and stability.",
+      "engineering_relevance": "The framework can reduce screening cost while prioritizing synthesizable MOFs for environmental remediation and CO2 conversion, accelerating practical photocatalyst design.",
       "method": [
-        "Generated 120,000 MOF candidates with reinforcement learning",
-        "Screened 13 photocatalyst descriptors using a multi-stage CGCNN funnel",
-        "Ranked top structures by predicted photocatalytic fitness and synthesizability"
+        "Generate 120,000 MOF candidates using reinforcement learning",
+        "Screen 13 descriptors with a staged CGCNN prediction funnel",
+        "Use post-hoc motif analysis and simulated XRD for synthesizability checks"
       ],
-      "evidence_signal": "The funnel reduced computational cost by 4.13-fold, and the top Cr- and Zn-based MOFs outperformed PCN-224(Zr) by 1.70±0.25 and 1.20±0.05 fold, respectively.",
-      "watch_item": "Predictions still require experimental validation, and performance may depend on the quality and coverage of the training data and descriptor set.",
+      "evidence_signal": "The funnel cut computational cost by 4.13× and identified Cr- and Zn-based MOFs with predicted photocatalytic fitness 1.70±0.25 and 1.20±0.05 times above benchmark PCN-224(Zr).",
+      "watch_item": "Predictions are computational and hinge on sparse experimental validation, so real-world performance, stability, and synthesis yield still need confirmation.",
       "hashtags": [
-        "#MOF",
-        "#Photocatalysis",
         "#MachineLearning",
+        "#MOFs",
+        "#Photocatalysis",
         "#CGCNN",
         "#MaterialsDiscovery"
       ],
@@ -256,7 +256,111 @@
       "paper_title": "MatCreatioNN: Machine learning-guided computational discovery of photocatalysts for environmental applications",
       "paper_date": "2026-07-29",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-08-01T12:00:49",
+      "generated_at": "2026-07-31T12:53:54",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-28-arxiv-extracting_atomic_environments_for_machine_learning_interatomic_potentials",
+    "arxiv_id": "2607.26018v1",
+    "date": "2026-07-28",
+    "title": "Extracting Atomic Environments for Machine Learning Interatomic Potentials",
+    "authors": "Jared C. Stimac, Fei Zhou, Kyle Bushick, Bo Lei, Sebastien Hamel, Amit Samanta",
+    "abstract": "In order to appropriately capture large-scale material features and emergent phenomena via atomistic simulations, such as Molecular Dynamics (MD), the system scale can range up to hundreds of millions of atoms. However, the force-field models that drive those simulations are generally trained with Density Functional Theory (DFT) reference data, limited to relatively small configurations on the order of 100s or 1000s of atoms. To compute DFT forces on atoms in regions of interest, for example for active-learning or on-the-fly training of interatomic potentials, one needs to extract a small set of atoms from the larger simulation box, and typical work with periodic boundary conditions for DFT; however, methods to select the shape and size of this extracted set of atoms, as well as to generate a potentially necessary passivating envelope, have not been systematically analyzed. In this work, we present a benchmark of various techniques to extract atomic environments from large, bulk configurations and embed them into smaller configurations suitable for DFT calculations with periodic boundary conditions. We test with a diverse set of material systems, which includes amorphous $\\mathrm{SiO_2}$, Ta with screw dislocations, and molten C. We demonstrated a notably simple procedure, a method we refer to as deletions, yields superior performance over an array of alternative extraction methods.",
+    "category": "AI materials science",
+    "source": "arXiv",
+    "published": "2026-07-28T17:28:41Z",
+    "updated": "2026-07-28T17:28:41Z",
+    "primary_category": "cond-mat.mtrl-sci",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2607.26018v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2607.26018v1"
+      }
+    ],
+    "score": 76,
+    "infographic": {
+      "key_insight": "A simple deletion-based atom extraction strategy gives the most reliable small periodic DFT-ready environments for training interatomic potentials from large-scale simulations.",
+      "engineering_relevance": "This helps active-learning and on-the-fly potential development by making it easier to generate accurate, compact reference calculations from very large atomistic systems.",
+      "method": [
+        "Benchmark multiple ways to carve out local atomic environments from bulk simulations for periodic DFT.",
+        "Compare shape/size choices and the use of passivating envelopes for extracted clusters.",
+        "Test on diverse materials: amorphous SiO2, Ta with screw dislocations, and molten C."
+      ],
+      "evidence_signal": "The abstract reports a benchmark across multiple material classes, and the deletion method outperformed alternative extraction approaches.",
+      "watch_item": "Performance may depend on how well the extracted region and any boundary passivation preserve the local physics needed for DFT accuracy.",
+      "hashtags": [
+        "#MaterialsInformatics",
+        "#MachineLearningPotentials",
+        "#DFT",
+        "#MolecularDynamics",
+        "#ActiveLearning"
+      ],
+      "paper_id": "2026-07-28-arxiv-extracting_atomic_environments_for_machine_learning_interatomic_potentials",
+      "paper_title": "Extracting Atomic Environments for Machine Learning Interatomic Potentials",
+      "paper_date": "2026-07-28",
+      "paper_category": "AI materials science",
+      "generated_at": "2026-07-31T12:53:56",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-30-arxiv-deep_learning_for_accelerated_long_horizon_forecasting_of_multicomponent_multiphase_micros",
+    "arxiv_id": "2607.27820v1",
+    "date": "2026-07-30",
+    "title": "Deep Learning for Accelerated Long-Horizon Forecasting of Multicomponent Multiphase Microstructure Evolution in High-Entropy Alloys",
+    "authors": "Hamidreza Razavi, Nele Moelans",
+    "abstract": "Phase-field modeling provides a powerful approach for predicting microstructure evolution but becomes computationally prohibitive for multicomponent and multiphase systems over large spatial and temporal scales. This work presents an AE-GCN-LSTM surrogate framework for long-horizon forecasting of microstructure evolution in the multicomponent AlCrFeNi high-entropy alloy system containing coexisting BCC and FCC phases. A multi-head autoencoder compresses the four elemental concentration fields and phase-field order parameter into latent representations, which are formulated as graphs for learning their spatial and temporal evolution. The framework accurately forecasts microstructure evolution over horizons extending to 3,000,000 simulation timesteps. Its robustness is systematically evaluated under previously unseen conditions without retraining, fine-tuning, or parameter adaptation. These evaluations include variations in FCC precipitate size and initial position, microstructures containing one, two, and five FCC precipitates, and complex phase interactions involving precipitate merging and splitting. Although trained only on 100 x 100 computational domains containing a single nominal alloy composition, the framework is successfully transferred to larger 256 x 256 and 512 x 512 systems and to previously unseen AlCrFeNi compositions. Across the evaluated configurations, the model preserves the dominant phase morphology and compositional evolution while providing computational speedups ranging from approximately 7200 to 62300 relative to conventional phase-field simulations. These results demonstrate that latent graph-based AE-GCN-LSTM forecasting provides a scalable and computationally efficient surrogate for long-horizon simulation of multicomponent, multiphase microstructures and offers a promising foundation for high-throughput alloy design.",
+    "category": "Microstructure",
+    "source": "arXiv",
+    "published": "2026-07-30T08:00:39Z",
+    "updated": "2026-07-30T08:00:39Z",
+    "primary_category": "cond-mat.mtrl-sci",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cs.AI",
+      "cs.CE"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2607.27820v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2607.27820v1"
+      }
+    ],
+    "score": 74,
+    "infographic": {
+      "key_insight": "An AE-GCN-LSTM surrogate can forecast multicomponent, multiphase microstructure evolution in high-entropy alloys far beyond the training horizon while preserving key morphology and composition trends.",
+      "engineering_relevance": "This enables orders-of-magnitude faster phase-field-style simulation for alloy design, large-domain scaling, and high-throughput screening.",
+      "method": [
+        "Multi-head autoencoder compresses four concentration fields plus phase-field order parameter into latent variables.",
+        "Latent states are converted into graphs and propagated with GCN-LSTM for spatial-temporal forecasting.",
+        "Model is trained on 100×100 AlCrFeNi phase-field simulations and then transferred to larger and unseen conditions."
+      ],
+      "evidence_signal": "The abstract reports accurate forecasting up to 3,000,000 timesteps and speedups of about 7,200 to 62,300× across unseen precipitate configurations, larger domains, and new compositions.",
+      "watch_item": "The surrogate is validated from a single nominal training composition and phase-field dataset, so generalization outside the evaluated alloy/physics space may still require careful verification.",
+      "hashtags": [
+        "#MaterialsInformatics",
+        "#MicrostructureEvolution",
+        "#DeepLearning",
+        "#PhaseFieldModeling",
+        "#HighEntropyAlloys"
+      ],
+      "paper_id": "2026-07-30-arxiv-deep_learning_for_accelerated_long_horizon_forecasting_of_multicomponent_multiphase_micros",
+      "paper_title": "Deep Learning for Accelerated Long-Horizon Forecasting of Multicomponent Multiphase Microstructure Evolution in High-Entropy Alloys",
+      "paper_date": "2026-07-30",
+      "paper_category": "Microstructure",
+      "generated_at": "2026-07-31T12:53:59",
       "generator": "openai"
     }
   },
@@ -289,41 +393,41 @@
     ],
     "score": 73,
     "infographic": {
-      "key_insight": "A graph neural network can learn method-dependent energy residuals to align heterogeneous DFT formation energies onto a common r2SCAN scale.",
-      "engineering_relevance": "This makes it possible to merge legacy PBE datasets with higher-accuracy r2SCAN data for more reliable materials screening, phase stability, and battery design.",
+      "key_insight": "A graph neural network can learn cross-functional energy corrections to align heterogeneous DFT formation energies onto a common, higher-accuracy scale.",
+      "engineering_relevance": "This enables legacy and multi-source PBE datasets to be upgraded toward r2SCAN-quality data for more reliable materials screening, stability prediction, and foundation model training.",
       "method": [
-        "Train on 380,190 paired PBE–r2SCAN structures from MatPES.",
-        "Use a structure-aware GPTFF graph neural network to predict cross-functional energy residuals.",
-        "Convert PBE energies to r2SCAN-equivalent energies for dataset harmonization."
+        "Train on 380,190 paired PBE-r2SCAN structures from MatPES.",
+        "Use a structure-aware graph neural network (GPTFF) to predict residual energy shifts.",
+        "Convert PBE energies into r2SCAN-level formation energies via transfer learning."
       ],
-      "evidence_signal": "The model achieves 14.3 meV/atom MAE on conversion, improving over CHGNet at 18.2 meV/atom; the abstract notes an average 107 meV/atom PBE–r2SCAN discrepancy in MatPES.",
-      "watch_item": "Performance depends on the quality and coverage of paired training data, so extrapolation to unseen functionals, pseudopotentials, or chemistry may be less reliable.",
+      "evidence_signal": "On MatPES, the model reduced PBE-to-r2SCAN conversion error to 14.3 meV/atom MAE, outperforming CHGNet at 18.2 meV/atom; the underlying PBE-r2SCAN discrepancy averages 107 meV/atom.",
+      "watch_item": "Performance depends on the availability and representativeness of paired datasets, so extrapolation to unseen chemistries, functionals, or pseudopotential settings may be less reliable.",
       "hashtags": [
-        "#MaterialsInformatics",
+        "#MaterialsAI",
         "#DFT",
-        "#GraphNeuralNetworks",
-        "#PropertyPrediction",
-        "#FoundationModels"
+        "#GraphNeuralNetwork",
+        "#TransferLearning",
+        "#FormationEnergy"
       ],
       "paper_id": "2026-07-27-arxiv-aligning_heterogeneous_dft_datasets_a_graph_neural_network_approach_to_cross_functional_fo",
       "paper_title": "Aligning Heterogeneous DFT Datasets: A Graph Neural Network Approach to Cross-Functional Formation Energies",
       "paper_date": "2026-07-27",
       "paper_category": "Property Prediction",
-      "generated_at": "2026-08-01T12:00:51",
+      "generated_at": "2026-07-31T12:54:02",
       "generator": "openai"
     }
   },
   {
-    "id": "2026-07-28-arxiv-extracting_atomic_environments_for_machine_learning_interatomic_potentials",
-    "arxiv_id": "2607.26018v1",
-    "date": "2026-07-28",
-    "title": "Extracting Atomic Environments for Machine Learning Interatomic Potentials",
-    "authors": "Jared C. Stimac, Fei Zhou, Kyle Bushick, Bo Lei, Sebastien Hamel, Amit Samanta",
-    "abstract": "In order to appropriately capture large-scale material features and emergent phenomena via atomistic simulations, such as Molecular Dynamics (MD), the system scale can range up to hundreds of millions of atoms. However, the force-field models that drive those simulations are generally trained with Density Functional Theory (DFT) reference data, limited to relatively small configurations on the order of 100s or 1000s of atoms. To compute DFT forces on atoms in regions of interest, for example for active-learning or on-the-fly training of interatomic potentials, one needs to extract a small set of atoms from the larger simulation box, and typical work with periodic boundary conditions for DFT; however, methods to select the shape and size of this extracted set of atoms, as well as to generate a potentially necessary passivating envelope, have not been systematically analyzed. In this work, we present a benchmark of various techniques to extract atomic environments from large, bulk configurations and embed them into smaller configurations suitable for DFT calculations with periodic boundary conditions. We test with a diverse set of material systems, which includes amorphous $\\mathrm{SiO_2}$, Ta with screw dislocations, and molten C. We demonstrated a notably simple procedure, a method we refer to as deletions, yields superior performance over an array of alternative extraction methods.",
-    "category": "AI materials science",
+    "id": "2026-07-27-arxiv-machine_learning_potentials_for_sodium_potassium_chloride_mixtures_predicting_thermophysic",
+    "arxiv_id": "2607.25022v1",
+    "date": "2026-07-27",
+    "title": "Machine-Learning Potentials for sodium-potassium chloride mixtures: Predicting thermophysical properties and phase behavior of multicomponent salts",
+    "authors": "Karim Zongo, Hao Sun, Zijian Meng, Christopher Maxwell, Edmanuel Torres, Laurent Karim Béland",
+    "abstract": "Predicting the properties of multicomponent molten salts using density functional theory (DFT) remains challenging because the spatial and temporal scales required to evaluate transport properties and phase behavior are computationally prohibitive. In this work, we develop a moment tensor potential trained using a a DFT dataset of NaCl, KCl, NaCl-KCl mixtures, and the NaK alloy, enabling large-scale molecular dynamics simulations across wide ranges of temperatures and compositions. We systematically evaluate the effect of D3 dispersion corrections and apply the resulting potential to predict liquid densities, diffusion coefficients, radial distribution functions, heat capacities, thermal conductivities, and the NaCl-KCl phase diagram. The model successfully reproduces many temperature- and composition-dependent trends. However, systematic deviations in several absolute properties persist, highlighting the importance of experimental validation and calibration. These findings support a hybrid modeling framework in which first-principles-informed machine-learning potentials provide transferable predictive capability and mechanistic insight, while experimental data incorporated during model development or subsequent engineering assessments is necessary to improve quantitative accuracy.",
+    "category": "Microstructure",
     "source": "arXiv",
-    "published": "2026-07-28T17:28:41Z",
-    "updated": "2026-07-28T17:28:41Z",
+    "published": "2026-07-27T19:31:36Z",
+    "updated": "2026-07-27T19:31:36Z",
     "primary_category": "cond-mat.mtrl-sci",
     "categories": [
       "cond-mat.mtrl-sci"
@@ -331,36 +435,139 @@
     "links": [
       {
         "title": "arXiv",
-        "url": "https://arxiv.org/abs/2607.26018v1"
+        "url": "https://arxiv.org/abs/2607.25022v1"
       },
       {
         "title": "PDF",
-        "url": "https://arxiv.org/pdf/2607.26018v1"
+        "url": "https://arxiv.org/pdf/2607.25022v1"
+      }
+    ],
+    "score": 72,
+    "infographic": {
+      "key_insight": "A DFT-trained moment tensor potential can extend molecular dynamics predictions for NaCl-KCl melts across temperatures and compositions, capturing many trends in thermophysical properties and phase behavior.",
+      "engineering_relevance": "This provides a faster, transferable modeling route for screening molten-salt systems in thermal energy, electrochemical, and process applications, while reducing reliance on exhaustive first-principles simulations.",
+      "method": [
+        "Trained a moment tensor potential on DFT data for NaCl, KCl, NaCl-KCl mixtures, and NaK alloy.",
+        "Compared the impact of including D3 dispersion corrections.",
+        "Used large-scale molecular dynamics to predict densities, diffusion, radial structure, heat capacity, thermal conductivity, and the NaCl-KCl phase diagram."
+      ],
+      "evidence_signal": "The model reproduces many temperature- and composition-dependent trends, but the abstract notes persistent deviations in several absolute property values.",
+      "watch_item": "Quantitative accuracy is not yet fully reliable without experimental validation and calibration, especially for absolute thermophysical properties.",
+      "hashtags": [
+        "#MachineLearningPotentials",
+        "#MoltenSalts",
+        "#DFT",
+        "#MolecularDynamics",
+        "#MaterialsInformatics"
+      ],
+      "paper_id": "2026-07-27-arxiv-machine_learning_potentials_for_sodium_potassium_chloride_mixtures_predicting_thermophysic",
+      "paper_title": "Machine-Learning Potentials for sodium-potassium chloride mixtures: Predicting thermophysical properties and phase behavior of multicomponent salts",
+      "paper_date": "2026-07-27",
+      "paper_category": "Microstructure",
+      "generated_at": "2026-07-31T12:54:04",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-27-arxiv-mandala_an_e_3_equivariant_graph_neural_network_framework_for_learning_electronic_structur",
+    "arxiv_id": "2607.24997v1",
+    "date": "2026-07-27",
+    "title": "MANDALA: An E(3)-Equivariant Graph Neural Network Framework for Learning Electronic-Structure Operators with Observable Guidance",
+    "authors": "Bartosz Brzoza, Wiktoria Szopa, Zakaria Elabid, Vincent Martinetto, Varadarajan Rengaraj, Mani Lokamani",
+    "abstract": "Electronic-structure calculations based on Kohn-Sham density functional theory remain indispensable in computational materials science and chemistry. Their computational cost, however, limits accessible system sizes and simulation times. At the same time, conventional machine-learning interatomic potentials (MLIPs), which are becoming the workhorse of large-scale materials modeling, usually target only energies and forces. They therefore leave out the quantum-operator-level information required to reconstruct band structures, densities of states, spatial charge distributions, and other electronic observables. \\texttt{Mandala} fills this methodological gap. It is a modular software framework for learning block-sparse electronic-structure matrices with E(3)-equivariant graph neural networks. The framework is built around a unified representation of atom-resolved Hamiltonian, overlap, and density matrices, together with reusable abstractions for basis conversion, sparse block handling, irreducible representation mapping, graph construction, model definition, and training. This design allows \\texttt{Mandala} to support heterogeneous chemical compositions, a wide range of neural architecture variants within one workflow, and multiple electronic-structure backends. \\texttt{Mandala} evaluates selected observables directly from the predicted operators, including band energy, electron count, density of states, and band structure. This connects electronic-structure learning and observable-guided modeling while retaining a representation tied to quantum-mechanical operators rather than only scalar or vector targets as in MLIPs. In this form, \\texttt{Mandala} is intended to complement atomistic interatomic potential workflows by resolving electronic structure and operator-derived observables within one scalable implementation.",
+    "category": "Crystal and Structure",
+    "source": "arXiv",
+    "published": "2026-07-27T18:54:23Z",
+    "updated": "2026-07-27T18:54:23Z",
+    "primary_category": "cond-mat.mtrl-sci",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "physics.chem-ph"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2607.24997v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2607.24997v1"
+      }
+    ],
+    "score": 72,
+    "infographic": {
+      "key_insight": "MANDALA is an E(3)-equivariant GNN framework that learns electronic-structure operators, not just energies and forces, enabling direct prediction of quantum observables.",
+      "engineering_relevance": "It provides a scalable path to recover band structures, densities of states, charge distributions, and electron counts for materials modeling workflows that need electronic detail beyond standard MLIPs.",
+      "method": [
+        "Unified block-sparse representation of Hamiltonian, overlap, and density matrices",
+        "Modular pipeline for basis conversion, sparse block handling, irrep mapping, graph construction, model definition, and training",
+        "Observable-guided evaluation from predicted operators"
+      ],
+      "evidence_signal": "The abstract states that MANDALA evaluates observables such as band energy, electron count, density of states, and band structure directly from predicted electronic-structure matrices.",
+      "watch_item": "Performance will depend on the quality of basis conversion and sparse operator reconstruction, which may add implementation complexity across different backends and chemistries.",
+      "hashtags": [
+        "#ComputationalMaterials",
+        "#GraphNeuralNetworks",
+        "#EquivariantAI",
+        "#ElectronicStructure",
+        "#DensityFunctionalTheory"
+      ],
+      "paper_id": "2026-07-27-arxiv-mandala_an_e_3_equivariant_graph_neural_network_framework_for_learning_electronic_structur",
+      "paper_title": "MANDALA: An E(3)-Equivariant Graph Neural Network Framework for Learning Electronic-Structure Operators with Observable Guidance",
+      "paper_date": "2026-07-27",
+      "paper_category": "Crystal and Structure",
+      "generated_at": "2026-07-31T12:54:06",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-29-arxiv-computational_study_of_water_adsorption_and_dissociative_mechanisms_impacting_g_c3n4_s_opt",
+    "arxiv_id": "2607.26667v1",
+    "date": "2026-07-29",
+    "title": "Computational Study of Water Adsorption and Dissociative Mechanisms Impacting g-C3N4's Optical and Electronic Properties",
+    "authors": "Amil Aligayev, Ulkar Jabbarli, F. Javier Domınguez-Gutierrez, Ulkar Samadova, Jialin Li, Stefanos Papanikolaou",
+    "abstract": "In the quest for sustainable energy solutions, water splitting emerges as a crucial process for generating clean hydrogen a versatile and renewable fuel essential for energy storage, emissions reduction, and achieving sustainability goals. This study employs a comprehensive computational approach, utilizing atomistic simulations to systematically investigate the effects of water absorption on the electronic and optical properties of g-C3N4 nanosheets. Our methodology integrates ab initio computations grounded in density functional theory (DFT), which allows for a detailed characterization of the nanosheet and serves as a benchmark for self-consistent charge density functional tight binding (SCC-DFTB) simulations. This approach provides valuable insights into the behavior of the nanosheet under the influence of absorbed OH and H2O molecules by considering calculated parameters for photocatalytic efficiency. Additionally, we extend our investigation to classical molecular dynamics simulations within the ReaxFF framework, modeling the emission of multiple H2O molecules and assessing the subsequent rate of H2 evolution. A key finding of our study reveals that the dissociation of H2O into HO and O molecules significantly enhances both the optical absorbance and conductance of the nanosheet compared to its pristine state. These results underscore the potential of g-C3N4 nanosheets as effective materials for water splitting applications.",
+    "category": "AI materials science",
+    "source": "arXiv",
+    "published": "2026-07-29T09:23:43Z",
+    "updated": "2026-07-29T09:23:43Z",
+    "primary_category": "cond-mat.mtrl-sci",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2607.26667v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2607.26667v1"
       }
     ],
     "score": 71,
     "infographic": {
-      "key_insight": "A simple “deletions” strategy for carving out atomic environments from large simulations produces the best small-cell inputs for DFT-based training of machine-learning interatomic potentials.",
-      "engineering_relevance": "This improves how active-learning and on-the-fly potential training can obtain accurate local reference data from very large atomistic simulations without excessive setup complexity.",
+      "key_insight": "Water dissociation on g-C3N4 nanosheets markedly improves optical absorbance and electrical conductance, making the material more promising for photocatalytic water splitting.",
+      "engineering_relevance": "The study provides a multiscale computational basis for screening and optimizing g-C3N4-based photocatalysts for sustainable hydrogen production.",
       "method": [
-        "Benchmarked multiple extraction shapes/sizes for embedding local regions into periodic DFT-ready cells.",
-        "Compared extraction methods across diverse materials: amorphous SiO2, Ta with screw dislocations, and molten C.",
-        "Evaluated whether a passivating envelope is needed and found deletions to be a strong baseline."
+        "DFT calculations benchmarked the electronic and optical properties of pristine and water-adsorbed g-C3N4.",
+        "SCC-DFTB simulations examined OH/H2O adsorption effects on nanosheet behavior.",
+        "ReaxFF molecular dynamics modeled multiple H2O emissions and estimated H2 evolution trends."
       ],
-      "evidence_signal": "The authors report a benchmark across multiple material classes and state that the deletions method outperforms alternative extraction approaches.",
-      "watch_item": "Performance may depend on the local defect chemistry and boundary treatment, so extracted cells still need careful validation for each system and target property.",
+      "evidence_signal": "The abstract reports a comparative computational evaluation showing stronger absorbance and conductance after H2O dissociation into HO and O relative to the pristine nanosheet.",
+      "watch_item": "Because the conclusions are based on atomistic simulations, real-world photocatalytic performance may differ under defects, temperature, solvent, and experimental surface conditions.",
       "hashtags": [
-        "#MaterialsInformatics",
-        "#MachineLearningPotentials",
-        "#DensityFunctionalTheory",
+        "#MaterialsScience",
+        "#Photocatalysis",
+        "#DFT",
         "#MolecularDynamics",
-        "#ActiveLearning"
+        "#HydrogenProduction"
       ],
-      "paper_id": "2026-07-28-arxiv-extracting_atomic_environments_for_machine_learning_interatomic_potentials",
-      "paper_title": "Extracting Atomic Environments for Machine Learning Interatomic Potentials",
-      "paper_date": "2026-07-28",
+      "paper_id": "2026-07-29-arxiv-computational_study_of_water_adsorption_and_dissociative_mechanisms_impacting_g_c3n4_s_opt",
+      "paper_title": "Computational Study of Water Adsorption and Dissociative Mechanisms Impacting g-C3N4's Optical and Electronic Properties",
+      "paper_date": "2026-07-29",
       "paper_category": "AI materials science",
-      "generated_at": "2026-08-01T12:00:53",
+      "generated_at": "2026-07-31T12:54:09",
       "generator": "openai"
     }
   },
@@ -394,27 +601,27 @@
     ],
     "score": 70,
     "infographic": {
-      "key_insight": "FinSMART replaces static, human-labeled financial sentiment training with reinforcement learning driven by realized market outcomes, making sentiment models adapt to changing market conditions.",
-      "engineering_relevance": "The framework offers a practical way to build more robust, market-aware AI systems for trading by aligning model optimization with economic performance rather than annotation quality alone.",
+      "key_insight": "FinSMART replaces static, human-labeled financial sentiment training with reinforcement learning that directly optimizes sentiment signals from realized market outcomes.",
+      "engineering_relevance": "The framework offers a practical way to build adaptive trading-oriented AI systems that can retrain on fresh market data without costly manual annotation.",
       "method": [
-        "Market-aligned RL directly optimizes sentiment signals using realized trading outcomes.",
-        "A signal extraction pipeline filters noisy financial news with market-aware data selection.",
-        "A discrete asymmetric trading reward stabilizes learning from non-stationary, multifactorial market feedback."
+        "Market-aware data filtering to reduce noise and focus on economically meaningful articles",
+        "Discrete asymmetric trading reward to convert market outcomes into stable RL feedback",
+        "Market-aligned retraining using newly observed articles and realized returns"
       ],
-      "evidence_signal": "According to the abstract, FinSMART outperforms strong baselines in profitability, risk-adjusted performance, and sentiment quality, with cumulative trading returns improved by 220%.",
-      "watch_item": "Performance may depend on reward design and market regime shifts, so careful retraining and validation are needed to avoid overfitting to recent conditions.",
+      "evidence_signal": "According to the abstract, FinSMART outperforms strong baselines across profitability, risk-adjusted performance, and sentiment signal quality, with cumulative trading returns improving by 220%.",
+      "watch_item": "Because financial markets are noisy and non-stationary, the reward design and retraining pipeline may be sensitive to regime shifts and evaluation period choice.",
       "hashtags": [
         "#FinancialAI",
         "#ReinforcementLearning",
-        "#LLM",
+        "#SentimentAnalysis",
         "#AlgorithmicTrading",
-        "#SentimentAnalysis"
+        "#AdaptiveLLMs"
       ],
       "paper_id": "2026-07-30-arxiv-finsmart_financial_sentiment_analysis_for_algorithmic_trading_through_market_aligned_reinf",
       "paper_title": "FinSMART: Financial Sentiment Analysis for Algorithmic Trading through Market-Aligned Reinforcement Learning",
       "paper_date": "2026-07-30",
       "paper_category": "Materials Discovery",
-      "generated_at": "2026-08-01T12:00:55",
+      "generated_at": "2026-07-31T12:54:11",
       "generator": "openai"
     }
   },
@@ -445,234 +652,27 @@
     ],
     "score": 70,
     "infographic": {
-      "key_insight": "TRACE unifies ACE-style many-body correlations with local multihead cross-attention to learn energy-conserving interatomic potentials without passing learned state between atoms.",
-      "engineering_relevance": "The architecture is designed for scalable molecular simulation, enabling accurate phase, liquid, and reaction predictions on modest hardware for materials and chemistry workloads.",
+      "key_insight": "TRACE is a unified, energy-conserving interatomic potential that pairs ACE density correlations with local cross-attention to model many-body chemistry and crystal physics without passing learned states between atoms.",
+      "engineering_relevance": "It offers a scalable route to accurate molecular dynamics on a laptop-class machine, supporting phase transitions, liquid structure, and reaction barriers with one architecture.",
       "method": [
-        "Build O(3)-equivariant atomic cluster expansion density correlations for each atom center",
-        "Use local multihead cross-attention over fixed species/geometry neighbor features",
-        "Train a single potential for multiple targets, including polymorphs, liquid water, and reaction barriers"
+        "ACE-based O(3)-equivariant center states capture many-body density correlations.",
+        "Local multihead cross-attention queries fixed tensorial neighbor features determined by species and geometry.",
+        "No learned message passing state is propagated between atoms, preserving energy conservation and efficiency."
       ],
-      "evidence_signal": "The paper reports agreement with experiment and high-level theory across three benchmarks, including CsPbI3 phase ordering and transition temperature, water structure, and methyl migration activation free energy.",
-      "watch_item": "Performance may depend on careful enhanced-sampling setup and benchmark-specific training data coverage, especially for rare transitions and barrier crossing.",
+      "evidence_signal": "The model was evaluated on polymorphic cesium lead iodide, liquid water, and methyl migration, matching key experimental or high-level reference targets such as a ~580 K phase crossing, an O–O distance of 2.85 Å, and a 27.92±0.03 kcal/mol barrier.",
+      "watch_item": "Performance may depend on high-quality reference data and enhanced sampling for rare transitions, so transferability outside the demonstrated chemistries and phase spaces remains to be validated.",
       "hashtags": [
         "#MachineLearningPotentials",
         "#AtomisticSimulation",
+        "#Transformer",
         "#MaterialsScience",
-        "#TransformerModels",
         "#MolecularDynamics"
       ],
       "paper_id": "2026-07-28-arxiv-transformer_atomic_cluster_expansion_trace",
       "paper_title": "Transformer Atomic Cluster Expansion: TRACE",
       "paper_date": "2026-07-28",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-08-01T12:00:57",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-07-30-arxiv-deep_learning_for_accelerated_long_horizon_forecasting_of_multicomponent_multiphase_micros",
-    "arxiv_id": "2607.27820v1",
-    "date": "2026-07-30",
-    "title": "Deep Learning for Accelerated Long-Horizon Forecasting of Multicomponent Multiphase Microstructure Evolution in High-Entropy Alloys",
-    "authors": "Hamidreza Razavi, Nele Moelans",
-    "abstract": "Phase-field modeling provides a powerful approach for predicting microstructure evolution but becomes computationally prohibitive for multicomponent and multiphase systems over large spatial and temporal scales. This work presents an AE-GCN-LSTM surrogate framework for long-horizon forecasting of microstructure evolution in the multicomponent AlCrFeNi high-entropy alloy system containing coexisting BCC and FCC phases. A multi-head autoencoder compresses the four elemental concentration fields and phase-field order parameter into latent representations, which are formulated as graphs for learning their spatial and temporal evolution. The framework accurately forecasts microstructure evolution over horizons extending to 3,000,000 simulation timesteps. Its robustness is systematically evaluated under previously unseen conditions without retraining, fine-tuning, or parameter adaptation. These evaluations include variations in FCC precipitate size and initial position, microstructures containing one, two, and five FCC precipitates, and complex phase interactions involving precipitate merging and splitting. Although trained only on 100 x 100 computational domains containing a single nominal alloy composition, the framework is successfully transferred to larger 256 x 256 and 512 x 512 systems and to previously unseen AlCrFeNi compositions. Across the evaluated configurations, the model preserves the dominant phase morphology and compositional evolution while providing computational speedups ranging from approximately 7200 to 62300 relative to conventional phase-field simulations. These results demonstrate that latent graph-based AE-GCN-LSTM forecasting provides a scalable and computationally efficient surrogate for long-horizon simulation of multicomponent, multiphase microstructures and offers a promising foundation for high-throughput alloy design.",
-    "category": "Microstructure",
-    "source": "arXiv",
-    "published": "2026-07-30T08:00:39Z",
-    "updated": "2026-07-30T08:00:39Z",
-    "primary_category": "cond-mat.mtrl-sci",
-    "categories": [
-      "cond-mat.mtrl-sci",
-      "cs.AI",
-      "cs.CE"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2607.27820v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2607.27820v1"
-      }
-    ],
-    "score": 69,
-    "infographic": {
-      "key_insight": "An autoencoder plus graph-convolutional LSTM can forecast multicomponent, multiphase microstructure evolution far beyond the training horizon while preserving key phase morphology.",
-      "engineering_relevance": "This offers a fast surrogate for expensive phase-field simulations, enabling high-throughput exploration and design of high-entropy alloys.",
-      "method": [
-        "Multi-head autoencoder compresses elemental concentration fields and phase-field order parameters into latent variables.",
-        "Latent states are represented as graphs and propagated with a GCN-LSTM to learn spatial-temporal evolution.",
-        "Model is used for long-horizon rollout forecasting of BCC/FCC microstructure dynamics."
-      ],
-      "evidence_signal": "The abstract reports accurate forecasts up to 3,000,000 timesteps, transfer to larger 256×256 and 512×512 domains and unseen compositions, and speedups of about 7,200× to 62,300× versus phase-field simulation.",
-      "watch_item": "Generalization is strong in the reported tests, but real deployment still needs caution because performance may depend on how well new alloy chemistries and boundary conditions match the training regime.",
-      "hashtags": [
-        "#Microstructure",
-        "#DeepLearning",
-        "#PhaseField",
-        "#HighEntropyAlloys",
-        "#SurrogateModel"
-      ],
-      "paper_id": "2026-07-30-arxiv-deep_learning_for_accelerated_long_horizon_forecasting_of_multicomponent_multiphase_micros",
-      "paper_title": "Deep Learning for Accelerated Long-Horizon Forecasting of Multicomponent Multiphase Microstructure Evolution in High-Entropy Alloys",
-      "paper_date": "2026-07-30",
-      "paper_category": "Microstructure",
-      "generated_at": "2026-08-01T12:01:00",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-07-27-arxiv-machine_learning_potentials_for_sodium_potassium_chloride_mixtures_predicting_thermophysic",
-    "arxiv_id": "2607.25022v1",
-    "date": "2026-07-27",
-    "title": "Machine-Learning Potentials for sodium-potassium chloride mixtures: Predicting thermophysical properties and phase behavior of multicomponent salts",
-    "authors": "Karim Zongo, Hao Sun, Zijian Meng, Christopher Maxwell, Edmanuel Torres, Laurent Karim Béland",
-    "abstract": "Predicting the properties of multicomponent molten salts using density functional theory (DFT) remains challenging because the spatial and temporal scales required to evaluate transport properties and phase behavior are computationally prohibitive. In this work, we develop a moment tensor potential trained using a a DFT dataset of NaCl, KCl, NaCl-KCl mixtures, and the NaK alloy, enabling large-scale molecular dynamics simulations across wide ranges of temperatures and compositions. We systematically evaluate the effect of D3 dispersion corrections and apply the resulting potential to predict liquid densities, diffusion coefficients, radial distribution functions, heat capacities, thermal conductivities, and the NaCl-KCl phase diagram. The model successfully reproduces many temperature- and composition-dependent trends. However, systematic deviations in several absolute properties persist, highlighting the importance of experimental validation and calibration. These findings support a hybrid modeling framework in which first-principles-informed machine-learning potentials provide transferable predictive capability and mechanistic insight, while experimental data incorporated during model development or subsequent engineering assessments is necessary to improve quantitative accuracy.",
-    "category": "Microstructure",
-    "source": "arXiv",
-    "published": "2026-07-27T19:31:36Z",
-    "updated": "2026-07-27T19:31:36Z",
-    "primary_category": "cond-mat.mtrl-sci",
-    "categories": [
-      "cond-mat.mtrl-sci"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2607.25022v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2607.25022v1"
-      }
-    ],
-    "score": 67,
-    "infographic": {
-      "key_insight": "A DFT-trained machine-learning potential can efficiently predict thermophysical properties and phase behavior of NaCl–KCl mixtures across compositions and temperatures, though some absolute values remain biased.",
-      "engineering_relevance": "This enables large-scale molecular dynamics screening of molten salt systems for heat-transfer and materials design, while still requiring experimental calibration for high-confidence deployment.",
-      "method": [
-        "Trained a moment tensor potential on DFT data for NaCl, KCl, NaCl–KCl mixtures, and NaK alloy.",
-        "Tested the impact of D3 dispersion corrections on model behavior.",
-        "Used the potential in large-scale MD to predict density, diffusion, RDFs, heat capacity, thermal conductivity, and the NaCl–KCl phase diagram."
-      ],
-      "evidence_signal": "The abstract reports systematic evaluation across wide temperature and composition ranges and finds that the model reproduces many trends but not all absolute property values.",
-      "watch_item": "The potential shows systematic deviations in several properties, so experimental validation is still needed before relying on it for quantitative engineering decisions.",
-      "hashtags": [
-        "#MachineLearningPotentials",
-        "#MoltenSalts",
-        "#MolecularDynamics",
-        "#DFT",
-        "#MaterialsModeling"
-      ],
-      "paper_id": "2026-07-27-arxiv-machine_learning_potentials_for_sodium_potassium_chloride_mixtures_predicting_thermophysic",
-      "paper_title": "Machine-Learning Potentials for sodium-potassium chloride mixtures: Predicting thermophysical properties and phase behavior of multicomponent salts",
-      "paper_date": "2026-07-27",
-      "paper_category": "Microstructure",
-      "generated_at": "2026-08-01T12:01:02",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-07-27-arxiv-mandala_an_e_3_equivariant_graph_neural_network_framework_for_learning_electronic_structur",
-    "arxiv_id": "2607.24997v1",
-    "date": "2026-07-27",
-    "title": "MANDALA: An E(3)-Equivariant Graph Neural Network Framework for Learning Electronic-Structure Operators with Observable Guidance",
-    "authors": "Bartosz Brzoza, Wiktoria Szopa, Zakaria Elabid, Vincent Martinetto, Varadarajan Rengaraj, Mani Lokamani",
-    "abstract": "Electronic-structure calculations based on Kohn-Sham density functional theory remain indispensable in computational materials science and chemistry. Their computational cost, however, limits accessible system sizes and simulation times. At the same time, conventional machine-learning interatomic potentials (MLIPs), which are becoming the workhorse of large-scale materials modeling, usually target only energies and forces. They therefore leave out the quantum-operator-level information required to reconstruct band structures, densities of states, spatial charge distributions, and other electronic observables. \\texttt{Mandala} fills this methodological gap. It is a modular software framework for learning block-sparse electronic-structure matrices with E(3)-equivariant graph neural networks. The framework is built around a unified representation of atom-resolved Hamiltonian, overlap, and density matrices, together with reusable abstractions for basis conversion, sparse block handling, irreducible representation mapping, graph construction, model definition, and training. This design allows \\texttt{Mandala} to support heterogeneous chemical compositions, a wide range of neural architecture variants within one workflow, and multiple electronic-structure backends. \\texttt{Mandala} evaluates selected observables directly from the predicted operators, including band energy, electron count, density of states, and band structure. This connects electronic-structure learning and observable-guided modeling while retaining a representation tied to quantum-mechanical operators rather than only scalar or vector targets as in MLIPs. In this form, \\texttt{Mandala} is intended to complement atomistic interatomic potential workflows by resolving electronic structure and operator-derived observables within one scalable implementation.",
-    "category": "Crystal and Structure",
-    "source": "arXiv",
-    "published": "2026-07-27T18:54:23Z",
-    "updated": "2026-07-27T18:54:23Z",
-    "primary_category": "cond-mat.mtrl-sci",
-    "categories": [
-      "cond-mat.mtrl-sci",
-      "physics.chem-ph"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2607.24997v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2607.24997v1"
-      }
-    ],
-    "score": 67,
-    "infographic": {
-      "key_insight": "MANDALA is an E(3)-equivariant graph neural network framework that learns electronic-structure operators directly, enabling prediction of quantum observables beyond energies and forces.",
-      "engineering_relevance": "It provides a scalable path to recover band structures, densities of states, electron counts, and charge distributions for materials modeling workflows that need electronic-structure detail.",
-      "method": [
-        "Learns block-sparse Hamiltonian, overlap, and density matrices with a unified operator representation.",
-        "Uses reusable modules for basis conversion, sparse block handling, irrep mapping, graph construction, model definition, and training.",
-        "Supports multiple architectures, heterogeneous chemistries, and different electronic-structure backends in one workflow."
-      ],
-      "evidence_signal": "The abstract reports direct evaluation of observables from predicted operators, including band energy, electron count, density of states, and band structure.",
-      "watch_item": "Performance depends on accurate operator learning and careful basis/representation handling, which may add implementation complexity across different backends.",
-      "hashtags": [
-        "#GraphNeuralNetworks",
-        "#E3Equivariance",
-        "#ElectronicStructure",
-        "#MaterialsInformatics",
-        "#QuantumMaterials"
-      ],
-      "paper_id": "2026-07-27-arxiv-mandala_an_e_3_equivariant_graph_neural_network_framework_for_learning_electronic_structur",
-      "paper_title": "MANDALA: An E(3)-Equivariant Graph Neural Network Framework for Learning Electronic-Structure Operators with Observable Guidance",
-      "paper_date": "2026-07-27",
-      "paper_category": "Crystal and Structure",
-      "generated_at": "2026-08-01T12:01:04",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-07-29-arxiv-computational_study_of_water_adsorption_and_dissociative_mechanisms_impacting_g_c3n4_s_opt",
-    "arxiv_id": "2607.26667v1",
-    "date": "2026-07-29",
-    "title": "Computational Study of Water Adsorption and Dissociative Mechanisms Impacting g-C3N4's Optical and Electronic Properties",
-    "authors": "Amil Aligayev, Ulkar Jabbarli, F. Javier Domınguez-Gutierrez, Ulkar Samadova, Jialin Li, Stefanos Papanikolaou",
-    "abstract": "In the quest for sustainable energy solutions, water splitting emerges as a crucial process for generating clean hydrogen a versatile and renewable fuel essential for energy storage, emissions reduction, and achieving sustainability goals. This study employs a comprehensive computational approach, utilizing atomistic simulations to systematically investigate the effects of water absorption on the electronic and optical properties of g-C3N4 nanosheets. Our methodology integrates ab initio computations grounded in density functional theory (DFT), which allows for a detailed characterization of the nanosheet and serves as a benchmark for self-consistent charge density functional tight binding (SCC-DFTB) simulations. This approach provides valuable insights into the behavior of the nanosheet under the influence of absorbed OH and H2O molecules by considering calculated parameters for photocatalytic efficiency. Additionally, we extend our investigation to classical molecular dynamics simulations within the ReaxFF framework, modeling the emission of multiple H2O molecules and assessing the subsequent rate of H2 evolution. A key finding of our study reveals that the dissociation of H2O into HO and O molecules significantly enhances both the optical absorbance and conductance of the nanosheet compared to its pristine state. These results underscore the potential of g-C3N4 nanosheets as effective materials for water splitting applications.",
-    "category": "AI materials science",
-    "source": "arXiv",
-    "published": "2026-07-29T09:23:43Z",
-    "updated": "2026-07-29T09:23:43Z",
-    "primary_category": "cond-mat.mtrl-sci",
-    "categories": [
-      "cond-mat.mtrl-sci"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2607.26667v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2607.26667v1"
-      }
-    ],
-    "score": 66,
-    "infographic": {
-      "key_insight": "Water adsorption and especially H2O dissociation on g-C3N4 nanosheets can boost optical absorbance and electrical conductance, improving their promise for photocatalytic water splitting.",
-      "engineering_relevance": "The study suggests g-C3N4 is a viable low-cost photocatalyst candidate whose performance can be tuned by controlling surface water chemistry for hydrogen production systems.",
-      "method": [
-        "DFT used to benchmark the pristine and adsorbed nanosheet electronic/optical structure",
-        "SCC-DFTB simulations extended the atomistic analysis for OH and H2O adsorption effects",
-        "ReaxFF molecular dynamics modeled multi-H2O emission and linked dissociation behavior to H2 evolution rate"
-      ],
-      "evidence_signal": "The abstract reports that dissociation of H2O into HO and O significantly increased absorbance and conductance relative to pristine g-C3N4, supporting improved photocatalytic behavior.",
-      "watch_item": "The conclusions come from computational models, so experimental validation is still needed to confirm stability, reaction pathways, and real-device performance.",
-      "hashtags": [
-        "#gC3N4",
-        "#WaterSplitting",
-        "#DFT",
-        "#SCCDFTB",
-        "#Photocatalysis"
-      ],
-      "paper_id": "2026-07-29-arxiv-computational_study_of_water_adsorption_and_dissociative_mechanisms_impacting_g_c3n4_s_opt",
-      "paper_title": "Computational Study of Water Adsorption and Dissociative Mechanisms Impacting g-C3N4's Optical and Electronic Properties",
-      "paper_date": "2026-07-29",
-      "paper_category": "AI materials science",
-      "generated_at": "2026-08-01T12:01:06",
+      "generated_at": "2026-07-31T12:54:14",
       "generator": "openai"
     }
   },
@@ -703,29 +703,29 @@
         "url": "https://arxiv.org/pdf/2607.28200v1"
       }
     ],
-    "score": 64,
+    "score": 69,
     "infographic": {
-      "key_insight": "Vibe-FDTR combines an LLM agent workflow with a configuration-driven FDTR codebase to make thermal-property analysis more reliable, reproducible, and less dependent on expert manual steps.",
-      "engineering_relevance": "The framework offers a practical path to low-barrier, trustworthy thermal metrology for micro- and nanoscale materials characterization, with major gains in accuracy, cost, and speed.",
+      "key_insight": "Vibe-FDTR turns natural-language requests into reproducible FDTR analysis by pairing LLM agents with a configuration-driven, physically consistent domain codebase.",
+      "engineering_relevance": "The framework lowers the expertise barrier for thermal metrology while improving reliability, speed, and cost efficiency for microscale heat-transport characterization.",
       "method": [
-        "Agent skills translate natural-language requests into structured FDTR analysis steps.",
-        "A configuration-driven FDTR package enforces physical and parametric consistency during execution.",
-        "An optional expert mode performs sensitivity and uncertainty checks for planning underspecified experiments."
+        "Agent skills translate user intent into ordered, verifiable FDTR analysis steps.",
+        "A configuration-driven code package enforces physical and parameter consistency.",
+        "An optional expert mode performs sensitivity and uncertainty analysis for planning."
       ],
-      "evidence_signal": "In benchmark tests, Vibe-FDTR achieved 100% success on synthetic single-step tasks and 98.9% on real-data multi-step tasks, outperforming ablated variants while cutting cost by 87.7% and runtime by more than 60%.",
-      "watch_item": "Performance depends on the correctness of the domain package and agent skill design, so deployment still requires careful validation on new materials, models, and experimental conditions.",
+      "evidence_signal": "In benchmark tests, Vibe-FDTR achieved 100% success on synthetic single-step tasks and 98.9% on real-data multi-step tasks, outperforming ablated variants.",
+      "watch_item": "Results depend on a tightly integrated domain package and skill design, so robustness may drop if the FDTR configuration, physical assumptions, or workflow constraints are not carefully maintained.",
       "hashtags": [
-        "#AIforScience",
-        "#MaterialsInformatics",
-        "#ThermalMetrology",
+        "#Thermoreflectance",
         "#LLMAgents",
-        "#ReproducibleResearch"
+        "#MaterialsInformatics",
+        "#ReproducibleResearch",
+        "#ThermalMetrology"
       ],
       "paper_id": "2026-07-30-arxiv-vibe_fdtr_an_agent_oriented_framework_for_reproducible_frequency_domain_thermoreflectance",
       "paper_title": "Vibe-FDTR: An agent-oriented framework for reproducible frequency-domain thermoreflectance data analysis",
       "paper_date": "2026-07-30",
       "paper_category": "AI materials science",
-      "generated_at": "2026-08-01T12:01:09",
+      "generated_at": "2026-07-31T12:54:17",
       "generator": "openai"
     }
   },
@@ -755,29 +755,29 @@
         "url": "https://arxiv.org/pdf/2607.28441v1"
       }
     ],
-    "score": 63,
+    "score": 68,
     "infographic": {
-      "key_insight": "Epitaxial α-MnTe thin films on InP(111) show transport signatures consistent with a finite net magnetic polarization, despite bulk MnTe being compensated antiferromagnetic.",
-      "engineering_relevance": "The work suggests a thin-film engineering route to tune magnetic response in MnTe for spintronic device concepts.",
+      "key_insight": "Epitaxial α-MnTe thin films on InP(111) show transport signatures consistent with a finite net magnetic polarization, despite bulk MnTe being a compensated antiferromagnet.",
+      "engineering_relevance": "The work points to a thin-film route for tuning magnetic response in spintronic materials through epitaxial growth, interfaces, and defect engineering.",
       "method": [
-        "Molecular beam epitaxy growth of epitaxial α-MnTe on InP(111).",
-        "Low-temperature magneto-transport measurements of longitudinal and transverse responses.",
-        "DFT calculations to test bulk, interface, and defect-driven origins of magnetization."
+        "Molecular beam epitaxy growth of α-MnTe on InP(111)",
+        "Low-temperature magnetotransport measurements (longitudinal and transverse magnetoresistance)",
+        "DFT calculations of bulk and thin-film/defect-induced magnetic behavior"
       ],
-      "evidence_signal": "The abstract reports a hysteretic butterfly longitudinal magnetoresistance and a nonlinear transverse magnetoresistance, together with DFT results supporting symmetry breaking and defect-driven magnetization pathways.",
-      "watch_item": "Transport signatures indicate magnetic polarization, but the mechanism may depend sensitively on interface quality, strain, and point defects rather than being intrinsic to ideal bulk MnTe.",
+      "evidence_signal": "A hysteretic butterfly-like longitudinal magnetoresistance and nonlinear transverse magnetoresistance were observed, and DFT indicated symmetry breaking or point defects can generate finite magnetization in thin films.",
+      "watch_item": "Transport signatures imply magnetic polarization but do not by themselves prove the exact microscopic source, so interface and defect effects need direct structural/magnetic verification.",
       "hashtags": [
         "#MnTe",
         "#Altermagnetism",
         "#Spintronics",
-        "#ThinFilms",
+        "#Magnetotransport",
         "#DFT"
       ],
       "paper_id": "2026-07-30-arxiv-transport_evidence_of_magnetic_polarization_in_the_altermagnetic_candidate_mnte",
       "paper_title": "Transport Evidence of Magnetic Polarization in the Altermagnetic Candidate MnTe",
       "paper_date": "2026-07-30",
       "paper_category": "Microstructure",
-      "generated_at": "2026-08-01T12:01:11",
+      "generated_at": "2026-07-31T12:54:20",
       "generator": "openai"
     }
   },
@@ -806,29 +806,29 @@
         "url": "https://arxiv.org/pdf/2607.26888v1"
       }
     ],
-    "score": 63,
+    "score": 68,
     "infographic": {
-      "key_insight": "Replacing Cr with Cu in MnFeCoNi high-entropy alloys strengthens bifunctional alkaline water-splitting performance by tuning surface chemistry and intermediate binding.",
-      "engineering_relevance": "Single-element substitution offers a practical design lever for cheaper, more efficient HEA electrocatalysts for alkaline HER and OER.",
+      "key_insight": "Replacing Cr with Cu in MnFeCoNi high-entropy alloys substantially improves bifunctional alkaline water-splitting activity by tuning surface chemistry and intermediate binding.",
+      "engineering_relevance": "A single-element substitution in HEAs can be used as a practical design lever to develop more efficient, lower-cost electrocatalysts for hydrogen production.",
       "method": [
-        "Compared CrMnFeCoNi (HEA-Cr) vs MnFeCoNiCu (HEA-Cu) under the same alkaline HER/OER conditions.",
-        "Combined electrochemical testing with computational electronic-structure and adsorption-energy analysis.",
-        "Examined post-OER surface reconstruction to assess element migration and catalyst stability."
+        "Compared CrMnFeCoNi (HEA-Cr) and MnFeCoNiCu (HEA-Cu) under the same alkaline HER/OER conditions.",
+        "Combined electrochemical testing with computational electronic-structure analysis of reaction-intermediate binding.",
+        "Examined post-OER surface evolution to assess Cu redistribution and shell formation."
       ],
-      "evidence_signal": "HEA-Cu showed lower overpotential and Tafel slope than HEA-Cr, with a reported overpotential of 538 mV and Tafel slope of 165 mV dec^-1.",
-      "watch_item": "Cu migration during OER forms a Cu-rich outer shell, so long-term stability and reconstruction effects need careful validation.",
+      "evidence_signal": "HEA-Cu showed better HER and OER performance than HEA-Cr, including a lower overpotential of 538 mV and a Tafel slope of 165 mV dec-1, consistent with computed favorable binding energies for H*, O*, OH*, and OOH*.",
+      "watch_item": "The reported Cu migration and Cu-rich shell after OER suggests that long-term stability and surface reconstruction must be considered before deployment.",
       "hashtags": [
         "#HighEntropyAlloys",
-        "#WaterElectrolysis",
         "#Electrocatalysis",
-        "#OER",
-        "#HER"
+        "#WaterElectrolysis",
+        "#HydrogenEvolution",
+        "#OxygenEvolution"
       ],
       "paper_id": "2026-07-29-arxiv-structure_property_correlation_of_cr_cu_mnfeconi_high_entropy_alloys_for_alkaline_water_el",
       "paper_title": "Structure-Property Correlation of Cr/Cu-MnFeCoNi High-Entropy Alloys for Alkaline Water Electrolysis",
       "paper_date": "2026-07-29",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-08-01T12:01:18",
+      "generated_at": "2026-07-31T12:54:22",
       "generator": "openai"
     }
   },
@@ -857,17 +857,17 @@
         "url": "https://arxiv.org/pdf/2607.26881v1"
       }
     ],
-    "score": 63,
+    "score": 68,
     "infographic": {
-      "key_insight": "Nanoindentation can trigger localized amorphous-to-bcc devitrification in amorphous refractory metals, and their crystal forming ability varies strongly across the series, decreasing roughly from V to W.",
-      "engineering_relevance": "This suggests refractory amorphous coatings may differ substantially in contact-induced crystallization resistance, which matters for wear, durability, and mechanical reliability in harsh environments.",
+      "key_insight": "Nanoindentation can trigger shear-driven devitrification in amorphous refractory metals, and their crystal forming ability varies strongly across the series, with V transforming most readily and W most resistant.",
+      "engineering_relevance": "The results help predict when protective amorphous coatings may crystallize under contact loading, guiding refractory alloy selection for harder and more stable surfaces.",
       "method": [
-        "Melt-quenched amorphous V, Nb, Mo, Ta, and W were prepared at 300 K.",
-        "Interatomic potentials were validated against ab initio liquid radial distribution functions.",
-        "Large-scale molecular dynamics nanoindentation was used to track bcc nucleation, growth, and coalescence."
+        "Melt-quenched amorphous V, Nb, Mo, Ta, and W were prepared and validated against ab initio liquid radial distribution functions.",
+        "Large-scale molecular dynamics nanoindentation was used to measure bcc transformation kinetics and local atomic deformation.",
+        "A grain population balance framework linked nucleation, growth, and coalescence to the final microstructure."
       ],
-      "evidence_signal": "The abstract reports a sigmoidal bcc-fraction-versus-depth response, a CFA spanning about a factor of four, and a velocity scaling of CFA ∝ v^-m with mean exponent 1.08.",
-      "watch_item": "Results are based on molecular dynamics and potential models, so quantitative trends may depend on the chosen interatomic potentials and idealized indentation conditions.",
+      "evidence_signal": "The study reports a sigmoidal bcc-fraction-versus-depth response, a CFA ranking of V > Mo > Nb > Ta > W, and a velocity scaling of CFA ∝ v^-m with mean exponent 1.08.",
+      "watch_item": "The findings come from simulation with specific interatomic potentials and loading conditions, so direct transfer to experiments and different coating chemistries should be done cautiously.",
       "hashtags": [
         "#MolecularDynamics",
         "#Nanoindentation",
@@ -879,7 +879,7 @@
       "paper_title": "Crystal forming ability of amorphous refractory metals under nanoindentation: a molecular dynamics study",
       "paper_date": "2026-07-29",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-08-01T12:01:20",
+      "generated_at": "2026-07-31T12:54:24",
       "generator": "openai"
     }
   },
@@ -909,29 +909,29 @@
         "url": "https://arxiv.org/pdf/2607.26422v1"
       }
     ],
-    "score": 62,
+    "score": 67,
     "infographic": {
-      "key_insight": "Physics-informed machine learning can accurately predict cRPA-derived Hubbard parameters (U_eff,V,J) for transition-metal oxides while revealing the physical descriptors that control electron correlation.",
-      "engineering_relevance": "This enables faster, scalable input generation for DFT+U, DFT+DMFT, and related beyond-DFT workflows, reducing reliance on costly first-principles cRPA calculations.",
+      "key_insight": "Physics-informed machine learning can predict cRPA-derived Hubbard parameters for transition-metal oxides with high accuracy while revealing physically interpretable trends behind electron correlation and screening.",
+      "engineering_relevance": "This enables faster, scalable screening of materials for DFT+U, DFT+DMFT, and related beyond-DFT workflows without relying on expensive cRPA calculations for every candidate.",
       "method": [
-        "Ensemble-learning models trained on cRPA data for transition-metal oxides",
+        "Ensemble ML models trained on electronic, structural, and atomic descriptors",
         "Regression-based brute-force search to derive explicit analytical expressions",
-        "Physically motivated features: TM-d bandwidth, TM-d/O-p band-center separation, and structural/atomic descriptors"
+        "Physically motivated features including TM-d bandwidth and TM-d/O-p band-center separation"
       ],
-      "evidence_signal": "The reported ensemble models achieved RMSEs of 0.148 eV for U_eff, 0.062 eV for V, and 0.007 eV for J on the evaluated dataset.",
-      "watch_item": "Model transferability may be limited outside transition-metal oxides or when electronic structure lies far from the training distribution.",
+      "evidence_signal": "The abstract reports low test errors of 0.148 eV for Ueff, 0.062 eV for V, and 0.007 eV for J on transition-metal oxides.",
+      "watch_item": "The models are trained on cRPA data for TM oxides, so transfer to other chemistries or low-data regimes may require retraining and careful validation.",
       "hashtags": [
-        "#MaterialsInformatics",
-        "#PhysicsInformedML",
-        "#DFTplusU",
+        "#MaterialsDiscovery",
+        "#MachineLearning",
         "#HubbardU",
-        "#TransitionMetalOxides"
+        "#DFTplusU",
+        "#ComputationalMaterials"
       ],
       "paper_id": "2026-07-29-arxiv-physics_informed_machine_learning_prediction_of_hubbard_interaction_parameters",
       "paper_title": "Physics-informed Machine Learning Prediction of Hubbard Interaction Parameters",
       "paper_date": "2026-07-29",
       "paper_category": "Materials Discovery",
-      "generated_at": "2026-08-01T12:01:23",
+      "generated_at": "2026-07-31T12:54:26",
       "generator": "openai"
     }
   },
@@ -961,21 +961,21 @@
         "url": "https://arxiv.org/pdf/2607.27717v1"
       }
     ],
-    "score": 61,
+    "score": 66,
     "infographic": {
-      "key_insight": "Lead-free Co1.2Ti0.2Fe1.6O4–BaTiO3 composites achieve stronger magnetoelectric coupling when composition and sintering temperature are jointly tuned, with the best response at 30CTFO–70BTO sintered at 1200 °C.",
-      "engineering_relevance": "The study identifies a practical route to optimize bulk multiferroic materials for low-power sensors, memory, spintronic devices, and actuators without using lead.",
+      "key_insight": "Optimizing ferrite content and sintering temperature in lead-free Co1.2Ti0.2Fe1.6O4–BaTiO3 composites strengthens interfacial coupling, with 30CTFO–70BTO sintered at 1200 °C giving the best magnetoelectric response.",
+      "engineering_relevance": "The study identifies a practical route to lead-free multiferroic composites for low-power sensors, memory, spintronic, and actuator devices.",
       "method": [
-        "Solid-state synthesis of (x)Co1.2Ti0.2Fe1.6O4–(100−x)BaTiO3 composites with x = 10, 20, 30",
-        "X-ray diffraction and Rietveld refinement to confirm tetragonal BaTiO3 plus cubic spinel CTFO phases",
-        "Microstructure, dielectric/ferroelectric, magnetic, and magnetoelectric measurements across sintering conditions"
+        "Solid-state synthesis of (x)Co1.2Ti0.2Fe1.6O4–(100-x)BaTiO3 composites with x = 10, 20, 30.",
+        "Varied sintering temperature to tune densification, grain growth, and phase coupling.",
+        "Measured structure, microstructure, dielectric/ferroelectric, magnetic, and magnetoelectric properties."
       ],
-      "evidence_signal": "The abstract reports the highest magnetoelectric coefficient of about 1.28 mV/cm·Oe for 30CTFO–70BTO sintered at 1200 °C, showing clear dependence on composition and processing.",
-      "watch_item": "The P–E behavior is lossy due to leakage from the conductive phase, which may limit ferroelectric performance and device reliability.",
+      "evidence_signal": "XRD/Rietveld confirmed coexisting tetragonal BaTiO3 and cubic spinel CTFO phases, and the highest ME coefficient reported was ~1.28 mV/cm.Oe for 30CTFO–70BTO sintered at 1200 °C.",
+      "watch_item": "The ferroelectric response is lossy due to leakage from the conductive ferrite phase, so electrical losses may limit device performance and stability.",
       "hashtags": [
-        "#Multiferroics",
-        "#Magnetoelectric",
+        "#MagnetoelectricComposites",
         "#LeadFreeMaterials",
+        "#Multiferroics",
         "#BaTiO3",
         "#SpinelFerrite"
       ],
@@ -983,7 +983,7 @@
       "paper_title": "Optimization of magneto-electric properties in Lead-free (x)Co1.2Ti0.2Fe1.6O4 - (100-x)BaTiO3 based composites",
       "paper_date": "2026-07-30",
       "paper_category": "Microstructure",
-      "generated_at": "2026-08-01T12:01:25",
+      "generated_at": "2026-07-31T12:54:29",
       "generator": "openai"
     }
   },
@@ -1012,29 +1012,29 @@
         "url": "https://arxiv.org/pdf/2607.27419v1"
       }
     ],
-    "score": 61,
+    "score": 66,
     "infographic": {
-      "key_insight": "Reactive sputtering can produce epitaxial Mn4N thin films with strong perpendicular magnetic anisotropy on MgO(100), making the material viable for spin-orbitronic device use.",
-      "engineering_relevance": "This work points to a scalable, rare-earth-free route for current-driven magnetic memory and switching devices with tunable coercivity and efficient spin-orbit torque behavior.",
+      "key_insight": "Reactive sputtering can produce epitaxial Mn4N thin films with strong perpendicular magnetic anisotropy and current-driven switching, making them promising for spintronic devices.",
+      "engineering_relevance": "The work identifies scalable growth conditions for rare-earth-free Mn4N films that combine robust magnetic anisotropy, large anomalous Hall response, and efficient spin-orbit torque functionality.",
       "method": [
         "Reactive magnetron sputtering of Mn4N on MgO(100) and SrTiO3(100) substrates",
         "Structural, magnetic, and magnetotransport characterization of film quality and anisotropy",
-        "Density functional theory calculations to assess strain and interfacial contributions"
+        "Density functional theory to assess the roles of strain and interfaces in PMA"
       ],
-      "evidence_signal": "The optimized films showed square hysteresis loops, large tunable coercivity, a pronounced anomalous Hall effect, and efficient current-induced switching in Mn4N/Pt bilayers.",
-      "watch_item": "Perpendicular anisotropy depends not only on epitaxial strain but also on interfacial effects, so performance may be sensitive to substrate and interface control.",
+      "evidence_signal": "The optimized epitaxial films show square hysteresis loops, high remanence, tunable coercivity, pronounced anomalous Hall effect, and current-induced switching in Mn4N/Pt bilayers.",
+      "watch_item": "PMA is influenced not only by epitaxial strain but also by interfacial effects, so device performance may depend sensitively on substrate and interface engineering.",
       "hashtags": [
+        "#Mn4N",
         "#Spintronics",
         "#ThinFilms",
-        "#Mn4N",
         "#PerpendicularMagneticAnisotropy",
-        "#Sputtering"
+        "#SOT"
       ],
       "paper_id": "2026-07-29-arxiv-optimization_of_epitaxial_mn4n_thin_films_grown_by_sputtering_for_spintronic_applications",
       "paper_title": "Optimization of Epitaxial Mn4N Thin Films Grown by Sputtering for Spintronic Applications",
       "paper_date": "2026-07-29",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-08-01T12:01:27",
+      "generated_at": "2026-07-31T12:54:31",
       "generator": "openai"
     }
   }

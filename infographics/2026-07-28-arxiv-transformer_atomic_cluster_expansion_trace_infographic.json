@@ -1,24 +1,24 @@
 {
-  "key_insight": "TRACE is a unified, energy-conserving interatomic potential that pairs ACE density correlations with local cross-attention to model many-body chemistry and crystal physics without passing learned states between atoms.",
-  "engineering_relevance": "It offers a scalable route to accurate molecular dynamics on a laptop-class machine, supporting phase transitions, liquid structure, and reaction barriers with one architecture.",
+  "key_insight": "TRACE unifies ACE-style many-body correlations with local multihead cross-attention to learn energy-conserving interatomic potentials without passing learned state between atoms.",
+  "engineering_relevance": "The architecture is designed for scalable molecular simulation, enabling accurate phase, liquid, and reaction predictions on modest hardware for materials and chemistry workloads.",
   "method": [
-    "ACE-based O(3)-equivariant center states capture many-body density correlations.",
-    "Local multihead cross-attention queries fixed tensorial neighbor features determined by species and geometry.",
-    "No learned message passing state is propagated between atoms, preserving energy conservation and efficiency."
+    "Build O(3)-equivariant atomic cluster expansion density correlations for each atom center",
+    "Use local multihead cross-attention over fixed species/geometry neighbor features",
+    "Train a single potential for multiple targets, including polymorphs, liquid water, and reaction barriers"
   ],
-  "evidence_signal": "The model was evaluated on polymorphic cesium lead iodide, liquid water, and methyl migration, matching key experimental or high-level reference targets such as a ~580 K phase crossing, an O–O distance of 2.85 Å, and a 27.92±0.03 kcal/mol barrier.",
-  "watch_item": "Performance may depend on high-quality reference data and enhanced sampling for rare transitions, so transferability outside the demonstrated chemistries and phase spaces remains to be validated.",
+  "evidence_signal": "The paper reports agreement with experiment and high-level theory across three benchmarks, including CsPbI3 phase ordering and transition temperature, water structure, and methyl migration activation free energy.",
+  "watch_item": "Performance may depend on careful enhanced-sampling setup and benchmark-specific training data coverage, especially for rare transitions and barrier crossing.",
   "hashtags": [
     "#MachineLearningPotentials",
     "#AtomisticSimulation",
-    "#Transformer",
     "#MaterialsScience",
+    "#TransformerModels",
     "#MolecularDynamics"
   ],
   "paper_id": "2026-07-28-arxiv-transformer_atomic_cluster_expansion_trace",
   "paper_title": "Transformer Atomic Cluster Expansion: TRACE",
   "paper_date": "2026-07-28",
   "paper_category": "Crystal and Structure",
-  "generated_at": "2026-07-31T12:54:14",
+  "generated_at": "2026-08-01T12:00:57",
   "generator": "openai"
 }

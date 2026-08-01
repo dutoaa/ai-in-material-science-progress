@@ -1,6 +1,6 @@
 # AI materials science Progress Public Resources
 
-Generated: 2026-07-31
+Generated: 2026-08-01
 Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 
 ## 1. Fast and Accurate Foundation Models for Equivariant Machine-Learned Interatomic Potentials
@@ -43,23 +43,7 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2607.27295v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-29-arxiv-matcreationn_machine_learning_guided_computational_discovery_of_photocatalysts_for_environ_infographic.json
 
-## 6. Extracting Atomic Environments for Machine Learning Interatomic Potentials
-
-- Date: 2026-07-28
-- Category: AI materials science
-- arXiv: https://arxiv.org/abs/2607.26018v1
-- PDF: https://arxiv.org/pdf/2607.26018v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-28-arxiv-extracting_atomic_environments_for_machine_learning_interatomic_potentials_infographic.json
-
-## 7. Deep Learning for Accelerated Long-Horizon Forecasting of Multicomponent Multiphase Microstructure Evolution in High-Entropy Alloys
-
-- Date: 2026-07-30
-- Category: Microstructure
-- arXiv: https://arxiv.org/abs/2607.27820v1
-- PDF: https://arxiv.org/pdf/2607.27820v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-30-arxiv-deep_learning_for_accelerated_long_horizon_forecasting_of_multicomponent_multiphase_micros_infographic.json
-
-## 8. Aligning Heterogeneous DFT Datasets: A Graph Neural Network Approach to Cross-Functional Formation Energies
+## 6. Aligning Heterogeneous DFT Datasets: A Graph Neural Network Approach to Cross-Functional Formation Energies
 
 - Date: 2026-07-27
 - Category: Property Prediction
@@ -67,31 +51,15 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2607.24327v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-27-arxiv-aligning_heterogeneous_dft_datasets_a_graph_neural_network_approach_to_cross_functional_fo_infographic.json
 
-## 9. Machine-Learning Potentials for sodium-potassium chloride mixtures: Predicting thermophysical properties and phase behavior of multicomponent salts
+## 7. Extracting Atomic Environments for Machine Learning Interatomic Potentials
 
-- Date: 2026-07-27
-- Category: Microstructure
-- arXiv: https://arxiv.org/abs/2607.25022v1
-- PDF: https://arxiv.org/pdf/2607.25022v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-27-arxiv-machine_learning_potentials_for_sodium_potassium_chloride_mixtures_predicting_thermophysic_infographic.json
-
-## 10. MANDALA: An E(3)-Equivariant Graph Neural Network Framework for Learning Electronic-Structure Operators with Observable Guidance
-
-- Date: 2026-07-27
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2607.24997v1
-- PDF: https://arxiv.org/pdf/2607.24997v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-27-arxiv-mandala_an_e_3_equivariant_graph_neural_network_framework_for_learning_electronic_structur_infographic.json
-
-## 11. Computational Study of Water Adsorption and Dissociative Mechanisms Impacting g-C3N4's Optical and Electronic Properties
-
-- Date: 2026-07-29
+- Date: 2026-07-28
 - Category: AI materials science
-- arXiv: https://arxiv.org/abs/2607.26667v1
-- PDF: https://arxiv.org/pdf/2607.26667v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-29-arxiv-computational_study_of_water_adsorption_and_dissociative_mechanisms_impacting_g_c3n4_s_opt_infographic.json
+- arXiv: https://arxiv.org/abs/2607.26018v1
+- PDF: https://arxiv.org/pdf/2607.26018v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-28-arxiv-extracting_atomic_environments_for_machine_learning_interatomic_potentials_infographic.json
 
-## 12. FinSMART: Financial Sentiment Analysis for Algorithmic Trading through Market-Aligned Reinforcement Learning
+## 8. FinSMART: Financial Sentiment Analysis for Algorithmic Trading through Market-Aligned Reinforcement Learning
 
 - Date: 2026-07-30
 - Category: Materials Discovery
@@ -99,13 +67,45 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2607.28127v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-30-arxiv-finsmart_financial_sentiment_analysis_for_algorithmic_trading_through_market_aligned_reinf_infographic.json
 
-## 13. Transformer Atomic Cluster Expansion: TRACE
+## 9. Transformer Atomic Cluster Expansion: TRACE
 
 - Date: 2026-07-28
 - Category: Crystal and Structure
 - arXiv: https://arxiv.org/abs/2607.25652v1
 - PDF: https://arxiv.org/pdf/2607.25652v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-28-arxiv-transformer_atomic_cluster_expansion_trace_infographic.json
+
+## 10. Deep Learning for Accelerated Long-Horizon Forecasting of Multicomponent Multiphase Microstructure Evolution in High-Entropy Alloys
+
+- Date: 2026-07-30
+- Category: Microstructure
+- arXiv: https://arxiv.org/abs/2607.27820v1
+- PDF: https://arxiv.org/pdf/2607.27820v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-30-arxiv-deep_learning_for_accelerated_long_horizon_forecasting_of_multicomponent_multiphase_micros_infographic.json
+
+## 11. Machine-Learning Potentials for sodium-potassium chloride mixtures: Predicting thermophysical properties and phase behavior of multicomponent salts
+
+- Date: 2026-07-27
+- Category: Microstructure
+- arXiv: https://arxiv.org/abs/2607.25022v1
+- PDF: https://arxiv.org/pdf/2607.25022v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-27-arxiv-machine_learning_potentials_for_sodium_potassium_chloride_mixtures_predicting_thermophysic_infographic.json
+
+## 12. MANDALA: An E(3)-Equivariant Graph Neural Network Framework for Learning Electronic-Structure Operators with Observable Guidance
+
+- Date: 2026-07-27
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2607.24997v1
+- PDF: https://arxiv.org/pdf/2607.24997v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-27-arxiv-mandala_an_e_3_equivariant_graph_neural_network_framework_for_learning_electronic_structur_infographic.json
+
+## 13. Computational Study of Water Adsorption and Dissociative Mechanisms Impacting g-C3N4's Optical and Electronic Properties
+
+- Date: 2026-07-29
+- Category: AI materials science
+- arXiv: https://arxiv.org/abs/2607.26667v1
+- PDF: https://arxiv.org/pdf/2607.26667v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-29-arxiv-computational_study_of_water_adsorption_and_dissociative_mechanisms_impacting_g_c3n4_s_opt_infographic.json
 
 ## 14. Vibe-FDTR: An agent-oriented framework for reproducible frequency-domain thermoreflectance data analysis
 
