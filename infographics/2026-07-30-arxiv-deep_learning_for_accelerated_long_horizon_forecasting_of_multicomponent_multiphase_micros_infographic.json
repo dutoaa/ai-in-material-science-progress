@@ -1,24 +1,24 @@
 {
-  "key_insight": "An autoencoder plus graph-convolutional LSTM can forecast multicomponent, multiphase microstructure evolution far beyond the training horizon while preserving key phase morphology.",
-  "engineering_relevance": "This offers a fast surrogate for expensive phase-field simulations, enabling high-throughput exploration and design of high-entropy alloys.",
+  "key_insight": "A latent graph-based AE-GCN-LSTM can accurately forecast multicomponent, multiphase microstructure evolution in high-entropy alloys far beyond the training horizon.",
+  "engineering_relevance": "This provides a fast surrogate for phase-field simulation, enabling large-scale alloy design studies that would otherwise be computationally prohibitive.",
   "method": [
-    "Multi-head autoencoder compresses elemental concentration fields and phase-field order parameters into latent variables.",
-    "Latent states are represented as graphs and propagated with a GCN-LSTM to learn spatial-temporal evolution.",
-    "Model is used for long-horizon rollout forecasting of BCC/FCC microstructure dynamics."
+    "Multi-head autoencoder compresses four concentration fields plus phase-field order parameter into latent variables.",
+    "Latent states are represented as graphs and evolved with a GCN-LSTM to capture spatial-temporal dynamics.",
+    "Model is trained on 100×100 AlCrFeNi phase-field data and then transferred to larger domains and new compositions."
   ],
-  "evidence_signal": "The abstract reports accurate forecasts up to 3,000,000 timesteps, transfer to larger 256×256 and 512×512 domains and unseen compositions, and speedups of about 7,200× to 62,300× versus phase-field simulation.",
-  "watch_item": "Generalization is strong in the reported tests, but real deployment still needs caution because performance may depend on how well new alloy chemistries and boundary conditions match the training regime.",
+  "evidence_signal": "The abstract reports accurate forecasts up to 3,000,000 timesteps and speedups of about 7,200 to 62,300× across unseen precipitate configurations, domain sizes, and alloy compositions.",
+  "watch_item": "Generalization is strong in the reported tests, but practical deployment still depends on whether new alloy chemistries and phase interactions remain within the model’s learned latent representation.",
   "hashtags": [
-    "#Microstructure",
-    "#DeepLearning",
-    "#PhaseField",
+    "#MicrostructureEvolution",
     "#HighEntropyAlloys",
-    "#SurrogateModel"
+    "#PhysicsInformedAI",
+    "#GraphNeuralNetworks",
+    "#MaterialsInformatics"
   ],
   "paper_id": "2026-07-30-arxiv-deep_learning_for_accelerated_long_horizon_forecasting_of_multicomponent_multiphase_micros",
   "paper_title": "Deep Learning for Accelerated Long-Horizon Forecasting of Multicomponent Multiphase Microstructure Evolution in High-Entropy Alloys",
   "paper_date": "2026-07-30",
   "paper_category": "Microstructure",
-  "generated_at": "2026-08-01T12:01:00",
+  "generated_at": "2026-08-02T12:01:07",
   "generator": "openai"
 }

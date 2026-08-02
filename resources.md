@@ -1,6 +1,6 @@
 # AI materials science Progress Public Resources
 
-Generated: 2026-08-01
+Generated: 2026-08-02
 Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 
 ## 1. Fast and Accurate Foundation Models for Equivariant Machine-Learned Interatomic Potentials

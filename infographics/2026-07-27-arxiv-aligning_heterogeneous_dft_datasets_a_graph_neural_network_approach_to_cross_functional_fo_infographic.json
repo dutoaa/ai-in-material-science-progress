@@ -1,24 +1,24 @@
 {
-  "key_insight": "A graph neural network can learn method-dependent energy residuals to align heterogeneous DFT formation energies onto a common r2SCAN scale.",
-  "engineering_relevance": "This makes it possible to merge legacy PBE datasets with higher-accuracy r2SCAN data for more reliable materials screening, phase stability, and battery design.",
+  "key_insight": "A graph neural network can learn the energy shift between heterogeneous DFT methods and align legacy PBE formation energies to r2SCAN-like accuracy.",
+  "engineering_relevance": "This enables large multi-source materials datasets to be merged more reliably for phase stability, battery, and reaction-property prediction.",
   "method": [
-    "Train on 380,190 paired PBE–r2SCAN structures from MatPES.",
-    "Use a structure-aware GPTFF graph neural network to predict cross-functional energy residuals.",
-    "Convert PBE energies to r2SCAN-equivalent energies for dataset harmonization."
+    "Train on 380,190 PBE-r2SCAN paired structures from MatPES",
+    "Predict cross-functional energy residuals with a structure-aware GPTFF graph neural network",
+    "Use the learned correction to convert PBE energies to r2SCAN-level values"
   ],
-  "evidence_signal": "The model achieves 14.3 meV/atom MAE on conversion, improving over CHGNet at 18.2 meV/atom; the abstract notes an average 107 meV/atom PBE–r2SCAN discrepancy in MatPES.",
-  "watch_item": "Performance depends on the quality and coverage of paired training data, so extrapolation to unseen functionals, pseudopotentials, or chemistry may be less reliable.",
+  "evidence_signal": "On the MatPES benchmark, the model reduces conversion error to 14.3 meV/atom MAE, improving over CHGNet at 18.2 meV/atom.",
+  "watch_item": "The correction is only as reliable as the functional pairing and structural coverage seen during training, so extrapolation to unseen DFT setups may need revalidation.",
   "hashtags": [
     "#MaterialsInformatics",
-    "#DFT",
     "#GraphNeuralNetworks",
-    "#PropertyPrediction",
-    "#FoundationModels"
+    "#DFT",
+    "#FormationEnergy",
+    "#AIforMaterials"
   ],
   "paper_id": "2026-07-27-arxiv-aligning_heterogeneous_dft_datasets_a_graph_neural_network_approach_to_cross_functional_fo",
   "paper_title": "Aligning Heterogeneous DFT Datasets: A Graph Neural Network Approach to Cross-Functional Formation Energies",
   "paper_date": "2026-07-27",
   "paper_category": "Property Prediction",
-  "generated_at": "2026-08-01T12:00:51",
+  "generated_at": "2026-08-02T12:00:55",
   "generator": "openai"
 }
