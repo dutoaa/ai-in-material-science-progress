@@ -1,6 +1,6 @@
 # AI materials science Progress Public Resources
 
-Generated: 2026-08-06
+Generated: 2026-08-07
 Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 
 ## 1. Quantum optoelectronics in semiconductor solar cell materials and devices
@@ -43,7 +43,31 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2608.04806v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-05-arxiv-an_exchange_correlation_functional_for_fast_and_accurate_modeling_of_ferroelectric_perovsk_infographic.json
 
-## 6. Machine Learning-Guided Screening of Advantageous Solvents for Solid Polymer Electrolytes in Lithium Metal Batteries
+## 6. Metal-Coordination Effects on the Stability and ORR/OER Activity of Layered Organometallic Single-Atom Catalysts: A Theoretical Study
+
+- Date: 2026-08-06
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2608.06309v1
+- PDF: https://arxiv.org/pdf/2608.06309v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-06-arxiv-metal_coordination_effects_on_the_stability_and_orr_oer_activity_of_layered_organometallic_infographic.json
+
+## 7. Agentic self-driving microscopy benchmarks support qualification but do not necessarily generalize to unseen tasks
+
+- Date: 2026-08-05
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2608.05266v1
+- PDF: https://arxiv.org/pdf/2608.05266v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-05-arxiv-agentic_self_driving_microscopy_benchmarks_support_qualification_but_do_not_necessarily_ge_infographic.json
+
+## 8. Cooperative adsorption and diffusion trapping induced by AlF3 intercalation in graphite
+
+- Date: 2026-08-05
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2608.05305v1
+- PDF: https://arxiv.org/pdf/2608.05305v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-05-arxiv-cooperative_adsorption_and_diffusion_trapping_induced_by_alf3_intercalation_in_graphite_infographic.json
+
+## 9. Machine Learning-Guided Screening of Advantageous Solvents for Solid Polymer Electrolytes in Lithium Metal Batteries
 
 - Date: 2026-08-04
 - Category: Polymers and Composites
@@ -51,7 +75,7 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2608.03688v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-04-arxiv-machine_learning_guided_screening_of_advantageous_solvents_for_solid_polymer_electrolytes_infographic.json
 
-## 7. PolymerGPT: Multi-property Optimization with a Decoder-Based GPT Model for Generative Polymer Design
+## 10. PolymerGPT: Multi-property Optimization with a Decoder-Based GPT Model for Generative Polymer Design
 
 - Date: 2026-08-02
 - Category: Materials Discovery
@@ -59,37 +83,13 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2608.01431v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-02-arxiv-polymergpt_multi_property_optimization_with_a_decoder_based_gpt_model_for_generative_polym_infographic.json
 
-## 8. Computational Microstructure Analysis of Sintered Ceramics
+## 11. Computational Microstructure Analysis of Sintered Ceramics
 
 - Date: 2026-08-04
 - Category: Microstructure
 - arXiv: https://arxiv.org/abs/2608.04216v1
 - PDF: https://arxiv.org/pdf/2608.04216v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-04-arxiv-computational_microstructure_analysis_of_sintered_ceramics_infographic.json
-
-## 9. Guided Synthesis of EMT Zeolites by Machine Learning
-
-- Date: 2026-08-04
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2608.03760v1
-- PDF: https://arxiv.org/pdf/2608.03760v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-04-arxiv-guided_synthesis_of_emt_zeolites_by_machine_learning_infographic.json
-
-## 10. Active Learning Guided Design Space Refinement for Scalable Multi-Objective Bayesian Optimization in Materials Discovery
-
-- Date: 2026-08-05
-- Category: Materials Discovery
-- arXiv: https://arxiv.org/abs/2608.04651v1
-- PDF: https://arxiv.org/pdf/2608.04651v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-05-arxiv-active_learning_guided_design_space_refinement_for_scalable_multi_objective_bayesian_optim_infographic.json
-
-## 11. The Frequency-Dependent Spin Contribution to the Magnetoelectric Tensor of Cr$_2$O$_3$: A First-Principles Study
-
-- Date: 2026-08-05
-- Category: Microstructure
-- arXiv: https://arxiv.org/abs/2608.04638v1
-- PDF: https://arxiv.org/pdf/2608.04638v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-05-arxiv-the_frequency_dependent_spin_contribution_to_the_magnetoelectric_tensor_of_cr_2_o_3_a_firs_infographic.json
 
 ## 12. Performance Analysis of Double Perovskite-Based Solar Cells Using SCAPS-1D Simulation: A brief review
 
@@ -99,66 +99,66 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2608.04736v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-05-arxiv-performance_analysis_of_double_perovskite_based_solar_cells_using_scaps_1d_simulation_a_br_infographic.json
 
-## 13. Effective single particle picture for anharmonic lattice dynamics: a Rosetta stone for electronic and ionic response
+## 13. ASE2SPRKKR: a unified Python framework integrating the Spin-Polarized Relativistic Korringa-Kohn-Rostoker method into the Atomic Simulation Environment
 
-- Date: 2026-08-05
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2608.05068v1
-- PDF: https://arxiv.org/pdf/2608.05068v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-05-arxiv-effective_single_particle_picture_for_anharmonic_lattice_dynamics_a_rosetta_stone_for_elec_infographic.json
+- Date: 2026-08-06
+- Category: Materials Discovery
+- arXiv: https://arxiv.org/abs/2608.05957v1
+- PDF: https://arxiv.org/pdf/2608.05957v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-06-arxiv-ase2sprkkr_a_unified_python_framework_integrating_the_spin_polarized_relativistic_korringa_infographic.json
 
-## 14. Conditional grain-graph diffusion for property-guided inverse design of polycrystalline microstructures
-
-- Date: 2026-08-01
-- Category: Microstructure
-- arXiv: https://arxiv.org/abs/2608.00707v1
-- PDF: https://arxiv.org/pdf/2608.00707v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-01-arxiv-conditional_grain_graph_diffusion_for_property_guided_inverse_design_of_polycrystalline_mi_infographic.json
-
-## 15. Structural Chirality from Short-Range Order in Heteroanionic Materials
-
-- Date: 2026-08-05
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2608.04841v1
-- PDF: https://arxiv.org/pdf/2608.04841v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-05-arxiv-structural_chirality_from_short_range_order_in_heteroanionic_materials_infographic.json
-
-## 16. Growth and characterization of GaN/Ga2O3 Nanowire Heterostructures for Ultraviolet Optoelectronics
-
-- Date: 2026-08-05
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2608.04813v1
-- PDF: https://arxiv.org/pdf/2608.04813v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-05-arxiv-growth_and_characterization_of_gan_ga2o3_nanowire_heterostructures_for_ultraviolet_optoele_infographic.json
-
-## 17. Bias Tunable Transport Modulation and Gas Selectivity in Layered BiOI: A DFT NEGF Study
+## 14. Guided Synthesis of EMT Zeolites by Machine Learning
 
 - Date: 2026-08-04
-- Category: AI materials science
-- arXiv: https://arxiv.org/abs/2608.03308v1
-- PDF: https://arxiv.org/pdf/2608.03308v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-04-arxiv-bias_tunable_transport_modulation_and_gas_selectivity_in_layered_bioi_a_dft_negf_study_infographic.json
-
-## 18. Protocol generalisation for brain tissue microstructure estimation via hypernetwork-controlled geometric deep learning
-
-- Date: 2026-08-03
 - Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2608.02053v1
-- PDF: https://arxiv.org/pdf/2608.02053v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-03-arxiv-protocol_generalisation_for_brain_tissue_microstructure_estimation_via_hypernetwork_contro_infographic.json
+- arXiv: https://arxiv.org/abs/2608.03760v1
+- PDF: https://arxiv.org/pdf/2608.03760v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-04-arxiv-guided_synthesis_of_emt_zeolites_by_machine_learning_infographic.json
 
-## 19. Machine Learning Assisted Design of Complex and High Entropy Alloys by Hybrid HiPIMS/Pulsed-DC PVD Process for Low Carbon Energy Applications in Extreme Environments
+## 15. Active Learning Guided Design Space Refinement for Scalable Multi-Objective Bayesian Optimization in Materials Discovery
 
-- Date: 2026-08-03
+- Date: 2026-08-05
 - Category: Materials Discovery
-- arXiv: https://arxiv.org/abs/2608.01903v1
-- PDF: https://arxiv.org/pdf/2608.01903v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-03-arxiv-machine_learning_assisted_design_of_complex_and_high_entropy_alloys_by_hybrid_hipims_pulse_infographic.json
+- arXiv: https://arxiv.org/abs/2608.04651v1
+- PDF: https://arxiv.org/pdf/2608.04651v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-05-arxiv-active_learning_guided_design_space_refinement_for_scalable_multi_objective_bayesian_optim_infographic.json
 
-## 20. Ordered-to-disordered transfer learning with graph neural networks for formation-energy and HOMO-LUMO gap prediction in high-entropy perovskite oxides
+## 16. The Frequency-Dependent Spin Contribution to the Magnetoelectric Tensor of Cr$_2$O$_3$: A First-Principles Study
 
-- Date: 2026-07-31
-- Category: Property Prediction
-- arXiv: https://arxiv.org/abs/2607.29510v1
-- PDF: https://arxiv.org/pdf/2607.29510v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-07-31-arxiv-ordered_to_disordered_transfer_learning_with_graph_neural_networks_for_formation_energy_an_infographic.json
+- Date: 2026-08-05
+- Category: Microstructure
+- arXiv: https://arxiv.org/abs/2608.04638v1
+- PDF: https://arxiv.org/pdf/2608.04638v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-05-arxiv-the_frequency_dependent_spin_contribution_to_the_magnetoelectric_tensor_of_cr_2_o_3_a_firs_infographic.json
+
+## 17. Tuning the Optoelectronics of Mixed-Semiconductors through the interplay of Quantum confinement and Stoichiometry Engineering
+
+- Date: 2026-08-06
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2608.05890v1
+- PDF: https://arxiv.org/pdf/2608.05890v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-06-arxiv-tuning_the_optoelectronics_of_mixed_semiconductors_through_the_interplay_of_quantum_confin_infographic.json
+
+## 18. Anatomy of Spin--Orbit Torques in Monolayer Fe$_3$GeTe$_2$ and Fe$_3$GaTe$_2$: Insights from atomistic and momentum-space decompositions
+
+- Date: 2026-08-06
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2608.05788v1
+- PDF: https://arxiv.org/pdf/2608.05788v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-06-arxiv-anatomy_of_spin_orbit_torques_in_monolayer_fe_3_gete_2_and_fe_3_gate_2_insights_from_atomi_infographic.json
+
+## 19. Neuro-Symbolic Closed-Loop Control of Laser Powder Bed Fusion with an In-Loop Ontology
+
+- Date: 2026-08-06
+- Category: AI materials science
+- arXiv: https://arxiv.org/abs/2608.05773v1
+- PDF: https://arxiv.org/pdf/2608.05773v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-06-arxiv-neuro_symbolic_closed_loop_control_of_laser_powder_bed_fusion_with_an_in_loop_ontology_infographic.json
+
+## 20. Interface Engineering of Helium Confinement in Argon-Preplated MCM-41 Nanopores
+
+- Date: 2026-08-06
+- Category: Materials Discovery
+- arXiv: https://arxiv.org/abs/2608.05603v1
+- PDF: https://arxiv.org/pdf/2608.05603v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-06-arxiv-interface_engineering_of_helium_confinement_in_argon_preplated_mcm_41_nanopores_infographic.json
