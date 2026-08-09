@@ -1,6 +1,6 @@
 # AI materials science Progress Public Resources
 
-Generated: 2026-08-08
+Generated: 2026-08-09
 Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 
 ## 1. Quantum optoelectronics in semiconductor solar cell materials and devices
