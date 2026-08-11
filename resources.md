@@ -1,9 +1,49 @@
 # AI materials science Progress Public Resources
 
-Generated: 2026-08-10
+Generated: 2026-08-11
 Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 
-## 1. Local Structure Dictates Ionic Transport and Mechanical Properties in Glassy Solid Electrolytes for Lithium Batteries
+## 1. Nonadiabatic Molecular Dynamics on Real-time Excited-State Surfaces via Machine Learning Hamiltonians
+
+- Date: 2026-08-08
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2608.08095v1
+- PDF: https://arxiv.org/pdf/2608.08095v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-08-arxiv-nonadiabatic_molecular_dynamics_on_real_time_excited_state_surfaces_via_machine_learning_h_infographic.json
+
+## 2. Sampling Free Energy Landscapes of Ionic Colloidal Crystal Systems using Machine-Learned Proxy Collective Variables
+
+- Date: 2026-08-10
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2608.09714v1
+- PDF: https://arxiv.org/pdf/2608.09714v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-10-arxiv-sampling_free_energy_landscapes_of_ionic_colloidal_crystal_systems_using_machine_learned_p_infographic.json
+
+## 3. Thermo-mechanical Characterization of 2D hexagonal Boron Phosphide (h-BP)
+
+- Date: 2026-08-09
+- Category: Microstructure
+- arXiv: https://arxiv.org/abs/2608.08415v1
+- PDF: https://arxiv.org/pdf/2608.08415v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-09-arxiv-thermo_mechanical_characterization_of_2d_hexagonal_boron_phosphide_h_bp_infographic.json
+
+## 4. Denoising Diffusion Monte Carlo Electron Densities with Physically Informed Variance Stabilization: From Fourier Filters to 3D UNETs
+
+- Date: 2026-08-08
+- Category: AI materials science
+- arXiv: https://arxiv.org/abs/2608.08152v1
+- PDF: https://arxiv.org/pdf/2608.08152v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-08-arxiv-denoising_diffusion_monte_carlo_electron_densities_with_physically_informed_variance_stabi_infographic.json
+
+## 5. Agent-MD: Selective LLM Intervention with Event-Driven Escalation for Stateful GCMC--MD Campaigns
+
+- Date: 2026-08-07
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2608.07637v1
+- PDF: https://arxiv.org/pdf/2608.07637v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-07-arxiv-agent_md_selective_llm_intervention_with_event_driven_escalation_for_stateful_gcmc_md_camp_infographic.json
+
+## 6. Local Structure Dictates Ionic Transport and Mechanical Properties in Glassy Solid Electrolytes for Lithium Batteries
 
 - Date: 2026-08-07
 - Category: Microstructure
@@ -11,7 +51,23 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2608.06895v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-07-arxiv-local_structure_dictates_ionic_transport_and_mechanical_properties_in_glassy_solid_electro_infographic.json
 
-## 2. Quantum optoelectronics in semiconductor solar cell materials and devices
+## 7. Substrate-dependent thermally driven morphological evolution of Pt$_{0.9}$Ni$_{0.1}$ thin films on sapphire and langasite
+
+- Date: 2026-08-10
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2608.09909v1
+- PDF: https://arxiv.org/pdf/2608.09909v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-10-arxiv-substrate_dependent_thermally_driven_morphological_evolution_of_pt_0_9_ni_0_1_thin_films_o_infographic.json
+
+## 8. Multimodal deep learning framework to predict strain localization of Mg/LPSO two-phase alloys
+
+- Date: 2026-08-08
+- Category: Microstructure
+- arXiv: https://arxiv.org/abs/2608.08071v1
+- PDF: https://arxiv.org/pdf/2608.08071v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-08-arxiv-multimodal_deep_learning_framework_to_predict_strain_localization_of_mg_lpso_two_phase_all_infographic.json
+
+## 9. Quantum optoelectronics in semiconductor solar cell materials and devices
 
 - Date: 2026-08-05
 - Category: Materials Discovery
@@ -19,23 +75,23 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2608.04328v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-05-arxiv-quantum_optoelectronics_in_semiconductor_solar_cell_materials_and_devices_infographic.json
 
-## 3. Physics-Informed and Knowledge-Driven Generative AI for Autonomous Discovery of Porous Oxide Energy Materials: Opportunities and Challenges
+## 10. Universality of PVDF-Li$^+$ Ion Interface Chemistry in Lead-free Perovskite Energy Storage Devices
 
-- Date: 2026-08-03
-- Category: Materials Discovery
-- arXiv: https://arxiv.org/abs/2608.02858v1
-- PDF: https://arxiv.org/pdf/2608.02858v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-03-arxiv-physics_informed_and_knowledge_driven_generative_ai_for_autonomous_discovery_of_porous_oxi_infographic.json
+- Date: 2026-08-08
+- Category: Polymers and Composites
+- arXiv: https://arxiv.org/abs/2608.08295v1
+- PDF: https://arxiv.org/pdf/2608.08295v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-08-arxiv-universality_of_pvdf_li_ion_interface_chemistry_in_lead_free_perovskite_energy_storage_dev_infographic.json
 
-## 4. Physics-Informed Machine Learning for Refractory Alloy Design
+## 11. Predictive Simulation of Interphases on Li Metal Surface
 
-- Date: 2026-08-04
-- Category: Materials Discovery
-- arXiv: https://arxiv.org/abs/2608.03805v1
-- PDF: https://arxiv.org/pdf/2608.03805v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-04-arxiv-physics_informed_machine_learning_for_refractory_alloy_design_infographic.json
+- Date: 2026-08-10
+- Category: Energy Materials
+- arXiv: https://arxiv.org/abs/2608.09791v1
+- PDF: https://arxiv.org/pdf/2608.09791v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-10-arxiv-predictive_simulation_of_interphases_on_li_metal_surface_infographic.json
 
-## 5. Permutation invariant neural network prediction of vacancy formation under deformation and varying chemical environment in FCC high entropy alloys
+## 12. Permutation invariant neural network prediction of vacancy formation under deformation and varying chemical environment in FCC high entropy alloys
 
 - Date: 2026-08-07
 - Category: Microstructure
@@ -43,7 +99,7 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2608.07445v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-07-arxiv-permutation_invariant_neural_network_prediction_of_vacancy_formation_under_deformation_and_infographic.json
 
-## 6. A Multi-Agent Framework for Automated Coarse-Grained Molecular Dynamics of Polymers
+## 13. A Multi-Agent Framework for Automated Coarse-Grained Molecular Dynamics of Polymers
 
 - Date: 2026-08-07
 - Category: Microstructure
@@ -51,7 +107,23 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2608.06694v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-07-arxiv-a_multi_agent_framework_for_automated_coarse_grained_molecular_dynamics_of_polymers_infographic.json
 
-## 7. Science Edge Evaluation: SEE the Missing Step Toward Real Scientific Discovery
+## 14. Finite basis physics-informed neural networks with hard constraints for viscous fluid flow in highly perforated domains
+
+- Date: 2026-08-08
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2608.08114v1
+- PDF: https://arxiv.org/pdf/2608.08114v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-08-arxiv-finite_basis_physics_informed_neural_networks_with_hard_constraints_for_viscous_fluid_flow_infographic.json
+
+## 15. Machine Learning Framework for Magnetic Candidate Discovery in Cerium-Based Compounds
+
+- Date: 2026-08-08
+- Category: Materials Discovery
+- arXiv: https://arxiv.org/abs/2608.08088v1
+- PDF: https://arxiv.org/pdf/2608.08088v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-08-arxiv-machine_learning_framework_for_magnetic_candidate_discovery_in_cerium_based_compounds_infographic.json
+
+## 16. Science Edge Evaluation: SEE the Missing Step Toward Real Scientific Discovery
 
 - Date: 2026-08-07
 - Category: Materials Discovery
@@ -59,7 +131,7 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2608.06931v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-07-arxiv-science_edge_evaluation_see_the_missing_step_toward_real_scientific_discovery_infographic.json
 
-## 8. CrystalGRPO: Target-Aligned and Coverage-Preserving Reinforcement Learning for Flow-Based Crystal Structure Prediction
+## 17. CrystalGRPO: Target-Aligned and Coverage-Preserving Reinforcement Learning for Flow-Based Crystal Structure Prediction
 
 - Date: 2026-08-06
 - Category: Crystal and Structure
@@ -67,98 +139,26 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2608.06582v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-06-arxiv-crystalgrpo_target_aligned_and_coverage_preserving_reinforcement_learning_for_flow_based_c_infographic.json
 
-## 9. Optical Anisotropy and Phase Matching in Non-Centrosymmetric Perovskite Oxides from DFT+U and DFT+U+V Functionals
+## 18. 200 mm Wafer-Scale Monolithic 3D Integration of Atomic Layer-Deposited Oxide Semiconductors
 
-- Date: 2026-08-07
-- Category: Microstructure
-- arXiv: https://arxiv.org/abs/2608.06759v1
-- PDF: https://arxiv.org/pdf/2608.06759v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-07-arxiv-optical_anisotropy_and_phase_matching_in_non_centrosymmetric_perovskite_oxides_from_dft_u_infographic.json
+- Date: 2026-08-10
+- Category: AI materials science
+- arXiv: https://arxiv.org/abs/2608.09508v1
+- PDF: https://arxiv.org/pdf/2608.09508v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-10-arxiv-200_mm_wafer_scale_monolithic_3d_integration_of_atomic_layer_deposited_oxide_semiconductor_infographic.json
 
-## 10. CheMLFlow: An Open-Source Platform for Cheminformatics and Materials Informatics Applications
+## 19. Machine-learning octet $AB$-type binary compounds across chemical space with domain knowledge of the interatomic bond
 
-- Date: 2026-08-05
+- Date: 2026-08-10
 - Category: Property Prediction
-- arXiv: https://arxiv.org/abs/2608.04942v1
-- PDF: https://arxiv.org/pdf/2608.04942v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-05-arxiv-chemlflow_an_open_source_platform_for_cheminformatics_and_materials_informatics_applicatio_infographic.json
+- arXiv: https://arxiv.org/abs/2608.09257v1
+- PDF: https://arxiv.org/pdf/2608.09257v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-10-arxiv-machine_learning_octet_ab_type_binary_compounds_across_chemical_space_with_domain_knowledg_infographic.json
 
-## 11. Autonomous Optimization of Complex Oxides for Thermochemical Fuel Production
+## 20. Light-Stabilized Metastable Electronic State in NiO with Enhanced Orbital Hybridization2
 
-- Date: 2026-08-07
-- Category: Microstructure
-- arXiv: https://arxiv.org/abs/2608.06877v1
-- PDF: https://arxiv.org/pdf/2608.06877v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-07-arxiv-autonomous_optimization_of_complex_oxides_for_thermochemical_fuel_production_infographic.json
-
-## 12. ED-CSP: Crystal Structure Prediction from Electron Diffraction
-
-- Date: 2026-08-06
+- Date: 2026-08-09
 - Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2608.06448v1
-- PDF: https://arxiv.org/pdf/2608.06448v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-06-arxiv-ed_csp_crystal_structure_prediction_from_electron_diffraction_infographic.json
-
-## 13. An Exchange-Correlation Functional for Fast and Accurate Modeling of Ferroelectric Perovskites
-
-- Date: 2026-08-05
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2608.04806v1
-- PDF: https://arxiv.org/pdf/2608.04806v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-05-arxiv-an_exchange_correlation_functional_for_fast_and_accurate_modeling_of_ferroelectric_perovsk_infographic.json
-
-## 14. DynaCrys: Crystal Generation with Dynamic Space-Group Diffusion
-
-- Date: 2026-08-07
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2608.07401v1
-- PDF: https://arxiv.org/pdf/2608.07401v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-07-arxiv-dynacrys_crystal_generation_with_dynamic_space_group_diffusion_infographic.json
-
-## 15. Physics-Grounded Materials Artificial Intelligence for Reliable Materials Discovery
-
-- Date: 2026-08-07
-- Category: Energy Materials
-- arXiv: https://arxiv.org/abs/2608.06680v1
-- PDF: https://arxiv.org/pdf/2608.06680v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-07-arxiv-physics_grounded_materials_artificial_intelligence_for_reliable_materials_discovery_infographic.json
-
-## 16. Metal-Coordination Effects on the Stability and ORR/OER Activity of Layered Organometallic Single-Atom Catalysts: A Theoretical Study
-
-- Date: 2026-08-06
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2608.06309v1
-- PDF: https://arxiv.org/pdf/2608.06309v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-06-arxiv-metal_coordination_effects_on_the_stability_and_orr_oer_activity_of_layered_organometallic_infographic.json
-
-## 17. Agentic self-driving microscopy benchmarks support qualification but do not necessarily generalize to unseen tasks
-
-- Date: 2026-08-05
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2608.05266v1
-- PDF: https://arxiv.org/pdf/2608.05266v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-05-arxiv-agentic_self_driving_microscopy_benchmarks_support_qualification_but_do_not_necessarily_ge_infographic.json
-
-## 18. Homojunction-induced thermopower enhancement in polymer films
-
-- Date: 2026-08-07
-- Category: Materials Discovery
-- arXiv: https://arxiv.org/abs/2608.07266v1
-- PDF: https://arxiv.org/pdf/2608.07266v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-07-arxiv-homojunction_induced_thermopower_enhancement_in_polymer_films_infographic.json
-
-## 19. Cooperative adsorption and diffusion trapping induced by AlF3 intercalation in graphite
-
-- Date: 2026-08-05
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2608.05305v1
-- PDF: https://arxiv.org/pdf/2608.05305v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-05-arxiv-cooperative_adsorption_and_diffusion_trapping_induced_by_alf3_intercalation_in_graphite_infographic.json
-
-## 20. Machine Learning-Guided Screening of Advantageous Solvents for Solid Polymer Electrolytes in Lithium Metal Batteries
-
-- Date: 2026-08-04
-- Category: Polymers and Composites
-- arXiv: https://arxiv.org/abs/2608.03688v1
-- PDF: https://arxiv.org/pdf/2608.03688v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-04-arxiv-machine_learning_guided_screening_of_advantageous_solvents_for_solid_polymer_electrolytes_infographic.json
+- arXiv: https://arxiv.org/abs/2608.08842v1
+- PDF: https://arxiv.org/pdf/2608.08842v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-09-arxiv-light_stabilized_metastable_electronic_state_in_nio_with_enhanced_orbital_hybridization2_infographic.json
