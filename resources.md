@@ -1,6 +1,6 @@
 # AI materials science Progress Public Resources
 
-Generated: 2026-08-14
+Generated: 2026-08-15
 Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 
 ## 1. Mechanisms of Nanoscroll Formation and Particle Encapsulation in Janus MXenes
@@ -27,7 +27,15 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2608.13457v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-13-arxiv-symmetry_breaking_de_novo_crystal_generation_via_markovian_jump_diffusion_infographic.json
 
-## 4. Symmetry-Dependent Mechanical and Vibrational Response of Formamidinium Lead Halide Perovskites: A DFT Study
+## 4. Electronic structure, band offset, and interface electron population of the LaInO$_3$/BaSnO$_3$ system
+
+- Date: 2026-08-12
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2608.11952v1
+- PDF: https://arxiv.org/pdf/2608.11952v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-12-arxiv-electronic_structure_band_offset_and_interface_electron_population_of_the_laino_3_basno_3_infographic.json
+
+## 5. Symmetry-Dependent Mechanical and Vibrational Response of Formamidinium Lead Halide Perovskites: A DFT Study
 
 - Date: 2026-08-11
 - Category: Crystal and Structure
@@ -35,21 +43,13 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2608.11411v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-11-arxiv-symmetry_dependent_mechanical_and_vibrational_response_of_formamidinium_lead_halide_perovs_infographic.json
 
-## 5. The electrical transport of intrinsic two-dimensional ferroelectric metal PtBi2
+## 6. The electrical transport of intrinsic two-dimensional ferroelectric metal PtBi2
 
 - Date: 2026-08-12
 - Category: Crystal and Structure
 - arXiv: https://arxiv.org/abs/2608.12152v1
 - PDF: https://arxiv.org/pdf/2608.12152v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-12-arxiv-the_electrical_transport_of_intrinsic_two_dimensional_ferroelectric_metal_ptbi2_infographic.json
-
-## 6. Electronic structure, band offset, and interface electron population of the LaInO$_3$/BaSnO$_3$ system
-
-- Date: 2026-08-12
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2608.11952v1
-- PDF: https://arxiv.org/pdf/2608.11952v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-12-arxiv-electronic_structure_band_offset_and_interface_electron_population_of_the_laino_3_basno_3_infographic.json
 
 ## 7. Memory-dependent electronic friction for nonadiabatic dynamics at metal surfaces
 
