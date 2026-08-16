@@ -1,6 +1,6 @@
 # AI materials science Progress Public Resources
 
-Generated: 2026-08-15
+Generated: 2026-08-16
 Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 
 ## 1. Mechanisms of Nanoscroll Formation and Particle Encapsulation in Janus MXenes
