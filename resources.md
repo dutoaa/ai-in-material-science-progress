@@ -1,9 +1,73 @@
 # AI materials science Progress Public Resources
 
-Generated: 2026-08-18
+Generated: 2026-08-20
 Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 
-## 1. Synthesizing like a chemist: an iterative, feedback-driven loop for materials discovery
+## 1. A Comprehensive Review of Large Language Models for Nanophotonics: From Surrogate Modeling to Autonomous Design
+
+- Date: 2026-08-18
+- Category: Materials Discovery
+- arXiv: https://arxiv.org/abs/2608.18279v1
+- PDF: https://arxiv.org/pdf/2608.18279v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-18-arxiv-a_comprehensive_review_of_large_language_models_for_nanophotonics_from_surrogate_modeling_infographic.json
+
+## 2. JANUS: A Multi-modal Foundation Neural Sampler for Disordered Materials
+
+- Date: 2026-08-19
+- Category: Microstructure
+- arXiv: https://arxiv.org/abs/2608.19116v1
+- PDF: https://arxiv.org/pdf/2608.19116v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-19-arxiv-janus_a_multi_modal_foundation_neural_sampler_for_disordered_materials_infographic.json
+
+## 3. Enhancing EBSD throughput of battery electrode materials using super-resolution generative adversarial networks
+
+- Date: 2026-08-19
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2608.19117v1
+- PDF: https://arxiv.org/pdf/2608.19117v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-19-arxiv-enhancing_ebsd_throughput_of_battery_electrode_materials_using_super_resolution_generative_infographic.json
+
+## 4. Temperature-Induced Reorganization of Supported Zn$_3$ Clusters on Cu(111): From Minimum-Energy Structures to Finite-Temperature Ensembles
+
+- Date: 2026-08-17
+- Category: Materials Discovery
+- arXiv: https://arxiv.org/abs/2608.17149v1
+- PDF: https://arxiv.org/pdf/2608.17149v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-17-arxiv-temperature_induced_reorganization_of_supported_zn_3_clusters_on_cu_111_from_minimum_energ_infographic.json
+
+## 5. Operando Raman probing of mode selective electron phonon coupling in two dimensional halide perovskites
+
+- Date: 2026-08-19
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2608.18513v1
+- PDF: https://arxiv.org/pdf/2608.18513v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-19-arxiv-operando_raman_probing_of_mode_selective_electron_phonon_coupling_in_two_dimensional_halid_infographic.json
+
+## 6. Discovery of novel magnetic Y-Mn-B compounds via advanced machine learning guided framework
+
+- Date: 2026-08-17
+- Category: Materials Discovery
+- arXiv: https://arxiv.org/abs/2608.17200v1
+- PDF: https://arxiv.org/pdf/2608.17200v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-17-arxiv-discovery_of_novel_magnetic_y_mn_b_compounds_via_advanced_machine_learning_guided_framewor_infographic.json
+
+## 7. Avalanche-like Plasticity in Complex Concentrated Alloys: A Review Across Scales
+
+- Date: 2026-08-19
+- Category: Microstructure
+- arXiv: https://arxiv.org/abs/2608.19126v1
+- PDF: https://arxiv.org/pdf/2608.19126v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-19-arxiv-avalanche_like_plasticity_in_complex_concentrated_alloys_a_review_across_scales_infographic.json
+
+## 8. The role of weak interfaces in the tensile deformation and fracture of particle-filled polymers studied by phase-field model
+
+- Date: 2026-08-19
+- Category: Polymers and Composites
+- arXiv: https://arxiv.org/abs/2608.19031v1
+- PDF: https://arxiv.org/pdf/2608.19031v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-19-arxiv-the_role_of_weak_interfaces_in_the_tensile_deformation_and_fracture_of_particle_filled_pol_infographic.json
+
+## 9. Synthesizing like a chemist: an iterative, feedback-driven loop for materials discovery
 
 - Date: 2026-08-16
 - Category: Materials Discovery
@@ -11,7 +75,55 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2608.15928v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-16-arxiv-synthesizing_like_a_chemist_an_iterative_feedback_driven_loop_for_materials_discovery_infographic.json
 
-## 2. Graph neural network prediction of temperature-dependent hydrogen diffusion and thermal conductivity tensors of tungsten containing helium bubbles and grain boundaries
+## 10. Active learning molecular beam epitaxy of complex quantum materials
+
+- Date: 2026-08-18
+- Category: Materials Discovery
+- arXiv: https://arxiv.org/abs/2608.17742v1
+- PDF: https://arxiv.org/pdf/2608.17742v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-18-arxiv-active_learning_molecular_beam_epitaxy_of_complex_quantum_materials_infographic.json
+
+## 11. Local Structure and Dynamics of Three-Dimensional Covalent Organic Frameworks
+
+- Date: 2026-08-19
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2608.19106v1
+- PDF: https://arxiv.org/pdf/2608.19106v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-19-arxiv-local_structure_and_dynamics_of_three_dimensional_covalent_organic_frameworks_infographic.json
+
+## 12. Revisiting the topological properties of XMg2Bi2 (X = Ca, Sr, Ba, Yb and Eu)
+
+- Date: 2026-08-19
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2608.18729v1
+- PDF: https://arxiv.org/pdf/2608.18729v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-19-arxiv-revisiting_the_topological_properties_of_xmg2bi2_x_ca_sr_ba_yb_and_eu_infographic.json
+
+## 13. Thickness-dependent degradation and optical access in epitaxial 2H-MoTe2 protected by metallic capping layers
+
+- Date: 2026-08-19
+- Category: Microstructure
+- arXiv: https://arxiv.org/abs/2608.18629v1
+- PDF: https://arxiv.org/pdf/2608.18629v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-19-arxiv-thickness_dependent_degradation_and_optical_access_in_epitaxial_2h_mote2_protected_by_meta_infographic.json
+
+## 14. Bayesian Optimization for Practical H2 Sensors: Inverse Design of Pd-based Plasmonic Metasurfaces
+
+- Date: 2026-08-18
+- Category: Materials Discovery
+- arXiv: https://arxiv.org/abs/2608.18333v1
+- PDF: https://arxiv.org/pdf/2608.18333v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-18-arxiv-bayesian_optimization_for_practical_h2_sensors_inverse_design_of_pd_based_plasmonic_metasu_infographic.json
+
+## 15. Vacancy-Driven Electronic Reconstruction in Monolayer PtSe$_2$: Formation Thermodynamics and Charge States
+
+- Date: 2026-08-18
+- Category: Property Prediction
+- arXiv: https://arxiv.org/abs/2608.17720v1
+- PDF: https://arxiv.org/pdf/2608.17720v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-18-arxiv-vacancy_driven_electronic_reconstruction_in_monolayer_ptse_2_formation_thermodynamics_and_infographic.json
+
+## 16. Graph neural network prediction of temperature-dependent hydrogen diffusion and thermal conductivity tensors of tungsten containing helium bubbles and grain boundaries
 
 - Date: 2026-08-16
 - Category: Microstructure
@@ -19,146 +131,34 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2608.15609v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-16-arxiv-graph_neural_network_prediction_of_temperature_dependent_hydrogen_diffusion_and_thermal_co_infographic.json
 
-## 3. Crystal-structure design by agentic AI in a language of motifs
+## 17. Energy-efficient, Reconfigurable Optoelectronic Artificial Synapses Based on MoWS$_2$ Alloy for Pattern Recognition and Color Image Filtering Applications
+
+- Date: 2026-08-18
+- Category: Microstructure
+- arXiv: https://arxiv.org/abs/2608.18013v1
+- PDF: https://arxiv.org/pdf/2608.18013v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-18-arxiv-energy_efficient_reconfigurable_optoelectronic_artificial_synapses_based_on_mows_2_alloy_f_infographic.json
+
+## 18. Ab initio-based Deep-Learning Prediction of Carrier Mobility in Strongly Anharmonic Materials
+
+- Date: 2026-08-19
+- Category: Materials Discovery
+- arXiv: https://arxiv.org/abs/2608.19053v1
+- PDF: https://arxiv.org/pdf/2608.19053v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-19-arxiv-ab_initio_based_deep_learning_prediction_of_carrier_mobility_in_strongly_anharmonic_materi_infographic.json
+
+## 19. Polarization-Dependent Raman Selection Rules in Sb$_2$S$_3$ from First Principles and Experiment
+
+- Date: 2026-08-18
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2608.17786v1
+- PDF: https://arxiv.org/pdf/2608.17786v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-18-arxiv-polarization_dependent_raman_selection_rules_in_sb_2_s_3_from_first_principles_and_experim_infographic.json
+
+## 20. Crystal-structure design by agentic AI in a language of motifs
 
 - Date: 2026-08-16
 - Category: Materials Discovery
 - arXiv: https://arxiv.org/abs/2608.15900v1
 - PDF: https://arxiv.org/pdf/2608.15900v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-16-arxiv-crystal_structure_design_by_agentic_ai_in_a_language_of_motifs_infographic.json
-
-## 4. A nuclear-quantum-corrected machine-learning potential reveals quantum-enhanced hydrogen segregation at general grain boundaries in alpha-iron
-
-- Date: 2026-08-17
-- Category: Microstructure
-- arXiv: https://arxiv.org/abs/2608.16652v1
-- PDF: https://arxiv.org/pdf/2608.16652v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-17-arxiv-a_nuclear_quantum_corrected_machine_learning_potential_reveals_quantum_enhanced_hydrogen_s_infographic.json
-
-## 5. Machine Learning-Accelerated Band-Edge Engineering of Pnictogen Chalcohalide Solid Solutions for Solar Energy Technologies
-
-- Date: 2026-08-17
-- Category: Property Prediction
-- arXiv: https://arxiv.org/abs/2608.16611v1
-- PDF: https://arxiv.org/pdf/2608.16611v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-17-arxiv-machine_learning_accelerated_band_edge_engineering_of_pnictogen_chalcohalide_solid_solutio_infographic.json
-
-## 6. Mechanical-microstructural correlation on SPS-fabricated NiTi alloy
-
-- Date: 2026-08-17
-- Category: Microstructure
-- arXiv: https://arxiv.org/abs/2608.16511v1
-- PDF: https://arxiv.org/pdf/2608.16511v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-17-arxiv-mechanical_microstructural_correlation_on_sps_fabricated_niti_alloy_infographic.json
-
-## 7. Bond Disproportionation, Ligand Holes, and Persistent Spin Textures in Ag$_2$BiO$_3$
-
-- Date: 2026-08-17
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2608.16247v1
-- PDF: https://arxiv.org/pdf/2608.16247v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-17-arxiv-bond_disproportionation_ligand_holes_and_persistent_spin_textures_in_ag_2_bio_3_infographic.json
-
-## 8. Rare-earth chalcogenide perovskites: A promising class of materials for optoelectronic applications
-
-- Date: 2026-08-16
-- Category: Microstructure
-- arXiv: https://arxiv.org/abs/2608.15882v1
-- PDF: https://arxiv.org/pdf/2608.15882v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-16-arxiv-rare_earth_chalcogenide_perovskites_a_promising_class_of_materials_for_optoelectronic_appl_infographic.json
-
-## 9. Linking Electronic Bonding and Short-range Order to Strength in $α$-Titanium Alloys: A First-Principles Study
-
-- Date: 2026-08-15
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2608.15227v1
-- PDF: https://arxiv.org/pdf/2608.15227v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-15-arxiv-linking_electronic_bonding_and_short_range_order_to_strength_in_titanium_alloys_a_first_pr_infographic.json
-
-## 10. Extracting a nitrile-centered, ether-assisted motif hierarchy for lithium-battery electrolyte design from billion-scale molecular space
-
-- Date: 2026-08-17
-- Category: Materials Discovery
-- arXiv: https://arxiv.org/abs/2608.16364v1
-- PDF: https://arxiv.org/pdf/2608.16364v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-17-arxiv-extracting_a_nitrile_centered_ether_assisted_motif_hierarchy_for_lithium_battery_electroly_infographic.json
-
-## 11. Automated Burgers Vector Identification for Individual Dislocations in Bulk Crystals
-
-- Date: 2026-08-17
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2608.16774v1
-- PDF: https://arxiv.org/pdf/2608.16774v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-17-arxiv-automated_burgers_vector_identification_for_individual_dislocations_in_bulk_crystals_infographic.json
-
-## 12. Data-Efficient Construction of Material-Specific Machine-Learning Interatomic Potentials from Ab Initio Molecular Dynamics Trajectories
-
-- Date: 2026-08-14
-- Category: Property Prediction
-- arXiv: https://arxiv.org/abs/2608.14899v1
-- PDF: https://arxiv.org/pdf/2608.14899v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-14-arxiv-data_efficient_construction_of_material_specific_machine_learning_interatomic_potentials_f_infographic.json
-
-## 13. Mechanisms of Nanoscroll Formation and Particle Encapsulation in Janus MXenes
-
-- Date: 2026-08-12
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2608.12439v1
-- PDF: https://arxiv.org/pdf/2608.12439v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-12-arxiv-mechanisms_of_nanoscroll_formation_and_particle_encapsulation_in_janus_mxenes_infographic.json
-
-## 14. Neural-Embedded Graphical Model for Self-Consistent Hierarchical Upscaling of Complex Composites
-
-- Date: 2026-08-16
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2608.15570v1
-- PDF: https://arxiv.org/pdf/2608.15570v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-16-arxiv-neural_embedded_graphical_model_for_self_consistent_hierarchical_upscaling_of_complex_comp_infographic.json
-
-## 15. Deep-Learning-Accelerated Dopant Selection for High-k HfO2 Dielectrics: A Disorder-Resolved Study of Y, Si and Al
-
-- Date: 2026-08-12
-- Category: Property Prediction
-- arXiv: https://arxiv.org/abs/2608.11725v1
-- PDF: https://arxiv.org/pdf/2608.11725v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-12-arxiv-deep_learning_accelerated_dopant_selection_for_high_k_hfo2_dielectrics_a_disorder_resolved_infographic.json
-
-## 16. Insights into the Structural and Orientational Ordering of 2D Metal Halide Perovskites
-
-- Date: 2026-08-17
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2608.16450v1
-- PDF: https://arxiv.org/pdf/2608.16450v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-17-arxiv-insights_into_the_structural_and_orientational_ordering_of_2d_metal_halide_perovskites_infographic.json
-
-## 17. Universal Thermodynamic Interatomic Potentials for Crystalline Materials
-
-- Date: 2026-08-14
-- Category: Materials Discovery
-- arXiv: https://arxiv.org/abs/2608.14502v1
-- PDF: https://arxiv.org/pdf/2608.14502v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-14-arxiv-universal_thermodynamic_interatomic_potentials_for_crystalline_materials_infographic.json
-
-## 18. Data-driven discovery and rapid, direct synthesis of MXenes
-
-- Date: 2026-08-17
-- Category: Materials Discovery
-- arXiv: https://arxiv.org/abs/2608.16644v1
-- PDF: https://arxiv.org/pdf/2608.16644v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-17-arxiv-data_driven_discovery_and_rapid_direct_synthesis_of_mxenes_infographic.json
-
-## 19. Advancing Open and Reproducible Relational Learning: RelArena-$α$, TabPFN-Rel and RPI
-
-- Date: 2026-08-17
-- Category: Microstructure
-- arXiv: https://arxiv.org/abs/2608.16319v1
-- PDF: https://arxiv.org/pdf/2608.16319v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-17-arxiv-advancing_open_and_reproducible_relational_learning_relarena_tabpfn_rel_and_rpi_infographic.json
-
-## 20. Reduced vortex descriptors linking polycrystallinity in magnetic nanoparticles with polarized magnetic small-angle neutron scattering
-
-- Date: 2026-08-17
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2608.16720v1
-- PDF: https://arxiv.org/pdf/2608.16720v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-17-arxiv-reduced_vortex_descriptors_linking_polycrystallinity_in_magnetic_nanoparticles_with_polari_infographic.json
