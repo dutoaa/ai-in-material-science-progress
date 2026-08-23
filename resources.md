@@ -1,6 +1,6 @@
 # AI materials science Progress Public Resources
 
-Generated: 2026-08-22
+Generated: 2026-08-23
 Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 
 ## 1. A Comprehensive Review of Large Language Models for Nanophotonics: From Surrogate Modeling to Autonomous Design
@@ -155,10 +155,10 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2608.19389v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-19-arxiv-concentrated_liquidity_provision_a_reinforcement_learning_perspective_infographic.json
 
-## 20. Graph neural network prediction of temperature-dependent hydrogen diffusion and thermal conductivity tensors of tungsten containing helium bubbles and grain boundaries
+## 20. When Saying No Makes Better Videos: Designing Dual Gatekeeping for Pedagogically Grounded AI Content Creation
 
-- Date: 2026-08-16
-- Category: Microstructure
-- arXiv: https://arxiv.org/abs/2608.15609v1
-- PDF: https://arxiv.org/pdf/2608.15609v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-16-arxiv-graph_neural_network_prediction_of_temperature_dependent_hydrogen_diffusion_and_thermal_co_infographic.json
+- Date: 2026-08-20
+- Category: Materials Discovery
+- arXiv: https://arxiv.org/abs/2608.19812v1
+- PDF: https://arxiv.org/pdf/2608.19812v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-20-arxiv-when_saying_no_makes_better_videos_designing_dual_gatekeeping_for_pedagogically_grounded_a_infographic.json
