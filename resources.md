@@ -1,6 +1,6 @@
 # AI materials science Progress Public Resources
 
-Generated: 2026-08-29
+Generated: 2026-08-30
 Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 
 ## 1. High-throughput Discovery of Magnetic Rare Earth Transition Metal Alloys
