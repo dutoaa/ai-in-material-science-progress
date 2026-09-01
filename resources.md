@@ -1,9 +1,33 @@
 # AI materials science Progress Public Resources
 
-Generated: 2026-08-31
+Generated: 2026-09-01
 Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 
-## 1. uMOF: A Universal Database, Benchmark, and Machine Learning Interatomic Potentials for Metal-Organic Frameworks
+## 1. Rotational Equivariance in Machine Learning: A Comprehensive Tutorial
+
+- Date: 2026-08-31
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2608.31045v1
+- PDF: https://arxiv.org/pdf/2608.31045v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-31-arxiv-rotational_equivariance_in_machine_learning_a_comprehensive_tutorial_infographic.json
+
+## 2. Evaluating a 4B open-weights local LLM for agentic DFT workflows: a literature reproducibility audit
+
+- Date: 2026-08-30
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2608.29665v1
+- PDF: https://arxiv.org/pdf/2608.29665v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-30-arxiv-evaluating_a_4b_open_weights_local_llm_for_agentic_dft_workflows_a_literature_reproducibil_infographic.json
+
+## 3. When Does Bigger Help? A Controlled Study of LLM Scale for Ontology Learning
+
+- Date: 2026-08-31
+- Category: Materials Discovery
+- arXiv: https://arxiv.org/abs/2608.31118v1
+- PDF: https://arxiv.org/pdf/2608.31118v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-31-arxiv-when_does_bigger_help_a_controlled_study_of_llm_scale_for_ontology_learning_infographic.json
+
+## 4. uMOF: A Universal Database, Benchmark, and Machine Learning Interatomic Potentials for Metal-Organic Frameworks
 
 - Date: 2026-08-28
 - Category: Crystal and Structure
@@ -11,15 +35,39 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2608.28100v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-28-arxiv-umof_a_universal_database_benchmark_and_machine_learning_interatomic_potentials_for_metal_infographic.json
 
-## 2. High-throughput Discovery of Magnetic Rare Earth Transition Metal Alloys
+## 5. Elastic properties of amorphous LiTaCl$_6$ solid-state electrolyte
 
-- Date: 2026-08-26
+- Date: 2026-08-29
 - Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2608.25270v1
-- PDF: https://arxiv.org/pdf/2608.25270v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-26-arxiv-high_throughput_discovery_of_magnetic_rare_earth_transition_metal_alloys_infographic.json
+- arXiv: https://arxiv.org/abs/2608.29404v1
+- PDF: https://arxiv.org/pdf/2608.29404v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-29-arxiv-elastic_properties_of_amorphous_litacl_6_solid_state_electrolyte_infographic.json
 
-## 3. Benchmarking of Fast and Interpretable UF Machine Learning Potentials
+## 6. COGTRL: Training LLMs for Scientific Discovery Assistance using Cognitive Traces via Reinforcement Learning
+
+- Date: 2026-08-31
+- Category: Materials Discovery
+- arXiv: https://arxiv.org/abs/2608.30109v1
+- PDF: https://arxiv.org/pdf/2608.30109v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-31-arxiv-cogtrl_training_llms_for_scientific_discovery_assistance_using_cognitive_traces_via_reinfo_infographic.json
+
+## 7. Chemically Resolved Topological Coordinates Link Structural Dynamics and Configurational Thermodynamics
+
+- Date: 2026-08-31
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2608.30523v1
+- PDF: https://arxiv.org/pdf/2608.30523v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-31-arxiv-chemically_resolved_topological_coordinates_link_structural_dynamics_and_configurational_t_infographic.json
+
+## 8. PINN-Phase: A physics-informed neural network for curvature-driven multiphase-field evolution
+
+- Date: 2026-08-29
+- Category: Microstructure
+- arXiv: https://arxiv.org/abs/2608.29413v1
+- PDF: https://arxiv.org/pdf/2608.29413v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-29-arxiv-pinn_phase_a_physics_informed_neural_network_for_curvature_driven_multiphase_field_evoluti_infographic.json
+
+## 9. Benchmarking of Fast and Interpretable UF Machine Learning Potentials
 
 - Date: 2026-08-27
 - Category: Microstructure
@@ -27,7 +75,15 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2608.27277v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-27-arxiv-benchmarking_of_fast_and_interpretable_uf_machine_learning_potentials_infographic.json
 
-## 4. Automated Dislocation Detection in Electron Channelling Contrast Imaging: A Comparative Study of Rule-Based, Neural Network, and Deep Learning Approaches
+## 10. Cesium Clustering and Fluoroberyllate Network Disruption in FLiBe: A Total Scattering and Molecular Dynamics Study
+
+- Date: 2026-08-30
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2608.29898v1
+- PDF: https://arxiv.org/pdf/2608.29898v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-30-arxiv-cesium_clustering_and_fluoroberyllate_network_disruption_in_flibe_a_total_scattering_and_m_infographic.json
+
+## 11. Automated Dislocation Detection in Electron Channelling Contrast Imaging: A Comparative Study of Rule-Based, Neural Network, and Deep Learning Approaches
 
 - Date: 2026-08-28
 - Category: Microstructure
@@ -35,7 +91,23 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2608.28495v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-28-arxiv-automated_dislocation_detection_in_electron_channelling_contrast_imaging_a_comparative_stu_infographic.json
 
-## 5. Bayesian Optimization for Self-Driving Materials Laboratories: From Algorithms to Physics-Informed Workflows
+## 12. Evaluating LLM-based AI agents integrated with materials synthesis tools: the case of atomic layer deposition
+
+- Date: 2026-08-29
+- Category: AI materials science
+- arXiv: https://arxiv.org/abs/2608.29309v1
+- PDF: https://arxiv.org/pdf/2608.29309v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-29-arxiv-evaluating_llm_based_ai_agents_integrated_with_materials_synthesis_tools_the_case_of_atomi_infographic.json
+
+## 13. A MOF-reinforced self-foaming sponge for mechanically robust triboelectric membranes with improved resistance to humidity
+
+- Date: 2026-08-31
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2608.31019v1
+- PDF: https://arxiv.org/pdf/2608.31019v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-31-arxiv-a_mof_reinforced_self_foaming_sponge_for_mechanically_robust_triboelectric_membranes_with_infographic.json
+
+## 14. Bayesian Optimization for Self-Driving Materials Laboratories: From Algorithms to Physics-Informed Workflows
 
 - Date: 2026-08-26
 - Category: Materials Discovery
@@ -43,122 +115,50 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2608.26016v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-26-arxiv-bayesian_optimization_for_self_driving_materials_laboratories_from_algorithms_to_physics_i_infographic.json
 
-## 6. Work Function and High-Coverage Adsorption Energy as Hydrogen-Evolution Descriptors on Ag-Au-Pd-Pt Alloys
+## 15. Vibrational Origin of the Barocaloric Effect in the Spin-Crossover Complex Fe(pap-5NO2)2: A Combined DFT and Mean-Field Study
 
-- Date: 2026-08-28
-- Category: AI materials science
-- arXiv: https://arxiv.org/abs/2608.28347v1
-- PDF: https://arxiv.org/pdf/2608.28347v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-28-arxiv-work_function_and_high_coverage_adsorption_energy_as_hydrogen_evolution_descriptors_on_ag_infographic.json
-
-## 7. RetailAgent: Structured Adverse Timing in Self-Conditioned Multimodal LLM Trading Agents
-
-- Date: 2026-08-28
+- Date: 2026-08-29
 - Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2608.28399v1
-- PDF: https://arxiv.org/pdf/2608.28399v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-28-arxiv-retailagent_structured_adverse_timing_in_self_conditioned_multimodal_llm_trading_agents_infographic.json
+- arXiv: https://arxiv.org/abs/2608.29447v1
+- PDF: https://arxiv.org/pdf/2608.29447v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-29-arxiv-vibrational_origin_of_the_barocaloric_effect_in_the_spin_crossover_complex_fe_pap_5no2_2_a_infographic.json
 
-## 8. Nanolamellar Hybrid High-Entropy Alloys with Superior Micromechanical Properties
-
-- Date: 2026-08-28
-- Category: Microstructure
-- arXiv: https://arxiv.org/abs/2608.28268v1
-- PDF: https://arxiv.org/pdf/2608.28268v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-28-arxiv-nanolamellar_hybrid_high_entropy_alloys_with_superior_micromechanical_properties_infographic.json
-
-## 9. Compositionally Complex Ceramics
+## 16. MWIR-4-Plastic: The Identification of Complex End-of-Life Industrial Plastic using Mid-wave Infrared Hyperspectral Imaging and Machine Learning
 
 - Date: 2026-08-28
-- Category: Microstructure
-- arXiv: https://arxiv.org/abs/2608.27812v1
-- PDF: https://arxiv.org/pdf/2608.27812v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-28-arxiv-compositionally_complex_ceramics_infographic.json
+- Category: Polymers and Composites
+- arXiv: https://arxiv.org/abs/2608.28874v1
+- PDF: https://arxiv.org/pdf/2608.28874v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-28-arxiv-mwir_4_plastic_the_identification_of_complex_end_of_life_industrial_plastic_using_mid_wave_infographic.json
 
-## 10. QUBO-Compatible Active Learning for Inverse Design of High-Entropy Alloys
+## 17. A neural network architecture and training algorithm to predict viscoelastic stresses from vortical data
 
-- Date: 2026-08-28
+- Date: 2026-08-31
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2608.30926v1
+- PDF: https://arxiv.org/pdf/2608.30926v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-31-arxiv-a_neural_network_architecture_and_training_algorithm_to_predict_viscoelastic_stresses_from_infographic.json
+
+## 18. Halide donors in monoclinic- and corundum-phase Ga$_2$O$_3$ and Al$_2$O$_3$
+
+- Date: 2026-08-31
+- Category: Property Prediction
+- arXiv: https://arxiv.org/abs/2608.30680v1
+- PDF: https://arxiv.org/pdf/2608.30680v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-31-arxiv-halide_donors_in_monoclinic_and_corundum_phase_ga_2_o_3_and_al_2_o_3_infographic.json
+
+## 19. Polymer Membrane Tensegrity: Inverse Design of Polymer Films Morphing into Freeform 3D Surfaces with Digital Photopatterning Technique
+
+- Date: 2026-08-31
 - Category: Materials Discovery
-- arXiv: https://arxiv.org/abs/2608.28239v1
-- PDF: https://arxiv.org/pdf/2608.28239v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-28-arxiv-qubo_compatible_active_learning_for_inverse_design_of_high_entropy_alloys_infographic.json
+- arXiv: https://arxiv.org/abs/2608.30501v1
+- PDF: https://arxiv.org/pdf/2608.30501v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-31-arxiv-polymer_membrane_tensegrity_inverse_design_of_polymer_films_morphing_into_freeform_3d_surf_infographic.json
 
-## 11. Compact Variational Neural Networks for Spectral Inference from a Single Nonlinear 2D Perovskite Photodetector
+## 20. Libron-phonon coupling and hydrogen-bond dynamics in the vacancy-ordered perovskite (NH4)2SnCl6: a temperature- and pressure-dependent Raman study
 
-- Date: 2026-08-28
+- Date: 2026-08-30
 - Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2608.27977v1
-- PDF: https://arxiv.org/pdf/2608.27977v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-28-arxiv-compact_variational_neural_networks_for_spectral_inference_from_a_single_nonlinear_2d_pero_infographic.json
-
-## 12. Packora: Systematic Design for Generative Molecular Crystal Structure Prediction
-
-- Date: 2026-08-27
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2608.26962v1
-- PDF: https://arxiv.org/pdf/2608.26962v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-27-arxiv-packora_systematic_design_for_generative_molecular_crystal_structure_prediction_infographic.json
-
-## 13. Nuclearity of Copper Clusters on hBN/SiC Heterostructure Modulates Molecular Adsorption
-
-- Date: 2026-08-26
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2608.25640v1
-- PDF: https://arxiv.org/pdf/2608.25640v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-26-arxiv-nuclearity_of_copper_clusters_on_hbn_sic_heterostructure_modulates_molecular_adsorption_infographic.json
-
-## 14. Euclidean Fourier Neural Operators
-
-- Date: 2026-08-28
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2608.28425v1
-- PDF: https://arxiv.org/pdf/2608.28425v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-28-arxiv-euclidean_fourier_neural_operators_infographic.json
-
-## 15. Interplay between crystal structure and magnetism in CeCrB$_4$
-
-- Date: 2026-08-28
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2608.28238v1
-- PDF: https://arxiv.org/pdf/2608.28238v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-28-arxiv-interplay_between_crystal_structure_and_magnetism_in_cecrb_4_infographic.json
-
-## 16. Wyckoff-Resolved Oxidation-State Atlas and Anion-Conditioned Priors for Materials Discovery
-
-- Date: 2026-08-28
-- Category: Materials Discovery
-- arXiv: https://arxiv.org/abs/2608.28492v1
-- PDF: https://arxiv.org/pdf/2608.28492v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-28-arxiv-wyckoff_resolved_oxidation_state_atlas_and_anion_conditioned_priors_for_materials_discover_infographic.json
-
-## 17. A novel Grand-Potential Phase-Field Lattice-Boltzmann model for multi-phase solidification with convection
-
-- Date: 2026-08-27
-- Category: Microstructure
-- arXiv: https://arxiv.org/abs/2608.26908v1
-- PDF: https://arxiv.org/pdf/2608.26908v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-27-arxiv-a_novel_grand_potential_phase_field_lattice_boltzmann_model_for_multi_phase_solidification_infographic.json
-
-## 18. Interpretable physics-informed retrieval-augmented generation language model for end-to-end inorganic crystal synthesis planning
-
-- Date: 2026-08-26
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2608.25392v1
-- PDF: https://arxiv.org/pdf/2608.25392v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-26-arxiv-interpretable_physics_informed_retrieval_augmented_generation_language_model_for_end_to_en_infographic.json
-
-## 19. Intercalation of Alkali Metal into WTe2, the Crystal Structure of A0.5WTe2 and Observation of a Metal-to-Semiconductor Transition
-
-- Date: 2026-08-25
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2608.25090v1
-- PDF: https://arxiv.org/pdf/2608.25090v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-25-arxiv-intercalation_of_alkali_metal_into_wte2_the_crystal_structure_of_a0_5wte2_and_observation_infographic.json
-
-## 20. Accelerating Scientific Research with Gemini in the Real-World
-
-- Date: 2026-08-27
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2608.26701v1
-- PDF: https://arxiv.org/pdf/2608.26701v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-27-arxiv-accelerating_scientific_research_with_gemini_in_the_real_world_infographic.json
+- arXiv: https://arxiv.org/abs/2608.30064v1
+- PDF: https://arxiv.org/pdf/2608.30064v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-30-arxiv-libron_phonon_coupling_and_hydrogen_bond_dynamics_in_the_vacancy_ordered_perovskite_nh4_2s_infographic.json
