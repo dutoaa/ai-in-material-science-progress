@@ -1,6 +1,6 @@
 # AI materials science Progress Public Resources
 
-Generated: 2026-09-04
+Generated: 2026-09-05
 Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 
 ## 1. Accelerating dynamic simulations of photoexcited materials and their evolution by electron-informed machine learning
@@ -131,7 +131,15 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2608.31045v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-08-31-arxiv-rotational_equivariance_in_machine_learning_a_comprehensive_tutorial_infographic.json
 
-## 17. First Principle Analysis of the Magnetism and Electronic Structure of Fe2XSi (X=Ti, V)
+## 17. Experimentally constrained modeling of the Pockels response of KNbO3 and KTaNbO3
+
+- Date: 2026-09-03
+- Category: Energy Materials
+- arXiv: https://arxiv.org/abs/2609.03888v1
+- PDF: https://arxiv.org/pdf/2609.03888v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-03-arxiv-experimentally_constrained_modeling_of_the_pockels_response_of_knbo3_and_ktanbo3_infographic.json
+
+## 18. First Principle Analysis of the Magnetism and Electronic Structure of Fe2XSi (X=Ti, V)
 
 - Date: 2026-09-02
 - Category: Crystal and Structure
@@ -139,7 +147,7 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2609.02800v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-02-arxiv-first_principle_analysis_of_the_magnetism_and_electronic_structure_of_fe2xsi_x_ti_v_infographic.json
 
-## 18. Machine-learning screening and first-principles lattice dynamics resolve the most stable structure of NaCa(BH$_4$)$_3$ from a data-driven candidate search
+## 19. Machine-learning screening and first-principles lattice dynamics resolve the most stable structure of NaCa(BH$_4$)$_3$ from a data-driven candidate search
 
 - Date: 2026-09-02
 - Category: Crystal and Structure
@@ -147,18 +155,10 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2609.02001v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-02-arxiv-machine_learning_screening_and_first_principles_lattice_dynamics_resolve_the_most_stable_s_infographic.json
 
-## 19. Morphology and Dynamics of Self-interstitial Clusters in Irradiated Nickel
+## 20. Morphology and Dynamics of Self-interstitial Clusters in Irradiated Nickel
 
 - Date: 2026-09-01
 - Category: Crystal and Structure
 - arXiv: https://arxiv.org/abs/2609.01879v1
 - PDF: https://arxiv.org/pdf/2609.01879v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-01-arxiv-morphology_and_dynamics_of_self_interstitial_clusters_in_irradiated_nickel_infographic.json
-
-## 20. No source-free exchange-correlation magnetic fields in non-collinear spin DFT
-
-- Date: 2026-09-01
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2609.01533v1
-- PDF: https://arxiv.org/pdf/2609.01533v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-01-arxiv-no_source_free_exchange_correlation_magnetic_fields_in_non_collinear_spin_dft_infographic.json
