@@ -1,6 +1,6 @@
 # AI materials science Progress Public Resources
 
-Generated: 2026-09-05
+Generated: 2026-09-06
 Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 
 ## 1. Accelerating dynamic simulations of photoexcited materials and their evolution by electron-informed machine learning
