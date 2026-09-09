@@ -1,9 +1,65 @@
 # AI materials science Progress Public Resources
 
-Generated: 2026-09-08
+Generated: 2026-09-09
 Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 
-## 1. Multi-task deep-learning optimization of trade-off properties for superior-performance Fe-based soft magnetic alloys
+## 1. Band Structure Modulation of ZrO2 Nanoparticles for Control of CO Adsorption Properties: A Combined Density Functional Theory - Density Functional Tight Binding Study
+
+- Date: 2026-09-08
+- Category: Materials Discovery
+- arXiv: https://arxiv.org/abs/2609.08329v1
+- PDF: https://arxiv.org/pdf/2609.08329v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-08-arxiv-band_structure_modulation_of_zro2_nanoparticles_for_control_of_co_adsorption_properties_a_infographic.json
+
+## 2. Dynamic compensation of diffusion-limited oxygen sensing with deep learning
+
+- Date: 2026-09-07
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2609.07625v1
+- PDF: https://arxiv.org/pdf/2609.07625v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-07-arxiv-dynamic_compensation_of_diffusion_limited_oxygen_sensing_with_deep_learning_infographic.json
+
+## 3. Controlling Hydrogen Isotope Retention at Helium Cavities through Radiation-Induced Segregation in Fusion Steels
+
+- Date: 2026-09-08
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2609.08878v1
+- PDF: https://arxiv.org/pdf/2609.08878v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-08-arxiv-controlling_hydrogen_isotope_retention_at_helium_cavities_through_radiation_induced_segreg_infographic.json
+
+## 4. Online Surrogate Repair: Decoupling High-Fidelity Feedback from Search Length in Closed-Loop Discovery
+
+- Date: 2026-09-07
+- Category: Materials Discovery
+- arXiv: https://arxiv.org/abs/2609.07655v1
+- PDF: https://arxiv.org/pdf/2609.07655v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-07-arxiv-online_surrogate_repair_decoupling_high_fidelity_feedback_from_search_length_in_closed_loo_infographic.json
+
+## 5. Flexoelectric Polarization in Wrinkled Janus Transition-Metal Dichalcogenide Monolayers
+
+- Date: 2026-09-08
+- Category: AI materials science
+- arXiv: https://arxiv.org/abs/2609.08295v1
+- PDF: https://arxiv.org/pdf/2609.08295v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-08-arxiv-flexoelectric_polarization_in_wrinkled_janus_transition_metal_dichalcogenide_monolayers_infographic.json
+
+## 6. Benchmarking Universal Machine Learning Force Fields for Crystal Structure Prediction of High-Energy Molecular Systems
+
+- Date: 2026-09-07
+- Category: Materials Discovery
+- arXiv: https://arxiv.org/abs/2609.07477v1
+- PDF: https://arxiv.org/pdf/2609.07477v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-07-arxiv-benchmarking_universal_machine_learning_force_fields_for_crystal_structure_prediction_of_h_infographic.json
+
+## 7. GoAnt: Quality-Diversity Multi-Agent Search for Alpha Factor Discovery in Market Microstructure Data
+
+- Date: 2026-09-08
+- Category: Materials Discovery
+- arXiv: https://arxiv.org/abs/2609.08719v1
+- PDF: https://arxiv.org/pdf/2609.08719v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-08-arxiv-goant_quality_diversity_multi_agent_search_for_alpha_factor_discovery_in_market_microstruc_infographic.json
+
+## 8. Multi-task deep-learning optimization of trade-off properties for superior-performance Fe-based soft magnetic alloys
 
 - Date: 2026-09-04
 - Category: Materials Discovery
@@ -11,7 +67,23 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2609.04845v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-04-arxiv-multi_task_deep_learning_optimization_of_trade_off_properties_for_superior_performance_fe_infographic.json
 
-## 2. Artificial Intelligence in Equity and Crypto Markets: Progress, Profitability Evidence, and the Limits of Automated Investing
+## 9. Zirconium Carbide as a High-Temperature Benchmark for the Beyond Quasi-Harmonic Method
+
+- Date: 2026-09-08
+- Category: AI materials science
+- arXiv: https://arxiv.org/abs/2609.08913v1
+- PDF: https://arxiv.org/pdf/2609.08913v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-08-arxiv-zirconium_carbide_as_a_high_temperature_benchmark_for_the_beyond_quasi_harmonic_method_infographic.json
+
+## 10. Explicit block encodings of rate matrices for simulating polymerization kinetics on quantum computers
+
+- Date: 2026-09-08
+- Category: Polymers and Composites
+- arXiv: https://arxiv.org/abs/2609.08432v1
+- PDF: https://arxiv.org/pdf/2609.08432v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-08-arxiv-explicit_block_encodings_of_rate_matrices_for_simulating_polymerization_kinetics_on_quantu_infographic.json
+
+## 11. Artificial Intelligence in Equity and Crypto Markets: Progress, Profitability Evidence, and the Limits of Automated Investing
 
 - Date: 2026-09-04
 - Category: Property Prediction
@@ -19,146 +91,74 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2609.04917v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-04-arxiv-artificial_intelligence_in_equity_and_crypto_markets_progress_profitability_evidence_and_t_infographic.json
 
-## 3. Light alkali metal functionalized two-dimensional C5N monolayers for enhanced hydrogen storage
+## 12. MLIP Detective: Active Failure Mode Discovery Beyond Benchmark Scores for Machine-Learning Interatomic Potentials
 
-- Date: 2026-09-04
-- Category: AI materials science
-- arXiv: https://arxiv.org/abs/2609.04605v1
-- PDF: https://arxiv.org/pdf/2609.04605v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-04-arxiv-light_alkali_metal_functionalized_two_dimensional_c5n_monolayers_for_enhanced_hydrogen_sto_infographic.json
+- Date: 2026-09-08
+- Category: Materials Discovery
+- arXiv: https://arxiv.org/abs/2609.08399v1
+- PDF: https://arxiv.org/pdf/2609.08399v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-08-arxiv-mlip_detective_active_failure_mode_discovery_beyond_benchmark_scores_for_machine_learning_infographic.json
 
-## 4. Accelerating dynamic simulations of photoexcited materials and their evolution by electron-informed machine learning
+## 13. Structure-Informed Bayesian Inference of Anomalous Transport and Hidden Molecular Trapping in Amorphous Media
 
-- Date: 2026-09-01
-- Category: Microstructure
-- arXiv: https://arxiv.org/abs/2609.01492v1
-- PDF: https://arxiv.org/pdf/2609.01492v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-01-arxiv-accelerating_dynamic_simulations_of_photoexcited_materials_and_their_evolution_by_electron_infographic.json
-
-## 5. Orbital-Free DFT-Assisted Machine-Learned Molecular Dynamics for Electric-Field-Driven Ionic Transport
-
-- Date: 2026-09-03
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2609.03518v1
-- PDF: https://arxiv.org/pdf/2609.03518v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-03-arxiv-orbital_free_dft_assisted_machine_learned_molecular_dynamics_for_electric_field_driven_ion_infographic.json
-
-## 6. Interplay between Isomerization and Spin Crossover in 1D Fe-Indigo Coordination Polymers on Ag substrates
-
-- Date: 2026-09-02
+- Date: 2026-09-08
 - Category: Polymers and Composites
-- arXiv: https://arxiv.org/abs/2609.03041v1
-- PDF: https://arxiv.org/pdf/2609.03041v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-02-arxiv-interplay_between_isomerization_and_spin_crossover_in_1d_fe_indigo_coordination_polymers_o_infographic.json
+- arXiv: https://arxiv.org/abs/2609.08780v1
+- PDF: https://arxiv.org/pdf/2609.08780v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-08-arxiv-structure_informed_bayesian_inference_of_anomalous_transport_and_hidden_molecular_trapping_infographic.json
 
-## 7. HiPoly: a hierarchical polymer-native AI framework for property prediction and generative design
+## 14. The Hidden Cost of Alloying: Disorder-Driven Transport Collapse in TMDs
 
-- Date: 2026-09-02
-- Category: Materials Discovery
-- arXiv: https://arxiv.org/abs/2609.02746v1
-- PDF: https://arxiv.org/pdf/2609.02746v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-02-arxiv-hipoly_a_hierarchical_polymer_native_ai_framework_for_property_prediction_and_generative_d_infographic.json
+- Date: 2026-09-08
+- Category: AI materials science
+- arXiv: https://arxiv.org/abs/2609.08597v1
+- PDF: https://arxiv.org/pdf/2609.08597v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-08-arxiv-the_hidden_cost_of_alloying_disorder_driven_transport_collapse_in_tmds_infographic.json
 
-## 8. Hierarchical automation of scanning probe microscopy through agentic orchestration and algorithmic control
+## 15. Laser Shock Peening in Hydrogen Environments: Coupled Stress Transport Trapping Mechanisms and Application Gaps
 
-- Date: 2026-09-03
-- Category: Materials Discovery
-- arXiv: https://arxiv.org/abs/2609.04015v1
-- PDF: https://arxiv.org/pdf/2609.04015v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-03-arxiv-hierarchical_automation_of_scanning_probe_microscopy_through_agentic_orchestration_and_alg_infographic.json
+- Date: 2026-09-08
+- Category: Microstructure
+- arXiv: https://arxiv.org/abs/2609.08469v1
+- PDF: https://arxiv.org/pdf/2609.08469v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-08-arxiv-laser_shock_peening_in_hydrogen_environments_coupled_stress_transport_trapping_mechanisms_infographic.json
 
-## 9. Interfacial Accommodation as a Candidate Ductility Pathway in Intermetallic-Rich Alloys
+## 16. EBSDmagus: Managing Multi-Stage Dynamical Electron Backscatter Diffraction Simulations
 
-- Date: 2026-09-04
+- Date: 2026-09-08
 - Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2609.05147v1
-- PDF: https://arxiv.org/pdf/2609.05147v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-04-arxiv-interfacial_accommodation_as_a_candidate_ductility_pathway_in_intermetallic_rich_alloys_infographic.json
+- arXiv: https://arxiv.org/abs/2609.08334v1
+- PDF: https://arxiv.org/pdf/2609.08334v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-08-arxiv-ebsdmagus_managing_multi_stage_dynamical_electron_backscatter_diffraction_simulations_infographic.json
 
-## 10. Influence of dislocation density on the tribological response in oxides: case study on SrTiO3
+## 17. Substrate-induced crystallisation in polymers: Exceptional impact of prefreezing versus heterogeneous nucleation on kinetics and morphology
 
-- Date: 2026-09-04
+- Date: 2026-09-07
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2609.07973v1
+- PDF: https://arxiv.org/pdf/2609.07973v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-07-arxiv-substrate_induced_crystallisation_in_polymers_exceptional_impact_of_prefreezing_versus_het_infographic.json
+
+## 18. High-Field Electron Transport in AlGaN alloys: A Full-Band Monte Carlo Study Based on Ab Initio Supercell Calculations
+
+- Date: 2026-09-07
+- Category: AI materials science
+- arXiv: https://arxiv.org/abs/2609.07773v1
+- PDF: https://arxiv.org/pdf/2609.07773v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-07-arxiv-high_field_electron_transport_in_algan_alloys_a_full_band_monte_carlo_study_based_on_ab_in_infographic.json
+
+## 19. Dynamic Sensing via Photomodulated Gas Desorption in Plasmonic Nanoparticle Chemiresistors
+
+- Date: 2026-09-08
+- Category: Polymers and Composites
+- arXiv: https://arxiv.org/abs/2609.08883v1
+- PDF: https://arxiv.org/pdf/2609.08883v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-08-arxiv-dynamic_sensing_via_photomodulated_gas_desorption_in_plasmonic_nanoparticle_chemiresistors_infographic.json
+
+## 20. Pulse-Burst Excitation Reveals Time-Dose Reciprocity Breakdown in Mixed-Halide Perovskites
+
+- Date: 2026-09-08
 - Category: Energy Materials
-- arXiv: https://arxiv.org/abs/2609.05056v1
-- PDF: https://arxiv.org/pdf/2609.05056v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-04-arxiv-influence_of_dislocation_density_on_the_tribological_response_in_oxides_case_study_on_srti_infographic.json
-
-## 11. Synthesis and Characterization of Compositionally Complex (Gd/Ho/Er/Dy)2Zr2O7 Thin Film Combinatorial Library
-
-- Date: 2026-09-03
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2609.04074v1
-- PDF: https://arxiv.org/pdf/2609.04074v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-03-arxiv-synthesis_and_characterization_of_compositionally_complex_gd_ho_er_dy_2zr2o7_thin_film_com_infographic.json
-
-## 12. Interplay of B-Site Off-Centering and Molecular Orientations in the Mixed Hybrid Perovskite MAGe1xSnxI3
-
-- Date: 2026-09-03
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2609.03510v1
-- PDF: https://arxiv.org/pdf/2609.03510v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-03-arxiv-interplay_of_b_site_off_centering_and_molecular_orientations_in_the_mixed_hybrid_perovskit_infographic.json
-
-## 13. Calculation of DFT Spin-Orbit Spillage with Quantum ESPRESSO
-
-- Date: 2026-09-03
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2609.04517v1
-- PDF: https://arxiv.org/pdf/2609.04517v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-03-arxiv-calculation_of_dft_spin_orbit_spillage_with_quantum_espresso_infographic.json
-
-## 14. Gd-4f Exchange Splitting and Mo-4d Crystal-Field Redistribution in Gd/W Co-doped La2Mo2O9: A DFT+U Study
-
-- Date: 2026-09-03
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2609.03717v1
-- PDF: https://arxiv.org/pdf/2609.03717v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-03-arxiv-gd_4f_exchange_splitting_and_mo_4d_crystal_field_redistribution_in_gd_w_co_doped_la2mo2o9_infographic.json
-
-## 15. High-Throughput Computational Discovery of Inverted Resistive Switching in Two-Dimensional Materials
-
-- Date: 2026-09-03
-- Category: Materials Discovery
-- arXiv: https://arxiv.org/abs/2609.03578v1
-- PDF: https://arxiv.org/pdf/2609.03578v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-03-arxiv-high_throughput_computational_discovery_of_inverted_resistive_switching_in_two_dimensional_infographic.json
-
-## 16. Thermal history controls the optoelectronic response of lead halide perovskites through structure and dynamics
-
-- Date: 2026-09-02
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2609.03211v1
-- PDF: https://arxiv.org/pdf/2609.03211v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-02-arxiv-thermal_history_controls_the_optoelectronic_response_of_lead_halide_perovskites_through_st_infographic.json
-
-## 17. Understanding Graphene-Perovskite Interactions: From Flake Chemistry to Crystallisation and Solar Cell Performance
-
-- Date: 2026-09-02
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2609.02744v1
-- PDF: https://arxiv.org/pdf/2609.02744v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-02-arxiv-understanding_graphene_perovskite_interactions_from_flake_chemistry_to_crystallisation_and_infographic.json
-
-## 18. From Goldene to Noblene: exhaustive enumeration of the ordered Au-Ag-Cu monolayer alloys
-
-- Date: 2026-09-02
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2609.02709v1
-- PDF: https://arxiv.org/pdf/2609.02709v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-02-arxiv-from_goldene_to_noblene_exhaustive_enumeration_of_the_ordered_au_ag_cu_monolayer_alloys_infographic.json
-
-## 19. Voltage-embedded equivariant machine learning potential for open system simulations
-
-- Date: 2026-09-04
-- Category: Microstructure
-- arXiv: https://arxiv.org/abs/2609.04696v1
-- PDF: https://arxiv.org/pdf/2609.04696v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-04-arxiv-voltage_embedded_equivariant_machine_learning_potential_for_open_system_simulations_infographic.json
-
-## 20. From Single-Chain Dynamics to Structure Formation: Dynamic Self-Consistent Field Theory and Molecular Dynamics of (Co)polymer Melts across Entanglement Regimes
-
-- Date: 2026-09-03
-- Category: Microstructure
-- arXiv: https://arxiv.org/abs/2609.04548v1
-- PDF: https://arxiv.org/pdf/2609.04548v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-03-arxiv-from_single_chain_dynamics_to_structure_formation_dynamic_self_consistent_field_theory_and_infographic.json
+- arXiv: https://arxiv.org/abs/2609.08632v1
+- PDF: https://arxiv.org/pdf/2609.08632v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-08-arxiv-pulse_burst_excitation_reveals_time_dose_reciprocity_breakdown_in_mixed_halide_perovskites_infographic.json
