@@ -1,164 +1,164 @@
 # AI materials science Progress Public Resources
 
-Generated: 2026-09-16
+Generated: 2026-09-30
 Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 
-## 1. Symbolic Ensemble Learning Enables Discovery of Fast Accurate Physics-Based Interatomic Potentials
+## 1. From Automated Simulation to Autonomous Discovery: A Hierarchical Framework for Agentic Computational Materials Science
 
-- Date: 2026-09-15
+- Date: 2026-09-29
 - Category: Materials Discovery
-- arXiv: https://arxiv.org/abs/2609.16526v1
-- PDF: https://arxiv.org/pdf/2609.16526v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-15-arxiv-symbolic_ensemble_learning_enables_discovery_of_fast_accurate_physics_based_interatomic_po_infographic.json
+- arXiv: https://arxiv.org/abs/2609.36469v1
+- PDF: https://arxiv.org/pdf/2609.36469v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-29-arxiv-from_automated_simulation_to_autonomous_discovery_a_hierarchical_framework_for_agentic_com_infographic.json
 
-## 2. Scaling LLM Agents for Materials Design through Hierarchical Collective Reasoning
+## 2. Co-PiLOT: Constrained Physics-Informed Latent Optimization for Target-Driven Inverse Design
 
-- Date: 2026-09-15
+- Date: 2026-09-29
+- Category: Materials Discovery
+- arXiv: https://arxiv.org/abs/2609.37875v1
+- PDF: https://arxiv.org/pdf/2609.37875v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-29-arxiv-co_pilot_constrained_physics_informed_latent_optimization_for_target_driven_inverse_design_infographic.json
+
+## 3. Linear-Scaling Quantum Transport from Machine-Learning Density Functional Theory Hamiltonians
+
+- Date: 2026-09-29
 - Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2609.16466v1
-- PDF: https://arxiv.org/pdf/2609.16466v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-15-arxiv-scaling_llm_agents_for_materials_design_through_hierarchical_collective_reasoning_infographic.json
+- arXiv: https://arxiv.org/abs/2609.37058v1
+- PDF: https://arxiv.org/pdf/2609.37058v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-29-arxiv-linear_scaling_quantum_transport_from_machine_learning_density_functional_theory_hamiltoni_infographic.json
 
-## 3. Development of a Physics-Informed Neural Framework, MEOWN, for Rapid Prediction of Muon Stopping Sites in Crystalline Materials, for understanding Quantum Magnet employing Muon Spectroscopy
+## 4. Measuring trainable degrees of freedom in materials graph neural networks: a random-subspace intrinsic dimension analysis
 
-- Date: 2026-09-15
+- Date: 2026-09-28
+- Category: Property Prediction
+- arXiv: https://arxiv.org/abs/2609.36084v1
+- PDF: https://arxiv.org/pdf/2609.36084v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-28-arxiv-measuring_trainable_degrees_of_freedom_in_materials_graph_neural_networks_a_random_subspac_infographic.json
+
+## 5. A roadmap for polymer informatics super-intelligence
+
+- Date: 2026-09-28
 - Category: Materials Discovery
-- arXiv: https://arxiv.org/abs/2609.17063v1
-- PDF: https://arxiv.org/pdf/2609.17063v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-15-arxiv-development_of_a_physics_informed_neural_framework_meown_for_rapid_prediction_of_muon_stop_infographic.json
+- arXiv: https://arxiv.org/abs/2609.34051v1
+- PDF: https://arxiv.org/pdf/2609.34051v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-28-arxiv-a_roadmap_for_polymer_informatics_super_intelligence_infographic.json
 
-## 4. Navigating Sparse Singlet Fission Chemical Space: An Intelligent Generative-Predictive Paradigm
+## 6. Electronic Coupling and Charge-Transfer Landscape of Graphene on Ge(001)/Si(001): Multiscale Analysis Assisted by Machine Learning
 
-- Date: 2026-09-14
-- Category: Materials Discovery
-- arXiv: https://arxiv.org/abs/2609.15136v1
-- PDF: https://arxiv.org/pdf/2609.15136v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-14-arxiv-navigating_sparse_singlet_fission_chemical_space_an_intelligent_generative_predictive_para_infographic.json
-
-## 5. WaVeFuse: Regime-Adaptive Equity Index Forecasting via Channel-Wise Wavelet Denoising and Vertical Attention Fusion
-
-- Date: 2026-09-13
-- Category: Polymers and Composites
-- arXiv: https://arxiv.org/abs/2609.14733v1
-- PDF: https://arxiv.org/pdf/2609.14733v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-13-arxiv-wavefuse_regime_adaptive_equity_index_forecasting_via_channel_wise_wavelet_denoising_and_v_infographic.json
-
-## 6. Designing Homogeneous Ti-Nb-Fe-Sn $β$ Titanium Alloys by PBF-LB: A Pre-Alloyed Powder Blend Strategy
-
-- Date: 2026-09-15
+- Date: 2026-09-29
 - Category: Microstructure
-- arXiv: https://arxiv.org/abs/2609.17476v1
-- PDF: https://arxiv.org/pdf/2609.17476v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-15-arxiv-designing_homogeneous_ti_nb_fe_sn_titanium_alloys_by_pbf_lb_a_pre_alloyed_powder_blend_str_infographic.json
+- arXiv: https://arxiv.org/abs/2609.37827v1
+- PDF: https://arxiv.org/pdf/2609.37827v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-29-arxiv-electronic_coupling_and_charge_transfer_landscape_of_graphene_on_ge_001_si_001_multiscale_infographic.json
 
-## 7. El Agente Potente: High-Throughput Agentic Atomistic Simulations
+## 7. MatToolBench: Benchmarking Multimodal Agents in Real-World Materials Science Workflows
 
-- Date: 2026-09-13
-- Category: Materials Discovery
-- arXiv: https://arxiv.org/abs/2609.14840v1
-- PDF: https://arxiv.org/pdf/2609.14840v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-13-arxiv-el_agente_potente_high_throughput_agentic_atomistic_simulations_infographic.json
-
-## 8. Probabilistic Deep Learning Framework for Phase Transformation Forecasting aided by In Situ High temperature Microscopy
-
-- Date: 2026-09-15
+- Date: 2026-09-29
 - Category: Microstructure
-- arXiv: https://arxiv.org/abs/2609.16940v1
-- PDF: https://arxiv.org/pdf/2609.16940v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-15-arxiv-probabilistic_deep_learning_framework_for_phase_transformation_forecasting_aided_by_in_sit_infographic.json
+- arXiv: https://arxiv.org/abs/2609.37053v1
+- PDF: https://arxiv.org/pdf/2609.37053v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-29-arxiv-mattoolbench_benchmarking_multimodal_agents_in_real_world_materials_science_workflows_infographic.json
 
-## 9. GPCR Ligand Bioactivity Prediction with Physics-Informed Dual-State Query Learning
+## 8. Where Should Physics Enter a Molecular Crystal Generator?
 
-- Date: 2026-09-15
+- Date: 2026-09-28
 - Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2609.16468v1
-- PDF: https://arxiv.org/pdf/2609.16468v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-15-arxiv-gpcr_ligand_bioactivity_prediction_with_physics_informed_dual_state_query_learning_infographic.json
+- arXiv: https://arxiv.org/abs/2609.36398v1
+- PDF: https://arxiv.org/pdf/2609.36398v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-28-arxiv-where_should_physics_enter_a_molecular_crystal_generator_infographic.json
 
-## 10. OpenAI4S: Code as Action, Science as Sessions
+## 9. Density functional perturbation theory of meta-generalized gradient approximations using algorithmic differentiation
 
-- Date: 2026-09-14
+- Date: 2026-09-28
 - Category: Materials Discovery
-- arXiv: https://arxiv.org/abs/2609.15096v1
-- PDF: https://arxiv.org/pdf/2609.15096v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-14-arxiv-openai4s_code_as_action_science_as_sessions_infographic.json
+- arXiv: https://arxiv.org/abs/2609.35572v1
+- PDF: https://arxiv.org/pdf/2609.35572v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-28-arxiv-density_functional_perturbation_theory_of_meta_generalized_gradient_approximations_using_a_infographic.json
 
-## 11. Multi4D: an end-to-end neural network for structural determination at complex material interfaces
+## 10. Accelerating phase-field simulations on exascale computing systems for faster-than-real-time precipitate aging predictions
 
-- Date: 2026-09-13
+- Date: 2026-09-28
 - Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2609.14348v1
-- PDF: https://arxiv.org/pdf/2609.14348v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-13-arxiv-multi4d_an_end_to_end_neural_network_for_structural_determination_at_complex_material_inte_infographic.json
+- arXiv: https://arxiv.org/abs/2609.36100v1
+- PDF: https://arxiv.org/pdf/2609.36100v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-28-arxiv-accelerating_phase_field_simulations_on_exascale_computing_systems_for_faster_than_real_ti_infographic.json
 
-## 12. Prescreening Point Defects in Semiconductors With Machine Learning
+## 11. Pressure-induced s,p-d electron redistribution accompanies structural transformation in amorphous Zr-Cu alloy under compression
 
-- Date: 2026-09-13
-- Category: Materials Discovery
-- arXiv: https://arxiv.org/abs/2609.14846v1
-- PDF: https://arxiv.org/pdf/2609.14846v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-13-arxiv-prescreening_point_defects_in_semiconductors_with_machine_learning_infographic.json
-
-## 13. Application of Regional Chemical Potential Analysis to Si Adsorption on the Diamond (001) Surface
-
-- Date: 2026-09-15
+- Date: 2026-09-28
 - Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2609.16620v1
-- PDF: https://arxiv.org/pdf/2609.16620v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-15-arxiv-application_of_regional_chemical_potential_analysis_to_si_adsorption_on_the_diamond_001_su_infographic.json
+- arXiv: https://arxiv.org/abs/2609.35380v1
+- PDF: https://arxiv.org/pdf/2609.35380v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-28-arxiv-pressure_induced_s_p_d_electron_redistribution_accompanies_structural_transformation_in_am_infographic.json
 
-## 14. Enhanced thermal stability of SiGeSn by suppressing surface-mediated degradation
+## 12. Assessing the Transferability of General-Purpose MachineLearning Interatomic Potentials for Heterogeneous Catalysis with HetCat26
 
-- Date: 2026-09-15
+- Date: 2026-09-24
 - Category: Microstructure
-- arXiv: https://arxiv.org/abs/2609.17504v1
-- PDF: https://arxiv.org/pdf/2609.17504v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-15-arxiv-enhanced_thermal_stability_of_sigesn_by_suppressing_surface_mediated_degradation_infographic.json
+- arXiv: https://arxiv.org/abs/2609.30621v1
+- PDF: https://arxiv.org/pdf/2609.30621v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-24-arxiv-assessing_the_transferability_of_general_purpose_machinelearning_interatomic_potentials_fo_infographic.json
 
-## 15. Full Minimal Coupling All-Electron Real-Time TDDFT for X-Ray-Matter Interactions
+## 13. Polar-Domain Volume as a Unified Descriptor of Transport in Ionic Liquids
 
-- Date: 2026-09-14
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2609.16441v1
-- PDF: https://arxiv.org/pdf/2609.16441v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-14-arxiv-full_minimal_coupling_all_electron_real_time_tddft_for_x_ray_matter_interactions_infographic.json
+- Date: 2026-09-29
+- Category: Property Prediction
+- arXiv: https://arxiv.org/abs/2609.36682v1
+- PDF: https://arxiv.org/pdf/2609.36682v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-29-arxiv-polar_domain_volume_as_a_unified_descriptor_of_transport_in_ionic_liquids_infographic.json
 
-## 16. An Open-Source Hardware and Software Toolkit to Enable Agentic RHEED-Guided Thin-Film Synthesis
+## 14. Bounding Retraining Equivalence and the Deletion Floor in Materials Machine Unlearning
 
-- Date: 2026-09-14
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2609.15922v1
-- PDF: https://arxiv.org/pdf/2609.15922v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-14-arxiv-an_open_source_hardware_and_software_toolkit_to_enable_agentic_rheed_guided_thin_film_synt_infographic.json
+- Date: 2026-09-28
+- Category: Property Prediction
+- arXiv: https://arxiv.org/abs/2609.35635v1
+- PDF: https://arxiv.org/pdf/2609.35635v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-28-arxiv-bounding_retraining_equivalence_and_the_deletion_floor_in_materials_machine_unlearning_infographic.json
 
-## 17. Benchmarking Machine-Learning Interatomic Potentials for Dynamical Stability in Inorganic Semiconductor Nanocrystals: A CdSe Case Study
+## 15. GLASS: Global Latent Aggregation with Slot-based Set Decoding for Scalable All-Atom Crystal Generation
 
-- Date: 2026-09-14
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2609.15299v1
-- PDF: https://arxiv.org/pdf/2609.15299v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-14-arxiv-benchmarking_machine_learning_interatomic_potentials_for_dynamical_stability_in_inorganic_infographic.json
-
-## 18. Discovering Kinetically Significant Reaction Mechanisms Beyond Chemical Intuition in Condensed-Phase Radiolysis
-
-- Date: 2026-09-15
+- Date: 2026-09-29
 - Category: Materials Discovery
-- arXiv: https://arxiv.org/abs/2609.16512v1
-- PDF: https://arxiv.org/pdf/2609.16512v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-15-arxiv-discovering_kinetically_significant_reaction_mechanisms_beyond_chemical_intuition_in_conde_infographic.json
+- arXiv: https://arxiv.org/abs/2609.37158v1
+- PDF: https://arxiv.org/pdf/2609.37158v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-29-arxiv-glass_global_latent_aggregation_with_slot_based_set_decoding_for_scalable_all_atom_crystal_infographic.json
 
-## 19. Domain-wall energy governs coercivity in ordered and disordered additively manufactured Fe--49Co--2V
+## 16. How Thermodynamically Accessible are Quaternary Mixed-Metal Chalcohalides?
 
-- Date: 2026-09-14
+- Date: 2026-09-29
 - Category: Microstructure
-- arXiv: https://arxiv.org/abs/2609.16343v1
-- PDF: https://arxiv.org/pdf/2609.16343v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-14-arxiv-domain_wall_energy_governs_coercivity_in_ordered_and_disordered_additively_manufactured_fe_infographic.json
+- arXiv: https://arxiv.org/abs/2609.38125v1
+- PDF: https://arxiv.org/pdf/2609.38125v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-29-arxiv-how_thermodynamically_accessible_are_quaternary_mixed_metal_chalcohalides_infographic.json
 
-## 20. Evaluating Predicted Densities, Hamiltonians, and Density Matrices as Periodic SCF Initializers
+## 17. Study of LAGP coating on polyethylene separator for polysulfide suppression in thin Li-S batteries
 
-- Date: 2026-09-14
+- Date: 2026-09-29
 - Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2609.15151v1
-- PDF: https://arxiv.org/pdf/2609.15151v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-14-arxiv-evaluating_predicted_densities_hamiltonians_and_density_matrices_as_periodic_scf_initializ_infographic.json
+- arXiv: https://arxiv.org/abs/2609.36749v1
+- PDF: https://arxiv.org/pdf/2609.36749v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-29-arxiv-study_of_lagp_coating_on_polyethylene_separator_for_polysulfide_suppression_in_thin_li_s_b_infographic.json
+
+## 18. High-Throughput Imaging of Degradation-Inducing Microscopic Impurities in Perovskite Solar Cells
+
+- Date: 2026-09-28
+- Category: Materials Discovery
+- arXiv: https://arxiv.org/abs/2609.35510v1
+- PDF: https://arxiv.org/pdf/2609.35510v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-28-arxiv-high_throughput_imaging_of_degradation_inducing_microscopic_impurities_in_perovskite_solar_infographic.json
+
+## 19. Physics-Guided Conditional Diffusion Model for Rare Event Synthesis and Diagnosis for the Water-Gas Shift Reaction
+
+- Date: 2026-09-28
+- Category: Energy Materials
+- arXiv: https://arxiv.org/abs/2609.35499v1
+- PDF: https://arxiv.org/pdf/2609.35499v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-28-arxiv-physics_guided_conditional_diffusion_model_for_rare_event_synthesis_and_diagnosis_for_the_infographic.json
+
+## 20. Disentangling octahedral distortion and symmetry breaking in the ordered double perovskite SrLaCoNbO$_6$
+
+- Date: 2026-09-29
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2609.37835v1
+- PDF: https://arxiv.org/pdf/2609.37835v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-29-arxiv-disentangling_octahedral_distortion_and_symmetry_breaking_in_the_ordered_double_perovskite_infographic.json
