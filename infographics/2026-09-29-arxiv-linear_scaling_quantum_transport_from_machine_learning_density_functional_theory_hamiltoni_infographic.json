@@ -1,24 +1,24 @@
 {
-  "key_insight": "HamGNN-NEGF uses an E(3)-equivariant graph neural network to predict DFT-quality Hamiltonians, enabling linear-scaling quantum transport for device-scale systems.",
-  "engineering_relevance": "It makes predictive quantum transport feasible for realistic nanoelectronic devices with thousands of atoms, while retaining near-DFT accuracy and drastically reducing computational cost.",
+  "key_insight": "HamGNN-NEGF uses a machine-learned DFT Hamiltonian plus efficient Green’s-function solvers to deliver near-DFT transport accuracy with linear scaling in device length.",
+  "engineering_relevance": "This makes predictive quantum transport feasible for realistic nanoelectronic devices with thousands to over 10,000 atoms at dramatically lower cost than self-consistent DFT-NEGF.",
   "method": [
-    "Train on small-structure DFT Hamiltonians, then predict Hamiltonians for larger devices.",
-    "Combine predicted Hamiltonians with DFT electrode self-energies, nonorthogonal KPM for Fermi-level finding, and recursive Green's function transport.",
-    "Bypass transport self-consistency to enable faster calculations, including HSE06 and weakly nonlinear finite-bias cases."
+    "Train an E(3)-equivariant GNN on conventional DFT Hamiltonians for small structures.",
+    "Predict large-device Hamiltonians and combine them with DFT-derived electrode self-energies.",
+    "Use nonorthogonal kernel polynomial methods and recursive Green’s functions to compute transport efficiently."
   ],
-  "evidence_signal": "Benchmarks on Pt-Si-Pt, Pt-Si:P-Pt, and Pt-molecule-Pt junctions report meV-level Hamiltonian accuracy, faithful transmission spectra, and simulations beyond 10,000 atoms with >1000x speedups for sub-500-atom devices.",
-  "watch_item": "The zero-bias Hamiltonian approximation may be less reliable for strongly nonlinear or high-bias transport regimes.",
+  "evidence_signal": "The abstract reports meV-level Hamiltonian accuracy, faithful transmission spectra, and speedups exceeding three orders of magnitude on Pt-Si-Pt, doped Pt-Si:P-Pt, and Pt-molecule-Pt benchmarks, including systems beyond 10,000 atoms.",
+  "watch_item": "The zero-bias Hamiltonian approximation for finite-bias transport is stated to be reliable only in weakly nonlinear regimes.",
   "hashtags": [
     "#QuantumTransport",
-    "#GraphNeuralNetworks",
     "#DFT",
-    "#NEGF",
-    "#MaterialsInformatics"
+    "#MachineLearning",
+    "#Nanoelectronics",
+    "#GreenFunctions"
   ],
   "paper_id": "2026-09-29-arxiv-linear_scaling_quantum_transport_from_machine_learning_density_functional_theory_hamiltoni",
   "paper_title": "Linear-Scaling Quantum Transport from Machine-Learning Density Functional Theory Hamiltonians",
   "paper_date": "2026-09-29",
   "paper_category": "Crystal and Structure",
-  "generated_at": "2026-10-02T16:29:04",
+  "generated_at": "2026-10-03T15:02:48",
   "generator": "openai"
 }

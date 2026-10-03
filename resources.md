@@ -1,6 +1,6 @@
 # AI materials science Progress Public Resources
 
-Generated: 2026-10-02
+Generated: 2026-10-03
 Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 
 ## 1. Riemannian Flow Models with Reinforcement Learning for Molecular Crystal Structure Prediction
@@ -19,7 +19,15 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2609.36469v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-29-arxiv-from_automated_simulation_to_autonomous_discovery_a_hierarchical_framework_for_agentic_com_infographic.json
 
-## 3. Atoms to Processes: The Role of Artificial Intelligence and Machine Learning in Chemical Engineering
+## 3. Co-PiLOT: Constrained Physics-Informed Latent Optimization for Target-Driven Inverse Design
+
+- Date: 2026-09-29
+- Category: Materials Discovery
+- arXiv: https://arxiv.org/abs/2609.37875v1
+- PDF: https://arxiv.org/pdf/2609.37875v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-29-arxiv-co_pilot_constrained_physics_informed_latent_optimization_for_target_driven_inverse_design_infographic.json
+
+## 4. Atoms to Processes: The Role of Artificial Intelligence and Machine Learning in Chemical Engineering
 
 - Date: 2026-10-01
 - Category: Materials Discovery
@@ -27,21 +35,13 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2610.02014v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-10-01-arxiv-atoms_to_processes_the_role_of_artificial_intelligence_and_machine_learning_in_chemical_en_infographic.json
 
-## 4. Long-Range Machine Learning Interatomic Potentials for Defect Energetics in SrTiO$_3$
+## 5. Long-Range Machine Learning Interatomic Potentials for Defect Energetics in SrTiO$_3$
 
 - Date: 2026-09-30
 - Category: Crystal and Structure
 - arXiv: https://arxiv.org/abs/2610.00794v1
 - PDF: https://arxiv.org/pdf/2610.00794v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-30-arxiv-long_range_machine_learning_interatomic_potentials_for_defect_energetics_in_srtio_3_infographic.json
-
-## 5. Co-PiLOT: Constrained Physics-Informed Latent Optimization for Target-Driven Inverse Design
-
-- Date: 2026-09-29
-- Category: Materials Discovery
-- arXiv: https://arxiv.org/abs/2609.37875v1
-- PDF: https://arxiv.org/pdf/2609.37875v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-29-arxiv-co_pilot_constrained_physics_informed_latent_optimization_for_target_driven_inverse_design_infographic.json
 
 ## 6. Ontology-Grounded, Reasoner-Verified Benchmarks for Evaluating LLM Reasoning in Scientific AI
 
@@ -139,7 +139,15 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2609.38478v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-29-arxiv-stress_based_structure_optimization_for_a_range_separated_hybrid_van_der_waals_density_fun_infographic.json
 
-## 18. Fixed-point neural samplers on discrete spaces
+## 18. Electronic Coupling and Charge-Transfer Landscape of Graphene on Ge(001)/Si(001): Multiscale Analysis Assisted by Machine Learning
+
+- Date: 2026-09-29
+- Category: Microstructure
+- arXiv: https://arxiv.org/abs/2609.37827v1
+- PDF: https://arxiv.org/pdf/2609.37827v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-09-29-arxiv-electronic_coupling_and_charge_transfer_landscape_of_graphene_on_ge_001_si_001_multiscale_infographic.json
+
+## 19. Fixed-point neural samplers on discrete spaces
 
 - Date: 2026-10-01
 - Category: Materials Discovery
@@ -147,18 +155,10 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2610.01739v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-10-01-arxiv-fixed_point_neural_samplers_on_discrete_spaces_infographic.json
 
-## 19. Learning ab initio phase-field models
+## 20. Learning ab initio phase-field models
 
 - Date: 2026-10-01
 - Category: Microstructure
 - arXiv: https://arxiv.org/abs/2610.01432v1
 - PDF: https://arxiv.org/pdf/2610.01432v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-10-01-arxiv-learning_ab_initio_phase_field_models_infographic.json
-
-## 20. Benchmarking average atom potentials derived from atomic cluster expansions
-
-- Date: 2026-10-01
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2610.01370v1
-- PDF: https://arxiv.org/pdf/2610.01370v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-10-01-arxiv-benchmarking_average_atom_potentials_derived_from_atomic_cluster_expansions_infographic.json
