@@ -1,24 +1,24 @@
 {
-  "key_insight": "An exact average-atom potential can be derived directly from a linear atomic cluster expansion and used to recover disordered-alloy properties without relying on an averaged parent potential.",
-  "engineering_relevance": "This enables more reliable, data-efficient screening of chemically disordered alloys for structural, elastic, and thermodynamic behavior using small training sets.",
+  "key_insight": "A-atom potentials can be derived exactly from linear ACE models and still recover key disordered-alloy properties, provided the chemical site basis is chosen carefully.",
+  "engineering_relevance": "This enables more accurate, data-efficient alloy thermodynamics and property prediction for disordered materials using much smaller training sets than typical interatomic potential workflows.",
   "method": [
-    "Fit a linear ACE to Fe-W data from an EAM potential, then derive the average-atom potential and compare against explicit random-supercell and conventional averaged models.",
-    "Fit a linear ACE to ~1500 DFT Mo-Nb structures (~7 atoms each) and evaluate the resulting average-atom potential on key alloy properties.",
-    "Compare chemical site bases and assess transferability for elastic constants, lattice parameter, mixing enthalpy, Bain path, and surface energies."
+    "Fit a linear ACE to Fe-W data from an EAM potential and compare the derived A-atom model against explicit random supercells.",
+    "Train a linear ACE on ~1500 small Mo-Nb DFT structures and derive A-atom potentials for benchmark properties.",
+    "Test elastic constants, lattice parameter, mixing enthalpy, Bain path, and surface energies across different chemical site bases."
   ],
-  "evidence_signal": "The Mo-Nb model trained on about 1500 small DFT structures reproduced DFT elastic constants, lattice parameter, mixing enthalpy, Bain path, and, with the occupation basis, surface energies.",
-  "watch_item": "Performance depends strongly on the chosen chemical site basis, so an unsuitable basis may miss important properties such as surface energies.",
+  "evidence_signal": "The paper reports agreement with disordered-phase properties from explicit supercells/EAM for Fe-W and with DFT elastic constants, lattice parameter, mixing enthalpy, Bain path, and—only for the occupation basis—surface energies for Mo-Nb.",
+  "watch_item": "Performance depends strongly on the chosen chemical site basis, and not all bases reproduce surface energetics even when bulk properties are captured.",
   "hashtags": [
-    "#MaterialsInformatics",
+    "#AtomisticModeling",
+    "#AlloyDesign",
     "#AtomicClusterExpansion",
-    "#AlloyModeling",
-    "#MachineLearningPotentials",
-    "#ComputationalMaterials"
+    "#MaterialsInformatics",
+    "#DisorderedAlloys"
   ],
   "paper_id": "2026-10-01-arxiv-benchmarking_average_atom_potentials_derived_from_atomic_cluster_expansions",
   "paper_title": "Benchmarking average atom potentials derived from atomic cluster expansions",
   "paper_date": "2026-10-01",
   "paper_category": "Crystal and Structure",
-  "generated_at": "2026-10-02T16:29:18",
+  "generated_at": "2026-10-04T15:39:49",
   "generator": "openai"
 }
