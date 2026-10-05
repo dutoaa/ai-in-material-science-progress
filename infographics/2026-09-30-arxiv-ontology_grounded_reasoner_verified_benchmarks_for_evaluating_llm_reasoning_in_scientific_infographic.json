@@ -1,17 +1,17 @@
 {
-  "key_insight": "The paper introduces an ontology-grounded pipeline that automatically generates reasoner-verified multiple-choice benchmarks to evaluate whether LLMs can perform logically correct scientific reasoning.",
-  "engineering_relevance": "This enables more reliable, scalable assessment of LLMs used in materials and biomedical AI, where incorrect reasoning can lead to unusable or unsafe outputs.",
+  "key_insight": "The paper introduces an ontology-grounded benchmark generator that creates multiple-choice reasoning tests with correct answers and verified distractors directly checked by an OWL reasoner.",
+  "engineering_relevance": "This enables more trustworthy evaluation of LLM reasoning for scientific AI in domains like materials and biomedicine, where logical errors can make outputs unusable.",
   "method": [
-    "Generate MCQs from sufficiently axiomatised OWL 2 ontologies.",
-    "Create distractors by perturbing right-hand-side class expressions in class definition axioms.",
-    "Use OWL reasoner entailment checks to verify that incorrect answers are truly non-entailed."
+    "Generate MCQs automatically from axiomatized OWL 2 ontologies.",
+    "Create distractors by perturbing right-hand-side class expressions in class definitions.",
+    "Verify distractor incorrectness with reasoner-based entailment checks."
   ],
-  "evidence_signal": "The authors generated 112, 2,491, and 15,216 MCQs from Pizza, PMDco, and DOID, and six zero-shot LLMs scored 41.1–76.8% accuracy versus a 25% random baseline.",
-  "watch_item": "Benchmark quality depends on the ontology’s axiomatization and may be harder to generalize when source knowledge is sparse, inconsistent, or poorly modeled.",
+  "evidence_signal": "The pipeline produced 112, 2,491, and 15,216 MCQs for Pizza, PMDco, and DOID, and six zero-shot LLMs achieved 41.1–76.8% accuracy versus a 25% random baseline.",
+  "watch_item": "The approach depends on sufficiently axiomatized OWL ontologies, so coverage and quality may be limited by ontology completeness and modeling style.",
   "hashtags": [
     "#LLMEvaluation",
     "#Ontology",
-    "#ReasoningBenchmarks",
+    "#OWL2",
     "#ScientificAI",
     "#MaterialsInformatics"
   ],
@@ -19,6 +19,6 @@
   "paper_title": "Ontology-Grounded, Reasoner-Verified Benchmarks for Evaluating LLM Reasoning in Scientific AI",
   "paper_date": "2026-09-30",
   "paper_category": "Crystal and Structure",
-  "generated_at": "2026-10-04T15:39:16",
+  "generated_at": "2026-10-05T19:30:16",
   "generator": "openai"
 }

@@ -1,24 +1,24 @@
 {
-  "key_insight": "EP-Flow predicts disordered crystal structures from chemical formulas by modeling site occupancies as a constrained occupancy distribution matrix instead of requiring site-level disorder labels.",
-  "engineering_relevance": "It enables practical discovery of functional disordered materials such as solid solutions, vacancy-rich phases, and interstitially occupied crystals when only composition is known.",
+  "key_insight": "EP-Flow reframes disordered crystal prediction as learning a continuous occupancy distribution matrix under physical constraints, enabling generation of substitutional disorder, vacancies, and interstitials from formula alone.",
+  "engineering_relevance": "This could accelerate discovery of functional materials where disorder is essential, such as solid solutions and vacancy-tuned compounds, without requiring site-level disorder labels.",
   "method": [
-    "Defines an Occupancy Distribution Matrix (ODM) to unify ordered and disordered crystals in one continuous representation.",
-    "Uses Entropic Polytope Flow to map heterogeneous formula-dependent constraint polytopes into a shared double-centered space.",
-    "Recovers feasible occupancies with a Sinkhorn inverse map while jointly generating occupancies, fractional coordinates, and lattice parameters."
+    "Represents each crystal as an Occupancy Distribution Matrix (ODM) over sites and species",
+    "Uses Entropic Polytope Flow to map heterogeneous feasible occupancies into a shared double-centered space while preserving marginals",
+    "Recovers valid occupancies with a Sinkhorn inverse map and jointly generates occupancies, fractional coordinates, and lattice parameters"
   ],
-  "evidence_signal": "The abstract reports state-of-the-art results on formula-conditioned disordered crystal structure prediction benchmarks derived from COD and MPDS, with better performance than adapted ordered-crystal generators.",
-  "watch_item": "Performance depends on solving constrained transport-like inference, so feasibility and numerical stability of the Sinkhorn-based inverse map may be a practical implementation concern.",
+  "evidence_signal": "The model is reported to achieve state-of-the-art performance on formula-conditioned disordered crystal structure prediction benchmarks built from COD and MPDS, outperforming adapted ordered-crystal generators.",
+  "watch_item": "Feasibility depends on satisfying coupled occupancy, mass-conservation, and non-negativity constraints, so robust Sinkhorn inversion and constraint handling will be critical in practice.",
   "hashtags": [
     "#MaterialsInformatics",
     "#CrystalStructurePrediction",
-    "#DisorderedMaterials",
     "#GenerativeAI",
-    "#Sinkhorn"
+    "#DisorderedMaterials",
+    "#ComputationalChemistry"
   ],
   "paper_id": "2026-10-01-arxiv-ep_flow_disordered_crystal_structure_prediction_without_site_level_annotations",
   "paper_title": "EP-Flow: Disordered Crystal Structure Prediction without Site-Level Annotations",
   "paper_date": "2026-10-01",
   "paper_category": "Crystal and Structure",
-  "generated_at": "2026-10-04T15:39:27",
+  "generated_at": "2026-10-05T19:30:44",
   "generator": "openai"
 }
