@@ -1,13 +1,13 @@
 {
-  "key_insight": "Universal machine-learning interatomic potentials can screen crystal database entries for physical plausibility, but their validation results depend strongly on the model used.",
-  "engineering_relevance": "MLIP-based relaxation offers a scalable first-pass quality check for large crystallography databases, helping prioritize structures for expert review.",
+  "key_insight": "Universal machine-learning interatomic potentials can automate crystallographic plausibility checks, but their error-detection performance is model-dependent and incomplete.",
+  "engineering_relevance": "MLIP-based relaxation offers a scalable screening layer for large crystal databases like COD, helping flag suspect structures faster than manual expert review.",
   "method": [
-    "Filtered 522,086 COD entries to 317,457 structurally usable crystals.",
-    "Relaxed the filtered set with M3GNet and checked convergence plus cell-volume change.",
-    "Compared M3GNet, CHGNet, PET-MAD, and PET-OAM on 524 manually selected structures to probe failure modes and error detection."
+    "Filtered 522,086 COD entries to 317,457 high-quality structures.",
+    "Relaxed structures with M3GNet and compared deposited vs relaxed volumes and convergence behavior.",
+    "Benchmarked M3GNet, CHGNet, PET-MAD, and PET-OAM on 524 manually selected cases with known or suspected errors."
   ],
-  "evidence_signal": "In the filtered COD set, 314,153 of 317,457 entries converged with M3GNet, while a manual study of 327 structures showed that no single threshold on energy, force, or displacement cleanly separates valid from invalid cases.",
-  "watch_item": "MLIP relaxations are model-dependent and can distort specific motifs, so a single potential should not be used as the sole validator.",
+  "evidence_signal": "Among filtered entries, 314,153 of 317,457 structures converged with little volume change, while manual review of 327 structures showed no single threshold cleanly separated valid from invalid structures.",
+  "watch_item": "Do not rely on one MLIP alone: models fail differently on motifs such as π ligands and heterocycles, so multi-model screening is safer than a single-model decision.",
   "hashtags": [
     "#MachineLearningPotentials",
     "#Crystallography",
@@ -19,6 +19,6 @@
   "paper_title": "Assessing the Reliability of Foundational Machine Learning Potentials for Evaluating the Veracity of the Crystallography Open Database",
   "paper_date": "2026-10-08",
   "paper_category": "Crystal and Structure",
-  "generated_at": "2026-10-09T17:18:51",
+  "generated_at": "2026-10-10T16:06:11",
   "generator": "openai"
 }

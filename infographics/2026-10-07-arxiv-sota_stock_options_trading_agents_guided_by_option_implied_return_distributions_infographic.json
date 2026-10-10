@@ -1,24 +1,24 @@
 {
-  "key_insight": "SOTA turns option trading into structured strategy selection, using an agent to choose the strategy while deterministic rules build the actual options portfolio.",
-  "engineering_relevance": "The framework reduces the complexity of trading thousands of option contracts by making the decision space strategy-level, which is useful for practical AI-assisted portfolio systems.",
+  "key_insight": "SOTA turns the option-trading problem into strategy-level decisions, letting an agent choose among option structures while deterministic modules build the actual portfolio.",
+  "engineering_relevance": "This reduces the combinatorial complexity of options trading and makes large-model agents more practical for adaptive, market-regime-aware strategy selection.",
   "method": [
-    "Post-trains Qwen3.8-27B with supervised fine-tuning and reinforcement learning.",
-    "Abstracts the option universe into strategy decisions, with deterministic resolvers executing the final trades.",
-    "Uses option-implied return distributions and news context to guide policy learning and action selection."
+    "Post-train Qwen3.8-27B with supervised fine-tuning, then reinforcement learning.",
+    "Abstract the huge option contract space into a smaller set of strategy choices.",
+    "Use deterministic resolvers to convert selected strategies into executable option portfolios."
   ],
-  "evidence_signal": "On a six-month out-of-sample test across options on nine large-cap U.S. equities plus SPY, SOTA achieved 18.3% total return, a 1.60 Sharpe ratio, and 8.96% maximum drawdown.",
-  "watch_item": "Retaining news during reinforcement learning caused performance to drop sharply out of sample, suggesting sensitivity to information leakage or train-test mismatch in the news pipeline.",
+  "evidence_signal": "Evaluated on options for nine large-cap U.S. equities plus SPY over a six-month out-of-sample period, achieving 18.3% total return, a 1.60 Sharpe ratio, and 8.96% maximum drawdown.",
+  "watch_item": "News appears helpful in supervised/frontier-teacher stages but harmful during reinforcement learning, so feature inclusion must be carefully staged to avoid severe out-of-sample degradation.",
   "hashtags": [
     "#AITrading",
     "#OptionsTrading",
-    "#AgenticAI",
     "#ReinforcementLearning",
+    "#LargeLanguageModels",
     "#QuantFinance"
   ],
   "paper_id": "2026-10-07-arxiv-sota_stock_options_trading_agents_guided_by_option_implied_return_distributions",
   "paper_title": "SOTA: Stock Options Trading Agents Guided by Option-Implied Return Distributions",
   "paper_date": "2026-10-07",
   "paper_category": "Crystal and Structure",
-  "generated_at": "2026-10-08T17:43:01",
+  "generated_at": "2026-10-10T16:06:21",
   "generator": "openai"
 }

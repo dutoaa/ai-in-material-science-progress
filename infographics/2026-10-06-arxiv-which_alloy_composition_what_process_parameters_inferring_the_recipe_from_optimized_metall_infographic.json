@@ -1,24 +1,24 @@
 {
-  "key_insight": "The study shows that optimized metallic microstructure and texture can be used to infer the likely alloy recipe and processing conditions, with conventional descriptors outperforming learned embeddings on this small magnesium extrusion dataset.",
-  "engineering_relevance": "This offers a data-driven route to reverse-engineer manufacturing settings from desired microstructures, supporting faster alloy/process selection in design and troubleshooting.",
+  "key_insight": "A metallic alloy’s microstructure and texture can be used to infer likely alloy composition and extrusion settings, with conventional descriptors outperforming learned image and graph embeddings in this small inverse-design study.",
+  "engineering_relevance": "This suggests reverse mapping from desired microstructure to manufacturing recipe could help guide alloy development and process selection when expert intuition is limited.",
   "method": [
-    "Compared three representations of microstructure/texture: hand-crafted grain/texture statistics, pretrained vision embeddings, and a graph neural network on grain networks.",
-    "Paired each descriptor with two prediction tasks: infer alloy composition from process conditions, and infer process parameters from composition.",
-    "Compared free regression heads with discrete, ordered classification heads for limited recipe/process options."
+    "Built an in-house dataset of 107 magnesium alloy extrusion cases spanning 14 alloys, with optical micrographs and X-ray texture measurements.",
+    "Compared three structure descriptors: conventional grain/texture statistics, pretrained vision embeddings, and a graph neural network on grain networks.",
+    "Used separate prediction heads for two inverse tasks: infer composition from process conditions and infer process parameters from composition."
   ],
-  "evidence_signal": "On 107 extrusion conditions across 14 magnesium alloys with optical micrographs and X-ray texture data, 5-fold cross-validation showed conventional descriptors correctly identified the alloy 65% of the time, versus 17% for always predicting the most common alloy, while learned embeddings stayed below 30% and microstructure roughly halved temperature error for process prediction.",
-  "watch_item": "The dataset is small and discrete in both alloys and press settings, so results may not generalize well beyond the specific in-house conditions and the ordered-classification design.",
+  "evidence_signal": "In 5-fold cross-validation, conventional descriptors identified the correct alloy for 65% of held-out cases versus 17% for the most-common-alloy baseline, while learned embeddings stayed below 30%; microstructure roughly halved temperature error versus composition alone.",
+  "watch_item": "The dataset is small and only covers a limited set of discrete alloys and press settings, so the reported inverse predictions may not generalize to broader continuous manufacturing spaces.",
   "hashtags": [
     "#MaterialsInformatics",
-    "#AlloyDesign",
     "#Microstructure",
-    "#TextureAnalysis",
+    "#AlloyDesign",
+    "#InverseDesign",
     "#MachineLearning"
   ],
   "paper_id": "2026-10-06-arxiv-which_alloy_composition_what_process_parameters_inferring_the_recipe_from_optimized_metall",
   "paper_title": "Which alloy composition,what process parameters? Inferring the recipe from optimized metallic microstructure and texture",
   "paper_date": "2026-10-06",
   "paper_category": "Crystal and Structure",
-  "generated_at": "2026-10-09T17:18:40",
+  "generated_at": "2026-10-10T16:05:59",
   "generator": "openai"
 }
