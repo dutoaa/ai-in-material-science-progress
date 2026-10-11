@@ -1,24 +1,24 @@
 {
-  "key_insight": "Universal machine-learning interatomic potentials can automate crystallographic plausibility checks, but their error-detection performance is model-dependent and incomplete.",
-  "engineering_relevance": "MLIP-based relaxation offers a scalable screening layer for large crystal databases like COD, helping flag suspect structures faster than manual expert review.",
+  "key_insight": "Universal machine-learning interatomic potentials can help screen crystallographic entries for physical plausibility, but their reliability is model-dependent and no single model catches all error types.",
+  "engineering_relevance": "For large materials databases, MLIP-based relaxation offers a scalable validation layer that can flag suspect structures faster than manual expert review, improving data curation workflows.",
   "method": [
-    "Filtered 522,086 COD entries to 317,457 high-quality structures.",
-    "Relaxed structures with M3GNet and compared deposited vs relaxed volumes and convergence behavior.",
-    "Benchmarked M3GNet, CHGNet, PET-MAD, and PET-OAM on 524 manually selected cases with known or suspected errors."
+    "Filtered 522,086 COD entries down to 317,457 high-quality structures.",
+    "Relaxed the structures with M3GNet and used convergence plus volume change as screening criteria.",
+    "Compared M3GNet, CHGNet, PET-MAD, and PET-OAM on 524 manually selected cases to probe failure modes."
   ],
-  "evidence_signal": "Among filtered entries, 314,153 of 317,457 structures converged with little volume change, while manual review of 327 structures showed no single threshold cleanly separated valid from invalid structures.",
-  "watch_item": "Do not rely on one MLIP alone: models fail differently on motifs such as π ligands and heterocycles, so multi-model screening is safer than a single-model decision.",
+  "evidence_signal": "In the full COD set, 314,153 of 317,457 filtered structures (99.0%) relaxed without a large cell-volume change, while manual review of 327 structures showed no single descriptor threshold cleanly separates valid from invalid entries.",
+  "watch_item": "Model-specific distortions and missed error types mean MLIP relaxation should be used as a multi-model screening aid, not a standalone validator.",
   "hashtags": [
+    "#MaterialsInformatics",
     "#MachineLearningPotentials",
     "#Crystallography",
-    "#MaterialsInformatics",
-    "#DatabaseValidation",
+    "#DataValidation",
     "#ComputationalMaterials"
   ],
   "paper_id": "2026-10-08-arxiv-assessing_the_reliability_of_foundational_machine_learning_potentials_for_evaluating_the_v",
   "paper_title": "Assessing the Reliability of Foundational Machine Learning Potentials for Evaluating the Veracity of the Crystallography Open Database",
   "paper_date": "2026-10-08",
   "paper_category": "Crystal and Structure",
-  "generated_at": "2026-10-10T16:06:11",
+  "generated_at": "2026-10-11T16:33:28",
   "generator": "openai"
 }
