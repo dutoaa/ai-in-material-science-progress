@@ -1,24 +1,24 @@
 {
-  "key_insight": "The paper turns aggregation-diffusion PDE solving into a variational neural transport problem, using a neural network to learn the velocity field that drives density evolution under Onsager's principle.",
-  "engineering_relevance": "This offers a scalable simulation strategy for nonlinear transport in materials and soft-matter systems where chemotaxis-, polymer-, and interaction-driven dynamics are expensive to solve directly.",
+  "key_insight": "The paper turns aggregation-diffusion PDEs into a variational optimal-control problem and learns a neural velocity field to transport densities while respecting the underlying physics.",
+  "engineering_relevance": "This offers a physics-informed surrogate for complex transport-driven materials and biological dynamics, enabling faster simulation of nonlocal nonlinear density evolution.",
   "method": [
-    "Formulate the PDE as a constrained optimal control problem with velocity as the control.",
-    "Evolve density with a continuity equation and train the velocity network on a variational objective along particle trajectories.",
-    "Couple density and generalized score equations with Euler time stepping for efficient loss evaluation and analysis."
+    "Reformulate the PDE using the Onsager variational principle with velocity as the control variable.",
+    "Evolve the density with a continuity equation along particle trajectories and train a neural network on the variational objective.",
+    "Couple density and generalized score equations, then use Euler time stepping for efficient loss evaluation and error analysis."
   ],
-  "evidence_signal": "The abstract reports numerical experiments on several representative models and a rigorous error analysis covering approximation, optimization, Monte Carlo sampling, and time-discretization errors.",
-  "watch_item": "Performance may depend on trajectory sampling, time-step stability, and the quality of score propagation, which can affect training cost and accuracy.",
+  "evidence_signal": "The abstract reports numerical experiments on several representative models, showing accuracy and effectiveness, alongside a theoretical error decomposition and bounds.",
+  "watch_item": "Performance may depend on the quality of time discretization, Monte Carlo sampling, and neural approximation, so stability and generalization should be checked carefully in new regimes.",
   "hashtags": [
-    "#NeuralPDE",
-    "#AggregationDiffusion",
+    "#NeuralPDEs",
     "#VariationalMethods",
-    "#ScientificMachineLearning",
-    "#MaterialsDiscovery"
+    "#AggregationDiffusion",
+    "#PhysicsInformedAI",
+    "#ComputationalScience"
   ],
   "paper_id": "2026-10-08-arxiv-variational_neural_transport_for_aggregation_diffusion_equations",
   "paper_title": "Variational neural transport for aggregation-diffusion equations",
   "paper_date": "2026-10-08",
   "paper_category": "Materials Discovery",
-  "generated_at": "2026-10-12T20:07:02",
+  "generated_at": "2026-10-13T17:56:35",
   "generator": "openai"
 }

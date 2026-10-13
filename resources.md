@@ -1,6 +1,6 @@
 # AI materials science Progress Public Resources
 
-Generated: 2026-10-12
+Generated: 2026-10-13
 Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 
 ## 1. Improved screening of doped ZrO$_2$ catalysts for CO$_2$ hydrogenation from graph-based machine learning
@@ -83,13 +83,13 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2610.13107v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-10-09-arxiv-role_of_composition_tuned_disorder_on_magnetic_exchange_interactions_in_nirumnga_infographic.json
 
-## 11. Which alloy composition,what process parameters? Inferring the recipe from optimized metallic microstructure and texture
+## 11. Resolving the interfacial mechanical landscape of monolayer NbSe2 grown by confined epitaxy
 
-- Date: 2026-10-06
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2610.08165v1
-- PDF: https://arxiv.org/pdf/2610.08165v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-10-06-arxiv-which_alloy_composition_what_process_parameters_inferring_the_recipe_from_optimized_metall_infographic.json
+- Date: 2026-10-07
+- Category: Microstructure
+- arXiv: https://arxiv.org/abs/2610.10725v1
+- PDF: https://arxiv.org/pdf/2610.10725v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-10-07-arxiv-resolving_the_interfacial_mechanical_landscape_of_monolayer_nbse2_grown_by_confined_epitax_infographic.json
 
 ## 12. Accelerating dynamic polarizability calculations of organic molecules using equivariant graph neural networks
 
@@ -155,10 +155,10 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2610.12739v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-10-08-arxiv-predictive_synthesis_of_mofs_and_cofs_infographic.json
 
-## 20. Resolving the interfacial mechanical landscape of monolayer NbSe2 grown by confined epitaxy
+## 20. Deep learning driven framework for optimization of polycrystalline microstructures under competing strength requirements
 
 - Date: 2026-10-07
-- Category: Microstructure
-- arXiv: https://arxiv.org/abs/2610.10725v1
-- PDF: https://arxiv.org/pdf/2610.10725v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-10-07-arxiv-resolving_the_interfacial_mechanical_landscape_of_monolayer_nbse2_grown_by_confined_epitax_infographic.json
+- Category: Materials Discovery
+- arXiv: https://arxiv.org/abs/2610.09461v1
+- PDF: https://arxiv.org/pdf/2610.09461v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-10-07-arxiv-deep_learning_driven_framework_for_optimization_of_polycrystalline_microstructures_under_c_infographic.json
