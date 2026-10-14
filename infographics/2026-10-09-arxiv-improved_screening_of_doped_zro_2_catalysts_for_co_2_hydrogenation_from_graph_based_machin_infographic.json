@@ -1,13 +1,13 @@
 {
-  "key_insight": "Adding local electronic-structure and surface-environment features to WWL-GPR lets a graph-based model predict dopant-dependent adsorption and transition-state energies on ZrO2 surfaces more accurately than simple linear scaling rules.",
-  "engineering_relevance": "This gives a more data-efficient way to screen doped oxide catalysts and better estimate downstream CH3OH yield trends without running DFT for every intermediate and transition state.",
+  "key_insight": "A graph-based machine-learning surrogate (WWL-GPR) predicts adsorption and transition-state energies on doped ZrO2 surfaces more accurately than linear scaling approaches, improving downstream CO2 hydrogenation yield estimates.",
+  "engineering_relevance": "This provides a data-efficient screening tool for rapidly ranking dopants in oxide catalysts, reducing the need for expensive DFT calculations in catalyst design workflows.",
   "method": [
-    "Represent adsorbate-surface structures as attributed graphs.",
-    "Train WWL-GPR with added oxide-relevant electronic and local-environment descriptors.",
-    "Benchmark against TSR for intermediates and BEP for transition states, then propagate predictions through microkinetic modeling."
+    "Represent adsorbate-surface structures as attributed graphs with connectivity plus electronic/local-environment features.",
+    "Train WWL-GPR models to predict intermediate adsorption energies and transition-state barriers on ZrO2(101) doped with Al, Cd, Ga, In, and Zn.",
+    "Propagate predicted energetics into microkinetic models and compare against TSR/BEP baselines and DFT-derived yields."
   ],
-  "evidence_signal": "The abstract reports that WWL-GPR consistently improves intermediate energetics over scaling relations, yields competitive transition-state estimates versus BEP, and produces CH3OH yields closer to DFT-derived values after microkinetic propagation.",
-  "watch_item": "Performance still depends on the quality and coverage of the training set, so extrapolation to new dopants, surfaces, or reaction conditions may be unreliable.",
+  "evidence_signal": "The abstract reports that WWL-GPR consistently outperforms thermodynamic scaling for intermediates and gives TS predictions competitive with BEP, with microkinetic CH3OH yields closer to DFT than the linear-relation workflow.",
+  "watch_item": "Performance is tied to the available dopant/structure space and may be less reliable when extrapolating to chemistries or surface motifs outside the training regime.",
   "hashtags": [
     "#MaterialsDiscovery",
     "#MachineLearning",
@@ -19,6 +19,6 @@
   "paper_title": "Improved screening of doped ZrO$_2$ catalysts for CO$_2$ hydrogenation from graph-based machine learning",
   "paper_date": "2026-10-09",
   "paper_category": "Materials Discovery",
-  "generated_at": "2026-10-13T17:55:54",
+  "generated_at": "2026-10-14T15:42:21",
   "generator": "openai"
 }
