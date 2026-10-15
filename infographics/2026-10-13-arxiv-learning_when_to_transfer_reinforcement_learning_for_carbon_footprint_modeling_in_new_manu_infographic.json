@@ -1,16 +1,16 @@
 {
-  "key_insight": "A reinforcement-learning policy can decide when to reuse source-domain knowledge and when to rely on target data, reducing negative transfer for carbon-footprint prediction in new manufacturing domains.",
-  "engineering_relevance": "This enables more reliable early-stage embodied-carbon estimates for new materials and processes in additive manufacturing, supporting faster design and sustainability decisions with limited target data.",
+  "key_insight": "A reinforcement-learning policy learns when to transfer knowledge from prior manufacturing domains, avoiding negative transfer while improving carbon-footprint prediction in a new target domain.",
+  "engineering_relevance": "The method helps manufacturers estimate embodied emissions earlier with limited data, supporting faster decision-making for sustainable process and product design.",
   "method": [
-    "Trains a selective transfer policy that compares source-based predictors against supervised alternatives.",
-    "Uses a validation gate to accept transferred predictions only when they outperform target-only or fully pooled models.",
-    "Applied to embodied GHG prediction for material-extrusion AM using 22 material, process, and toolpath features."
+    "Learns a transfer policy that selects among source-specific models, subsets of sources, pooled sources, or target-only prediction.",
+    "Uses a validation gate to deploy transferred predictions only when they beat supervised alternatives.",
+    "Designed to predict carbon-accounting variables and other performance/quality outcomes from limited new-domain data."
   ],
-  "evidence_signal": "On 729 experiments across five materials, leave-one-material-out testing achieved a mean RMSE of 5.2 g CO2e per part, outperforming target-only training by 20.00% and source-target pooling by 10.30%.",
-  "watch_item": "Performance depends on having enough representative source domains and a reliable validation split; poorly matched source data can still limit transfer if the gating policy is not well calibrated.",
+  "evidence_signal": "Evaluated on 729 material-extrusion 3D-printing experiments across five polymers, with leave-one-material-out testing; mean test RMSE was 5.2 g CO2e per part, outperforming target-only training and source-target pooling.",
+  "watch_item": "Performance depends on having representative source domains and careful validation gating; poorly matched sources can still cause negative transfer if the policy is not well trained.",
   "hashtags": [
-    "#TransferLearning",
     "#ReinforcementLearning",
+    "#TransferLearning",
     "#CarbonFootprint",
     "#AdditiveManufacturing",
     "#MaterialsInformatics"
@@ -19,6 +19,6 @@
   "paper_title": "Learning When to Transfer: Reinforcement Learning for Carbon-Footprint Modeling in New Manufacturing Domains",
   "paper_date": "2026-10-13",
   "paper_category": "Property Prediction",
-  "generated_at": "2026-10-14T15:42:10",
+  "generated_at": "2026-10-15T15:29:48",
   "generator": "openai"
 }

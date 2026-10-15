@@ -1,13 +1,13 @@
 {
-  "key_insight": "A trust-limited Gaussian-process surrogate can accelerate NEB calculations for small-polaron hopping while preserving DFT-level verification through controlled sampling and force limits.",
-  "engineering_relevance": "This enables more practical computation of charge-transport barriers in correlated materials like TiO2, supporting faster screening of ionic/electronic migration pathways.",
+  "key_insight": "A trust-limited Gaussian-process surrogate can accelerate NEB path searches for polaron hopping while staying anchored to DFT-verified configurations.",
+  "engineering_relevance": "This enables more reproducible migration-barrier calculations for defect and ion-transport studies in complex materials where self-consistent electronic localization makes standard NEB expensive.",
   "method": [
-    "Joint energy-force Gaussian process with Matérn covariance guides NEB image updates",
-    "Active-atom RMS and max displacement trust limits trigger first-principles DFT resampling",
-    "Independent full-band DFT verification checks final pathway and barrier convergence"
+    "Joint energy-force Gaussian process with Matérn covariance guides elastic-band updates.",
+    "Active-atom RMS and max-displacement trust limits trigger new first-principles samples before surrogate drift.",
+    "Independent full-band DFT verification is used to confirm the final NEB path and forces."
   ],
-  "evidence_signal": "Three independently verified 96-atom runs produced consistent barriers of 0.1637–0.1645 eV, with a final full-band maximum projected force of 0.0346 eV/Å.",
-  "watch_item": "Barrier values changed in the larger 324-atom supercell, so results remain sensitive to supercell size and surrogate calibration near charge-transfer switching.",
+  "evidence_signal": "Three 96-atom DFT-verified runs with 11, 13, and 15 images produced consistent barriers of 0.1645, 0.1637, and 0.1640 eV, and a 324-atom run gave 0.1302 eV.",
+  "watch_item": "Results are sensitive to supercell size and charge-transfer-region localization switching, so surrogate settings and verification steps must be carefully calibrated.",
   "hashtags": [
     "#MaterialsDiscovery",
     "#MachineLearning",
@@ -19,6 +19,6 @@
   "paper_title": "Trust-Limited Machine-Learning-Accelerated Nudged Elastic Band Calculations for Small-Polaron Hopping in Rutile TiO2",
   "paper_date": "2026-10-12",
   "paper_category": "Materials Discovery",
-  "generated_at": "2026-10-14T15:42:18",
+  "generated_at": "2026-10-15T15:29:54",
   "generator": "openai"
 }
