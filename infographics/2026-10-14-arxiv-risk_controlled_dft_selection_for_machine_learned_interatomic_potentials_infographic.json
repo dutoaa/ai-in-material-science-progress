@@ -1,24 +1,24 @@
 {
-  "key_insight": "The paper turns DFT labeling into a risk-controlled selection problem, using conformal risk control to decide which configurations can safely keep cheaper MLIP predictions and which must be sent to DFT.",
-  "engineering_relevance": "This gives materials workflows a principled way to cut expensive DFT calls while guaranteeing that the retained MLIP predictions stay within a user-chosen error budget.",
+  "key_insight": "A lightweight structure-only predictor, calibrated with conformal risk control, can decide when MLIP predictions are trustworthy enough to skip DFT while guaranteeing bounded residual error.",
+  "engineering_relevance": "This enables faster automated materials screening by reducing expensive DFT labeling calls without sacrificing a user-defined error-risk target.",
   "method": [
-    "Encode each structure from atomic numbers and Cartesian coordinates into a fixed geometric descriptor.",
-    "Train a lightweight predictor to estimate MLIP–DFT disagreement in energy, average force, and maximum force.",
-    "Calibrate the disagreement score with conformal risk control to set a DFT-selection threshold with a user-defined risk level α."
+    "Map atomic numbers and Cartesian coordinates to a fixed geometric descriptor.",
+    "Predict MLIP-DFT disagreement in energy, average force, and maximum force with a lightweight model.",
+    "Use conformal risk control to set a DFT-selection threshold that controls the expected error of retained MLIP labels at level α."
   ],
-  "evidence_signal": "Across eight dataset–MLIP pairs, the method meets the same risk guarantee and routes 7%–14% fewer configurations to DFT at α=0.3 than committee baselines.",
-  "watch_item": "Performance depends on the calibration setting and may shrink when committee methods already capture the dominant errors, especially if DFT labels and MLIP training data use the same functional and basis set.",
+  "evidence_signal": "Across eight dataset-MLIP pairs, the method met the same risk guarantee while sending 7% and 14% fewer configurations to DFT than committee baselines at α=0.3.",
+  "watch_item": "Performance depends on calibration and can shrink when committee methods already capture the same errors, especially when DFT labels and MLIP training data use the same functional and basis set.",
   "hashtags": [
-    "#MaterialsInformatics",
-    "#MachineLearnedPotentials",
-    "#DFT",
+    "#MachineLearningPotentials",
+    "#DensityFunctionalTheory",
     "#ConformalPrediction",
-    "#ActiveLearning"
+    "#MaterialsDiscovery",
+    "#ComputationalMaterials"
   ],
   "paper_id": "2026-10-14-arxiv-risk_controlled_dft_selection_for_machine_learned_interatomic_potentials",
   "paper_title": "Risk-Controlled DFT Selection for Machine-Learned Interatomic Potentials",
   "paper_date": "2026-10-14",
   "paper_category": "Crystal and Structure",
-  "generated_at": "2026-10-15T15:29:27",
+  "generated_at": "2026-10-16T15:12:14",
   "generator": "openai"
 }

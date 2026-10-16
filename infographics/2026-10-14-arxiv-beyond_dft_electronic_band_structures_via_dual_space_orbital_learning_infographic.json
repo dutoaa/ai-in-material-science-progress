@@ -1,24 +1,24 @@
 {
-  "key_insight": "O-kRystal learns orbital-informed corrections from cheap PBE calculations to predict higher-level band structures, achieving HSE06-level accuracy across diverse materials and even unseen k-points.",
-  "engineering_relevance": "This enables faster, more scalable electronic-structure screening for semiconductors, correlated materials, and 2D systems without running full high-cost calculations everywhere.",
+  "key_insight": "O-kRystal learns orbital-aware corrections to cheap PBE band structures, enabling near-HSE06 momentum-resolved electronic bands without running expensive high-level calculations.",
+  "engineering_relevance": "This gives materials engineers a faster path to screen and compare electronic properties—such as band gaps, band ordering, and density of states—across large material libraries.",
   "method": [
-    "Uses PBE as both an energy baseline and a source of real- and reciprocal-space orbital matrices.",
-    "Predicts state-by-state corrections to band energies as functions of crystal momentum and spin.",
-    "Trained at high-symmetry points, then generalized to band paths and dense Brillouin-zone density-of-states reconstruction."
+    "Uses PBE as the baseline energy source and orbital feature provider.",
+    "Combines real-space and reciprocal-space orbital matrices to predict state-by-state energy corrections.",
+    "Trains on high-symmetry points and generalizes to unseen k-points and even G0W0 targets for 2D systems."
   ],
-  "evidence_signal": "Across nearly 6,000 3D materials, the model predicts HSE06 band energies within 5 eV of the band-edge midpoint with 0.171 ± 0.009 eV MAE, and it also improves six strongly correlated materials by 68.7% over PBE.",
-  "watch_item": "Accuracy may drop for states far from the band-edge window or for systems whose orbital character differs substantially from the training distribution.",
+  "evidence_signal": "Across nearly 6,000 3D materials, the model predicts HSE06 band energies within 5 eV of the band-edge midpoint with MAE 0.171 ± 0.009 eV, and it also improves strongly correlated materials by 68.7% over PBE.",
+  "watch_item": "Performance is reported mainly near the band-edge region and at k-point settings seen indirectly through training, so extreme extrapolation or low-data material classes may require extra validation.",
   "hashtags": [
     "#MaterialsInformatics",
-    "#BandStructure",
+    "#ElectronicStructure",
+    "#DensityFunctionalTheory",
     "#MachineLearning",
-    "#DFT",
     "#ComputationalMaterials"
   ],
   "paper_id": "2026-10-14-arxiv-beyond_dft_electronic_band_structures_via_dual_space_orbital_learning",
   "paper_title": "Beyond DFT electronic band structures via dual-space orbital learning",
   "paper_date": "2026-10-14",
   "paper_category": "Crystal and Structure",
-  "generated_at": "2026-10-15T15:29:33",
+  "generated_at": "2026-10-16T15:12:22",
   "generator": "openai"
 }

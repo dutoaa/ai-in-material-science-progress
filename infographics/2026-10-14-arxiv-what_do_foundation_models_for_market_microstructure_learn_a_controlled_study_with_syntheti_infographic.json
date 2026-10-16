@@ -1,13 +1,13 @@
 {
-  "key_insight": "Training GPT-style models on synthetic limit order book streams reveals that they learn amortized Bayesian inference over market regimes, not just next-token statistics.",
-  "engineering_relevance": "The study shows foundation-model pretraining can recover latent simulator parameters and transfer to real NASDAQ order flow, suggesting a path to more interpretable and data-efficient market microstructure models.",
+  "key_insight": "Training GPT-style models on synthetic limit order book streams reveals that they learn amortized Bayesian inference over hidden market regimes, not just next-token imitation.",
+  "engineering_relevance": "This suggests foundation models can be used as fast, low-cost estimators and predictors of market microstructure parameters, with potential for regime detection and calibrated simulation.",
   "method": [
-    "Train autoregressive transformers on synthetic order-flow sequences from simulators with known latent states.",
-    "Benchmark predictions against exact Bayes-optimal and oracle predictors using entropy-aware evaluation.",
-    "Probe frozen activations with linear readouts to decode latent regimes and test zero-shot transfer to real data."
+    "Train autoregressive transformers on synthetic order-flow from simulators with known latent state and entropy.",
+    "Compare model predictions to exact Bayes-optimal and oracle predictors under stationary and drifting regimes.",
+    "Probe frozen activations to linearly decode latent simulator parameters and test zero-shot transfer to real NASDAQ data."
   ],
-  "evidence_signal": "The model’s next-token predictions match the exact Bayes optimum to within a millinat per token, latent regimes are linearly decodable, and enriched simulator mixtures improve zero-shot NASDAQ transfer.",
-  "watch_item": "Results depend strongly on how well the simulator prior covers real market flow, so mismatch between synthetic and real regimes may limit deployment.",
+  "evidence_signal": "The abstract reports near-Bayes-optimal prediction within a millinat per token, strong latent-state decodability, and improved zero-shot transfer when the simulator prior better matches real flow.",
+  "watch_item": "Results depend on how well the synthetic simulator prior covers real market dynamics, so transfer to unseen markets may degrade if the prior is misspecified.",
   "hashtags": [
     "#FoundationModels",
     "#MarketMicrostructure",
@@ -19,6 +19,6 @@
   "paper_title": "What Do Foundation Models for Market Microstructure Learn? A Controlled Study with Synthetic Limit Order Books",
   "paper_date": "2026-10-14",
   "paper_category": "Materials Discovery",
-  "generated_at": "2026-10-15T15:29:20",
+  "generated_at": "2026-10-16T15:12:00",
   "generator": "openai"
 }
