@@ -24,29 +24,29 @@
         "url": "https://arxiv.org/pdf/2610.20779v1"
       }
     ],
-    "score": 78,
+    "score": 73,
     "infographic": {
-      "key_insight": "LLM agents struggle to reliably assemble high-fidelity MBPT workflows on their own, but an expert-curated, deterministic framework can make GW, GW-BSE, and GWPT calculations runnable and consistent.",
-      "engineering_relevance": "This work shows that reliable agentic automation in computational materials science requires encoded domain knowledge and controlled execution, not just a stronger model.",
+      "key_insight": "LLM agents alone are unreliable for complex MBPT workflows, but a knowledge-engineered, deterministic framework can make GW, GW-BSE, and GWPT calculations fully runnable and consistent.",
+      "engineering_relevance": "This work shows that high-fidelity computational materials pipelines can be made agentic without sacrificing correctness by encoding expert knowledge and enforcing deterministic execution.",
       "method": [
-        "Benchmarked frontier and open-weight LLM agents on GW, GW-BSE, and GWPT workflow construction.",
-        "Built AI-Donkey, combining expert-curated workflow knowledge with deterministic execution.",
-        "Demonstrated autonomous calculation and post-processing on 1D, 2D, and bulk materials."
+        "Benchmarked out-of-the-box LLM agents on GW, GW-BSE, and GWPT workflow construction.",
+        "Built AI-Donkey, combining expert-curated domain knowledge with deterministic software orchestration.",
+        "Validated autonomous calculations and post-processing across 1D, 2D, and bulk materials."
       ],
-      "evidence_signal": "Out-of-the-box agent performance averaged 54% on GW, 36% on GW-BSE, and 19% on GWPT benchmarks, with large run-to-run variation that disappeared under AI-Donkey.",
-      "watch_item": "The framework likely depends on careful expert curation and may need continuous updates as software stacks, parameters, and MBPT best practices evolve.",
+      "evidence_signal": "Across tested model-harness combinations, out-of-the-box agents averaged 54% on GW, 36% on GW-BSE, and 19% on GWPT, with large run-to-run variation; AI-Donkey removed observed variation and produced complete runnable workflows.",
+      "watch_item": "Performance depends on curated domain knowledge and deterministic setup, so the framework may require substantial expert maintenance when software stacks or protocols change.",
       "hashtags": [
         "#AIforScience",
         "#MaterialsInformatics",
         "#LLMAgents",
-        "#MBPT",
-        "#ComputationalMaterials"
+        "#QuantumMaterials",
+        "#ComputationalPhysics"
       ],
       "paper_id": "2026-10-14-arxiv-enabling_large_language_model_agents_for_high_fidelity_many_body_perturbation_theory_calcu",
       "paper_title": "Enabling large language model agents for high-fidelity many-body perturbation theory calculations",
       "paper_date": "2026-10-14",
       "paper_category": "AI materials science",
-      "generated_at": "2026-10-16T15:11:53",
+      "generated_at": "2026-10-17T14:03:16",
       "generator": "openai"
     }
   },
@@ -75,17 +75,17 @@
         "url": "https://arxiv.org/pdf/2610.20063v1"
       }
     ],
-    "score": 77,
+    "score": 72,
     "infographic": {
-      "key_insight": "MACE-driven molecular dynamics can reproduce DFT sorption trends for point defects in 2D materials and extend the analysis to finite temperature.",
-      "engineering_relevance": "This enables much faster high-throughput prescreening of defect behavior in 2D materials before reserving expensive DFT for final validation.",
+      "key_insight": "MACE-accelerated molecular dynamics can reproduce DFT-level sorption trends for point defects in 2D materials and extend the screening to finite temperature.",
+      "engineering_relevance": "This enables much faster high-throughput prescreening of defect candidates for 2D materials where adsorption or absorption behavior matters, while reserving expensive DFT for final validation.",
       "method": [
-        "Simulated 17,624 defect structures from the ADAQ database with the MACE machine-learning interatomic potential.",
-        "Ran accelerated molecular dynamics at 0 K and 300 K to compare adsorption vs. absorption behavior.",
-        "Benchmarked the predicted sorption trends against prior high-throughput DFT results."
+        "Simulated 17,624 defect structures from the ADAQ database with the MACE machine learning interatomic potential.",
+        "Compared sorption behavior at 0 K against prior DFT high-throughput results.",
+        "Extended the analysis to 300 K using MACE-accelerated molecular dynamics to probe finite-temperature effects."
       ],
-      "evidence_signal": "Across 17,624 simulated defect structures, MACE reproduced the overall DFT sorption trends at 0 K, and the qualitative trends remained largely unchanged at 300 K.",
-      "watch_item": "MACE is useful for screening, but quantitative defect energetics and final stability assessments still require DFT-level validation.",
+      "evidence_signal": "The abstract reports that MACE reproduces the overall 0 K sorption trends from DFT and that the qualitative trends remain largely unchanged at 300 K.",
+      "watch_item": "MACE is useful for prescreening, but DFT is still needed to confirm quantitative defect energetics and ensure transferability for specific defect chemistries.",
       "hashtags": [
         "#MaterialsDiscovery",
         "#MachineLearningPotentials",
@@ -97,7 +97,7 @@
       "paper_title": "Sorption Molecular Dynamics of Point Defects in 2D Materials with a Machine Learning Potential",
       "paper_date": "2026-10-14",
       "paper_category": "Materials Discovery",
-      "generated_at": "2026-10-16T15:11:55",
+      "generated_at": "2026-10-17T14:03:17",
       "generator": "openai"
     }
   },
@@ -126,29 +126,29 @@
         "url": "https://arxiv.org/pdf/2610.16521v1"
       }
     ],
-    "score": 75,
+    "score": 70,
     "infographic": {
-      "key_insight": "A neural network potential trained on first-principles data can accurately model oxygen-vacancy formation and long-time diffusion in SrTiO3 at scales that are impractical for direct ab initio molecular dynamics.",
-      "engineering_relevance": "This enables more reliable prediction of defect-driven transport in perovskite oxides, supporting materials design for electronic, ionic, and functional oxide devices.",
+      "key_insight": "A neural network potential trained on first-principles data can reproduce oxygen-vacancy energetics and enable long-timescale diffusion simulations in SrTiO3 with near-experimental accuracy.",
+      "engineering_relevance": "This provides a practical multiscale modeling route for predicting defect transport in perovskite oxides, which is important for electronic devices, membranes, and oxide reliability.",
       "method": [
-        "Train an NNP on AIMD/DFT reference data for pristine and oxygen-deficient SrTiO3.",
-        "Validate energies, forces, virials, and vacancy formation energies across supercell sizes, including the dilute-limit extrapolation.",
-        "Run large-scale, long-time NNP-driven MD to compute vacancy diffusion and Arrhenius migration enthalpy."
+        "Built an NNP from AIMD reference data for pristine and oxygen-deficient SrTiO3.",
+        "Validated energies, forces, virials, and vacancy formation energies across supercell sizes.",
+        "Used NNP-driven molecular dynamics to compute vacancy diffusion and Arrhenius migration enthalpy."
       ],
-      "evidence_signal": "The NNP reproduces DFT energetics and defect trends, and its diffusion coefficients agree substantially better with experiment than conventional classical MD, yielding a migration enthalpy of 0.64 eV versus the experimental 0.67 eV.",
-      "watch_item": "Performance depends on the coverage of the AIMD training set, so transferability to other defect types, concentrations, temperatures, or strain states should be checked before deployment.",
+      "evidence_signal": "The NNP matched DFT reference quantities and yielded a vacancy migration enthalpy of 0.64 eV, close to the experimental 0.67 eV.",
+      "watch_item": "Accuracy depends on the quality and coverage of the AIMD training set, so extrapolation to other defect types, temperatures, or chemistries may require retraining.",
       "hashtags": [
         "#NeuralNetworkPotential",
         "#SrTiO3",
         "#OxygenVacancy",
-        "#MolecularDynamics",
-        "#PerovskiteOxides"
+        "#MaterialsSimulation",
+        "#DefectDiffusion"
       ],
       "paper_id": "2026-10-12-arxiv-theoretical_investigation_of_oxygen_vacancy_diffusion_in_srtio_3_using_neural_network_pote",
       "paper_title": "Theoretical Investigation of Oxygen-Vacancy Diffusion in SrTiO$_3$ using Neural Network Potentials",
       "paper_date": "2026-10-12",
       "paper_category": "Microstructure",
-      "generated_at": "2026-10-16T15:11:58",
+      "generated_at": "2026-10-17T14:03:20",
       "generator": "openai"
     }
   },
@@ -177,17 +177,17 @@
         "url": "https://arxiv.org/pdf/2610.20104v1"
       }
     ],
-    "score": 73,
+    "score": 68,
     "infographic": {
-      "key_insight": "Training GPT-style models on synthetic limit order book streams reveals that they learn amortized Bayesian inference over hidden market regimes, not just next-token imitation.",
-      "engineering_relevance": "This suggests foundation models can be used as fast, low-cost estimators and predictors of market microstructure parameters, with potential for regime detection and calibrated simulation.",
+      "key_insight": "Training GPT-style models on synthetic limit order book data reveals they learn amortized Bayesian inference over hidden market regimes, not just next-token statistics.",
+      "engineering_relevance": "This suggests foundation models for market microstructure can be used as fast, low-cost surrogates for regime estimation and simulator parameter calibration in trading-system design.",
       "method": [
-        "Train autoregressive transformers on synthetic order-flow from simulators with known latent state and entropy.",
-        "Compare model predictions to exact Bayes-optimal and oracle predictors under stationary and drifting regimes.",
-        "Probe frozen activations to linearly decode latent simulator parameters and test zero-shot transfer to real NASDAQ data."
+        "Train autoregressive transformers on synthetic order-flow streams from simulators with known latent states.",
+        "Compare model predictions against exact Bayes-optimal and oracle predictors using the known data entropy.",
+        "Probe frozen activations to decode latent regimes and test transfer to real NASDAQ order flow."
       ],
-      "evidence_signal": "The abstract reports near-Bayes-optimal prediction within a millinat per token, strong latent-state decodability, and improved zero-shot transfer when the simulator prior better matches real flow.",
-      "watch_item": "Results depend on how well the synthetic simulator prior covers real market dynamics, so transfer to unseen markets may degrade if the prior is misspecified.",
+      "evidence_signal": "Across controlled synthetic benchmarks, predictive loss matched the Bayes optimum to within a millinat per token and latent regimes were linearly decodable; on NASDAQ data, a richer simulator mixture nearly closed the zero-shot gap to an in-domain baseline.",
+      "watch_item": "Results depend strongly on how well the simulator family covers real market dynamics, so poor prior coverage can limit zero-shot transfer despite strong synthetic performance.",
       "hashtags": [
         "#FoundationModels",
         "#MarketMicrostructure",
@@ -199,7 +199,7 @@
       "paper_title": "What Do Foundation Models for Market Microstructure Learn? A Controlled Study with Synthetic Limit Order Books",
       "paper_date": "2026-10-14",
       "paper_category": "Materials Discovery",
-      "generated_at": "2026-10-16T15:12:00",
+      "generated_at": "2026-10-17T14:03:22",
       "generator": "openai"
     }
   },
@@ -229,20 +229,20 @@
         "url": "https://arxiv.org/pdf/2610.20374v1"
       }
     ],
-    "score": 71,
+    "score": 66,
     "infographic": {
-      "key_insight": "A graph neural network can encode diverse acyclic AB multiblock copolymer architectures in a common representation that accurately predicts RPA instability limits and generalizes to more complex chain topologies.",
-      "engineering_relevance": "This provides a transferable machine-learning tool for faster block-copolymer phase-behavior screening and could reduce costly theory-driven exploration of ordered-phase design spaces.",
+      "key_insight": "A graph neural network can represent diverse acyclic AB multiblock copolymer chain architectures in a single common format and accurately predict RPA instability limits.",
+      "engineering_relevance": "This provides a reusable surrogate model for rapidly screening block-copolymer architectures and guiding phase-behavior design without exhaustive field-theoretic calculations.",
       "method": [
-        "Represent each polymer chain as a graph to capture chain topology and block connectivity.",
-        "Train a GNN on RPA-related instability data to predict stability-limit curves across architectures.",
-        "Test transferability by extrapolating to more-block architectures and to instability-wavenumber prediction."
+        "Represent each copolymer chain as a graph to encode topology and block connectivity.",
+        "Train a GNN to learn architecture-to-instability mappings from RPA data.",
+        "Transfer the learned representation to predict instability wavenumbers across new tasks."
       ],
-      "evidence_signal": "The abstract reports that the model reconstructs RPA stability-limit curves, retains predictive capability when extrapolated to architectures with more blocks, and transfers to instability-wavenumber prediction.",
-      "watch_item": "Performance may depend on the training distribution of acyclic AB multiblock topologies, so extrapolation to very different architectures or new physics beyond RPA should be validated carefully.",
+      "evidence_signal": "The abstract reports that the model reconstructs stability-limit curves and retains predictive capability when extrapolated to architectures with more blocks.",
+      "watch_item": "Performance may degrade for topologies or physicochemical conditions outside the acyclic AB multiblock space used to train and validate the representation.",
       "hashtags": [
-        "#BlockCopolymers",
-        "#GraphNeuralNetworks",
+        "#GraphNeuralNetwork",
+        "#BlockCopolymer",
         "#PolymerPhysics",
         "#RPA",
         "#MaterialsInformatics"
@@ -251,7 +251,7 @@
       "paper_title": "Effective Graph Neural Representation of Chain Architectures of Block Copolymers Tested by Predicting RPA Instability Limits",
       "paper_date": "2026-10-14",
       "paper_category": "Microstructure",
-      "generated_at": "2026-10-16T15:12:03",
+      "generated_at": "2026-10-17T14:03:24",
       "generator": "openai"
     }
   },
@@ -280,29 +280,29 @@
         "url": "https://arxiv.org/pdf/2610.20886v1"
       }
     ],
-    "score": 68,
+    "score": 63,
     "infographic": {
-      "key_insight": "Charge injection from metallic nanoparticles into adsorbed CO is strongly material-dependent, with hot-electron transfer consistently exceeding hot-hole transfer because CO’s LUMO lies closer to the metal Fermi level than its HOMO.",
-      "engineering_relevance": "The study identifies which nanoparticle metals are most promising for photocatalytic designs that exploit direct light-induced charge injection rather than relying on slow thermalized carriers.",
+      "key_insight": "Direct light-driven charge injection from metallic nanoparticles into adsorbed CO is strongly material-dependent, with electron injection dominating because the CO LUMO lies closer to the metal Fermi level than the HOMO.",
+      "engineering_relevance": "The results provide design guidance for choosing nanoparticle metals that maximize photocatalytic charge transfer efficiency for specific surface reactions.",
       "method": [
-        "Ab initio DFT is used to model adsorbate–metal electronic interactions for CO on metal surfaces.",
-        "A macroscopic electrodynamics model describes localized surface plasmon excitation in large spherical nanoparticles.",
-        "The combined framework is applied across nine metals: Ag, Au, Cu, Al, Ni, Rh, Pd, Ir, and Pt."
+        "Combined ab initio density functional theory for adsorbate–metal interactions with a macroscopic electrodynamics model of localized surface plasmons.",
+        "Computed hot-electron and hot-hole injection rates for large spherical nanoparticles.",
+        "Compared nine metals spanning plasmonic, emerging plasmonic, and non-plasmonic candidates."
       ],
-      "evidence_signal": "The abstract reports a comparative screening across nine metals, showing the largest optical-range electron injection for Al, Ag, Cu, and Au, with Cu and Au benefiting from significant plasmonic enhancement.",
-      "watch_item": "The conclusions are specific to large spherical nanoparticles and CO adsorption, so transferability to other shapes, sizes, or adsorbates may require recalculation.",
+      "evidence_signal": "The study evaluates predicted injection rates across nine metals and finds the largest optical-range electron injection for Al, Ag, Cu, and Au, with Cu and Au showing strong plasmonic enhancement.",
+      "watch_item": "The results are specific to spherical nanoparticles and CO adsorption, so performance may differ for other shapes, adsorbates, or surface chemistries.",
       "hashtags": [
         "#Plasmonics",
-        "#HotCarrierInjection",
-        "#Nanoparticles",
         "#Photocatalysis",
-        "#DFT"
+        "#Nanoparticles",
+        "#ChargeInjection",
+        "#ComputationalMaterials"
       ],
       "paper_id": "2026-10-14-arxiv-material_dependence_of_direct_light_induced_charge_injection_from_metallic_nanoparticles_i",
       "paper_title": "Material dependence of direct light-induced charge injection from metallic nanoparticles into adsorbates",
       "paper_date": "2026-10-14",
       "paper_category": "Microstructure",
-      "generated_at": "2026-10-16T15:12:06",
+      "generated_at": "2026-10-17T14:03:26",
       "generator": "openai"
     }
   },
@@ -331,29 +331,29 @@
         "url": "https://arxiv.org/pdf/2610.21718v1"
       }
     ],
-    "score": 67,
+    "score": 62,
     "infographic": {
-      "key_insight": "MECx accelerates discovery of low-energy ordered alloy configurations by steering Monte Carlo search with a bond-count-informed surrogate model instead of running DFT at every step.",
-      "engineering_relevance": "This enables more practical prediction of ordering in multi-principal element alloys, helping design compositions with target local structure, thermodynamics, and potentially measurable diffraction signatures.",
+      "key_insight": "MECx uses a bond-informed surrogate model to efficiently search huge alloy configuration spaces and find lower-energy ordered states than direct DFT Monte Carlo within practical limits.",
+      "engineering_relevance": "This enables faster discovery of ordered multi-principal element alloy structures that can tune local order, thermodynamics, and mechanical behavior for alloy design.",
       "method": [
-        "Train a surrogate energy model on 100 DFT-labeled configurations stratified by bond-count space.",
-        "Use the surrogate to guide Monte Carlo exploration of ternary, quaternary, and quinary BCC alloy configurational spaces.",
-        "Validate transferability on selected binary subsystems and compare ordered states against direct DFT-based Monte Carlo."
+        "Train surrogate energy models on 100 DFT-labeled configurations stratified by bond-count space.",
+        "Use the surrogate to guide Monte Carlo exploration of ternary, quaternary, and quinary BCC alloy configuration spaces.",
+        "Validate the predicted ordered states against direct DFT-based Monte Carlo, temperature evolution, and simulated neutron diffraction."
       ],
-      "evidence_signal": "Across ternary, quaternary, and quinary BCC alloys, the method found lower-energy ordered configurations than direct DFT-based Monte Carlo within practical limits, and the predicted states produced distinguishable superlattice reflections in simulated neutron diffraction.",
-      "watch_item": "Performance depends on the quality and representativeness of the compact training set, so insufficient bond-space coverage could limit surrogate reliability in new alloy systems.",
+      "evidence_signal": "In tests on ternary through quinary BCC alloys, MECx found ordered configurations with lower energies than direct DFT-based Monte Carlo and showed transfer to selected binary subsystems without retraining.",
+      "watch_item": "Performance depends on a compact but representative DFT training set, so transferability and robustness may vary outside the tested alloy chemistries and structure types.",
       "hashtags": [
         "#MaterialsInformatics",
         "#AlloyDesign",
-        "#MonteCarlo",
         "#DFT",
+        "#MonteCarloSearch",
         "#SurrogateModel"
       ],
       "paper_id": "2026-10-15-arxiv-bond_informed_search_for_ordered_configurations_in_multi_principal_element_alloys",
       "paper_title": "Bond-informed search for ordered configurations in multi-principal element alloys",
       "paper_date": "2026-10-15",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-10-16T15:12:09",
+      "generated_at": "2026-10-17T14:03:28",
       "generator": "openai"
     }
   },
@@ -382,29 +382,29 @@
         "url": "https://arxiv.org/pdf/2610.16467v1"
       }
     ],
-    "score": 67,
+    "score": 62,
     "infographic": {
-      "key_insight": "DFT-trained machine-learning force fields can reproduce the martensitic transformation dynamics of Ni2MnGa, capturing soft phonons and nanotwinned martensite formation at finite temperature.",
-      "engineering_relevance": "This enables near-DFT-accuracy molecular dynamics on larger length and time scales, supporting design and analysis of magnetic shape-memory alloys and adaptive transformation behavior.",
+      "key_insight": "DFT-trained machine-learning force fields can reproduce the key lattice-dynamical features driving Ni2MnGa martensitic transformation, enabling atomistic simulation of finite-temperature phase dynamics at much larger scales.",
+      "engineering_relevance": "This provides a practical route to design and predict magnetic shape-memory alloy behavior, including adaptive nanotwinning and reversible transformation pathways, with near-DFT accuracy but much lower computational cost.",
       "method": [
-        "Train ML force fields on ab initio molecular dynamics/DFT data",
-        "Run classical molecular dynamics to simulate austenite-martensite dynamics",
-        "Analyze phonons, twin boundary energetics, and nanotwinned structures"
+        "Trained machine-learning force fields on DFT ab initio molecular dynamics data",
+        "Used classical molecular dynamics to simulate austenite-martensite transition dynamics",
+        "Analyzed phonon softening and twin-boundary energetics across transformation paths"
       ],
-      "evidence_signal": "The abstract reports that the ML-FF reproduces key DFT features of Ni2MnGa, including the soft TA2 phonon, nanotwinned martensite preference, and transformation-path twin boundary energetics.",
-      "watch_item": "Performance depends on the coverage and quality of the DFT training set, so transferability to compositions, temperatures, or strain states outside the training domain may be limited.",
+      "evidence_signal": "The abstract reports that the ML-FF reproduces the soft TA2 phonon, the preference for nanotwinned martensites, and the negative twin boundary energy predicted by DFT at T=0.",
+      "watch_item": "Model reliability depends on the quality and coverage of the DFT training set, especially for rare transformation pathways and finite-temperature configurations not well sampled during training.",
       "hashtags": [
-        "#MachineLearningForceFields",
+        "#MachineLearningInteratomicPotential",
         "#MartensiticTransformation",
         "#Ni2MnGa",
-        "#MolecularDynamics",
-        "#ShapeMemoryAlloys"
+        "#MagneticShapeMemoryAlloy",
+        "#MolecularDynamics"
       ],
       "paper_id": "2026-10-12-arxiv-modelling_the_dynamics_of_the_martensitic_transformation_in_ni_2_mnga_with_machine_learnin",
       "paper_title": "Modelling the dynamics of the martensitic transformation in Ni$_2$MnGa with machine-learning force-fields",
       "paper_date": "2026-10-12",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-10-16T15:12:11",
+      "generated_at": "2026-10-17T14:03:30",
       "generator": "openai"
     }
   },
@@ -434,29 +434,29 @@
         "url": "https://arxiv.org/pdf/2610.19630v1"
       }
     ],
-    "score": 65,
+    "score": 60,
     "infographic": {
-      "key_insight": "A lightweight structure-only predictor, calibrated with conformal risk control, can decide when MLIP predictions are trustworthy enough to skip DFT while guaranteeing bounded residual error.",
-      "engineering_relevance": "This enables faster automated materials screening by reducing expensive DFT labeling calls without sacrificing a user-defined error-risk target.",
+      "key_insight": "The paper turns DFT fallback into a risk-controlled selection problem, using conformal risk control to decide which configurations need expensive DFT labels and which can safely keep MLIP predictions.",
+      "engineering_relevance": "This enables faster high-throughput materials screening by reducing DFT calls while enforcing a user-specified bound on tolerated MLIP error.",
       "method": [
-        "Map atomic numbers and Cartesian coordinates to a fixed geometric descriptor.",
-        "Predict MLIP-DFT disagreement in energy, average force, and maximum force with a lightweight model.",
-        "Use conformal risk control to set a DFT-selection threshold that controls the expected error of retained MLIP labels at level α."
+        "Build a structure-only geometric descriptor from atomic numbers and Cartesian coordinates.",
+        "Train a lightweight predictor to estimate MLIP-DFT disagreement in energy, average force, and maximum force.",
+        "Calibrate the predicted disagreement with conformal risk control to set a DFT-selection threshold with guaranteed residual-error control."
       ],
-      "evidence_signal": "Across eight dataset-MLIP pairs, the method met the same risk guarantee while sending 7% and 14% fewer configurations to DFT than committee baselines at α=0.3.",
-      "watch_item": "Performance depends on calibration and can shrink when committee methods already capture the same errors, especially when DFT labels and MLIP training data use the same functional and basis set.",
+      "evidence_signal": "Across eight dataset-MLIP pairs, the method routed 7% to 14% fewer configurations to DFT at α=0.3 than committee baselines while maintaining the same risk guarantee.",
+      "watch_item": "Performance depends on how well the predictor generalizes across dataset shifts; gains shrink when the DFT labels and MLIP training data use the same functional and basis set.",
       "hashtags": [
+        "#MaterialsInformatics",
+        "#DFT",
         "#MachineLearningPotentials",
-        "#DensityFunctionalTheory",
         "#ConformalPrediction",
-        "#MaterialsDiscovery",
-        "#ComputationalMaterials"
+        "#HighThroughputScreening"
       ],
       "paper_id": "2026-10-14-arxiv-risk_controlled_dft_selection_for_machine_learned_interatomic_potentials",
       "paper_title": "Risk-Controlled DFT Selection for Machine-Learned Interatomic Potentials",
       "paper_date": "2026-10-14",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-10-16T15:12:14",
+      "generated_at": "2026-10-17T14:03:32",
       "generator": "openai"
     }
   },
@@ -487,29 +487,29 @@
         "url": "https://arxiv.org/pdf/2610.19159v1"
       }
     ],
-    "score": 65,
+    "score": 60,
     "infographic": {
-      "key_insight": "Frontier AI agents can draft plausible-looking follow-up research papers on open scientific problems, but they still fall short of meeting domain-scientist standards.",
-      "engineering_relevance": "For AI-driven materials and scientific research workflows, the benchmark shows current agents may accelerate ideation and writing, but human verification remains essential before any result is treated as credible.",
+      "key_insight": "The benchmark shows that frontier AI agents can draft plausible scientific follow-up papers, but none could meet domain-scientist standards on open-ended research problems.",
+      "engineering_relevance": "For computational science and materials research, the result highlights that AI agents may assist with literature-style drafting and ideation, but they are not yet reliable enough to autonomously execute or validate novel research.",
       "method": [
-        "Built a benchmark where each agent receives a science paper plus an unpublished research direction from DOE national-lab scientists.",
-        "Asked nine frontier agents to generate 15 follow-up papers each across quantum computing, plasma physics, computational chemistry, materials science, and scientific machine learning.",
-        "Evaluated submissions with scientist-defined acceptance conditions and an integrity check for unsupported claims or conflicting numbers."
+        "Built “Into the Unknown,” a benchmark where agents receive a paper plus an unpublished research direction and must produce a follow-up paper.",
+        "Co-designed acceptance conditions with DOE national laboratory scientists and converted them into a rubric for evaluation.",
+        "Tested nine frontier agents across 15 follow-ups each in quantum computing, plasma physics, computational chemistry, materials science, and scientific machine learning."
       ],
-      "evidence_signal": "Across 135 submissions, none satisfied all required conditions, and 114 failed integrity checks, indicating a large gap between plausible outputs and reliable research.",
-      "watch_item": "A key concern is that agents may fabricate work or report numbers inconsistent with evidence, so strong provenance and human review are necessary.",
+      "evidence_signal": "Across 135 submissions, none satisfied all required conditions and 114 failed integrity checks, often by claiming unperformed work or reporting numbers inconsistent with evidence.",
+      "watch_item": "A rubric-based benchmark improves tractability, but open-ended scientific quality remains hard to score and may still miss subtler forms of scientific validity.",
       "hashtags": [
         "#AIAgents",
         "#MaterialsScience",
         "#ScientificML",
         "#Benchmarking",
-        "#ResearchIntegrity"
+        "#ComputationalScience"
       ],
       "paper_id": "2026-10-13-arxiv-into_the_unknown_benchmarking_ai_agents_on_open_scientific_research_problems",
       "paper_title": "Into the Unknown: Benchmarking AI agents on open scientific research problems",
       "paper_date": "2026-10-13",
       "paper_category": "AI materials science",
-      "generated_at": "2026-10-16T15:12:16",
+      "generated_at": "2026-10-17T14:03:34",
       "generator": "openai"
     }
   },
@@ -539,17 +539,17 @@
         "url": "https://arxiv.org/pdf/2610.17171v1"
       }
     ],
-    "score": 64,
+    "score": 59,
     "infographic": {
-      "key_insight": "A coupled uncertainty-aware workflow can make ionic liquid property prediction more reliable for out-of-distribution screening and candidate ranking in solvent discovery.",
-      "engineering_relevance": "This enables more trustworthy prioritization of synthesizable ionic liquids for CO2 capture by balancing solubility, viscosity, and working capacity under data-scarce conditions.",
+      "key_insight": "The paper presents an uncertainty-aware workflow that combines data-driven prediction and physics-based filtering to rank ionic liquid candidates reliably for CO2 capture.",
+      "engineering_relevance": "This enables more trustworthy screening of synthesizable ionic liquids in sparse, noisy, and out-of-distribution regimes, helping prioritize candidates with balanced solubility, viscosity, and working capacity.",
       "method": [
-        "Train deep learning property models with uncertainty estimation for ionic liquid datasets.",
-        "Combine predicted properties with physics-based calculations and filtering to refine candidate selection.",
-        "Rank candidates by Pareto trade-offs to identify promising untapped ionic liquids for flue-gas CO2 capture."
+        "Train deep learning property models for ionic liquids with uncertainty estimation.",
+        "Link prediction outputs to physics-based calculations and filtering criteria.",
+        "Select Pareto-optimal candidates for CO2 capture from flue gas."
       ],
-      "evidence_signal": "The workflow is demonstrated on novel ionic liquids for CO2 capture from flue gas, with evaluation centered on predicted properties and Pareto-optimal candidate selection.",
-      "watch_item": "Performance may still depend on sparse and uneven training data, so uncertainty estimates and rankings should be validated before synthesis decisions.",
+      "evidence_signal": "The workflow is demonstrated on novel ionic liquids, using predicted properties and Pareto-based selection across CO2 solubility, viscosity, and working capacity.",
+      "watch_item": "Performance may still depend on sparse and uneven training data, so uncertainty estimates and rankings should be validated carefully before experimental synthesis.",
       "hashtags": [
         "#MaterialsDiscovery",
         "#IonicLiquids",
@@ -561,7 +561,58 @@
       "paper_title": "Comprehensive Workflow for Uncertainty-Aware Ionic Liquid Solvent Discovery",
       "paper_date": "2026-10-12",
       "paper_category": "Materials Discovery",
-      "generated_at": "2026-10-16T15:12:18",
+      "generated_at": "2026-10-17T14:03:36",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-10-12-arxiv-trust_limited_machine_learning_accelerated_nudged_elastic_band_calculations_for_small_pola",
+    "arxiv_id": "2610.16850v1",
+    "date": "2026-10-12",
+    "title": "Trust-Limited Machine-Learning-Accelerated Nudged Elastic Band Calculations for Small-Polaron Hopping in Rutile TiO2",
+    "authors": "Ashish Kumar Singh, Irina V. Lebedeva",
+    "abstract": "Nudged elastic band (NEB) calculations of small-polaron hopping are demanding because nuclear motion is coupled to a self-consistent localized electronic state. Near the charge-transfer region, slow self-consistent-field convergence, localization switching, and competing electronic solutions complicate surrogate-assisted optimization. We develop a Gaussian-process-assisted NEB workflow for this regime and demonstrate electron small-polaron hopping in rutile TiO2 using spin-polarized density functional theory with a Hubbard U correction (DFT+U ) with SIESTA. A joint energy-force Gaussian process (GP) with a Matérn covariance model advances the elastic band, while active-atom root-mean-square and maximum-atom displacement limits constrain surrogate motion relative to evaluated configurations. Reaching these limits triggers first-principles sampling without requiring full surrogate convergence. Three independently DFT-verified 96-atom [001] calculations using 11, 13, and 15 images and different surrogate settings and GP parameterizations yield barriers of 0.1645, 0.1637, and 0.1640 eV, respectively, spanning 0.793 meV. In the 15-image calculation, repeated central-image sampling activates a separately calibrated local GP during surrogate optimization. Final full-band DFT verification gives a maximum projected NEB force of 0.0346 eV/Å. A 324-atom calculation yields a lower barrier of 0.1302 eV, indicating supercell sensitivity and demonstrating feasibility at larger GP observation dimension. The workflow combines controlled surrogate extrapolation, targeted charge-transfer-region interpolation, and independent DFT verification to obtain polaron migration pathways, emphasizing reproducible barriers and full-band force convergence.",
+    "category": "Materials Discovery",
+    "source": "arXiv",
+    "published": "2026-10-12T14:24:03Z",
+    "updated": "2026-10-12T14:24:03Z",
+    "primary_category": "cond-mat.mtrl-sci",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2610.16850v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2610.16850v1"
+      }
+    ],
+    "score": 59,
+    "infographic": {
+      "key_insight": "A trust-limited Gaussian-process surrogate can accelerate NEB calculations for small-polaron hopping while preserving reliable barriers through targeted first-principles checks.",
+      "engineering_relevance": "This workflow reduces the cost and convergence difficulty of DFT+U transition-path calculations in strongly localized electronic systems, enabling more practical defect- and ion-transport modeling.",
+      "method": [
+        "Joint energy-force Gaussian process surrogate with a Matérn kernel",
+        "Trust-region limits on atom displacements plus active-atom RMS/max displacement triggers for DFT resampling",
+        "Independent full-band DFT verification, including a local GP for repeated central-image sampling"
+      ],
+      "evidence_signal": "Three independently verified 96-atom runs produced nearly identical barriers of 0.1645, 0.1637, and 0.1640 eV, and a 324-atom run gave 0.1302 eV with a final maximum projected NEB force of 0.0346 eV/Å.",
+      "watch_item": "Barrier values remain sensitive to supercell size and charge-localization behavior, so surrogate extrapolation must be tightly controlled and always verified with DFT.",
+      "hashtags": [
+        "#MaterialsDiscovery",
+        "#MachineLearning",
+        "#NEB",
+        "#DensityFunctionalTheory",
+        "#Polarons"
+      ],
+      "paper_id": "2026-10-12-arxiv-trust_limited_machine_learning_accelerated_nudged_elastic_band_calculations_for_small_pola",
+      "paper_title": "Trust-Limited Machine-Learning-Accelerated Nudged Elastic Band Calculations for Small-Polaron Hopping in Rutile TiO2",
+      "paper_date": "2026-10-12",
+      "paper_category": "Materials Discovery",
+      "generated_at": "2026-10-17T14:03:38",
       "generator": "openai"
     }
   },
@@ -592,29 +643,29 @@
         "url": "https://arxiv.org/pdf/2610.21911v1"
       }
     ],
-    "score": 63,
+    "score": 58,
     "infographic": {
-      "key_insight": "VoroTypes automatically enumerates all Voronoi cell topologies for a crystal under small perturbations, enabling structural identification of complex crystals beyond simple reference lattices.",
-      "engineering_relevance": "It turns crystallographic input files into reusable topological filters for VoroTop and OVITO, improving atomistic phase identification in molecular simulations.",
+      "key_insight": "VoroTypes automatically enumerates all likely Voronoi cell topologies for a crystal under small perturbations, enabling robust structural identification of complex crystals at the per-atom level.",
+      "engineering_relevance": "It extends practical topology-based phase recognition in atomistic simulations from a few simple prototypes to complex, multi-sublattice structures used in materials engineering.",
       "method": [
-        "Takes CIF or POSCAR crystal descriptions as input.",
-        "Uses exact symmetry reduction and validity pruning to speed up enumeration.",
-        "Exports per-sublattice Voronoi topology filters for direct use in VoroTop."
+        "Takes a CIF or POSCAR crystal description as input",
+        "Uses exact symmetry reduction and validity pruning to speed enumeration",
+        "Exports topological filters directly for VoroTop and OVITO"
       ],
-      "evidence_signal": "The abstract reports a precomputed library covering over a thousand structures from the Materials Project, indicating broad applicability and scale.",
-      "watch_item": "The method depends on accurate crystallographic input and small generic perturbations, so unusual distortions or noisy structures may reduce reliability.",
+      "evidence_signal": "The abstract reports a precomputed library of filters spanning over a thousand Materials Project structures, demonstrating broad coverage rather than a single-case proof.",
+      "watch_item": "Accuracy depends on the assumption of small generic perturbations and on the quality of the crystallographic input used to generate the filter.",
       "hashtags": [
         "#MaterialsScience",
-        "#ComputationalChemistry",
-        "#Voronoi",
         "#Crystallography",
-        "#MolecularDynamics"
+        "#Voronoi",
+        "#AtomisticSimulation",
+        "#ComputationalMaterials"
       ],
       "paper_id": "2026-10-15-arxiv-vorotypes_automated_enumeration_of_voronoi_cell_topologies_for_structural_identification_o",
       "paper_title": "VoroTypes: automated enumeration of Voronoi cell topologies for structural identification of complex crystals in atomistic simulations",
       "paper_date": "2026-10-15",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-10-16T15:12:20",
+      "generated_at": "2026-10-17T14:03:40",
       "generator": "openai"
     }
   },
@@ -644,29 +695,29 @@
         "url": "https://arxiv.org/pdf/2610.19919v1"
       }
     ],
-    "score": 63,
+    "score": 58,
     "infographic": {
-      "key_insight": "O-kRystal learns orbital-aware corrections to cheap PBE band structures, enabling near-HSE06 momentum-resolved electronic bands without running expensive high-level calculations.",
-      "engineering_relevance": "This gives materials engineers a faster path to screen and compare electronic properties—such as band gaps, band ordering, and density of states—across large material libraries.",
+      "key_insight": "O-kRystal learns momentum- and spin-resolved corrections from low-cost PBE orbitals to predict near-HSE06 electronic band structures beyond standard DFT.",
+      "engineering_relevance": "This enables faster, more accurate band-structure screening for materials design, including systems with complex magnetism, strong correlation, and low-dimensional electronic behavior.",
       "method": [
-        "Uses PBE as the baseline energy source and orbital feature provider.",
-        "Combines real-space and reciprocal-space orbital matrices to predict state-by-state energy corrections.",
-        "Trains on high-symmetry points and generalizes to unseen k-points and even G0W0 targets for 2D systems."
+        "Use PBE as a baseline energy source and orbital descriptor provider.",
+        "Combine real-space and reciprocal-space orbital matrices to learn state-wise corrections.",
+        "Predict higher-level energies across crystal momentum and spin, then reconstruct DOS from dense k-point predictions."
       ],
-      "evidence_signal": "Across nearly 6,000 3D materials, the model predicts HSE06 band energies within 5 eV of the band-edge midpoint with MAE 0.171 ± 0.009 eV, and it also improves strongly correlated materials by 68.7% over PBE.",
-      "watch_item": "Performance is reported mainly near the band-edge region and at k-point settings seen indirectly through training, so extreme extrapolation or low-data material classes may require extra validation.",
+      "evidence_signal": "Across nearly 6,000 3D materials, the model achieves 0.171 ± 0.009 eV MAE for states within 5 eV of the band-edge midpoint, and it also improves strongly correlated materials and transfers to G0W0 on 2D systems.",
+      "watch_item": "Accuracy is demonstrated for states near the band edge and on benchmarks; performance may be less reliable for far-from-edge states or materials outside the training distribution.",
       "hashtags": [
         "#MaterialsInformatics",
         "#ElectronicStructure",
-        "#DensityFunctionalTheory",
         "#MachineLearning",
+        "#DensityFunctionalTheory",
         "#ComputationalMaterials"
       ],
       "paper_id": "2026-10-14-arxiv-beyond_dft_electronic_band_structures_via_dual_space_orbital_learning",
       "paper_title": "Beyond DFT electronic band structures via dual-space orbital learning",
       "paper_date": "2026-10-14",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-10-16T15:12:22",
+      "generated_at": "2026-10-17T14:03:41",
       "generator": "openai"
     }
   },
@@ -697,29 +748,29 @@
         "url": "https://arxiv.org/pdf/2610.19404v1"
       }
     ],
-    "score": 63,
+    "score": 58,
     "infographic": {
-      "key_insight": "ActMOF creates an experiment-grounded benchmark to compare active-learning strategies for MOF synthesis and shows Gaussian-process-based search is among the strongest in sparse crystallization spaces.",
-      "engineering_relevance": "It gives materials engineers a reusable testbed for choosing synthesis optimizers that can reduce experimental trial count while improving the odds of obtaining crystalline MOFs.",
+      "key_insight": "ActMOF turns sparse, noisy MOF synthesis data into an experiment-grounded benchmark that shows Gaussian-process active learning is a top choice for mapping crystallization landscapes.",
+      "engineering_relevance": "The framework helps materials engineers choose and compare search strategies before running expensive synthesis campaigns, improving efficiency in reticular MOF discovery.",
       "method": [
-        "Emulated a MOF synthesis landscape from measured microwave experiments.",
-        "Assigned each condition a crystallinity index from diffraction peak intensity and peak width.",
-        "Benchmarked GP, tree-ensemble, and LLM-guided policies for active learning."
+        "Built a benchmark from experimentally measured microwave syntheses of aluminum-carboxylate MOFs.",
+        "Encoded each condition with a crystallinity index derived from diffraction peak intensity and full width at half-maximum.",
+        "Compared active-learning policies using Gaussian processes, tree ensembles, and large language models, then validated transfer on six related MOFs."
       ],
-      "evidence_signal": "The benchmark identified GP-family policies as leading performers and then transferred the strategy to six related aluminum MOF syntheses, each yielding crystalline products within 12 experiments.",
-      "watch_item": "Results are tied to a specific aluminum-carboxylate, microwave-synthesis setting, so broader transfer to other chemistries or noise regimes still needs validation.",
+      "evidence_signal": "The benchmark evaluation placed the GP family among the leading policies, and six transfer campaigns produced crystalline products within a fixed budget of 12 experiments each.",
+      "watch_item": "Because the benchmark is based on sparse microwave synthesis data with noisy crystallization outcomes, performance may depend strongly on the specific chemistry and measurement protocol.",
       "hashtags": [
         "#ActiveLearning",
-        "#MetalOrganicFrameworks",
-        "#BayesianOptimization",
+        "#MOFs",
         "#MaterialsInformatics",
-        "#CrystalGrowth"
+        "#BayesianOptimization",
+        "#ReticularChemistry"
       ],
       "paper_id": "2026-10-14-arxiv-actmof_mapping_reticular_synthesis_through_active_learning",
       "paper_title": "ActMOF: Mapping Reticular Synthesis through Active Learning",
       "paper_date": "2026-10-14",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-10-16T15:12:25",
+      "generated_at": "2026-10-17T14:03:43",
       "generator": "openai"
     }
   },
@@ -749,29 +800,29 @@
         "url": "https://arxiv.org/pdf/2610.18949v1"
       }
     ],
-    "score": 63,
+    "score": 58,
     "infographic": {
-      "key_insight": "V-PaSS improves extrapolative perovskite solar-cell prediction by encoding absorber alloys and device stacks with physics-aware, semantically rich representations instead of treating them as fixed categories.",
-      "engineering_relevance": "This makes it more practical to screen new perovskite compositions and unfamiliar layer architectures before fabrication, especially for out-of-distribution device designs.",
+      "key_insight": "V-PaSS improves perovskite solar-cell prediction by encoding absorber composition and device stack with physics-aware, chemically meaningful representations that can extrapolate to new alloys and architectures.",
+      "engineering_relevance": "The approach can help researchers screen unexplored perovskite device designs more reliably, especially when experimental data come from unfamiliar labs or previously unseen material combinations.",
       "method": [
-        "Interpolates mixed-cation, mixed-halide absorbers from 23 pure ABX3 endpoint crystal graphs using Vegard’s law plus learned bandgap bowing.",
-        "Encodes device stack order, polarity, and interfacial band offsets with a scientific language model for chemically meaningful layer descriptions.",
-        "Combines these representations in a model designed for extrapolation to unseen laboratories, alloys, and transport layers."
+        "Interpolates mixed-cation and mixed-halide absorber structures from 23 pure ABX3 endpoint crystal graphs using Vegard’s law plus learned bandgap bowing.",
+        "Represents device stacks with layer order, cell polarity, interfacial band offsets, and scientific-language-model embeddings of chemical descriptions.",
+        "Uses a physics-aware semantic architecture that supports extrapolative prediction beyond standard categorical or fixed crystal-graph encodings."
       ],
-      "evidence_signal": "Under an institution-grouped split with unseen laboratories in testing, V-PaSS achieved 2.861% MAE, beating a gradient-boosted baseline (3.017%) and the best tuned benchmark (2.912%), with larger gains on unseen alloys and new-layer cases.",
-      "watch_item": "Performance depends on the availability and quality of endpoint crystal graphs, interfacial band-offset information, and assumptions like Vegard interpolation, which may be less reliable for strongly non-ideal materials.",
+      "evidence_signal": "Under an institution-grouped evaluation with unseen laboratories in test data, V-PaSS achieved 2.861% MAE, outperforming 14 tested models and improving over a gradient-boosted baseline by 5.2% relative error reduction.",
+      "watch_item": "The method depends on physically valid endpoint structures and learned interpolation assumptions, so performance may be less reliable for chemistries far outside the available 23-compound alloy space.",
       "hashtags": [
         "#PerovskiteSolarCells",
         "#MaterialsInformatics",
         "#PhysicsAwareML",
         "#CrystalGraphs",
-        "#ExtrapolativePrediction"
+        "#AIforScience"
       ],
       "paper_id": "2026-10-13-arxiv-virtual_alloy_physics_aware_semantic_system_for_extrapolative_prediction_of_perovskite_sol",
       "paper_title": "Virtual-Alloy Physics-Aware Semantic System for extrapolative prediction of perovskite solar cells",
       "paper_date": "2026-10-13",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-10-16T15:12:27",
+      "generated_at": "2026-10-17T14:03:45",
       "generator": "openai"
     }
   },
@@ -800,29 +851,29 @@
         "url": "https://arxiv.org/pdf/2610.18317v1"
       }
     ],
-    "score": 63,
+    "score": 58,
     "infographic": {
-      "key_insight": "A projectability-guided atomic-orbital Hamiltonian can faithfully compress plane-wave DFT, including nonlocal hybrid-functional effects, into a compact target for deep-learning models.",
-      "engineering_relevance": "This enables faster, more scalable electronic-structure prediction by linking plane-wave reference calculations to equivariant neural networks without sacrificing band-structure accuracy.",
+      "key_insight": "A projectability-guided AO Hamiltonian construction can transfer plane-wave DFT results, including nonlocal effects, into compact targets suitable for deep-learning Hamiltonian models.",
+      "engineering_relevance": "This enables faster, more transferable electronic-structure prediction by bridging accurate plane-wave reference calculations with compact atomic-orbital neural-network representations.",
       "method": [
-        "Select high-projectability plane-wave eigenstates and add a few higher-energy states to complete the AO subspace.",
-        "Build nonorthogonal AO Hamiltonians directly from selected PW eigenvalues/eigenstates, avoiding an empirical energy shift.",
-        "Train equivariant neural networks on the resulting compact PBE and HSE Hamiltonians."
+        "Select a small set of high-projectability PW eigenstates to define the AO subspace.",
+        "Add a few higher-energy states to complete the basis without using an empirical energy shift.",
+        "Use PW eigenvalues/eigenstates to implicitly retain nonlocal operator effects for learning PBE and HSE Hamiltonians."
       ],
-      "evidence_signal": "Benchmarks on MoS2 and sodium phases show accurate reproduction of plane-wave bands with smaller AO bases than real-space reconstruction.",
-      "watch_item": "Performance depends on choosing an adequate projectability threshold and enough supplemental states to preserve the target subspace.",
+      "evidence_signal": "Benchmarks on MoS2 and sodium phases show that the reconstructed Hamiltonians reproduce PW band structures accurately with smaller AO bases than real-space reconstruction.",
+      "watch_item": "The approach depends on careful state selection and basis construction, so poor projectability screening could degrade transferability or training quality.",
       "hashtags": [
-        "#DensityFunctionalTheory",
+        "#DFT",
         "#HamiltonianLearning",
-        "#PlaneWaveDFT",
+        "#DeepLearning",
         "#MaterialsInformatics",
-        "#DeepLearningMaterials"
+        "#ElectronicStructure"
       ],
       "paper_id": "2026-10-13-arxiv-accurately_generalizing_deep_learning_hamiltonian_methods_to_plane_wave_density_functional",
       "paper_title": "Accurately Generalizing Deep-Learning Hamiltonian Methods to Plane-Wave Density Functional Theory",
       "paper_date": "2026-10-13",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-10-16T15:12:30",
+      "generated_at": "2026-10-17T14:03:47",
       "generator": "openai"
     }
   },
@@ -852,29 +903,29 @@
         "url": "https://arxiv.org/pdf/2610.21625v1"
       }
     ],
-    "score": 62,
+    "score": 57,
     "infographic": {
-      "key_insight": "A metallic glass under cyclic loading shows one unified dynamic scaling law, but the dominant energy-injection mechanism switches from macroscopic plastic work above yield to localized elastic stress fluctuations below yield.",
-      "engineering_relevance": "This gives a predictive framework for tuning aging versus rejuvenation in amorphous structural and energy materials by controlling loading rate, amplitude, and cyclic stress state.",
+      "key_insight": "Sub-yield aging and over-yield rejuvenation in metallic glass are governed by one dynamic scaling framework, but with different energy-injection pathways: macroscopic plastic work above yield and localized elastic stress fluctuations below yield.",
+      "engineering_relevance": "This provides a predictive basis for tuning cyclic loading conditions to either stabilize amorphous structures through aging or deliberately rejuvenate them for property control in metallic glass components.",
       "method": [
         "Molecular dynamics simulations of a cyclically driven metallic glass",
-        "Compare sub-yield aging and over-yield rejuvenation across loading regimes",
-        "Extract scaling relations between relaxation behavior, plastic work, and stress fluctuations"
+        "Compare sub-yield and over-yield regimes through nonlinear rheology and stress fluctuation analysis",
+        "Derive a scaling identity linking relaxation attenuation to stress fluctuation exponents"
       ],
-      "evidence_signal": "The abstract reports an exact scaling identity linking the relaxation attenuation exponent to the stress fluctuation exponent, supported by observed universal dynamic scaling across both regimes.",
-      "watch_item": "Because the conclusions come from molecular dynamics of one metallic glass model, transferability to other chemistries, temperatures, and experimental loading conditions still needs validation.",
+      "evidence_signal": "The abstract reports a unified dynamic clock and exact scaling relation supported by simulation results that connect Herschel-Bulkley rheology with localized stress fluctuation dynamics.",
+      "watch_item": "The framework is simulation-based, so experimental validation across compositions, temperatures, and loading histories will be needed before broad design use.",
       "hashtags": [
         "#MetallicGlass",
-        "#AmorphousSolids",
         "#CyclicLoading",
+        "#AgingAndRejuvenation",
         "#MolecularDynamics",
-        "#ScalingLaw"
+        "#NonlinearRheology"
       ],
       "paper_id": "2026-10-15-arxiv-universal_dynamic_scaling_for_sub_yield_aging_and_over_yield_rejuvenation_in_a_cyclically",
       "paper_title": "Universal Dynamic Scaling for Sub-Yield Aging and Over-Yield Rejuvenation in A Cyclically Driven Metallic Glass",
       "paper_date": "2026-10-15",
       "paper_category": "Energy Materials",
-      "generated_at": "2026-10-16T15:12:32",
+      "generated_at": "2026-10-17T14:03:49",
       "generator": "openai"
     }
   },
@@ -903,29 +954,29 @@
         "url": "https://arxiv.org/pdf/2610.18665v1"
       }
     ],
-    "score": 62,
+    "score": 57,
     "infographic": {
-      "key_insight": "Sb-doped Cs2BInCl6 double perovskites show composition-tunable self-trapped exciton emission, where B-site alloying changes the PL energy and polarization anisotropy without strongly affecting absorption.",
-      "engineering_relevance": "This work suggests a route to engineer lead-free optoelectronic nanocrystals with controllable color output and polarization properties by tuning composition rather than changing the host structure.",
+      "key_insight": "Sb-doped Cs2BInCl6 double perovskites show composition-tunable self-trapped excitons: B-site alloying shifts emission color and polarization anisotropy while leaving the main absorption edge nearly unchanged.",
+      "engineering_relevance": "These lead-free double perovskites offer a way to tune photoluminescence color and optical anisotropy through composition control, useful for optoelectronic and photocatalytic material design.",
       "method": [
-        "Optical spectroscopy of Sb-doped Cs2BInCl6 nanocrystals with Na-to-K B-site alloying",
-        "Ab initio calculations of exciton localization, in-gap states, and lattice distortions",
+        "Optical spectroscopy on Na-to-K alloyed Cs2BInCl6 nanocrystals",
+        "Ab initio calculations of excitonic states and lattice distortions",
         "Time-resolved polarization-resolved anisotropy measurements"
       ],
-      "evidence_signal": "The abstract reports a composition-dependent PL shift from about 2.48 to 2.70 eV while absorption near 3.8 eV stays nearly unchanged, and the measured anisotropy matches theory.",
-      "watch_item": "The reported fingerprints depend on strong exciton-phonon coupling and composition-specific lattice distortions, so device performance may be sensitive to synthesis quality and alloy uniformity.",
+      "evidence_signal": "The abstract reports PL tuning from about 2.48 to 2.70 eV with nearly constant absorption near 3.8 eV, and the measured anisotropy closely matches theory.",
+      "watch_item": "Because the key optical response comes from strong exciton-phonon coupling and self-trapping, device performance may be sensitive to small composition or processing variations.",
       "hashtags": [
         "#DoublePerovskites",
         "#SelfTrappedExcitons",
-        "#LeadFreeOptoelectronics",
-        "#Photoluminescence",
-        "#Anisotropy"
+        "#Optoelectronics",
+        "#LeadFreeMaterials",
+        "#Spectroscopy"
       ],
       "paper_id": "2026-10-13-arxiv-composition_controlled_optical_fingerprints_and_anisotropy_of_self_trapped_excitons_in_dou",
       "paper_title": "Composition-controlled optical fingerprints and anisotropy of self-trapped excitons in double perovskites",
       "paper_date": "2026-10-13",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-10-16T15:12:35",
+      "generated_at": "2026-10-17T14:03:51",
       "generator": "openai"
     }
   },
@@ -956,80 +1007,29 @@
         "url": "https://arxiv.org/pdf/2610.17804v1"
       }
     ],
-    "score": 62,
+    "score": 57,
     "infographic": {
-      "key_insight": "FracLearn shows that a language model can improve physical design by turning simulated fracture experience into reusable rules, then applying those rules to create stronger new architectures without changing model weights.",
-      "engineering_relevance": "This suggests a path for AI-assisted materials and structural design where models learn toughening strategies from experiments or simulations and transfer them to future design problems.",
+      "key_insight": "FracLearn teaches a language model to improve physical design by turning simulated fracture experiences into reusable design principles, without updating model weights.",
+      "engineering_relevance": "The approach suggests AI design agents can learn durable materials and structural rules from computational experiments and then apply them to new architectures for stronger, tougher designs.",
       "method": [
-        "Generate candidate architectures in a fracture-inspired game",
-        "Abstraction converts outcomes into conditional principles for crack behavior and load transfer",
-        "Generalization recombines learned principles to design improved architectures"
+        "Propose candidate architectures in a fracture game.",
+        "Observe simulated crack growth and load transfer to extract conditional principles.",
+        "Use those principles to generalize to new designs and revise hypotheses after failures."
       ],
-      "evidence_signal": "Across campaigns, the best design achieved a composite score 11.0% above the experience-stage record, with fracture analysis linking gains to crack deflection, temporary crack trapping, and higher residual load capacity.",
-      "watch_item": "The approach was demonstrated in a deliberately unfamiliar simulated game, so transfer to real materials systems may require careful validation and domain-specific setup.",
+      "evidence_signal": "Across campaigns, the method achieved a best composite score 11.0% above the experience-stage record, with fracture analyses linking gains to crack deflection, temporary trapping, and higher residual load capacity.",
+      "watch_item": "Performance depends on the quality of the simulation and abstraction process, so transferring the learned principles to real materials or different physics may require careful validation.",
       "hashtags": [
         "#MaterialsDiscovery",
-        "#AIforScience",
         "#FractureMechanics",
-        "#GenerativeDesign",
-        "#ScientificAgents"
+        "#AIforScience",
+        "#DesignOptimization",
+        "#LanguageModels"
       ],
       "paper_id": "2026-10-13-arxiv-learning_from_fracture_teaching_language_models_to_design_through_physical_experience",
       "paper_title": "Learning from fracture: Teaching language models to design through physical experience",
       "paper_date": "2026-10-13",
       "paper_category": "Materials Discovery",
-      "generated_at": "2026-10-16T15:12:37",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-10-14-arxiv-sounds_cheesy_bridging_the_texture_gap_between_dairy_and_plant_based_cheese_with_non_conta",
-    "arxiv_id": "2610.19924v1",
-    "date": "2026-10-14",
-    "title": "Sounds Cheesy - Bridging the Texture Gap Between Dairy and Plant-Based cheese with Non-Contact Ultrasound and AI",
-    "authors": "Wenjing Feng, Thomas A. Hazlehurst, Nik Watson",
-    "abstract": "Plant-based cheeses often fail to reproduce the texture of dairy cheese. Closing this gap is slow because the reference methods, texture profile analysis (TPA) and sensory panels, destroy the sample and are poorly suited to screening many formulations in a timely and cost-effective manner. Here we show that non-contact, air-coupled ultrasonic imaging combined with machine learning can characterise cheese texture rapidly and without damaging the sample. Thirteen commercial products (nine dairy, four plant-based; 119 slices, 357 scans) were imaged in through-transmission at 100 kHz to give two-channel amplitude and time-of-flight C-scans, and each slice was then measured by TPA. The C-scans revealed millimetre-scale acoustic domains in ripened dairy cheeses, consistent with their fused-curd microstructure, that were absent from the homogeneous starch and oil matrix of the plant-based products. TPA showed that the texture gap is one of range and failure behaviour rather than average firmness. Mean hardness was similar for the two categories, but dairy products spanned a 7.5-fold range against 1.9-fold for plant-based products, and the plant-based products failed in a brittle, strain-softening manner rather than by ductile yielding. No single ultrasonic parameter tracked texture across products. However, a compact convolutional neural network predicted full true stress-strain loading and unloading curves from the C-scan images of unseen slices across all thirteen products without product-specific calibration. Clustering the predicted curves produced a texture map on which three plant-based slices sat with the Cheddars and one with Emmental, while soft, mozzarella-like textures remained unoccupied. The approach offers a one-minute, non-contact measurement suited to formulation screening and at-line quality control of cheese.",
-    "category": "Materials Discovery",
-    "source": "arXiv",
-    "published": "2026-10-14T10:14:32Z",
-    "updated": "2026-10-14T10:14:32Z",
-    "primary_category": "cs.CE",
-    "categories": [
-      "cs.CE"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2610.19924v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2610.19924v1"
-      }
-    ],
-    "score": 61,
-    "infographic": {
-      "key_insight": "Non-contact air-coupled ultrasound plus machine learning can rapidly predict cheese texture, revealing that plant-based cheeses match average firmness but not the full failure behavior of dairy cheese.",
-      "engineering_relevance": "This offers a one-minute, non-destructive screening tool for formulation development and at-line quality control in cheese manufacturing.",
-      "method": [
-        "Imaged 13 commercial cheeses (9 dairy, 4 plant-based) with 100 kHz through-transmission ultrasound.",
-        "Used two-channel C-scan features: amplitude and time-of-flight.",
-        "Trained a compact CNN to predict full true stress-strain loading/unloading curves from unseen slice images."
-      ],
-      "evidence_signal": "The study analyzed 119 slices and 357 scans, and the model generalized across all 13 products without product-specific calibration.",
-      "watch_item": "Performance may depend on product diversity and imaging conditions, so broader validation is needed before industrial deployment.",
-      "hashtags": [
-        "#UltrasoundImaging",
-        "#MachineLearning",
-        "#FoodMaterials",
-        "#PlantBasedCheese",
-        "#NonDestructiveTesting"
-      ],
-      "paper_id": "2026-10-14-arxiv-sounds_cheesy_bridging_the_texture_gap_between_dairy_and_plant_based_cheese_with_non_conta",
-      "paper_title": "Sounds Cheesy - Bridging the Texture Gap Between Dairy and Plant-Based cheese with Non-Contact Ultrasound and AI",
-      "paper_date": "2026-10-14",
-      "paper_category": "Materials Discovery",
-      "generated_at": "2026-10-16T15:12:40",
+      "generated_at": "2026-10-17T14:03:53",
       "generator": "openai"
     }
   }

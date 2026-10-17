@@ -1,6 +1,6 @@
 # AI materials science Progress Public Resources
 
-Generated: 2026-10-16
+Generated: 2026-10-17
 Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 
 ## 1. Enabling large language model agents for high-fidelity many-body perturbation theory calculations
@@ -91,7 +91,15 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2610.17171v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-10-12-arxiv-comprehensive_workflow_for_uncertainty_aware_ionic_liquid_solvent_discovery_infographic.json
 
-## 12. VoroTypes: automated enumeration of Voronoi cell topologies for structural identification of complex crystals in atomistic simulations
+## 12. Trust-Limited Machine-Learning-Accelerated Nudged Elastic Band Calculations for Small-Polaron Hopping in Rutile TiO2
+
+- Date: 2026-10-12
+- Category: Materials Discovery
+- arXiv: https://arxiv.org/abs/2610.16850v1
+- PDF: https://arxiv.org/pdf/2610.16850v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-10-12-arxiv-trust_limited_machine_learning_accelerated_nudged_elastic_band_calculations_for_small_pola_infographic.json
+
+## 13. VoroTypes: automated enumeration of Voronoi cell topologies for structural identification of complex crystals in atomistic simulations
 
 - Date: 2026-10-15
 - Category: Crystal and Structure
@@ -99,7 +107,7 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2610.21911v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-10-15-arxiv-vorotypes_automated_enumeration_of_voronoi_cell_topologies_for_structural_identification_o_infographic.json
 
-## 13. Beyond DFT electronic band structures via dual-space orbital learning
+## 14. Beyond DFT electronic band structures via dual-space orbital learning
 
 - Date: 2026-10-14
 - Category: Crystal and Structure
@@ -107,7 +115,7 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2610.19919v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-10-14-arxiv-beyond_dft_electronic_band_structures_via_dual_space_orbital_learning_infographic.json
 
-## 14. ActMOF: Mapping Reticular Synthesis through Active Learning
+## 15. ActMOF: Mapping Reticular Synthesis through Active Learning
 
 - Date: 2026-10-14
 - Category: Crystal and Structure
@@ -115,7 +123,7 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2610.19404v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-10-14-arxiv-actmof_mapping_reticular_synthesis_through_active_learning_infographic.json
 
-## 15. Virtual-Alloy Physics-Aware Semantic System for extrapolative prediction of perovskite solar cells
+## 16. Virtual-Alloy Physics-Aware Semantic System for extrapolative prediction of perovskite solar cells
 
 - Date: 2026-10-13
 - Category: Crystal and Structure
@@ -123,7 +131,7 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2610.18949v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-10-13-arxiv-virtual_alloy_physics_aware_semantic_system_for_extrapolative_prediction_of_perovskite_sol_infographic.json
 
-## 16. Accurately Generalizing Deep-Learning Hamiltonian Methods to Plane-Wave Density Functional Theory
+## 17. Accurately Generalizing Deep-Learning Hamiltonian Methods to Plane-Wave Density Functional Theory
 
 - Date: 2026-10-13
 - Category: Crystal and Structure
@@ -131,7 +139,7 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2610.18317v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-10-13-arxiv-accurately_generalizing_deep_learning_hamiltonian_methods_to_plane_wave_density_functional_infographic.json
 
-## 17. Universal Dynamic Scaling for Sub-Yield Aging and Over-Yield Rejuvenation in A Cyclically Driven Metallic Glass
+## 18. Universal Dynamic Scaling for Sub-Yield Aging and Over-Yield Rejuvenation in A Cyclically Driven Metallic Glass
 
 - Date: 2026-10-15
 - Category: Energy Materials
@@ -139,7 +147,7 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2610.21625v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-10-15-arxiv-universal_dynamic_scaling_for_sub_yield_aging_and_over_yield_rejuvenation_in_a_cyclically_infographic.json
 
-## 18. Composition-controlled optical fingerprints and anisotropy of self-trapped excitons in double perovskites
+## 19. Composition-controlled optical fingerprints and anisotropy of self-trapped excitons in double perovskites
 
 - Date: 2026-10-13
 - Category: Crystal and Structure
@@ -147,18 +155,10 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2610.18665v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-10-13-arxiv-composition_controlled_optical_fingerprints_and_anisotropy_of_self_trapped_excitons_in_dou_infographic.json
 
-## 19. Learning from fracture: Teaching language models to design through physical experience
+## 20. Learning from fracture: Teaching language models to design through physical experience
 
 - Date: 2026-10-13
 - Category: Materials Discovery
 - arXiv: https://arxiv.org/abs/2610.17804v1
 - PDF: https://arxiv.org/pdf/2610.17804v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-10-13-arxiv-learning_from_fracture_teaching_language_models_to_design_through_physical_experience_infographic.json
-
-## 20. Sounds Cheesy - Bridging the Texture Gap Between Dairy and Plant-Based cheese with Non-Contact Ultrasound and AI
-
-- Date: 2026-10-14
-- Category: Materials Discovery
-- arXiv: https://arxiv.org/abs/2610.19924v1
-- PDF: https://arxiv.org/pdf/2610.19924v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-10-14-arxiv-sounds_cheesy_bridging_the_texture_gap_between_dairy_and_plant_based_cheese_with_non_conta_infographic.json
