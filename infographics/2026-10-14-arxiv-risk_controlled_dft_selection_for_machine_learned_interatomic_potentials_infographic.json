@@ -1,24 +1,24 @@
 {
-  "key_insight": "The paper turns DFT fallback into a risk-controlled selection problem, using conformal risk control to decide which configurations need expensive DFT labels and which can safely keep MLIP predictions.",
-  "engineering_relevance": "This enables faster high-throughput materials screening by reducing DFT calls while enforcing a user-specified bound on tolerated MLIP error.",
+  "key_insight": "A conformal risk control framework can decide when to trust an ML interatomic potential and when to send a configuration to DFT, while guaranteeing the MLIP error on kept predictions stays below a user-set risk level.",
+  "engineering_relevance": "This lets automated materials screening cut expensive DFT labeling throughput without losing control of prediction quality, improving the efficiency of large-scale structure search and discovery pipelines.",
   "method": [
-    "Build a structure-only geometric descriptor from atomic numbers and Cartesian coordinates.",
-    "Train a lightweight predictor to estimate MLIP-DFT disagreement in energy, average force, and maximum force.",
-    "Calibrate the predicted disagreement with conformal risk control to set a DFT-selection threshold with guaranteed residual-error control."
+    "Map each structure’s atomic numbers and Cartesian coordinates to a fixed geometric descriptor.",
+    "Predict an MLIP–DFT disagreement score for energy and force quantities with a lightweight model.",
+    "Use conformal risk control to calibrate a DFT-selection threshold that meets a target error fraction α."
   ],
-  "evidence_signal": "Across eight dataset-MLIP pairs, the method routed 7% to 14% fewer configurations to DFT at α=0.3 than committee baselines while maintaining the same risk guarantee.",
-  "watch_item": "Performance depends on how well the predictor generalizes across dataset shifts; gains shrink when the DFT labels and MLIP training data use the same functional and basis set.",
+  "evidence_signal": "Across eight dataset–MLIP pairs under the same guarantee, the method sent 7%–14% fewer configurations to DFT than committee baselines at α=0.3, with the biggest gains when DFT labels and MLIP training data used different functionals/basis sets.",
+  "watch_item": "Performance depends on calibration quality and may narrow when the DFT labels closely match the MLIP training setup, so threshold transfer across domains should be checked carefully.",
   "hashtags": [
-    "#MaterialsInformatics",
-    "#DFT",
     "#MachineLearningPotentials",
+    "#DensityFunctionalTheory",
     "#ConformalPrediction",
-    "#HighThroughputScreening"
+    "#MaterialsDiscovery",
+    "#ActiveLearning"
   ],
   "paper_id": "2026-10-14-arxiv-risk_controlled_dft_selection_for_machine_learned_interatomic_potentials",
   "paper_title": "Risk-Controlled DFT Selection for Machine-Learned Interatomic Potentials",
   "paper_date": "2026-10-14",
   "paper_category": "Crystal and Structure",
-  "generated_at": "2026-10-17T14:03:32",
+  "generated_at": "2026-10-18T14:18:22",
   "generator": "openai"
 }

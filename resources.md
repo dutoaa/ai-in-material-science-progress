@@ -1,6 +1,6 @@
 # AI materials science Progress Public Resources
 
-Generated: 2026-10-17
+Generated: 2026-10-18
 Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 
 ## 1. Enabling large language model agents for high-fidelity many-body perturbation theory calculations

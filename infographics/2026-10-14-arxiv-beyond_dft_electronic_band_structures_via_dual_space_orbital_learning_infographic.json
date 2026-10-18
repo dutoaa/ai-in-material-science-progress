@@ -1,24 +1,24 @@
 {
-  "key_insight": "O-kRystal learns momentum- and spin-resolved corrections from low-cost PBE orbitals to predict near-HSE06 electronic band structures beyond standard DFT.",
-  "engineering_relevance": "This enables faster, more accurate band-structure screening for materials design, including systems with complex magnetism, strong correlation, and low-dimensional electronic behavior.",
+  "key_insight": "O-kRystal learns momentum-resolved orbital corrections from low-cost PBE inputs to predict higher-fidelity electronic band structures beyond standard DFT.",
+  "engineering_relevance": "This enables faster, more accurate band-structure and density-of-states predictions for screening materials with insulating, metallic, magnetic, and correlated behavior.",
   "method": [
-    "Use PBE as a baseline energy source and orbital descriptor provider.",
-    "Combine real-space and reciprocal-space orbital matrices to learn state-wise corrections.",
-    "Predict higher-level energies across crystal momentum and spin, then reconstruct DOS from dense k-point predictions."
+    "Uses PBE band energies as a baseline.",
+    "Adds real-space and reciprocal-space orbital matrices as structured inputs.",
+    "Predicts state-specific HSE06 or G0W0 corrections across crystal momentum and spin."
   ],
-  "evidence_signal": "Across nearly 6,000 3D materials, the model achieves 0.171 ± 0.009 eV MAE for states within 5 eV of the band-edge midpoint, and it also improves strongly correlated materials and transfers to G0W0 on 2D systems.",
-  "watch_item": "Accuracy is demonstrated for states near the band edge and on benchmarks; performance may be less reliable for far-from-edge states or materials outside the training distribution.",
+  "evidence_signal": "Across nearly 6,000 3D materials, it achieves 0.171 ± 0.009 eV MAE for states within 5 eV of the band-edge midpoint and also generalizes to unseen band-path points; on six correlated materials it reduces PBE band-energy MAE by 68.7%.",
+  "watch_item": "Performance depends on the quality and coverage of the training level-of-theory data and may require careful transfer checks when moving to new chemistries or lower-symmetry systems.",
   "hashtags": [
     "#MaterialsInformatics",
     "#ElectronicStructure",
-    "#MachineLearning",
     "#DensityFunctionalTheory",
+    "#MachineLearning",
     "#ComputationalMaterials"
   ],
   "paper_id": "2026-10-14-arxiv-beyond_dft_electronic_band_structures_via_dual_space_orbital_learning",
   "paper_title": "Beyond DFT electronic band structures via dual-space orbital learning",
   "paper_date": "2026-10-14",
   "paper_category": "Crystal and Structure",
-  "generated_at": "2026-10-17T14:03:41",
+  "generated_at": "2026-10-18T14:18:32",
   "generator": "openai"
 }

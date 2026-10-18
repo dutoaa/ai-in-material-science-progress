@@ -1,24 +1,24 @@
 {
-  "key_insight": "A trust-limited Gaussian-process surrogate can accelerate NEB calculations for small-polaron hopping while preserving reliable barriers through targeted first-principles checks.",
-  "engineering_relevance": "This workflow reduces the cost and convergence difficulty of DFT+U transition-path calculations in strongly localized electronic systems, enabling more practical defect- and ion-transport modeling.",
+  "key_insight": "A trust-limited Gaussian-process surrogate can accelerate NEB path finding for small-polaron hopping in rutile TiO2 while still preserving first-principles accuracy near difficult charge-transfer regions.",
+  "engineering_relevance": "This workflow enables reproducible migration-barrier calculations for strongly coupled electron-lattice systems, reducing expensive DFT sampling while maintaining reliable transition-path verification.",
   "method": [
-    "Joint energy-force Gaussian process surrogate with a Matérn kernel",
-    "Trust-region limits on atom displacements plus active-atom RMS/max displacement triggers for DFT resampling",
-    "Independent full-band DFT verification, including a local GP for repeated central-image sampling"
+    "Joint energy-force Gaussian process with Matérn covariance guides NEB image updates",
+    "Active-atom RMS and max-displacement trust limits trigger DFT sampling before the surrogate strays too far",
+    "Independent DFT verification is used to confirm final barriers and force convergence"
   ],
-  "evidence_signal": "Three independently verified 96-atom runs produced nearly identical barriers of 0.1645, 0.1637, and 0.1640 eV, and a 324-atom run gave 0.1302 eV with a final maximum projected NEB force of 0.0346 eV/Å.",
-  "watch_item": "Barrier values remain sensitive to supercell size and charge-localization behavior, so surrogate extrapolation must be tightly controlled and always verified with DFT.",
+  "evidence_signal": "Three verified 96-atom runs produced consistent barriers of 0.1645, 0.1637, and 0.1640 eV, and a larger 324-atom run gave 0.1302 eV, showing both reproducibility and supercell sensitivity.",
+  "watch_item": "Surrogate stability can still be challenged by localization switching and repeated central-image sampling, so local GP calibration and full-band DFT checks remain important.",
   "hashtags": [
     "#MaterialsDiscovery",
     "#MachineLearning",
-    "#NEB",
     "#DensityFunctionalTheory",
-    "#Polarons"
+    "#NudgedElasticBand",
+    "#PolaronHopping"
   ],
   "paper_id": "2026-10-12-arxiv-trust_limited_machine_learning_accelerated_nudged_elastic_band_calculations_for_small_pola",
   "paper_title": "Trust-Limited Machine-Learning-Accelerated Nudged Elastic Band Calculations for Small-Polaron Hopping in Rutile TiO2",
   "paper_date": "2026-10-12",
   "paper_category": "Materials Discovery",
-  "generated_at": "2026-10-17T14:03:38",
+  "generated_at": "2026-10-18T14:18:28",
   "generator": "openai"
 }
