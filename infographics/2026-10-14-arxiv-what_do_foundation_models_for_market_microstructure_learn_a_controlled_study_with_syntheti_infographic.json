@@ -1,24 +1,24 @@
 {
-  "key_insight": "Training GPT-style models on synthetic limit order book streams reveals they learn amortized Bayesian filtering of latent market regimes rather than just surface patterns.",
-  "engineering_relevance": "This suggests foundation models can become fast, low-cost surrogate inferencers for market microstructure simulators and parameter calibration workflows.",
+  "key_insight": "Training GPT-style models on synthetic limit order book streams shows they learn amortized Bayesian inference over latent market regimes, not just next-token statistics.",
+  "engineering_relevance": "This suggests foundation models can be used as fast, frozen surrogates for regime estimation and simulator calibration in market microstructure workflows.",
   "method": [
-    "Train autoregressive transformers on order-flow sequences from simulators with known latent parameters",
-    "Compare next-token predictions to exact Bayes-optimal and oracle predictors under stationary and drifting regimes",
-    "Probe frozen activations to decode latent regime and test zero-shot transfer to real NASDAQ data"
+    "Train autoregressive transformers on order-flow sequences from simulators with known latent parameters.",
+    "Compare model predictions against Bayes-optimal and oracle references using exact entropy-aware evaluation.",
+    "Probe frozen activations for linearly decodable latent regimes and test transfer to real NASDAQ order flow."
   ],
-  "evidence_signal": "The model’s predictive loss matches the exact Bayes optimum to within a millinat per token, and latent regime decoding outperforms baselines while transfer improves as the simulator prior better covers real flow.",
-  "watch_item": "Results depend strongly on simulator coverage, so a narrow or misspecified synthetic prior may limit transfer to real markets.",
+  "evidence_signal": "The models match the exact Bayes optimum to within a millinat per token, recover latent regimes from frozen activations, and improve zero-shot transfer when the simulator prior better covers real market flow.",
+  "watch_item": "Performance depends strongly on how well synthetic training regimes cover the target market, so poor simulator priors can limit transfer even when loss looks near-optimal.",
   "hashtags": [
     "#FoundationModels",
     "#MarketMicrostructure",
-    "#SyntheticData",
+    "#LimitOrderBooks",
     "#BayesianInference",
-    "#Transformers"
+    "#SyntheticData"
   ],
   "paper_id": "2026-10-14-arxiv-what_do_foundation_models_for_market_microstructure_learn_a_controlled_study_with_syntheti",
   "paper_title": "What Do Foundation Models for Market Microstructure Learn? A Controlled Study with Synthetic Limit Order Books",
   "paper_date": "2026-10-14",
   "paper_category": "Materials Discovery",
-  "generated_at": "2026-10-18T14:18:12",
+  "generated_at": "2026-10-19T09:04:55",
   "generator": "openai"
 }
