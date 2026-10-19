@@ -27,27 +27,29 @@
     ],
     "score": 75,
     "infographic": {
-      "key_insight": "Active learning makes machine learning interatomic potentials far more data-efficient by iteratively choosing the most informative configurations instead of training only on predefined datasets.",
-      "engineering_relevance": "This enables more reliable atomistic simulation and materials design for specific target conditions, from mechanics and diffusion to reactive chemistry and functional materials.",
+      "key_insight": "Active learning improves data efficiency for machine learning interatomic potentials by selecting reference calculations tailored to intended simulation conditions.",
+      "engineering_relevance": "Adaptive training can focus costly reference calculations on configurations relevant to mechanics, diffusion, functional materials, and reactive dynamics.",
       "method": [
-        "Loop: generate candidates -> estimate uncertainty -> select new data -> run reference calculations -> update the model",
-        "Uses approaches such as on-the-fly molecular dynamics, query-by-committee, Gaussian process force fields, and pretrained-model fine-tuning",
-        "Extends to kernel/representation-based acquisition and reaction-aware sampling for systems far from equilibrium"
+        "Loop through candidate generation, data selection, reference calculation, and model updating.",
+        "Acquire configurations using uncertainty, model committees, or kernel- and representation-based criteria.",
+        "Adapt sampling to pretrained-model fine-tuning and far-from-equilibrium reactions."
       ],
-      "evidence_signal": "The review synthesizes more than seventy studies, with emphasis on 2020-2026 work across diverse materials and chemistry applications.",
-      "watch_item": "Uncertainty estimates are not directly comparable across model architectures and can be least reliable in the exact regions where active learning depends on them most.",
+      "evidence_signal": "The review surveys more than 70 studies, emphasizing 2020–2026, but the abstract reports no pooled quantitative performance benchmark.",
+      "watch_item": "Uncertainty estimates are architecture-dependent and may be least reliable in the unfamiliar configurations where reliable acquisition matters most.",
       "hashtags": [
         "#ActiveLearning",
         "#InteratomicPotentials",
         "#MaterialsDiscovery",
         "#UncertaintyQuantification",
-        "#MachineLearning"
+        "#AtomisticSimulation"
       ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
       "paper_id": "2026-10-16-arxiv-active_learning_for_interatomic_potentials_a_review_of_uncertainty_driven_data_efficiency",
       "paper_title": "Active Learning for Interatomic Potentials: A Review of Uncertainty-Driven Data Efficiency",
       "paper_date": "2026-10-16",
       "paper_category": "Materials Discovery",
-      "generated_at": "2026-10-19T09:04:45",
+      "generated_at": "2026-10-19T09:09:10",
       "generator": "openai"
     }
   },
@@ -78,27 +80,29 @@
     ],
     "score": 67,
     "infographic": {
-      "key_insight": "MACE-accelerated molecular dynamics can reproduce DFT sorption trends for thousands of point-defect structures in 2D materials and remains qualitatively consistent at 300 K.",
-      "engineering_relevance": "This enables much faster high-throughput prescreening of defect stability and sorption behavior, helping prioritize the most promising 2D material defects for deeper study.",
+      "key_insight": "MACE-driven molecular dynamics reproduces overall DFT sorption trends for point defects in 2D materials, with qualitative trends largely unchanged at 300 K.",
+      "engineering_relevance": "Low-cost ML-potential simulations enable high-throughput prescreening of defect sorption behavior before expensive first-principles validation.",
       "method": [
-        "Simulated 17,624 defect structures from the ADAQ database.",
-        "Used the MACE machine-learning interatomic potential for MD at 0 K and 300 K.",
-        "Compared sorption trends from ML-driven simulations against prior high-throughput DFT results."
+        "Select 17,624 defect structures from the ADAQ database.",
+        "Use MACE to simulate structures at 0 K and 300 K.",
+        "Compare adsorption-versus-absorption trends with prior DFT results."
       ],
-      "evidence_signal": "The abstract reports that MACE reproduces the overall adsorption-versus-absorption trends seen in DFT at 0 K, and that those qualitative trends largely persist at 300 K.",
-      "watch_item": "MACE is suitable for rapid screening, but DFT is still needed to validate quantitative energetics and final defect rankings.",
+      "evidence_signal": "Across 17,624 structures, MACE reproduced overall DFT sorption trends at 0 K, while 300 K simulations showed largely consistent qualitative behavior.",
+      "watch_item": "Agreement in aggregate sorption trends does not establish quantitative accuracy for individual defects; DFT validation remains necessary.",
       "hashtags": [
+        "#MaterialsDiscovery",
         "#MachineLearningPotentials",
-        "#2DMaterials",
-        "#DefectEngineering",
         "#MolecularDynamics",
-        "#MaterialsDiscovery"
+        "#2DMaterials",
+        "#DefectEngineering"
       ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
       "paper_id": "2026-10-14-arxiv-sorption_molecular_dynamics_of_point_defects_in_2d_materials_with_a_machine_learning_poten",
       "paper_title": "Sorption Molecular Dynamics of Point Defects in 2D Materials with a Machine Learning Potential",
       "paper_date": "2026-10-14",
       "paper_category": "Materials Discovery",
-      "generated_at": "2026-10-19T09:04:48",
+      "generated_at": "2026-10-19T09:09:13",
       "generator": "openai"
     }
   },
@@ -129,27 +133,29 @@
     ],
     "score": 63,
     "infographic": {
-      "key_insight": "Ultra-high-precision LEED, STM, and DFT show that oxygen on Rh(100) has a previously misidentified 0.50 ML ground state made of nano-domains, while the 0.25 ML phase features fourfold hollow adsorption with second-layer buckling.",
-      "engineering_relevance": "These corrected atomic-scale structures refine surface chemistry models for Rh catalysts and improve how ordered/disordered adsorbate phases are interpreted in diffraction-based surface characterization.",
+      "key_insight": "Ultra-precise structural analysis reveals subsurface buckling at 0.25 ML oxygen coverage and explains how nano-domain scattering conceals the true periodicity of the 0.50 ML phase on Rh(100).",
+      "engineering_relevance": "Resolving oxygen adsorption and ordering on catalytically important Rh(100) provides more reliable atomic structures for surface-reaction modeling.",
       "method": [
-        "Quantitative LEED structure refinement with ultra-low Pendry R factors (~0.07)",
-        "Variable-temperature STM to probe ordering and nano-domain behavior",
-        "DFT plus short-range order simulations to test candidate surface models and diffraction extinction"
+        "Quantitative low-energy electron diffraction (LEED) structure analysis.",
+        "Variable-temperature scanning tunneling microscopy (STM) and density functional theory (DFT).",
+        "Short-range-order simulations of coherent nano-domain scattering."
       ],
-      "evidence_signal": "The paper reports single-digit picometer structural precision from LEED and uses short-range order simulations to explain why nano-domain scattering suppresses expected diffraction spots.",
-      "watch_item": "The 0.50 ML phase is highly temperature-sensitive and domain-rich, so experimental interpretation depends strongly on disorder and coherent domain averaging.",
+      "evidence_signal": "LEED achieved single-digit-picometer structural precision with Pendry R factors near 0.07, while simulations showed how nano-domains virtually extinguish diffraction spots.",
+      "watch_item": "The 0.50 ML phase forms many nano-domains already below 100 K, making diffraction-based identification of its true periodicity temperature- and ordering-sensitive.",
       "hashtags": [
         "#SurfaceScience",
-        "#LEED",
-        "#STM",
-        "#DFT",
-        "#Catalysis"
+        "#Rhodium",
+        "#OxygenAdsorption",
+        "#ElectronDiffraction",
+        "#ComputationalMaterials"
       ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
       "paper_id": "2026-10-16-arxiv-oxygen_on_rh_100_revisited_with_ultra_high_precision",
       "paper_title": "Oxygen on Rh(100) revisited with ultra-high precision",
       "paper_date": "2026-10-16",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-10-19T09:04:50",
+      "generated_at": "2026-10-19T09:09:16",
       "generator": "openai"
     }
   },
@@ -180,27 +186,29 @@
     ],
     "score": 63,
     "infographic": {
-      "key_insight": "LLM agents struggle to reliably set up high-fidelity MBPT workflows on their own, but a knowledge-engineered, deterministic framework can make GW, GW-BSE, and GWPT calculations consistently runnable.",
-      "engineering_relevance": "This work shows that expert-curated workflow knowledge and controlled execution can turn fragile agentic automation into a dependable tool for computational materials discovery and excited-state modeling.",
+      "key_insight": "AI-Donkey combines expert-curated knowledge with deterministic execution to make LLM-driven many-body perturbation theory workflows more reliable.",
+      "engineering_relevance": "The framework could reduce specialist setup effort for predicting excited-state properties and electron–phonon interactions in materials.",
       "method": [
-        "Benchmarked out-of-the-box LLM agents on GW, GW-BSE, and GWPT workflow construction.",
-        "Built AI-Donkey, combining expert knowledge with deterministic execution to guide multi-step MBPT workflows.",
-        "Tested autonomous calculations and post-processing on 1D, 2D, and bulk materials."
+        "Benchmark out-of-the-box LLM agents on GW, GW-BSE, and GWPT workflow construction.",
+        "Combine expert-curated knowledge with deterministic execution to address cross-stage inconsistencies.",
+        "Demonstrate autonomous calculations and post-processing for 1D, 2D, and bulk materials."
       ],
-      "evidence_signal": "Out-of-the-box agents averaged 54% on GW, 36% on GW-BSE, and 19% on GWPT benchmarks, with large run-to-run variation; with AI-Donkey, all tested agents produced complete, runnable workflows with no observed variation.",
-      "watch_item": "The framework depends on expert-curated knowledge and may require substantial domain-specific maintenance as methods, software, and workflows evolve.",
+      "evidence_signal": "Out-of-the-box agents averaged 54%, 36%, and 19% on GW, GW-BSE, and GWPT benchmarks, respectively; with AI-Donkey, all tested agents produced complete, runnable workflows with no observed run-to-run variation.",
+      "watch_item": "Runnable workflows do not alone establish numerical accuracy; reliability beyond the tested systems and software configurations remains to be assessed.",
       "hashtags": [
+        "#AIMaterialsScience",
         "#LLMAgents",
-        "#MaterialsScience",
         "#ManyBodyPerturbationTheory",
-        "#GWMethod",
-        "#ComputationalChemistry"
+        "#ComputationalMaterials",
+        "#ScientificAutomation"
       ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
       "paper_id": "2026-10-14-arxiv-enabling_large_language_model_agents_for_high_fidelity_many_body_perturbation_theory_calcu",
       "paper_title": "Enabling large language model agents for high-fidelity many-body perturbation theory calculations",
       "paper_date": "2026-10-14",
       "paper_category": "AI materials science",
-      "generated_at": "2026-10-19T09:04:53",
+      "generated_at": "2026-10-19T09:09:18",
       "generator": "openai"
     }
   },
@@ -231,27 +239,29 @@
     ],
     "score": 63,
     "infographic": {
-      "key_insight": "Training GPT-style models on synthetic limit order book streams shows they learn amortized Bayesian inference over latent market regimes, not just next-token statistics.",
-      "engineering_relevance": "This suggests foundation models can be used as fast, frozen surrogates for regime estimation and simulator calibration in market microstructure workflows.",
+      "key_insight": "On synthetic limit order books, GPT-style models learn predictions consistent with amortized Bayesian inference over market regimes, with generalization driven more by regime diversity than scale.",
+      "engineering_relevance": "For market-simulation engineering rather than materials discovery, frozen model representations enable accurate, lower-cost simulator calibration and useful transfer to real order flow.",
       "method": [
-        "Train autoregressive transformers on order-flow sequences from simulators with known latent parameters.",
-        "Compare model predictions against Bayes-optimal and oracle references using exact entropy-aware evaluation.",
-        "Probe frozen activations for linearly decodable latent regimes and test transfer to real NASDAQ order flow."
+        "Train autoregressive transformers on simulated order flow with known latent parameters and exact data entropy.",
+        "Compare predictions against Bayes-optimal and oracle references, including drifting latent regimes.",
+        "Probe frozen activations for regime information and test transfer to real NASDAQ data."
       ],
-      "evidence_signal": "The models match the exact Bayes optimum to within a millinat per token, recover latent regimes from frozen activations, and improve zero-shot transfer when the simulator prior better covers real market flow.",
-      "watch_item": "Performance depends strongly on how well synthetic training regimes cover the target market, so poor simulator priors can limit transfer even when loss looks near-optimal.",
+      "evidence_signal": "Predictive loss matches the exact Bayes optimum within a millinat per token; frozen read-outs outperform windowed maximum likelihood for calibration, and pretraining beats training from scratch at every tested budget on held-out tickers.",
+      "watch_item": "Zero-shot performance depends on simulator-prior coverage of real order flow, so synthetic accuracy alone does not establish robustness to unseen market conditions.",
       "hashtags": [
-        "#FoundationModels",
         "#MarketMicrostructure",
-        "#LimitOrderBooks",
+        "#FoundationModels",
         "#BayesianInference",
-        "#SyntheticData"
+        "#SyntheticData",
+        "#SimulatorCalibration"
       ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
       "paper_id": "2026-10-14-arxiv-what_do_foundation_models_for_market_microstructure_learn_a_controlled_study_with_syntheti",
       "paper_title": "What Do Foundation Models for Market Microstructure Learn? A Controlled Study with Synthetic Limit Order Books",
       "paper_date": "2026-10-14",
       "paper_category": "Materials Discovery",
-      "generated_at": "2026-10-19T09:04:55",
+      "generated_at": "2026-10-19T09:09:20",
       "generator": "openai"
     }
   },
@@ -283,27 +293,29 @@
     ],
     "score": 61,
     "infographic": {
-      "key_insight": "GINNGER learns thermodynamically admissible \"generators\" of rheology, not just constitutive laws, so one model can generalize across flow types while obeying physics by construction.",
-      "engineering_relevance": "This could enable more reliable, transferable constitutive models for polymer and complex-fluid simulation in process design, reducing the need for hand-crafted equations.",
+      "key_insight": "GINNGER learns thermodynamic generators rather than constitutive operators, yielding complex-fluid models that satisfy the first and second laws of thermodynamics by construction.",
+      "engineering_relevance": "A single physically constrained constitutive model can support predictions across deformation protocols and flow geometries without prescribing phenomenological equations in advance.",
       "method": [
-        "Embed the GENERIC formalism into the learning loop to enforce first- and second-law consistency.",
-        "Represent the constitutive state in the eigenspace of the polymer conformation tensor for a kinematics-independent latent space.",
-        "Train on shear, extensional, and mixed-flow data to learn a single unified model across deformation protocols."
+        "Learn underlying thermodynamic generators from microstructural flow data using the GENERIC formalism.",
+        "Represent microstructural state in the polymer conformation tensor’s intrinsic eigenspace.",
+        "Treat flow kinematics as an external driver, combining shear, extensional, and mixed-flow data."
       ],
-      "evidence_signal": "The framework was validated on high-fidelity simulations, reconstructing constitutive behavior and predicting flow fields in previously unseen geometries.",
-      "watch_item": "The approach likely depends on high-quality microstructural data and careful spectral-state formulation, so robustness on noisy experimental measurements remains to be demonstrated.",
+      "evidence_signal": "Validation using high-fidelity simulations reports accurate constitutive reconstruction and complex-flow predictions in previously unseen geometries.",
+      "watch_item": "The abstract provides no quantitative error metrics or experimental validation, leaving real-material accuracy and robustness to measurement noise unresolved.",
       "hashtags": [
-        "#MaterialsDiscovery",
+        "#ScientificMachineLearning",
+        "#ComplexFluids",
         "#Rheology",
-        "#PhysicsInformedAI",
-        "#GenerativeModeling",
-        "#ComputationalMechanics"
+        "#Thermodynamics",
+        "#ConstitutiveModeling"
       ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
       "paper_id": "2026-10-16-arxiv-a_generic_informed_neural_network_for_generative_rheology",
       "paper_title": "A GENERIC-Informed Neural Network for Generative Rheology",
       "paper_date": "2026-10-16",
       "paper_category": "Materials Discovery",
-      "generated_at": "2026-10-19T09:04:58",
+      "generated_at": "2026-10-19T09:09:24",
       "generator": "openai"
     }
   },
@@ -334,27 +346,29 @@
     ],
     "score": 61,
     "infographic": {
-      "key_insight": "The paper builds a complete symmetry-invariant, interpretable descriptor basis for magnetic textures so machine learning can predict response tensors like anomalous Hall conductivity across arbitrary crystalline magnets.",
-      "engineering_relevance": "This gives materials engineers a systematic way to screen and rank magnetic compounds by their tensor responses using physically meaningful features rather than opaque black-box inputs.",
+      "key_insight": "A complete symmetry-invariant descriptor basis connects magnetic textures to response tensors through interpretable order parameters that remain uncorrelated as higher spin orders are added.",
+      "engineering_relevance": "The framework supports interpretable prediction of magnetic-crystal responses, including anomalous Hall conductivity, for materials modeling and screening.",
       "method": [
-        "Construct symmetry-invariant order parameters for crystal structure and magnetic texture at arbitrary spin order.",
-        "Modify PCA to produce hierarchically stable, uncorrelated descriptors that remain informative as higher-order spin terms are added.",
-        "Use these features for regression and classification of anomalous Hall conductivity in a kagome-lattice magnet."
+        "Construct symmetry-invariant descriptors for arbitrary crystal structures and magnetic textures.",
+        "Modify principal component analysis to obtain hierarchically stable, uncorrelated order parameters.",
+        "Use these features for regression and classification of anomalous Hall conductivity in a magnetic kagome lattice."
       ],
-      "evidence_signal": "The abstract reports that, in the linear-regression regime for anomalous Hall conductivity, the squared regression coefficients follow a Zipf-like power law when ranked by magnitude.",
-      "watch_item": "The framework is most compelling when the response is well captured by linear regression of the invariant order parameters, so performance may depend on the quality and completeness of the symmetry-based feature set.",
+      "evidence_signal": "In the regime where linear regression models anomalous Hall conductivity well, ranked squared regression coefficients follow a Zipf-like power law; the abstract reports no numerical accuracy metrics.",
+      "watch_item": "Although the descriptor construction is general, the abstract demonstrates prediction only for a magnetic kagome lattice, leaving transferability and higher-order computational cost unquantified.",
       "hashtags": [
+        "#PhysicsInformedML",
         "#MaterialsInformatics",
-        "#MachineLearning",
-        "#Magnetism",
-        "#AnomalousHallEffect",
-        "#CrystallineMaterials"
+        "#MagneticMaterials",
+        "#KagomeMetals",
+        "#AnomalousHallEffect"
       ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
       "paper_id": "2026-10-15-arxiv-physics_informed_machine_learning_for_response_tensors_in_crystalline_magnets_application",
       "paper_title": "Physics-Informed Machine Learning for Response Tensors in Crystalline Magnets: Application to Kagome Metals",
       "paper_date": "2026-10-15",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-10-19T09:05:00",
+      "generated_at": "2026-10-19T09:09:26",
       "generator": "openai"
     }
   },
@@ -385,27 +399,29 @@
     ],
     "score": 59,
     "infographic": {
-      "key_insight": "topas-editor and TOPilot turn TOPAS crystallography workflows into AI-assisted, syntax-aware, and largely automatable analysis pipelines.",
-      "engineering_relevance": "The tools can speed up diffraction and total scattering analysis by reducing manual scripting, guiding users through complex refinements, and enabling repeatable workflows across multiple data types.",
+      "key_insight": "topas-editor and TOPilot connect TOPAS crystallographic analysis with syntax-aware editing and generative AI automation.",
+      "engineering_relevance": "These freely available tools can streamline diffraction and total-scattering workflows for materials characterization.",
       "method": [
-        "topas-editor: a VS Code extension with TOPAS-aware editing, hover tips, and manual links",
-        "TOPilot: Python routines plus machine-readable reference docs for AI-driven TOPAS automation",
-        "Demonstrated on Rietveld refinement, multi-dataset analysis, structure solution, phase ID, incommensurate structures, and PDF fitting"
+        "Use a TOPAS-aware VS Code extension with crystallographic editing features and inline reference guidance.",
+        "Combine Python routines, machine-accessible documentation and a transferable topas-inp-writer skill for AI-driven analysis.",
+        "Access TOPilot through the editor, a standalone wizard or AI-provider interfaces."
       ],
-      "evidence_signal": "The abstract reports successful demonstrations across several challenging crystallographic workflows, including complex refinements and automated analysis of multiple datasets.",
-      "watch_item": "Performance depends on correct TOPAS syntax/context and on the chosen AI model, so outputs still need expert validation.",
+      "evidence_signal": "The abstract reports demonstrations spanning complex Rietveld refinement, multiple-data-set analysis, indexing-to-refinement workflows, phase identification, incommensurate structures and PDF fitting, but gives no quantitative performance metrics.",
+      "watch_item": "Development and testing used Claude models; reliability with other cloud or local models requires validation.",
       "hashtags": [
-        "#MaterialsInformatics",
+        "#AIMaterialsScience",
         "#Crystallography",
         "#Diffraction",
-        "#AIforScience",
-        "#ScientificSoftware"
+        "#TOPAS",
+        "#ScientificAutomation"
       ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
       "paper_id": "2026-10-16-arxiv-topas_editor_and_topilot_tools_for_ai_driven_analysis_of_diffraction_and_total_scattering",
       "paper_title": "topas-editor and TOPilot: tools for AI-driven analysis of diffraction and total scattering data",
       "paper_date": "2026-10-16",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-10-19T09:05:02",
+      "generated_at": "2026-10-19T09:09:29",
       "generator": "openai"
     }
   },
@@ -436,27 +452,29 @@
     ],
     "score": 58,
     "infographic": {
-      "key_insight": "pymatgen’s 15-year evolution shows that a community-driven, open-source materials science library can scale while continuing to adapt to new computational and informatics needs.",
-      "engineering_relevance": "For computational materials engineering, pymatgen remains a foundational workflow layer that can accelerate reproducible analysis, model integration, and method adoption across research teams.",
+      "key_insight": "Pymatgen’s 15-year evolution illustrates how community-driven, open-source software can sustain and advance computational materials science workflows.",
+      "engineering_relevance": "Pymatgen provides an established foundation for materials computation and informatics, with continued utility dependent on adapting to changing workflow needs.",
       "method": [
-        "Retrospective review of pymatgen’s development over 15 years.",
-        "Synthesis of community growth, established practices, and new functionality.",
-        "Outlook on challenges and solutions for sustaining community-driven evolution."
+        "Review 15 years of community growth and development practices.",
+        "Describe current functionality supporting advanced materials workflows.",
+        "Discuss maintenance challenges, potential solutions, and future directions."
       ],
-      "evidence_signal": "The abstract is a narrative retrospective rather than an experimental evaluation, so its evidence is based on long-term community experience and library development history.",
-      "watch_item": "Because the paper is reflective and community-oriented, specific quantitative performance benchmarks or comparative evaluations may be limited.",
+      "evidence_signal": "The abstract presents a qualitative retrospective but reports no quantitative benchmarks, datasets, or AI model evaluations.",
+      "watch_item": "Managing community-driven growth while adapting to rapidly changing computational needs remains an ongoing maintenance challenge.",
       "hashtags": [
-        "#pymatgen",
+        "#Pymatgen",
+        "#ComputationalMaterials",
         "#MaterialsInformatics",
         "#OpenSource",
-        "#ComputationalMaterials",
-        "#AIforScience"
+        "#ScientificSoftware"
       ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
       "paper_id": "2026-10-16-arxiv-pymatgen_15_years_of_community_growth_new_functionality_and_future_prospects",
       "paper_title": "pymatgen: 15 years of community growth, new functionality, and future prospects",
       "paper_date": "2026-10-16",
       "paper_category": "AI materials science",
-      "generated_at": "2026-10-19T09:05:04",
+      "generated_at": "2026-10-19T09:09:31",
       "generator": "openai"
     }
   },
@@ -487,27 +505,29 @@
     ],
     "score": 58,
     "infographic": {
-      "key_insight": "In high-entropy fluorite oxides, Np/Am short-range ordering creates lattice distortion that first suppresses O-ion motion, then reorganizes into interconnected pathways that trigger a superionic transition and can even reverse the mobility ranking relative to random solid solutions.",
-      "engineering_relevance": "These results help guide the design of advanced nuclear fuel ceramics by showing how local chemical ordering can be tuned to balance radiation tolerance with fast oxygen transport under extreme temperatures.",
+      "key_insight": "Short-range chemical ordering in high-entropy fluorite oxides initially traps oxygen ions but, upon heating, reorganizes into interconnected transport pathways that enable mobility to exceed that of a random solid solution.",
+      "engineering_relevance": "Controlling local chemical order could help optimize oxygen transport in minor-actinide-bearing mixed-oxide fuels for advanced fast reactors.",
       "method": [
-        "Hybrid Monte Carlo / Molecular Dynamics simulations",
-        "Compare short-range ordered (SRO) and random solid solution (RSS) models across 2000–2800 K",
-        "Analyze diffusion, lattice distortion, Gibbs free energy, and defect evolution"
+        "Hybrid Monte Carlo/molecular dynamics simulations of chemical ordering and ion transport",
+        "Comparison of short-range-ordered and random solid-solution models",
+        "Gibbs free-energy minimization and defect analysis of the superionic transition"
       ],
-      "evidence_signal": "The abstract reports a temperature-dependent kinetic inversion, with a Tammann crossover and superionic transition separating low-mobility trapped-ion behavior from a high-mobility, entropy-driven transport regime.",
-      "watch_item": "The conclusions are simulation-based and may depend on the chosen force model, composition, and temperature window, so experimental validation is needed before materials deployment.",
+      "evidence_signal": "Across 2000–2800 K, simulations reveal a crossover from sluggish oxygen diffusion to enhanced mobility in the ordered model, linked to evolving polyhedral networks and superionic dynamics.",
+      "watch_item": "The abstract reports simulation-based findings without experimental validation or quantified transport gains; performance under irradiation remains to be established.",
       "hashtags": [
-        "#HighEntropyMaterials",
-        "#SuperionicConduction",
+        "#HighEntropyCeramics",
+        "#SuperionicTransport",
         "#NuclearFuels",
         "#MolecularDynamics",
-        "#FluoriteOxides"
+        "#MaterialsScience"
       ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
       "paper_id": "2026-10-16-arxiv-interplay_between_high_entropy_effects_and_the_superionic_transition_in_fluorite_oxides_a",
       "paper_title": "Interplay between high-entropy effects and the superionic transition in fluorite oxides: A liquid-like perspective",
       "paper_date": "2026-10-16",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-10-19T09:05:06",
+      "generated_at": "2026-10-19T09:09:33",
       "generator": "openai"
     }
   },
@@ -540,27 +560,29 @@
     ],
     "score": 58,
     "infographic": {
-      "key_insight": "OrderFlowDiT models the full future limit-order volume field with diffusion, while adding unbalanced optimal transport to better capture both price displacement and total traded volume.",
-      "engineering_relevance": "The approach offers a more realistic way to forecast market microstructure fields, which could improve decision-making systems that depend on spatially distributed supply and uncertainty estimates.",
+      "key_insight": "Adding unbalanced optimal-transport regularization to a Diffusion Transformer improves probabilistic limit-order volume forecasts by jointly accounting for price placement and total volume.",
+      "engineering_relevance": "This is financial-market forecasting research, not materials discovery, but its geometry-aware treatment of unnormalized fields may inform other engineering prediction tasks.",
       "method": [
-        "Conditional Diffusion Transformer predicts unnormalized bid/ask volume-at-price fields.",
-        "Auxiliary unbalanced optimal-transport loss penalizes misplacement in price and mass changes.",
-        "New evaluation combines transport cost, proper scoring rules, and calibration diagnostics."
+        "Condition a Diffusion Transformer on the current order book and recent order flow.",
+        "Predict unnormalized bid and ask volume-at-price fields over the next five minutes using an auxiliary unbalanced optimal-transport loss.",
+        "Evaluate full-field forecasts with transport costs, proper scoring rules, and calibration diagnostics."
       ],
-      "evidence_signal": "On 1,950 validation conditions across 30 U.S. equities, adding UOT reduced full-field transport cost by 45.8% and transport energy score by 26.1% versus MSE-only training.",
-      "watch_item": "The method is tailored to historical order-book data and may be sensitive to market regime shifts, so generalization and real-time deployment should be tested carefully.",
+      "evidence_signal": "Across 1,950 validation conditions covering 30 U.S. equities, adding UOT reduced full-field transport cost by 45.8% and transport energy score by 26.1% versus MSE-only training, with both metrics improving for every stock.",
+      "watch_item": "The abstract does not establish generalization beyond the evaluated equities and five-minute horizon or quantify deployment costs.",
       "hashtags": [
-        "#DiffusionModels",
+        "#DiffusionTransformers",
         "#OptimalTransport",
-        "#LimitOrderBook",
-        "#Forecasting",
-        "#QuantFinance"
+        "#ProbabilisticForecasting",
+        "#LimitOrderBooks",
+        "#UncertaintyQuantification"
       ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
       "paper_id": "2026-10-15-arxiv-orderflowdit_transport_regularized_diffusion_transformer_for_probabilistic_limit_order_sup",
       "paper_title": "OrderFlowDiT: Transport-Regularized Diffusion Transformer for Probabilistic Limit-Order Supply Forecasting",
       "paper_date": "2026-10-15",
       "paper_category": "Materials Discovery",
-      "generated_at": "2026-10-19T09:05:09",
+      "generated_at": "2026-10-19T09:09:35",
       "generator": "openai"
     }
   },
@@ -591,27 +613,29 @@
     ],
     "score": 57,
     "infographic": {
-      "key_insight": "Oxygen changes the surface tension of AlTi alloy melts in a composition-dependent way by enriching the interface and suppressing aluminum surface segregation.",
-      "engineering_relevance": "These results help predict and control melt surface behavior in oxide-exposed alloy processing, relevant to casting, additive manufacturing, and containerless experiments.",
+      "key_insight": "Oxygen alters AlTi melt surface tension in a strongly composition-dependent way and suppresses aluminum surface segregation.",
+      "engineering_relevance": "Controlling oxygen and alloy composition may help tune interfacial behavior in molten AlTi processing.",
       "method": [
-        "Molecular dynamics simulations of AlTi metallic alloy melts.",
-        "Machine-learned interatomic potential (MLIP) for bulk and surface properties.",
-        "Element-resolved density profile analysis with oxygen present/absent."
+        "Molecular dynamics simulations using a machine-learned interaction potential.",
+        "Element-resolved density profiles to assess interfacial enrichment and segregation.",
+        "Comparison with microgravity levitation measurements."
       ],
-      "evidence_signal": "The simulation results were compared against experimental surface-tension values from levitation measurements in microgravity.",
-      "watch_item": "The conclusions depend on the transferability of the MLIP to oxygen-containing interfacial conditions, so surface predictions should be validated carefully against experiment.",
+      "evidence_signal": "The abstract reports oxygen enrichment near the interface, reduced aluminum segregation, and comparison of surface-tension results with microgravity experiments.",
+      "watch_item": "Prior potential validation focused on bulk melts; the abstract does not quantify accuracy for oxygen-containing interfaces.",
       "hashtags": [
-        "#MolecularDynamics",
-        "#MetallicAlloys",
+        "#AlTi",
         "#SurfaceTension",
-        "#MachineLearningPotential",
-        "#MaterialsSimulation"
+        "#MachineLearningPotentials",
+        "#MolecularDynamics",
+        "#MaterialsScience"
       ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
       "paper_id": "2026-10-16-arxiv-the_effect_of_oxygen_on_the_surface_tension_of_alti_metallic_alloys",
       "paper_title": "The effect of oxygen on the surface tension of AlTi metallic alloys",
       "paper_date": "2026-10-16",
       "paper_category": "Microstructure",
-      "generated_at": "2026-10-19T09:05:11",
+      "generated_at": "2026-10-19T09:09:38",
       "generator": "openai"
     }
   },
@@ -642,27 +666,29 @@
     ],
     "score": 57,
     "infographic": {
-      "key_insight": "MECx uses a bond-informed surrogate model to efficiently search combinatorial alloy configuration space and find lower-energy ordered MPEA structures than direct DFT Monte Carlo within practical limits.",
-      "engineering_relevance": "This enables faster discovery of experimentally relevant ordered alloy states that can tune local structure, thermodynamics, and mechanical properties in complex multicomponent alloys.",
+      "key_insight": "MECx uses a bond-informed surrogate energy model to find low-energy ordered configurations in multi-principal element alloys more efficiently than direct DFT-based Monte Carlo.",
+      "engineering_relevance": "Identifying alloy ordering can help engineers investigate local structures that influence mechanical and thermodynamic properties.",
       "method": [
-        "Train surrogate energy models on 100 DFT-labeled configurations stratified in bond-count space.",
-        "Use the surrogate to guide Monte Carlo exploration of BCC ternary, quaternary, and quinary alloys.",
-        "Validate candidate ordered states against direct DFT Monte Carlo and simulated neutron diffraction signatures."
+        "Select training configurations stratified in bond-count space.",
+        "Train surrogate energy models on 100 DFT-labeled configurations per alloy.",
+        "Guide Monte Carlo searches and examine ordering, temperature response, and simulated neutron diffraction."
       ],
-      "evidence_signal": "The abstract reports that MECx found ordered configurations with lower energies than direct DFT-based Monte Carlo, and that the models transferred to selected binary subsystems without retraining.",
-      "watch_item": "Performance depends on the representativeness of the compact DFT training set, so poorly sampled bond-count regions may limit reliability.",
+      "evidence_signal": "Across ternary, quaternary, and quinary BCC alloys, MECx found lower-energy candidates than direct DFT-based Monte Carlo within practical computational limits, with transfer demonstrated to selected binary subsystems without retraining.",
+      "watch_item": "Transferability was demonstrated only for selected binary subsystems; broader alloy chemistries and crystal structures require validation.",
       "hashtags": [
-        "#MaterialsInformatics",
+        "#AIMaterials",
         "#AlloyDesign",
-        "#DFT",
-        "#MonteCarloSearch",
-        "#CrystalStructure"
+        "#SurrogateModeling",
+        "#MonteCarlo",
+        "#ComputationalMaterials"
       ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
       "paper_id": "2026-10-15-arxiv-bond_informed_search_for_ordered_configurations_in_multi_principal_element_alloys",
       "paper_title": "Bond-informed search for ordered configurations in multi-principal element alloys",
       "paper_date": "2026-10-15",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-10-19T09:05:13",
+      "generated_at": "2026-10-19T09:09:40",
       "generator": "openai"
     }
   },
@@ -693,27 +719,29 @@
     ],
     "score": 56,
     "infographic": {
-      "key_insight": "Crystal structural prototypes provide a unifying framework for grouping materials by recurring atomic arrangements, but the result depends strongly on how structure equivalence is defined and how neighbors are assigned.",
-      "engineering_relevance": "Prototype libraries enable high-throughput materials discovery, structure prediction, and generative design by allowing chemical substitution, derivative enumeration, and template-based candidate generation.",
+      "key_insight": "Crystal prototype reuse supports materials discovery, but family definitions and training coverage strongly influence apparent prediction success and novelty.",
+      "engineering_relevance": "Prototype libraries can guide substitution, screening, and crystal structure prediction when structural equivalence rules match the engineering task.",
       "method": [
-        "Surveyed prototype construction methods spanning crystallographic curation, standardization, geometric matching, local-environment clustering, and periodic-graph analysis.",
-        "Compared major prototype libraries and structure-type databases, including AFLOW, CSPD, LAE-ICSPD, EMFDTW, TYPIX, and ICSD structure types.",
-        "Evaluated GraphID-based family assignment and benchmarked generative CSP models using template retrieval and stoichiometry-held-out tests."
+        "Survey curated and automated prototype libraries and their classification algorithms.",
+        "Analyze GraphID family coverage and neighbor-tolerance sensitivity across four materials databases.",
+        "Compare 12 generative crystal structure prediction models and test reduced-stoichiometry holdouts."
       ],
-      "evidence_signal": "Across ICSD, Materials Project, OQMD, and LeMat samples, the 100 most frequent families covered 30–67% of structures, 72–82% of families were singletons, and up to 76% of GraphIDs changed when neighbor tolerance varied.",
-      "watch_item": "Prototype assignments can be highly sensitive to neighbor-definition choices and stoichiometric coverage, so reported performance may reflect library bias rather than true generalization to unseen structures.",
+      "evidence_signal": "Across analyzed database samples, the top 100 families cover 30–67% of structures; template retrieval achieves the highest top-1 success rate among the 12 compared models.",
+      "watch_item": "Stoichiometry-held-out failures do not establish unseen-prototype generalization; family assignments also depend strongly on neighbor tolerance.",
       "hashtags": [
         "#MaterialsDiscovery",
-        "#CrystalStructures",
-        "#PrototypeLibraries",
-        "#CSP",
-        "#GenerativeDesign"
+        "#CrystalPrototypes",
+        "#CrystalStructurePrediction",
+        "#GenerativeAI",
+        "#ComputationalMaterials"
       ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
       "paper_id": "2026-10-15-arxiv-a_comprehensive_survey_of_crystal_structural_prototypes_construction_classification_and_ap",
       "paper_title": "A Comprehensive Survey of Crystal Structural Prototypes: Construction, Classification, and Applications",
       "paper_date": "2026-10-15",
       "paper_category": "Materials Discovery",
-      "generated_at": "2026-10-19T09:05:15",
+      "generated_at": "2026-10-19T09:09:43",
       "generator": "openai"
     }
   },
@@ -745,27 +773,29 @@
     ],
     "score": 56,
     "infographic": {
-      "key_insight": "A graph neural network can represent diverse acyclic AB multiblock copolymer chain topologies in a common format and accurately predict RPA instability limits across architectures.",
-      "engineering_relevance": "This gives polymer designers a reusable ML surrogate for rapidly screening chain architectures and guiding phase-behavior exploration without relying on expensive field-theoretic calculations alone.",
+      "key_insight": "A shared graph neural representation links diverse acyclic AB block-copolymer architectures to RPA instability limits.",
+      "engineering_relevance": "The approach could accelerate architecture screening for phase-behavior design and guide future self-consistent field theory exploration.",
       "method": [
-        "Represent each copolymer chain as a graph so topological differences can be learned by one model.",
-        "Train a GNN to predict random-phase approximation (RPA) instability limits from architecture-dependent features.",
-        "Test transferability to larger/more complex architectures and to instability-wavenumber prediction."
+        "Represent each acyclic AB multiblock chain as a graph.",
+        "Train a GNN to predict RPA instability limits across chain topologies.",
+        "Test extrapolation to more blocks and transfer to instability-wavenumber prediction."
       ],
-      "evidence_signal": "The abstract reports that the model reconstructs stability-limit curves and retains predictive capability when extrapolated to architectures with more blocks, while also transferring to a related wavenumber task.",
-      "watch_item": "The approach is demonstrated on acyclic AB multiblock architectures, so performance on cyclic, branched, or compositionally more complex copolymers may require retraining or new representations.",
+      "evidence_signal": "The abstract reports reconstructed stability-limit curves, retained predictive capability for architectures with more blocks, and transfer to wavenumber prediction, but provides no numerical accuracy metrics.",
+      "watch_item": "Validation is limited to acyclic AB architectures and RPA instability prediction; ordered-phase mapping remains a future application.",
       "hashtags": [
         "#GraphNeuralNetworks",
         "#BlockCopolymers",
-        "#PolymerPhysics",
-        "#MachineLearningMaterials",
-        "#SelfConsistentFieldTheory"
+        "#PolymerArchitecture",
+        "#MaterialsInformatics",
+        "#PhaseBehavior"
       ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
       "paper_id": "2026-10-14-arxiv-effective_graph_neural_representation_of_chain_architectures_of_block_copolymers_tested_by",
       "paper_title": "Effective Graph Neural Representation of Chain Architectures of Block Copolymers Tested by Predicting RPA Instability Limits",
       "paper_date": "2026-10-14",
       "paper_category": "Microstructure",
-      "generated_at": "2026-10-19T09:05:18",
+      "generated_at": "2026-10-19T09:09:45",
       "generator": "openai"
     }
   },
@@ -797,27 +827,29 @@
     ],
     "score": 55,
     "infographic": {
-      "key_insight": "Spin-current transmission through epitaxial α-Fe2O3 is strongly temperature- and thickness-dependent, with a characteristic transition temperature linked to the magnetic reorientation of the hematite layer.",
-      "engineering_relevance": "This suggests antiferromagnetic oxide thickness and operating temperature can be used to tune spintronic device performance and signal transfer efficiency.",
+      "key_insight": "Spin-current transmission through epitaxial α-Fe2O3 depends on temperature and layer thickness, with a characteristic crossover correlated with magnetic spin reorientation.",
+      "engineering_relevance": "Hematite-based spintronic interconnects may require thickness and operating-temperature control to maintain predictable spin-current transmission.",
       "method": [
-        "Epitaxial α-Fe2O3 thin films were sandwiched between Permalloy and Pt.",
-        "Spin pumping was used to generate spin current and inverse spin Hall effect to detect the resulting dc voltage.",
-        "Samples with α-Fe2O3 thicknesses of 0, 30, 40, and 100 nm were measured from 1.6 to 300 K."
+        "Sandwich epitaxial α-Fe2O3 between Permalloy and Pt.",
+        "Probe spin transport using spin pumping and the inverse spin Hall effect.",
+        "Compare temperature-dependent voltage with dc magnetization measurements."
       ],
-      "evidence_signal": "A finite symmetric dc voltage was observed across Pt for all studied films, and the temperature coefficient Ks showed two linear regimes separated by a thickness-dependent T* that correlates with the Morin transition.",
-      "watch_item": "The spin-transport response appears highly sensitive to magnetic phase changes and structural defects, so device behavior may vary substantially with film quality and thermal operating point.",
+      "evidence_signal": "Finite symmetric dc voltage was observed from 1.6–300 K for α-Fe2O3 thicknesses of 0, 30, 40, and 100 nm; its coefficient Ks showed two approximately linear temperature regimes with a larger slope magnitude below a thickness-dependent T*.",
+      "watch_item": "The proposed link between T* and the Morin transition is supported by magnetization measurements on only some samples, and lossless or coherent transport is not established.",
       "hashtags": [
         "#Spintronics",
-        "#Antiferromagnet",
         "#Hematite",
-        "#InverseSpinHallEffect",
-        "#ThinFilms"
+        "#Antiferromagnetism",
+        "#SpinTransport",
+        "#EpitaxialThinFilms"
       ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
       "paper_id": "2026-10-16-arxiv-temperature_and_thickness_dependent_spin_current_transmission_through_epitaxial_antiferrom",
       "paper_title": "Temperature and Thickness Dependent Spin Current Transmission through Epitaxial Antiferromagnetic α-Fe2O3",
       "paper_date": "2026-10-16",
       "paper_category": "Microstructure",
-      "generated_at": "2026-10-19T09:05:20",
+      "generated_at": "2026-10-19T09:09:47",
       "generator": "openai"
     }
   },
@@ -848,27 +880,29 @@
     ],
     "score": 53,
     "infographic": {
-      "key_insight": "An E(3)-equivariant neural network can learn the complex, frequency-dependent GW self-energy from molecular geometry and atom types, enabling accurate quasiparticle spectra without running expensive first-principles calculations for each new structure.",
-      "engineering_relevance": "This offers a fast surrogate for electronic-structure workflows, making real-frequency spectral predictions and frontier-level estimates much more practical for high-throughput materials and molecular screening.",
+      "key_insight": "An E(3)-equivariant neural network learns molecular self-energy matrices on the imaginary-frequency axis, enabling accurate real-frequency spectra without a new explicit G₀W₀ calculation.",
+      "engineering_relevance": "Given a density-functional reference, the trained model could reduce the cost of predicting molecular quasiparticle energies and spectral functions.",
       "method": [
-        "Uses an E(3)-equivariant message-passing network to predict the dynamical correlation part of the imaginary-frequency G0W0 self-energy matrix.",
-        "Imposes rotational covariance of the orbital-space matrix by design and adds the static exchange term from the density-functional reference.",
-        "Represents frequency either as an explicit input or via frequency-specific output heads, then continues the result to the real axis with physically constrained spectral density."
+        "Predict complex, frequency-dependent correlation self-energy matrices from atomic species and coordinates using equivariant message passing.",
+        "Encode frequency as a network input or use frequency-specific output heads; take static exchange from the density-functional reference.",
+        "Continue predictions to real frequencies using a representation that enforces causality and non-negative spectral density."
       ],
-      "evidence_signal": "The abstract reports sub-1 meV matrix-element errors on the imaginary axis, with continued spectra matching G0W0 peak-by-peak and frontier quasiparticle levels reproduced to within a few tens of meV, including a water tetramer not seen in training.",
-      "watch_item": "Performance depends on the underlying density-functional reference and careful analytic continuation, so generalization beyond the tested chemistries and geometries should be validated before deployment.",
+      "evidence_signal": "The frequency-conditioned model achieves sub-1-meV imaginary-axis matrix-element accuracy and frontier quasiparticle energies within a few tens of meV for water clusters, including an unseen tetramer, and diverse QM9 molecules.",
+      "watch_item": "Results concern molecular benchmarks; transfer to polymers, composites, or extended solids remains unestablished, and inference still requires a density-functional reference.",
       "hashtags": [
-        "#MachineLearning",
-        "#ComputationalChemistry",
-        "#GWTheory",
-        "#EquivariantNNs",
-        "#MaterialsInformatics"
+        "#EquivariantNeuralNetworks",
+        "#ElectronicStructure",
+        "#SelfEnergy",
+        "#GWApproximation",
+        "#AIForScience"
       ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
       "paper_id": "2026-10-16-arxiv-learning_the_self_energy_through_equivariant_neural_networks",
       "paper_title": "Learning the self-energy through equivariant neural networks",
       "paper_date": "2026-10-16",
       "paper_category": "Polymers and Composites",
-      "generated_at": "2026-10-19T09:05:23",
+      "generated_at": "2026-10-19T09:09:49",
       "generator": "openai"
     }
   },
@@ -900,27 +934,29 @@
     ],
     "score": 53,
     "infographic": {
-      "key_insight": "The paper introduces a scalable ML interatomic potential that cleanly separates long-range electrostatics from local learned interactions, enabling efficient prediction of energies, forces, stresses, and electrical response at million-atom scale.",
-      "engineering_relevance": "This advances atomistic modeling for device-relevant materials under electric fields by making long-range physics compatible with distributed, GPU-parallel simulation.",
+      "key_insight": "DPA4C-LR combines long-range electrostatics with local learned-charge derivatives to enable scalable atomistic simulations with electrical response.",
+      "engineering_relevance": "The framework supports large-scale modeling of field-responsive materials, ionic conductors, and thermal interfaces toward device-relevant length scales.",
       "method": [
-        "Analytically split electrostatic forces and Born effective charges into a global electrostatics solve plus local derivatives of learned latent charges.",
-        "Embed the formulation in an equivariant MLIP backbone (DPA4C-LR) to preserve spatial decomposability for distributed evaluation.",
-        "Support energies, forces, stresses, and BECs across boundary conditions while retaining scalability on the nvalchemi platform."
+        "Separate electrostatic forces and Born effective charges into global electrostatics and strictly local learned-charge derivatives.",
+        "Preserve spatial decomposition for distributed evaluation of energies, forces, stresses, and electrical response.",
+        "Implement DPA4C-LR on nvalchemi with support for different electrostatic boundary conditions."
       ],
-      "evidence_signal": "The model scales to 5.2 million atoms on four GPUs at about twice the cost of the short-range backbone and reproduces field-dependent IR spectra, polarization hysteresis, ionic conductivity, and interface thermal transport benchmarks.",
-      "watch_item": "The approach still relies on correct electrostatics setup and slab/boundary-condition handling, so implementation details may strongly affect accuracy and scalability.",
+      "evidence_signal": "The abstract reports 5.2 million atoms on four GPUs at approximately twice the short-range backbone cost, alongside demonstrations of water infrared spectra, relaxor hysteresis, ionic conductivity, and interfacial thermal transport.",
+      "watch_item": "Global electrostatics still requires coordinated computation, and the reported four-GPU result does not establish scaling efficiency on larger GPU counts.",
       "hashtags": [
         "#MachineLearningPotentials",
-        "#AtomisticSimulation",
-        "#Electrostatics",
-        "#MaterialsModeling",
-        "#ComputationalScience"
+        "#ComputationalMaterials",
+        "#LongRangeElectrostatics",
+        "#ElectricalResponse",
+        "#ScalableSimulation"
       ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
       "paper_id": "2026-10-16-arxiv-scalable_long_range_machine_learning_interatomic_potentials_with_electrical_response_for_a",
       "paper_title": "Scalable long-range machine learning interatomic potentials with electrical response for atomistic material modeling",
       "paper_date": "2026-10-16",
       "paper_category": "Microstructure",
-      "generated_at": "2026-10-19T09:05:26",
+      "generated_at": "2026-10-19T09:09:52",
       "generator": "openai"
     }
   },
@@ -953,27 +989,29 @@
     ],
     "score": 53,
     "infographic": {
-      "key_insight": "VoroTypes automatically enumerates all Voronoi cell topologies that a crystal can adopt under small perturbations, enabling robust structural identification for complex crystals beyond simple reference lattices.",
-      "engineering_relevance": "It expands atomistic simulation analysis to complex phases like Frank–Kasper and Laves structures, with per-sublattice resolution and direct use in VoroTop or OVITO workflows.",
+      "key_insight": "VoroTypes enumerates the complete family of Voronoi cell topologies generated by small generic atomic perturbations, enabling structural identification of complex crystals.",
+      "engineering_relevance": "It extends per-atom analysis in atomistic simulations to complex phases, including Frank–Kasper and Laves structures, with per-sublattice resolution.",
       "method": [
-        "Takes a CIF or POSCAR crystal description as input.",
-        "Uses exact symmetry reduction to cut redundant cases during enumeration.",
-        "Applies validity pruning to discard impossible Voronoi topologies and exports the result as a VoroTop filter."
+        "Read a reference crystal structure from a CIF or POSCAR file.",
+        "Enumerate perturbed Voronoi topologies using exact symmetry reduction and validity pruning.",
+        "Export topological filters for use with VoroTop or OVITO."
       ],
-      "evidence_signal": "The abstract reports a library of precomputed filters covering over a thousand Materials Project structures, indicating broad evaluated coverage rather than a single-case demo.",
-      "watch_item": "Results depend on the quality of the crystallographic input and the assumptions of small generic perturbations, so edge cases with strong disorder or defective structures may need manual validation.",
+      "evidence_signal": "The abstract reports a library of precomputed filters covering over 1,000 Materials Project structures, but provides no quantitative accuracy or runtime benchmarks.",
+      "watch_item": "The enumeration covers small generic perturbations; robustness under large distortions or strongly disordered environments is not established in the abstract.",
       "hashtags": [
-        "#MaterialsScience",
-        "#ComputationalPhysics",
-        "#CrystalStructures",
-        "#Voronoi",
-        "#MolecularDynamics"
+        "#ComputationalMaterials",
+        "#VoronoiTopology",
+        "#CrystalIdentification",
+        "#AtomisticSimulation",
+        "#VoroTypes"
       ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
       "paper_id": "2026-10-15-arxiv-vorotypes_automated_enumeration_of_voronoi_cell_topologies_for_structural_identification_o",
       "paper_title": "VoroTypes: automated enumeration of Voronoi cell topologies for structural identification of complex crystals in atomistic simulations",
       "paper_date": "2026-10-15",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-10-19T09:05:28",
+      "generated_at": "2026-10-19T09:09:54",
       "generator": "openai"
     }
   },
@@ -1004,27 +1042,29 @@
     ],
     "score": 53,
     "infographic": {
-      "key_insight": "Charge injection from metallic nanoparticles into CO is strongly metal-dependent, with electron injection dominating because the CO LUMO lies closer to the metal Fermi level than the HOMO.",
-      "engineering_relevance": "These results guide the choice of nanoparticle material for photocatalytic interfaces by identifying metals that maximize direct hot-carrier transfer rather than wasteful thermalization.",
+      "key_insight": "Across nine metals, predicted direct hot-electron injection into adsorbed CO exceeds hot-hole injection because the CO LUMO lies closer to the metal Fermi level than the HOMO.",
+      "engineering_relevance": "Metal selection and adsorbate orbital alignment offer design levers for nanoscale photocatalysts that transfer charge before hot carriers thermalize.",
       "method": [
-        "Combined ab initio DFT for adsorbate–metal electronic structure with macroscopic electrodynamics for localized surface plasmons.",
-        "Predicted hot-electron and hot-hole injection rates from large spherical nanoparticles into adsorbed CO.",
-        "Compared nine metals spanning plasmonic and non-plasmonic classes: Ag, Au, Cu, Al, Ni, Rh, Pd, Ir, Pt."
+        "Model CO–metal interactions using ab initio density functional theory.",
+        "Describe localized surface plasmons using macroscopic electrodynamics.",
+        "Predict electron and hole injection rates from large spherical nanoparticles."
       ],
-      "evidence_signal": "The abstract reports computed injection-rate comparisons across nine metals, finding the largest optical-range electron injection for Al, Ag, Cu, and Au, with Cu and Au additionally showing strong plasmonic enhancement.",
-      "watch_item": "The model is specific to large spherical nanoparticles and CO adsorption, so trends may change for different particle shapes, sizes, or adsorbates.",
+      "evidence_signal": "Calculations across Ag, Au, Cu, Al, Ni, Rh, Pd, Ir and Pt identify Al, Ag, Cu and Au as the strongest electron injectors at optical photon energies, with significant plasmonic enhancement for Cu and Au.",
+      "watch_item": "The predictions concern CO on large spherical nanoparticles; transferability to other adsorbates and particle geometries requires validation.",
       "hashtags": [
-        "#HotCarriers",
         "#Plasmonics",
+        "#HotCarriers",
         "#Photocatalysis",
-        "#Nanoparticles",
-        "#DFT"
+        "#DensityFunctionalTheory",
+        "#MaterialsDesign"
       ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
       "paper_id": "2026-10-14-arxiv-material_dependence_of_direct_light_induced_charge_injection_from_metallic_nanoparticles_i",
       "paper_title": "Material dependence of direct light-induced charge injection from metallic nanoparticles into adsorbates",
       "paper_date": "2026-10-14",
       "paper_category": "Microstructure",
-      "generated_at": "2026-10-19T09:05:30",
+      "generated_at": "2026-10-19T09:09:56",
       "generator": "openai"
     }
   }

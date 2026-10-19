@@ -1,19 +1,19 @@
 {
-  "key_insight": "On synthetic limit order books, GPT-style models learn predictions consistent with amortized Bayesian inference over market regimes, with generalization driven more by regime diversity than scale.",
-  "engineering_relevance": "For market-simulation engineering rather than materials discovery, frozen model representations enable accurate, lower-cost simulator calibration and useful transfer to real order flow.",
+  "key_insight": "Transformers trained on synthetic limit order book streams learn predictive behavior consistent with Bayesian inference over market regimes, with generalization driven more by regime diversity than scale.",
+  "engineering_relevance": "For financial simulation and model calibration—not materials discovery—frozen model representations enable accurate, lower-cost estimation of simulator parameters.",
   "method": [
-    "Train autoregressive transformers on simulated order flow with known latent parameters and exact data entropy.",
-    "Compare predictions against Bayes-optimal and oracle references, including drifting latent regimes.",
-    "Probe frozen activations for regime information and test transfer to real NASDAQ data."
+    "Train GPT-style models on synthetic order flow with known latent market parameters.",
+    "Compare predictions with exact Bayes-optimal predictors and oracle entropy floors, including drifting regimes.",
+    "Decode latent regimes from frozen activations and test transfer to real NASDAQ order flow."
   ],
-  "evidence_signal": "Predictive loss matches the exact Bayes optimum within a millinat per token; frozen read-outs outperform windowed maximum likelihood for calibration, and pretraining beats training from scratch at every tested budget on held-out tickers.",
-  "watch_item": "Zero-shot performance depends on simulator-prior coverage of real order flow, so synthetic accuracy alone does not establish robustness to unseen market conditions.",
+  "evidence_signal": "The abstract reports predictions within a millinat per token of the exact Bayes optimum, better calibration than windowed maximum likelihood, and pretraining gains at every tested budget across held-out tickers.",
+  "watch_item": "Zero-shot transfer depends on how well the simulator prior covers real order flow; synthetic accuracy alone does not establish real-market robustness.",
   "hashtags": [
     "#MarketMicrostructure",
     "#FoundationModels",
     "#BayesianInference",
     "#SyntheticData",
-    "#SimulatorCalibration"
+    "#LimitOrderBooks"
   ],
   "model": "gpt-6.1-sol",
   "service_tier": "ultrafast",
@@ -21,6 +21,6 @@
   "paper_title": "What Do Foundation Models for Market Microstructure Learn? A Controlled Study with Synthetic Limit Order Books",
   "paper_date": "2026-10-14",
   "paper_category": "Materials Discovery",
-  "generated_at": "2026-10-19T09:09:20",
+  "generated_at": "2026-10-19T17:19:43",
   "generator": "openai"
 }

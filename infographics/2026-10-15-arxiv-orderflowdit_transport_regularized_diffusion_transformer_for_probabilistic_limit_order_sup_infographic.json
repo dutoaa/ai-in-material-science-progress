@@ -1,13 +1,13 @@
 {
-  "key_insight": "Adding unbalanced optimal-transport regularization to a Diffusion Transformer improves probabilistic limit-order volume forecasts by jointly accounting for price placement and total volume.",
-  "engineering_relevance": "This is financial-market forecasting research, not materials discovery, but its geometry-aware treatment of unnormalized fields may inform other engineering prediction tasks.",
+  "key_insight": "Adding an unbalanced optimal-transport loss helps a Diffusion Transformer forecast limit-order volume distributions while preserving price placement and total volume.",
+  "engineering_relevance": "This is financial-market forecasting research, not materials discovery, but its geometry-aware approach may inform engineering models of unnormalized spatial fields.",
   "method": [
-    "Condition a Diffusion Transformer on the current order book and recent order flow.",
-    "Predict unnormalized bid and ask volume-at-price fields over the next five minutes using an auxiliary unbalanced optimal-transport loss.",
-    "Evaluate full-field forecasts with transport costs, proper scoring rules, and calibration diagnostics."
+    "Condition on the current order book and recent order flow to forecast bid and ask volume-at-price fields over five minutes.",
+    "Train a conditional Diffusion Transformer with an auxiliary unbalanced optimal-transport loss.",
+    "Evaluate full-field fidelity and uncertainty using transport costs, proper scoring rules, and calibration diagnostics."
   ],
-  "evidence_signal": "Across 1,950 validation conditions covering 30 U.S. equities, adding UOT reduced full-field transport cost by 45.8% and transport energy score by 26.1% versus MSE-only training, with both metrics improving for every stock.",
-  "watch_item": "The abstract does not establish generalization beyond the evaluated equities and five-minute horizon or quantify deployment costs.",
+  "evidence_signal": "Across 1,950 validation conditions covering 30 U.S. equities, adding UOT reduced full-field transport cost by 45.8% and transport energy score by 26.1% versus MSE-only training, with both improving for every stock.",
+  "watch_item": "The abstract does not establish generalization beyond the evaluated equities or applicability to materials-science datasets.",
   "hashtags": [
     "#DiffusionTransformers",
     "#OptimalTransport",
@@ -21,6 +21,6 @@
   "paper_title": "OrderFlowDiT: Transport-Regularized Diffusion Transformer for Probabilistic Limit-Order Supply Forecasting",
   "paper_date": "2026-10-15",
   "paper_category": "Materials Discovery",
-  "generated_at": "2026-10-19T09:09:35",
+  "generated_at": "2026-10-19T17:19:41",
   "generator": "openai"
 }
