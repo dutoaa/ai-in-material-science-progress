@@ -1,24 +1,26 @@
 {
-  "key_insight": "MECx uses a bond-informed surrogate model to efficiently search combinatorial alloy configuration space and find lower-energy ordered MPEA structures than direct DFT Monte Carlo within practical limits.",
-  "engineering_relevance": "This enables faster discovery of experimentally relevant ordered alloy states that can tune local structure, thermodynamics, and mechanical properties in complex multicomponent alloys.",
+  "key_insight": "MECx uses a bond-informed surrogate energy model to find low-energy ordered configurations in multi-principal element alloys more efficiently than direct DFT-based Monte Carlo.",
+  "engineering_relevance": "Identifying alloy ordering can help engineers investigate local structures that influence mechanical and thermodynamic properties.",
   "method": [
-    "Train surrogate energy models on 100 DFT-labeled configurations stratified in bond-count space.",
-    "Use the surrogate to guide Monte Carlo exploration of BCC ternary, quaternary, and quinary alloys.",
-    "Validate candidate ordered states against direct DFT Monte Carlo and simulated neutron diffraction signatures."
+    "Select training configurations stratified in bond-count space.",
+    "Train surrogate energy models on 100 DFT-labeled configurations per alloy.",
+    "Guide Monte Carlo searches and examine ordering, temperature response, and simulated neutron diffraction."
   ],
-  "evidence_signal": "The abstract reports that MECx found ordered configurations with lower energies than direct DFT-based Monte Carlo, and that the models transferred to selected binary subsystems without retraining.",
-  "watch_item": "Performance depends on the representativeness of the compact DFT training set, so poorly sampled bond-count regions may limit reliability.",
+  "evidence_signal": "Across ternary, quaternary, and quinary BCC alloys, MECx found lower-energy candidates than direct DFT-based Monte Carlo within practical computational limits, with transfer demonstrated to selected binary subsystems without retraining.",
+  "watch_item": "Transferability was demonstrated only for selected binary subsystems; broader alloy chemistries and crystal structures require validation.",
   "hashtags": [
-    "#MaterialsInformatics",
+    "#AIMaterials",
     "#AlloyDesign",
-    "#DFT",
-    "#MonteCarloSearch",
-    "#CrystalStructure"
+    "#SurrogateModeling",
+    "#MonteCarlo",
+    "#ComputationalMaterials"
   ],
+  "model": "gpt-6.1-sol",
+  "service_tier": "ultrafast",
   "paper_id": "2026-10-15-arxiv-bond_informed_search_for_ordered_configurations_in_multi_principal_element_alloys",
   "paper_title": "Bond-informed search for ordered configurations in multi-principal element alloys",
   "paper_date": "2026-10-15",
   "paper_category": "Crystal and Structure",
-  "generated_at": "2026-10-19T09:05:13",
+  "generated_at": "2026-10-19T09:09:40",
   "generator": "openai"
 }

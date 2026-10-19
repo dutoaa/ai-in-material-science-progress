@@ -1,24 +1,26 @@
 {
-  "key_insight": "An E(3)-equivariant neural network can learn the complex, frequency-dependent GW self-energy from molecular geometry and atom types, enabling accurate quasiparticle spectra without running expensive first-principles calculations for each new structure.",
-  "engineering_relevance": "This offers a fast surrogate for electronic-structure workflows, making real-frequency spectral predictions and frontier-level estimates much more practical for high-throughput materials and molecular screening.",
+  "key_insight": "An E(3)-equivariant neural network learns molecular self-energy matrices on the imaginary-frequency axis, enabling accurate real-frequency spectra without a new explicit G₀W₀ calculation.",
+  "engineering_relevance": "Given a density-functional reference, the trained model could reduce the cost of predicting molecular quasiparticle energies and spectral functions.",
   "method": [
-    "Uses an E(3)-equivariant message-passing network to predict the dynamical correlation part of the imaginary-frequency G0W0 self-energy matrix.",
-    "Imposes rotational covariance of the orbital-space matrix by design and adds the static exchange term from the density-functional reference.",
-    "Represents frequency either as an explicit input or via frequency-specific output heads, then continues the result to the real axis with physically constrained spectral density."
+    "Predict complex, frequency-dependent correlation self-energy matrices from atomic species and coordinates using equivariant message passing.",
+    "Encode frequency as a network input or use frequency-specific output heads; take static exchange from the density-functional reference.",
+    "Continue predictions to real frequencies using a representation that enforces causality and non-negative spectral density."
   ],
-  "evidence_signal": "The abstract reports sub-1 meV matrix-element errors on the imaginary axis, with continued spectra matching G0W0 peak-by-peak and frontier quasiparticle levels reproduced to within a few tens of meV, including a water tetramer not seen in training.",
-  "watch_item": "Performance depends on the underlying density-functional reference and careful analytic continuation, so generalization beyond the tested chemistries and geometries should be validated before deployment.",
+  "evidence_signal": "The frequency-conditioned model achieves sub-1-meV imaginary-axis matrix-element accuracy and frontier quasiparticle energies within a few tens of meV for water clusters, including an unseen tetramer, and diverse QM9 molecules.",
+  "watch_item": "Results concern molecular benchmarks; transfer to polymers, composites, or extended solids remains unestablished, and inference still requires a density-functional reference.",
   "hashtags": [
-    "#MachineLearning",
-    "#ComputationalChemistry",
-    "#GWTheory",
-    "#EquivariantNNs",
-    "#MaterialsInformatics"
+    "#EquivariantNeuralNetworks",
+    "#ElectronicStructure",
+    "#SelfEnergy",
+    "#GWApproximation",
+    "#AIForScience"
   ],
+  "model": "gpt-6.1-sol",
+  "service_tier": "ultrafast",
   "paper_id": "2026-10-16-arxiv-learning_the_self_energy_through_equivariant_neural_networks",
   "paper_title": "Learning the self-energy through equivariant neural networks",
   "paper_date": "2026-10-16",
   "paper_category": "Polymers and Composites",
-  "generated_at": "2026-10-19T09:05:23",
+  "generated_at": "2026-10-19T09:09:49",
   "generator": "openai"
 }
