@@ -1,13 +1,13 @@
 {
-  "key_insight": "STAR-XPC predicts X-ray transmission through polymer composites in milliseconds, closely matching computationally expensive Monte Carlo simulations.",
-  "engineering_relevance": "The model could accelerate screening of polyethylene-based radiation shields across composition, thickness, and X-ray source settings.",
+  "key_insight": "STAR-XPC uses a permutation-invariant Set Transformer to predict X-ray transmission through polymer composites in milliseconds with high agreement to Monte Carlo simulations.",
+  "engineering_relevance": "Rapid transmission estimates could accelerate screening of polymer-composite radiation shields while reducing reliance on costly transport simulations.",
   "method": [
     "Embed molecular constituents with pretrained ChemBERTa.",
-    "Combine constituent embeddings, mass fractions, and four bulk physical descriptors.",
-    "Use a permutation-invariant Set Transformer supporting up to 11 constituents to predict I(t)/I₀."
+    "Combine constituent embeddings, mass fractions, and four bulk descriptors in a Set Transformer supporting up to 11 constituents.",
+    "Train on automated PENELOPE/penEasy simulations of polyethylene-based slabs."
   ],
-  "evidence_signal": "On 4,697 simulated configurations, leakage-free, jointly stratified 10-fold cross-validation achieved R² = 0.9988 and median absolute percentage error of 1.15%.",
-  "watch_item": "Performance beyond the simulated polyethylene-based composites, 0.15–2.5 mm thickness range, and four tested tube voltages remains unestablished.",
+  "evidence_signal": "Leakage-free, jointly stratified 10-fold cross-validation on 4,697 simulated configurations achieved R² = 0.9988, MSE = (1.12 ± 0.56)×10⁻⁴, and median absolute percentage error of 1.15%.",
+  "watch_item": "Performance beyond the simulated polyethylene-based composites, 0.15–2.5 mm thicknesses, and four tube voltages requires validation.",
   "hashtags": [
     "#AIMaterials",
     "#PolymerComposites",
@@ -21,6 +21,6 @@
   "paper_title": "STAR-XPC: Set Transformer for Estimating X-ray Transmission in Polymer Composites",
   "paper_date": "2026-10-20",
   "paper_category": "Polymers and Composites",
-  "generated_at": "2026-10-22T15:46:57",
+  "generated_at": "2026-10-23T15:37:45",
   "generator": "openai"
 }
