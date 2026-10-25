@@ -1,16 +1,16 @@
 {
-  "key_insight": "Universal alloy potentials can approach cross-database DFT agreement, making benchmark controls essential for interpreting model rankings.",
-  "engineering_relevance": "For alloy screening, checking elemental references and DFT database disagreement helps distinguish model errors from benchmark artifacts.",
+  "key_insight": "Independent DFT databases disagree enough to set a measurable error floor for universal MLIPs, and the best model matches that baseline.",
+  "engineering_relevance": "Alloy-screening workflows should check elemental references and benchmark against cross-database disagreement before trusting model rankings.",
   "method": [
-    "Benchmark 14 universal ML interatomic potentials on 1.45 million ordered intermetallics against AFLOW, unseen during training.",
+    "Benchmark 14 universal MLIPs on 1.45 million ordered intermetallics against AFLOW, unseen during training.",
     "Compare energy and stability errors with disagreement among AFLOW, Alexandria, and OQMD.",
     "Re-reference energies and screen broken elemental references to test ranking robustness."
   ],
-  "evidence_signal": "Half the structures show DFT disagreement below 6–8 meV/atom, but averages reach 16–30 meV/atom; after re-referencing, the best model matches Alexandria’s agreement with AFLOW.",
-  "watch_item": "DFT database disagreement limits measurable accuracy, so small ranking differences should not be treated as definitive model superiority.",
+  "evidence_signal": "For half the structures, DFT databases differ by less than 6–8 meV/atom, but larger outliers raise average disagreement to 16–30 meV/atom; after re-referencing, the best MLIP agrees with AFLOW as closely as Alexandria does.",
+  "watch_item": "Agreement with AFLOW is not proof of absolute accuracy because DFT reference uncertainty limits how confidently small model differences can be ranked.",
   "hashtags": [
-    "#AIForMaterials",
-    "#MachineLearningPotentials",
+    "#MaterialsInformatics",
+    "#MachineLearnedPotentials",
     "#AlloyDesign",
     "#DFT",
     "#Benchmarking"
@@ -21,6 +21,6 @@
   "paper_title": "How good are universal MLIPs for alloys? A benchmark is only as trustworthy as its controls",
   "paper_date": "2026-10-22",
   "paper_category": "Crystal and Structure",
-  "generated_at": "2026-10-24T14:14:57",
+  "generated_at": "2026-10-25T14:48:21",
   "generator": "openai"
 }
