@@ -1,6 +1,6 @@
 # AI materials science Progress Public Resources
 
-Generated: 2026-10-26
+Generated: 2026-10-27
 Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 
 ## 1. Automated Materials Data and Knowledge Extraction using Machine Learning and Large Language Models
@@ -11,7 +11,103 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2610.29895v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-10-21-arxiv-automated_materials_data_and_knowledge_extraction_using_machine_learning_and_large_languag_infographic.json
 
-## 2. Vacancy-enhanced Li solid-solution anodes for solid-state batteries: computational screening enabling high critical current density
+## 2. Retention-constrained fine-tuning of a pre-trained aluminium MACE potential for non-equilibrium defect dynamics and plasticity
+
+- Date: 2026-10-26
+- Category: Microstructure
+- arXiv: https://arxiv.org/abs/2610.35653v1
+- PDF: https://arxiv.org/pdf/2610.35653v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-10-26-arxiv-retention_constrained_fine_tuning_of_a_pre_trained_aluminium_mace_potential_for_non_equili_infographic.json
+
+## 3. Phase field dislocation dynamics prediction of stacking fault widths in Cu-Al Alloys using generalised stacking fault energy from DFT and interatomic potentials
+
+- Date: 2026-10-25
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2610.34420v1
+- PDF: https://arxiv.org/pdf/2610.34420v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-10-25-arxiv-phase_field_dislocation_dynamics_prediction_of_stacking_fault_widths_in_cu_al_alloys_using_infographic.json
+
+## 4. From Autonomous Knowledge Generation to Generalizable Property Prediction: A Precision-First Pipeline for Electro-Optic Materials Discovery
+
+- Date: 2026-10-25
+- Category: Property Prediction
+- arXiv: https://arxiv.org/abs/2610.34628v1
+- PDF: https://arxiv.org/pdf/2610.34628v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-10-25-arxiv-from_autonomous_knowledge_generation_to_generalizable_property_prediction_a_precision_firs_infographic.json
+
+## 5. No Value Is Better Than a Wrong Value: Finding and Handling Erroneous Data in Literature-Mined Datasets for AI
+
+- Date: 2026-10-25
+- Category: Materials Discovery
+- arXiv: https://arxiv.org/abs/2610.34642v1
+- PDF: https://arxiv.org/pdf/2610.34642v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-10-25-arxiv-no_value_is_better_than_a_wrong_value_finding_and_handling_erroneous_data_in_literature_mi_infographic.json
+
+## 6. A thermodynamic correction layer for machine learning interatomic potentials
+
+- Date: 2026-10-25
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2610.34551v1
+- PDF: https://arxiv.org/pdf/2610.34551v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-10-25-arxiv-a_thermodynamic_correction_layer_for_machine_learning_interatomic_potentials_infographic.json
+
+## 7. Exploring Joint-Embedding Predictive Architectures for Self-Supervised Representation Learning of Powder X-ray Diffraction Patterns
+
+- Date: 2026-10-23
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2610.33310v1
+- PDF: https://arxiv.org/pdf/2610.33310v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-10-23-arxiv-exploring_joint_embedding_predictive_architectures_for_self_supervised_representation_lear_infographic.json
+
+## 8. Transition Metal-Anchored Newly Synthesized Aza-Triphenylene Monolayer for Efficient Hydrogen Evolution Reaction: Insights from DFT
+
+- Date: 2026-10-25
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2610.34354v1
+- PDF: https://arxiv.org/pdf/2610.34354v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-10-25-arxiv-transition_metal_anchored_newly_synthesized_aza_triphenylene_monolayer_for_efficient_hydro_infographic.json
+
+## 9. TCSP3.0: Template-Based Crystal Structure Prediction with Coefficient-Preserving Element Substitution and Structural Diversity
+
+- Date: 2026-10-25
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2610.34029v1
+- PDF: https://arxiv.org/pdf/2610.34029v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-10-25-arxiv-tcsp3_0_template_based_crystal_structure_prediction_with_coefficient_preserving_element_su_infographic.json
+
+## 10. High-efficiency solid-state electrochemical thermal switching through phonon engineering of 2D materials
+
+- Date: 2026-10-26
+- Category: Microstructure
+- arXiv: https://arxiv.org/abs/2610.35547v1
+- PDF: https://arxiv.org/pdf/2610.35547v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-10-26-arxiv-high_efficiency_solid_state_electrochemical_thermal_switching_through_phonon_engineering_o_infographic.json
+
+## 11. Precursor Ratio-Controlled Chloride Vacancies in Lead-Free KCuCl3-x Memristors for Forming-Free Gradual Resistive Switching and Neuromorphic Learning
+
+- Date: 2026-10-26
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2610.35436v1
+- PDF: https://arxiv.org/pdf/2610.35436v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-10-26-arxiv-precursor_ratio_controlled_chloride_vacancies_in_lead_free_kcucl3_x_memristors_for_forming_infographic.json
+
+## 12. Optimised growth of epitaxial D019 Mn3Ge(0001) thin films via single target sputtering
+
+- Date: 2026-10-26
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2610.34736v1
+- PDF: https://arxiv.org/pdf/2610.34736v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-10-26-arxiv-optimised_growth_of_epitaxial_d019_mn3ge_0001_thin_films_via_single_target_sputtering_infographic.json
+
+## 13. Autonomous atomistic-continuum coupling through uncertainty-aware active learning
+
+- Date: 2026-10-23
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2610.33272v1
+- PDF: https://arxiv.org/pdf/2610.33272v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-10-23-arxiv-autonomous_atomistic_continuum_coupling_through_uncertainty_aware_active_learning_infographic.json
+
+## 14. Vacancy-enhanced Li solid-solution anodes for solid-state batteries: computational screening enabling high critical current density
 
 - Date: 2026-10-23
 - Category: Materials Discovery
@@ -19,146 +115,50 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2610.32938v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-10-23-arxiv-vacancy_enhanced_li_solid_solution_anodes_for_solid_state_batteries_computational_screenin_infographic.json
 
-## 3. GBClaw: An agentic AI framework for atomistic grain boundary research and mechanistic discovery
+## 15. Methyl radicals dynamics on (100)--(2x1):H diamond surfaces based on refined variational transition state calculations of gas-surface reaction rate coefficients
 
-- Date: 2026-10-20
-- Category: Microstructure
-- arXiv: https://arxiv.org/abs/2610.28629v1
-- PDF: https://arxiv.org/pdf/2610.28629v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-10-20-arxiv-gbclaw_an_agentic_ai_framework_for_atomistic_grain_boundary_research_and_mechanistic_disco_infographic.json
+- Date: 2026-10-25
+- Category: AI materials science
+- arXiv: https://arxiv.org/abs/2610.34584v1
+- PDF: https://arxiv.org/pdf/2610.34584v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-10-25-arxiv-methyl_radicals_dynamics_on_100_2x1_h_diamond_surfaces_based_on_refined_variational_transi_infographic.json
 
-## 4. Microstructural Generative Inverse Models for Additive Manufacturing Digital Twins
+## 16. Why Emission Spectral Profile of Diverse Fluoro-phores Look Alike with Thick Polymer Overlayers?
 
-- Date: 2026-10-21
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2610.30404v1
-- PDF: https://arxiv.org/pdf/2610.30404v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-10-21-arxiv-microstructural_generative_inverse_models_for_additive_manufacturing_digital_twins_infographic.json
-
-## 5. Screening strongly correlated materials in solid oxide cells with quantum simulation
-
-- Date: 2026-10-22
-- Category: Microstructure
-- arXiv: https://arxiv.org/abs/2610.31591v1
-- PDF: https://arxiv.org/pdf/2610.31591v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-10-22-arxiv-screening_strongly_correlated_materials_in_solid_oxide_cells_with_quantum_simulation_infographic.json
-
-## 6. Multiscale Modeling of Zr Corrosion: Predicting Microstructures of Oxide Films
-
-- Date: 2026-10-20
-- Category: Microstructure
-- arXiv: https://arxiv.org/abs/2610.28493v1
-- PDF: https://arxiv.org/pdf/2610.28493v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-10-20-arxiv-multiscale_modeling_of_zr_corrosion_predicting_microstructures_of_oxide_films_infographic.json
-
-## 7. Rationalizing charge transfer: a single-molecule case study across three distinct surfaces
-
-- Date: 2026-10-23
-- Category: Materials Discovery
-- arXiv: https://arxiv.org/abs/2610.32903v1
-- PDF: https://arxiv.org/pdf/2610.32903v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-10-23-arxiv-rationalizing_charge_transfer_a_single_molecule_case_study_across_three_distinct_surfaces_infographic.json
-
-## 8. Side-Chain Engineering Controls Molecular Packing and Vertical Electron Transport in Discrete n-Type NDI-T2 Oligomers
-
-- Date: 2026-10-23
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2610.32456v1
-- PDF: https://arxiv.org/pdf/2610.32456v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-10-23-arxiv-side_chain_engineering_controls_molecular_packing_and_vertical_electron_transport_in_discr_infographic.json
-
-## 9. Unifying Low-Frequency Raman and Infrared Signatures across Perovskites
-
-- Date: 2026-10-22
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2610.31830v1
-- PDF: https://arxiv.org/pdf/2610.31830v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-10-22-arxiv-unifying_low_frequency_raman_and_infrared_signatures_across_perovskites_infographic.json
-
-## 10. First-principles modeling of ordering in Fe-rich Fe-Si alloys
-
-- Date: 2026-10-21
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2610.29386v1
-- PDF: https://arxiv.org/pdf/2610.29386v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-10-21-arxiv-first_principles_modeling_of_ordering_in_fe_rich_fe_si_alloys_infographic.json
-
-## 11. STAR-XPC: Set Transformer for Estimating X-ray Transmission in Polymer Composites
-
-- Date: 2026-10-20
+- Date: 2026-10-26
 - Category: Polymers and Composites
-- arXiv: https://arxiv.org/abs/2610.28709v1
-- PDF: https://arxiv.org/pdf/2610.28709v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-10-20-arxiv-star_xpc_set_transformer_for_estimating_x_ray_transmission_in_polymer_composites_infographic.json
+- arXiv: https://arxiv.org/abs/2610.34864v1
+- PDF: https://arxiv.org/pdf/2610.34864v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-10-26-arxiv-why_emission_spectral_profile_of_diverse_fluoro_phores_look_alike_with_thick_polymer_overl_infographic.json
 
-## 12. Probing the limits of forward screening and inverse design of crystal materials
+## 17. Investigation of the Microstructural and Magnetic Properties of Ni on GeSn Layers
 
-- Date: 2026-10-23
-- Category: Materials Discovery
-- arXiv: https://arxiv.org/abs/2610.32678v1
-- PDF: https://arxiv.org/pdf/2610.32678v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-10-23-arxiv-probing_the_limits_of_forward_screening_and_inverse_design_of_crystal_materials_infographic.json
-
-## 13. Nitrogen vacancy cluster-mediated ferroelectric domain growth in wurtzite AlN
-
-- Date: 2026-10-22
+- Date: 2026-10-26
 - Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2610.31084v1
-- PDF: https://arxiv.org/pdf/2610.31084v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-10-22-arxiv-nitrogen_vacancy_cluster_mediated_ferroelectric_domain_growth_in_wurtzite_aln_infographic.json
+- arXiv: https://arxiv.org/abs/2610.35273v1
+- PDF: https://arxiv.org/pdf/2610.35273v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-10-26-arxiv-investigation_of_the_microstructural_and_magnetic_properties_of_ni_on_gesn_layers_infographic.json
 
-## 14. Universal Synthesis of Large-Area Hybrid Perovskite Monolayers Enabling Lithography-Free, Low-Static-Power Optoelectronics
+## 18. Impact of organic spacer cations on the light and thermal stability of two-dimensional lead halide perovskites
 
-- Date: 2026-10-22
+- Date: 2026-10-26
 - Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2610.30764v1
-- PDF: https://arxiv.org/pdf/2610.30764v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-10-22-arxiv-universal_synthesis_of_large_area_hybrid_perovskite_monolayers_enabling_lithography_free_l_infographic.json
+- arXiv: https://arxiv.org/abs/2610.35247v1
+- PDF: https://arxiv.org/pdf/2610.35247v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-10-26-arxiv-impact_of_organic_spacer_cations_on_the_light_and_thermal_stability_of_two_dimensional_lea_infographic.json
 
-## 15. Interplay of Chemical Disorder, Vortex Pinning, and Electron Correlations in the Mechanically Robust Medium-Entropy Alloy Superconductor $\text{Nb}_{0.45}\text{Ta}_{0.25}\text{Ti}_{0.15}\text{Hf}_{0.15}$
+## 19. Interpretable Brain Age Prediction Using White Matter Fiber Orientation Distributions with Rotation-Equivariant Deep Learning
 
-- Date: 2026-10-23
+- Date: 2026-10-26
 - Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2610.32449v1
-- PDF: https://arxiv.org/pdf/2610.32449v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-10-23-arxiv-interplay_of_chemical_disorder_vortex_pinning_and_electron_correlations_in_the_mechanicall_infographic.json
+- arXiv: https://arxiv.org/abs/2610.34825v1
+- PDF: https://arxiv.org/pdf/2610.34825v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-10-26-arxiv-interpretable_brain_age_prediction_using_white_matter_fiber_orientation_distributions_with_infographic.json
 
-## 16. On the Spontaneous Structural Reconstructions of Chalcogen-Depleted MoS$_2$, MoSe$_2$, and Janus MoSSe Monolayers
+## 20. Role of site-specific coordination for the structural and electronic properties of a Co-HATCN network on silver
 
-- Date: 2026-10-23
+- Date: 2026-10-25
 - Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2610.32712v1
-- PDF: https://arxiv.org/pdf/2610.32712v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-10-23-arxiv-on_the_spontaneous_structural_reconstructions_of_chalcogen_depleted_mos_2_mose_2_and_janus_infographic.json
-
-## 17. Thermoelectric properties and modulation doping of ultrawide-bandgap nitride monolayers
-
-- Date: 2026-10-22
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2610.31777v1
-- PDF: https://arxiv.org/pdf/2610.31777v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-10-22-arxiv-thermoelectric_properties_and_modulation_doping_of_ultrawide_bandgap_nitride_monolayers_infographic.json
-
-## 18. Folding of Free Polymers Under Confinement by Responsive Hydrogels
-
-- Date: 2026-10-23
-- Category: Polymers and Composites
-- arXiv: https://arxiv.org/abs/2610.32912v1
-- PDF: https://arxiv.org/pdf/2610.32912v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-10-23-arxiv-folding_of_free_polymers_under_confinement_by_responsive_hydrogels_infographic.json
-
-## 19. Divalent Yb in the Ca$_3$Pd$_4$Bi$_8$ Structure Type: Crystal Growth and Physical Properties of Yb$_3$Pd$_4$Bi$_8$
-
-- Date: 2026-10-23
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2610.32524v1
-- PDF: https://arxiv.org/pdf/2610.32524v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-10-23-arxiv-divalent_yb_in_the_ca_3_pd_4_bi_8_structure_type_crystal_growth_and_physical_properties_of_infographic.json
-
-## 20. Flexo-Photoresponses from First Principles
-
-- Date: 2026-10-23
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2610.32341v1
-- PDF: https://arxiv.org/pdf/2610.32341v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-10-23-arxiv-flexo_photoresponses_from_first_principles_infographic.json
+- arXiv: https://arxiv.org/abs/2610.34543v1
+- PDF: https://arxiv.org/pdf/2610.34543v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-10-25-arxiv-role_of_site_specific_coordination_for_the_structural_and_electronic_properties_of_a_co_ha_infographic.json
