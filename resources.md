@@ -1,6 +1,6 @@
 # AI materials science Progress Public Resources
 
-Generated: 2026-10-28
+Generated: 2026-10-29
 Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 
 ## 1. Magnetic crystal generation with site-resolved magnetic moments via Gaussian-mixture retargeting and finite-budget yield prediction

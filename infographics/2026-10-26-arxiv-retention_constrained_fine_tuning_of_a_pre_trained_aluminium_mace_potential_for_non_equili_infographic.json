@@ -1,13 +1,13 @@
 {
-  "key_insight": "Retention-constrained fine-tuning improves an aluminium MACE potential’s defect predictions while preserving its tested near-equilibrium mechanical response.",
-  "engineering_relevance": "The protocol supports more reliable atomistic simulations of aluminium defect dynamics and plasticity without sacrificing validated bulk behaviour.",
+  "key_insight": "Retention-constrained fine-tuning improves aluminium MACE defect predictions while preserving the tested near-equilibrium mechanical and vibrational response.",
+  "engineering_relevance": "The protocol supports more reliable atomistic simulations of defect dynamics and plasticity without sacrificing validated bulk behaviour.",
   "method": [
-    "Select configurations using conditional force uncertainty over 144 readout weights, with within-batch covariance updates.",
-    "Iteratively update all model parameters while anchoring historical relative energies.",
-    "Gate updates against historical energy and vibrational tolerances."
+    "Acquire configurations using conditional force uncertainty from sensitivities over 144 readout weights.",
+    "Iteratively update all model parameters with relative-energy anchoring to retain historical behaviour.",
+    "Gate updates against historical elastic-group energy and vibrational tolerances."
   ],
-  "evidence_signal": "After four rounds, 32 acquired configurations and 400 gradient updates, development force error fell from 22.43 to 21.52 meV/Å, outperforming sampling baselines; all three force-uncertainty runs met bulk-retention criteria, with phonon RMS drift below 0.05 THz.",
-  "watch_item": "Retention is demonstrated only for the tested aluminium configurations and tolerances; broader transfer and closed-loop robustness require further validation.",
+  "evidence_signal": "With 32 acquired configurations and 400 gradient updates, force-uncertainty selection reduced mean development force error from 22.43 to 21.52 meV/Å, outperforming three sampling baselines; all three runs met retention criteria with phonon RMS drift below 0.05 THz.",
+  "watch_item": "Retention is demonstrated only for the tested aluminium configurations and tolerances; deployment requires compatible reference energies and acceptance checks.",
   "hashtags": [
     "#AIMaterials",
     "#MachineLearningPotentials",
@@ -21,6 +21,6 @@
   "paper_title": "Retention-constrained fine-tuning of a pre-trained aluminium MACE potential for non-equilibrium defect dynamics and plasticity",
   "paper_date": "2026-10-26",
   "paper_category": "Microstructure",
-  "generated_at": "2026-10-28T16:59:13",
+  "generated_at": "2026-10-29T17:18:01",
   "generator": "openai"
 }

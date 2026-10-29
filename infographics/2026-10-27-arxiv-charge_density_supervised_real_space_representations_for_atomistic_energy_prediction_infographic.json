@@ -1,17 +1,17 @@
 {
-  "key_insight": "Charge-density supervision improved atomistic energy prediction on QM9, but its benefits depended on the dataset.",
-  "engineering_relevance": "Learning energy alongside spatial electron density could improve atomistic models while providing electronic information relevant to materials analysis.",
+  "key_insight": "Supervising real-space representations with electron density improved molecular energy prediction, but gains depended on the dataset.",
+  "engineering_relevance": "Charge-density-informed models could improve atomistic energy prediction while providing spatial electronic information for materials analysis.",
   "method": [
-    "Jointly predict energy and valence electron density from equivariant atomic graphs.",
+    "Train an equivariant graph neural network jointly on energy and valence electron density.",
     "Integrate density-supervised real-space probe representations into the global energy regressor.",
     "Analyze attention weights to identify influential probe locations."
   ],
-  "evidence_signal": "CDGNN reduced QM9 energy errors for interpolation and extrapolation to larger molecules, matched the baseline on small H-containing Fe and Fe-C datasets, and accurately predicted density distributions.",
-  "watch_item": "Energy improvements were not universal; deployment requires charge-density training targets and validation on the intended material system.",
+  "evidence_signal": "CDGNN reduced energy errors versus an equivariant GNN baseline on QM9 interpolation and larger-molecule extrapolation, matched baseline performance on small H-containing Fe and Fe-C datasets, and accurately predicted density distributions.",
+  "watch_item": "Density supervision requires electron-density training data and does not guarantee improved energy accuracy across material systems.",
   "hashtags": [
-    "#AIMaterials",
+    "#AIForMaterials",
     "#GraphNeuralNetworks",
-    "#ChargeDensity",
+    "#ElectronDensity",
     "#AtomisticModeling",
     "#EnergyPrediction"
   ],
@@ -21,6 +21,6 @@
   "paper_title": "Charge density-supervised real-space representations for atomistic energy prediction",
   "paper_date": "2026-10-27",
   "paper_category": "Crystal and Structure",
-  "generated_at": "2026-10-28T16:59:40",
+  "generated_at": "2026-10-29T17:18:32",
   "generator": "openai"
 }
