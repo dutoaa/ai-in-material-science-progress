@@ -24,23 +24,23 @@
         "url": "https://arxiv.org/pdf/2610.38195v1"
       }
     ],
-    "score": 83,
+    "score": 78,
     "infographic": {
-      "key_insight": "Crystoria links thermodynamic and phonon-based dynamical stability at million-structure scale to support materials AI.",
-      "engineering_relevance": "The dataset can help materials AI workflows prioritize dynamically stable crystal candidates beyond energy-based screening alone.",
+      "key_insight": "Crystoria links crystal structures with phonon-based dynamical stability labels at a scale of 2.65 million structures for materials AI.",
+      "engineering_relevance": "The dataset can support AI models that screen candidate crystals for dynamical stability alongside thermodynamic properties.",
       "method": [
         "Curate low-energy and metastable inorganic crystals and standardize structural identities.",
         "Apply machine-learning-accelerated structural relaxation.",
-        "Screen dynamical stability using phonon calculations."
+        "Perform phonon-based dynamical stability screening."
       ],
       "evidence_signal": "Crystoria contains 2,649,640 structures spanning 89 elements, 219 space groups, and 1–48 atoms per primitive cell; 1,793,353 structures (67.68%) are classified as dynamically stable.",
-      "watch_item": "The abstract does not specify validation against higher-fidelity calculations or experiments, so predictive reliability needs assessment before engineering deployment.",
+      "watch_item": "Dynamical stability labels alone do not establish experimental synthesizability or stability under operating conditions.",
       "hashtags": [
         "#MaterialsAI",
-        "#MaterialsDiscovery",
         "#CrystalStructures",
         "#DynamicalStability",
-        "#Phonons"
+        "#MaterialsDiscovery",
+        "#Crystoria"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -48,7 +48,7 @@
       "paper_title": "Crystoria: A Large-Scale Crystal Dataset Linking Thermodynamic and Dynamical Stability for Materials AI",
       "paper_date": "2026-10-28",
       "paper_category": "Materials Discovery",
-      "generated_at": "2026-10-30T16:56:01",
+      "generated_at": "2026-10-31T15:56:45",
       "generator": "openai"
     }
   },
@@ -78,17 +78,17 @@
         "url": "https://arxiv.org/pdf/2610.38236v1"
       }
     ],
-    "score": 82,
+    "score": 77,
     "infographic": {
-      "key_insight": "ReactNexus discovers kinetically informed chemical reaction networks from reactant graphs alone, without predefined products or reaction templates.",
-      "engineering_relevance": "The framework can support reaction-mechanism analysis by identifying lower-barrier pathways, competing catalytic branches, and candidate structures for mass-spectral interpretation.",
+      "key_insight": "ReactNexus discovers kinetically guided chemical reaction networks from reactant graphs alone, without predefined products or reaction templates.",
+      "engineering_relevance": "The framework could support reaction design and mechanistic analysis by revealing lower-barrier pathways, competing branches, and candidate structures for mass-spectral interpretation.",
       "method": [
         "Generate candidate transition states and full reaction trajectories from reactant graphs.",
         "Use a machine-learned interatomic potential to verify connectivity and evaluate electronic barriers.",
-        "Expand reaction networks with kinetic guidance to explore accessible intermediates and pathways."
+        "Expand reaction networks under kinetic guidance to identify accessible intermediates and pathways."
       ],
       "evidence_signal": "On an in-distribution benchmark of 10,000 generated candidates, 80.8% connected to the input reactant after DFT optimization and intrinsic reaction coordinate verification.",
-      "watch_item": "The reported connectivity benchmark is in-distribution and does not establish accuracy or network completeness for unfamiliar chemistry.",
+      "watch_item": "The reported connectivity rate is in-distribution; reliability on unfamiliar chemistry and completeness of discovered networks require further validation.",
       "hashtags": [
         "#AIForChemistry",
         "#ReactionNetworks",
@@ -102,7 +102,7 @@
       "paper_title": "Generative discovery of chemical reaction networks",
       "paper_date": "2026-10-28",
       "paper_category": "Materials Discovery",
-      "generated_at": "2026-10-30T16:56:03",
+      "generated_at": "2026-10-31T15:56:47",
       "generator": "openai"
     }
   },
@@ -132,17 +132,17 @@
         "url": "https://arxiv.org/pdf/2610.40443v1"
       }
     ],
-    "score": 77,
+    "score": 72,
     "infographic": {
-      "key_insight": "OMatG-FC generates new inorganic crystals by learning atomic species and cell volume while preserving a supplied structural framework, avoiding the need to learn atomic packing.",
-      "engineering_relevance": "Framework conditioning reduces generation dimensionality and could streamline searches for stable materials based on known crystal geometries.",
+      "key_insight": "OMatG-FC generates inorganic crystals by learning atomic species and cell volume on fixed structural frameworks, achieving a reported state-of-the-art stable, unique, and novel (S.U.N.) rate below the convex hull.",
+      "engineering_relevance": "Framework conditioning reduces generation dimensionality and offers a route to candidate materials without learning atomic packings from scratch.",
       "method": [
-        "Use discrete flow matching to generate atomic species.",
-        "Use stochastic interpolants to model unit-cell volume scaling.",
-        "Fix fractional coordinates and unit-volume lattice vectors."
+        "Fix fractional atomic coordinates and unit-volume lattice vectors.",
+        "Generate atomic species with discrete flow matching and cell-volume scaling with stochastic interpolants.",
+        "Explore chemical assignments that can yield unseen stable prototypes from known frameworks."
       ],
-      "evidence_signal": "The authors analyze duplicate frameworks in MP-20, provide a framework-based split, and report state-of-the-art stable, unique, and novel generation below the convex hull using LeMat-GenBench with three ML interatomic potentials.",
-      "watch_item": "Fixed frameworks restrict accessible geometries, and stability assessed with ML interatomic potentials does not establish experimental synthesizability.",
+      "evidence_signal": "The authors analyze duplicate frameworks in MP-20, provide a framework-based split, and benchmark OMatG-FC with LeMat-GenBench using three machine-learning interatomic potentials.",
+      "watch_item": "Generation remains constrained by the supplied frameworks, and predicted stability requires validation beyond machine-learning interatomic potentials.",
       "hashtags": [
         "#MaterialsDiscovery",
         "#GenerativeAI",
@@ -156,7 +156,7 @@
       "paper_title": "Framework-Conditional Open Materials Generation",
       "paper_date": "2026-10-29",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-10-30T16:56:05",
+      "generated_at": "2026-10-31T15:56:49",
       "generator": "openai"
     }
   },
@@ -185,23 +185,23 @@
         "url": "https://arxiv.org/pdf/2610.39744v1"
       }
     ],
-    "score": 72,
+    "score": 67,
     "infographic": {
-      "key_insight": "PAPERBENCHX reveals a substantial gap between AI agents understanding scientific papers and producing independently reproducible evidence across disciplines.",
-      "engineering_relevance": "Reliable AI-assisted materials research requires agents that can operate specialized software, make sound physical and numerical choices, and diagnose failed computations.",
+      "key_insight": "PAPERBENCHX reveals a substantial gap between AI agents understanding scientific papers and reproducing their claims with independently verifiable evidence.",
+      "engineering_relevance": "Reliable AI-driven science requires agents that can operate specialized software, make sound physical and numerical choices, and deliver reproducible workflows.",
       "method": [
-        "Benchmark agents on 93 expert-constructed paper-reproduction tasks spanning 12 research areas.",
-        "Provide source papers, public task specifications, and domain-native scientific environments.",
-        "Replay submitted workflows from scratch and score regenerated evidence against expert-validated criteria."
+        "Benchmark 93 expert-constructed reproduction tasks across 12 research areas.",
+        "Provide each agent with a source paper, task specification, and domain-native scientific environment.",
+        "Replay submissions from scratch and score regenerated evidence against expert-validated criteria."
       ],
       "evidence_signal": "Across 10 frontier agent configurations, the best fully reproduced only 14% of tasks at a 90% scoring threshold, while mean rubric scores ranged from 27.53% to 59.08%.",
-      "watch_item": "Partial rubric success should not be treated as validated reproduction of a scientific claim.",
+      "watch_item": "Strong partial rubric scores should not be mistaken for successful reproduction of the target scientific claim.",
       "hashtags": [
-        "#AIForScience",
-        "#MaterialsScience",
+        "#AIMaterialsScience",
         "#ScientificReproducibility",
+        "#AIForScience",
         "#ComputationalScience",
-        "#AIBenchmarks"
+        "#AgentEvaluation"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -209,7 +209,7 @@
       "paper_title": "PAPERBENCHX: Can AI Reproduce Science Across Disciplines?",
       "paper_date": "2026-10-29",
       "paper_category": "AI materials science",
-      "generated_at": "2026-10-30T16:56:08",
+      "generated_at": "2026-10-31T15:56:51",
       "generator": "openai"
     }
   },
@@ -239,22 +239,22 @@
         "url": "https://arxiv.org/pdf/2610.40445v1"
       }
     ],
-    "score": 70,
+    "score": 65,
     "infographic": {
-      "key_insight": "ML-COHP predicts DFT-derived bond strengths from frozen MACE representations, reaching 1.6–4.1% error for bonds stronger than 0.5 eV.",
-      "engineering_relevance": "Rapid bond-strength estimates could accelerate analysis of grain boundaries and catalytic nanoparticles without running DFT and LOBSTER for every structure.",
+      "key_insight": "ML-COHP predicts DFT-derived bond strengths from frozen MACE descriptors, reaching 0.06 eV error on relaxed grain boundaries in about a second versus 5–51 hours for LOBSTER.",
+      "engineering_relevance": "Fast bond-strength estimates can support analysis of grain boundaries and catalytic nanoparticles without repeating expensive electronic-structure calculations for every geometry.",
       "method": [
-        "Extract frozen scalar and bond-projected vector features from a MACE foundation model.",
-        "Use a symmetric atom-pair head to correct an element-embedding pair baseline.",
-        "Combine the predictor with geometries from a fine-tuned MACE potential to examine oxygen coverage effects."
+        "Extract frozen atomic descriptors from a MACE foundation model.",
+        "Use a symmetric pair head combining scalar and bond-projected vector channels.",
+        "Correct an element-embedding pair baseline to predict ICOHP."
       ],
-      "evidence_signal": "Across high-entropy diborides and Pt/Pd-based systems, errors were about half those of a Gaussian-process comparator; training only on high-temperature diboride snapshots yielded 0.06 eV error on relaxed grain boundaries in about one second versus 5–51 hours for LOBSTER.",
-      "watch_item": "Transferability beyond the tested chemistries and environments remains unestablished, so new applications should be checked against DFT/LOBSTER references.",
+      "evidence_signal": "Across high-entropy diborides, Pt clusters on defective graphene, and oxygen-covered Pt/Pd nanoparticles, reported errors for bonds stronger than 0.5 eV were 1.6–4.1%, about half those of a Gaussian-process comparator trained on the same data.",
+      "watch_item": "Transferability beyond the tested chemistries and geometries remains unestablished; predictions also depend on the quality of input structures.",
       "hashtags": [
         "#AIMaterials",
         "#BondStrength",
         "#MACE",
-        "#AtomisticSimulation",
+        "#AtomisticModeling",
         "#Catalysis"
       ],
       "model": "gpt-6.1-sol",
@@ -263,7 +263,7 @@
       "paper_title": "ML-COHP: predicting bond descriptors using latent space of a universal interatomic potentials",
       "paper_date": "2026-10-29",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-10-30T16:56:11",
+      "generated_at": "2026-10-31T15:56:53",
       "generator": "openai"
     }
   },
@@ -292,23 +292,23 @@
         "url": "https://arxiv.org/pdf/2610.39465v1"
       }
     ],
-    "score": 68,
+    "score": 63,
     "infographic": {
       "key_insight": "Mixing nanoscale Laponite with microscale Bentonite reduces drying damage, with most intermediate compositions on glass outperforming a simple average of the pure clays.",
-      "engineering_relevance": "Clay composition offers a practical lever for reducing cracking and peeling in coatings, barrier layers and ceramic processing.",
+      "engineering_relevance": "Clay composition offers a practical lever for improving drying resistance in coatings, barrier layers and ceramic processing.",
       "method": [
         "Compare drying damage across clay compositions on hydrophobic polypropylene and hydrophilic glass.",
-        "Measure two-step yielding in gelled suspensions and derive cohesive energies.",
-        "Use an energy-balance-derived cohesion–adhesion index to interpret cracking versus peeling."
+        "Measure two-step yielding in gelled suspensions and derive step-dependent cohesive energies.",
+        "Relate peeling versus cracking to an energy-balance-derived cohesion–adhesion index."
       ],
-      "evidence_signal": "Replicate experiments support essentially intact Laponite films, extensive Bentonite fracture and reduced damage in mixtures; inferred cohesive energies vary by orders of magnitude between yield steps.",
-      "watch_item": "Rheology–cracking correlations must specify the yield step used, and composition-dependent critical crack-free thickness remains unresolved.",
+      "evidence_signal": "Replicate experiments found essentially intact Laponite films, extensive fracture in Bentonite films and two-step yielding across every composition.",
+      "watch_item": "Rheology–cracking correlations must specify the yielding step because inferred cohesive energies differ by orders of magnitude; critical crack-free thickness remains unresolved.",
       "hashtags": [
         "#ClayComposites",
-        "#MaterialsScience",
         "#DryingStress",
+        "#CrackResistance",
         "#Rheology",
-        "#CrackResistance"
+        "#MaterialsScience"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -316,7 +316,7 @@
       "paper_title": "Resisting Drying Stress in Laponite Bentonite Clay Composites, Two Step Yielding and Crack Peel Selection",
       "paper_date": "2026-10-29",
       "paper_category": "Polymers and Composites",
-      "generated_at": "2026-10-30T16:56:13",
+      "generated_at": "2026-10-31T15:56:56",
       "generator": "openai"
     }
   },
@@ -346,23 +346,23 @@
         "url": "https://arxiv.org/pdf/2610.38517v1"
       }
     ],
-    "score": 67,
+    "score": 62,
     "infographic": {
-      "key_insight": "AtomSteer adds chemical and crystallographic constraint control to pretrained atomistic generative models at inference time, without retraining or architectural changes.",
-      "engineering_relevance": "It enables existing crystal, molecular conformer, and protein–ligand generators to better satisfy structural requirements while limiting disruption to generated geometry.",
+      "key_insight": "AtomSteer steers pretrained atomistic generative models toward chemical and crystallographic constraints at inference time, without retraining or architectural changes.",
+      "engineering_relevance": "The framework adds structural control to existing workflows for crystal design, molecular conformer generation, and protein–ligand structure prediction.",
       "method": [
         "Correct intermediate predictions during sampling using bounded local projections.",
         "Apply graph-rigid stereochemical transformations and periodic-symmetry projections.",
-        "Accept updates that improve constraint satisfaction while limiting changes elsewhere."
+        "Accept constraint-improving updates while limiting changes to the remaining structure."
       ],
-      "evidence_signal": "Across FlowMM, ET-Flow, and Boltz-2, evaluations report improved crystal space-group coverage and recovery, molecular validity and E/Z accuracy, and reduced ligand E/Z errors with competitive docking success and PoseBusters validity.",
-      "watch_item": "The abstract does not quantify inference overhead or improvement magnitudes, leaving practical cost–benefit trade-offs to be assessed.",
+      "evidence_signal": "Across FlowMM, ET-Flow, and Boltz-2, the abstract reports improved crystal symmetry coverage and recovery, molecular validity and E/Z accuracy, and fewer ligand E/Z errors with competitive docking success and PoseBusters validity.",
+      "watch_item": "The abstract does not quantify inference overhead or improvement magnitudes, leaving deployment cost and practical gains to be assessed.",
       "hashtags": [
-        "#AtomisticAI",
-        "#MaterialsInformatics",
-        "#GenerativeModels",
-        "#CrystalGeneration",
-        "#Stereochemistry"
+        "#AtomSteer",
+        "#AIForMaterials",
+        "#AtomisticModeling",
+        "#GenerativeAI",
+        "#ConstraintSteering"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -370,7 +370,7 @@
       "paper_title": "AtomSteer: Test-Time Constraint Steering for Atomistic Generative Models",
       "paper_date": "2026-10-28",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-10-30T16:56:15",
+      "generated_at": "2026-10-31T15:56:58",
       "generator": "openai"
     }
   },
@@ -399,23 +399,23 @@
         "url": "https://arxiv.org/pdf/2610.38321v1"
       }
     ],
-    "score": 67,
+    "score": 62,
     "infographic": {
-      "key_insight": "Cubic HUBO captures substantial third-order configurational energy contributions in lithium-rich oxyfluorides that quadratic QUBO models cannot represent.",
-      "engineering_relevance": "Higher-order energy models could improve computational screening of disordered-rocksalt cathodes, provided magnetic-state dependence is accounted for.",
+      "key_insight": "Cubic HUBO captures substantial third-order configurational energy contributions that QUBO cannot represent in lithium-rich oxyfluorides.",
+      "engineering_relevance": "Higher-order energy models could improve configurational modeling of disordered-rocksalt cathodes, provided magnetic-state dependence is accounted for.",
       "method": [
-        "Compute composition-preserving, fixed-geometry energy maps using spin-polarized DFT for LMOF and LMTiOF.",
-        "Compare quadratic QUBO and cubic HUBO fits and verify third-order nonadditivity through direct DFT energy differences.",
-        "Compare magnetic initializations to assess dependence on the converged electronic state."
+        "Generate composition-preserving, fixed-geometry energy maps using spin-polarized DFT.",
+        "Compare quadratic QUBO and cubic HUBO fits for Li₂MnO₂F and Li₂Mn₀.₅Ti₀.₅O₂F.",
+        "Check third-order nonadditivity through direct DFT energy differences and compare magnetic initializations."
       ],
-      "evidence_signal": "Cubic HUBO substantially reduces fitting errors in both materials, while LMTiOF shows strong electronic-state dependence of its third-order contribution.",
-      "watch_item": "The fitted higher-order terms are effective couplings among composition-preserving exchange variables, not uniquely identified microscopic three-atom interactions.",
+      "evidence_signal": "Cubic HUBO substantially reduces fitting errors in both materials, while direct DFT differences confirm third-order nonadditivity and reveal strong electronic-state dependence in the Ti-containing material.",
+      "watch_item": "Extracted higher-order terms are effective couplings among exchange variables, not uniquely identified microscopic three-atom interactions; magnetic-state consistency requires care.",
       "hashtags": [
         "#MaterialsDiscovery",
         "#DensityFunctionalTheory",
         "#HUBO",
-        "#CathodeMaterials",
-        "#ConfigurationalEnergetics"
+        "#ConfigurationalEnergetics",
+        "#BatteryCathodes"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -423,7 +423,7 @@
       "paper_title": "First-Principles Identification of Higher-Order Configurational Energy Terms and Their Magnetic-State Dependence in Lithium-Rich Oxyfluorides: From QUBO to HUBO",
       "paper_date": "2026-10-28",
       "paper_category": "Materials Discovery",
-      "generated_at": "2026-10-30T16:56:18",
+      "generated_at": "2026-10-31T15:57:00",
       "generator": "openai"
     }
   },
@@ -454,23 +454,23 @@
         "url": "https://arxiv.org/pdf/2610.39894v1"
       }
     ],
-    "score": 66,
+    "score": 61,
     "infographic": {
-      "key_insight": "Including all single particle–hole transitions in QMC barely changes excitation energies but is crucial for capturing exciton localization in low-density solid molecular hydrogen.",
-      "engineering_relevance": "Predicting optical response and excitation-induced forces in compressed molecular hydrogen requires wave functions that capture localization, not just accurate excitation energies.",
+      "key_insight": "In solid molecular hydrogen, including multiple particle–hole transitions in QMC barely changes excitation energies but is crucial for predicting exciton localization and related response properties.",
+      "engineering_relevance": "Accurate modeling of excitonic localization, optical transitions, and excitation-induced forces requires wave functions beyond a single orbital substitution, especially in the low-density insulating regime.",
       "method": [
-        "Model phase-I molecular hydrogen under increasing compression using QMC.",
-        "Compare single-orbital substitutions with multideterminant expansions containing all single particle–hole transitions.",
-        "Benchmark against BSE and TDDFT across nuclear configurations representing thermal and quantum fluctuations."
+        "Model the lowest neutral excitation in phase-I molecular hydrogen under increasing compression using QMC.",
+        "Compare single-substitution and multideterminant excited-state wave functions against BSE and TDDFT.",
+        "Evaluate nuclear configurations representing thermal and quantum fluctuations."
       ],
-      "evidence_signal": "Multideterminant QMC generally agrees with BSE on localization, transition dipoles, and excitation-induced forces, while TDDFT predicts more extended excitons; differences decrease under compression.",
-      "watch_item": "Similar excitation energies can mask substantial errors in localization and response, with agreement varying across nuclear configurations.",
+      "evidence_signal": "Across sampled nuclear configurations, multideterminant QMC generally agrees with BSE on localization, transition dipoles, and excitation-induced forces, while TDDFT predicts more extended excitons; differences diminish under compression.",
+      "watch_item": "Excitation-energy agreement alone does not validate localization or response predictions, which can differ substantially between methods for particular nuclear configurations.",
       "hashtags": [
         "#QuantumMonteCarlo",
         "#Excitons",
         "#MolecularHydrogen",
-        "#MaterialsModeling",
-        "#HighPressurePhysics"
+        "#ComputationalMaterials",
+        "#ExcitedStates"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -478,7 +478,7 @@
       "paper_title": "Excitons in solid molecular hydrogen from quantum Monte Carlo",
       "paper_date": "2026-10-29",
       "paper_category": "Materials Discovery",
-      "generated_at": "2026-10-30T16:56:21",
+      "generated_at": "2026-10-31T15:57:02",
       "generator": "openai"
     }
   },
@@ -507,23 +507,23 @@
         "url": "https://arxiv.org/pdf/2610.38937v1"
       }
     ],
-    "score": 66,
+    "score": 61,
     "infographic": {
-      "key_insight": "Reactive machine learning simulations identify two friction regimes at diamond–silicon nitride interfaces: bond-density-controlled interfacial sliding and shear within the softer material under full interfacial bonding.",
-      "engineering_relevance": "Controlling diamond surface passivation, orientation and load could help manage friction and wear in ceramic contacts and polishing processes.",
+      "key_insight": "Diamond friction depends on how passivation, surface orientation and load control interfacial bonding and whether shear stays at the interface or spreads into the softer material.",
+      "engineering_relevance": "The potential enables larger-scale reactive simulations to inform diamond wear studies, chemical-mechanical polishing and ceramic interface engineering.",
       "method": [
-        "Train a reactive C/H/N/O/Si interatomic potential on diverse bulk, surface, interface and molecular structures.",
-        "Test diamond reaction barriers and amorphous silicon nitride and silica structural/mechanical properties.",
-        "Simulate diamond–silicon nitride sliding across four diamond orientations, clean and H/OH-passivated surfaces, and loads of 0.1–23 GPa."
+        "Train a reactive C/H/N/O/Si machine learning potential on diverse bulk, surface, interface and molecular structures.",
+        "Evaluate diamond reaction barriers and structural/mechanical properties of amorphous silicon nitride and silica.",
+        "Simulate diamond–silicon nitride sliding across four orientations, clean and H/OH-passivated surfaces, and loads of 0.1–23 GPa."
       ],
-      "evidence_signal": "The abstract reports evaluation against ab initio reaction barriers and ceramic properties, but provides no numerical prediction errors.",
-      "watch_item": "Transferability to realistic wear and polishing conditions remains to be established beyond the reported sliding simulations.",
+      "evidence_signal": "The abstract reports validation against ab initio reaction barriers and amorphous-material properties, plus sliding simulations identifying two distinct shear regimes.",
+      "watch_item": "Accuracy for untested chemistries or contact conditions requires further validation; the reported sliding study focuses on diamond–silicon nitride rather than silica interfaces.",
       "hashtags": [
         "#MachineLearningPotentials",
-        "#DiamondSurfaces",
+        "#MaterialsScience",
         "#Tribology",
-        "#SurfacePassivation",
-        "#ComputationalMaterials"
+        "#DiamondSurfaces",
+        "#ReactiveSimulations"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -531,7 +531,7 @@
       "paper_title": "Development and application of a machine learning potential for diamond surfaces and their sliding interfaces with silicon nitride and silica: effect of passivation, orientation and load",
       "paper_date": "2026-10-28",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-10-30T16:56:23",
+      "generated_at": "2026-10-31T15:57:04",
       "generator": "openai"
     }
   },
@@ -561,22 +561,22 @@
         "url": "https://arxiv.org/pdf/2610.37222v1"
       }
     ],
-    "score": 66,
+    "score": 61,
     "infographic": {
       "key_insight": "GMMag generates crystal structures with site-resolved magnetic moments and redirects sampling toward chemical and magnetic targets without retraining.",
-      "engineering_relevance": "Targeted generation and finite-budget yield prediction could help allocate screening effort toward magnetic materials with previously unrepresented chemical formulas.",
+      "engineering_relevance": "The workflow supports targeted magnetic-material discovery while estimating how repeated chemical formulas constrain the yield of distinct candidates under finite sampling budgets.",
       "method": [
         "Conditional variational autoencoder with a graph neural network encoder and transformer decoder.",
-        "Gaussian-mixture sampling to retarget chemical and magnetic outputs.",
-        "Model repeated-formula generation to predict accumulation of distinct qualifying formulas."
+        "Gaussian-mixture sampling to retarget generation toward selected chemical and magnetic properties.",
+        "Yield model accounting for repeated chemical formulas during candidate generation."
       ],
-      "evidence_signal": "The study evaluates architecture, magnetic-moment representations and sampling choices, tests yield prediction in two separate ten-million-draw runs, and identifies Nd-containing candidates with negative formation energies and high estimated saturation magnetization.",
-      "watch_item": "Higher screening pass rates do not necessarily produce more distinct qualifying formulas, and predicted candidates still require further validation.",
+      "evidence_signal": "The study evaluates architecture, magnetic-moment representations and sampling choices, tests its yield model in two separate ten-million-draw runs, and identifies Nd-containing candidates with formulas absent from the reference dataset, negative formation energies and high estimated saturation magnetization.",
+      "watch_item": "A higher screening pass rate need not produce more distinct qualifying formulas, and the reported candidates are not evidence of experimental validation.",
       "hashtags": [
         "#AIMaterials",
         "#MagneticMaterials",
         "#CrystalGeneration",
-        "#GenerativeAI",
+        "#GenerativeModels",
         "#MaterialsDiscovery"
       ],
       "model": "gpt-6.1-sol",
@@ -585,7 +585,7 @@
       "paper_title": "Magnetic crystal generation with site-resolved magnetic moments via Gaussian-mixture retargeting and finite-budget yield prediction",
       "paper_date": "2026-10-27",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-10-30T16:56:25",
+      "generated_at": "2026-10-31T15:57:06",
       "generator": "openai"
     }
   },
@@ -614,20 +614,20 @@
         "url": "https://arxiv.org/pdf/2610.37095v1"
       }
     ],
-    "score": 66,
+    "score": 61,
     "infographic": {
-      "key_insight": "Full hydrogenation converts metallic irida-graphene into irida-graphane, a predicted wide-gap semiconductor with a 6.0 eV indirect band gap at the HSE06 level.",
-      "engineering_relevance": "Predicted visible transparency and strong deep-ultraviolet absorption make irida-graphane a candidate for ultraviolet optoelectronics and transparent coatings.",
+      "key_insight": "First-principles calculations predict that full hydrogenation converts metallic irida-graphene into irida-graphane, an indirect wide-band-gap semiconductor with a 6.0 eV HSE06 gap.",
+      "engineering_relevance": "Predicted visible transparency and strong deep-ultraviolet absorption make irida-graphane a candidate for UV optoelectronics and transparent coatings.",
       "method": [
-        "PBE and HSE06 density functional theory calculations",
-        "Phonon analysis and ab initio molecular dynamics",
-        "Structural, mechanical, electronic and optical property evaluation"
+        "PBE and HSE06 density functional theory for structural, electronic, and optical properties.",
+        "Phonon calculations and ab initio molecular dynamics for stability.",
+        "Mechanical response calculations for stiffness, isotropy, and critical strain."
       ],
-      "evidence_signal": "Calculations show no imaginary phonon frequencies, structural integrity in AIMD simulations up to 2000 K, visible reflectivity below 0.3%, and deep-UV absorption coefficients of 10⁵–10⁶ cm⁻¹.",
-      "watch_item": "These computational predictions require experimental validation, particularly of synthesis feasibility and uniform full hydrogenation.",
+      "evidence_signal": "Calculations show no imaginary phonon frequencies, structural integrity during AIMD simulations up to 2000 K, visible reflectivity below 0.3%, and deep-UV absorption coefficients of 10^5–10^6 cm⁻¹.",
+      "watch_item": "The predictions require experimental validation, particularly synthesis with complete hydrogenation and confirmation of stability and optical performance.",
       "hashtags": [
         "#IridaGraphane",
-        "#2DMaterials",
+        "#TwoDimensionalMaterials",
         "#DensityFunctionalTheory",
         "#WideBandGap",
         "#UVOptoelectronics"
@@ -638,7 +638,60 @@
       "paper_title": "First-Principles Investigation of Irida-Graphane: A Wide-Band-Gap Semiconductor Derived from Irida-Graphene",
       "paper_date": "2026-10-27",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-10-30T16:56:27",
+      "generated_at": "2026-10-31T15:57:08",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-10-26-arxiv-retention_constrained_fine_tuning_of_a_pre_trained_aluminium_mace_potential_for_non_equili",
+    "arxiv_id": "2610.35653v1",
+    "date": "2026-10-26",
+    "title": "Retention-constrained fine-tuning of a pre-trained aluminium MACE potential for non-equilibrium defect dynamics and plasticity",
+    "authors": "Yue Wu, Yuan Tian, Deng Pan, Mingwei Chen",
+    "abstract": "Adapting a pre-trained machine-learning interatomic potential for non-equilibrium defect dynamics and plasticity requires improving defect accuracy without degrading the near-equilibrium elastic and vibrational response. Here we achieve this balance for the aluminium MACE potential QP17 by integrating conditional readout uncertainty, iterative full-parameter updates and protocol-compatible relative-energy anchoring. Sensitivities over 144 linear readout weights guide acquisition, with within-batch covariance updates and evolving neural representations. After four active-learning rounds (32 acquired configurations and 400 gradient updates), force-uncertainty acquisition reduces mean development force error from 22.43 to 21.52 meV/Angstrom, outperforming random sampling (22.70), geometry-diversity selection (22.46) and uniform training across all 104 candidate labels (22.71) under the same update budget. All three force-uncertainty runs satisfy bulk-mechanical retention criteria: historical relative-energy error decreases from 0.375 to 0.207 meV/atom, while harmonic phonon root-mean-square drift remains below 0.05 THz. Matched objective ablations reveal that relative-energy anchoring suppresses harmonic drift. Out-of-sample evaluations across planar faults, twin boundaries and grain boundaries demonstrate transferable gains in defect energies and deviatoric stresses, even though virial stresses are never fitted. A closed-loop molecular dynamics and density functional theory (MD-DFT) pilot confirms that automated acceptance gating intercepts updates that violate historical elastic-group energy or vibrational tolerances. Together, these components establish a retention-constrained fine-tuning protocol for improving plastic-deformation observables while preserving the tested bulk mechanical response.",
+    "category": "Microstructure",
+    "source": "arXiv",
+    "published": "2026-10-26T16:00:16Z",
+    "updated": "2026-10-26T16:00:16Z",
+    "primary_category": "cond-mat.mtrl-sci",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2610.35653v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2610.35653v1"
+      }
+    ],
+    "score": 61,
+    "infographic": {
+      "key_insight": "Retention-constrained fine-tuning improves defect predictions in a pre-trained aluminium MACE potential while preserving tested near-equilibrium mechanical and vibrational behavior.",
+      "engineering_relevance": "The protocol supports more accurate simulations of aluminium defect dynamics and plasticity without sacrificing validated bulk response.",
+      "method": [
+        "Acquire configurations using conditional force uncertainty over 144 readout weights, with within-batch covariance updates.",
+        "Iteratively update all model parameters while anchoring protocol-compatible relative energies.",
+        "Gate MD–DFT updates against historical elastic-group energy and vibrational tolerances."
+      ],
+      "evidence_signal": "With 32 acquired configurations and 400 gradient updates, mean development force error fell from 22.43 to 21.52 meV/Å, outperforming sampling baselines; all three force-uncertainty runs met retention criteria, with harmonic phonon RMS drift below 0.05 THz.",
+      "watch_item": "Retention is demonstrated only for the tested bulk responses, and the closed-loop MD–DFT evaluation remains a pilot rather than broad deployment validation.",
+      "hashtags": [
+        "#AIMaterials",
+        "#MachineLearningPotentials",
+        "#ActiveLearning",
+        "#DefectDynamics",
+        "#ComputationalMechanics"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-10-26-arxiv-retention_constrained_fine_tuning_of_a_pre_trained_aluminium_mace_potential_for_non_equili",
+      "paper_title": "Retention-constrained fine-tuning of a pre-trained aluminium MACE potential for non-equilibrium defect dynamics and plasticity",
+      "paper_date": "2026-10-26",
+      "paper_category": "Microstructure",
+      "generated_at": "2026-10-31T15:57:11",
       "generator": "openai"
     }
   },
@@ -671,23 +724,23 @@
         "url": "https://arxiv.org/pdf/2610.40581v1"
       }
     ],
-    "score": 65,
+    "score": 60,
     "infographic": {
-      "key_insight": "Odd elasticity persists in selected isotropic and high-symmetry strain-gradient stiffness tensors, but non-Hermitian wave dynamics requires anisotropy.",
-      "engineering_relevance": "The framework supports continuum modeling and design of active, nonreciprocal metamaterials with intrinsic length scales and controllable wave amplification or attenuation.",
+      "key_insight": "Odd stiffness survives in 3D strain-gradient continua even at full isotropy, but non-Hermitian elastodynamics requires anisotropy.",
+      "engineering_relevance": "The framework supports homogenization and design of active, nonreciprocal metamaterials with internal length scales and tunable elastic-wave amplification or attenuation.",
       "method": [
         "Classify fourth-, fifth-, and sixth-order odd stiffness tensors across 3D point-group symmetries.",
-        "Derive governing equations, higher-order boundary conditions, and the generalized acoustic tensor using dynamic virtual work.",
+        "Use dynamic virtual work to derive equilibrium equations, higher-order boundary conditions, and the generalized acoustic tensor.",
         "Numerically analyze wave dispersion in a transversely hemitropic odd elastic continuum."
       ],
-      "evidence_signal": "Analytical results establish Hermitian acoustic tensors in isotropic and hemitropic limits, while numerical analysis of a transversely hemitropic example reveals exceptional points and simultaneous wave-component amplification and attenuation.",
-      "watch_item": "The abstract reports theoretical and numerical results, not experimental validation or a demonstrated microstructure-to-continuum homogenization procedure.",
+      "evidence_signal": "Analytical symmetry results establish Hermitian acoustic tensors in isotropic and hemitropic limits, while numerical analysis of a transversely hemitropic case reveals exceptional points and simultaneous wave-component amplification and attenuation.",
+      "watch_item": "The abstract reports theoretical and numerical results, not experimental validation or a demonstrated microstructure realizing the required anisotropic odd moduli.",
       "hashtags": [
         "#OddElasticity",
         "#StrainGradient",
         "#ActiveMetamaterials",
         "#NonHermitianPhysics",
-        "#Elastodynamics"
+        "#ElasticWaves"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -695,7 +748,7 @@
       "paper_title": "Odd Elasticity in Strain-Gradient Continua: Anisotropy Classification and Non-Hermitian Elastodynamics",
       "paper_date": "2026-10-29",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-10-30T16:56:29",
+      "generated_at": "2026-10-31T15:57:13",
       "generator": "openai"
     }
   },
@@ -724,23 +777,23 @@
         "url": "https://arxiv.org/pdf/2610.39495v1"
       }
     ],
-    "score": 65,
+    "score": 60,
     "infographic": {
-      "key_insight": "Composition-weighted elemental properties offer a low-cost route to screening unstable planar fault energies in multicomponent alloys through the shear-modulus–Burgers-vector product (μbₚ).",
-      "engineering_relevance": "This approach could accelerate alloy screening for slip and twinning behavior without directly calculating every alloy’s fault energies.",
+      "key_insight": "Composition-weighted elemental properties offer a low-cost route to estimating shear-modulus–Burgers-vector products (μbₚ) and screening unstable planar fault energies in multicomponent alloys.",
+      "engineering_relevance": "This approach could accelerate alloy screening for slip and twinning behavior while reducing reliance on expensive atomistic calculations.",
       "method": [
         "Use embedded-atom method (EAM) potentials complemented by density functional theory (DFT).",
-        "Evaluate temperature and composition effects on unstable planar fault energies and their relationship with μbₚ.",
-        "Estimate alloy μbₚ from composition-weighted pure-element values."
+        "Evaluate temperature and composition effects on unstable planar fault energies and their relationship to μbₚ.",
+        "Estimate multicomponent-alloy μbₚ from composition-weighted pure-element values."
       ],
-      "evidence_signal": "Alloy μbₚ correlates linearly with composition-weighted elemental μbₚ (R² = 0.95), while the UPFE–μbₚ correlation strengthens with chemical complexity in Co–Cr–Fe–Mn–Ni alloys.",
-      "watch_item": "Account for systematic negative deviations in alloy μbₚ estimates; the UPFE relationship also deviates for intermetallics, non-close-packed elements, and some binary compositions.",
+      "evidence_signal": "In the Co–Cr–Fe–Mn–Ni system, alloy μbₚ correlates linearly with composition-weighted elemental μbₚ (R² = 0.95), while the fault-energy correlation strengthens with chemical complexity.",
+      "watch_item": "Elemental averaging systematically overestimates alloy μbₚ, and fault-energy scaling deviates for intermetallics, non-close-packed elements, and some binary compositions.",
       "hashtags": [
         "#MaterialsDiscovery",
         "#MulticomponentAlloys",
+        "#AtomisticSimulation",
         "#FaultEnergies",
-        "#ComputationalMaterials",
-        "#AlloyDesign"
+        "#ComputationalMaterials"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -748,7 +801,7 @@
       "paper_title": "Predicting unstable planar fault energies in multicomponent alloys from pure elemental components",
       "paper_date": "2026-10-29",
       "paper_category": "Materials Discovery",
-      "generated_at": "2026-10-30T16:56:32",
+      "generated_at": "2026-10-31T15:57:15",
       "generator": "openai"
     }
   },
@@ -777,23 +830,23 @@
         "url": "https://arxiv.org/pdf/2610.38876v1"
       }
     ],
-    "score": 65,
+    "score": 60,
     "infographic": {
       "key_insight": "A lightweight machine-learning interatomic potential learns from unary and binary systems to predict interactions in unseen ternary and quaternary metal alloys.",
-      "engineering_relevance": "Targeted training could reduce the cost of developing transferable potentials for multi-element alloy simulations.",
+      "engineering_relevance": "The approach could reduce the need for custom potentials while enabling resource-efficient simulations across a twelve-element metal-alloy space.",
       "method": [
-        "Use step-wise active learning to build a compact, diverse training dataset.",
-        "Train a general-purpose potential spanning Al, Sc, Ti, V, Cu, Zn, Zr, Nb, Mo, Hf, Ta and W.",
+        "Use step-wise active learning to build a compact, chemically diverse training dataset.",
+        "Train a multi-element potential to interpolate interactions from unary and binary data.",
         "Extend to new elements through alchemical extrapolation using only unary data for each new element."
       ],
-      "evidence_signal": "The abstract reports transfer to unseen ternary and quaternary systems from unary and binary training data, but provides no numerical accuracy or runtime results.",
-      "watch_item": "Validate accuracy for the intended alloy compositions and operating conditions before relying on transfer beyond the training data.",
+      "evidence_signal": "The abstract reports transfer to unseen ternary and quaternary alloys across twelve metals and extension to new elements, but provides no numerical accuracy or runtime metrics.",
+      "watch_item": "Validate accuracy for target compositions and simulation conditions before deployment; the abstract does not establish universal transferability.",
       "hashtags": [
         "#AIMaterialsScience",
         "#MachineLearningPotentials",
         "#ActiveLearning",
-        "#AlloyDesign",
-        "#ComputationalMaterials"
+        "#MetalAlloys",
+        "#AtomisticSimulation"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -801,7 +854,7 @@
       "paper_title": "Learning Between the Lines: Interaction Interpolation in a Multi Element Machine Learning Interatomic Potential",
       "paper_date": "2026-10-28",
       "paper_category": "AI materials science",
-      "generated_at": "2026-10-30T16:56:34",
+      "generated_at": "2026-10-31T15:57:17",
       "generator": "openai"
     }
   },
@@ -831,17 +884,17 @@
         "url": "https://arxiv.org/pdf/2610.36135v1"
       }
     ],
-    "score": 64,
+    "score": 59,
     "infographic": {
-      "key_insight": "UniTB combines tight-binding physical priors with equivariant deep learning to predict electronic Hamiltonians across diverse chemistries while constraining unphysical band shifts.",
-      "engineering_relevance": "Its fast UniTB-Flash variant supports large-cell calculations and materials screening with linear-cost prior assembly, while UniTB provides more accurate property predictions.",
+      "key_insight": "UniTB combines physical tight-binding priors with equivariant deep learning to predict Hamiltonians across diverse chemistries while constraining unphysical band shifts.",
+      "engineering_relevance": "Its fast UniTB-Flash variant supports large-cell modeling and materials screening with linear-cost prior assembly, while UniTB provides more accurate property values.",
       "method": [
         "Learn E(3)-equivariant corrections to a physically motivated prior Hamiltonian.",
-        "Use prior-routed mixture-of-experts learning and a charge-equilibration head to generalize across chemistry.",
-        "Bound band shifts through projection; accelerate computation with SO(2) GPU kernels and two-center tables in UniTB-Flash."
+        "Use prior-routed mixture-of-experts learning and a charge-equilibration head.",
+        "Bound band shifts through projection and accelerate computation with SO(2) GPU kernels."
       ],
-      "evidence_signal": "Trained on 29,242 crystals, UniTB achieved 0.48 meV matrix-element error on nonmagnetic test crystals spanning 68 elements; both variants matched DFT optical and conductivity results for amorphous Ge-Sb-Te without amorphous training data.",
-      "watch_item": "Reported accuracy is for nonmagnetic test crystals, so performance on magnetic materials and broader disordered chemistries remains to be established.",
+      "evidence_signal": "Trained on 29,242 crystals, UniTB achieves 0.48 meV matrix-element error on nonmagnetic test crystals spanning 68 elements; both variants agree with DFT optics and conductivity for amorphous Ge-Sb-Te without amorphous training data.",
+      "watch_item": "Reported test accuracy concerns nonmagnetic crystals; applicability to magnetic materials and broader disordered chemistries requires further validation.",
       "hashtags": [
         "#AIMaterials",
         "#HamiltonianLearning",
@@ -855,7 +908,7 @@
       "paper_title": "Physical structure as an organizing principle for universal Hamiltonian learning",
       "paper_date": "2026-10-26",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-10-30T16:56:37",
+      "generated_at": "2026-10-31T15:57:20",
       "generator": "openai"
     }
   },
@@ -885,23 +938,23 @@
         "url": "https://arxiv.org/pdf/2610.36860v1"
       }
     ],
-    "score": 63,
+    "score": 58,
     "infographic": {
-      "key_insight": "HorizON jointly learns DFT redox potentials and cycle-dependent specific-capacity trajectories to predict organic battery behavior across multiple cycling horizons.",
-      "engineering_relevance": "Modeling the full battery stack and usage conditions could support long-term performance prediction, inverse design, and process optimization beyond active-material selection alone.",
+      "key_insight": "HorizON extends single-value battery property prediction to cycle-dependent specific-capacity trajectories using full battery-stack representations.",
+      "engineering_relevance": "The framework supports long-term performance prediction, inverse design, and process optimization for organic batteries with reduced reliance on critical metals.",
       "method": [
-        "Extend a data-fusion multi-task framework from single-valued targets to cycle-by-cycle prediction.",
-        "Use a multi-fidelity, multi-horizon Deep Operator Network to learn redox potentials and capacity trajectories jointly.",
-        "Train on complete battery-stack representations and usage conditions to capture component interactions."
+        "Uses a multi-fidelity, multi-horizon Deep Operator Network.",
+        "Jointly learns DFT redox potentials and cycle-dependent specific capacity.",
+        "Incorporates complete battery stacks and usage conditions to capture component interactions."
       ],
-      "evidence_signal": "The abstract identifies DFT redox potentials and cycle-dependent capacity trajectories as training targets but reports no dataset sizes, evaluation metrics, or quantitative results.",
-      "watch_item": "Generalization to unseen stack chemistries, operating conditions, and cycling horizons requires validation not reported in the abstract.",
+      "evidence_signal": "The abstract describes training on battery-stack representations and usage conditions but reports no dataset size, quantitative accuracy, or validation results.",
+      "watch_item": "Reliability on unseen stack chemistries and cycle horizons remains unestablished in the abstract.",
       "hashtags": [
-        "#AIMaterials",
         "#OrganicBatteries",
+        "#MaterialsDiscovery",
         "#DeepOperatorNetworks",
-        "#MultiFidelityLearning",
-        "#BatteryDesign"
+        "#BatteryModeling",
+        "#AIforScience"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -909,7 +962,7 @@
       "paper_title": "HorizON: A Multi-Horizon Deep Operator Network for Property Prediction of Organic Battery Stacks",
       "paper_date": "2026-10-27",
       "paper_category": "Materials Discovery",
-      "generated_at": "2026-10-30T16:56:39",
+      "generated_at": "2026-10-31T15:57:22",
       "generator": "openai"
     }
   },
@@ -939,23 +992,23 @@
         "url": "https://arxiv.org/pdf/2610.38989v1"
       }
     ],
-    "score": 62,
+    "score": 57,
     "infographic": {
-      "key_insight": "Bulky ligand substituents suppress intermolecular magnetic interactions in a five-copper metallacrown, revealing competing antiferromagnetic couplings and an intrinsic S = 1/2 ground state.",
-      "engineering_relevance": "The isolated cluster provides a model platform for relating ligand design and exchange interactions to molecular magnetic behavior.",
+      "key_insight": "Bulky ligand substituents suppress intermolecular magnetic interactions in a five-Cu(II) metallacrown, revealing competing antiferromagnetic couplings and an S = 1/2 ground state.",
+      "engineering_relevance": "Ligand-based magnetic isolation provides a route to studying intrinsic exchange interactions in molecular spin systems.",
       "method": [
         "Modify salicylhydroxamate ligands with sterically bulky substituents.",
-        "Measure static magnetization and X-band/high-frequency EPR.",
+        "Probe spin states using static magnetization and X-band/high-frequency EPR.",
         "Compare exchange couplings and g-factors with broken-symmetry DFT."
       ],
-      "evidence_signal": "Magnetization yields J₁ = −8.1(2) THz and J₂ = −4.40(12) THz, corroborated by DFT, while EPR resolves anisotropic g-factors and supports a thermally accessible excited quartet.",
-      "watch_item": "Device integration and magnetic behavior outside the studied molecular environment remain unestablished.",
+      "evidence_signal": "Magnetization yields J₁ = −8.1(2) THz, J₂ = −4.40(12) THz, and a doublet-to-quartet gap of 4.8(4) THz; EPR resolves near-axial g-factors of 2.028, 2.056, and 2.222.",
+      "watch_item": "The abstract establishes molecular magnetic properties but does not demonstrate device integration or operational spin coherence.",
       "hashtags": [
         "#MolecularMagnetism",
         "#Metallacrowns",
         "#CopperComplexes",
         "#EPR",
-        "#DFT"
+        "#DensityFunctionalTheory"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -963,7 +1016,7 @@
       "paper_title": "Magnetism in a homometallic square-planar Cu$({\\mathrm{II})}$$_4$Cu$({\\mathrm{II})}$ metallacrown",
       "paper_date": "2026-10-28",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-10-30T16:56:41",
+      "generated_at": "2026-10-31T15:57:24",
       "generator": "openai"
     }
   },
@@ -993,23 +1046,23 @@
         "url": "https://arxiv.org/pdf/2610.38850v1"
       }
     ],
-    "score": 62,
+    "score": 57,
     "infographic": {
       "key_insight": "QUANTA combines specialized AI agents with deterministic instrument-action validation to enable closed-loop quantum-materials characterization.",
-      "engineering_relevance": "The framework offers a path to automating expertise-intensive PPMS experiments through adaptive planning, troubleshooting and data interpretation.",
+      "engineering_relevance": "The framework offers a path to automating expertise-intensive measurement workflows on a widely adopted Physical Property Measurement System (PPMS).",
       "method": [
         "Retrieve evidence from scientific literature, experimental protocols and prior measurements.",
-        "Use specialized agents to plan experiments, troubleshoot issues and interpret results.",
+        "Coordinate specialized agents for experimental planning, troubleshooting and data interpretation.",
         "Validate instrument actions deterministically and revise measurement plans using incoming data."
       ],
-      "evidence_signal": "The abstract reports demonstrations involving transport measurements of TaP and nonlinear-response investigations in Co2MnGa, but provides no quantitative performance benchmarks.",
-      "watch_item": "Reliable deployment requires instrument-specific validation and safeguards; generalization beyond the reported demonstrations remains to be established.",
+      "evidence_signal": "The abstract reports demonstrations through transport measurements of the Weyl semimetal TaP and investigations of nonlinear responses in magnetic Co2MnGa, without quantitative performance metrics.",
+      "watch_item": "Generalization beyond the demonstrated materials and PPMS workflows requires further validation.",
       "hashtags": [
         "#AgenticAI",
         "#QuantumMaterials",
-        "#AutonomousLabs",
+        "#AutonomousExperiments",
         "#MaterialsCharacterization",
-        "#ClosedLoopScience"
+        "#AIForScience"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -1017,60 +1070,7 @@
       "paper_title": "Autonomous Quantum Measurement with Agentic AI",
       "paper_date": "2026-10-28",
       "paper_category": "Property Prediction",
-      "generated_at": "2026-10-30T16:56:44",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-10-27-arxiv-comprehensive_qm_ml_study_of_dislocation_loop_line_segments_in_zr_part_i_a_loop_core_geome",
-    "arxiv_id": "2610.36619v1",
-    "date": "2026-10-27",
-    "title": "Comprehensive QM/ML Study of Dislocation Loop Line Segments in α-Zr Part I: <a> Loop Core Geometries, Solute Binding, and Transition Barriers",
-    "authors": "Junting Zhang, Andrew P. Horsfield, Mark R. Wenman",
-    "abstract": "Zr cladding alloys in nuclear reactors are exposed to high neutron fluxes, making irradiation-induced defects and solute segregation central to understanding their in-service behaviour. Dislocation cores involve short-range chemistry and long-range elastic fields, which are difficult to describe simultaneously using conventional atomistic methods. Using a hybrid quantum mechanics/machine learning (QM/ML) framework, this part of work examines prismatic <a> loops in hcp α-Zr. All three loop variants are considered, including faulted and perfect, interstitial- and vacancy-type, and first- and second-order prismatic configurations. Nine possible dislocation line segments are characterised in terms of core geometry, solute binding, glide barriers and faulted-to-perfect transition pathways using QM/ML and newly implemented QM/ML-NEB calculations. Shockley and half-Shockley partials, together with basal and prismatic fault ribbons, are found to govern core stabilisation. Fe and H preferentially bind to faulted segments, whereas Sn and Nb favour perfect segments. Solutes can also drive partial motion, recombination and local unfaulting. These results establish a comprehensive picture of <a> loop microstructure, solute trapping and transition mechanisms in α-Zr.",
-    "category": "Microstructure",
-    "source": "arXiv",
-    "published": "2026-10-27T04:24:36Z",
-    "updated": "2026-10-27T04:24:36Z",
-    "primary_category": "cond-mat.mtrl-sci",
-    "categories": [
-      "cond-mat.mtrl-sci"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2610.36619v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2610.36619v1"
-      }
-    ],
-    "score": 62,
-    "infographic": {
-      "key_insight": "In α-Zr <a> loops, partial dislocations and fault ribbons govern core stability, while Fe and H favour faulted segments and Sn and Nb favour perfect segments.",
-      "engineering_relevance": "These atomistic insights can inform models of solute trapping and irradiation-induced microstructure evolution in zirconium nuclear-fuel cladding.",
-      "method": [
-        "Hybrid quantum mechanics/machine learning (QM/ML) modelling of prismatic <a> loops.",
-        "Characterisation of nine dislocation line segments across three loop variants.",
-        "QM/ML nudged elastic band calculations of glide barriers and faulted-to-perfect transition pathways."
-      ],
-      "evidence_signal": "The abstract reports core geometries, solute-binding preferences and transition mechanisms for nine line segments, but provides no numerical barriers or validation metrics.",
-      "watch_item": "Atomistic binding preferences and transition pathways require further validation before extrapolation to reactor-scale irradiation behaviour.",
-      "hashtags": [
-        "#MaterialsScience",
-        "#MachineLearning",
-        "#QuantumMechanics",
-        "#Dislocations",
-        "#NuclearMaterials"
-      ],
-      "model": "gpt-6.1-sol",
-      "service_tier": "ultrafast",
-      "paper_id": "2026-10-27-arxiv-comprehensive_qm_ml_study_of_dislocation_loop_line_segments_in_zr_part_i_a_loop_core_geome",
-      "paper_title": "Comprehensive QM/ML Study of Dislocation Loop Line Segments in α-Zr Part I: <a> Loop Core Geometries, Solute Binding, and Transition Barriers",
-      "paper_date": "2026-10-27",
-      "paper_category": "Microstructure",
-      "generated_at": "2026-10-30T16:56:46",
+      "generated_at": "2026-10-31T15:57:25",
       "generator": "openai"
     }
   }

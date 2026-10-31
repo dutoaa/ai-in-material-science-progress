@@ -1,18 +1,18 @@
 {
-  "key_insight": "ML-COHP predicts DFT-derived bond strengths from frozen MACE representations, reaching 1.6–4.1% error for bonds stronger than 0.5 eV.",
-  "engineering_relevance": "Rapid bond-strength estimates could accelerate analysis of grain boundaries and catalytic nanoparticles without running DFT and LOBSTER for every structure.",
+  "key_insight": "ML-COHP predicts DFT-derived bond strengths from frozen MACE descriptors, reaching 0.06 eV error on relaxed grain boundaries in about a second versus 5–51 hours for LOBSTER.",
+  "engineering_relevance": "Fast bond-strength estimates can support analysis of grain boundaries and catalytic nanoparticles without repeating expensive electronic-structure calculations for every geometry.",
   "method": [
-    "Extract frozen scalar and bond-projected vector features from a MACE foundation model.",
-    "Use a symmetric atom-pair head to correct an element-embedding pair baseline.",
-    "Combine the predictor with geometries from a fine-tuned MACE potential to examine oxygen coverage effects."
+    "Extract frozen atomic descriptors from a MACE foundation model.",
+    "Use a symmetric pair head combining scalar and bond-projected vector channels.",
+    "Correct an element-embedding pair baseline to predict ICOHP."
   ],
-  "evidence_signal": "Across high-entropy diborides and Pt/Pd-based systems, errors were about half those of a Gaussian-process comparator; training only on high-temperature diboride snapshots yielded 0.06 eV error on relaxed grain boundaries in about one second versus 5–51 hours for LOBSTER.",
-  "watch_item": "Transferability beyond the tested chemistries and environments remains unestablished, so new applications should be checked against DFT/LOBSTER references.",
+  "evidence_signal": "Across high-entropy diborides, Pt clusters on defective graphene, and oxygen-covered Pt/Pd nanoparticles, reported errors for bonds stronger than 0.5 eV were 1.6–4.1%, about half those of a Gaussian-process comparator trained on the same data.",
+  "watch_item": "Transferability beyond the tested chemistries and geometries remains unestablished; predictions also depend on the quality of input structures.",
   "hashtags": [
     "#AIMaterials",
     "#BondStrength",
     "#MACE",
-    "#AtomisticSimulation",
+    "#AtomisticModeling",
     "#Catalysis"
   ],
   "model": "gpt-6.1-sol",
@@ -21,6 +21,6 @@
   "paper_title": "ML-COHP: predicting bond descriptors using latent space of a universal interatomic potentials",
   "paper_date": "2026-10-29",
   "paper_category": "Crystal and Structure",
-  "generated_at": "2026-10-30T16:56:11",
+  "generated_at": "2026-10-31T15:56:53",
   "generator": "openai"
 }
