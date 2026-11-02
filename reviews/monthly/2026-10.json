@@ -1,0 +1,85 @@
+{
+  "repo_title": "AI in Material Science",
+  "period": "month",
+  "label": "2026-10",
+  "author": "William Sun with help from OpenAI",
+  "paper_count": 231,
+  "analysis": {
+    "author": "William Sun with help from OpenAI",
+    "period": "2026-10",
+    "executive_summary": "The supplied October 2026 papers suggest that AI in materials science is advancing from isolated property predictors toward integrated discovery workflows, physically structured generative models, and more carefully validated atomistic simulation. Agentic systems target grain-boundary research, electromagnetic inverse design, and scientific computation, while crystal generators increasingly represent disorder, symmetry, magnetic moments, and structural constraints explicitly. Machine-learned interatomic potentials support defect and transformation studies, but several papers emphasize that low reference-data errors do not guarantee stable dynamics or accurate thermodynamics. Data quality is an equally important theme: literature-mining pipelines, dynamical-stability datasets, and chronology-aware synthesizability models address different bottlenecks between computational candidates and useful materials. This review is based only on the supplied titles and abstracts, many of which are truncated; reported results should therefore be treated as paper-level claims rather than independently verified advances. Entries without a clear AI–materials connection, including the financial market-microstructure study, are not used as evidence of field progress.",
+    "major_themes": [
+      "Agentic research with domain-specific tools: GBClaw and AbsorbEvo connect language-model reasoning to simulations and iterative design, while the many-body perturbation theory study exposes limitations in reliable workflow construction.",
+      "Physically structured generation: EP-Flow, CrystalAR, framework-conditional generation, and magnetic crystal generation incorporate occupancy constraints, crystallographic symmetry, structural frameworks, or magnetic targets.",
+      "Reliability beyond benchmark errors: disordered-carbon tests, specialized force-field reviews, and thermodynamic correction methods emphasize trajectory stability, application-specific coverage, and phase behavior.",
+      "Data infrastructure and provenance: Crystoria targets missing dynamical-stability information, while literature-extraction studies emphasize physical admissibility checks, source agreement, and residual extraction errors.",
+      "Microstructure-aware inverse design: equivariant flow matching, additive-manufacturing digital twins, alloy-recipe inference, and learned mechanical surrogates connect structural representations to design objectives.",
+      "Physics-informed electronic and functional-property learning: Hamiltonian models, equivariant polarizability prediction, magnetic-ordering models, and polymer-composite transmission surrogates extend learning beyond scalar property regression.",
+      "Resource-aware discovery: active learning, adaptive Bayesian optimization, uncertainty-aware solvent screening, and chronology-aware synthesizability prediction seek to allocate expensive calculations and experiments more effectively."
+    ],
+    "notable_papers": [
+      {
+        "title": "Crystoria: A Large-Scale Crystal Dataset Linking Thermodynamic and Dynamical Stability for Materials AI",
+        "why_it_matters": "Addresses the gap between abundant structure-and-energy data and scarce dynamical-stability information. The described combination of standardized crystal identities, machine-learning-accelerated relaxation, and phonon-based assessment could support more physically informed candidate screening; dataset size and validation details are absent from the supplied excerpt."
+      },
+      {
+        "title": "Generative discovery of chemical reaction networks",
+        "why_it_matters": "ReactNexus combines generative transition-state and trajectory proposals with machine-learned-potential calculations for connectivity and barrier evaluation. The abstract reports that 80.8% of 10,000 in-distribution candidates connect to the input reactant after DFT optimization and intrinsic reaction coordinate verification, providing a concrete validation metric rather than relying only on generated plausibility."
+      },
+      {
+        "title": "EP-Flow: Disordered Crystal Structure Prediction without Site-Level Annotations",
+        "why_it_matters": "Represents disorder through an occupancy distribution matrix subject to occupancy, composition-conservation, and non-negativity constraints. This formulation directly addresses substitutional mixing, vacancies, and interstitial occupancy that deterministic-site crystal generators often omit; comparative performance is not available in the truncated abstract."
+      },
+      {
+        "title": "$C_4$-Equivariant Flow Matching on Anisotropic Power-Diagram Graphs for Microstructure Generation",
+        "why_it_matters": "Combines compact geometric microstructure representations with an explicitly rotation-equivariant generative architecture. Arbitrary-resolution rendering offers an alternative to fixed-resolution image generation, although the supplied excerpt does not establish downstream mechanical fidelity or replacement of experimental EBSD data."
+      },
+      {
+        "title": "Physical structure as an organizing principle for universal Hamiltonian learning",
+        "why_it_matters": "UniTB combines an E(3)-equivariant learned correction with tight-binding physical priors, prior-routed experts, charge equilibration, and bounded band shifts. It illustrates an effort to make cross-chemistry electronic-structure learning physically controlled rather than purely data-driven."
+      },
+      {
+        "title": "Challenging Atomistic Foundation Models on Disordered Carbons",
+        "why_it_matters": "Finds that low DFT energy and force errors can coexist with unphysical binding behavior and failed dynamics. MACE-MH-1 is reported as the most consistently robust among the tested models, but the broader contribution is the demonstration that realistic dynamical stress tests are necessary to assess transferability."
+      },
+      {
+        "title": "Retention-constrained fine-tuning of a pre-trained aluminium MACE potential for non-equilibrium defect dynamics and plasticity",
+        "why_it_matters": "Targets improved defect accuracy without sacrificing near-equilibrium response. After four active-learning rounds with 32 acquired configurations, the reported mean development force error decreases from 22.43 to 21.52 meV/Angstrom. The improvement is modest, but the comparison with alternative acquisition strategies provides a concrete test of data-efficient adaptation."
+      },
+      {
+        "title": "No Value Is Better Than a Wrong Value: Finding and Handling Erroneous Data in Literature-Mined Datasets for AI",
+        "why_it_matters": "Offers an error taxonomy and layered verification framework spanning provenance, physical constraints, source consensus, and model auditing. Its production gate halted 402 of 816 candidate values, yet a subsequent audit still identified errors among accepted values, underscoring that filtering alone does not establish dataset trustworthiness."
+      },
+      {
+        "title": "Enabling large language model agents for high-fidelity many-body perturbation theory calculations",
+        "why_it_matters": "Reports that the tested agents do not reliably construct MBPT workflows in a single attempt. This is an important counterweight to autonomy claims: specialized calculations require consistent physical choices and expert knowledge that general tool use does not automatically supply."
+      },
+      {
+        "title": "Learning the Chronology of Materials Discovery for Synthesizability Prediction",
+        "why_it_matters": "ChronoSyn augments positive-unlabeled synthesizability learning with the relative reporting order of known materials. Discovery history supplies an additional supervision signal, although its relationship to intrinsic synthesizability must be separated from historical research priorities and experimental access."
+      }
+    ],
+    "field_progress": [
+      "Generative modeling is broadening the design variables it can represent, moving beyond ordered atomic coordinates toward disorder, magnetic moments, structural frameworks, and microstructural geometry.",
+      "Discovery workflows increasingly combine proposals with external checks. Reaction-path verification, full-wave electromagnetic simulation, and finite-element-guided scaffold refinement illustrate different ways to connect generation to physical evaluation.",
+      "Atomistic AI is becoming more application-specific: defect-focused fine-tuning, reactive polymer modeling, grain-boundary segregation studies, and phase-stability corrections address weaknesses that broad pretraining alone may leave unresolved.",
+      "Evaluation is expanding from pointwise prediction to scientific usefulness, including stable molecular dynamics, preservation of elastic and vibrational behavior, distinct-candidate yield, and reproducible computational workflows.",
+      "Materials data engineering is receiving greater methodological attention, with efforts to improve dynamical-stability coverage, document extraction provenance, reject physically inconsistent values, and evaluate property models across held-out materials.",
+      "Inverse design is extending across scales, from crystal composition and reaction networks to alloy-processing recipes and printable scaffold microstructures. The supplied abstracts do not establish widespread experimental or industrial deployment."
+    ],
+    "open_questions": [
+      "Which combinations of physical checks, expert oversight, and recovery mechanisms make agentic workflows reliably correct rather than merely executable?",
+      "How should atomistic foundation models be benchmarked so that low energy and force errors predict stable trajectories, credible reaction pathways, and accurate phase behavior?",
+      "Can disorder-aware, magnetic, and symmetry-constrained generators improve experimentally realizable candidate yield under fixed validation budgets, rather than only increasing computational screening pass rates?",
+      "How can literature-derived datasets quantify residual error after verification, preserve source-level provenance, and avoid correlated mistakes across apparently independent publications?",
+      "How much of chronology-based synthesizability prediction reflects chemistry, and how much reflects historical funding, instrumentation, reporting practices, or researcher preferences?",
+      "Can generated microstructures and learned inverse-processing models generalize across imaging conditions, alloy families, manufacturing routes, and loading regimes with calibrated uncertainty?"
+    ],
+    "outlook": "The most consequential next step is to connect these methodological advances to independently validated discovery outcomes. Promising directions include combining structured generators with dynamical-stability and synthesizability screening, coupling specialized atomistic models to uncertainty-driven reference calculations, and giving agents explicit physical constraints and auditable workflow checkpoints. Progress should be measured by validated candidate yield, experimental transfer, stable simulation, and total resource cost—not just prediction accuracy or generation volume. Across the supplied papers, the central message is that broader AI capability and stronger physical accountability need to advance together.",
+    "model": "gpt-6.1-sol",
+    "service_tier": "ultrafast",
+    "generator": "openai"
+  },
+  "markdown_file": "2026-10.md",
+  "generated_at": "2026-11-02T08:37:56"
+}
