@@ -1,13 +1,13 @@
 {
-  "key_insight": "TT-SCHA computes binary-alloy crystal free energies without random sampling, matching molecular dynamics within 0.13 meV per atom at 600–1000 K.",
-  "engineering_relevance": "The method offers efficient thermodynamic evaluation of ordered alloys, using 420–500 times fewer core-seconds per run than the molecular-dynamics benchmark.",
+  "key_insight": "TT-SCHA computes binary-alloy crystal free energies without random sampling, matching molecular dynamics within 0.13 meV per atom at 600–1000 K with 420–500× fewer core-seconds per run.",
+  "engineering_relevance": "The method could lower the computational cost of predicting alloy thermodynamics, thermal expansion, and elastic properties within embedded-atom potential models.",
   "method": [
-    "Model B2 NiAl and gamma-TiAl with embedded-atom potentials.",
-    "Apply a self-consistent harmonic approximation corrected to third order in temperature.",
-    "Evaluate thermal averages using tensor-train integrals over one atom and its neighbors."
+    "Apply a self-consistent harmonic approximation with corrections through third order in temperature.",
+    "Evaluate local thermal averages using tensor-train integrals over one atom and its neighbors.",
+    "Obtain infinite-crystal results without finite-size sampling or random-sampling error."
   ],
-  "evidence_signal": "Validation used 65,536-atom molecular dynamics and same-potential published results, with gamma-TiAl elastic constants agreeing within 1 GPa and thermal expansion within 0.012 percentage points.",
-  "watch_item": "Sampling error is absent, but interpolation starting pivots introduce numerical variability of up to 9 MPa in pressure, reduced by averaging three runs.",
+  "evidence_signal": "Tests on B2 NiAl and γ-TiAl used 65,536-atom molecular dynamics as a free-energy benchmark; zero-pressure γ-TiAl results also matched published same-potential elastic constants within 1 GPa and thermal expansion within 0.012 percentage points.",
+  "watch_item": "Validation is limited to two ordered alloys with embedded-atom potentials, and interpolation starting pivots introduce numerical pressure errors up to 9 MPa, reduced by averaging three runs.",
   "hashtags": [
     "#ComputationalMaterials",
     "#TensorTrains",
@@ -21,6 +21,6 @@
   "paper_title": "TT-SCHA for Thermodynamics of Binary Alloys",
   "paper_date": "2026-11-03",
   "paper_category": "Crystal and Structure",
-  "generated_at": "2026-11-04T18:27:43",
+  "generated_at": "2026-11-05T18:31:47",
   "generator": "openai"
 }
