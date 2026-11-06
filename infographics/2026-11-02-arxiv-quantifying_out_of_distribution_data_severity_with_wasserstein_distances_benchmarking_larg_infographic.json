@@ -1,18 +1,18 @@
 {
-  "key_insight": "General-purpose LLMs outperform domain-specific pretrained models in the reported alloy-property benchmarks, with further gains from prior-model numerical estimates.",
-  "engineering_relevance": "Combining general-purpose LLMs with existing predictors and carefully selected reference data could reduce the cost of alloy-property screening.",
+  "key_insight": "General-purpose LLMs outperform the tested domain-specific pretrained models for alloy property prediction, with further gains when guided by numerical predictions from a prior model.",
+  "engineering_relevance": "Combining general-purpose LLMs with existing predictors and carefully selected reference data could reduce reliance on costly materials-specific pretraining.",
   "method": [
-    "Benchmark general-purpose LLMs against SteelBERT, MatSciBERT, and SciBERT across Ti, steel, HEA, and Al datasets.",
-    "Prompt DeepSeek V3.1 and Gemini-2.5-Flash with CatBoost or SteelBERT estimates to guide prediction corrections.",
-    "Assess similarity-based reference selection and compare self-reported confidence with prediction error."
+    "Benchmark general-purpose LLMs against SteelBERT, MatSciBERT, and SciBERT across Ti, steel, high-entropy, and Al alloys.",
+    "Prompt DeepSeek V3.1 and Gemini-2.5-Flash with CatBoost or SteelBERT estimates to refine predictions.",
+    "Assess reference-data similarity, data quantity, and self-reported prediction confidence."
   ],
-  "evidence_signal": "The abstract reports that using only 5% of high-similarity training references achieves performance comparable to using the full training set.",
-  "watch_item": "The abstract does not quantify errors or out-of-distribution severity, so robustness to substantially different alloy compositions remains unclear.",
+  "evidence_signal": "The abstract reports that using only the highest-similarity 5% of training data as references achieves performance similar to using the full training set, while high self-reported confidence correlates with smaller prediction errors.",
+  "watch_item": "The abstract provides no numerical error metrics or split details, limiting assessment of effect sizes and robustness under distribution shift.",
   "hashtags": [
     "#MaterialsInformatics",
-    "#AlloyDesign",
+    "#AlloyPropertyPrediction",
     "#LargeLanguageModels",
-    "#PropertyPrediction",
+    "#WassersteinDistance",
     "#OutOfDistribution"
   ],
   "model": "gpt-6.1-sol",
@@ -21,6 +21,6 @@
   "paper_title": "Quantifying out-of-distribution data severity with Wasserstein distances: benchmarking large language models for alloy property prediction",
   "paper_date": "2026-11-02",
   "paper_category": "Property Prediction",
-  "generated_at": "2026-11-05T18:31:06",
+  "generated_at": "2026-11-06T17:48:13",
   "generator": "openai"
 }
