@@ -1,6 +1,6 @@
 # AI materials science Progress Public Resources
 
-Generated: 2026-11-06
+Generated: 2026-11-07
 Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 
 ## 1. PaddleMaterials: An End-to-End Deep Learning Toolkit for Materials Science
@@ -83,7 +83,15 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2611.06843v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-04-arxiv-thermally_conditioned_time_series_forecasting_of_grain_growth_in_polycrystalline_materials_infographic.json
 
-## 11. Triboelectric nanogenerators across length scales: linking materials, multiscale modelling and applications
+## 11. Evolutionary Design of Interpretable Spatial Descriptors for Structure-Property Relationship Discovery
+
+- Date: 2026-11-04
+- Category: Property Prediction
+- arXiv: https://arxiv.org/abs/2611.06811v1
+- PDF: https://arxiv.org/pdf/2611.06811v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-04-arxiv-evolutionary_design_of_interpretable_spatial_descriptors_for_structure_property_relationsh_infographic.json
+
+## 12. Triboelectric nanogenerators across length scales: linking materials, multiscale modelling and applications
 
 - Date: 2026-11-02
 - Category: Polymers and Composites
@@ -91,7 +99,7 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2611.04008v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-02-arxiv-triboelectric_nanogenerators_across_length_scales_linking_materials_multiscale_modelling_a_infographic.json
 
-## 12. Agentic inverse design of spatially programmed materials
+## 13. Agentic inverse design of spatially programmed materials
 
 - Date: 2026-11-02
 - Category: Crystal and Structure
@@ -99,7 +107,7 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2611.03795v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-02-arxiv-agentic_inverse_design_of_spatially_programmed_materials_infographic.json
 
-## 13. Equivariant Deep Learning in Direct-Product Space for Electronic-Structure Hamiltonian Prediction
+## 14. Equivariant Deep Learning in Direct-Product Space for Electronic-Structure Hamiltonian Prediction
 
 - Date: 2026-11-05
 - Category: Crystal and Structure
@@ -107,21 +115,13 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2611.07695v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-05-arxiv-equivariant_deep_learning_in_direct_product_space_for_electronic_structure_hamiltonian_pre_infographic.json
 
-## 14. Complex Martensitic Microstructures in ${\rm Ti}_{76}{\rm Nb}_{22}{\rm Al}_{2}$
+## 15. Complex Martensitic Microstructures in ${\rm Ti}_{76}{\rm Nb}_{22}{\rm Al}_{2}$
 
 - Date: 2026-11-04
 - Category: Microstructure
 - arXiv: https://arxiv.org/abs/2611.06383v1
 - PDF: https://arxiv.org/pdf/2611.06383v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-04-arxiv-complex_martensitic_microstructures_in_rm_ti_76_rm_nb_22_rm_al_2_infographic.json
-
-## 15. Evolutionary Design of Interpretable Spatial Descriptors for Structure-Property Relationship Discovery
-
-- Date: 2026-11-04
-- Category: Property Prediction
-- arXiv: https://arxiv.org/abs/2611.06811v1
-- PDF: https://arxiv.org/pdf/2611.06811v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-04-arxiv-evolutionary_design_of_interpretable_spatial_descriptors_for_structure_property_relationsh_infographic.json
 
 ## 16. Temperature-Dependent Ion Dynamics in Argyrodite Superionic Conductor Li$_{6}$PS$_{5}$Cl with Fine-Tuned MACE Foundation Model
 
@@ -155,10 +155,10 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2611.07125v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-04-arxiv-data_driven_modeling_of_molten_chloride_corrosion_using_static_test_data_infographic.json
 
-## 20. Finite-element reconstruction of molten-zone dynamics and chemical segregation in optical floating-zone grown Ni--Mn--Ga
+## 20. Identifying the Shear Piezoelectric Coefficient using Physics-Informed Neural Networks under Exact Boundary and Initial Constraints
 
-- Date: 2026-11-05
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2611.08250v1
-- PDF: https://arxiv.org/pdf/2611.08250v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-05-arxiv-finite_element_reconstruction_of_molten_zone_dynamics_and_chemical_segregation_in_optical_infographic.json
+- Date: 2026-11-02
+- Category: Materials Discovery
+- arXiv: https://arxiv.org/abs/2611.03485v1
+- PDF: https://arxiv.org/pdf/2611.03485v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-02-arxiv-identifying_the_shear_piezoelectric_coefficient_using_physics_informed_neural_networks_und_infographic.json

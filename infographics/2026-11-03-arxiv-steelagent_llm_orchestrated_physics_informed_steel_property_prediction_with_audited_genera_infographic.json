@@ -1,19 +1,19 @@
 {
-  "key_insight": "SteelAgent’s apparent accuracy and uncertainty reliability depend strongly on whether evaluation holds out random samples, steel families, or data sources.",
-  "engineering_relevance": "Steel property estimates used for alloy selection or compliance decisions should state the evaluation population and uncertainty performance on relevant held-out groups.",
+  "key_insight": "SteelAgent’s apparent prediction accuracy and uncertainty reliability drop sharply when evaluation holds out unfamiliar steel families or data sources.",
+  "engineering_relevance": "Steel property estimates and compliance scores should identify the evaluation population before informing alloy selection or inverse design.",
   "method": [
-    "Combine metallurgical descriptors and machine-learning models with an LLM interface for prediction, uncertainty reporting, and inverse design.",
-    "Audit generalization using random splits and held-out steel families, sources, and laboratory grades.",
-    "Compare physics-derived features and examine group-level errors and calibration."
+    "Combine metallurgical descriptors and machine-learning models with an LLM interface.",
+    "Audit generalization using random, steel-family and source-held-out evaluations.",
+    "Assess prediction-interval coverage, physics-feature effects and group-level errors."
   ],
-  "evidence_signal": "On SteelBench tensile-strength evaluations, gradient-boosting pooled out-of-fold R² fell from 0.859 with random splitting to 0.113 with family holdout; nominal 90% interval coverage was 91.0% under random splitting versus 37.6% on held-out sources.",
+  "evidence_signal": "Gradient-boosting pooled out-of-fold R² fell from 0.859 on random splits to 0.113 with steel-family holdouts; nominal 90% interval coverage was 91.0% under random splitting but 37.6% on held-out sources.",
   "watch_item": "Physics-derived features were not consistently beneficial: gradient-boosting R² increased by 0.2534 in a 17-family holdout analysis but decreased by 0.358 in a separate four-grade laboratory analysis.",
   "hashtags": [
     "#MaterialsInformatics",
     "#SteelProperties",
     "#PhysicsInformedML",
-    "#Generalization",
-    "#UncertaintyQuantification"
+    "#UncertaintyQuantification",
+    "#Generalization"
   ],
   "model": "gpt-6.1-sol",
   "service_tier": "ultrafast",
@@ -21,6 +21,6 @@
   "paper_title": "SteelAgent: LLM-Orchestrated, Physics-Informed Steel Property Prediction with Audited Generalization and Calibrated Uncertainty",
   "paper_date": "2026-11-03",
   "paper_category": "Property Prediction",
-  "generated_at": "2026-11-06T17:48:11",
+  "generated_at": "2026-11-07T16:43:51",
   "generator": "openai"
 }
