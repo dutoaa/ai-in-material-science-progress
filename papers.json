@@ -26,21 +26,21 @@
         "url": "https://arxiv.org/pdf/2611.03154v1"
       }
     ],
-    "score": 82,
+    "score": 77,
     "infographic": {
-      "key_insight": "PaddleMaterials unifies six materials-learning task classes in one toolkit while preserving task-specific representations and physical semantics.",
-      "engineering_relevance": "Engineers can compose materials workflows and enable compiled execution with one setting, without changing model definitions.",
+      "key_insight": "PaddleMaterials unifies six materials-learning task classes in one toolkit, enabling verifiable cross-task workflows and compiler-accelerated execution.",
+      "engineering_relevance": "Engineers can connect materials design, simulation and characterization models while tracking physical quantities, units and reference conventions.",
       "method": [
-        "Standardize data processing, training, evaluation and pretrained-model management.",
-        "Record physical quantities, units, aggregation conventions and references for verifiable cross-task composition.",
-        "Use a shared compiler backend for graph optimization, operator fusion and hardware-targeted code generation."
+        "Unify data processing, training, evaluation and pretrained-model management across six task classes.",
+        "Record scientific semantics in task interfaces to verify cross-task composition.",
+        "Switch to compiled execution through one setting, using graph optimization, operator fusion and hardware-targeted code generation."
       ],
-      "evidence_signal": "Across 65 model instances in 11 groups, compiled execution accelerated every instance in eight groups; in the LiMnO2 case study, formation-energy errors were at most 7 meV/atom against same-geometry PBE+U references, with model-step costs below one-twentieth of a DFT single-point calculation.",
-      "watch_item": "The reported case studies do not establish generalization across materials chemistries, and compiled acceleration was not universal across all model groups.",
+      "evidence_signal": "Across 65 model instances in 11 groups, compilation accelerated every instance in eight groups; LiMnO2 formation-energy predictions differed from same-geometry PBE+U references by at most 7 meV/atom, with model-step costs below one-twentieth of a DFT single-point calculation.",
+      "watch_item": "Reported accuracy and cost benefits are case-specific; broader transferability and hardware-dependent compilation gains require validation.",
       "hashtags": [
-        "#PaddleMaterials",
         "#MaterialsInformatics",
         "#ScientificMachineLearning",
+        "#PaddleMaterials",
         "#AtomisticSimulation",
         "#AIForScience"
       ],
@@ -50,7 +50,7 @@
       "paper_title": "PaddleMaterials: An End-to-End Deep Learning Toolkit for Materials Science",
       "paper_date": "2026-11-02",
       "paper_category": "Property Prediction",
-      "generated_at": "2026-11-07T16:43:46",
+      "generated_at": "2026-11-08T16:54:32",
       "generator": "openai"
     }
   },
@@ -81,17 +81,17 @@
         "url": "https://arxiv.org/pdf/2611.07998v1"
       }
     ],
-    "score": 81,
+    "score": 76,
     "infographic": {
-      "key_insight": "Geometry-based fragmentation creates tunable, multiscale molecular representations without predefined chemical fragmentation rules for polymer property prediction.",
-      "engineering_relevance": "Combining polymer sequence representations with 3D fragment information can improve prediction of several properties relevant to materials screening.",
+      "key_insight": "Geometry-based molecular fragmentation enables multiscale polymer representations without predefined chemical fragmentation rules.",
+      "engineering_relevance": "Combining polymer sequence notation with 3D structural information can improve prediction of several polymer properties.",
       "method": [
-        "Formulate fragmentation as a radius-constrained optimization inspired by k-center, with fragment count determined by the radius.",
-        "Vary the radius to construct multiscale fragments using largely geometric information.",
-        "Integrate geometric fragment attention into a multimodal model combining p-SMILES and 3D conformations."
+        "Partition structures using radius-constrained optimization inspired by k-center, with fragment count determined by the radius.",
+        "Vary the radius to construct multiscale fragments and integrate them through geometric fragment-based attention.",
+        "Combine p-SMILES representations with 3D conformational information in a multimodal model."
       ],
-      "evidence_signal": "Experiments on a benchmark polymer dataset report improved accuracy for several properties over p-SMILES-only models, with explainability analyses probing physical relevance.",
-      "watch_item": "The abstract does not quantify gains or establish how robust predictions are to conformer choice and fragmentation radius.",
+      "evidence_signal": "On a benchmark polymer dataset, incorporating 3D conformational information improved prediction accuracy for several properties over p-SMILES-only models; explainability analyses examined physical relevance.",
+      "watch_item": "The abstract does not quantify performance gains or establish robustness to conformer selection and fragmentation radius.",
       "hashtags": [
         "#PolymerInformatics",
         "#MaterialsAI",
@@ -105,7 +105,7 @@
       "paper_title": "Towards Multiscale Molecular Representation Learning through Geometry-Based Fragmentation for Polymer Property Prediction",
       "paper_date": "2026-11-05",
       "paper_category": "Property Prediction",
-      "generated_at": "2026-11-07T16:43:49",
+      "generated_at": "2026-11-08T16:54:34",
       "generator": "openai"
     }
   },
@@ -135,17 +135,17 @@
         "url": "https://arxiv.org/pdf/2611.06953v1"
       }
     ],
-    "score": 73,
+    "score": 68,
     "infographic": {
-      "key_insight": "SteelAgent’s apparent prediction accuracy and uncertainty reliability drop sharply when evaluation holds out unfamiliar steel families or data sources.",
-      "engineering_relevance": "Steel property estimates and compliance scores should identify the evaluation population before informing alloy selection or inverse design.",
+      "key_insight": "SteelAgent’s apparent predictive accuracy and uncertainty reliability deteriorate when evaluation shifts from random splits to unfamiliar steel families or sources.",
+      "engineering_relevance": "Steel property estimates used for alloy screening or compliance decisions should identify the evaluation population and avoid assuming reliability on unfamiliar alloys.",
       "method": [
-        "Combine metallurgical descriptors and machine-learning models with an LLM interface.",
-        "Audit generalization using random, steel-family and source-held-out evaluations.",
-        "Assess prediction-interval coverage, physics-feature effects and group-level errors."
+        "Combine metallurgical descriptors and machine-learning models with an LLM interface for prediction, uncertainty reporting and inverse design.",
+        "Audit generalization using random splits, held-out steel families and held-out sources.",
+        "Assess physics-derived features and prediction-interval coverage across evaluation settings."
       ],
-      "evidence_signal": "Gradient-boosting pooled out-of-fold R² fell from 0.859 on random splits to 0.113 with steel-family holdouts; nominal 90% interval coverage was 91.0% under random splitting but 37.6% on held-out sources.",
-      "watch_item": "Physics-derived features were not consistently beneficial: gradient-boosting R² increased by 0.2534 in a 17-family holdout analysis but decreased by 0.358 in a separate four-grade laboratory analysis.",
+      "evidence_signal": "On SteelBench tensile-strength evaluations, gradient-boosting pooled out-of-fold R² fell from 0.859 under random splitting to 0.113 with steel families held out; nominal 90% interval coverage ranged from 91.0% on random splits to 37.6% on held-out sources.",
+      "watch_item": "Physics-derived features are not uniformly beneficial: gradient-boosting R² improved by 0.2534 in a 17-family holdout analysis but declined by 0.358 in a separate four-grade laboratory analysis.",
       "hashtags": [
         "#MaterialsInformatics",
         "#SteelProperties",
@@ -159,7 +159,7 @@
       "paper_title": "SteelAgent: LLM-Orchestrated, Physics-Informed Steel Property Prediction with Audited Generalization and Calibrated Uncertainty",
       "paper_date": "2026-11-03",
       "paper_category": "Property Prediction",
-      "generated_at": "2026-11-07T16:43:51",
+      "generated_at": "2026-11-08T16:54:36",
       "generator": "openai"
     }
   },
@@ -189,17 +189,17 @@
         "url": "https://arxiv.org/pdf/2611.03767v1"
       }
     ],
-    "score": 68,
+    "score": 63,
     "infographic": {
-      "key_insight": "General-purpose LLMs outperformed domain-specific pretrained models for alloy property prediction, with further gains from numerical estimates supplied by prior models.",
-      "engineering_relevance": "Combining general-purpose LLMs with existing predictors and carefully selected reference data could reduce the cost of alloy property screening.",
+      "key_insight": "General-purpose LLMs outperform domain-specific pretrained models in the reported alloy-property benchmarks, with further gains from numerical predictions supplied as prompts.",
+      "engineering_relevance": "Combining existing property predictors with general-purpose LLMs could improve alloy screening while reducing reliance on expensive domain-specific pretraining.",
       "method": [
         "Benchmark general-purpose LLMs against SteelBERT, MatSciBERT, and SciBERT across Ti, steels, high-entropy alloys, and Al.",
-        "Prompt DeepSeek V3.1 and Gemini-2.5-Flash with CatBoost or SteelBERT estimates to guide prediction correction.",
-        "Evaluate reference-data similarity and self-reported confidence alongside prediction accuracy."
+        "Prompt DeepSeek V3.1 and Gemini-2.5-Flash with CatBoost or SteelBERT predictions to guide corrections.",
+        "Compare similarity-selected reference data subsets and assess self-reported prediction confidence."
       ],
-      "evidence_signal": "The abstract reports that using only 5% of high-similarity training references achieved performance similar to using the full training set, while high self-reported confidence correlated with smaller errors.",
-      "watch_item": "The abstract provides no numerical error metrics or detailed out-of-distribution results, so robustness on unfamiliar alloy compositions remains to be verified.",
+      "evidence_signal": "The abstract reports that using only 5% high-similarity training references yields performance similar to using the full training set, while hybrid predictions outperform both prior models and unguided LLMs.",
+      "watch_item": "The abstract provides no numerical error metrics or detailed out-of-distribution results, so robustness on substantially different alloys remains unclear.",
       "hashtags": [
         "#MaterialsInformatics",
         "#AlloyDesign",
@@ -213,7 +213,7 @@
       "paper_title": "Quantifying out-of-distribution data severity with Wasserstein distances: benchmarking large language models for alloy property prediction",
       "paper_date": "2026-11-02",
       "paper_category": "Property Prediction",
-      "generated_at": "2026-11-07T16:43:54",
+      "generated_at": "2026-11-08T16:54:38",
       "generator": "openai"
     }
   },
@@ -245,23 +245,23 @@
         "url": "https://arxiv.org/pdf/2611.07410v1"
       }
     ],
-    "score": 66,
+    "score": 61,
     "infographic": {
-      "key_insight": "Singular-value spectra of equivariant representations provide orientation-invariant fingerprints for identifying structural symmetry and tracking symmetry breaking.",
-      "engineering_relevance": "SymFP offers a reusable symmetry diagnostic for crystals, molecules and complex assemblies, including local changes that global geometric measures can obscure.",
+      "key_insight": "Spectral symmetry fingerprints (SymFP) turn symmetry-induced rank constraints in equivariant representations into orientation-invariant measures of structural symmetry and symmetry breaking.",
+      "engineering_relevance": "SymFP offers a reusable tool for identifying point-group symmetry and tracking local structural changes in materials and molecular systems.",
       "method": [
-        "Extract singular-value spectra from equivariant representations using an architecture-agnostic framework.",
-        "Identify discrete point groups by matching spectra to symmetry-imposed rank templates.",
-        "Quantify continuous symmetry breaking through spectral energy beyond target rank constraints, with subgroup-monotonic leakage scores."
+        "Compute singular-value spectra of equivariant representations, with a parameter-free GNN implementation.",
+        "Identify discrete point groups by matching spectra to symmetry-specific rank templates.",
+        "Quantify continuous symmetry breaking using spectral energy beyond target rank constraints."
       ],
-      "evidence_signal": "The abstract reports accurate point-group identification and controlled symmetry-breaking tracking across synthetic structures, molecules, coordination complexes and large biological assemblies, without numerical metrics.",
-      "watch_item": "Practical robustness to noisy coordinates and numerical rank thresholds is not established in the abstract.",
+      "evidence_signal": "Evaluations span synthetic structures, molecules, coordination complexes and large biological assemblies, demonstrating point-group identification and sensitivity to controlled, local and degree-resolved symmetry changes.",
+      "watch_item": "The abstract does not quantify robustness to noisy coordinates or numerical thresholds used in rank-template matching.",
       "hashtags": [
-        "#AIForScience",
-        "#MaterialsScience",
+        "#AIForMaterials",
         "#GeometricDeepLearning",
         "#EquivariantGNN",
-        "#StructuralSymmetry"
+        "#StructuralSymmetry",
+        "#SymmetryBreaking"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -269,7 +269,7 @@
       "paper_title": "Spectral symmetry fingerprints in equivariant representations",
       "paper_date": "2026-11-05",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-11-07T16:43:56",
+      "generated_at": "2026-11-08T16:54:40",
       "generator": "openai"
     }
   },
@@ -298,22 +298,22 @@
         "url": "https://arxiv.org/pdf/2611.06277v1"
       }
     ],
-    "score": 66,
+    "score": 61,
     "infographic": {
-      "key_insight": "A DFT-guided all-atom model reproduces key experimental features of the resorcinol-formaldehyde aerogel skeleton and enables atomistic study of iron incorporation.",
-      "engineering_relevance": "The model provides a starting point for screening fillers and dopants for RF aerogels, with potential applications in thermoelectric functionalization and thermal insulation.",
+      "key_insight": "A DFT-informed all-atom model reproduces key experimental features of the resorcinol-formaldehyde aerogel skeleton and enables atomistic study of iron incorporation.",
+      "engineering_relevance": "The model offers a starting point for screening fillers and dopants in RF aerogels for potential thermal-insulation and thermoelectric applications.",
       "method": [
         "Optimize RF base units with DFT and compare calculated infrared spectra with experiment.",
-        "Benchmark force fields against DFT for branched RF units and select COMPASS II.",
-        "Simulate skeleton aggregation and density equilibration, then track 5 wt% iron incorporation over 1 ns."
+        "Benchmark classical force fields against DFT and select COMPASS II for a 15,012-atom skeleton model.",
+        "Equilibrate with NVT/NPT molecular dynamics, then simulate 5 wt% iron incorporation for 1 ns."
       ],
-      "evidence_signal": "The 15,012-atom model reached 1.296 g/cm³ versus an experimental skeletal density of 1.3 g/cm³; after iron addition, the embedded fraction rose from 63% to 71%.",
-      "watch_item": "The branched RF units were not cross-linked to one another, and agreement with infrared spectra and skeletal density does not establish bulk thermal or thermoelectric performance.",
+      "evidence_signal": "The calculated infrared spectrum agreed with experiment, the equilibrium skeletal density was 1.296 versus 1.3 g/cm³ experimentally, and the embedded iron fraction increased from 63% to 71%.",
+      "watch_item": "The branched RF units were not cross-linked to one another, and the simulations do not establish long-term dopant stability or thermal and thermoelectric performance.",
       "hashtags": [
         "#Aerogels",
-        "#MaterialsModeling",
         "#MolecularDynamics",
         "#DFT",
+        "#MaterialsModeling",
         "#IronDoping"
       ],
       "model": "gpt-6.1-sol",
@@ -322,7 +322,7 @@
       "paper_title": "An All-Atom Model of the Resorcinol-Formaldehyde Aerogel Skeleton from DFT and Molecular Dynamics: Validation and Iron Incorporation",
       "paper_date": "2026-11-04",
       "paper_category": "Materials Discovery",
-      "generated_at": "2026-11-07T16:43:59",
+      "generated_at": "2026-11-08T16:54:42",
       "generator": "openai"
     }
   },
@@ -352,23 +352,23 @@
         "url": "https://arxiv.org/pdf/2611.02906v1"
       }
     ],
-    "score": 65,
+    "score": 60,
     "infographic": {
-      "key_insight": "ST2M uses crystal symmetry to guide generation, achieving 96.37% structural validity while improving the yield of stable, unique, and novel candidates.",
-      "engineering_relevance": "Generating candidates under prescribed crystallographic constraints could accelerate materials screening and reduce wasted downstream calculations.",
+      "key_insight": "ST2M guides crystal generation with crystallographic symmetry, improving the joint yield of stable, unique, and novel structures.",
+      "engineering_relevance": "The model could accelerate materials discovery by generating chemically viable crystal candidates under prescribed crystallographic constraints.",
       "method": [
         "Represent crystals as sequences of independent occupied Wyckoff orbits.",
-        "Condition discrete–continuous diffusion on Wyckoff patterns and apply degree-of-freedom masks.",
-        "Use a twin-branch Transformer to jointly denoise discrete and continuous variables."
+        "Use Wyckoff-pattern conditioning and degree-of-freedom masks to constrain generation.",
+        "Jointly denoise discrete and continuous variables with a twin-branch Transformer."
       ],
-      "evidence_signal": "For known dataset patterns, 23.86% of generated structures met stability, uniqueness, and novelty criteria—a 68.15% relative improvement over the best baseline—and first-principles calculations identified 21 previously unreported stable structures among selected low-predicted-energy candidates.",
-      "watch_item": "The abstract does not quantify performance on unknown Wyckoff patterns, and first-principles validation covers only selected candidates.",
+      "evidence_signal": "ST2M reports 96.37% structural validity and a 23.86% stable–unique–novel yield for known patterns, 68.15% better than the strongest baseline; first-principles calculations identify 21 previously unreported stable structures among selected low-predicted-energy candidates.",
+      "watch_item": "The reported joint yield applies to known patterns, while first-principles validation covers selected candidates; performance on unknown patterns and experimental synthesizability require further assessment.",
       "hashtags": [
-        "#AIForScience",
-        "#MaterialsDiscovery",
+        "#AIMaterials",
         "#CrystalGeneration",
+        "#MaterialsDiscovery",
         "#DiffusionModels",
-        "#CrystalSymmetry"
+        "#CrystallographicSymmetry"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -376,61 +376,7 @@
       "paper_title": "Site-orbit masked twin-branch Transformer for symmetry-constrained crystal generation",
       "paper_date": "2026-11-02",
       "paper_category": "Materials Discovery",
-      "generated_at": "2026-11-07T16:44:04",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-11-01-arxiv-atomistic_insights_into_mocvd_growth_of_gaas_using_a_closed_loop_autonomous_system_combini",
-    "arxiv_id": "2611.01646v1",
-    "date": "2026-11-01",
-    "title": "Atomistic Insights into MOCVD Growth of GaAs using a Closed Loop Autonomous System Combining Directed Reinforcement Learning and Kinetic Monte Carlo Simulations",
-    "authors": "Hrishi V. Harsora, Ashutosh Krishna Amaram, Raghavan Ranganathan, Tarun K. Agarwal",
-    "abstract": "Conventional process optimization of the Metal-Organic Chemical Vapor Deposition (MOCVD) growth parameters to achieve high-quality thin films relies on iterative, resource-intensive experimental runs. While predictive modeling can circumvent this cost and effort, simulating thin-film growth is constrained by the vastly different length and time scales of the deposition process. While continuum (e.g., Computational Fluid Dynamics (CFD)) and first-principles methods (e.g., Molecular Dynamics (MD)) struggle to balance experimental length/time scales and atomistic accuracy, Kinetic Monte Carlo (KMC) bridges this divide by resolving atomistic events whilst remaining tractable at experimental length and time scales. However, the accuracy of KMC relies on kinetic rate parameters that require costly density functional theory (DFT) calculations. In order to circumvent this, we present a framework that calibrates the rate parameters directly against experimental growth data. A forward KMC growth model is coupled in a closed loop with a Monte Carlo Tree Search (MCTS) optimizer that navigates the high-dimensional parameter space, with the search steered by the degree of rate control of each reaction rate parameter. The approach invokes no material-specific assumptions and hence, any deposition process whose forward kinetics can be reduced to a set of rate-controlled events is amenable to the same treatment. We demonstrate it for the MOCVD of GaAs, where the calibrated model captures the characteristic temperature dependence of the measured growth rate. The framework is also able to recover the three well known kinetic regimes characterized by change in the rate determining step from precursor chemisorption to desorption. As a result, the framework converts routinely measured growth data into a mechanistically interpretable model of the deposition process.",
-    "category": "Materials Discovery",
-    "source": "arXiv",
-    "published": "2026-11-01T06:48:58Z",
-    "updated": "2026-11-01T06:48:58Z",
-    "primary_category": "cond-mat.mtrl-sci",
-    "categories": [
-      "cond-mat.mtrl-sci",
-      "physics.comp-ph"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2611.01646v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2611.01646v1"
-      }
-    ],
-    "score": 63,
-    "infographic": {
-      "key_insight": "A closed-loop optimizer calibrates atomistic GaAs growth kinetics directly from experimental growth data, reducing reliance on costly DFT-derived rate parameters.",
-      "engineering_relevance": "The framework turns routinely measured MOCVD growth rates into mechanistic insight that could support less experiment-intensive process optimization.",
-      "method": [
-        "Simulate deposition through atomistic, rate-controlled events using kinetic Monte Carlo.",
-        "Calibrate kinetic parameters against experimental growth data using Monte Carlo Tree Search.",
-        "Steer the search using each reaction parameter’s degree of rate control."
-      ],
-      "evidence_signal": "For GaAs MOCVD, the calibrated model captures the measured growth rate’s temperature dependence and recovers three known kinetic regimes with changing rate-determining steps.",
-      "watch_item": "The abstract does not quantify predictive errors or establish generalization beyond the GaAs calibration case.",
-      "hashtags": [
-        "#MaterialsDiscovery",
-        "#GaAs",
-        "#MOCVD",
-        "#KineticMonteCarlo",
-        "#ReinforcementLearning"
-      ],
-      "model": "gpt-6.1-sol",
-      "service_tier": "ultrafast",
-      "paper_id": "2026-11-01-arxiv-atomistic_insights_into_mocvd_growth_of_gaas_using_a_closed_loop_autonomous_system_combini",
-      "paper_title": "Atomistic Insights into MOCVD Growth of GaAs using a Closed Loop Autonomous System Combining Directed Reinforcement Learning and Kinetic Monte Carlo Simulations",
-      "paper_date": "2026-11-01",
-      "paper_category": "Materials Discovery",
-      "generated_at": "2026-11-07T16:44:06",
+      "generated_at": "2026-11-08T16:54:45",
       "generator": "openai"
     }
   },
@@ -460,23 +406,23 @@
         "url": "https://arxiv.org/pdf/2611.07438v1"
       }
     ],
-    "score": 61,
+    "score": 56,
     "infographic": {
-      "key_insight": "Electrolyte conditioning preserves high structural validity but increases repetition and reduces distinct polymers satisfying combined design requests, despite slightly improving predicted property error.",
-      "engineering_relevance": "Polymer design workflows should evaluate distinct usable candidates and chemical constraints alongside property accuracy.",
+      "key_insight": "PolyGPT generates highly valid polymer structures, but electrolyte conditioning increases repetition and reduces the yield of distinct polymers satisfying combined design requests.",
+      "engineering_relevance": "Polymer-electrolyte screening should prioritize distinct, novel candidates meeting all design constraints rather than property-prediction error alone.",
       "method": [
-        "A 38.3-million-parameter decoder-only Transformer generates polymer repeat units.",
-        "Optional controls specify property targets, chemical-feature inclusion or exclusion, and electrolyte-domain conditioning.",
-        "Evaluation compares generation conditions using the validation-loss-selected model and examines nine checkpoints."
+        "38.3-million-parameter decoder-only Transformer generates polymer repeat units.",
+        "Conditions on optional property targets, chemical-feature inclusion or exclusion, and electrolyte domain.",
+        "Evaluates validity, uniqueness, training-catalog novelty, predicted Tg accuracy, and constraint satisfaction."
       ],
-      "evidence_signal": "At a Tg target of 246.11 K, adding electrolyte conditioning reduced predictor-estimated MAE from 26.97 to 26.07 K, but distinct valid yield within 50 K fell from 82.35% to 32.31%, and training-catalog-unseen yield fell from 59.90% to 19.71%.",
-      "watch_item": "Predicted Tg and structural validity do not establish experimentally verified electrolyte performance.",
+      "evidence_signal": "At a Tg target of 246.11 K, electrolyte conditioning slightly improved predictor-estimated error from 26.97 to 26.07 K but reduced distinct-valid yield within 50 K from 82.35% to 32.31% of attempts.",
+      "watch_item": "Tg performance is predictor-estimated; validation-loss checkpoint selection may miss models yielding more distinct, catalog-unseen candidates that meet the target.",
       "hashtags": [
         "#PolymerElectrolytes",
-        "#MaterialsAI",
-        "#GenerativeDesign",
+        "#GenerativeAI",
+        "#MaterialsInformatics",
         "#Transformers",
-        "#ComputationalMaterials"
+        "#InverseDesign"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -484,7 +430,7 @@
       "paper_title": "PolyGPT: A Decoder-Only Transformer for Polymer Electrolyte Design",
       "paper_date": "2026-11-05",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-11-07T16:44:08",
+      "generated_at": "2026-11-08T16:54:47",
       "generator": "openai"
     }
   },
@@ -514,23 +460,23 @@
         "url": "https://arxiv.org/pdf/2611.06843v1"
       }
     ],
-    "score": 61,
+    "score": 56,
     "infographic": {
-      "key_insight": "Conditioning a recurrent forecasting model on temperature and thermal rate enables accurate prediction of grain size distributions during non-isothermal heat treatment.",
+      "key_insight": "Conditioning a recurrent forecasting model on temperature and thermal rate enables accurate prediction of grain size distribution evolution during non-isothermal heat treatment.",
       "engineering_relevance": "The approach could reduce reliance on costly grain-growth simulations when evaluating heat-treatment schedules for polycrystalline materials.",
       "method": [
         "Encode grain size distributions with a convolutional neural network.",
         "Embed instantaneous temperature and thermal rate with a dedicated multilayer perceptron.",
-        "Forecast microstructural evolution with a recurrent network trained on validated front-tracking simulations."
+        "Forecast temporal evolution with a recurrent network trained on validated front-tracking simulations."
       ],
-      "evidence_signal": "K-fold cross-validation yielded mean relative errors of 2.99% for one-hour cycles and 4.51% for four-hour cycles, with R² above 0.99; ten simulations spanning four unseen thermal histories yielded errors of 1.91–14.66%.",
-      "watch_item": "Evaluation is simulation-based, and errors reaching 14.66% on unseen thermal histories warrant caution when applying the model beyond its training conditions.",
+      "evidence_signal": "Across simulated thermal paths, k-fold cross-validation yielded mean relative errors of 2.99% for one-hour cycles and 4.51% for four-hour cycles with R² > 0.99; ten simulations spanning four unseen thermal histories yielded errors of 1.91%–14.66%.",
+      "watch_item": "Evaluation uses simulation-generated data, and higher errors on some unseen thermal histories warrant caution when extrapolating to new heat-treatment schedules.",
       "hashtags": [
         "#AIMaterialsScience",
         "#GrainGrowth",
         "#HeatTreatment",
-        "#MicrostructurePrediction",
-        "#TimeSeriesForecasting"
+        "#TimeSeriesForecasting",
+        "#MicrostructureModeling"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -538,7 +484,7 @@
       "paper_title": "Thermally Conditioned Time-Series Forecasting of Grain Growth in Polycrystalline Materials",
       "paper_date": "2026-11-04",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-11-07T16:44:11",
+      "generated_at": "2026-11-08T16:54:49",
       "generator": "openai"
     }
   },
@@ -568,22 +514,22 @@
         "url": "https://arxiv.org/pdf/2611.06811v1"
       }
     ],
-    "score": 61,
+    "score": 56,
     "infographic": {
       "key_insight": "Genetic algorithms design interpretable spatial descriptors that balance local-response prediction error against the number of image-derived features.",
-      "engineering_relevance": "Compact, explicit image measurements can help engineers identify which surrounding structures matter for predicting local spectra and hysteresis loops.",
+      "engineering_relevance": "Explicit regional measurements help identify where surrounding structure needs fine spatial detail and where compact summaries may suffice for property prediction.",
       "method": [
-        "Benchmark regression models and use SHAP maps to examine spatial attribution.",
-        "Evaluate how image patch size and compression affect accuracy and descriptor dimensionality.",
+        "Benchmark regression models and inspect spatial attribution with SHAP maps.",
+        "Evaluate image patch size and compression to probe accuracy–dimensionality trade-offs.",
         "Evolve Cartesian and polar partitions with mean, minimum, and maximum pooling."
       ],
-      "evidence_signal": "The abstract describes regression benchmarking and accuracy–dimensionality evaluation for local spectra and hysteresis loops, but reports no numerical results.",
-      "watch_item": "Extension to molecules and solids requires new genetic algorithm rules and is not demonstrated in the abstract.",
+      "evidence_signal": "The abstract reports evaluation on local spectra and hysteresis-loop prediction, but provides no dataset sizes or quantitative performance metrics.",
+      "watch_item": "Extension to molecules and solids remains conditional on defining suitable genetic-algorithm rules.",
       "hashtags": [
         "#MaterialsInformatics",
+        "#StructurePropertyRelationships",
         "#InterpretableAI",
         "#GeneticAlgorithms",
-        "#StructureProperty",
         "#SpatialDescriptors"
       ],
       "model": "gpt-6.1-sol",
@@ -592,7 +538,7 @@
       "paper_title": "Evolutionary Design of Interpretable Spatial Descriptors for Structure-Property Relationship Discovery",
       "paper_date": "2026-11-04",
       "paper_category": "Property Prediction",
-      "generated_at": "2026-11-07T16:44:13",
+      "generated_at": "2026-11-08T16:54:51",
       "generator": "openai"
     }
   },
@@ -623,20 +569,20 @@
         "url": "https://arxiv.org/pdf/2611.04008v1"
       }
     ],
-    "score": 61,
+    "score": 56,
     "infographic": {
       "key_insight": "Predictive triboelectric nanogenerator design requires linking evolving real contact area and contact-dependent charge generation and decay to electrical output across length scales.",
-      "engineering_relevance": "Coupling materials, interface mechanics and circuit behaviour can guide more reliable energy harvesters and self-powered sensors.",
+      "engineering_relevance": "Connecting material properties, interface mechanics and circuit response can guide reliable low-frequency energy harvesters and self-powered sensors.",
       "method": [
-        "Reviews polymeric, inorganic, composite and natural materials against charge retention, compliance and durability requirements.",
-        "Assesses modelling from atomistic calculations and rough-surface contact mechanics to device electrostatics and equivalent circuits.",
-        "Organises applications by device scale and proposes staged validation of mechanics, electrostatics and circuit response."
+        "Review polymeric, inorganic, composite and natural materials for charge behavior, compliance and durability.",
+        "Assess models from molecular calculations and rough-contact mechanics to device electrostatics and equivalent circuits.",
+        "Organize applications by device scale and propose staged validation of mechanics, electrostatics and circuit response."
       ],
-      "evidence_signal": "The review assesses model inputs, predicted quantities and experimental validation evidence, while advocating independent testing beyond calibration conditions.",
-      "watch_item": "Prescribed surface charge, idealised geometry and nominal contact-area assumptions can limit predictions under realistic loading.",
+      "evidence_signal": "The review assesses model inputs, predictions and experimental validation evidence; the abstract reports no quantitative performance benchmarks.",
+      "watch_item": "Prescribed surface charge, idealized geometries and nominal contact-area assumptions can limit predictions under realistic loading.",
       "hashtags": [
         "#TriboelectricNanogenerators",
-        "#MultiscaleModelling",
+        "#MultiscaleModeling",
         "#MaterialsScience",
         "#EnergyHarvesting",
         "#SelfPoweredSensors"
@@ -647,7 +593,7 @@
       "paper_title": "Triboelectric nanogenerators across length scales: linking materials, multiscale modelling and applications",
       "paper_date": "2026-11-02",
       "paper_category": "Polymers and Composites",
-      "generated_at": "2026-11-07T16:44:16",
+      "generated_at": "2026-11-08T16:54:53",
       "generator": "openai"
     }
   },
@@ -676,23 +622,23 @@
         "url": "https://arxiv.org/pdf/2611.03795v1"
       }
     ],
-    "score": 60,
+    "score": 55,
     "infographic": {
-      "key_insight": "An LLM agent uses physics simulations to inverse-design fabrication recipes for target depth profiles of implanted ions or vacancies.",
-      "engineering_relevance": "The approach could help engineers translate desired spatial material structures into ion-processing recipes with minimal human input.",
+      "key_insight": "An LLM agent uses physics-based simulations to inverse-design fabrication recipes for desired depth profiles of implanted ions or vacancies.",
+      "engineering_relevance": "The approach could help translate spatial material designs into ion-processing recipes for graded materials, metamaterials, and quantum superlattices.",
       "method": [
-        "Specify a target ion or vacancy depth profile.",
-        "Have the agent select ion species, energies, incident angles, and target material layers.",
-        "Run and interpret ion–matter simulations, iteratively refining the recipe to match the target."
+        "Specify a target depth profile of implanted ions or vacancies.",
+        "Select ion species, energies, incident angles, and target material layers.",
+        "Write, run, and interpret ion–matter simulations, iteratively refining the recipe."
       ],
-      "evidence_signal": "The abstract reports simulated matching of target depth profiles but provides no quantitative accuracy metrics, benchmark comparisons, or experimental validation.",
-      "watch_item": "Practical fabrication accuracy remains dependent on simulator fidelity and experimental verification.",
+      "evidence_signal": "The abstract reports matching simulated profiles to target profiles with minimal human input, but provides no quantitative accuracy metrics or experimental validation.",
+      "watch_item": "Practical fabrication requires validating simulator-derived recipes against experimental outcomes and equipment constraints.",
       "hashtags": [
-        "#AIForMaterials",
-        "#InverseDesign",
         "#AgenticAI",
+        "#InverseDesign",
+        "#MaterialsScience",
         "#IonImplantation",
-        "#ComputationalMaterials"
+        "#PhysicsGuidedAI"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -700,7 +646,7 @@
       "paper_title": "Agentic inverse design of spatially programmed materials",
       "paper_date": "2026-11-02",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-11-07T16:44:17",
+      "generated_at": "2026-11-08T16:54:55",
       "generator": "openai"
     }
   },
@@ -732,23 +678,23 @@
         "url": "https://arxiv.org/pdf/2611.07695v1"
       }
     ],
-    "score": 59,
+    "score": 54,
     "infographic": {
-      "key_insight": "DP-Learner predicts electronic-structure Hamiltonians directly as orbital-and-spin operator blocks, avoiding the representation mismatch of conventional irreducible-tensor features.",
-      "engineering_relevance": "Preserving Hamiltonian block structure offers a route to more accurate predictions and more efficient computation for materials modeling.",
+      "key_insight": "DP-Learner predicts electronic-structure Hamiltonians directly as symmetry-preserving operator blocks, avoiding explicit decomposition into irreducible spherical tensors.",
+      "engineering_relevance": "Keeping orbital and spin couplings in contiguous blocks could improve hardware efficiency and accelerate Hamiltonian prediction for materials modeling.",
       "method": [
-        "Perform Transformer message passing directly in Hamiltonian-like direct-product space.",
-        "Use Lie-generator directional embeddings and equivariant left–right products and contractions without explicit Clebsch–Gordan decomposition.",
-        "Route interactions through invariant scalar gating, attention, and environment-dependent context."
+        "Performs Transformer message passing on Hamiltonian-like matrices or tensors in direct-product space.",
+        "Uses Lie-generator directional embeddings and invariantly weighted products and contractions to preserve rotation, spin, and inversion symmetries.",
+        "Routes information through invariant scalar gating, attention, and environment-dependent interactions."
       ],
-      "evidence_signal": "The authors introduce MP-HAM-110K with over 110,000 structures spanning 68 elements and Hamiltonian/wavefunction data, and report improved accuracy and inference efficiency on it and Materials-HAM-SOC.",
-      "watch_item": "The abstract provides no numerical gains or hardware details, so practical speedups and memory costs require checking the full benchmarks.",
+      "evidence_signal": "The authors introduce MP-HAM-110K with over 110,000 structures across 68 elements and report improved accuracy and inference efficiency on it and Materials-HAM-SOC, without numerical gains in the abstract.",
+      "watch_item": "Performance and memory scaling for large orbital bases should be verified; the abstract provides no quantitative benchmarks or hardware details.",
       "hashtags": [
-        "#EquivariantAI",
-        "#MaterialsInformatics",
-        "#ElectronicStructure",
+        "#AIMaterials",
+        "#EquivariantLearning",
         "#HamiltonianPrediction",
-        "#ScientificMachineLearning"
+        "#ElectronicStructure",
+        "#ComputationalMaterials"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -756,7 +702,7 @@
       "paper_title": "Equivariant Deep Learning in Direct-Product Space for Electronic-Structure Hamiltonian Prediction",
       "paper_date": "2026-11-05",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-11-07T16:44:19",
+      "generated_at": "2026-11-08T16:54:57",
       "generator": "openai"
     }
   },
@@ -786,23 +732,23 @@
         "url": "https://arxiv.org/pdf/2611.06383v1"
       }
     ],
-    "score": 58,
+    "score": 53,
     "infographic": {
-      "key_insight": "Mutually incompatible martensitic variants in Ti₇₆Nb₂₂Al₂ can support a fine-scale microstructure with no macroscopic deformation through a degenerate T₁₂ configuration.",
-      "engineering_relevance": "The analysis helps explain how shape-memory alloys can transform without deforming grain boundaries and why certain variant interfaces occur more frequently.",
+      "key_insight": "Mutually incompatible martensitic deformation gradients in Ti₇₆Nb₂₂Al₂ can support a microstructure that preserves the grain boundary and has identity macroscopic deformation.",
+      "engineering_relevance": "The analysis links transformation-strain compatibility to interface patterns and shape preservation in a shape-memory alloy.",
       "method": [
-        "Apply the moving-mask approximation to 12 martensitic gradients rank-one connected to austenite.",
-        "Establish a degenerate T₁₂ configuration under unit middle eigenvalue and volume preservation, with microstructures supported on just 8 gradients.",
-        "Analyze pairwise near-compatibility to interpret observed interface frequencies."
+        "Analyze 12 martensitic gradients rank-one connected to austenite using the moving mask approximation.",
+        "Establish a degenerate T₁₂ configuration under unit middle eigenvalue and volume preservation, with microstructures supported on only 8 gradients.",
+        "Assess near-compatibility of gradient pairs against observed interface frequencies."
       ],
-      "evidence_signal": "The abstract reports experimental confirmation of an identity macroscopic deformation gradient and associates more nearly compatible variant pairs with more frequently observed interfaces.",
-      "watch_item": "The exact construction assumes unit middle eigenvalue and volume preservation; no deformation with the same boundary condition has its gradient in the finite variant set almost everywhere.",
+      "evidence_signal": "The abstract reports experimental confirmation of identity macroscopic deformation and associates more nearly compatible gradient pairs with more frequently observed interfaces.",
+      "watch_item": "The exact construction assumes unit middle eigenvalue and volume preservation; no deformation with gradients in the finite set almost everywhere satisfies the same boundary condition.",
       "hashtags": [
         "#ShapeMemoryAlloys",
         "#Martensite",
         "#Microstructure",
         "#MaterialsScience",
-        "#PhaseTransformations"
+        "#CompatibilityTheory"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -810,7 +756,7 @@
       "paper_title": "Complex Martensitic Microstructures in ${\\rm Ti}_{76}{\\rm Nb}_{22}{\\rm Al}_{2}$",
       "paper_date": "2026-11-04",
       "paper_category": "Microstructure",
-      "generated_at": "2026-11-07T16:44:21",
+      "generated_at": "2026-11-08T16:55:00",
       "generator": "openai"
     }
   },
@@ -839,23 +785,23 @@
         "url": "https://arxiv.org/pdf/2611.05946v1"
       }
     ],
-    "score": 56,
+    "score": 51,
     "infographic": {
-      "key_insight": "Fine-tuned MACE simulations reveal a shift from localized, nonlinear Li⁺ dynamics below 500 K to contrasting behavior near 800 K, with strong competition between Li⁺ and framework dynamics at 500–700 K.",
-      "engineering_relevance": "Understanding temperature-dependent coupling between mobile ions and the lattice can inform solid-electrolyte design and modeling.",
+      "key_insight": "Fine-tuned MACE simulations reveal a shift from localized Li⁺ motion below 500 K to contrasting high-temperature dynamics near 800 K, with competing Li⁺ and framework motions at 500–700 K.",
+      "engineering_relevance": "Resolving how framework motion influences lithium-ion dynamics could guide solid-electrolyte design for batteries.",
       "method": [
-        "Run molecular dynamics with a fine-tuned MACE interatomic potential.",
-        "Apply essential dynamics analysis to eigenspectra and low-dimensional trajectory embeddings.",
+        "Run molecular dynamics with a fine-tuned MACE interatomic potential for Li₆PS₅Cl.",
+        "Analyze dynamical eigenspectra and low-dimensional trajectory embeddings using essential dynamics.",
         "Use Langevin dynamics to test how damping framework motion affects Li⁺ dynamics."
       ],
-      "evidence_signal": "Eigenspectra and trajectory embeddings show nonmonotonic temperature dependence at 500–700 K, supported by framework-damping simulations.",
-      "watch_item": "The abstract does not report quantitative potential-validation errors or conductivity benchmarks, limiting assessment of predictive accuracy.",
+      "evidence_signal": "Eigenspectra and trajectory embeddings show nonmonotonic temperature dependence at 500–700 K, while framework-damping simulations support competition between Li⁺ and framework motions.",
+      "watch_item": "The abstract provides no quantitative potential-validation errors, leaving accuracy across temperatures and dynamical regimes to be checked.",
       "hashtags": [
-        "#AIForMaterials",
-        "#MachineLearningPotentials",
+        "#AIMaterials",
         "#MACE",
         "#SolidStateElectrolytes",
-        "#IonDynamics"
+        "#MolecularDynamics",
+        "#IonTransport"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -863,7 +809,7 @@
       "paper_title": "Temperature-Dependent Ion Dynamics in Argyrodite Superionic Conductor Li$_{6}$PS$_{5}$Cl with Fine-Tuned MACE Foundation Model",
       "paper_date": "2026-11-04",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-11-07T16:44:23",
+      "generated_at": "2026-11-08T16:55:02",
       "generator": "openai"
     }
   },
@@ -892,17 +838,17 @@
         "url": "https://arxiv.org/pdf/2611.02202v1"
       }
     ],
-    "score": 56,
+    "score": 51,
     "infographic": {
-      "key_insight": "A new CALPHAD-based Γ ductility metric better correlates with tensile ductility in refractory compositionally complex alloys than the DFT-based D-parameter, while performing equally well in compression.",
-      "engineering_relevance": "The metric could guide selection of refractory alloys that combine high-temperature performance with room-temperature tensile ductility.",
+      "key_insight": "The CALPHAD-based Gamma metric correlates better with tensile ductility than the DFT-based D-parameter while performing equally well in compression for refractory compositionally complex alloys.",
+      "engineering_relevance": "Gamma could help screen refractory alloys for room-temperature ductility alongside the high-temperature performance needed in extreme environments.",
       "method": [
-        "Combine the BCC–HCP free-energy difference, (110) BCC surface interfacial free energy, and electronegativity-corrected lattice distortion.",
-        "Compare Γ with established ductility metrics for tensile and compressive plasticity.",
-        "Propose combining Γ with CALPHAD-calculated oxygen solubility to capture intrinsic and extrinsic ductility contributions."
+        "Combine BCC–HCP free-energy differences, (110) BCC surface interfacial free energy, and electronegativity-corrected lattice distortion into Gamma.",
+        "Compare ductility correlations against established semi-empirical metrics and the DFT-based D-parameter.",
+        "Propose pairing Gamma with CALPHAD-calculated oxygen solubility to address intrinsic and extrinsic brittleness."
       ],
-      "evidence_signal": "The abstract reports a modest improvement in tensile-ductility correlation over the D-parameter and comparable compression performance, without numerical evaluation details.",
-      "watch_item": "The proposed oxygen-solubility extension is a first-order approach, not an established predictor of oxygen-induced embrittlement.",
+      "evidence_signal": "The abstract reports a modest improvement in tensile-ductility correlation over the D-parameter and equal performance in compression, without quantitative evaluation details.",
+      "watch_item": "The oxygen-solubility extension is a proposed first-order approach, not an established predictor of oxygen-induced embrittlement.",
       "hashtags": [
         "#RefractoryAlloys",
         "#CALPHAD",
@@ -916,7 +862,7 @@
       "paper_title": "Thermodynamic Underpinnings Affecting Compressive and Tensile Plasticity in Refractory Compositionally Complex Alloys",
       "paper_date": "2026-11-01",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-11-07T16:44:26",
+      "generated_at": "2026-11-08T16:55:04",
       "generator": "openai"
     }
   },
@@ -945,23 +891,23 @@
         "url": "https://arxiv.org/pdf/2611.07729v1"
       }
     ],
-    "score": 55,
+    "score": 50,
     "infographic": {
-      "key_insight": "Seemingly different short mode-evolution coupler designs share one two-mode design space, with equivalent counter-diabatic realizations offering the same bandwidth.",
-      "engineering_relevance": "A lithography-aware rule broadens high-efficiency optical transfer by narrowing waveguide spacing at the anticrossing and using exact counter-diabatic control to suppress residual nonadiabatic coupling.",
+      "key_insight": "Seemingly different short mode-evolution coupler designs share one two-mode design space, with equivalent counter-diabatic realizations having the same bandwidth.",
+      "engineering_relevance": "A lithography-aware rule broadens optical transfer bandwidth by narrowing waveguide spacing at the anticrossing and using exact counter-diabatic driving to suppress residual nonadiabatic coupling.",
       "method": [
         "Unify width, spacing, and axis-bending designs using exact two-mode coupled-mode theory in the Kramers–Henneberger frame.",
         "Relate bandwidth to the integrated light–steering-field misalignment on the Bloch sphere.",
-        "Evaluate designs with polymer-platform BPM simulations, particle swarm optimization, and three-dimensional BCB waveguide BPM."
+        "Evaluate designs with beam propagation simulations, including 3D BCB waveguides, and compare against particle swarm optimization."
       ],
-      "evidence_signal": "BPM simulations predict >99% transfer across 274 nm for a 500 µm coupler with a 1.05 µm minimum edge gap, versus 150 nm for a fixed-spacing-reference CD design at nearly the same gap; numerical optimization did not outperform the design rule.",
-      "watch_item": "Evidence is simulation-based; fabricated-device bandwidth and sensitivity to manufacturing tolerances remain to be validated.",
+      "evidence_signal": "Polymer-platform simulations show a 500 µm coupler sustaining >99% transfer across 274 nm at a 1.05 µm minimum edge gap, versus 150 nm for a fixed-spacing-reference CD design at nearly the same gap; numerical optimization did not surpass the design rule.",
+      "watch_item": "The reported performance is simulation-based; fabrication tolerances and experimental bandwidth remain to be validated.",
       "hashtags": [
         "#IntegratedPhotonics",
         "#OpticalCouplers",
         "#CounterdiabaticDriving",
         "#WaveguideDesign",
-        "#ComputationalEngineering"
+        "#ComputationalPhotonics"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -969,7 +915,7 @@
       "paper_title": "Unified design of short mode-evolution couplers",
       "paper_date": "2026-11-05",
       "paper_category": "Materials Discovery",
-      "generated_at": "2026-11-07T16:44:29",
+      "generated_at": "2026-11-08T16:55:07",
       "generator": "openai"
     }
   },
@@ -999,17 +945,17 @@
         "url": "https://arxiv.org/pdf/2611.07125v1"
       }
     ],
-    "score": 55,
+    "score": 50,
     "infographic": {
-      "key_insight": "Explicitly encoding chloride salt preparation enabled interpretable machine-learning predictions of molten-chloride corrosion, with the Chloride Salt Preparation Index (CSPI) emerging as the dominant descriptor.",
-      "engineering_relevance": "The framework could support corrosion screening across alloys, salts, and exposure conditions while providing uncertainty estimates alongside predicted corrosion rates.",
+      "key_insight": "Explicitly encoding salt preparation enabled interpretable machine-learning predictions of molten chloride corrosion, with the Chloride Salt Preparation Index (CSPI) emerging as the dominant descriptor.",
+      "engineering_relevance": "The framework could support corrosion screening across alloys and molten chloride test conditions while providing uncertainty estimates.",
       "method": [
-        "Compile 291 published static molten-chloride corrosion experiments.",
+        "Compile 291 literature-reported static corrosion experiments into a structured dataset.",
         "Encode salt treatment, atmosphere control, and pre-exposure impurities using a graded CSPI.",
-        "Fit a blended tree ensemble; interpret predictions with sensitivity and SHAP analyses and quantify uncertainty with conformal intervals."
+        "Use a blended tree-based ensemble, sensitivity and SHAP analyses, and conformal prediction intervals."
       ],
-      "evidence_signal": "The ensemble achieved cross-validated R² = 0.85 and MAE = 0.41 mg cm⁻² day⁻¹; conformal prediction intervals were reported as well calibrated.",
-      "watch_item": "Evidence comes from heterogeneous static tests, so applicability to flowing salts or conditions beyond the compiled data requires validation.",
+      "evidence_signal": "The ensemble achieved a cross-validated R² of 0.85 and MAE of 0.41 mg cm⁻² day⁻¹, with well-calibrated conformal prediction intervals reported.",
+      "watch_item": "Evidence is limited to compiled static tests; generalization to flowing salts or unrepresented conditions requires validation.",
       "hashtags": [
         "#MaterialsInformatics",
         "#MoltenSaltCorrosion",
@@ -1023,7 +969,7 @@
       "paper_title": "Data-Driven Modeling of Molten Chloride Corrosion Using Static Test Data",
       "paper_date": "2026-11-04",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-11-07T16:44:31",
+      "generated_at": "2026-11-08T16:55:08",
       "generator": "openai"
     }
   },
@@ -1055,23 +1001,23 @@
         "url": "https://arxiv.org/pdf/2611.03485v1"
       }
     ],
-    "score": 55,
+    "score": 50,
     "infographic": {
-      "key_insight": "A physics-informed neural network with exact boundary and initial constraints identifies the shear piezoelectric coefficient e15 from sparse, noisy simulated wavefields with low error.",
-      "engineering_relevance": "The approach could enable non-destructive characterization of shear coupling for PMUT and surface acoustic wave devices, reducing reliance on destructive resonance tests.",
+      "key_insight": "A physics-informed neural network with exact boundary and initial constraints identifies the shear piezoelectric coefficient e15 accurately from sparse, noisy simulated wavefields.",
+      "engineering_relevance": "The approach could enable nondestructive characterization of shear electromechanical coupling for PMUT and surface acoustic wave device design.",
       "method": [
-        "Embed spatial distance functions and temporal multipliers into network outputs to enforce boundary and initial conditions exactly.",
+        "Embed spatial distance functions and temporal multipliers to enforce clamped, grounded boundaries and a resting initial state exactly.",
         "Train on coupled electro-elastodynamic equations and sparse observations without boundary or initial-condition penalty weights.",
-        "Non-dimensionalize governing coefficients to improve numerical conditioning."
+        "Nondimensionalize the equations to balance coefficients and improve optimization."
       ],
-      "evidence_signal": "On finite-element data from one subsurface line, the full formulation achieved 1.19% mean e15 error at 30 dB noise and 0.65–2.71% across a 40–0 dB sweep; displacement-only training also recovered e15.",
-      "watch_item": "Validation is simulation-based; performance on experimental measurements and sensitivity to model or boundary-condition mismatch remain unestablished.",
+      "evidence_signal": "Constrained variants achieved 0.15–0.51% mean e15 error on manufactured data at 30 dB; the full formulation achieved 1.19% on finite-element data at 30 dB and 0.65–2.71% across 40–0 dB.",
+      "watch_item": "Validation uses simulated plane-strain PZT-5H data; robustness to experimental measurements, uncertain boundary conditions, and model mismatch remains unproven.",
       "hashtags": [
         "#PhysicsInformedNeuralNetworks",
-        "#Piezoelectrics",
+        "#PiezoelectricMaterials",
         "#InverseProblems",
-        "#MaterialsCharacterization",
-        "#ComputationalEngineering"
+        "#NondestructiveCharacterization",
+        "#ComputationalMaterialsScience"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -1079,7 +1025,60 @@
       "paper_title": "Identifying the Shear Piezoelectric Coefficient using Physics-Informed Neural Networks under Exact Boundary and Initial Constraints",
       "paper_date": "2026-11-02",
       "paper_category": "Materials Discovery",
-      "generated_at": "2026-11-07T16:44:33",
+      "generated_at": "2026-11-08T16:55:11",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-05-arxiv-finite_element_reconstruction_of_molten_zone_dynamics_and_chemical_segregation_in_optical",
+    "arxiv_id": "2611.08250v1",
+    "date": "2026-11-05",
+    "title": "Finite-element reconstruction of molten-zone dynamics and chemical segregation in optical floating-zone grown Ni--Mn--Ga",
+    "authors": "Denys Musiienko, Taras Kovaliuk, Petr Harcuba, Oleg Heczko, Ross H. Colman",
+    "abstract": "Homogeneous single-crystal growth of Ni--Mn--Ga magnetic shape-memory alloys is limited by incongruent melting, Mn reactivity, and longitudinal composition segregation. We report a modified optical floating-zone method in which growth is performed inside a transparent sapphire crucible, stabilising the molten zone while preserving optical heating and visual monitoring. The resulting crystals show improved growth reproducibility and controlled macroscopic geometry. To interpret the measured segregation profiles, a transient finite-element heat-transfer model in COMSOL Multiphysics was coupled to an effective molten-zone mass-balance calculation. The model reveals that the local solidification velocity is not fixed by the imposed translation speed but varies strongly as the molten-zone geometry evolves. The calculated solidification-front geometry is independently supported by EBSD analysis of a quenched growth interface, while the coupled mass-balance calculation reproduces the dominant features of the measured composition profiles. These results show that deviations from ideal Scheil--Pfann behaviour arise from the evolving molten-zone geometry and solidification conditions. The experimentally constrained model therefore provides a practical means of reconstructing otherwise inaccessible growth conditions and a basis for optimisation of sapphire-confined floating-zone growth of incongruently melting alloys.",
+    "category": "Crystal and Structure",
+    "source": "arXiv",
+    "published": "2026-11-05T16:27:23Z",
+    "updated": "2026-11-05T16:27:23Z",
+    "primary_category": "cond-mat.mtrl-sci",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2611.08250v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2611.08250v1"
+      }
+    ],
+    "score": 49,
+    "infographic": {
+      "key_insight": "Evolving molten-zone geometry changes local solidification velocity and helps explain chemical segregation in Ni–Mn–Ga beyond ideal Scheil–Pfann behaviour.",
+      "engineering_relevance": "Sapphire-confined optical floating-zone growth improves reproducibility and geometry control, while modelling provides a basis for optimising alloy homogeneity.",
+      "method": [
+        "Grow Ni–Mn–Ga inside a transparent sapphire crucible.",
+        "Couple transient COMSOL finite-element heat transfer to an effective molten-zone mass balance.",
+        "Compare predicted interface geometry and segregation with experimental measurements."
+      ],
+      "evidence_signal": "EBSD of a quenched interface independently supports the calculated front geometry, and the coupled model reproduces dominant features of measured composition profiles.",
+      "watch_item": "The abstract reports no quantitative prediction errors, so accuracy and transferability to other growth conditions remain unclear.",
+      "hashtags": [
+        "#NiMnGa",
+        "#CrystalGrowth",
+        "#FiniteElementModelling",
+        "#FloatingZone",
+        "#ChemicalSegregation"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-05-arxiv-finite_element_reconstruction_of_molten_zone_dynamics_and_chemical_segregation_in_optical",
+      "paper_title": "Finite-element reconstruction of molten-zone dynamics and chemical segregation in optical floating-zone grown Ni--Mn--Ga",
+      "paper_date": "2026-11-05",
+      "paper_category": "Crystal and Structure",
+      "generated_at": "2026-11-08T16:55:15",
       "generator": "openai"
     }
   }

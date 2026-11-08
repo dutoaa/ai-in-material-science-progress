@@ -1,13 +1,13 @@
 {
-  "key_insight": "SteelAgent’s apparent prediction accuracy and uncertainty reliability drop sharply when evaluation holds out unfamiliar steel families or data sources.",
-  "engineering_relevance": "Steel property estimates and compliance scores should identify the evaluation population before informing alloy selection or inverse design.",
+  "key_insight": "SteelAgent’s apparent predictive accuracy and uncertainty reliability deteriorate when evaluation shifts from random splits to unfamiliar steel families or sources.",
+  "engineering_relevance": "Steel property estimates used for alloy screening or compliance decisions should identify the evaluation population and avoid assuming reliability on unfamiliar alloys.",
   "method": [
-    "Combine metallurgical descriptors and machine-learning models with an LLM interface.",
-    "Audit generalization using random, steel-family and source-held-out evaluations.",
-    "Assess prediction-interval coverage, physics-feature effects and group-level errors."
+    "Combine metallurgical descriptors and machine-learning models with an LLM interface for prediction, uncertainty reporting and inverse design.",
+    "Audit generalization using random splits, held-out steel families and held-out sources.",
+    "Assess physics-derived features and prediction-interval coverage across evaluation settings."
   ],
-  "evidence_signal": "Gradient-boosting pooled out-of-fold R² fell from 0.859 on random splits to 0.113 with steel-family holdouts; nominal 90% interval coverage was 91.0% under random splitting but 37.6% on held-out sources.",
-  "watch_item": "Physics-derived features were not consistently beneficial: gradient-boosting R² increased by 0.2534 in a 17-family holdout analysis but decreased by 0.358 in a separate four-grade laboratory analysis.",
+  "evidence_signal": "On SteelBench tensile-strength evaluations, gradient-boosting pooled out-of-fold R² fell from 0.859 under random splitting to 0.113 with steel families held out; nominal 90% interval coverage ranged from 91.0% on random splits to 37.6% on held-out sources.",
+  "watch_item": "Physics-derived features are not uniformly beneficial: gradient-boosting R² improved by 0.2534 in a 17-family holdout analysis but declined by 0.358 in a separate four-grade laboratory analysis.",
   "hashtags": [
     "#MaterialsInformatics",
     "#SteelProperties",
@@ -21,6 +21,6 @@
   "paper_title": "SteelAgent: LLM-Orchestrated, Physics-Informed Steel Property Prediction with Audited Generalization and Calibrated Uncertainty",
   "paper_date": "2026-11-03",
   "paper_category": "Property Prediction",
-  "generated_at": "2026-11-07T16:43:51",
+  "generated_at": "2026-11-08T16:54:36",
   "generator": "openai"
 }
