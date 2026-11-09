@@ -1,18 +1,18 @@
 {
-  "key_insight": "PolyGPT generates highly valid polymer structures, but electrolyte conditioning increases repetition and reduces the yield of distinct polymers satisfying combined design requests.",
-  "engineering_relevance": "Polymer-electrolyte screening should prioritize distinct, novel candidates meeting all design constraints rather than property-prediction error alone.",
+  "key_insight": "PolyGPT generates highly valid polymer structures, but electrolyte conditioning increases repetition and reduces the yield satisfying combined design requests.",
+  "engineering_relevance": "Polymer electrolyte screening should prioritize distinct, valid, target-matching candidates absent from the training catalog rather than property error alone.",
   "method": [
-    "38.3-million-parameter decoder-only Transformer generates polymer repeat units.",
-    "Conditions on optional property targets, chemical-feature inclusion or exclusion, and electrolyte domain.",
-    "Evaluates validity, uniqueness, training-catalog novelty, predicted Tg accuracy, and constraint satisfaction."
+    "Use a 38.3-million-parameter decoder-only Transformer to generate polymer repeat units.",
+    "Condition generation on optional property targets, chemical-feature inclusion or exclusion, and electrolyte domain.",
+    "Compare conditioning strategies and nine checkpoints using validity, uniqueness, catalog novelty, and request satisfaction."
   ],
-  "evidence_signal": "At a Tg target of 246.11 K, electrolyte conditioning slightly improved predictor-estimated error from 26.97 to 26.07 K but reduced distinct-valid yield within 50 K from 82.35% to 32.31% of attempts.",
-  "watch_item": "Tg performance is predictor-estimated; validation-loss checkpoint selection may miss models yielding more distinct, catalog-unseen candidates that meet the target.",
+  "evidence_signal": "At a Tg target of 246.11 K, electrolyte conditioning slightly improved predictor-estimated error from 26.97 to 26.07 K, but reduced the fraction of attempts yielding distinct, valid, catalog-unseen polymers within 50 K from 59.90% to 19.71%.",
+  "watch_item": "Predictor-estimated Tg agreement does not establish experimental performance, and validation-loss checkpoint selection may not maximize useful candidate yield.",
   "hashtags": [
     "#PolymerElectrolytes",
     "#GenerativeAI",
     "#MaterialsInformatics",
-    "#Transformers",
+    "#TransformerModels",
     "#InverseDesign"
   ],
   "model": "gpt-6.1-sol",
@@ -21,6 +21,6 @@
   "paper_title": "PolyGPT: A Decoder-Only Transformer for Polymer Electrolyte Design",
   "paper_date": "2026-11-05",
   "paper_category": "Crystal and Structure",
-  "generated_at": "2026-11-08T16:54:47",
+  "generated_at": "2026-11-09T21:17:14",
   "generator": "openai"
 }
