@@ -1,19 +1,19 @@
 {
-  "key_insight": "MOTIF improves out-of-distribution materials property prediction by using LLM-generated taxonomies to guide invariant feature selection, rather than using LLMs as numerical predictors.",
-  "engineering_relevance": "The framework can improve prediction robustness for unfamiliar material chemistries, supporting screening beyond the training distribution.",
+  "key_insight": "MOTIF improves out-of-distribution materials property prediction by using LLMs to propose chemical taxonomies rather than predict numerical properties directly.",
+  "engineering_relevance": "The framework can improve prediction robustness for unfamiliar material families by selecting features that generalize across chemically meaningful groups.",
   "method": [
-    "Generate candidate chemically meaningful material taxonomies with LLMs.",
-    "Retain taxonomies that improve training-only pseudo-OOD validation.",
-    "Apply invariant feature selection within each accepted taxonomy and combine predictions through gated aggregation."
+    "Use LLMs to generate candidate taxonomies that partition materials into chemical environments.",
+    "Retain taxonomies that improve training-only pseudo-OOD validation, then apply invariant feature selection within each.",
+    "Combine predictions across accepted taxonomies using gated aggregation."
   ],
-  "evidence_signal": "On 2D halide perovskites, mean OOD bandgap MAE fell from 0.122 to 0.111 eV; frozen dev/test evaluation also showed smaller improvements for electronic and optical bandgaps, with transfer evaluated on additional materials datasets.",
-  "watch_item": "Deployment requires leakage-free taxonomy selection and validation that pseudo-OOD gains transfer to the intended chemistry shift.",
+  "evidence_signal": "On 2D halide perovskites, mean OOD bandgap MAE fell from 0.122 to 0.111 eV; frozen dev/test evaluation showed smaller gains, with transferability also evaluated on 3D perovskite solar cell efficiencies and Matbench structure-based splits.",
+  "watch_item": "Deployment depends on whether training-only pseudo-OOD validation selects taxonomies that remain useful under the actual chemistry shift.",
   "hashtags": [
     "#MaterialsInformatics",
     "#OODGeneralization",
     "#LargeLanguageModels",
-    "#FeatureSelection",
-    "#Perovskites"
+    "#InvariantFeatureSelection",
+    "#PropertyPrediction"
   ],
   "model": "gpt-6.1-sol",
   "service_tier": "ultrafast",
@@ -21,6 +21,6 @@
   "paper_title": "MOTIF: LLM-Defined Material Taxonomies for OOD Property Prediction via Invariant Feature Selection",
   "paper_date": "2026-11-09",
   "paper_category": "Property Prediction",
-  "generated_at": "2026-11-10T18:27:52",
+  "generated_at": "2026-11-11T18:22:42",
   "generator": "openai"
 }

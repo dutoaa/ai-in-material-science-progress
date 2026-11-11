@@ -1,19 +1,19 @@
 {
-  "key_insight": "Quantum embedding captures molecular behavior in environments ranging from finite hosts to periodic crystals while keeping active-subsystem calculations near gas-phase cost.",
-  "engineering_relevance": "The approach enables lower-cost simulations of adsorption, solvation, structural relaxation, and light-driven molecular dynamics in materials environments.",
+  "key_insight": "Quantum embedding captures molecular behavior in finite or crystalline environments while keeping active-subsystem calculations near gas-phase cost.",
+  "engineering_relevance": "The approach enables efficient simulations of adsorption, solvent effects, and light-driven molecular dynamics without repeatedly computing the full surrounding material.",
   "method": [
-    "Compute the host once and freeze its electron density in an atom-centered auxiliary Gaussian representation.",
-    "Treat periodic electrostatics with explicit near-field and fast-multipole far-field operators, allowing host atoms to be removed without constructing supercells.",
-    "Use analytic nuclear gradients for relaxation and couple embedding to real-time TDDFT or correlated excited-state methods such as CC2."
+    "Compute the frozen host once and represent it using Gaussian-fitted electron density and nuclear charges.",
+    "Separate periodic electrostatics into explicit near-field and fast-multipole far-field contributions.",
+    "Use analytic gradients to relax the active subsystem and remove host atoms to create voids without supercells."
   ],
-  "evidence_signal": "For CO/MgO(001), embedding reproduced the periodic interaction energy within 0.44 kJ/mol at 27× lower cost; embedded CC2 solvent shifts agreed within 0.01 eV of supermolecular references at over 500× lower cost.",
-  "watch_item": "The frozen-host approximation does not self-consistently update the environment in response to the guest, so strongly responsive hosts require careful validation.",
+  "evidence_signal": "Reported benchmarks include CO/MgO interaction energies within 0.44 kJ/mol of periodic DFT at 27× lower cost and a solvent shift within 0.01 eV of supermolecular CC2 at over 500× lower cost.",
+  "watch_item": "The frozen-host approximation warrants validation when guest-induced polarization or structural changes in the environment are important.",
   "hashtags": [
     "#QuantumEmbedding",
     "#DensityFunctionalTheory",
     "#ComputationalMaterials",
-    "#ExcitedStates",
-    "#MultiscaleModeling"
+    "#SurfaceChemistry",
+    "#ExcitedStates"
   ],
   "model": "gpt-6.1-sol",
   "service_tier": "ultrafast",
@@ -21,6 +21,6 @@
   "paper_title": "Quantum Embedding from Molecular to Crystalline Environments at the Cost of a Gas-Phase Calculation",
   "paper_date": "2026-11-09",
   "paper_category": "Crystal and Structure",
-  "generated_at": "2026-11-10T18:27:59",
+  "generated_at": "2026-11-11T18:23:03",
   "generator": "openai"
 }
