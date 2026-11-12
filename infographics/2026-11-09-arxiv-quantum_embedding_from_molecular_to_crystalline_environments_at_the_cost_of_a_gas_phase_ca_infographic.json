@@ -1,19 +1,19 @@
 {
-  "key_insight": "Quantum embedding captures molecular behavior in finite or crystalline environments while keeping active-subsystem calculations near gas-phase cost.",
-  "engineering_relevance": "The approach enables efficient simulations of adsorption, solvent effects, and light-driven molecular dynamics without repeatedly computing the full surrounding material.",
+  "key_insight": "Frozen-host quantum embedding captures molecular environmental effects from finite hosts to periodic crystals while keeping active-subsystem calculations near gas-phase cost.",
+  "engineering_relevance": "The approach enables lower-cost modeling of adsorption, solvation, and substrate-modified optical responses without recalculating the full environment.",
   "method": [
-    "Compute the frozen host once and represent it using Gaussian-fitted electron density and nuclear charges.",
+    "Compute the host once and represent it using Gaussian-fitted electron density and nuclear charges.",
     "Separate periodic electrostatics into explicit near-field and fast-multipole far-field contributions.",
-    "Use analytic gradients to relax the active subsystem and remove host atoms to create voids without supercells."
+    "Embed molecular DFT, real-time TDDFT, or correlated excited-state calculations; use analytic gradients for active-subsystem relaxation."
   ],
-  "evidence_signal": "Reported benchmarks include CO/MgO interaction energies within 0.44 kJ/mol of periodic DFT at 27× lower cost and a solvent shift within 0.01 eV of supermolecular CC2 at over 500× lower cost.",
-  "watch_item": "The frozen-host approximation warrants validation when guest-induced polarization or structural changes in the environment are important.",
+  "evidence_signal": "Reported tests reproduce periodic CO–MgO interaction energy within 0.44 kJ/mol at 27× lower cost and a supermolecular CC2 solvent shift within 0.01 eV at over 500× lower cost.",
+  "watch_item": "Because the host is frozen, accuracy should be checked when guest-induced host polarization or structural relaxation is substantial.",
   "hashtags": [
     "#QuantumEmbedding",
     "#DensityFunctionalTheory",
     "#ComputationalMaterials",
-    "#SurfaceChemistry",
-    "#ExcitedStates"
+    "#ExcitedStates",
+    "#MultiscaleModeling"
   ],
   "model": "gpt-6.1-sol",
   "service_tier": "ultrafast",
@@ -21,6 +21,6 @@
   "paper_title": "Quantum Embedding from Molecular to Crystalline Environments at the Cost of a Gas-Phase Calculation",
   "paper_date": "2026-11-09",
   "paper_category": "Crystal and Structure",
-  "generated_at": "2026-11-11T18:23:03",
+  "generated_at": "2026-11-12T18:41:14",
   "generator": "openai"
 }

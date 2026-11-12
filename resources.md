@@ -1,6 +1,6 @@
 # AI materials science Progress Public Resources
 
-Generated: 2026-11-11
+Generated: 2026-11-12
 Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 
 ## 1. UniHam: A Large-Scale SOC-Complete Dataset and Benchmark for Hamiltonian Learning in Materials
@@ -123,15 +123,7 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2611.13038v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-09-arxiv-point_defects_and_primary_radiation_damage_in_co_free_fe_ni_cr_mn_high_entropy_alloys_from_infographic.json
 
-## 16. High Pressure Material Phase Identification with Gaussian Kernel Neural Networks
-
-- Date: 2026-11-09
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2611.12840v1
-- PDF: https://arxiv.org/pdf/2611.12840v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-09-arxiv-high_pressure_material_phase_identification_with_gaussian_kernel_neural_networks_infographic.json
-
-## 17. Fine-Tuning an Order-Flow Foundation Model for Sub-Second Forecasting
+## 16. Fine-Tuning an Order-Flow Foundation Model for Sub-Second Forecasting
 
 - Date: 2026-11-10
 - Category: Materials Discovery
@@ -139,7 +131,7 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2611.14117v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-10-arxiv-fine_tuning_an_order_flow_foundation_model_for_sub_second_forecasting_infographic.json
 
-## 18. Learning Electronic Band Structures Across the s, p, d Blocks with an Empirical Pseudopotential Network
+## 17. Learning Electronic Band Structures Across the s, p, d Blocks with an Empirical Pseudopotential Network
 
 - Date: 2026-11-08
 - Category: Materials Discovery
@@ -147,18 +139,26 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2611.11070v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-08-arxiv-learning_electronic_band_structures_across_the_s_p_d_blocks_with_an_empirical_pseudopotent_infographic.json
 
-## 19. Towards Multiscale Molecular Representation Learning through Geometry-Based Fragmentation for Polymer Property Prediction
-
-- Date: 2026-11-05
-- Category: Property Prediction
-- arXiv: https://arxiv.org/abs/2611.07998v2
-- PDF: https://arxiv.org/pdf/2611.07998v2
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-05-arxiv-towards_multiscale_molecular_representation_learning_through_geometry_based_fragmentation_infographic.json
-
-## 20. Ultrafast Hole Transport and Electron Localization in Superatomic Re$_{6}$Se$_{8}$Cl$_{2}$
+## 18. Ultrafast Hole Transport and Electron Localization in Superatomic Re$_{6}$Se$_{8}$Cl$_{2}$
 
 - Date: 2026-11-09
 - Category: Crystal and Structure
 - arXiv: https://arxiv.org/abs/2611.13363v1
 - PDF: https://arxiv.org/pdf/2611.13363v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-09-arxiv-ultrafast_hole_transport_and_electron_localization_in_superatomic_re_6_se_8_cl_2_infographic.json
+
+## 19. Inverse design of superconductors and semiconductors with differentiable foundation models
+
+- Date: 2026-11-06
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2611.09572v1
+- PDF: https://arxiv.org/pdf/2611.09572v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-06-arxiv-inverse_design_of_superconductors_and_semiconductors_with_differentiable_foundation_models_infographic.json
+
+## 20. Sage-Taiyi: A Metacognitive Architecture for Scientific Discovery
+
+- Date: 2026-11-09
+- Category: Materials Discovery
+- arXiv: https://arxiv.org/abs/2611.12762v1
+- PDF: https://arxiv.org/pdf/2611.12762v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-09-arxiv-sage_taiyi_a_metacognitive_architecture_for_scientific_discovery_infographic.json
