@@ -1,9 +1,73 @@
 # AI materials science Progress Public Resources
 
-Generated: 2026-11-12
+Generated: 2026-11-13
 Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 
-## 1. UniHam: A Large-Scale SOC-Complete Dataset and Benchmark for Hamiltonian Learning in Materials
+## 1. Materials research with a general-purpose agent
+
+- Date: 2026-11-11
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2611.15451v1
+- PDF: https://arxiv.org/pdf/2611.15451v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-11-arxiv-materials_research_with_a_general_purpose_agent_infographic.json
+
+## 2. SiC-BN composites with extreme thermal and environmental stability
+
+- Date: 2026-11-12
+- Category: Microstructure
+- arXiv: https://arxiv.org/abs/2611.17283v1
+- PDF: https://arxiv.org/pdf/2611.17283v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-12-arxiv-sic_bn_composites_with_extreme_thermal_and_environmental_stability_infographic.json
+
+## 3. Brute-force molecular dynamics simulation of aging in amorphous Ge$_2$Sb$_2$Te$_5$
+
+- Date: 2026-11-11
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2611.15664v1
+- PDF: https://arxiv.org/pdf/2611.15664v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-11-arxiv-brute_force_molecular_dynamics_simulation_of_aging_in_amorphous_ge_2_sb_2_te_5_infographic.json
+
+## 4. Quantum Material Generation via Coherent Hamiltonian Search
+
+- Date: 2026-11-11
+- Category: Property Prediction
+- arXiv: https://arxiv.org/abs/2611.16016v1
+- PDF: https://arxiv.org/pdf/2611.16016v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-11-arxiv-quantum_material_generation_via_coherent_hamiltonian_search_infographic.json
+
+## 5. Competing Octahedral Tilting and $B$-Site Off-Centering Govern the Phase Diagram of CsGe$_{1-x}$Sn$_x$Br$_3$ Perovskite Alloys
+
+- Date: 2026-11-11
+- Category: Microstructure
+- arXiv: https://arxiv.org/abs/2611.15200v1
+- PDF: https://arxiv.org/pdf/2611.15200v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-11-arxiv-competing_octahedral_tilting_and_b_site_off_centering_govern_the_phase_diagram_of_csge_1_x_infographic.json
+
+## 6. Distilling an atomistic foundation model is all you need for large-scale molecular dynamics of semiconductor interfaces
+
+- Date: 2026-11-11
+- Category: Microstructure
+- arXiv: https://arxiv.org/abs/2611.14948v1
+- PDF: https://arxiv.org/pdf/2611.14948v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-11-arxiv-distilling_an_atomistic_foundation_model_is_all_you_need_for_large_scale_molecular_dynamic_infographic.json
+
+## 7. Edge-scaling softening of a universal machine-learned potential: point-defect formation energies in a coronene graphene quantum dot
+
+- Date: 2026-11-12
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2611.16528v1
+- PDF: https://arxiv.org/pdf/2611.16528v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-12-arxiv-edge_scaling_softening_of_a_universal_machine_learned_potential_point_defect_formation_ene_infographic.json
+
+## 8. Inter-Nanoparticle Repulsion Effect on Self-Organization in Polymer Nanocomposites: A Langevin Dynamics Simulation Study
+
+- Date: 2026-11-12
+- Category: Polymers and Composites
+- arXiv: https://arxiv.org/abs/2611.17254v1
+- PDF: https://arxiv.org/pdf/2611.17254v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-12-arxiv-inter_nanoparticle_repulsion_effect_on_self_organization_in_polymer_nanocomposites_a_lange_infographic.json
+
+## 9. UniHam: A Large-Scale SOC-Complete Dataset and Benchmark for Hamiltonian Learning in Materials
 
 - Date: 2026-11-09
 - Category: Crystal and Structure
@@ -11,7 +75,7 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2611.12509v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-09-arxiv-uniham_a_large_scale_soc_complete_dataset_and_benchmark_for_hamiltonian_learning_in_materi_infographic.json
 
-## 2. Strain-dependent Dynamics of Interactions of Iodine-vacancy pairs in CsPbI3: A DFT and Machine-Learning Molecular Dynamics Study
+## 10. Strain-dependent Dynamics of Interactions of Iodine-vacancy pairs in CsPbI3: A DFT and Machine-Learning Molecular Dynamics Study
 
 - Date: 2026-11-09
 - Category: Crystal and Structure
@@ -19,7 +83,23 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2611.11765v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-09-arxiv-strain_dependent_dynamics_of_interactions_of_iodine_vacancy_pairs_in_cspbi3_a_dft_and_mach_infographic.json
 
-## 3. Benchmarking language models and agents for scientific reasoning in evolving materials laboratories
+## 11. Bulk CMSX-4 Single-Crystal Builds via Laser-Directed Energy Deposition: Epitaxial Stability and Microstructure Evolution
+
+- Date: 2026-11-12
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2611.16535v1
+- PDF: https://arxiv.org/pdf/2611.16535v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-12-arxiv-bulk_cmsx_4_single_crystal_builds_via_laser_directed_energy_deposition_epitaxial_stability_infographic.json
+
+## 12. ORCHID-SAGE: Fully Reproducible CALPHAD Assessment from Evidence to Phase Diagram
+
+- Date: 2026-11-12
+- Category: Microstructure
+- arXiv: https://arxiv.org/abs/2611.16308v1
+- PDF: https://arxiv.org/pdf/2611.16308v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-12-arxiv-orchid_sage_fully_reproducible_calphad_assessment_from_evidence_to_phase_diagram_infographic.json
+
+## 13. Benchmarking language models and agents for scientific reasoning in evolving materials laboratories
 
 - Date: 2026-11-09
 - Category: Materials Discovery
@@ -27,7 +107,7 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2611.12014v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-09-arxiv-benchmarking_language_models_and_agents_for_scientific_reasoning_in_evolving_materials_lab_infographic.json
 
-## 4. MOTIF: LLM-Defined Material Taxonomies for OOD Property Prediction via Invariant Feature Selection
+## 14. MOTIF: LLM-Defined Material Taxonomies for OOD Property Prediction via Invariant Feature Selection
 
 - Date: 2026-11-09
 - Category: Property Prediction
@@ -35,7 +115,39 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2611.11846v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-09-arxiv-motif_llm_defined_material_taxonomies_for_ood_property_prediction_via_invariant_feature_se_infographic.json
 
-## 5. Neural network scaling and generalization for 3D strain fields in heterogeneous materials
+## 15. Systematic Evaluation of Training Data Generation Strategies for Machine Learning-Based Molecular and Materials Property Prediction
+
+- Date: 2026-11-12
+- Category: Property Prediction
+- arXiv: https://arxiv.org/abs/2611.16792v1
+- PDF: https://arxiv.org/pdf/2611.16792v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-12-arxiv-systematic_evaluation_of_training_data_generation_strategies_for_machine_learning_based_mo_infographic.json
+
+## 16. Periodic Trends in Oxygen Vacancy Formation Energies Across Binary Main-Group Metal Oxides
+
+- Date: 2026-11-11
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2611.15297v1
+- PDF: https://arxiv.org/pdf/2611.15297v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-11-arxiv-periodic_trends_in_oxygen_vacancy_formation_energies_across_binary_main_group_metal_oxides_infographic.json
+
+## 17. High-Fidelity In Silico Dataset of Ordered Binary and Ternary MXenes with Predictive Synthesis Guidance
+
+- Date: 2026-11-10
+- Category: Crystal and Structure
+- arXiv: https://arxiv.org/abs/2611.14687v1
+- PDF: https://arxiv.org/pdf/2611.14687v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-10-arxiv-high_fidelity_in_silico_dataset_of_ordered_binary_and_ternary_mxenes_with_predictive_synth_infographic.json
+
+## 18. Stable ring-polymer molecular dynamics without Fourier transforms: a linear-scaling bead-space Cayley propagator
+
+- Date: 2026-11-12
+- Category: Polymers and Composites
+- arXiv: https://arxiv.org/abs/2611.16396v1
+- PDF: https://arxiv.org/pdf/2611.16396v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-12-arxiv-stable_ring_polymer_molecular_dynamics_without_fourier_transforms_a_linear_scaling_bead_sp_infographic.json
+
+## 19. Neural network scaling and generalization for 3D strain fields in heterogeneous materials
 
 - Date: 2026-11-10
 - Category: Materials Discovery
@@ -43,122 +155,10 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2611.14158v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-10-arxiv-neural_network_scaling_and_generalization_for_3d_strain_fields_in_heterogeneous_materials_infographic.json
 
-## 6. Adaptive catalyst discovery emerges from composable scientific intelligence
+## 20. Adaptive catalyst discovery emerges from composable scientific intelligence
 
 - Date: 2026-11-10
 - Category: Materials Discovery
 - arXiv: https://arxiv.org/abs/2611.13536v1
 - PDF: https://arxiv.org/pdf/2611.13536v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-10-arxiv-adaptive_catalyst_discovery_emerges_from_composable_scientific_intelligence_infographic.json
-
-## 7. Out-of-the-Box Tabular Foundation Models for Bayesian Optimization in Materials Discovery
-
-- Date: 2026-11-09
-- Category: Materials Discovery
-- arXiv: https://arxiv.org/abs/2611.12491v1
-- PDF: https://arxiv.org/pdf/2611.12491v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-09-arxiv-out_of_the_box_tabular_foundation_models_for_bayesian_optimization_in_materials_discovery_infographic.json
-
-## 8. Universal Multichannel Coherence-Mediated Thermal Transport in Carbon Allotropes: Experimental Evidence and Scaling Laws
-
-- Date: 2026-11-10
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2611.14165v1
-- PDF: https://arxiv.org/pdf/2611.14165v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-10-arxiv-universal_multichannel_coherence_mediated_thermal_transport_in_carbon_allotropes_experimen_infographic.json
-
-## 9. Design of Self-Folding Origami Architectures for Biomedical Implants: A Finite Element Simulation Framework
-
-- Date: 2026-11-10
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2611.13964v1
-- PDF: https://arxiv.org/pdf/2611.13964v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-10-arxiv-design_of_self_folding_origami_architectures_for_biomedical_implants_a_finite_element_simu_infographic.json
-
-## 10. Elastic Landau states as martensite nuclei in austenite
-
-- Date: 2026-11-10
-- Category: Microstructure
-- arXiv: https://arxiv.org/abs/2611.13816v1
-- PDF: https://arxiv.org/pdf/2611.13816v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-10-arxiv-elastic_landau_states_as_martensite_nuclei_in_austenite_infographic.json
-
-## 11. How anion composition governs structural frameworks and Li-ion transport in oxychloride solid-state electrolytes
-
-- Date: 2026-11-10
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2611.13611v1
-- PDF: https://arxiv.org/pdf/2611.13611v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-10-arxiv-how_anion_composition_governs_structural_frameworks_and_li_ion_transport_in_oxychloride_so_infographic.json
-
-## 12. Effect of Correlation on the Pressure-Induced Insulator to Metal Transition in Complex Spin-Orbit Coupled Double Perovskite La$_2$CoIr$_{1-x}$Ti$_x$O$_6$
-
-- Date: 2026-11-08
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2611.11253v1
-- PDF: https://arxiv.org/pdf/2611.11253v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-08-arxiv-effect_of_correlation_on_the_pressure_induced_insulator_to_metal_transition_in_complex_spi_infographic.json
-
-## 13. Quantum Embedding from Molecular to Crystalline Environments at the Cost of a Gas-Phase Calculation
-
-- Date: 2026-11-09
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2611.12399v1
-- PDF: https://arxiv.org/pdf/2611.12399v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-09-arxiv-quantum_embedding_from_molecular_to_crystalline_environments_at_the_cost_of_a_gas_phase_ca_infographic.json
-
-## 14. Defects and Structural Evolution in CrSBr: Machine-Learning Potentials for Atomistic Simulations
-
-- Date: 2026-11-09
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2611.12267v1
-- PDF: https://arxiv.org/pdf/2611.12267v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-09-arxiv-defects_and_structural_evolution_in_crsbr_machine_learning_potentials_for_atomistic_simula_infographic.json
-
-## 15. Point defects and primary radiation damage in Co-free Fe-Ni-Cr-Mn high-entropy alloys from molecular dynamics
-
-- Date: 2026-11-09
-- Category: Microstructure
-- arXiv: https://arxiv.org/abs/2611.13038v1
-- PDF: https://arxiv.org/pdf/2611.13038v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-09-arxiv-point_defects_and_primary_radiation_damage_in_co_free_fe_ni_cr_mn_high_entropy_alloys_from_infographic.json
-
-## 16. Fine-Tuning an Order-Flow Foundation Model for Sub-Second Forecasting
-
-- Date: 2026-11-10
-- Category: Materials Discovery
-- arXiv: https://arxiv.org/abs/2611.14117v1
-- PDF: https://arxiv.org/pdf/2611.14117v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-10-arxiv-fine_tuning_an_order_flow_foundation_model_for_sub_second_forecasting_infographic.json
-
-## 17. Learning Electronic Band Structures Across the s, p, d Blocks with an Empirical Pseudopotential Network
-
-- Date: 2026-11-08
-- Category: Materials Discovery
-- arXiv: https://arxiv.org/abs/2611.11070v1
-- PDF: https://arxiv.org/pdf/2611.11070v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-08-arxiv-learning_electronic_band_structures_across_the_s_p_d_blocks_with_an_empirical_pseudopotent_infographic.json
-
-## 18. Ultrafast Hole Transport and Electron Localization in Superatomic Re$_{6}$Se$_{8}$Cl$_{2}$
-
-- Date: 2026-11-09
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2611.13363v1
-- PDF: https://arxiv.org/pdf/2611.13363v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-09-arxiv-ultrafast_hole_transport_and_electron_localization_in_superatomic_re_6_se_8_cl_2_infographic.json
-
-## 19. Inverse design of superconductors and semiconductors with differentiable foundation models
-
-- Date: 2026-11-06
-- Category: Crystal and Structure
-- arXiv: https://arxiv.org/abs/2611.09572v1
-- PDF: https://arxiv.org/pdf/2611.09572v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-06-arxiv-inverse_design_of_superconductors_and_semiconductors_with_differentiable_foundation_models_infographic.json
-
-## 20. Sage-Taiyi: A Metacognitive Architecture for Scientific Discovery
-
-- Date: 2026-11-09
-- Category: Materials Discovery
-- arXiv: https://arxiv.org/abs/2611.12762v1
-- PDF: https://arxiv.org/pdf/2611.12762v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-09-arxiv-sage_taiyi_a_metacognitive_architecture_for_scientific_discovery_infographic.json
