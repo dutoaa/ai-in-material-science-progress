@@ -1,13 +1,13 @@
 {
   "key_insight": "MOTIF improves out-of-distribution materials property prediction by using LLMs to propose chemical taxonomies rather than predict numerical properties directly.",
-  "engineering_relevance": "The framework can improve prediction robustness when screening materials with chemistries beyond the training distribution.",
+  "engineering_relevance": "Taxonomy-guided feature selection can make property models more robust when screening materials with chemistries beyond the training distribution.",
   "method": [
-    "Generate candidate taxonomies that group materials into chemically meaningful environments.",
+    "Generate candidate material taxonomies with LLMs.",
     "Retain taxonomies that improve training-only pseudo-OOD validation.",
-    "Select invariant features within each accepted taxonomy and combine results through gated aggregation."
+    "Apply invariant feature selection within each taxonomy and gated aggregation across taxonomies."
   ],
-  "evidence_signal": "On 2D halide perovskites, mean OOD bandgap MAE fell from 0.122 to 0.111 eV; frozen dev/test evaluation also improved electronic and optical bandgap errors, with transfer evaluated on additional materials datasets.",
-  "watch_item": "Benefits depend on whether training-only pseudo-OOD validation captures the chemistry shifts encountered at deployment.",
+  "evidence_signal": "On 2D halide perovskites, mean OOD bandgap MAE fell from 0.122 to 0.111 eV; frozen dev/test evaluation also showed smaller gains for electronic and optical bandgaps, with transfer evaluated on additional materials datasets.",
+  "watch_item": "Taxonomy selection depends on pseudo-OOD validation, whose shifts may not represent genuinely novel deployment chemistries.",
   "hashtags": [
     "#MaterialsInformatics",
     "#OODGeneralization",
@@ -21,6 +21,6 @@
   "paper_title": "MOTIF: LLM-Defined Material Taxonomies for OOD Property Prediction via Invariant Feature Selection",
   "paper_date": "2026-11-09",
   "paper_category": "Property Prediction",
-  "generated_at": "2026-11-13T18:22:18",
+  "generated_at": "2026-11-14T16:51:07",
   "generator": "openai"
 }

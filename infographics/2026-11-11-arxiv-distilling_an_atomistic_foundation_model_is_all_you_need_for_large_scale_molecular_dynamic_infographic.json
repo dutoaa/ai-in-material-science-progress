@@ -1,17 +1,17 @@
 {
-  "key_insight": "Distilling a fixed atomistic foundation model into compact potentials preserves key semiconductor-interface responses while improving simulation speed and accessible system size by orders of magnitude.",
-  "engineering_relevance": "Compact distilled potentials enable large-scale studies of interfacial heat transport and mechanical failure with responses close to DFT-trained counterparts.",
+  "key_insight": "Compact ACE and NEP potentials distilled from a fixed atomistic foundation model preserve key semiconductor-interface responses while enabling simulations several orders of magnitude faster and larger than the teacher.",
+  "engineering_relevance": "Direct distillation offers a practical route to large-scale thermal and mechanical simulations of heterogeneous interfaces without target-specific teacher fine-tuning.",
   "method": [
     "Select an EquiformerV3 teacher from 128 pretrained models across 22 families.",
-    "Train ACE and NEP students without target-specific teacher fine-tuning.",
-    "Compare against DFT-trained students using matched training configurations and architectures."
+    "Distill teacher predictions into compact ACE and NEP potentials.",
+    "Compare with DFT-trained students using matched training configurations and architectures."
   ],
-  "evidence_signal": "Tests on 79,920-atom BAs/GaN interfaces and 29,792-atom Cu/diamond specimens showed deviations from DFT-trained counterparts of at most 6.6% in thermal conductance, 2.8% in tensile strength, and 1.5% in loading work.",
-  "watch_item": "Committee-based selection improved high-error force fitting but did not consistently improve downstream properties, underscoring the need for application-level validation.",
+  "evidence_signal": "Against DFT-trained counterparts, distilled models differ by at most 6.6% in thermal conductance for 79,920-atom BAs/GaN interfaces and by 2.8% in tensile strength and 1.5% in loading work for 29,792-atom Cu/diamond specimens at 500 K.",
+  "watch_item": "Committee-based selection improves high-error force fitting but does not consistently improve downstream properties, so interface-level validation remains essential.",
   "hashtags": [
     "#AIMaterials",
-    "#MolecularDynamics",
     "#KnowledgeDistillation",
+    "#MolecularDynamics",
     "#InteratomicPotentials",
     "#SemiconductorInterfaces"
   ],
@@ -21,6 +21,6 @@
   "paper_title": "Distilling an atomistic foundation model is all you need for large-scale molecular dynamics of semiconductor interfaces",
   "paper_date": "2026-11-11",
   "paper_category": "Microstructure",
-  "generated_at": "2026-11-13T18:21:59",
+  "generated_at": "2026-11-14T16:50:47",
   "generator": "openai"
 }

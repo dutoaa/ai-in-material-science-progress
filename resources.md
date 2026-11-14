@@ -1,6 +1,6 @@
 # AI materials science Progress Public Resources
 
-Generated: 2026-11-13
+Generated: 2026-11-14
 Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 
 ## 1. Materials research with a general-purpose agent
@@ -99,7 +99,15 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2611.16308v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-12-arxiv-orchid_sage_fully_reproducible_calphad_assessment_from_evidence_to_phase_diagram_infographic.json
 
-## 13. Benchmarking language models and agents for scientific reasoning in evolving materials laboratories
+## 13. Evidential Deep Regression for Universal Density Functional Theory Hamiltonian Models
+
+- Date: 2026-11-11
+- Category: Materials Discovery
+- arXiv: https://arxiv.org/abs/2611.15786v1
+- PDF: https://arxiv.org/pdf/2611.15786v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-11-arxiv-evidential_deep_regression_for_universal_density_functional_theory_hamiltonian_models_infographic.json
+
+## 14. Benchmarking language models and agents for scientific reasoning in evolving materials laboratories
 
 - Date: 2026-11-09
 - Category: Materials Discovery
@@ -107,7 +115,7 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2611.12014v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-09-arxiv-benchmarking_language_models_and_agents_for_scientific_reasoning_in_evolving_materials_lab_infographic.json
 
-## 14. MOTIF: LLM-Defined Material Taxonomies for OOD Property Prediction via Invariant Feature Selection
+## 15. MOTIF: LLM-Defined Material Taxonomies for OOD Property Prediction via Invariant Feature Selection
 
 - Date: 2026-11-09
 - Category: Property Prediction
@@ -115,7 +123,15 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2611.11846v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-09-arxiv-motif_llm_defined_material_taxonomies_for_ood_property_prediction_via_invariant_feature_se_infographic.json
 
-## 15. Systematic Evaluation of Training Data Generation Strategies for Machine Learning-Based Molecular and Materials Property Prediction
+## 16. Physically Interpretable Basin Selection in Discrete-Variable Origami Design
+
+- Date: 2026-11-12
+- Category: Materials Discovery
+- arXiv: https://arxiv.org/abs/2611.17196v1
+- PDF: https://arxiv.org/pdf/2611.17196v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-12-arxiv-physically_interpretable_basin_selection_in_discrete_variable_origami_design_infographic.json
+
+## 17. Systematic Evaluation of Training Data Generation Strategies for Machine Learning-Based Molecular and Materials Property Prediction
 
 - Date: 2026-11-12
 - Category: Property Prediction
@@ -123,7 +139,7 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2611.16792v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-12-arxiv-systematic_evaluation_of_training_data_generation_strategies_for_machine_learning_based_mo_infographic.json
 
-## 16. Periodic Trends in Oxygen Vacancy Formation Energies Across Binary Main-Group Metal Oxides
+## 18. Periodic Trends in Oxygen Vacancy Formation Energies Across Binary Main-Group Metal Oxides
 
 - Date: 2026-11-11
 - Category: Crystal and Structure
@@ -131,7 +147,7 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2611.15297v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-11-arxiv-periodic_trends_in_oxygen_vacancy_formation_energies_across_binary_main_group_metal_oxides_infographic.json
 
-## 17. High-Fidelity In Silico Dataset of Ordered Binary and Ternary MXenes with Predictive Synthesis Guidance
+## 19. High-Fidelity In Silico Dataset of Ordered Binary and Ternary MXenes with Predictive Synthesis Guidance
 
 - Date: 2026-11-10
 - Category: Crystal and Structure
@@ -139,26 +155,10 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2611.14687v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-10-arxiv-high_fidelity_in_silico_dataset_of_ordered_binary_and_ternary_mxenes_with_predictive_synth_infographic.json
 
-## 18. Stable ring-polymer molecular dynamics without Fourier transforms: a linear-scaling bead-space Cayley propagator
+## 20. Stable ring-polymer molecular dynamics without Fourier transforms: a linear-scaling bead-space Cayley propagator
 
 - Date: 2026-11-12
 - Category: Polymers and Composites
 - arXiv: https://arxiv.org/abs/2611.16396v1
 - PDF: https://arxiv.org/pdf/2611.16396v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-12-arxiv-stable_ring_polymer_molecular_dynamics_without_fourier_transforms_a_linear_scaling_bead_sp_infographic.json
-
-## 19. Neural network scaling and generalization for 3D strain fields in heterogeneous materials
-
-- Date: 2026-11-10
-- Category: Materials Discovery
-- arXiv: https://arxiv.org/abs/2611.14158v1
-- PDF: https://arxiv.org/pdf/2611.14158v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-10-arxiv-neural_network_scaling_and_generalization_for_3d_strain_fields_in_heterogeneous_materials_infographic.json
-
-## 20. Adaptive catalyst discovery emerges from composable scientific intelligence
-
-- Date: 2026-11-10
-- Category: Materials Discovery
-- arXiv: https://arxiv.org/abs/2611.13536v1
-- PDF: https://arxiv.org/pdf/2611.13536v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-10-arxiv-adaptive_catalyst_discovery_emerges_from_composable_scientific_intelligence_infographic.json
