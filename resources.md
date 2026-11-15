@@ -1,6 +1,6 @@
 # AI materials science Progress Public Resources
 
-Generated: 2026-11-14
+Generated: 2026-11-15
 Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 
 ## 1. Materials research with a general-purpose agent

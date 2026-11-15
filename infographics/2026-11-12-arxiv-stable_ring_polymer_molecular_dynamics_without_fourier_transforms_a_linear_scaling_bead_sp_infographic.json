@@ -1,19 +1,19 @@
 {
-  "key_insight": "A bead-space Cayley propagator removes Fourier transforms from RPMD spring integration while exactly reproducing the normal-mode Cayley map at linear cost.",
-  "engineering_relevance": "The method can accelerate low-temperature molecular reaction simulations that require many ring-polymer beads without sacrificing free ring-polymer energy conservation.",
+  "key_insight": "A bead-space Cayley propagator replaces Fourier transforms with a linear-scaling cyclic tridiagonal solve while exactly reproducing the normal-mode Cayley map.",
+  "engineering_relevance": "The method enables larger stable time steps for low-temperature RPMD reaction-rate simulations without sacrificing free ring-polymer energy conservation.",
   "method": [
-    "Replace mode-by-mode propagation with one cyclic tridiagonal midpoint solve using a mass-independent matrix.",
-    "Apply Thomas recursion with a rank-two Woodbury correction in about 18P operations per degree of freedom.",
-    "Implement the propagator in the open-source PyRPMD package."
+    "Express the Cayley step as a midpoint solve with a mass-independent matrix.",
+    "Use Thomas recursion plus a rank-two Woodbury correction, requiring about 18P operations per degree of freedom.",
+    "Implement and benchmark the propagator in the open-source PyRPMD package."
   ],
-  "evidence_signal": "Tests reproduce normal-mode Cayley to 1.5×10⁻¹⁵ for up to 2048 beads, show linear cost scaling, and indicate 23–29-fold higher timestep stability limits in published low-temperature dRPMD settings.",
-  "watch_item": "Stability still requires ΩΔt < 2 for the highest physical frequency, and low-lying internal modes associated with spurious resonances remain essentially unchanged.",
+  "evidence_signal": "The implementation matches normal-mode Cayley to 1.5×10⁻¹⁵ for up to 2048 beads, scales linearly with bead count, and raises dRPMD time-step stability limits 23–29-fold in published low-temperature settings.",
+  "watch_item": "Stability still requires ΩΔt < 2 for the highest physical frequency, and the method leaves low-lying modes associated with spurious resonances essentially unchanged.",
   "hashtags": [
-    "#RingPolymerMolecularDynamics",
-    "#ComputationalChemistry",
-    "#QuantumNuclearEffects",
-    "#CayleyPropagator",
-    "#LinearScaling"
+    "#RingPolymerMD",
+    "#MolecularSimulation",
+    "#QuantumDynamics",
+    "#NumericalMethods",
+    "#ComputationalChemistry"
   ],
   "model": "gpt-6.1-sol",
   "service_tier": "ultrafast",
@@ -21,6 +21,6 @@
   "paper_title": "Stable ring-polymer molecular dynamics without Fourier transforms: a linear-scaling bead-space Cayley propagator",
   "paper_date": "2026-11-12",
   "paper_category": "Polymers and Composites",
-  "generated_at": "2026-11-14T16:51:18",
+  "generated_at": "2026-11-15T17:33:29",
   "generator": "openai"
 }
