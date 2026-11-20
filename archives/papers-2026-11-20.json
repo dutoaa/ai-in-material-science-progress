@@ -1,0 +1,1079 @@
+[
+  {
+    "id": "2026-11-17-arxiv-synthetic_crystal_data_generation_for_diffusion_pretraining_in_material_property_predictio",
+    "arxiv_id": "2611.22140v2",
+    "date": "2026-11-17",
+    "title": "Synthetic Crystal Data Generation for Diffusion Pretraining in Material Property Prediction",
+    "authors": "Aamod Varma, Shuyi Jia, Victor Fung",
+    "abstract": "Diffusion-based pretraining has emerged as a powerful strategy for learning transferable representations in graph neural networks for materials property prediction without requiring quantum-mechanical labels such as energies, forces, and stresses for every pretraining structure. However, the method retains a critical dependency: it requires structures residing near local minima of a potential energy surface, which have traditionally been obtained through costly DFT relaxations of known or physically synthesized compounds. This reliance constrains both the scale and the structural diversity of available pretraining data, leaving large regions of crystal structure space unexplored. In this work, we connect diffusion-based pretraining with synthetic structure generation to reduce this bottleneck. We introduce a synthetic data generation pipeline combining three complementary strategies: perturb-and-relax, generative sampling via MatterGen, and protostructure enumeration. Where structural relaxation is required, we use fast machine-learned interatomic potentials instead of performing a new DFT relaxation for each generated structure. We further compare a coordinate-denoising control with continuous-time variance-preserving (VP) and sub-VP diffusion objectives using a randomly initialized Orb-v2 backbone. The source comparison covers seven MatBench property-prediction tasks, and an eighth task, \\texttt{mp\\_gap}, is included in the protostructure scaling study. Every synthetic-pretraining condition numerically outperforms random initialization on all seven source-comparison tasks. Scaling the protostructure corpus from 20k to 165k under a fixed 400-epoch schedule numerically matches or exceeds MP-20k pretraining on most tasks; because this protocol increases both data diversity and optimization updates, the result reflects joint data-and-compute scaling.",
+    "category": "Materials Discovery",
+    "source": "arXiv",
+    "published": "2026-11-17T03:27:08Z",
+    "updated": "2026-11-18T06:06:09Z",
+    "primary_category": "cs.LG",
+    "categories": [
+      "cs.LG",
+      "cond-mat.mtrl-sci"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2611.22140v2"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2611.22140v2"
+      }
+    ],
+    "score": 97,
+    "infographic": {
+      "key_insight": "Synthetic crystal structures enable diffusion pretraining that improves materials property prediction without requiring new DFT relaxations for every generated structure.",
+      "engineering_relevance": "Fast machine-learned relaxation offers a practical route to expanding structurally diverse pretraining datasets while reducing reliance on expensive quantum-mechanical calculations.",
+      "method": [
+        "Generate crystals through perturb-and-relax, MatterGen sampling, and protostructure enumeration.",
+        "Use machine-learned interatomic potentials where structural relaxation is needed.",
+        "Compare coordinate denoising with VP and sub-VP diffusion pretraining using a randomly initialized Orb-v2 backbone."
+      ],
+      "evidence_signal": "All synthetic-pretraining conditions numerically outperform random initialization on seven MatBench tasks; scaling protostructures from 20k to 165k matches or exceeds MP-20k pretraining on most tasks in an eight-task study.",
+      "watch_item": "The fixed 400-epoch scaling protocol increases both dataset diversity and optimization updates, so its gains cannot be attributed to data scale alone.",
+      "hashtags": [
+        "#MaterialsDiscovery",
+        "#SyntheticData",
+        "#DiffusionModels",
+        "#CrystalStructures",
+        "#GraphNeuralNetworks"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-17-arxiv-synthetic_crystal_data_generation_for_diffusion_pretraining_in_material_property_predictio",
+      "paper_title": "Synthetic Crystal Data Generation for Diffusion Pretraining in Material Property Prediction",
+      "paper_date": "2026-11-17",
+      "paper_category": "Materials Discovery",
+      "generated_at": "2026-11-19T19:20:01",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-18-arxiv-physics_guided_crystal_structure_elucidation_from_powder_x_ray_diffraction_with_universal",
+    "arxiv_id": "2611.23760v1",
+    "date": "2026-11-18",
+    "title": "Physics-Guided Crystal Structure Elucidation from Powder X-Ray Diffraction with Universal Machine-Learning Interatomic Potentials",
+    "authors": "Yunsung Lim, Seungwoo Hwang, Seungwu Han",
+    "abstract": "Determining unique atomic coordinates from powder X-ray diffraction (PXRD) remains challenging because peak overlap, weak scattering from light elements, limited scattering contrast between elements with similar atomic numbers, and experimental noise render the inverse problem underdetermined. Here, we present XCAPE (XRD-Constrained Accelerated Prediction Engine), a crystal structure prediction (CSP) framework that integrates experimentally derived composition, unit cell parameters, space group, and PXRD data into a symmetry-aware evolutionary search. XCAPE explores Wyckoff-site configurations using tailored mutation operations, evaluates candidates by both energetic stability and diffraction agreement, and accelerates geometry optimization using a universal machine-learning interatomic potential (MLIP). The framework recovered 71 of 77 database-derived benchmark structures (92.2%) from simulated PXRD patterns and all 12 reference structures from experimental PXRD patterns. It further identified 12 candidate structure assignments that are consistent with experimental PXRD patterns, lack matching entries in the Inorganic Crystal Structure Database (ICSD), and are thermodynamically competitive at the MLIP level. Density functional theory (DFT) calculations showed that 10 of these 12 candidates lie within 10 meV/atom of the convex hull. By bridging experimental diffraction data and physically plausible atomistic models, XCAPE can provide structural insight into previously unresolved materials and support accelerated materials discovery in automated research workflows.",
+    "category": "Crystal and Structure",
+    "source": "arXiv",
+    "published": "2026-11-18T03:14:08Z",
+    "updated": "2026-11-18T03:14:08Z",
+    "primary_category": "cond-mat.mtrl-sci",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2611.23760v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2611.23760v1"
+      }
+    ],
+    "score": 90,
+    "infographic": {
+      "key_insight": "XCAPE combines powder X-ray diffraction constraints with physics-guided structure search and a universal machine-learning interatomic potential to identify plausible crystal structures.",
+      "engineering_relevance": "The framework can help convert experimental diffraction data into atomistic models for materials characterization and automated discovery workflows.",
+      "method": [
+        "Constrain a symmetry-aware evolutionary search using composition, unit cell, space group, and PXRD data.",
+        "Explore Wyckoff-site configurations with tailored mutations and evaluate energy stability and diffraction agreement.",
+        "Accelerate geometry optimization with a universal machine-learning interatomic potential."
+      ],
+      "evidence_signal": "XCAPE recovered 71/77 simulated-pattern benchmarks and all 12 experimental reference structures; among 12 additional candidate assignments without matching ICSD entries, 10 were within 10 meV/atom of the DFT convex hull.",
+      "watch_item": "PXRD agreement and low predicted energy do not establish a unique structure, so new candidate assignments require independent experimental validation.",
+      "hashtags": [
+        "#CrystalStructure",
+        "#PowderXRD",
+        "#MachineLearningPotentials",
+        "#MaterialsDiscovery",
+        "#PhysicsGuidedAI"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-18-arxiv-physics_guided_crystal_structure_elucidation_from_powder_x_ray_diffraction_with_universal",
+      "paper_title": "Physics-Guided Crystal Structure Elucidation from Powder X-Ray Diffraction with Universal Machine-Learning Interatomic Potentials",
+      "paper_date": "2026-11-18",
+      "paper_category": "Crystal and Structure",
+      "generated_at": "2026-11-19T19:20:04",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-17-arxiv-weight_space_programming_for_materials_science",
+    "arxiv_id": "2611.22013v1",
+    "date": "2026-11-17",
+    "title": "Weight-Space Programming for Materials Science",
+    "authors": "Sk Md Ahnaf Akif Alvi, Raymundo Arróyave",
+    "abstract": "A materials discovery campaign often begins with almost no measurements of the property it is searching for, and the models that rank candidates or screen the output of a generator then have to be built from those first few labels. Following recent work on weight-space programming, in which a language model writes the weights of a small network directly as text, we show that a general-purpose model, given the task in words, the names of the inputs and a network of 16 hidden units with every weight set to zero, can provide this starting point by filling in all of the weights from what it has learned about materials. With no labels, the networks of the strongest model rank experimental alloys at Spearman co-efficient = 0.64 to 0.79, where the best of five simple descriptors reaches 0.47 to 0.62. They rank the bulk modulus of crystals added during generative discovery loops at 0.95, where the inverse volume per atom reaches 0.89, and 35 phase-equilibrium targets computed with Thermo-Calc at a mean of 0.67, close to the 0.70 of an extrapolation from calculated binary and ternary data. As the prior mean of a Gaussian process they raise the ranking at five labels from 0.35 to 0.69 on alloys and from 0.15 to 0.95 on crystals, and they lower the regret of Bayesian optimization significantly on 4 of 5 experimental tasks and on 13 to 16 of 33 computed targets, depending on how multiple tests are corrected, without raising it significantly on any. The same networks also serve as the mean of a Bayesian neural network and as a screen for the samples of two crystal generators, where they do as well as standard models trained on 400 labeled structures. The gain is confined to the first tens of labels and to targets that no rule or sub-system extrapolation already ranks.",
+    "category": "Materials Discovery",
+    "source": "arXiv",
+    "published": "2026-11-17T00:00:42Z",
+    "updated": "2026-11-17T00:00:42Z",
+    "primary_category": "cond-mat.mtrl-sci",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2611.22013v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2611.22013v1"
+      }
+    ],
+    "score": 89,
+    "infographic": {
+      "key_insight": "A general-purpose language model can directly write a small neural network’s weights to rank material candidates without property labels and improve early-stage discovery.",
+      "engineering_relevance": "These label-free predictors can initialize surrogate models and screen generated crystals when measurements or simulations are scarce.",
+      "method": [
+        "Provide the language model with a task description, input names, and a zero-initialized network with 16 hidden units.",
+        "Have it fill in every weight using learned materials knowledge.",
+        "Use the network for ranking, as a Bayesian model’s prior mean, or to screen crystal-generator outputs."
+      ],
+      "evidence_signal": "Zero-label Spearman correlations reached 0.64–0.79 on experimental alloys and 0.95 on generated crystals; Bayesian optimization regret fell significantly on 4 of 5 experimental tasks.",
+      "watch_item": "Benefits are concentrated in the first tens of labels and on targets not already well ranked by simple rules or subsystem extrapolation.",
+      "hashtags": [
+        "#MaterialsDiscovery",
+        "#WeightSpaceProgramming",
+        "#AIForScience",
+        "#BayesianOptimization",
+        "#LowDataLearning"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-17-arxiv-weight_space_programming_for_materials_science",
+      "paper_title": "Weight-Space Programming for Materials Science",
+      "paper_date": "2026-11-17",
+      "paper_category": "Materials Discovery",
+      "generated_at": "2026-11-19T19:20:06",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-18-arxiv-machine_learning_interatomic_potentials_and_orientational_defects_in_polymers",
+    "arxiv_id": "2611.24148v1",
+    "date": "2026-11-18",
+    "title": "Machine learning interatomic potentials and orientational defects in polymers",
+    "authors": "Arnold Kiv, Volodymyr Soloviev, Andrii Tuzhykov, Andrii Bielinskyi, Taras Kavetskyy, Nataliia Hoivanovych",
+    "abstract": "Photopolymerization of acrylated epoxidized soybean oil (AESO) is a convenient model of a self-organizing process in a soft, bio-based material: ultraviolet light starts a free-radical chain reaction, the growing network releases heat, and the mobility of molecular groups changes on several time scales at once. We follow this process from two sides. Experimentally, the real and imaginary parts of the dielectric permittivity of an AESO:VDM (1:0.5) mixture with 3 mol% of the photoinitiator DMPA were recorded at 500-5000 Hz under an intermittent on/off illumination protocol, and the resulting time series were analysed with a sliding-window Shannon entropy and the Grassberger-Procaccia correlation integral. Both measures show that short light pulses at the start of curing trigger strongly correlated, collective relaxation, which fades as the network forms, leaving only localized reorientations active. We describe these reorientations as orientational defects and quantify their energetics with the MACE-OFF23 machine learning interatomic potential, using relaxed dihedral scans of five rotational modes ($α$, $α/β$, $β$, $γ$, $δ$) of an AESO fragment. Compared with density functional theory (DFT) reference profiles, MACE reproduces the shape of all five profiles (Pearson $r=0.95$-$0.98$) and the hierarchy of barriers - from 2.9 eV for the constrained main-chain rotation, through 0.54-0.81 eV for the acrylate rotations, to 0.16-0.18 eV for the methyl and 0.06 eV for the hydroxyl rotation - while underestimating the barrier heights by 3-20%. A simple Arrhenius estimate shows that the acrylate rotations are the modes closest to the frequency window of the dielectric measurement.",
+    "category": "Microstructure",
+    "source": "arXiv",
+    "published": "2026-11-18T09:54:37Z",
+    "updated": "2026-11-18T09:54:37Z",
+    "primary_category": "cond-mat.mtrl-sci",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.soft",
+      "physics.chem-ph"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2611.24148v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2611.24148v1"
+      }
+    ],
+    "score": 82,
+    "infographic": {
+      "key_insight": "Machine learning interatomic potentials capture the rotational energy landscape of AESO fragments, helping connect localized orientational defects to dielectric relaxation during polymer curing.",
+      "engineering_relevance": "Predicting which molecular rotations remain active as a bio-based polymer network forms could support interpretation of dielectric cure monitoring.",
+      "method": [
+        "Measure dielectric permittivity at 500–5000 Hz during intermittent UV curing of AESO:VDM with DMPA photoinitiator.",
+        "Analyze relaxation dynamics using sliding-window Shannon entropy and Grassberger–Procaccia correlation integrals.",
+        "Compare MACE-OFF23 relaxed scans of five rotational modes against DFT profiles and estimate timescales with an Arrhenius model."
+      ],
+      "evidence_signal": "MACE reproduces all five DFT profile shapes with Pearson r = 0.95–0.98 and preserves the barrier hierarchy; Arrhenius estimates place acrylate rotations closest to the dielectric measurement window.",
+      "watch_item": "MACE underestimates barriers by 3–20%, and fragment-based scans with simple Arrhenius estimates do not establish rotational rates in the full curing network.",
+      "hashtags": [
+        "#AIMaterials",
+        "#MachineLearningPotentials",
+        "#BioBasedPolymers",
+        "#DielectricSpectroscopy",
+        "#OrientationalDefects"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-18-arxiv-machine_learning_interatomic_potentials_and_orientational_defects_in_polymers",
+      "paper_title": "Machine learning interatomic potentials and orientational defects in polymers",
+      "paper_date": "2026-11-18",
+      "paper_category": "Microstructure",
+      "generated_at": "2026-11-19T19:20:09",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-18-arxiv-orientation_tunable_interfacial_thermal_conductance_in_lateral_mose2_mos2_heterostructures",
+    "arxiv_id": "2611.24547v1",
+    "date": "2026-11-18",
+    "title": "Orientation-Tunable Interfacial Thermal Conductance in Lateral MoSe2/MoS2 Heterostructures: A Deep Potential Molecular Dynamics Study",
+    "authors": "Shirin Sabokdast, Pedram Mirchi, Ali Rajabpour",
+    "abstract": "Managing heat flow across interfaces in lateral 2D transition-metal dichalcogenide (TMD) heterostructures is a key challenge for next-generation nanoelectronic and optoelectronic devices. To tackle this, we trained a deep learning interatomic potential (DLP) using DeePMD-kit on density functional theory (DFT) data, then paired it with non-equilibrium molecular dynamics (NEMD) simulations to study interfacial thermal conductance (ITC) in lateral MoSe$_2$/MoS$_2$ heterostructures, considering both armchair and zigzag interface orientations. The potential we trained closely matches DFT energies, forces, and phonon dispersion relations, which confirms its reliability for thermal transport simulations. Examining cell lengths from 10 to 40 nm and extrapolating to infinite length, the armchair interface shows a higher ITC (473 MW/m$^2$K) than the zigzag interface (387 MW/m$^2$K), and the armchair interface remains higher at every length considered. Both increase further as temperature rises. At 300 K, the vibrational density of states shows greater phonon spectral overlap at the armchair interface than at the zigzag interface. Together, these results offer a solid machine-learning framework for studying heat transport in lateral TMD heterostructures, and identify interface orientation as an effective means of controlling heat dissipation at these junctions.",
+    "category": "Crystal and Structure",
+    "source": "arXiv",
+    "published": "2026-11-18T14:51:32Z",
+    "updated": "2026-11-18T14:51:32Z",
+    "primary_category": "cond-mat.mtrl-sci",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2611.24547v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2611.24547v1"
+      }
+    ],
+    "score": 81,
+    "infographic": {
+      "key_insight": "Interface orientation tunes heat transfer in lateral MoSe₂/MoS₂ heterostructures: extrapolated infinite-length thermal conductance is 473 MW/m²K for armchair versus 387 MW/m²K for zigzag interfaces.",
+      "engineering_relevance": "Choosing armchair interfaces could improve heat dissipation in lateral TMD nanoelectronic and optoelectronic devices.",
+      "method": [
+        "Train a deep learning interatomic potential with DeePMD-kit on DFT data.",
+        "Use non-equilibrium molecular dynamics to compare armchair and zigzag interfaces.",
+        "Simulate cell lengths of 10–40 nm and extrapolate conductance to infinite length."
+      ],
+      "evidence_signal": "The potential closely matches DFT energies, forces, and phonon dispersions; armchair conductance is higher at every tested length, with greater phonon spectral overlap at 300 K.",
+      "watch_item": "The abstract reports simulation-based results; experimental validation and sensitivity to real-interface defects remain unestablished.",
+      "hashtags": [
+        "#AIMaterialsScience",
+        "#ThermalTransport",
+        "#2DMaterials",
+        "#MachineLearningPotentials",
+        "#InterfaceEngineering"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-18-arxiv-orientation_tunable_interfacial_thermal_conductance_in_lateral_mose2_mos2_heterostructures",
+      "paper_title": "Orientation-Tunable Interfacial Thermal Conductance in Lateral MoSe2/MoS2 Heterostructures: A Deep Potential Molecular Dynamics Study",
+      "paper_date": "2026-11-18",
+      "paper_category": "Crystal and Structure",
+      "generated_at": "2026-11-19T19:20:12",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-18-arxiv-choosing_the_right_representations_task_aware_fusion_for_multimodal_materials_language_mod",
+    "arxiv_id": "2611.24641v1",
+    "date": "2026-11-18",
+    "title": "Choosing the Right Representations: Task-Aware Fusion for Multimodal Materials Language Models",
+    "authors": "Huu Binh Ta, Alex Morehead, N. Benjamin Erichson, Ferdinando Fioretto, Sandeep Madireddy",
+    "abstract": "Multimodal language models for materials science rely on effective mechanisms for incorporating three-dimensional structural representations. MatterChat addresses this challenge using a large bridge module between a pretrained structural encoder and the LLM, together with a separate contrastive alignment stage. We instead ask whether this bridge can adaptively select and combine representations from multiple structural encoders according to the target property. We find that supervised and generative material encoders provide complementary information for property prediction. We found that, for Zatom-1, this information is not concentrated in the final layer. Instead, the most informative representations occur at different depths depending on the target property. This motivates Task-Conditioned Attention Fusion (TCAF), a lightweight attention-based bridge that uses task-conditioned latent queries to combine CHGNet features with intermediate Zatom-1 representations. The bridge is trained directly on downstream prediction tasks, allowing representation selection and material-language alignment to be learned jointly without separate contrastive pretraining. Across classification and regression tasks, TCAF outperforms MatterChat, with up to 47.8% lower RMSE, while using substantially fewer trainable parameters and halving the overall training time. Further experiments incorporating UMA-S demonstrate TCAF's flexibility across encoder combinations, with the three-encoder configuration achieving the highest macro-average classification accuracy of 89.61%.",
+    "category": "Property Prediction",
+    "source": "arXiv",
+    "published": "2026-11-18T15:48:25Z",
+    "updated": "2026-11-18T15:48:25Z",
+    "primary_category": "cs.LG",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2611.24641v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2611.24641v1"
+      }
+    ],
+    "score": 80,
+    "infographic": {
+      "key_insight": "Task-aware fusion selects complementary structural representations from multiple encoders and depths to improve materials property prediction.",
+      "engineering_relevance": "A lightweight bridge can improve prediction accuracy while reducing trainable parameters and halving overall training time relative to MatterChat.",
+      "method": [
+        "Use task-conditioned latent queries to fuse CHGNet features with intermediate Zatom-1 representations.",
+        "Learn representation selection and material-language alignment jointly on downstream tasks, without separate contrastive pretraining.",
+        "Optionally incorporate UMA-S as a third structural encoder."
+      ],
+      "evidence_signal": "Across classification and regression tasks, TCAF outperforms MatterChat with up to 47.8% lower RMSE; its three-encoder configuration achieves 89.61% macro-average classification accuracy.",
+      "watch_item": "The abstract does not specify datasets or evaluation splits, limiting assessment of generalization to unfamiliar materials.",
+      "hashtags": [
+        "#MaterialsInformatics",
+        "#MultimodalAI",
+        "#PropertyPrediction",
+        "#RepresentationLearning",
+        "#TaskAwareFusion"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-18-arxiv-choosing_the_right_representations_task_aware_fusion_for_multimodal_materials_language_mod",
+      "paper_title": "Choosing the Right Representations: Task-Aware Fusion for Multimodal Materials Language Models",
+      "paper_date": "2026-11-18",
+      "paper_category": "Property Prediction",
+      "generated_at": "2026-11-19T19:20:14",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-15-arxiv-iann_a_unified_framework_for_equivariant_interatomic_neural_networks_with_user_friendly_im",
+    "arxiv_id": "2611.19793v1",
+    "date": "2026-11-15",
+    "title": "IANN: A Unified Framework for Equivariant InterAtomic Neural Networks with User-Friendly Implementation",
+    "authors": "Changzhi Ai, Xueping Qin, Dimosthenis Sokaras, Frank Abild-Pedersen, Johannes Voss",
+    "abstract": "Machine-learning interatomic potentials (MLIPs) now approach density functional theory (DFT) accuracy at a fraction of its cost, but the practical benefit is limited by software fragmentation: each state-of-the-art architecture is released as a separate codebase, with its own data format, configuration system, training loop and molecular-dynamics interface. Comparing two architectures on the same dataset, or moving a trained model into a production simulation, therefore requires substantial re-engineering. We introduce IANN (InterAtomic Neural Network), an open-source PyTorch framework that reimplements equivariant graph neural networks - PaiNN, NequIP, MACE, Allegro, EquiformerV2, EquiformerV3 and UMA - behind a unified data object, a unified trainer and a single deployment route, so that the architecture is a one-word change in a configuration dictionary. Forces, stresses and virials are obtained for every architecture from one analytic differentiation of the energy with respect to the edge vectors of the atomic graph, exact under periodic boundary conditions. Distributed training is configured automatically from the SLURM, PBS or MPI environment, so the same script runs unchanged from a workstation to a multi-node GPU allocation. Self-describing checkpoints serve directly as ASE calculators, as ensembles reporting uncertainties, or as TorchScript models run inside LAMMPS through bundled C++ pair styles with single- and multi-GPU inference. Trained on a common dataset of millions of structures, the architectures can be compared under identical conditions. We further release PaiNN foundation models trained on 41.9 million curated DFT structures from MPtrj, Alexandria, OMat24, MatPES, OC20, OC22, OC25, MPr2SCAN and MatPESr2SCAN, spanning the PBE, RPBE and r2SCAN functionals. Additionally, IANN provides an agent interface to facilitate integration with autonomous agents.",
+    "category": "Crystal and Structure",
+    "source": "arXiv",
+    "published": "2026-11-15T04:47:47Z",
+    "updated": "2026-11-15T04:47:47Z",
+    "primary_category": "cond-mat.mtrl-sci",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cs.LG",
+      "physics.comp-ph"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2611.19793v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2611.19793v1"
+      }
+    ],
+    "score": 79,
+    "infographic": {
+      "key_insight": "IANN unifies seven equivariant interatomic neural network architectures in one PyTorch framework, making architecture selection a one-word configuration change.",
+      "engineering_relevance": "A shared training and deployment pipeline reduces re-engineering when comparing ML interatomic potentials or integrating them into atomistic simulations.",
+      "method": [
+        "Standardizes atomic data, training and deployment across PaiNN, NequIP, MACE, Allegro, EquiformerV2, EquiformerV3 and UMA.",
+        "Derives forces, stresses and virials analytically from energy via graph edge vectors, including periodic boundary conditions.",
+        "Automatically configures distributed training and supports checkpoint deployment through ASE and TorchScript-based LAMMPS interfaces."
+      ],
+      "evidence_signal": "The abstract reports common-dataset training on millions of structures and released PaiNN foundation models trained on 41.9 million curated DFT structures spanning PBE, RPBE and r2SCAN.",
+      "watch_item": "The abstract provides no quantitative accuracy or runtime benchmarks, so performance trade-offs between architectures remain to be assessed.",
+      "hashtags": [
+        "#AIMaterials",
+        "#InteratomicPotentials",
+        "#EquivariantNeuralNetworks",
+        "#MolecularDynamics",
+        "#ComputationalMaterials"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-15-arxiv-iann_a_unified_framework_for_equivariant_interatomic_neural_networks_with_user_friendly_im",
+      "paper_title": "IANN: A Unified Framework for Equivariant InterAtomic Neural Networks with User-Friendly Implementation",
+      "paper_date": "2026-11-15",
+      "paper_category": "Crystal and Structure",
+      "generated_at": "2026-11-19T19:20:16",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-18-arxiv-technical_note_on_matlantis_pfp_v9_extending_the_element_and_domain_coverage_of_the_r2scan",
+    "arxiv_id": "2611.23873v1",
+    "date": "2026-11-18",
+    "title": "Technical Note on Matlantis PFP v9: Extending the Element and Domain Coverage of the r2SCAN Training Data",
+    "authors": "Daiki Shintani, Shigeru Iwase, Jun Oshiki, Kohei Shinohara, Nontawat Charoenphakdee, Makoto Hiramatsu",
+    "abstract": "Universal machine learning interatomic potentials (uMLIPs) make atomistic simulations possible at scales beyond the reach of density functional theory (DFT). Matlantis PFP is a uMLIP that treats a variety of domains, including crystals, molecules, and surfaces, with a single model. PFP v8 incorporated a training dataset computed with the r2SCAN functional, chosen for its good agreement with experiment, but the elements and domains covered by that dataset were limited. Here we present Matlantis PFP v9, in which the training data computed with the r2SCAN functional are extended to the lanthanides from Pr to Lu and to the elements from Po to Cm, for a total of 96 elements, and to additional domains such as clusters and adsorption structures. The formation energies of crystals containing the newly supported elements reproduce experimental standard enthalpies of formation with the same level of accuracy as crystals composed only of previously supported elements, and the adsorption energies of molecules on transition-metal surfaces have an overall error against experiment comparable to that of DFT-PBE, although chemisorbed species are overbound. On the same type of GPU (A100), the inference speed and the maximum system size exceed those of SevenNet-Omni, a public uMLIP trained on r2SCAN data: forces are evaluated three to four times faster, and five to ten times as many atoms can be handled. As a result, PFP-R2SCAN is now applicable to systems containing rare-earth and actinide elements and to adsorption on surfaces.",
+    "category": "Crystal and Structure",
+    "source": "arXiv",
+    "published": "2026-11-18T05:25:35Z",
+    "updated": "2026-11-18T05:25:35Z",
+    "primary_category": "cond-mat.mtrl-sci",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "physics.comp-ph"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2611.23873v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2611.23873v1"
+      }
+    ],
+    "score": 74,
+    "infographic": {
+      "key_insight": "Matlantis PFP v9 expands r2SCAN-based training coverage to 96 elements and additional domains, including clusters and adsorption structures.",
+      "engineering_relevance": "The expanded potential enables larger-scale atomistic simulations involving rare-earth and actinide elements, as well as molecular adsorption on surfaces.",
+      "method": [
+        "Extend r2SCAN training data to lanthanides Pr–Lu and elements Po–Cm.",
+        "Add cluster and adsorption configurations to broaden domain coverage.",
+        "Evaluate crystal formation energies, adsorption energies, and A100 GPU performance."
+      ],
+      "evidence_signal": "New-element crystal formation energies retain comparable experimental agreement to previously supported compositions; on A100 GPUs, force evaluation is 3–4× faster and maximum atom counts are 5–10× larger than SevenNet-Omni.",
+      "watch_item": "Chemisorbed species are overbound despite overall adsorption-energy errors comparable to DFT-PBE against experiment.",
+      "hashtags": [
+        "#AIMaterialsScience",
+        "#MachineLearningPotentials",
+        "#AtomisticSimulation",
+        "#r2SCAN",
+        "#SurfaceAdsorption"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-18-arxiv-technical_note_on_matlantis_pfp_v9_extending_the_element_and_domain_coverage_of_the_r2scan",
+      "paper_title": "Technical Note on Matlantis PFP v9: Extending the Element and Domain Coverage of the r2SCAN Training Data",
+      "paper_date": "2026-11-18",
+      "paper_category": "Crystal and Structure",
+      "generated_at": "2026-11-19T19:20:19",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-17-arxiv-application_of_pretrained_universal_machine_learning_force_fields_for_phase_transitions_pr",
+    "arxiv_id": "2611.23535v1",
+    "date": "2026-11-17",
+    "title": "Application of Pretrained Universal Machine Learning Force-Fields for Phase Transitions Prediction in ZrO2",
+    "authors": "Rajan Khadka, Axel van de Walle, Patrick Tepesch",
+    "abstract": "Pretrained universal machine-learning force fields can reduce the cost of finite-temperature molecular dynamics relative to density functional theory. However, most benchmarks test only static properties and do not assess whether these models reproduce the correct phase-transition sequence. Here, we benchmark ten open-source universal machine-learning force fields for zirconia (ZrO$_2$) using phonon dispersion calculations and variable-cell isothermal-isobaric molecular dynamics. Zirconia is a useful test because it has three thermodynamically stable crystalline phases prior to melting, following the sequence monoclinic-tetragonal-cubic. Four models reproduce this sequence: 7net-l3i5, MatterSim-v1.0.0-1M, MACE-mpa, and MACE-D3. Models with orthorhombic-tetragonal energy errors above about 10 meV/atom (7net-0, CHGNet, and MACE) instead produce an orthorhombic intermediate and predict monoclinic-orthorhombic-tetragonal-cubic-liquid upon heating. ORB-based models fail to sustain stable variable-cell dynamics because their phonon frequencies are compressed by 30-60% relative to the density functional theory reference. Across all ten models, two ground-state diagnostics predict finite-temperature behavior. Relative polymorph energetics should agree with the matched density functional theory reference within about 6 meV/atom, and the phonon spectrum should not show systematic softening. These diagnostics are practical screening metrics for assessing pretrained force fields for phase-transition predictions.",
+    "category": "Materials Discovery",
+    "source": "arXiv",
+    "published": "2026-11-17T21:43:03Z",
+    "updated": "2026-11-17T21:43:03Z",
+    "primary_category": "cond-mat.mtrl-sci",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2611.23535v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2611.23535v1"
+      }
+    ],
+    "score": 74,
+    "infographic": {
+      "key_insight": "For ZrO₂, accurate relative polymorph energies and phonon spectra without systematic softening identify pretrained force fields more likely to reproduce the correct phase-transition sequence.",
+      "engineering_relevance": "These ground-state checks offer practical screening criteria before using pretrained force fields for lower-cost finite-temperature phase-transition simulations.",
+      "method": [
+        "Benchmark ten open-source universal machine-learning force fields on ZrO₂.",
+        "Compare phonon dispersions and relative polymorph energies with matched density functional theory references.",
+        "Test heating-induced phase sequences using variable-cell isothermal-isobaric molecular dynamics."
+      ],
+      "evidence_signal": "Four of ten models reproduced monoclinic–tetragonal–cubic transitions; three with orthorhombic–tetragonal energy errors above about 10 meV/atom introduced an orthorhombic intermediate, while ORB-based models failed to sustain stable variable-cell dynamics.",
+      "watch_item": "The proposed approximately 6 meV/atom energy-agreement criterion and phonon-screening guidance were established for ZrO₂; transferability to other materials remains untested here.",
+      "hashtags": [
+        "#AIMaterials",
+        "#MachineLearningForceFields",
+        "#PhaseTransitions",
+        "#Zirconia",
+        "#MolecularDynamics"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-17-arxiv-application_of_pretrained_universal_machine_learning_force_fields_for_phase_transitions_pr",
+      "paper_title": "Application of Pretrained Universal Machine Learning Force-Fields for Phase Transitions Prediction in ZrO2",
+      "paper_date": "2026-11-17",
+      "paper_category": "Materials Discovery",
+      "generated_at": "2026-11-19T19:20:21",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-17-arxiv-dsadiff_data_structure_aware_diffusion_for_crystal_structure_prediction_via_mitigating_com",
+    "arxiv_id": "2611.22050v1",
+    "date": "2026-11-17",
+    "title": "DSADiff: Data Structure-Aware Diffusion for Crystal Structure Prediction via Mitigating Complexity- and Imbalance-Induced Biases",
+    "authors": "Jiang Xiaobo, Dinghong Lai",
+    "abstract": "Crystal Structure Prediction (CSP) is an important step in accelerating the generation and discovery of new materials. In recent years, diffusion-based CSP methods have made significant progress. However, existing models still suffer from generation bias when facing diverse materials spaces, while systematic approaches for tracing the sources of such performance variations remain limited. To address this issue, we propose LAS (Layered Analysis Strategy), a mechanism analysis framework that identifies crystal complexity and elemental composition imbalance as two key factors affecting generation difficulty and further reveals their relationships with model generation performance. Building on these findings, we further propose DSADiff (Data Structure-Aware Diffusion), a data structure-aware diffusion model that transforms the key factors identified by LAS into a unified generation difficulty representation and uses it to jointly drive feature modeling and training strategy optimization. This enables the model to adapt its representation and generation capability to samples with different data structures and difficulty levels, thereby mitigating learning bias across samples. Experiments on three CSP benchmark datasets, including Carbon-24, demonstrate that DSADiff consistently improves both Match Rate and RMSE, with a maximum Match Rate improvement of 9%, surpassing existing state-of-the-art methods and achieving new state-of-the-art performance. This work deepens the understanding of diffusion-based CSP models from the perspective of generation bias and provides a new direction for designing less biased generative models for complex materials spaces.",
+    "category": "Materials Discovery",
+    "source": "arXiv",
+    "published": "2026-11-17T01:18:26Z",
+    "updated": "2026-11-17T01:18:26Z",
+    "primary_category": "cs.LG",
+    "categories": [
+      "cs.LG",
+      "cond-mat.mtrl-sci"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2611.22050v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2611.22050v1"
+      }
+    ],
+    "score": 73,
+    "infographic": {
+      "key_insight": "DSADiff reduces crystal-generation bias by adapting diffusion modeling and training to generation difficulty associated with crystal complexity and elemental composition imbalance.",
+      "engineering_relevance": "More reliable crystal structure prediction across diverse materials could support computational screening and accelerate materials discovery.",
+      "method": [
+        "Use the Layered Analysis Strategy (LAS) to trace performance variation to crystal complexity and elemental composition imbalance.",
+        "Combine these factors into a unified generation-difficulty representation.",
+        "Use this representation to guide both feature modeling and training strategy optimization."
+      ],
+      "evidence_signal": "The abstract reports improved Match Rate and RMSE on three CSP benchmarks, including Carbon-24, with a maximum Match Rate improvement of 9% and state-of-the-art performance.",
+      "watch_item": "The abstract does not specify computational overhead or whether the reported 9% Match Rate gain is relative or in percentage points.",
+      "hashtags": [
+        "#MaterialsDiscovery",
+        "#CrystalStructurePrediction",
+        "#DiffusionModels",
+        "#GenerativeAI",
+        "#ComputationalMaterials"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-17-arxiv-dsadiff_data_structure_aware_diffusion_for_crystal_structure_prediction_via_mitigating_com",
+      "paper_title": "DSADiff: Data Structure-Aware Diffusion for Crystal Structure Prediction via Mitigating Complexity- and Imbalance-Induced Biases",
+      "paper_date": "2026-11-17",
+      "paper_category": "Materials Discovery",
+      "generated_at": "2026-11-19T19:20:24",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-16-arxiv-adsorbate_free_screening_of_dissociative_water_adsorption_on_nickel_nanoparticles_via_grap",
+    "arxiv_id": "2611.20706v1",
+    "date": "2026-11-16",
+    "title": "Adsorbate-Free Screening of Dissociative Water Adsorption on Nickel Nanoparticles via Graph Neural Networks",
+    "authors": "Marta Monti, Alec Noppe, Olivier Lugier, Maria B. Brands, Bernd Ensing",
+    "abstract": "Dissociative water adsorption is a key step in heterogeneous and electrochemical catalysis, but on finite Ni nanosystems the OH$^*$ and H$^*$ fragments can occupy many combinations of surface sites, making exhaustive density functional theory (DFT) screening impractical. We introduce a graph neural network (GNN) framework with an adsorbate-free representation: candidate O- and H-binding sites are defined by sets of Ni atoms (\\textit{anchors}), and each site pair is encoded as a graph constructed solely from these anchors and their local Ni environment. Using only MACE-relaxed bare Ni geometries as input, separate GNNs predict the DFT-reference adsorption energies of OH$^*$+H$^*$ configurations and whether the proposed binding sites would be retained upon DFT relaxation, eliminating the need to construct or relax adsorbates during screening. Trained across Ni nanoclusters and Ni(111)/Ni(100) surfaces, the energy model achieves a mean absolute error of 0.031 eV on the internal validation set and demonstrates transferability to unseen Ni$_{55}$, Ni$_{91}$, and Ni$_{130}$ clusters and larger surface cells, particularly for relative-energy ranking, although quantitative accuracy varies across systems. These independent tests also support the retention classifier's use as a conservative filter for selecting configurations likely to preserve their proposed binding sites. Application to Ni nanoparticles containing up to $\\sim$3000 atoms identifies favorable co-adsorption motifs and shows that lower O-site coordination generally stabilizes the dissociated state, whereas H-site coordination has a weaker influence. The framework thus offers an efficient route to screening adsorption energetics, with potential extensions to other metals and adsorbate combinations.",
+    "category": "Materials Discovery",
+    "source": "arXiv",
+    "published": "2026-11-16T08:13:59Z",
+    "updated": "2026-11-16T08:13:59Z",
+    "primary_category": "cond-mat.mtrl-sci",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "physics.chem-ph"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2611.20706v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2611.20706v1"
+      }
+    ],
+    "score": 72,
+    "infographic": {
+      "key_insight": "An adsorbate-free graph neural network screens dissociative water adsorption on nickel using only bare-metal geometries and candidate binding-site anchors.",
+      "engineering_relevance": "The framework enables efficient screening of OH*+H* adsorption configurations on nickel nanoparticles up to approximately 3,000 atoms without constructing or relaxing adsorbates during screening.",
+      "method": [
+        "Define candidate O- and H-binding sites as sets of nickel anchor atoms.",
+        "Build graphs from anchors and their local nickel environments in MACE-relaxed bare structures.",
+        "Use separate GNNs to predict DFT-reference adsorption energies and binding-site retention after relaxation."
+      ],
+      "evidence_signal": "The energy model achieves 0.031 eV internal-validation MAE, with independent tests on unseen Ni55, Ni91, Ni130 clusters and larger surface cells supporting transferability, especially for relative-energy ranking.",
+      "watch_item": "Quantitative accuracy varies across systems; treat the retention classifier as a conservative filter rather than a guarantee of site stability.",
+      "hashtags": [
+        "#MaterialsDiscovery",
+        "#GraphNeuralNetworks",
+        "#Catalysis",
+        "#NickelNanoparticles",
+        "#AdsorptionScreening"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-16-arxiv-adsorbate_free_screening_of_dissociative_water_adsorption_on_nickel_nanoparticles_via_grap",
+      "paper_title": "Adsorbate-Free Screening of Dissociative Water Adsorption on Nickel Nanoparticles via Graph Neural Networks",
+      "paper_date": "2026-11-16",
+      "paper_category": "Materials Discovery",
+      "generated_at": "2026-11-19T19:20:26",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-14-arxiv-nahual_a_sequence_model_for_language_and_atoms",
+    "arxiv_id": "2611.19072v1",
+    "date": "2026-11-14",
+    "title": "Nahual: A Sequence Model for Language and Atoms",
+    "authors": "Austin H. Cheng, Marcel Müller, Andreas Burger, Yeonghun Kang, Tsz Wai Ko, Marta Skreta",
+    "abstract": "Generative models play a rapidly growing role in the design and simulation of molecules. The most widely used applications of generative models are in large language models (LLMs), owing to the natural flexibility of language for specifying and answering queries. However, generalist LLMs do not effectively handle large sets of 3D coordinates, whereas specialist generative models of 3D molecules cannot reach the controllability afforded by language. To bridge these capabilities, we propose Nahual, a decoder-only autoregressive diffusion model for any sequence of text and 3D molecules. To enable expressive autoregression on continuous coordinates, we propose next-token diffusion, whereby a causal transformer denoises each token while attending to the clean tokens before it, without increasing context size. We train Nahual on a curated set of twelve 3D chemistry tasks ranging from microsolvation to molecular conformer search to adsorption on metal surfaces, with associated evaluation metrics and baselines. The result is a single set of end-to-end-trained weights that simultaneously performs all tasks and surpasses state-of-the-art models specialized for crystal structure prediction and property-conditional molecule generation. Our results demonstrate the viability of scaling generalist decoder-only models for native multimodal understanding and generation across language and chemistry. Code is available at https://github.com/the-matter-lab/nahual.",
+    "category": "Crystal and Structure",
+    "source": "arXiv",
+    "published": "2026-11-14T01:22:49Z",
+    "updated": "2026-11-14T01:22:49Z",
+    "primary_category": "cs.LG",
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "cs.CL",
+      "physics.chem-ph"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2611.19072v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2611.19072v1"
+      }
+    ],
+    "score": 70,
+    "infographic": {
+      "key_insight": "Nahual unifies language and 3D molecular generation in one decoder-only model, combining text-based control with native coordinate generation.",
+      "engineering_relevance": "A single model could support chemistry workflows spanning molecular conformer search, microsolvation, surface adsorption, and crystal structure prediction.",
+      "method": [
+        "Uses a decoder-only autoregressive diffusion architecture for sequences mixing text and 3D molecules.",
+        "Applies next-token diffusion: each token is denoised while attending to preceding clean tokens without increasing context size.",
+        "Trains one shared set of weights end to end across twelve 3D chemistry tasks."
+      ],
+      "evidence_signal": "The abstract reports evaluation across twelve curated tasks with task-specific metrics and baselines, including performance surpassing specialized state-of-the-art models for crystal structure prediction and property-conditional molecule generation.",
+      "watch_item": "The abstract does not quantify inference cost or generalization beyond the curated tasks, leaving deployment efficiency and out-of-distribution reliability to be assessed.",
+      "hashtags": [
+        "#AIForScience",
+        "#MaterialsInformatics",
+        "#MolecularGeneration",
+        "#DiffusionModels",
+        "#CrystalStructurePrediction"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-14-arxiv-nahual_a_sequence_model_for_language_and_atoms",
+      "paper_title": "Nahual: A Sequence Model for Language and Atoms",
+      "paper_date": "2026-11-14",
+      "paper_category": "Crystal and Structure",
+      "generated_at": "2026-11-19T19:20:28",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-18-arxiv-structure_and_thermal_conductivity_of_epoxy_graphene_oxide_composites_from_4_5_to_300_k",
+    "arxiv_id": "2611.24391v1",
+    "date": "2026-11-18",
+    "title": "Structure and Thermal Conductivity of Epoxy-Graphene Oxide Composites from 4.5 to 300 K",
+    "authors": "A. Jeżowski, A. I. Krivchikov, O. A. Korolyuk, V. V. Sagan, Y. V. Horbatenko, S. V. Cherednychenko",
+    "abstract": "The microscopic mechanisms of heat transport in structurally disordered polymer-carbon composites remain incompletely understood, particularly over the broad temperature range extending from cryogenic to ambient conditions. Here, we investigate the relationship between structural organization and thermal transport in epoxy-graphene oxide (GO) composites with nominal GO contents of 0.25-10 wt.% relative to the resin (0.21-6.1 wt.% of the total composite mass). X-ray diffraction reveals predominantly amorphous scattering without a detectable GO(001) reflection, suggesting substantial suppression of ordered GO stacking within the cured epoxy matrix. Raman spectroscopy confirms the increasing contribution of the carbon phase while revealing no pronounced changes in the characteristic vibrational bands of the epoxy network. Thermal-conductivity measurements (4.5-300 K) demonstrate that GO incorporation modifies the temperature dependence of heat transport rather than producing a simple conductivity enhancement. The experimental data are described by a phenomenological multichannel model comprising a temperature-independent plateau term and two or three effective Arrhenius-type contributions characterized by distinct temperature scales ranging from a few to several hundred kelvin. The low-temperature conductivity plateau observed at lower GO concentrations is no longer resolved in GO-6 and GO-10, indicating a qualitative change in the temperature dependence of heat transport. These results establish a correlation between structural organization and the redistribution of effective thermal-transport contributions in epoxy-GO composites, providing an experimental basis for further microscopic interpretation within the framework of unified vibrational thermal-transport theory.",
+    "category": "Polymers and Composites",
+    "source": "arXiv",
+    "published": "2026-11-18T13:22:28Z",
+    "updated": "2026-11-18T13:22:28Z",
+    "primary_category": "cond-mat.mtrl-sci",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2611.24391v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2611.24391v1"
+      }
+    ],
+    "score": 68,
+    "infographic": {
+      "key_insight": "Graphene oxide changes the temperature dependence of heat transport in epoxy composites rather than simply enhancing thermal conductivity.",
+      "engineering_relevance": "Thermal design with epoxy–graphene oxide composites should account for filler loading and operating temperature across cryogenic-to-ambient conditions.",
+      "method": [
+        "Studied nominal GO loadings of 0.25–10 wt.% relative to resin.",
+        "Characterized structure using X-ray diffraction and Raman spectroscopy.",
+        "Measured thermal conductivity from 4.5–300 K and fitted a phenomenological multichannel model."
+      ],
+      "evidence_signal": "X-ray diffraction showed no detectable GO(001) reflection, while the low-temperature conductivity plateau resolved at lower GO loadings was no longer resolved in GO-6 and GO-10.",
+      "watch_item": "The fitted transport channels are phenomenological and do not establish unique microscopic heat-transfer mechanisms.",
+      "hashtags": [
+        "#MaterialsScience",
+        "#PolymerComposites",
+        "#GrapheneOxide",
+        "#ThermalTransport",
+        "#CryogenicMaterials"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-18-arxiv-structure_and_thermal_conductivity_of_epoxy_graphene_oxide_composites_from_4_5_to_300_k",
+      "paper_title": "Structure and Thermal Conductivity of Epoxy-Graphene Oxide Composites from 4.5 to 300 K",
+      "paper_date": "2026-11-18",
+      "paper_category": "Polymers and Composites",
+      "generated_at": "2026-11-19T19:20:30",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-18-arxiv-uncovering_the_structural_electronic_and_electrostatic_landscapes_of_srtio_3_grain_boundar",
+    "arxiv_id": "2611.24097v1",
+    "date": "2026-11-18",
+    "title": "Uncovering the Structural, Electronic, and Electrostatic Landscapes of SrTiO$_3$ Grain Boundaries via Grand Canonical Monte Carlo with a Machine-Learning Interatomic Potential",
+    "authors": "Xing He, Kairi Masuda, Aaron M. Schankler, Songsong Zhou, Andrew M. Rappe",
+    "abstract": "Grain boundaries in perovskites exhibit a rich variety of electronic, polar and magnetic properties, yet identifying their atomic structures and compositions remains challenging. Here, we combine the Grand Canonical Monte Carlo (GCMC) method with a universal machine-learning interatomic potential to explore the coupled compositional and structural phase space of $Σ$5(310)[001] SrTiO$_3$ grain boundaries. The resulting chemical potential phase diagram identifies ten stable structures belonging to four motif families: large Sr kite, small Sr kite, incomplete Sr large kite, and Ti-rich structures. Extending the GCMC method to the Sigma5(210)[001] and Sigma17(410)[001] grain boundaries reveals how grain boundary plane and inclination angle influence the competition between small- and large-kite motifs. Density functional theory calculations of the predicted Sigma5(310)[001] grain boundaries show that the composition and atomic structure strongly govern the spatial distribution of conduction and valence band edge states, interfacial band alignment, and carrier localization. Four distinct electronic regimes emerge: localized electron-doped, delocalized electron-doped, insulating, and hole-attracting states. Our electrostatics analysis reveals the coexistence of the short-range electric fields at the reconstructed GB core associated with local atomic density and bonding, and the longer-range fields outside the core arising from the space charge. These fields can also couple to local polar distortions and generate composition-dependent polarization patterns. These results establish an efficient framework for exploring oxide perovskite grain boundary structures and reveal how stoichiometry and atomic reconstruction couple to electronic structure, electrostatics, and local polarization, providing a route toward predictive grain boundary engineering in functional perovskites.",
+    "category": "Microstructure",
+    "source": "arXiv",
+    "published": "2026-11-18T09:21:03Z",
+    "updated": "2026-11-18T09:21:03Z",
+    "primary_category": "cond-mat.mtrl-sci",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2611.24097v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2611.24097v1"
+      }
+    ],
+    "score": 68,
+    "infographic": {
+      "key_insight": "AI-assisted grain-boundary sampling reveals how SrTiO₃ composition and atomic reconstruction control electronic states, electric fields, and local polarization.",
+      "engineering_relevance": "Controlling grain-boundary stoichiometry and structure offers a route to tuning carrier localization and interfacial electronic behavior in functional perovskites.",
+      "method": [
+        "Combine grand canonical Monte Carlo with a universal machine-learning interatomic potential to sample structures and compositions.",
+        "Map chemical-potential stability and compare structural motifs across three grain-boundary geometries.",
+        "Use density functional theory and electrostatics analysis to characterize electronic states, fields, and polarization."
+      ],
+      "evidence_signal": "The Σ5(310)[001] phase diagram identifies ten stable structures in four motif families, while DFT reveals four electronic regimes: localized electron-doped, delocalized electron-doped, insulating, and hole-attracting.",
+      "watch_item": "The abstract reports computational predictions without experimental validation; broader transferability across grain-boundary geometries remains to be established.",
+      "hashtags": [
+        "#AIMaterials",
+        "#GrainBoundaries",
+        "#SrTiO3",
+        "#GrandCanonicalMonteCarlo",
+        "#MachineLearningPotentials"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-18-arxiv-uncovering_the_structural_electronic_and_electrostatic_landscapes_of_srtio_3_grain_boundar",
+      "paper_title": "Uncovering the Structural, Electronic, and Electrostatic Landscapes of SrTiO$_3$ Grain Boundaries via Grand Canonical Monte Carlo with a Machine-Learning Interatomic Potential",
+      "paper_date": "2026-11-18",
+      "paper_category": "Microstructure",
+      "generated_at": "2026-11-19T19:20:32",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-16-arxiv-a_density_functional_tight_binding_model_for_rapid_screening_of_spin_orbit_coupling_driven",
+    "arxiv_id": "2611.21244v1",
+    "date": "2026-11-16",
+    "title": "A Density Functional Tight Binding Model for Rapid Screening of Spin-Orbit-Coupling-Driven Topological Properties in Bismuth",
+    "authors": "Nir Goldman, Ben Hourahine",
+    "abstract": "We present a transferable Density Functional Tight Binding (DFTB) model for bismuth with explicit spin-orbit coupling that enables exploration of the structural degrees of freedom governing topological properties with minimal computational resources. We have used our DFTB model to run high-throughput calculations at a scale that would be significantly more expensive with standard Kohn-Sham Density Functional Theory (DFT) to determine a strain-buckling map of electronic and topological properties for bismuthene, where we identify regions of band gap closure and band inversion as a function of structural parameters. We show that our approach yields an accurate band structure for the rhombohedral phase, where small band gaps exist at or near time-reversal-invariant momentum (TRIM) points. We then demonstrate the transferability of our model to bismuth properties not included in our training data through determination of the rhombohedral phase phonon density of states and energetic ordering of additional bismuth solid phases. Finally, we have validated our topological predictions through comparison to DFT results for the optimized bilayer geometries, a band inversion order parameter, and the $\\mathbb{Z}_2$ invariant as a function of monolayer unit cell length. Our efforts establish DFTB as a rigorous approach for topological characterization while yielding approximately three orders of magnitude increase in computational efficiency relative to DFT. Our model can thus serve as a computational tool for topological materials discovery by enabling large-scale computational screening to address the potentially complex relationship between physical-chemical properties and the resulting topological classification.",
+    "category": "Materials Discovery",
+    "source": "arXiv",
+    "published": "2026-11-16T15:24:51Z",
+    "updated": "2026-11-16T15:24:51Z",
+    "primary_category": "cond-mat.mtrl-sci",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2611.21244v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2611.21244v1"
+      }
+    ],
+    "score": 66,
+    "infographic": {
+      "key_insight": "A spin-orbit-coupled DFTB model enables rapid screening of bismuth’s topological properties at approximately 1,000 times the computational efficiency of standard DFT.",
+      "engineering_relevance": "The model makes large-scale exploration of strain and buckling practical for identifying promising bismuth-based topological structures.",
+      "method": [
+        "Develop a transferable bismuth DFTB model with explicit spin-orbit coupling.",
+        "Map bismuthene band-gap closure and band inversion across strain and buckling.",
+        "Validate electronic, vibrational, energetic, and topological predictions against DFT."
+      ],
+      "evidence_signal": "The abstract reports accurate rhombohedral band structures, transferability tests on phonons and additional solid phases, and DFT validation of optimized bilayer geometries, band inversion, and the Z₂ invariant.",
+      "watch_item": "Validation is specific to bismuth; applying the approach to other elements or untested structural regimes requires additional parameterization and benchmarking.",
+      "hashtags": [
+        "#MaterialsDiscovery",
+        "#TopologicalMaterials",
+        "#DFTB",
+        "#SpinOrbitCoupling",
+        "#HighThroughputScreening"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-16-arxiv-a_density_functional_tight_binding_model_for_rapid_screening_of_spin_orbit_coupling_driven",
+      "paper_title": "A Density Functional Tight Binding Model for Rapid Screening of Spin-Orbit-Coupling-Driven Topological Properties in Bismuth",
+      "paper_date": "2026-11-16",
+      "paper_category": "Materials Discovery",
+      "generated_at": "2026-11-19T19:20:34",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-17-arxiv-efficient_machine_learning_interatomic_potentials",
+    "arxiv_id": "2611.22444v1",
+    "date": "2026-11-17",
+    "title": "Efficient Machine Learning Interatomic Potentials",
+    "authors": "Yury Lysogorskiy, Anton Bochkarev, Ralf Drautz",
+    "abstract": "Machine learning interatomic potentials (MLIPs) reach an accuracy close to quantum mechanical reference calculations at a small fraction of the cost. Efficiency is the purpose of MLIPs, yet strategies for efficient MLIPs have not been reviewed systematically. This review takes efficiency as its guideline. To compare MLIPs on a common footing, we represent them in a complete basis expansion, the Atomic Cluster Expansion (ACE) and its graph generalization (GRACE). The expansion is canonical, built from products of single-particle functions. Classical interatomic potentials, such as the embedded-atom method, and many modern MLIPs, including equivariant transformers, can be represented within this expansion. Much of the apparent diversity of MLIP architectures therefore reflects how non-linearity, layer coupling and optimization are handled rather than which interactions the models can represent. We show how the cost of an MLIP becomes linear in system size and, at fixed rank of the tensor decomposition, in model complexity, and we discuss the role of machine learning, which provides non-linear parameterizations and optimization. Because efficiency is meaningful only at a given accuracy, we also compare accuracy and cost. On the Matbench Discovery leaderboard, models with three to five layers approach the accuracy of deeper models, and one basis, truncated along the Pareto front of error and speed, spans more than two orders of magnitude in cost. Ultimately, training data determine the quality of any MLIP.",
+    "category": "Materials Discovery",
+    "source": "arXiv",
+    "published": "2026-11-17T09:14:12Z",
+    "updated": "2026-11-17T09:14:12Z",
+    "primary_category": "cond-mat.mtrl-sci",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cs.LG"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2611.22444v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2611.22444v1"
+      }
+    ],
+    "score": 65,
+    "infographic": {
+      "key_insight": "ACE and its graph generalization GRACE provide a common representation of many interatomic potentials, revealing efficiency choices behind apparently different architectures.",
+      "engineering_relevance": "Selecting model complexity along an accuracy–speed Pareto front can reduce atomistic simulation costs while preserving the accuracy required for materials discovery.",
+      "method": [
+        "Represent classical and machine learning potentials using canonical products of single-particle functions.",
+        "Compare nonlinear parameterizations, layer coupling and optimization within the shared ACE/GRACE framework.",
+        "Analyze linear cost scaling with system size and, at fixed tensor-decomposition rank, model complexity."
+      ],
+      "evidence_signal": "The review reports that three- to five-layer models approach deeper-model accuracy on Matbench Discovery, while Pareto-guided truncation of one basis spans more than two orders of magnitude in cost.",
+      "watch_item": "Training data ultimately determine potential quality, so efficiency gains must be assessed at the accuracy required for the target application.",
+      "hashtags": [
+        "#MaterialsDiscovery",
+        "#MachineLearningPotentials",
+        "#AtomicClusterExpansion",
+        "#ComputationalMaterials",
+        "#EfficientAI"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-17-arxiv-efficient_machine_learning_interatomic_potentials",
+      "paper_title": "Efficient Machine Learning Interatomic Potentials",
+      "paper_date": "2026-11-17",
+      "paper_category": "Materials Discovery",
+      "generated_at": "2026-11-19T19:20:37",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-18-arxiv-a_universal_diffusion_model_for_the_quantum_position_operator",
+    "arxiv_id": "2611.24130v1",
+    "date": "2026-11-18",
+    "title": "A Universal Diffusion Model for the Quantum Position Operator",
+    "authors": "Ransell D'Souza, Austin Zadoks, Riccardo Dal Molin, Nataliia Manko, Junfeng Qiao, Nicola Marzari",
+    "abstract": "The quantum position operator and its response to perturbations underpin the functional properties of insulating materials. In the modern theory of polarization, Wannier charge centres encode Berry-phase polarization, while their structural derivatives determine key response functions. Here we introduce a universal diffusion model based on E(3)-equivariant graph neural networks for moments of the position operator, with the first moment defining Wannier centres and the second central moment their real-space localization. We demonstrate the framework for liquid water, amorphous silicon and crystalline BaTiO$_3$, and train a universal model that generalizes to 100 unseen crystals spanning a 67-species chemical space. The predicted centres reproduce infrared spectra in large liquid and amorphous cells beyond routine first-principles reach and enable finite-difference calculations of Born effective charges and piezoelectric tensors. This framework provides a scalable route to electronic polarization and localization in complex materials, supporting high-throughput screening and finite-temperature simulations.",
+    "category": "Materials Discovery",
+    "source": "arXiv",
+    "published": "2026-11-18T09:44:26Z",
+    "updated": "2026-11-18T09:44:26Z",
+    "primary_category": "cond-mat.mtrl-sci",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2611.24130v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2611.24130v1"
+      }
+    ],
+    "score": 63,
+    "infographic": {
+      "key_insight": "An E(3)-equivariant diffusion model predicts Wannier centres and their spatial localization, linking atomic structure to electronic polarization and response.",
+      "engineering_relevance": "The framework could enable scalable screening and finite-temperature simulations of insulating materials for dielectric and piezoelectric applications.",
+      "method": [
+        "Use E(3)-equivariant graph neural networks within a diffusion model.",
+        "Predict position-operator moments describing Wannier centres and localization.",
+        "Use predicted centres to compute infrared spectra and finite-difference response tensors."
+      ],
+      "evidence_signal": "Demonstrations cover liquid water, amorphous silicon and crystalline BaTiO3, with a universal model generalizing to 100 unseen crystals across a 67-species chemical space.",
+      "watch_item": "The abstract provides no numerical error metrics, leaving application-specific accuracy—especially for finite-difference response tensors—to be assessed.",
+      "hashtags": [
+        "#AIForMaterials",
+        "#MaterialsDiscovery",
+        "#DiffusionModels",
+        "#WannierCentres",
+        "#ElectronicPolarization"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-18-arxiv-a_universal_diffusion_model_for_the_quantum_position_operator",
+      "paper_title": "A Universal Diffusion Model for the Quantum Position Operator",
+      "paper_date": "2026-11-18",
+      "paper_category": "Materials Discovery",
+      "generated_at": "2026-11-19T19:20:39",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-17-arxiv-swift_heavy_ion_tracks_in_polymorphs_of_titanium_dioxide_the_effects_of_electron_beam_and",
+    "arxiv_id": "2611.22153v1",
+    "date": "2026-11-17",
+    "title": "Swift Heavy Ion Tracks in Polymorphs of Titanium Dioxide: The Effects of Electron Beam and Crystal Structures",
+    "authors": "Xiaoting Jia, Lijun Xu, Ruslan A. Rymzhanov, Wenqiang Liu, Peipei Hu, Shengxia Zhang",
+    "abstract": "Swift heavy ion (SHI) irradiation generates nanoscale damage in materials, offering opportunities for controlled modification of structural properties. Understanding the fundamental processes governing damage formation in altered regions remains a longstanding challenge. This work explores how crystal structure influences swift heavy ion-induced damage formation and evolution in rutile and anatase TiO2. Combining transmission electron microscopy (TEM) and molecular dynamics simulations, we investigate how differences in atomic arrangement govern track morphology and structural recovery. Although irradiation produces amorphous tracks in both polymorphs, their morphologies differ considerably. In rutile, tracks develop pronounced diameter variations, forming hourglass-like structures, whereas in anatase they retain a relatively uniform cylindrical shape. Molecular dynamics simulations reveal that these differences arise from the distinct recrystallization behavior of the two crystal structures during rapid cooling, leading to different pathways of track evolution and recovery. Particular attention is paid to electron beam induced effects during TEM characterization, which can substantially modify the structure and apparent morphology of ion tracks. Prolonged electron beam exposure promotes the recrystallization of initially amorphous tracks and surface hillocks, accompanied by the development of Fresnel contrast. These findings highlight the importance of understanding beam-induced transformations for the reliable interpretation of TEM observations of radiation-damaged materials.",
+    "category": "Crystal and Structure",
+    "source": "arXiv",
+    "published": "2026-11-17T03:36:41Z",
+    "updated": "2026-11-17T03:36:41Z",
+    "primary_category": "cond-mat.mtrl-sci",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "physics.app-ph"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2611.22153v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2611.22153v1"
+      }
+    ],
+    "score": 63,
+    "infographic": {
+      "key_insight": "Crystal-dependent recrystallization produces hourglass-like swift heavy ion tracks in rutile TiO2 but relatively uniform cylindrical tracks in anatase.",
+      "engineering_relevance": "TiO2 polymorph selection can guide irradiation-based nanoscale structural modification, while accounting for recovery during characterization.",
+      "method": [
+        "Compare ion-induced damage in rutile and anatase TiO2 using transmission electron microscopy.",
+        "Use molecular dynamics to investigate recrystallization during rapid cooling.",
+        "Examine electron-beam-induced changes in amorphous tracks and surface hillocks."
+      ],
+      "evidence_signal": "TEM observations show contrasting track morphologies, and molecular dynamics simulations attribute these differences to polymorph-dependent recrystallization.",
+      "watch_item": "Prolonged TEM electron-beam exposure can recrystallize tracks and hillocks and generate Fresnel contrast, complicating interpretation of the original irradiation damage.",
+      "hashtags": [
+        "#TiO2",
+        "#SwiftHeavyIons",
+        "#CrystalStructure",
+        "#MolecularDynamics",
+        "#ElectronMicroscopy"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-17-arxiv-swift_heavy_ion_tracks_in_polymorphs_of_titanium_dioxide_the_effects_of_electron_beam_and",
+      "paper_title": "Swift Heavy Ion Tracks in Polymorphs of Titanium Dioxide: The Effects of Electron Beam and Crystal Structures",
+      "paper_date": "2026-11-17",
+      "paper_category": "Crystal and Structure",
+      "generated_at": "2026-11-19T19:20:41",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-18-arxiv-structured_extraction_of_diffraction_data_from_covalent_organic_frameworks",
+    "arxiv_id": "2611.23680v1",
+    "date": "2026-11-18",
+    "title": "Structured Extraction of Diffraction Data from Covalent Organic Frameworks",
+    "authors": "Shenghan Gao, Zhiling Zheng",
+    "abstract": "Powder X-ray diffraction (PXRD) is the primary structural evidence for covalent organic frameworks (COFs) and many other materials. Yet decades of measured patterns exist only as images in published figures. Automatic recovery is difficult, because PXRD figures vary widely in format, from a single curve to crowded stacks with labels, insets, and neighboring plots that challenge traditional computer vision. This work presents a pipeline in which a vision large language model (LLM) interprets the layout of each figure, locating the diffraction plot and its curves and sketching a coarse trace of each, while classical computer vision (CV) refines every trace to pixel-level accuracy. Applied to 3,954 COF articles, the pipeline produces 11,445 calibrated diffraction curves, released in the open database COF-PEAK. Compared with a hand digitization of 60 panels, extracted peak positions differ by a median of only 0.07 degrees. Whereas papers usually report only a few peak angles, which limits further analysis, the digitized curves enable tracking how peak prominence, a possible marker of crystallinity, changes with synthesis conditions. Vision LLMs and classical CV can thus turn such figures into reusable experimental data.",
+    "category": "Crystal and Structure",
+    "source": "arXiv",
+    "published": "2026-11-18T01:10:19Z",
+    "updated": "2026-11-18T01:10:19Z",
+    "primary_category": "cs.CV",
+    "categories": [
+      "cs.CV",
+      "cond-mat.mtrl-sci",
+      "cs.AI"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2611.23680v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2611.23680v1"
+      }
+    ],
+    "score": 62,
+    "infographic": {
+      "key_insight": "Vision LLMs paired with classical computer vision can recover calibrated PXRD curves from published COF figures as reusable experimental data.",
+      "engineering_relevance": "Digitized diffraction curves enable analysis of peak prominence across synthesis conditions, potentially supporting crystallinity assessment and synthesis optimization.",
+      "method": [
+        "Use a vision LLM to locate diffraction plots and individual curves.",
+        "Generate coarse curve traces, then refine them to pixel-level accuracy with classical computer vision.",
+        "Calibrate extracted curves and release them in the open COF-PEAK database."
+      ],
+      "evidence_signal": "Processing 3,954 COF articles yielded 11,445 calibrated curves; comparison with hand digitization of 60 panels found a median peak-position difference of 0.07°.",
+      "watch_item": "The 60-panel evaluation may not capture all figure formats, and peak prominence remains only a possible marker of crystallinity.",
+      "hashtags": [
+        "#AIForMaterials",
+        "#CovalentOrganicFrameworks",
+        "#PXRD",
+        "#ComputerVision",
+        "#OpenScientificData"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-18-arxiv-structured_extraction_of_diffraction_data_from_covalent_organic_frameworks",
+      "paper_title": "Structured Extraction of Diffraction Data from Covalent Organic Frameworks",
+      "paper_date": "2026-11-18",
+      "paper_category": "Crystal and Structure",
+      "generated_at": "2026-11-19T19:20:43",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-17-arxiv-what_do_llms_use_to_judge_synthesis_recipes_an_experimental_analysis_on_240_solid_state_sy",
+    "arxiv_id": "2611.22623v1",
+    "date": "2026-11-17",
+    "title": "What Do LLMs Use to Judge Synthesis Recipes? An Experimental Analysis on 240 Solid-State Syntheses",
+    "authors": "Derek van Tilborg, Laura-Bianca Pasca, Harry Sevi, Kyle Reeves, Thomas Loux, Aikaterini Flessa Savvidou",
+    "abstract": "Inorganic materials discovery is increasingly limited by synthesis rather than by material design. Large language models (LLMs) are being adopted to propose synthesis conditions with little experimental evidence of their capabilities and biases. Here, we carry out an experimental synthesis benchmark of 240 experiments across eight known and unknown inorganic oxides and subsequently evaluate an LLM as a zero-shot ranker over fixed banks of solid-state synthesis recipes. For each pair of recipes for the same oxide target, `GPT-5.6-Sol` selects the recipe expected to yield higher target-phase purity. We aggregate these pairwise preferences using a regularized Bradley-Terry model to obtain a ranked list of synthesis recipes for a given target material. By comparison with the actual purity, obtained through X-ray diffraction, we measure `GPT-5.6-Sol`'s performance as a zero-shot ranker (0.72 pairwise accuracy). By selective removal of the information exposed to the model during this ranking, we conclude that ranking is driven predominantly by thermal features, with reaction chemistry modulating the effect. Ranking accuracy tracks the purity-temperature correlation by target (Spearman ρ= 0.91\\), \\(p = 0.002\\), and on the six thermally-driven targets withholding all chemical identity hardly impacts performance (0.68) compared to withholding temperature (0.56). Ranking performance was higher on known than unknown targets, but the group-level difference was not statistically conclusive. The methodological choices highlight the need for more experimentally validated synthesis benchmarks and position LLMs as a thermally informed prior.",
+    "category": "Materials Discovery",
+    "source": "arXiv",
+    "published": "2026-11-17T11:37:42Z",
+    "updated": "2026-11-17T11:37:42Z",
+    "primary_category": "cs.CE",
+    "categories": [
+      "cs.CE",
+      "cond-mat.mtrl-sci"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2611.22623v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2611.22623v1"
+      }
+    ],
+    "score": 61,
+    "infographic": {
+      "key_insight": "The LLM ranked solid-state synthesis recipes mainly by thermal features, with reaction chemistry modulating its judgments.",
+      "engineering_relevance": "LLMs may provide a thermally informed prior for prioritizing synthesis recipes, but experimental validation remains essential.",
+      "method": [
+        "Run 240 synthesis experiments across eight known and unknown inorganic oxide targets.",
+        "Use GPT-5.6-Sol to compare recipe pairs, then aggregate preferences with a regularized Bradley–Terry model.",
+        "Evaluate rankings against X-ray diffraction purity measurements and selectively withhold recipe information."
+      ],
+      "evidence_signal": "Pairwise accuracy was 0.72 overall; on six thermally driven targets, accuracy was 0.68 without chemical identity versus 0.56 without temperature.",
+      "watch_item": "Results concern ranking fixed recipe banks for eight oxides, not generating successful recipes or demonstrating broad synthesis generalization.",
+      "hashtags": [
+        "#MaterialsDiscovery",
+        "#SolidStateSynthesis",
+        "#LLMEvaluation",
+        "#ExperimentalValidation",
+        "#AIForScience"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-17-arxiv-what_do_llms_use_to_judge_synthesis_recipes_an_experimental_analysis_on_240_solid_state_sy",
+      "paper_title": "What Do LLMs Use to Judge Synthesis Recipes? An Experimental Analysis on 240 Solid-State Syntheses",
+      "paper_date": "2026-11-17",
+      "paper_category": "Materials Discovery",
+      "generated_at": "2026-11-19T19:20:45",
+      "generator": "openai"
+    }
+  }
+]

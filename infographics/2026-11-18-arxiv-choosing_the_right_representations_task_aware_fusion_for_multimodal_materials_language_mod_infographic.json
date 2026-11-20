@@ -1,13 +1,13 @@
 {
-  "key_insight": "Task-aware fusion selects complementary structural representations from multiple encoders and depths to improve materials property prediction.",
-  "engineering_relevance": "A lightweight bridge can improve prediction accuracy while reducing trainable parameters and halving overall training time relative to MatterChat.",
+  "key_insight": "Task-aware fusion selects complementary structural representations across encoders and layers to improve materials property prediction.",
+  "engineering_relevance": "A lightweight bridge can improve prediction accuracy while reducing trainable parameters and training time relative to MatterChat.",
   "method": [
-    "Use task-conditioned latent queries to fuse CHGNet features with intermediate Zatom-1 representations.",
-    "Learn representation selection and material-language alignment jointly on downstream tasks, without separate contrastive pretraining.",
-    "Optionally incorporate UMA-S as a third structural encoder."
+    "Fuse CHGNet features with intermediate Zatom-1 representations using Task-Conditioned Attention Fusion (TCAF).",
+    "Use task-conditioned latent queries to select representations relevant to each target property.",
+    "Train the bridge directly on downstream tasks, jointly learning representation selection and material-language alignment without separate contrastive pretraining."
   ],
-  "evidence_signal": "Across classification and regression tasks, TCAF outperforms MatterChat with up to 47.8% lower RMSE; its three-encoder configuration achieves 89.61% macro-average classification accuracy.",
-  "watch_item": "The abstract does not specify datasets or evaluation splits, limiting assessment of generalization to unfamiliar materials.",
+  "evidence_signal": "Across classification and regression tasks, TCAF achieved up to 47.8% lower RMSE than MatterChat and halved overall training time; adding UMA-S yielded the highest macro-average classification accuracy of 89.61%.",
+  "watch_item": "The abstract does not specify dataset sizes or evaluation splits, limiting assessment of generalization to new materials.",
   "hashtags": [
     "#MaterialsInformatics",
     "#MultimodalAI",
@@ -21,6 +21,6 @@
   "paper_title": "Choosing the Right Representations: Task-Aware Fusion for Multimodal Materials Language Models",
   "paper_date": "2026-11-18",
   "paper_category": "Property Prediction",
-  "generated_at": "2026-11-19T19:20:14",
+  "generated_at": "2026-11-20T18:57:35",
   "generator": "openai"
 }
