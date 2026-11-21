@@ -1,19 +1,19 @@
 {
-  "key_insight": "A hybrid translator combines deterministic compilation and LLM agents to convert quantum MLIR dialects into QIR, with independent simulator testing to check behavioral agreement.",
-  "engineering_relevance": "The approach could reduce quantum compiler integration work across frameworks, although the abstract does not evaluate materials science applications.",
+  "key_insight": "A hybrid deterministic and LLM-agent translator converts quantum MLIR dialects to QIR, using dual-backend testing to check behavioral agreement.",
+  "engineering_relevance": "The approach could reduce custom compiler work when moving quantum workflows between frameworks and runtimes, though materials-science applications were not evaluated.",
   "method": [
-    "Use deterministic translation for known Catalyst and Quake grammars.",
-    "Route unseen dialects to LLM agents and invoke repair when deterministic output fails testing.",
-    "Compare source and translated output distributions using dual-backend simulation and total variation distance."
+    "Use deterministic translation for known Catalyst and Quake dialects.",
+    "Route unseen dialects to an LLM agent and failed deterministic outputs to repair.",
+    "Compare independent simulator outputs using total variation distance; use inline context and a guardrail assembler for smaller models."
   ],
-  "evidence_signal": "Across 41 circuits spanning three dialects and 1–100 qubits, deterministic translation was gate-exact on all 70 circuit–dialect pairs with average TVD similarity above 95%; four of six models generated valid logical-level QIR for the unseen FTQC dialect on the first iteration.",
-  "watch_item": "Valid QIR and simulator distribution agreement do not establish full semantic correctness or reliable generalization to arbitrary unseen dialects.",
+  "evidence_signal": "Across 41 circuits spanning three dialects and 1–100 qubits, deterministic translation was gate-exact on all 70 circuit-dialect pairs with average TVD similarity above 95%; four of six models generated valid logical-level QIR for unseen FTQC on the first iteration.",
+  "watch_item": "Valid QIR does not alone establish semantic equivalence, and unseen-dialect generalization remains supported by limited evaluation.",
   "hashtags": [
     "#QuantumComputing",
     "#MLIR",
     "#QIR",
     "#AgenticAI",
-    "#CompilerValidation"
+    "#CompilerEngineering"
   ],
   "model": "gpt-6.1-sol",
   "service_tier": "ultrafast",
@@ -21,6 +21,6 @@
   "paper_title": "Agentic MLIR-to-QIR Translation with Dual-Backend Testing: A Hybrid Deterministic and LLM Approach",
   "paper_date": "2026-11-18",
   "paper_category": "Energy Materials",
-  "generated_at": "2026-11-20T18:57:41",
+  "generated_at": "2026-11-21T17:52:30",
   "generator": "openai"
 }

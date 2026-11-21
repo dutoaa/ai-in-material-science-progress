@@ -1,18 +1,18 @@
 {
-  "key_insight": "Perfumer combines an LLM-based agent, predictive models and Quantum ESPRESSO to accelerate structural relaxation and predict electronic bands from natural-language requests.",
-  "engineering_relevance": "The framework could reduce computation and workflow setup effort for first-principles materials screening.",
+  "key_insight": "Perfumer uses an LLM-based agent to orchestrate faster first-principles workflows by combining learned structural pre-relaxation, Quantum ESPRESSO refinement, and electronic band prediction.",
+  "engineering_relevance": "The framework could reduce computational cost and workflow setup effort when screening crystal structures and their electronic properties.",
   "method": [
-    "Translate natural-language requests into structure-to-band workflows, using uploaded structures or automatically constructed candidates.",
-    "Pre-relax structures with Perfumer-relax, then refine them with Quantum ESPRESSO.",
-    "Predict 12 band energies at requested wavevectors using a periodic graph neural network and latent Hermitian spectral head that preserve reciprocal-lattice periodicity and time-reversal symmetry."
+    "Translate natural-language requests into structure-to-band workflows.",
+    "Pre-relax structures with Perfumer-relax, then refine with Quantum ESPRESSO.",
+    "Predict 12 band energies at requested wavevectors using a periodic graph neural network and latent Hermitian spectral head that preserve reciprocal periodicity and time-reversal symmetry."
   ],
-  "evidence_signal": "The abstract reports 2.75× overall relaxation speedup on tested structures; trained on 125,153 band structures, Perfumer-band achieved 0.157 eV median per-material MAE on 2,607 test materials from held-out composition families spanning 85 elements, with inference taking about 97 ms per material on two consumer CPU cores.",
-  "watch_item": "The 12-band output and reported aggregate error warrant validation for target materials and properties requiring finer electronic-structure accuracy.",
+  "evidence_signal": "The abstract reports 2.75× overall relaxation speedup on tested structures; trained on 125,153 band structures, the band model achieves 0.157 eV median per-material MAE on 2,607 held-out-composition-family test materials and about 97 ms inference per material on two consumer CPU cores.",
+  "watch_item": "The reported median band error does not establish worst-case accuracy or reliability for derived quantities such as band gaps; critical predictions warrant first-principles validation.",
   "hashtags": [
     "#AIMaterials",
-    "#ComputationalMaterials",
-    "#FirstPrinciples",
     "#AgenticAI",
+    "#CrystalStructures",
+    "#FirstPrinciples",
     "#BandStructure"
   ],
   "model": "gpt-6.1-sol",
@@ -21,6 +21,6 @@
   "paper_title": "Perfumer: A Large Language Model-based Agentic Framework Accelerating Structural Relaxation and Electronic Band Prediction for First-Principle Calculation",
   "paper_date": "2026-11-19",
   "paper_category": "Crystal and Structure",
-  "generated_at": "2026-11-20T18:57:33",
+  "generated_at": "2026-11-21T17:52:20",
   "generator": "openai"
 }

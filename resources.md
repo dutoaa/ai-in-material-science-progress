@@ -1,6 +1,6 @@
 # AI materials science Progress Public Resources
 
-Generated: 2026-11-20
+Generated: 2026-11-21
 Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 
 ## 1. AdsNet: A Graph Neural Network for Direct Adsorption Energy Prediction
@@ -107,7 +107,15 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2611.25651v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-19-arxiv-matverse_a_foundation_model_for_materials_science_infographic.json
 
-## 14. Agentic MLIR-to-QIR Translation with Dual-Backend Testing: A Hybrid Deterministic and LLM Approach
+## 14. Emergent Fatigue Dynamics from Foundational Interatomic Potentials
+
+- Date: 2026-11-19
+- Category: AI materials science
+- arXiv: https://arxiv.org/abs/2611.26533v1
+- PDF: https://arxiv.org/pdf/2611.26533v1
+- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-19-arxiv-emergent_fatigue_dynamics_from_foundational_interatomic_potentials_infographic.json
+
+## 15. Agentic MLIR-to-QIR Translation with Dual-Backend Testing: A Hybrid Deterministic and LLM Approach
 
 - Date: 2026-11-18
 - Category: Energy Materials
@@ -115,7 +123,7 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2611.25106v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-18-arxiv-agentic_mlir_to_qir_translation_with_dual_backend_testing_a_hybrid_deterministic_and_llm_a_infographic.json
 
-## 15. Technical Note on Matlantis PFP v9: Extending the Element and Domain Coverage of the r2SCAN Training Data
+## 16. Technical Note on Matlantis PFP v9: Extending the Element and Domain Coverage of the r2SCAN Training Data
 
 - Date: 2026-11-18
 - Category: Crystal and Structure
@@ -123,7 +131,7 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2611.23873v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-18-arxiv-technical_note_on_matlantis_pfp_v9_extending_the_element_and_domain_coverage_of_the_r2scan_infographic.json
 
-## 16. Application of Pretrained Universal Machine Learning Force-Fields for Phase Transitions Prediction in ZrO2
+## 17. Application of Pretrained Universal Machine Learning Force-Fields for Phase Transitions Prediction in ZrO2
 
 - Date: 2026-11-17
 - Category: Materials Discovery
@@ -131,7 +139,7 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2611.23535v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-17-arxiv-application_of_pretrained_universal_machine_learning_force_fields_for_phase_transitions_pr_infographic.json
 
-## 17. Reward misalignment as an opportunity for materials discovery
+## 18. Reward misalignment as an opportunity for materials discovery
 
 - Date: 2026-11-19
 - Category: Materials Discovery
@@ -139,7 +147,7 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2611.26186v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-19-arxiv-reward_misalignment_as_an_opportunity_for_materials_discovery_infographic.json
 
-## 18. DSADiff: Data Structure-Aware Diffusion for Crystal Structure Prediction via Mitigating Complexity- and Imbalance-Induced Biases
+## 19. DSADiff: Data Structure-Aware Diffusion for Crystal Structure Prediction via Mitigating Complexity- and Imbalance-Induced Biases
 
 - Date: 2026-11-17
 - Category: Materials Discovery
@@ -147,18 +155,10 @@ Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 - PDF: https://arxiv.org/pdf/2611.22050v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-17-arxiv-dsadiff_data_structure_aware_diffusion_for_crystal_structure_prediction_via_mitigating_com_infographic.json
 
-## 19. Adsorbate-Free Screening of Dissociative Water Adsorption on Nickel Nanoparticles via Graph Neural Networks
+## 20. Adsorbate-Free Screening of Dissociative Water Adsorption on Nickel Nanoparticles via Graph Neural Networks
 
 - Date: 2026-11-16
 - Category: Materials Discovery
 - arXiv: https://arxiv.org/abs/2611.20706v1
 - PDF: https://arxiv.org/pdf/2611.20706v1
 - Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-16-arxiv-adsorbate_free_screening_of_dissociative_water_adsorption_on_nickel_nanoparticles_via_grap_infographic.json
-
-## 20. Emergent Fatigue Dynamics from Foundational Interatomic Potentials
-
-- Date: 2026-11-19
-- Category: AI materials science
-- arXiv: https://arxiv.org/abs/2611.26533v1
-- PDF: https://arxiv.org/pdf/2611.26533v1
-- Infographic JSON: https://dutoaa.github.io/ai-in-material-science-progress/infographics/2026-11-19-arxiv-emergent_fatigue_dynamics_from_foundational_interatomic_potentials_infographic.json
