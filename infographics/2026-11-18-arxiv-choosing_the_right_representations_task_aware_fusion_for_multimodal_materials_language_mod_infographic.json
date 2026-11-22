@@ -1,13 +1,13 @@
 {
-  "key_insight": "Task-aware fusion of complementary structural encoders and intermediate layers improves materials property prediction over relying on a fixed representation.",
-  "engineering_relevance": "A lightweight fusion bridge can improve prediction accuracy while reducing trainable parameters and overall training time relative to MatterChat.",
+  "key_insight": "Task-aware fusion of complementary structural encoders improves materials property prediction by selecting representations from property-relevant network depths.",
+  "engineering_relevance": "A lightweight bridge connects structural encoders to a language model with fewer trainable parameters and half the overall training time reported for MatterChat.",
   "method": [
-    "Use Task-Conditioned Attention Fusion (TCAF) with task-conditioned latent queries.",
-    "Combine CHGNet features with intermediate Zatom-1 representations selected for the target property.",
-    "Train directly on downstream tasks, jointly learning representation selection and material–language alignment without separate contrastive pretraining."
+    "Combine CHGNet features with intermediate Zatom-1 representations.",
+    "Use task-conditioned latent queries to select and fuse structural information through attention.",
+    "Train directly on downstream prediction tasks, jointly learning fusion and material-language alignment without separate contrastive pretraining."
   ],
-  "evidence_signal": "Across classification and regression tasks, TCAF outperformed MatterChat with up to 47.8% lower RMSE and half the overall training time; adding UMA-S yielded the highest macro-average classification accuracy of 89.61%.",
-  "watch_item": "The abstract does not establish generalization to unseen material families or tasks, so validate performance on application-specific held-out data.",
+  "evidence_signal": "Across classification and regression tasks, TCAF outperforms MatterChat with up to 47.8% lower RMSE; adding UMA-S yields the highest reported macro-average classification accuracy of 89.61%.",
+  "watch_item": "The abstract does not specify datasets or evaluation splits, limiting assessment of generalization to unseen materials.",
   "hashtags": [
     "#MaterialsInformatics",
     "#MultimodalAI",
@@ -21,6 +21,6 @@
   "paper_title": "Choosing the Right Representations: Task-Aware Fusion for Multimodal Materials Language Models",
   "paper_date": "2026-11-18",
   "paper_category": "Property Prediction",
-  "generated_at": "2026-11-21T17:52:22",
+  "generated_at": "2026-11-22T18:13:05",
   "generator": "openai"
 }

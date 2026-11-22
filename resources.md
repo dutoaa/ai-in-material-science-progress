@@ -1,6 +1,6 @@
 # AI materials science Progress Public Resources
 
-Generated: 2026-11-21
+Generated: 2026-11-22
 Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 
 ## 1. AdsNet: A Graph Neural Network for Direct Adsorption Energy Prediction

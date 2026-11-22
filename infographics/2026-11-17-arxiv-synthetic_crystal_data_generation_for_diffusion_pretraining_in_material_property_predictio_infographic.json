@@ -1,19 +1,19 @@
 {
   "key_insight": "Synthetic crystal structures can support diffusion pretraining for materials property prediction while reducing reliance on costly DFT-relaxed training structures.",
-  "engineering_relevance": "Fast machine-learned relaxation and synthetic structure generation offer a scalable route to broader crystal training data without requiring quantum-mechanical property labels for every structure.",
+  "engineering_relevance": "Fast machine-learned relaxation offers a practical route to larger, more structurally diverse pretraining datasets without new DFT calculations for every generated crystal.",
   "method": [
-    "Generate crystals through perturb-and-relax, MatterGen sampling, and protostructure enumeration.",
-    "Use machine-learned interatomic potentials where structural relaxation is required.",
-    "Pretrain a randomly initialized Orb-v2 backbone with coordinate denoising, VP diffusion, or sub-VP diffusion."
+    "Generate synthetic crystals through perturb-and-relax, MatterGen sampling, and protostructure enumeration.",
+    "Use machine-learned interatomic potentials where structural relaxation is needed.",
+    "Pretrain a randomly initialized Orb-v2 backbone using coordinate denoising or continuous-time VP and sub-VP diffusion objectives."
   ],
-  "evidence_signal": "Every synthetic-pretraining condition numerically outperformed random initialization on seven MatBench tasks; scaling protostructures from 20k to 165k matched or exceeded MP-20k pretraining on most tasks in a study including an eighth task.",
-  "watch_item": "The fixed 400-epoch scaling study increases both data diversity and optimization updates, so improvements cannot be attributed to dataset size alone.",
+  "evidence_signal": "Every synthetic-pretraining condition numerically outperformed random initialization across seven MatBench tasks; scaling protostructures from 20k to 165k matched or exceeded MP-20k pretraining on most tasks in an eight-task study.",
+  "watch_item": "The fixed 400-epoch scaling protocol increases both dataset diversity and optimization updates, so gains cannot be attributed to data scale alone.",
   "hashtags": [
     "#MaterialsDiscovery",
     "#SyntheticData",
     "#DiffusionPretraining",
-    "#CrystalStructures",
-    "#GraphNeuralNetworks"
+    "#GraphNeuralNetworks",
+    "#CrystalStructures"
   ],
   "model": "gpt-6.1-sol",
   "service_tier": "ultrafast",
@@ -21,6 +21,6 @@
   "paper_title": "Synthetic Crystal Data Generation for Diffusion Pretraining in Material Property Prediction",
   "paper_date": "2026-11-17",
   "paper_category": "Materials Discovery",
-  "generated_at": "2026-11-21T17:52:00",
+  "generated_at": "2026-11-22T18:12:45",
   "generator": "openai"
 }

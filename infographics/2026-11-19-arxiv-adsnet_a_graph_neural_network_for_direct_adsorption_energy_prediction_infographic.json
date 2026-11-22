@@ -1,19 +1,19 @@
 {
-  "key_insight": "AdsNet predicts adsorption energies directly from local atomic environments, combining geometric sensitivity with computation that does not scale with total system size.",
-  "engineering_relevance": "The model could accelerate catalyst screening and local interface relaxation without evaluating a full-system machine-learning potential.",
+  "key_insight": "AdsNet predicts adsorption energies directly from a local, geometry-sensitive graph rather than modeling the entire surface system.",
+  "engineering_relevance": "Its local formulation supports efficient catalyst screening and interface relaxation without scaling graph size with the full simulation cell.",
   "method": [
     "Build a cutoff-based graph of adsorbate atoms and nearby surface atoms.",
     "Use equivariant message passing with scalar and vector features to predict energy and per-atom contributions.",
-    "Obtain forces by automatic differentiation for projected gradient descent relaxation with adaptive line search."
+    "Compute forces by automatic differentiation for projected-gradient relaxation with adaptive line search."
   ],
-  "evidence_signal": "Trained on 33,920 DFT structures spanning 26 transition metals and 6 adsorbates, AdsNet reports energy RMSE of 0.032 eV and force RMSE of 0.047 eV/Å.",
-  "watch_item": "A local cutoff may omit longer-range surface effects; accuracy on unseen chemistries and surfaces requires validation beyond the reported dataset.",
+  "evidence_signal": "The abstract reports training on AdsTraj's 33,920 DFT structures spanning 26 transition metals and 6 adsorbates, with energy RMSE of 0.032 eV and force RMSE of 0.047 eV/Å.",
+  "watch_item": "Generalization to unseen surface chemistries and environments requiring interactions beyond the local cutoff needs validation.",
   "hashtags": [
-    "#AdsNet",
+    "#MaterialsDiscovery",
     "#GraphNeuralNetworks",
-    "#CatalystDiscovery",
+    "#CatalystScreening",
     "#AdsorptionEnergy",
-    "#MaterialsAI"
+    "#EquivariantAI"
   ],
   "model": "gpt-6.1-sol",
   "service_tier": "ultrafast",
@@ -21,6 +21,6 @@
   "paper_title": "AdsNet: A Graph Neural Network for Direct Adsorption Energy Prediction",
   "paper_date": "2026-11-19",
   "paper_category": "Materials Discovery",
-  "generated_at": "2026-11-21T17:51:58",
+  "generated_at": "2026-11-22T18:12:43",
   "generator": "openai"
 }
