@@ -1,19 +1,19 @@
 {
-  "key_insight": "Perfumer is an LLM-based agentic framework that combines Quantum ESPRESSO with learned models to accelerate crystal relaxation and predict electronic bands.",
-  "engineering_relevance": "Natural-language workflows can reduce setup effort and computational cost when screening candidate materials for structural and electronic properties.",
+  "key_insight": "Perfumer uses an LLM-based agent to coordinate crystal relaxation and electronic band prediction, combining Quantum ESPRESSO with two predictive models.",
+  "engineering_relevance": "The framework reduces first-principles workflow effort and reports a 2.75× overall relaxation speedup using learned pre-relaxation followed by Quantum ESPRESSO refinement.",
   "method": [
-    "Use Perfumer-relax for pre-relaxation, followed by Quantum ESPRESSO refinement.",
-    "Predict 12 band energies at requested wavevectors using a periodic graph neural network and latent Hermitian spectral head.",
-    "Preserve reciprocal-lattice periodicity and time-reversal symmetry without explicitly constructing a Hamiltonian."
+    "Translate natural-language requests into structure-to-band workflows for uploaded structures or automatically constructed candidates.",
+    "Pre-relax structures with Perfumer-relax, then refine them with Quantum ESPRESSO.",
+    "Predict 12 band energies at requested wavevectors using a periodic graph neural network and latent Hermitian spectral head, preserving reciprocal-lattice periodicity and time-reversal symmetry without constructing a Hamiltonian."
   ],
-  "evidence_signal": "The abstract reports 2.75× overall relaxation speedup on tested structures; trained on 125,153 band structures, the band model achieved 0.157 eV median per-material MAE on 2,607 held-out-composition test materials spanning 85 elements, at about 97 ms per material on two consumer CPU cores.",
-  "watch_item": "Band predictions are limited to 12 energies per wavevector; suitability for unseen chemistries and accuracy-sensitive applications requires validation.",
+  "evidence_signal": "Trained on 125,153 band structures, Perfumer-band achieved a median per-material MAE of 0.157 eV on 2,607 test materials from held-out composition families spanning 85 elements, with inference taking about 97 ms per material on two consumer CPU cores.",
+  "watch_item": "The reported median error does not establish worst-case reliability; predictions for unfamiliar chemistries or precision-sensitive applications warrant first-principles validation.",
   "hashtags": [
-    "#AIMaterials",
-    "#ComputationalMaterials",
-    "#DensityFunctionalTheory",
-    "#AgenticAI",
-    "#BandStructure"
+    "#AIMaterialsScience",
+    "#FirstPrinciples",
+    "#CrystalRelaxation",
+    "#BandStructure",
+    "#AgenticAI"
   ],
   "model": "gpt-6.1-sol",
   "service_tier": "ultrafast",
@@ -21,6 +21,6 @@
   "paper_title": "Perfumer: A Large Language Model-based Agentic Framework Accelerating Structural Relaxation and Electronic Band Prediction for First-Principle Calculation",
   "paper_date": "2026-11-19",
   "paper_category": "Crystal and Structure",
-  "generated_at": "2026-11-22T18:13:03",
+  "generated_at": "2026-11-23T22:26:59",
   "generator": "openai"
 }
