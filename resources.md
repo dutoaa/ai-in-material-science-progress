@@ -1,6 +1,6 @@
 # AI materials science Progress Public Resources
 
-Generated: 2026-11-26
+Generated: 2026-11-27
 Public site: https://dutoaa.github.io/ai-in-material-science-progress/
 
 ## 1. PerovAgent: Autonomous Ligand Design for Halide Perovskite Nanocrystals

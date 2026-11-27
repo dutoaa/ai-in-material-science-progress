@@ -24,17 +24,17 @@
         "url": "https://arxiv.org/pdf/2611.33913v1"
       }
     ],
-    "score": 100,
+    "score": 95,
     "infographic": {
-      "key_insight": "PerovAgent autonomously designs ligands for halide perovskite nanocrystals while turning its search history into statistically testable chemical design principles.",
-      "engineering_relevance": "The framework could guide surface-capping ligand selection by optimizing binding energies and identifying validated ligand–surface interaction rules.",
+      "key_insight": "PerovAgent autonomously searches perovskite surface-capping ligands while turning recurring chemical observations into testable design principles.",
+      "engineering_relevance": "The framework could guide ligand selection for halide perovskite nanocrystals by combining binding-energy optimization with validated chemical insights.",
       "method": [
-        "Coordinate LLM-driven reasoning with atomistic model construction and machine-learned interatomic potential evaluation.",
-        "Adaptively explore ligand chemistries on CsPbBr3 surfaces to improve the binding-energy objective.",
-        "Formulate design principles, test them prospectively, and audit for confounding."
+        "Use LLM-driven multi-agent reasoning to propose and refine ligand chemistries.",
+        "Construct atomistic models and evaluate binding energies with machine-learned interatomic potentials.",
+        "Statistically test design principles and audit potential confounding."
       ],
-      "evidence_signal": "Across 10 independent campaigns, 19 of 35 principles gained prospective support, seven of those passed the confound audit, and DFT reproduced the energetic preference predicted by a recurrent alkynyl-phosphonate principle.",
-      "watch_item": "Improved computed binding energies do not establish experimental nanocrystal performance, and many plausible principles did not survive validation.",
+      "evidence_signal": "Across 10 independent CsPbBr3 surface campaigns, 19 of 35 principles gained prospective support, seven also passed the confound audit, and DFT reproduced one recurrent alkynyl-phosphonate energetic preference.",
+      "watch_item": "Computational binding-energy improvements do not establish experimental nanocrystal performance, and most proposed principles lacked confound-audited support.",
       "hashtags": [
         "#AIMaterialsDiscovery",
         "#PerovskiteNanocrystals",
@@ -48,7 +48,7 @@
       "paper_title": "PerovAgent: Autonomous Ligand Design for Halide Perovskite Nanocrystals",
       "paper_date": "2026-11-25",
       "paper_category": "Materials Discovery",
-      "generated_at": "2026-11-26T19:58:53",
+      "generated_at": "2026-11-27T19:47:05",
       "generator": "openai"
     }
   },
@@ -77,22 +77,22 @@
         "url": "https://arxiv.org/pdf/2611.29349v1"
       }
     ],
-    "score": 81,
+    "score": 76,
     "infographic": {
       "key_insight": "A graph neural network trained on smaller GW calculations predicts quasiparticle energy levels in large supercells at a fraction of the computational cost.",
-      "engineering_relevance": "The approach could make accurate electronic-structure calculations more practical for defects, surfaces, and moiré systems where conventional GW becomes costly.",
+      "engineering_relevance": "The approach could make accurate electronic-structure calculations more practical for defects, surfaces, and moiré systems where direct GW calculations become prohibitive.",
       "method": [
-        "Represent atoms as graph nodes and interatomic distances as edges.",
-        "Use DFT wavefunction projections onto localized atomic orbitals as input features.",
-        "Build a targeted, compact GW training dataset and optimize hyperparameters with Bayesian optimization."
+        "Represent atomic positions as graph nodes and atom-to-atom distances as edges.",
+        "Use DFT wavefunction projections onto localized atomic orbitals as model features.",
+        "Build a targeted, compact GW training dataset and tune hyperparameters with Bayesian optimization."
       ],
-      "evidence_signal": "For monolayer MoS₂ with a sulfur vacancy, the abstract reports mean absolute errors of 10–50 meV.",
-      "watch_item": "Accuracy depends on representative GW training data; transferability beyond the reported MoS₂ vacancy case is not established in the abstract.",
+      "evidence_signal": "For monolayer MoS₂ with a sulfur vacancy, the abstract reports mean absolute errors of 10–50 meV for predicted quasiparticle energy levels.",
+      "watch_item": "Accuracy beyond the demonstrated MoS₂ defect system remains to be established, and deployment still requires DFT-derived features and representative GW training data.",
       "hashtags": [
-        "#MaterialsDiscovery",
         "#GraphNeuralNetworks",
-        "#GWCalculations",
+        "#MaterialsDiscovery",
         "#ElectronicStructure",
+        "#GWMethod",
         "#TwoDimensionalMaterials"
       ],
       "model": "gpt-6.1-sol",
@@ -101,7 +101,7 @@
       "paper_title": "Graph Neural Networks for Accurate Quasiparticle Energy Levels in Large Supercells of Transition Metal Dichalcogenides",
       "paper_date": "2026-11-22",
       "paper_category": "Materials Discovery",
-      "generated_at": "2026-11-26T19:58:56",
+      "generated_at": "2026-11-27T19:47:08",
       "generator": "openai"
     }
   },
@@ -130,23 +130,23 @@
         "url": "https://arxiv.org/pdf/2611.33543v1"
       }
     ],
-    "score": 76,
+    "score": 71,
     "infographic": {
-      "key_insight": "Replacing Zr with Y in BCFZY cathodes yields modest proton-conductivity gains under PCFC operating gases, while low oxygen partial pressure is predicted to shift proton transport from hydroxyl to hydride species.",
-      "engineering_relevance": "Cathode optimization should account for gas-dependent defect chemistry rather than assume Y doping alone will substantially improve proton conductivity.",
+      "key_insight": "Increasing Y content in BCFZY cathodes modestly improves proton transport under PCFC operating gases, while low oxygen partial pressure is predicted to shift transport from hydroxyl to hydride species.",
+      "engineering_relevance": "Cathode optimization should account for gas conditions because Y doping alone offers only modest predicted proton-conductivity gains under PCFC operating conditions.",
       "method": [
-        "Used ab initio molecular dynamics to evaluate proton tracer diffusivity in BCFZ, BCFZY0.1, and BCFY.",
-        "Modeled temperature-dependent proton concentrations using hydration, oxidation, and hydride-formation defect reactions.",
+        "Used ab initio molecular dynamics to assess proton tracer diffusivity across three compositions with Y fractions of 0, 0.1, and 0.2.",
+        "Modeled temperature-dependent proton concentrations using hydration, oxidation, and hydride-formation defect equilibria.",
         "Separated diffusivity and concentration contributions to proton conductivity."
       ],
-      "evidence_signal": "At 500 °C, increasing Y content from BCFZ to BCFY predicts gains of 1.7% in proton diffusivity, 3.8% in proton concentration, and 5.3% in proton conductivity under PCFC operating gas conditions.",
-      "watch_item": "These simulation-based predictions are gas-condition dependent and should not be generalized to the larger experimental enhancements reported under reducing conditions.",
+      "evidence_signal": "At 500 °C, increasing Y from BCFZ to BCFY yielded predicted gains of 1.7% in proton diffusivity, 3.8% in proton concentration, and 5.3% in proton conductivity under PCFC operating gas conditions.",
+      "watch_item": "These computational predictions require experimental validation under matched gas conditions; larger gains reported in reducing atmospheres may not transfer to PCFC cathode operation.",
       "hashtags": [
         "#ProtonCeramicFuelCells",
-        "#CathodeMaterials",
-        "#YttriumDoping",
+        "#MaterialsModeling",
+        "#PerovskiteCathodes",
         "#ProtonTransport",
-        "#ComputationalMaterials"
+        "#YttriumDoping"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -154,7 +154,7 @@
       "paper_title": "Effects of Yttrium doping on Proton Conductivity in Ba(Fe, Co, Zr, Y)O$_{3-δ}$ Cathode Materials for Proton Ceramic Fuel Cells",
       "paper_date": "2026-11-24",
       "paper_category": "Microstructure",
-      "generated_at": "2026-11-26T19:58:59",
+      "generated_at": "2026-11-27T19:47:10",
       "generator": "openai"
     }
   },
@@ -185,19 +185,19 @@
         "url": "https://arxiv.org/pdf/2611.29132v1"
       }
     ],
-    "score": 75,
+    "score": 70,
     "infographic": {
-      "key_insight": "DeepDOSReasoner predicts electronic and phonon density-of-states spectra while enforcing nonnegativity and total-state conservation by construction.",
-      "engineering_relevance": "Millisecond-scale spectral prediction enables high-throughput screening for electronic, optical, vibrational, and thermodynamic materials properties.",
+      "key_insight": "DeepDOSReasoner predicts electronic and phonon densities of states from atomic structures while enforcing nonnegativity and total-state conservation by construction.",
+      "engineering_relevance": "Millisecond spectral predictions enable high-throughput screening for electronic, optical, vibrational, and thermodynamic applications while reducing reliance on costly DFT calculations.",
       "method": [
-        "Decode spectra from crystal structures using atom-to-energy source attention.",
+        "Decode spectra using atom-to-energy source attention.",
         "Refine normalized spectra through learned continuity-equation transport.",
         "Recover element-resolved contributions without direct supervision."
       ],
-      "evidence_signal": "The model led all evaluated metrics for both spectrum types; prospective DFT validation across a screen of 8,106 materials confirmed valence-band gaps in 25 of its top 50 candidates.",
-      "watch_item": "Physics constraints ensure nonnegative, state-conserving spectra, but do not guarantee accuracy for unfamiliar chemistries; priority candidates still need DFT validation.",
+      "evidence_signal": "The model led all evaluated prediction metrics for both spectrum types; new DFT calculations in a prospective screen of 8,106 materials confirmed valence-band gaps in 25 of its top 50 candidates.",
+      "watch_item": "Physical constraints do not guarantee accuracy for unfamiliar chemistries, so high-value screening candidates still require DFT or experimental validation.",
       "hashtags": [
-        "#AIMaterials",
+        "#AIForScience",
         "#MaterialsDiscovery",
         "#DensityOfStates",
         "#PhysicsGroundedAI",
@@ -209,7 +209,7 @@
       "paper_title": "DeepDOSReasoner: Physics-Grounded Reasoning for Density-of-States Prediction and Materials Discovery",
       "paper_date": "2026-11-22",
       "paper_category": "Materials Discovery",
-      "generated_at": "2026-11-26T19:59:02",
+      "generated_at": "2026-11-27T19:47:12",
       "generator": "openai"
     }
   },
@@ -239,23 +239,23 @@
         "url": "https://arxiv.org/pdf/2611.34156v1"
       }
     ],
-    "score": 74,
+    "score": 69,
     "infographic": {
-      "key_insight": "Foundation interatomic potentials capture disorder in Cu–Zr–Al metallic glasses most reliably when their pre-training includes liquid and amorphous structures.",
-      "engineering_relevance": "Broadly pre-trained potentials can reduce reliance on composition-specific models for simulating metallic-glass structure and properties, provided their dynamics are carefully validated.",
+      "key_insight": "Foundation interatomic potentials capture metallic-glass disorder most reliably when pre-training includes liquid and amorphous configurations, with target-specific fine-tuning offering only modest gains.",
+      "engineering_relevance": "These models can reduce reliance on composition-specific potentials for simulating metallic-glass structure and properties at near first-principles accuracy.",
       "method": [
-        "Benchmark MACE foundation models against EAM during molecular-dynamics quenches.",
-        "Validate at Cu46Zr46Al8 and across the ternary’s good glass-forming region using DFT and experiment.",
+        "Benchmark MACE foundation models against EAM during Cu–Zr–Al molecular dynamics quenches.",
+        "Validate against DFT and experiment at Cu46Zr46Al8 and across the ternary’s good glass-forming region.",
         "Test fine-tuning on surrogate-generated glass structures and ASSYST-generated small periodic cells."
       ],
-      "evidence_signal": "The abstract reports that OMAT-pre-trained models outperform composition-specific EAM, glass-focused fine-tuning yields modest gains, and small-crystalline-cell specialization degrades disorder modeling.",
-      "watch_item": "Results concern Cu–Zr–Al glasses; transfer to other alloy systems requires validation rather than assuming universal accuracy.",
+      "evidence_signal": "The abstract reports that OMAT-pretrained models transfer across compositions and outperform EAM, while assessing structure, quenching dynamics, and elastic, mechanical, and thermal properties.",
+      "watch_item": "Validate disorder and dynamics before deployment: specialization on small crystalline cells degraded performance, and transfer beyond Cu–Zr–Al is not established here.",
       "hashtags": [
-        "#AIForMaterials",
         "#MetallicGlasses",
-        "#InteratomicPotentials",
+        "#MachineLearningPotentials",
+        "#MaterialsAI",
         "#MolecularDynamics",
-        "#MaterialsEngineering"
+        "#FoundationModels"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -263,7 +263,7 @@
       "paper_title": "Foundation interatomic potentials capture structural disorder in metallic glasses",
       "paper_date": "2026-11-25",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-11-26T19:59:05",
+      "generated_at": "2026-11-27T19:47:15",
       "generator": "openai"
     }
   },
@@ -292,22 +292,22 @@
         "url": "https://arxiv.org/pdf/2611.30348v1"
       }
     ],
-    "score": 74,
+    "score": 69,
     "infographic": {
-      "key_insight": "Machine-learned molecular dynamics predicts that approximately 0.5% biaxial tensile strain drives MAPbI₃ from tetragonal to cubic at 300 K while retaining preferential molecular orientations.",
-      "engineering_relevance": "Finite-temperature strain modeling can guide epitaxial design of perovskite absorbers by predicting phase stability and band-gap shifts that static calculations miss.",
+      "key_insight": "Machine-learned molecular dynamics predicts that approximately 0.5% biaxial tensile strain drives MAPbI₃ from tetragonal to cubic symmetry at 300 K while retaining preferential molecular orientations.",
+      "engineering_relevance": "Finite-temperature strain modeling can guide epitaxial perovskite design by predicting phase stability and band-gap shifts that static calculations can miss.",
       "method": [
         "Train machine-learned force fields on-the-fly using DFT.",
-        "Run nanosecond bulk and free-standing slab simulations with constrained in-plane lattice vectors.",
-        "Track lattice ratios, octahedral tilts, molecular orientations, and snapshot-averaged band gaps."
+        "Run nanosecond-scale bulk and free-standing slab simulations with fixed in-plane lattice vectors.",
+        "Track structural changes and average band gaps over MD snapshots."
       ],
-      "evidence_signal": "The predicted transition agrees with experiments on MAPbI₃ films on KCl, bulk and slab trends are consistent, and snapshot-averaged band gaps reproduce the experimental tensile-strain blue shift.",
-      "watch_item": "Free-standing slabs do not explicitly capture substrate-interface chemistry, which may affect transferability to specific epitaxial systems.",
+      "evidence_signal": "Bulk and slab simulations show consistent strain trends, with the predicted transition and tensile-strain band-gap blue shift agreeing with reported experiments.",
+      "watch_item": "Free-standing slabs do not explicitly capture substrate-interface chemistry, which may affect transferability to specific epitaxial films.",
       "hashtags": [
         "#AIMaterials",
+        "#Perovskites",
         "#MachineLearnedForceFields",
         "#MolecularDynamics",
-        "#Perovskites",
         "#StrainEngineering"
       ],
       "model": "gpt-6.1-sol",
@@ -316,7 +316,7 @@
       "paper_title": "Strain-Induced Tetragonal-to-Cubic Transition in MAPbI$_3$ from Machine-Learned Molecular Dynamics",
       "paper_date": "2026-11-23",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-11-26T19:59:07",
+      "generated_at": "2026-11-27T19:47:17",
       "generator": "openai"
     }
   },
@@ -345,17 +345,17 @@
         "url": "https://arxiv.org/pdf/2611.33652v1"
       }
     ],
-    "score": 72,
+    "score": 67,
     "infographic": {
-      "key_insight": "SCP combines intraday market microstructure features with self-supervised, clipped-objective reinforcement learning to improve risk-aware portfolio allocation.",
-      "engineering_relevance": "For quantitative trading systems rather than materials science, SCP targets sensitivity to fast market changes and greater stability in policy learning.",
+      "key_insight": "SCP combines market microstructure features with self-supervised, clipped-objective reinforcement learning to improve risk-aware portfolio allocation.",
+      "engineering_relevance": "For quantitative trading systems, the framework targets sensitivity to intraday market dynamics and more stable policy learning.",
       "method": [
         "Integrate tick-level microstructure patterns with macro-level financial indicators.",
-        "Form intermediate asset-state representations for portfolio allocation.",
+        "Construct intermediate asset-state representations for portfolio allocation.",
         "Optimize allocations using a self-supervised, clipped-objective policy learner."
       ],
-      "evidence_signal": "The abstract reports superior risk–return performance against state-of-the-art baselines on three major Chinese A-share index datasets, with exploratory and ablation studies supporting component contributions.",
-      "watch_item": "The abstract does not establish robustness to transaction costs, execution constraints, or markets beyond Chinese A-shares.",
+      "evidence_signal": "The abstract reports improved risk–return trade-offs over state-of-the-art baselines on three major Chinese A-share index datasets, with exploratory and ablation studies supporting component contributions.",
+      "watch_item": "The abstract does not establish live-trading robustness or performance after transaction costs and slippage.",
       "hashtags": [
         "#PortfolioManagement",
         "#ReinforcementLearning",
@@ -369,7 +369,7 @@
       "paper_title": "Self-supervised Clipped-objective Reinforcement Leaning Framework for Risk-aware Portfolio Management",
       "paper_date": "2026-11-25",
       "paper_category": "Microstructure",
-      "generated_at": "2026-11-26T19:59:09",
+      "generated_at": "2026-11-27T19:47:19",
       "generator": "openai"
     }
   },
@@ -398,23 +398,23 @@
         "url": "https://arxiv.org/pdf/2611.32761v1"
       }
     ],
-    "score": 71,
+    "score": 66,
     "infographic": {
-      "key_insight": "Fine-tuned MACE potentials predict that MgSiO3 post-perovskite conducts lattice heat 44–55% better than bridgmanite at matched lower-mantle pressures and temperatures.",
-      "engineering_relevance": "The conductivity parameterizations support lower-mantle thermal models, with predicted core–mantle boundary aggregate values consistent with the 10 W/(m K) used in earlier heat-flow estimates.",
+      "key_insight": "Fine-tuned MACE potentials predict that MgSiO3 post-perovskite conducts lattice heat 44–55% better than bridgmanite at matching lower-mantle pressures and temperatures.",
+      "engineering_relevance": "The resulting conductivity parameterizations support lower-mantle thermal models, with predicted core–mantle boundary aggregate conductivities encompassing the commonly assumed 10 W/(m K).",
       "method": [
         "Fine-tune phase-specific MACE potentials for MgO, bridgmanite, and post-perovskite.",
         "Replace DFT force evaluations in linearized phonon Boltzmann transport calculations.",
-        "Combine quasi-harmonic phase-boundary calculations with aggregate conductivity bounds."
+        "Calculate the quasi-harmonic phase boundary and estimate aggregate conductivity using Hashin–Shtrikman bounds."
       ],
-      "evidence_signal": "For MgO at 0 GPa, substituting DFT for MACE forces in otherwise identical transport calculations changes conductivity by only 0.2% at 300 K and 1.9% at 2000 K.",
-      "watch_item": "The aggregate estimates describe Fe-free end members; effects of realistic mantle chemistry require further evaluation.",
+      "evidence_signal": "For MgO at 0 GPa, substituting DFT for MACE forces in otherwise identical transport calculations changes lattice conductivity by only 0.2% at 300 K and 1.9% at 2000 K.",
+      "watch_item": "The aggregate estimates describe Fe-free end members; composition and microstructure effects require further assessment before application to the real mantle.",
       "hashtags": [
-        "#AIMaterials",
+        "#AIMaterialsScience",
         "#MachineLearningPotentials",
         "#ThermalConductivity",
         "#LowerMantle",
-        "#ComputationalGeoscience"
+        "#PhononTransport"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -422,7 +422,7 @@
       "paper_title": "Lattice Thermal Conductivity of MgO and the MgSiO$_3$ Polymorphs Bridgmanite and Post-Perovskite at Lower-Mantle Conditions Using Fine-Tuned MACE Potentials",
       "paper_date": "2026-11-24",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-11-26T19:59:11",
+      "generated_at": "2026-11-27T19:47:22",
       "generator": "openai"
     }
   },
@@ -451,17 +451,17 @@
         "url": "https://arxiv.org/pdf/2611.31672v1"
       }
     ],
-    "score": 71,
+    "score": 66,
     "infographic": {
-      "key_insight": "DFT predicts that GeC/ReS₂ favors direct Z-scheme charge transfer, enabling overall photocatalytic water splitting with strain-tunable performance.",
-      "engineering_relevance": "The heterostructure offers a computationally promising route to solar hydrogen production, with predicted solar-to-hydrogen efficiency increasing from 41.40% without strain to 60.68% at +6% tensile strain.",
+      "key_insight": "DFT predicts that GeC/ReS₂ favors direct Z-scheme charge transfer, retaining the redox power needed for photocatalytic overall water splitting.",
+      "engineering_relevance": "Tensile strain offers a route to tune this heterostructure’s predicted solar-to-hydrogen efficiency from 41.40% without strain to 60.68% at +6% strain.",
       "method": [
-        "First-principles DFT assessment of stability and electronic structure.",
-        "Band-alignment and Gibbs free-energy analysis of type-II versus Z-scheme pathways.",
-        "Evaluation of pH-dependent water-splitting energetics and strain-dependent efficiency."
+        "First-principles DFT analysis of stability and electronic structure.",
+        "Band-alignment and Gibbs free-energy comparisons of type-II and Z-scheme pathways.",
+        "Evaluation of pH-dependent reaction energetics and strain-dependent efficiency."
       ],
-      "evidence_signal": "Calculations indicate a 1.38 eV indirect band gap, favorable Z-scheme HER energetics at pH 0–14, and light-driven spontaneous OER at pH 4–14.",
-      "watch_item": "The efficiencies are computational predictions; experimental validation must establish achievable strain, charge-transfer dynamics, and sustained catalytic performance.",
+      "evidence_signal": "Calculations indicate a 1.38 eV indirect band gap, favorable stability, and Z-scheme pathways supporting HER at pH 0–14 and spontaneous illuminated OER at pH 4–14.",
+      "watch_item": "The efficiencies are computational predictions; experimental validation of charge-transfer dynamics, catalytic performance, and sustained +6% strain remains necessary.",
       "hashtags": [
         "#Photocatalysis",
         "#GreenHydrogen",
@@ -475,7 +475,7 @@
       "paper_title": "Photocatalytic Water Splitting in GeC/ReS$_2$ van der Waals Heterostructures",
       "paper_date": "2026-11-23",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-11-26T19:59:14",
+      "generated_at": "2026-11-27T19:47:24",
       "generator": "openai"
     }
   },
@@ -504,17 +504,17 @@
         "url": "https://arxiv.org/pdf/2611.34565v1"
       }
     ],
-    "score": 68,
+    "score": 63,
     "infographic": {
-      "key_insight": "The anomalous γ-loop in Fe–Cr alloys arises from competing magnetic, vibrational and chemical effects that change how Cr stabilizes fcc versus bcc structures.",
-      "engineering_relevance": "Modeling these coupled effects can improve predictions of phase stability and transformation temperatures in Fe–Cr alloy design.",
+      "key_insight": "The anomalous γ-loop in Fe–Cr alloys emerges from competing magnetic, vibrational and chemical effects that make Cr favor fcc only within a limited temperature–composition window.",
+      "engineering_relevance": "Capturing these coupled effects can improve first-principles predictions of fcc–bcc stability in Fe–Cr alloy design.",
       "method": [
         "Coupled atomistic spin dynamics with ab initio molecular dynamics.",
         "Used thermodynamic integration to calculate fcc–bcc Gibbs free-energy differences.",
-        "Compared static magnetically ordered and disordered states to isolate magnetic effects."
+        "Compared magnetically ordered and disordered states to interpret Cr-dependent phase stability."
       ],
-      "evidence_signal": "Simulations at 0, 5, 10 and 15 at.% Cr over 800–1800 K reproduced the experimental γ-loop qualitatively, with near-quantitative accuracy for the γ–δ transition.",
-      "watch_item": "The α–γ transition temperatures were underestimated by approximately 200 K, and clustering as a cause of loop closure remains tentative.",
+      "evidence_signal": "Simulations at 0, 5, 10 and 15 at.% Cr over 800–1800 K reproduced the experimental γ-loop trend, with near-quantitative γ–δ transition accuracy.",
+      "watch_item": "The α–γ transition temperatures were underestimated by approximately 200 K, and clustering remains a proposed explanation for the loop closing from below.",
       "hashtags": [
         "#ComputationalMaterials",
         "#FeCrAlloys",
@@ -528,7 +528,7 @@
       "paper_title": "Origin of the anomalous shape of the $γ$-loop in paramagnetic Fe1-xCrx alloys from coupled Atomistic Spin Dynamics and ab initio Molecular Dynamics",
       "paper_date": "2026-11-25",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-11-26T19:59:16",
+      "generated_at": "2026-11-27T19:47:26",
       "generator": "openai"
     }
   },
@@ -557,17 +557,17 @@
         "url": "https://arxiv.org/pdf/2611.33770v1"
       }
     ],
-    "score": 68,
+    "score": 63,
     "infographic": {
-      "key_insight": "Solvent-exposed vitrimer networks begin losing connectivity below the critical dissolution temperature and form smaller network fragments rather than fully separating into individual polymer chains.",
-      "engineering_relevance": "These findings could guide solvent-assisted vitrimer recycling by linking temperature and crosslink concentration to network fragmentation.",
+      "key_insight": "Solvent-exposed vitrimer networks begin losing connectivity below their critical dissolution temperature and form disconnected network fragments rather than fully separating into individual chains.",
+      "engineering_relevance": "Understanding temperature- and crosslink-dependent fragmentation could guide solvent-assisted vitrimer recycling strategies.",
       "method": [
         "Hybrid molecular dynamics–Monte Carlo simulations",
         "Temperature–composition phase diagrams",
-        "Analysis of network fragmentation and dynamic bond redistribution"
+        "Analysis of network fragmentation and intrachain dynamic bonds"
       ],
-      "evidence_signal": "Simulations show that the critical dissolution temperature rises nonlinearly with crosslink concentration, while intrachain dynamic bonds increase with temperature.",
-      "watch_item": "The abstract reports simulation results without experimental validation, so transferability to practical recycling conditions remains uncertain.",
+      "evidence_signal": "Simulations show that the critical dissolution temperature increases nonlinearly with crosslink concentration, while intrachain dynamic bonds increase with temperature.",
+      "watch_item": "The abstract reports simulation results without experimental validation, so applicability to practical solvent–vitrimer systems remains to be established.",
       "hashtags": [
         "#Vitrimers",
         "#PolymerNetworks",
@@ -581,7 +581,7 @@
       "paper_title": "Solvent-Mediated Disintegration of a Vitrimer Network",
       "paper_date": "2026-11-25",
       "paper_category": "Microstructure",
-      "generated_at": "2026-11-26T19:59:18",
+      "generated_at": "2026-11-27T19:47:28",
       "generator": "openai"
     }
   },
@@ -610,22 +610,22 @@
         "url": "https://arxiv.org/pdf/2611.33408v1"
       }
     ],
-    "score": 68,
+    "score": 63,
     "infographic": {
-      "key_insight": "λ-MACE enables experimentally accurate hydration free energies for drug-like molecules, but combined hydration and sublimation errors still limit crystalline solubility predictions.",
-      "engineering_relevance": "Physics-based solubility prediction could support drug formulation decisions, provided crystalline thermodynamics can be modeled more accurately.",
+      "key_insight": "λ-MACE enables experimentally accurate hydration free energies, but combining hydration and sublimation predictions still leaves crystalline solubility errors above experimental uncertainty.",
+      "engineering_relevance": "This physics-based workflow could support drug formulation and solubility assessment, though crystalline thermodynamics needs greater accuracy before reliable deployment.",
       "method": [
-        "Optimize λ-MACE for condensed-phase free energy calculations.",
-        "Compute hydration and sublimation free energies using MACE-driven calculations.",
-        "Combine both contributions to predict solubility from known experimental crystal structures."
+        "Use λ-MACE, a machine learning interatomic potential optimized for condensed-phase free energy calculations.",
+        "Compute hydration and sublimation free energies within a free energy perturbation workflow.",
+        "Combine both thermodynamic legs to predict neutral-molecule solubility from known experimental crystal structures."
       ],
-      "evidence_signal": "Evaluation covered 70 medicinally relevant FreeSolv compounds for hydration and 10 additional compounds for crystalline solubility, yielding solubility accuracy of 1.53 log units versus experimental accuracy of 0.17–0.6 log units.",
-      "watch_item": "Reaching experimental solubility accuracy requires roughly 0.5 kcal/mol accuracy in each free energy leg, with crystalline thermodynamics the hardest remaining challenge.",
+      "evidence_signal": "Evaluation covered 70 medicinally relevant FreeSolv compounds for hydration and 10 additional compounds for crystalline solubility, with overall solubility accuracy of 1.53 log units versus experimental accuracy of 0.17–0.6 log units.",
+      "watch_item": "Closing the solubility accuracy gap requires roughly 0.5 kcal/mol accuracy in each thermodynamic leg, with crystalline thermodynamics the hardest remaining challenge.",
       "hashtags": [
-        "#MACE",
         "#MachineLearningPotentials",
-        "#FreeEnergyCalculations",
+        "#ComputationalChemistry",
         "#CrystalSolubility",
+        "#FreeEnergyCalculations",
         "#DrugDiscovery"
       ],
       "model": "gpt-6.1-sol",
@@ -634,7 +634,7 @@
       "paper_title": "Computing hydration free energies and crystalline solubility of drug-like molecules with MACE",
       "paper_date": "2026-11-24",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-11-26T19:59:20",
+      "generated_at": "2026-11-27T19:47:31",
       "generator": "openai"
     }
   },
@@ -663,22 +663,22 @@
         "url": "https://arxiv.org/pdf/2611.33381v1"
       }
     ],
-    "score": 68,
+    "score": 63,
     "infographic": {
       "key_insight": "Sequential magnetic alignment and liquid-metal bridging create vertical heat pathways in a soft composite while preserving lateral electrical insulation.",
       "engineering_relevance": "The composite offers a compliant thermal interface for skin-conformal electronics, thermoelectric generators, and wearable heat-spreading pads.",
       "method": [
-        "Magnetically align Ni microparticles in air before polymer infiltration to form densely packed vertical pathways.",
-        "Infiltrate a liquid-metal/Ni mixture into the scaffold to bridge interparticle gaps and reduce thermal resistance."
+        "Magnetically align nickel microparticles in air before polymer infiltration to form densely packed vertical pathways.",
+        "Infiltrate a liquid-metal/nickel mixture into the scaffold to bridge particle gaps and reduce interparticle thermal resistance."
       ],
       "evidence_signal": "The abstract reports through-plane thermal conductivity of 7.5 W/(m K), lateral electrical conductivity below 10⁻¹² S/m, and mechanical compliance characterized by approximately 160 kPa.",
-      "watch_item": "The abstract does not establish whether thermal performance and electrical insulation persist under repeated stretching.",
+      "watch_item": "Durability of the aligned pathways and electrical insulation under repeated stretching is not established in the abstract.",
       "hashtags": [
         "#ThermalManagement",
         "#SoftElectronics",
+        "#PolymerComposites",
         "#MagneticAlignment",
-        "#LiquidMetal",
-        "#StretchableComposites"
+        "#LiquidMetal"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -686,7 +686,7 @@
       "paper_title": "Magnetically Guided Sequential Multi-Filler Alignment Enables Anisotropic Heat Pathways in Stretchable Composites for Soft Electronics",
       "paper_date": "2026-11-24",
       "paper_category": "Polymers and Composites",
-      "generated_at": "2026-11-26T19:59:22",
+      "generated_at": "2026-11-27T19:47:33",
       "generator": "openai"
     }
   },
@@ -718,23 +718,23 @@
         "url": "https://arxiv.org/pdf/2611.34310v1"
       }
     ],
-    "score": 66,
+    "score": 61,
     "infographic": {
-      "key_insight": "An interpretable finite-element inverse framework identifies relative spatial variations in multiple constitutive parameters of 3D heterogeneous hyperelastic materials from displacement fields alone.",
-      "engineering_relevance": "Mapping material-property variations could support characterization of graded composites and heterogeneous biological tissues.",
+      "key_insight": "An interpretable inverse framework recovers relative spatial variations in multiple hyperelastic constitutive parameters from displacement fields alone.",
+      "engineering_relevance": "Mapping heterogeneous material properties could support functionally graded materials, composite design, and biological tissue characterization.",
       "method": [
-        "Leverages linearity of the hyperelastic inverse problem in the constitutive parameters.",
-        "Optimizes constitutive parameters directly at the finite-element level.",
-        "Avoids parameter-heavy deep-learning models."
+        "Use full-field displacements to identify spatially varying constitutive parameters.",
+        "Exploit the inverse problem’s linear structure and optimize parameters directly at the finite-element level.",
+        "Avoid parameter-heavy deep-learning models."
       ],
-      "evidence_signal": "Validation on 3D synthetic and 2D experimental benchmarks covers heterogeneous, graded, and anisotropic hyperelastic materials, with reported acceptable accuracy and substantially lower computational time than recent deep-learning frameworks.",
-      "watch_item": "The framework recovers relative parameter variations; absolute property calibration and robustness to noisy 3D experimental displacement data require further assessment.",
+      "evidence_signal": "Validation on 3D synthetic and 2D experimental benchmarks spanning heterogeneous, graded, and anisotropic hyperelastic materials showed acceptable accuracy with substantially lower computation time than recently reported deep-learning frameworks.",
+      "watch_item": "The framework identifies relative parameter variations; absolute calibration and robustness to noisy experimental displacements require scrutiny.",
       "hashtags": [
         "#InverseProblems",
-        "#ComputationalMechanics",
         "#Hyperelasticity",
-        "#MaterialCharacterization",
-        "#FiniteElementMethod"
+        "#MaterialsCharacterization",
+        "#FiniteElementMethod",
+        "#FunctionallyGradedMaterials"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -742,7 +742,7 @@
       "paper_title": "Interpretable identification of constitutive parameter field for three-dimensional heterogeneous and graded hyperelastic materials from full-field displacements",
       "paper_date": "2026-11-25",
       "paper_category": "Property Prediction",
-      "generated_at": "2026-11-26T19:59:24",
+      "generated_at": "2026-11-27T19:47:35",
       "generator": "openai"
     }
   },
@@ -771,17 +771,17 @@
         "url": "https://arxiv.org/pdf/2611.33795v1"
       }
     ],
-    "score": 66,
+    "score": 61,
     "infographic": {
-      "key_insight": "Constraining each orbital’s effective potential to depend on the electron density excluding that orbital removes its self-interaction and satisfies the generalized Koopmans condition.",
-      "engineering_relevance": "The approach could improve fundamental band-gap predictions for materials using LDA and GGA density functional approximations.",
+      "key_insight": "Constraining each orbital’s effective potential to depend on the density excluding that orbital removes self-interaction and satisfies the generalized Koopmans condition.",
+      "engineering_relevance": "More accurate fundamental band gaps could improve electronic-material screening using LDA and GGA density functional calculations.",
       "method": [
-        "Constrain the effective potential for orbital i to depend on n − n_i.",
-        "Require total-energy linearity with respect to orbital-density variations.",
-        "Enforce orbital eigenenergies independent of their own fractional occupations."
+        "Make the Kohn–Sham formulation explicitly orbital-density dependent.",
+        "Constrain each orbital’s effective potential to depend on n − n_i.",
+        "Require energy linearity under orbital-density variation to satisfy the generalized Koopmans condition."
       ],
-      "evidence_signal": "The abstract reports an approximately 1 eV reduction in fundamental band-gap mean absolute errors for LDA and GGA relative to standard KS-DFT.",
-      "watch_item": "The abstract does not specify benchmark materials, computational overhead, or convergence behavior for the orbital-dependent potentials.",
+      "evidence_signal": "The abstract reports approximately 1 eV reductions in fundamental-band-gap mean absolute errors for LDA and GGA relative to conventional KS-DFT.",
+      "watch_item": "The abstract does not specify benchmark materials, computational overhead, or convergence behavior, leaving practical scalability unclear.",
       "hashtags": [
         "#DensityFunctionalTheory",
         "#SelfInteractionCorrection",
@@ -795,7 +795,7 @@
       "paper_title": "Exact subtraction of electron self-interaction from the Kohn-Sham equations",
       "paper_date": "2026-11-25",
       "paper_category": "Property Prediction",
-      "generated_at": "2026-11-26T19:59:26",
+      "generated_at": "2026-11-27T19:47:38",
       "generator": "openai"
     }
   },
@@ -824,23 +824,23 @@
         "url": "https://arxiv.org/pdf/2611.33459v1"
       }
     ],
-    "score": 66,
+    "score": 61,
     "infographic": {
-      "key_insight": "AI agents can make human discussions more responsive and broaden human contributions, despite generating less semantically diverse conversations themselves.",
-      "engineering_relevance": "The findings may inform AI facilitators for collaborative engineering discussions, but the study does not evaluate materials discovery.",
+      "key_insight": "AI agents can make human discussions more responsive and broaden human-generated ideas, even though AI-generated conversations are less semantically diverse than human conversations.",
+      "engineering_relevance": "The findings may inform AI facilitators for collaborative engineering discussions, but the study does not evaluate materials discovery or engineering outcomes.",
       "method": [
-        "Introduced generic and persona-conditioned AI agents into evolving discussions.",
-        "Ran agent-based simulations grounded in Reddit discussions across four domains.",
-        "Compared human-only and hybrid discussions in a pre-registered participant experiment."
+        "Introduce generic and persona-conditioned AI agents into evolving discussions.",
+        "Compare conversational outcomes in agent-based simulations grounded in Reddit discussions across four domains.",
+        "Test human-only and hybrid human–AI discussions in a pre-registered experiment."
       ],
-      "evidence_signal": "Simulations found more positive, less toxic but less diverse AI conversations; an experiment with 221 participants across nine threads found improved responsiveness, fewer unanswered contributions, and broader human ideas.",
-      "watch_item": "Persona conditioning narrowed the diversity gap, but increasing underrepresented personas did not necessarily increase overall diversity.",
+      "evidence_signal": "A pre-registered experiment with 221 participants across nine discussion threads found that AI participation increased responsiveness, reduced unanswered contributions, and broadened ideas expressed by humans.",
+      "watch_item": "Persona conditioning narrowed the semantic-diversity gap, but increasing underrepresented persona representation did not necessarily increase overall diversity.",
       "hashtags": [
         "#HumanAIInteraction",
         "#ConversationalAI",
         "#CollectiveIntelligence",
-        "#DiscourseQuality",
-        "#AIFacilitation"
+        "#AgentBasedSimulation",
+        "#DiscourseQuality"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -848,7 +848,7 @@
       "paper_title": "AI-human hybrid conversations: Can AI Agents Improve Discourse Quality?",
       "paper_date": "2026-11-24",
       "paper_category": "Materials Discovery",
-      "generated_at": "2026-11-26T19:59:28",
+      "generated_at": "2026-11-27T19:47:40",
       "generator": "openai"
     }
   },
@@ -878,17 +878,17 @@
         "url": "https://arxiv.org/pdf/2611.30330v1"
       }
     ],
-    "score": 66,
+    "score": 61,
     "infographic": {
-      "key_insight": "Boron redistributes to defects in TiAl alloys, locally pinning dislocations and suppressing deformation twinning to strengthen the material at high temperature.",
-      "engineering_relevance": "Controlling boron content and defect populations could help design stronger high-temperature TiAl alloys, while accounting for brittle borides and interface-dependent adhesion.",
+      "key_insight": "Boron redistributes toward defects in TiAl alloys, locally pinning dislocations and suppressing deformation twinning to increase high-temperature strength.",
+      "engineering_relevance": "Controlling boron content and defect populations could help strengthen TiAl alloys, while accounting for brittle borides and interface-dependent adhesion.",
       "method": [
-        "Hybrid grand-canonical Monte Carlo/molecular dynamics simulations",
-        "Newly developed high-fidelity machine-learning interatomic potential",
-        "Atomistic analysis of boron segregation, defect interactions, and deformation"
+        "Developed a high-fidelity machine-learning interatomic potential.",
+        "Combined hybrid grand-canonical Monte Carlo and molecular dynamics simulations.",
+        "Analyzed boron redistribution, defect interactions, and deformation mechanisms."
       ],
       "evidence_signal": "In simulated polycrystalline TiAl at 900 K, 1 at.% boron increased average flow stress by 9.4% and reduced shear strain accumulation.",
-      "watch_item": "The strengthening result is simulation-based; experimental validation and assessment across processing conditions are needed before alloy-design deployment.",
+      "watch_item": "The reported strengthening is simulation-based; experimental validation is needed to establish its transferability to processed alloys and service conditions.",
       "hashtags": [
         "#TiAlAlloys",
         "#BoronMicroalloying",
@@ -902,7 +902,7 @@
       "paper_title": "Atomistic insight into defect-mediated boron redistribution and high-temperature strengthening in TiAl alloys",
       "paper_date": "2026-11-23",
       "paper_category": "Microstructure",
-      "generated_at": "2026-11-26T19:59:30",
+      "generated_at": "2026-11-27T19:47:42",
       "generator": "openai"
     }
   },
@@ -932,23 +932,23 @@
         "url": "https://arxiv.org/pdf/2611.30066v1"
       }
     ],
-    "score": 66,
+    "score": 61,
     "infographic": {
-      "key_insight": "Better reliability diagnostics do not necessarily improve materials screening; their value depends on whether they reduce DFT evaluations while preserving required recall of near-hull candidates.",
-      "engineering_relevance": "Evaluate MLIP reliability interventions against screening outcomes and information-acquisition costs, not prediction metrics alone.",
+      "key_insight": "Better reliability diagnostics do not necessarily improve materials screening or reduce DFT verification costs at a required recall.",
+      "engineering_relevance": "Choose reliability interventions by the DFT effort they save while retaining near-hull candidates, not by diagnostic accuracy alone.",
       "method": [
-        "Rank candidate crystal structures with MACE-MP, CHGNet, and Orb V3 before DFT verification.",
-        "Test novelty detection, sparse DFT calibration, and chemistry-level ranking audits.",
-        "Measure DFT savings at required near-hull recall and use two-oracle analysis to diagnose decision alignment."
+        "Evaluate novelty detection, sparse DFT calibration, and chemistry-level ranking audits.",
+        "Measure DFT avoided while maintaining required recall of near-hull candidates.",
+        "Use two-oracle analysis to distinguish misaligned reliability targets from finite-budget audit limitations."
       ],
-      "evidence_signal": "Across the three interventions, improved diagnostic performance did not reliably translate into better screening: novelty weakly ranked failure severity, calibration could leave screening unchanged or worse, and audits did not yield robustly beneficial routing.",
-      "watch_item": "Results depend on the screening objective: perfect average-ranking information can misguide formation-energy screening, while finite-budget audits still failed to realize oracle value in the evaluated hull-aligned variant.",
+      "evidence_signal": "Across MACE-MP, CHGNet, and Orb V3, successful diagnostics did not reliably improve screening; oracle results differed between formation-energy and hull-aligned screening.",
+      "watch_item": "Even a decision-aligned reliability target may not yield useful model routing when audit budgets are limited.",
       "hashtags": [
         "#MaterialsDiscovery",
         "#MachineLearnedPotentials",
-        "#DecisionAlignedAI",
         "#DFT",
-        "#ReliabilityEvaluation"
+        "#AIReliability",
+        "#DecisionAlignedEvaluation"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -956,7 +956,7 @@
       "paper_title": "Diagnostic Accuracy Is Not Deployment Value: Decision-Aligned Reliability Evaluation for Foundation MLIPs in Materials Discovery",
       "paper_date": "2026-11-23",
       "paper_category": "Materials Discovery",
-      "generated_at": "2026-11-26T19:59:33",
+      "generated_at": "2026-11-27T19:47:44",
       "generator": "openai"
     }
   },
@@ -987,23 +987,23 @@
         "url": "https://arxiv.org/pdf/2611.34000v1"
       }
     ],
-    "score": 63,
+    "score": 58,
     "infographic": {
-      "key_insight": "Relaxed λ-(STF)₂GaCl₄ has a narrower frontier bandwidth than its BETS counterpart while retaining substantial dimerization, and unrelaxed-structure Wannier models reveal selectively weakened electronic connectivity.",
-      "engineering_relevance": "Structure-sensitive bandwidths and transfer integrals help parameterize low-energy models of molecular conductors.",
+      "key_insight": "Compared with BETS, relaxed λ-(STF)₂GaCl₄ has a narrower frontier bandwidth while retaining substantial dimerization, and unrelaxed-structure Wannier models reveal selectively weakened electronic connectivity.",
+      "engineering_relevance": "The results inform low-energy model construction for molecular conductors by showing how donor substitution and structural relaxation affect electronic coupling.",
       "method": [
-        "Use DFT to compare BETS and STF electronic structures.",
-        "Compare DFT-selected and XRD-refined STF models before and after fixed-lattice relaxation.",
-        "Construct two maximally localized Wannier functions per selected unrelaxed structure for the upper frontier bands."
+        "Compute near-Fermi electronic structures using DFT.",
+        "Compare DFT-selected and XRD-refined STF structures before and after fixed-lattice relaxation.",
+        "Construct two maximally localized Wannier functions per selected unrelaxed structure to extract transfer integrals."
       ],
-      "evidence_signal": "The STF structural models yield similar near-Fermi electronic structures after relaxation; unrelaxed Wannier models give total spreads of 36.708 Å² for BETS and 37.578 Å² for STF, with t_d1 decreasing from 51 to 6.5 meV.",
-      "watch_item": "The reported Wannier transfer integrals describe selected unrelaxed structures and should not be assumed to represent the relaxed structures.",
+      "evidence_signal": "Initially different STF electronic structures become similar after relaxation; unrelaxed-structure Wannier models yield total spreads of 36.708 Å² for BETS and 37.578 Å² for STF, with t_d1 decreasing from 51 to 6.5 meV.",
+      "watch_item": "Transfer integrals were extracted from selected unrelaxed structures, so their quantitative applicability to relaxed structures remains to be checked.",
       "hashtags": [
-        "#MolecularConductors",
-        "#DensityFunctionalTheory",
+        "#DFT",
         "#WannierFunctions",
+        "#MolecularConductors",
         "#ElectronicStructure",
-        "#CrystalStructure"
+        "#ComputationalMaterials"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -1011,7 +1011,7 @@
       "paper_title": "Wannier-Based Low-Energy Electronic Structure Analysis of $λ$-(STF)$_2$GaCl$_4$",
       "paper_date": "2026-11-25",
       "paper_category": "Crystal and Structure",
-      "generated_at": "2026-11-26T19:59:35",
+      "generated_at": "2026-11-27T19:47:47",
       "generator": "openai"
     }
   },
@@ -1040,22 +1040,22 @@
         "url": "https://arxiv.org/pdf/2611.33060v1"
       }
     ],
-    "score": 63,
+    "score": 58,
     "infographic": {
-      "key_insight": "DFT predicts stronger vacancy association in CrN than TiN, with compact mixed-vacancy clusters remaining stabilised at CrN surfaces but becoming unfavourable at TiN surfaces.",
-      "engineering_relevance": "Material choice, nitrogen chemical potential, and proximity to surfaces can influence vacancy populations and clustering in TiN and CrN coatings.",
+      "key_insight": "DFT predicts stronger vacancy association in CrN than TiN, with compact mixed-vacancy clusters remaining favourable at CrN surfaces but becoming unfavourable at TiN surfaces.",
+      "engineering_relevance": "Material choice, growth chemical potentials, and proximity to surfaces can influence vacancy populations and clustering in TiN and CrN coatings.",
       "method": [
-        "DFT comparison of native vacancies in rocksalt TiN and CrN bulk and (001) surfaces.",
-        "Formation energies evaluated within phase-stability-constrained chemical potential ranges.",
+        "DFT calculations of native vacancies in bulk and at rocksalt (001) surfaces.",
+        "Formation energies evaluated across phase-stability-constrained chemical potentials.",
         "Association energies referenced to isolated vacancies, using preferred depths for surface comparisons."
       ],
-      "evidence_signal": "Compact two-metal/two-nitrogen vacancy clusters have bulk-to-surface association energies of +0.217 to −0.346 eV per vacancy in TiN and +1.188 to +0.431 eV per vacancy in CrN, where positive values favour association.",
-      "watch_item": "The abstract reports energetic preferences, not experimental validation or vacancy migration kinetics, so clustering rates in operating coatings remain uncertain.",
+      "evidence_signal": "For compact clusters containing two metal and two nitrogen vacancies, association energies change from +0.217 to −0.346 eV per vacancy from bulk to surface in TiN, versus +1.188 to +0.431 in CrN; positive values favour association.",
+      "watch_item": "The reported DFT energetics do not establish finite-temperature vacancy populations or clustering kinetics under coating-growth conditions.",
       "hashtags": [
-        "#DFT",
+        "#MaterialsScience",
+        "#DensityFunctionalTheory",
         "#VacancyEngineering",
-        "#TiN",
-        "#CrN",
+        "#NitrideCoatings",
         "#Microstructure"
       ],
       "model": "gpt-6.1-sol",
@@ -1064,7 +1064,7 @@
       "paper_title": "Native vacancy energetics and association in TiN and CrN: chemical potential dependence, clustering, and surface effects",
       "paper_date": "2026-11-24",
       "paper_category": "Microstructure",
-      "generated_at": "2026-11-26T19:59:37",
+      "generated_at": "2026-11-27T19:47:49",
       "generator": "openai"
     }
   }
